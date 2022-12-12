@@ -104,14 +104,14 @@ For help with connecting and copying the file to an EC2 instance in AWS, see htt
 . Assign permissions to run the script.
 +
 [source,cli]
-chmod +x OnCommandCloudManager-V3.9.23.sh
+chmod +x OnCommandCloudManager-V3.9.23
 
 . Run the installation script.
 +
 If you have a proxy server, you will need to enter the command parameters as shown below. The installer doesn't prompt you to provide information about a proxy.
 +
 [source,cli]
- ./OnCommandCloudManager-V3.9.23.sh --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
+ ./OnCommandCloudManager-V3.9.23 --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
 
 +
 The Connector is now installed. At the end of the installation, the Connector service (occm) restarts twice if you specified a proxy server.
