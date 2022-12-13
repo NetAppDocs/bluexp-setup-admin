@@ -71,6 +71,9 @@ The installer for the Connector must access the following URLs during the instal
 +
 * \https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
 * \https://*.blob.core.windows.net or \https://hub.docker.com
+* \https://support.netapp.com and \https://mysupport.netapp.com
+* \https://*.cloudmanager.cloud.netapp.com and \https://cloudmanager.cloud.netapp.com 
+* \https://cloudmanagerinfraprod.azurecr.io
 +
 The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.
 
