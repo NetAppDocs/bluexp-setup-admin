@@ -83,3 +83,10 @@ As described above, BlueXP enables you to provide AWS credentials in a few ways:
 With the first two options, BlueXP uses the AWS Security Token Service to obtain temporary credentials that rotate constantly. This process is the best practice--it's automatic and it's secure.
 
 If you provide BlueXP with AWS access keys, you should rotate the keys by updating them in BlueXP at a regular interval. This is a completely manual process.
+
+== Can I move Cloud Volumes ONTAP working environments to a different AWS subscription?
+ 
+No, it's not possible to move Cloud Volumes ONTAP working environments to a different AWS subscription. 
+
+When you create a Cloud Volumes ONTAP working environment, you select AWS credentials that are associated with a specific AWS Marketplace subscription. While it's possible to change the AWS subscription that's associated with credentials, doing so only affects new Cloud Volumes ONTAP systems that you create from that point forward. Replacing an existing subscription doesn't change the AWS subscription for any existing Cloud Volumes ONTAP working environments. 
+====
