@@ -31,6 +31,12 @@ Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to crea
 +
 Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP^]
 
+[TIP] 
+.Can I move Cloud Volumes ONTAP systems to a different AWS subscription?
+==== 
+No, it's not possible to move Cloud Volumes ONTAP systems to a different AWS subscription. You can replace the AWS subscription that's associated with your credentials, but doing that only affects new Cloud Volumes ONTAP systems that you create. 
+====
+
 == How to rotate credentials
 
 BlueXP enables you to provide AWS credentials in a few ways: an IAM role associated with the Connector instance, by assuming an IAM role in a trusted account, or by providing AWS access keys. link:concept-accounts-aws.html[Learn more about AWS credentials and permissions].
@@ -203,6 +209,8 @@ There are two scenarios in which you might associate an AWS Marketplace subscrip
 
 * You didn't associate a subscription when you initially added the credentials to BlueXP.
 * You want to replace an existing AWS Marketplace subscription with a new subscription.
++
+NOTE: Replacing an existing subscription doesn't change the AWS subscription for any existing Cloud Volumes ONTAP working environments. Only new Cloud Volumes ONTAP working environments will be associated with the new subscription.
 
 .Before you begin
 
@@ -294,3 +302,11 @@ TIP: You can't delete the credentials for an instance profile that is associated
 . On the *Account credentials* page, select the action menu for a set of credentials and then select *Delete Credentials*.
 
 . Select *Delete* to confirm.
+
+== FAQ
+
+The following questions are related to AWS credentials and subscriptions.
+
+.Can I move Cloud Volumes ONTAP systems to a different AWS subscription?
+
+No, it's not possible to move Cloud Volumes ONTAP systems to a different AWS subscription. You can replace the AWS subscription that's associated with your credentials, but doing that only affects new Cloud Volumes ONTAP systems that you create.
