@@ -60,7 +60,15 @@ Adding new AWS credentials to BlueXP provides the permissions needed to create a
 
 * link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[Learn how to add AWS credentials to BlueXP for creating a Connector]
 
-== What about Marketplace deployments and on-prem deployments?
+== Credentials and marketplace subscriptions
+
+When you add your AWS credentials to BlueXP, you can associate an AWS Marketplace subscription with those credentials. The subscription enables you to pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or using an annual contract, and to use other BlueXP services.
+
+== FAQ
+
+The following questions are related to credentials and subscriptions.
+
+=== How do credentials work for marketplace deployments and on-prem deployments?
 
 The sections above describe the recommended deployment method for the Connector, which is from BlueXP. You can also deploy a Connector in AWS from the AWS Marketplace and you can manually install the Connector software on your own Linux host.
 
@@ -76,7 +84,7 @@ To learn how to set up permissions, refer to the following pages:
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
-== How can I securely rotate my AWS credentials?
+=== How can I securely rotate my AWS credentials?
 
 As described above, BlueXP enables you to provide AWS credentials in a few ways: an IAM role associated with the Connector instance, by assuming an IAM role in a trusted account, or by providing AWS access keys.
 
@@ -84,7 +92,7 @@ With the first two options, BlueXP uses the AWS Security Token Service to obtain
 
 If you provide BlueXP with AWS access keys, you should rotate the keys by updating them in BlueXP at a regular interval. This is a completely manual process.
 
-== Can I move Cloud Volumes ONTAP working environments to a different AWS subscription?
+=== Can I move Cloud Volumes ONTAP working environments to a different AWS subscription?
  
 No, it's not possible to move Cloud Volumes ONTAP working environments to a different AWS subscription. 
 

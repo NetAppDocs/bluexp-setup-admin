@@ -45,7 +45,15 @@ For example, you can switch between credentials when creating a new Cloud Volume
 
 image:screenshot_accounts_switch_azure.gif["A screenshot that shows selecting between cloud provider accounts after selecting Switch Account in the Details & Credentials page."]
 
-== What about Marketplace deployments and on-prem deployments?
+== Credentials and marketplace subscriptions
+
+When you add your Azure credentials to BlueXP, you can associate an Azure Marketplace subscription with those credentials. The subscription enables you to pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) and to use other BlueXP services.
+
+== FAQ
+
+The following question is related to credentials and subscriptions.
+
+=== How do credentials work for marketplace deployments and on-prem deployments?
 
 The sections above describe the recommended deployment method for the Connector, which is from BlueXP. You can also deploy a Connector in Azure from the Azure Marketplace, and you can install the Connector software on your own Linux host.
 
