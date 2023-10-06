@@ -47,13 +47,13 @@ image:screenshot_accounts_switch_azure.gif["A screenshot that shows selecting be
 
 == Credentials and marketplace subscriptions
 
-The credentials for an Azure subscription must be associated with an Azure Marketplace subscription so that you can pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or through an annual contract, and to use other BlueXP services.
+The credentials that you add to a Connector must be associated with an Azure Marketplace subscription so that you can pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or through an annual contract, and to use other BlueXP services.
 
 link:task-adding-azure-accounts.html#subscribe[Learn how to associate an Azure subscription].
 
 Note the following about Azure credentials and marketplace subscriptions:
 
-* You can associate only one Azure Marketplace subscription with an Azure subscription
+* You can associate only one Azure Marketplace subscription with a set of Azure credentials
 * You can replace an existing marketplace subscription with a new subscription
 
 == FAQ
@@ -62,7 +62,7 @@ The following question is related to credentials and subscriptions.
 
 === Can I change the Azure Marketplace subscription for Cloud Volumes ONTAP working environments?
 
-Yes, you can. When you change the Azure Marketplace subscription that's associated with a set of Azure credentials, all Cloud Volumes ONTAP working environments will be charged against the new subscription.
+Yes, you can. When you change the Azure Marketplace subscription that's associated with a set of Azure credentials, all existing and new Cloud Volumes ONTAP working environments will be charged against the new subscription.
 
 link:task-adding-azure-accounts.html#subscribe[Learn how to associate an Azure subscription].
 
@@ -70,7 +70,7 @@ link:task-adding-azure-accounts.html#subscribe[Learn how to associate an Azure s
 
 All Azure credentials that belong to the same Azure subscription will be associated with the same Azure Marketplace subscription.
 
-If you have multiple Azure credentials that all belong to different Azure subscriptions, then those credentials can be associated with the same Azure Marketplace subscription or with different marketplace subscriptions.
+If you have multiple Azure credentials that belong to different Azure subscriptions, then those credentials can be associated with the same Azure Marketplace subscription or with different marketplace subscriptions.
 
 === Can I move existing Cloud Volumes ONTAP working environments to a different Azure subscription?
 
