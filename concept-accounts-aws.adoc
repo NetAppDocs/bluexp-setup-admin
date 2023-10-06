@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: concept-accounts-aws.html
-keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials
-summary: Learn how BlueXP uses AWS credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more AWS accounts in BlueXP. For example, you might want to learn about when to add additional AWS credentials to BlueXP.
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials, marketplace subscription, replace subscription, subscription
+summary: Learn how BlueXP uses AWS credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more AWS accounts in BlueXP. For example, you might want to learn about when to add additional AWS credentials to BlueXP.
 ---
 
-= AWS credentials and permissions
+= Learn about AWS credentials and marketplace subscriptions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: Learn how BlueXP uses AWS credentials and permissions to perform action
 :imagesdir: ./media/
 
 [.lead]
-Learn how BlueXP uses AWS credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more AWS accounts in BlueXP. For example, you might want to learn about when to add additional AWS credentials to BlueXP.
+Learn how BlueXP uses AWS credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more AWS accounts in BlueXP. For example, you might want to learn about when to add additional AWS credentials to BlueXP.
 
 == Initial AWS credentials
 
@@ -62,11 +62,42 @@ Adding new AWS credentials to BlueXP provides the permissions needed to create a
 
 == Credentials and marketplace subscriptions
 
-When you add your AWS credentials to BlueXP, you can associate an AWS Marketplace subscription with those credentials. The subscription enables you to pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or using an annual contract, and to use other BlueXP services.
+The credentials for your AWS account must be associated with an AWS Marketplace subscription so that you can pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or through an annual contract, and to use other BlueXP services.
+
+link:task-adding-aws-accounts.html#subscribe[Learn how to associate an AWS subscription].
+
+Note the following about AWS credentials and marketplace subscriptions:
+
+* You can associate only one AWS Marketplace subscription with an AWS account
+* You can replace an existing marketplace subscription with a new subscription
 
 == FAQ
 
 The following questions are related to credentials and subscriptions.
+
+=== How can I securely rotate my AWS credentials?
+
+As described in the sections above, BlueXP enables you to provide AWS credentials in a few ways: an IAM role associated with the Connector instance, by assuming an IAM role in a trusted account, or by providing AWS access keys.
+
+With the first two options, BlueXP uses the AWS Security Token Service to obtain temporary credentials that rotate constantly. This process is the best practice--it's automatic and it's secure.
+
+If you provide BlueXP with AWS access keys, you should rotate the keys by updating them in BlueXP at a regular interval. This is a completely manual process.
+
+=== Can I change the AWS Marketplace subscription for Cloud Volumes ONTAP working environments?
+
+Yes, you can. When you change the AWS Marketplace subscription that's associated with a set of credentials, all Cloud Volumes ONTAP working environments will be charged against the new subscription.
+
+link:task-adding-aws-accounts.html#subscribe[Learn how to associate an AWS subscription].
+
+=== Can I add multiple AWS credentials, each with different marketplace subscriptions?
+
+All AWS credentials that belong to the same AWS account will be associated with the same AWS Marketplace subscription.
+
+If you have multiple AWS credentials that all belong to different AWS accounts, then those credentials can be associated with the same AWS Marketplace subscription or with different subscriptions.
+
+=== Can I move existing Cloud Volumes ONTAP working environments to a different AWS account?
+
+No, it's not possible to move the AWS resources associated with your Cloud Volumes ONTAP working environment to a different AWS account.
 
 === How do credentials work for marketplace deployments and on-prem deployments?
 
@@ -83,17 +114,3 @@ To learn how to set up permissions, refer to the following pages:
 ** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions[Set up permissions for on-prem deployments]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
-
-=== How can I securely rotate my AWS credentials?
-
-As described above, BlueXP enables you to provide AWS credentials in a few ways: an IAM role associated with the Connector instance, by assuming an IAM role in a trusted account, or by providing AWS access keys.
-
-With the first two options, BlueXP uses the AWS Security Token Service to obtain temporary credentials that rotate constantly. This process is the best practice--it's automatic and it's secure.
-
-If you provide BlueXP with AWS access keys, you should rotate the keys by updating them in BlueXP at a regular interval. This is a completely manual process.
-
-=== Can I move Cloud Volumes ONTAP working environments to a different AWS subscription?
- 
-No, it's not possible to move Cloud Volumes ONTAP working environments to a different AWS subscription. 
-
-When you create a Cloud Volumes ONTAP working environment, you select AWS credentials that are associated with a specific AWS Marketplace subscription. While it's possible to replace the AWS subscription that's associated with credentials, doing so only affects new Cloud Volumes ONTAP systems that you create from that point forward. Replacing the subscription doesn't change the AWS subscription that's associated with any existing Cloud Volumes ONTAP working environments.

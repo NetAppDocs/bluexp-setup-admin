@@ -123,21 +123,21 @@ sidebar:
               url: /task-configuring-proxy.html
             - title: Default configuration
               url: /reference-connector-default-config.html
-        - title: Credentials
+        - title: Credentials and subscriptions
           entries:
-            - title: Manage AWS credentials
+            - title: Manage AWS credentials and subscriptions
               entries:
-                - title: Overview
+                - title: Learn about credentials and subscriptions
                   url: /concept-accounts-aws.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-aws-accounts.html
-            - title: Manage Azure credentials
+            - title: Manage Azure credentials and subscriptions
               entries:
                 - title: Overview
                   url: /concept-accounts-azure.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-azure-accounts.html
-            - title: Manage Google Cloud credentials
+            - title: Manage Google Cloud credentials and subscriptions
               entries:
                 - title: Overview
                   url: /concept-accounts-gcp.html
