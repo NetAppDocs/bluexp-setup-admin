@@ -69,9 +69,10 @@ Here's an example of the command using both optional parameters:
 +
 Note the following:
 +
-* The user can be a local user or domain user. 
-* For a domain user, you must use the ASCII code for the \ as shown above. 
-* If the password contains a special character, you need to use the ASCII code for each special character. For example, the password _NetApp#_ should be entered as _NetApp%35_.
+** The user can be a local user or domain user. 
+** For a domain user, you must use the ASCII code for the \ as shown above. 
+** If the password contains a special character, you need to use the ASCII code for each special character. For example, the password _NetApp#_ should be entered as _NetApp%35_
+** BlueXP doesn't support passwords that include the @ character.
 
 +
 --cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.
