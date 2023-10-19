@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-overview.html
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers
-summary: NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments. The BlueXP SaaS platform includes storage and data services that provide storage management, data mobility, data protection, and data analysis and control. Management capabilities are provided through a web-based console and APIs.
+summary: NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments. The BlueXP SaaS platform includes services that provide storage management, data mobility, data protection, and data analysis and control. Management capabilities are provided through a web-based console and APIs.
 ---
 
 = Learn about BlueXP
@@ -13,7 +13,7 @@ summary: NetApp BlueXP provides your organization with a single control plane th
 :imagesdir: ./media/
 
 [.lead]
-NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments. The BlueXP SaaS platform includes storage and data services that provide storage management, data mobility, data protection, and data analysis and control. Management capabilities are provided through a web-based console and APIs.
+NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments. The BlueXP SaaS platform includes services that provide storage management, data mobility, data protection, and data analysis and control. Management capabilities are provided through a web-based console and APIs.
 
 == Features
 
@@ -35,8 +35,6 @@ Discover, deploy, and manage storage, whether it's in AWS, Azure, Google Cloud, 
 ** ONTAP clusters
 ** StorageGRID systems
 
-* Orchestrate and protect https://bluexp.netapp.com/solutions/kubernetes[Kubernetes persistent data^]
-
 Mobility::
 Move data where it's needed by syncing, copying, tiering, and caching data.
 
@@ -49,9 +47,10 @@ Use automated protection mechanisms to protect data against data loss, unplanned
 
 ** https://bluexp.netapp.com/cloud-backup[Backup and recovery^]
 ** https://bluexp.netapp.com/replication[Replication^]
+** https://bluexp.netapp.com/solutions/kubernetes[Data protection for Kubernetes workloads^]
 
 Analysis and control::
-Use tools to monitor, map, and optimize your data storage and infrastructure.
+Use tools to monitor, map, and optimize your data storage and infrastructure. Gain actionable intelligence to optimize storage health, resiliency, and economics.
 
 ** https://bluexp.netapp.com/netapp-cloud-data-sense[Classification^]
 ** https://bluexp.netapp.com/digital-advisor[Digital advisor^]

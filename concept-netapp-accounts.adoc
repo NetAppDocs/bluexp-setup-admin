@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-netapp-accounts.html
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account
-summary: A BlueXP account provides multi-tenancy for your organization, which enables you to organize users and resources in isolated workspaces. For example, a group of users can deploy and manage Cloud Volumes ONTAP systems in a workspace that isn't visible to other users who manage different types of working environments in a different workspace.
+summary: A BlueXP account provides multi-tenancy for your organization, which enables you to organize users and resources in isolated workspaces. For example, a group of users can deploy and manage Cloud Volumes ONTAP working environments in a workspace that isn't visible to users who manage working environments in a different workspace.
 ---
 
 = Learn about BlueXP accounts
@@ -13,7 +13,7 @@ summary: A BlueXP account provides multi-tenancy for your organization, which en
 :imagesdir: ./media/
 
 [.lead]
-A _BlueXP account_ provides multi-tenancy for your organization, which enables you to organize users and resources in isolated _workspaces_. For example, a group of users can deploy and manage Cloud Volumes ONTAP systems in a workspace that isn't visible to other users who manage different types of working environments in a different workspace.
+A _BlueXP account_ provides multi-tenancy for your organization, which enables you to organize users and resources in isolated _workspaces_. For example, a group of users can deploy and manage Cloud Volumes ONTAP working environments in a workspace that isn't visible to users who manage working environments in a different workspace.
 
 When you first access BlueXP, you're prompted to select or create an account. For example, you'll see the following screen if you don't have an account yet:
 
