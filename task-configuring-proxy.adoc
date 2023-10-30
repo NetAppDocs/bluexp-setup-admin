@@ -47,7 +47,6 @@ Note the following:
 * For a domain user, you must enter the ASCII code for the \ as follows: domain-name%92user-name
 +
 For example: netapp%92proxy
-* If the password contains a special character, you need to use the ASCII code for each special character. For example, the password _NetApp#_ should be entered as _NetApp%35_
 * BlueXP doesn't support passwords that include the @ character.
 .. Select *Save*.
 

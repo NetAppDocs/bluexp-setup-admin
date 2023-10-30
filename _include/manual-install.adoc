@@ -71,7 +71,6 @@ Note the following:
 +
 ** The user can be a local user or domain user. 
 ** For a domain user, you must use the ASCII code for the \ as shown above. 
-** If the password contains a special character, you need to use the ASCII code for each special character. For example, the password _NetApp#_ should be entered as _NetApp%35_
 ** BlueXP doesn't support passwords that include the @ character.
 
 +
