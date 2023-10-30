@@ -51,21 +51,27 @@ Where <version> is the version of the Connector that you downloaded.
 [source,cli]
  ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 +
-The --proxy and --cacert parameters are optional. If you have a proxy server, you will need to enter the parameter(s) as shown. The installer doesn't prompt you to provide information about a proxy.
+The --proxy and --cacert parameters are optional. If you have a proxy server, you will need to enter the parameters as shown. The installer doesn't prompt you to provide information about a proxy.
 +
 Here's an example of the command using both optional parameters:
 +
 [source,cli]
- ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 +
 --proxy configures the Connector to use an HTTP or HTTPS proxy server using one of the following formats:
 +
 * \http://address:port
-* \http://username:password@address:port
+* \http://user-name:password@address:port
+* \http://domain-name%92user-name:password@address:port
 * \https://address:port
-* \https://username:password@address:port
+* \https://user-name:password@address:port
+* \https://domain-name%92user-name:password@address:port
 +
-The user must be a local user. Domain users are not supported.
+Note the following:
++
+** The user can be a local user or domain user. 
+** For a domain user, you must use the ASCII code for the \ as shown above. 
+** BlueXP doesn't support passwords that include the @ character.
 
 +
 --cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.
