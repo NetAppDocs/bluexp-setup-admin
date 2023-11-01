@@ -68,7 +68,9 @@ The Connector requires outbound internet access to contact the following endpoin
 //end::google-cloud-endpoints[]
 
 //tag::nss-endpoints[]
-| \https://support.netapp.com | To obtain licensing information and to send AutoSupport messages to NetApp support.
+| 
+\https://support.netapp.com
+\https://mysupport.netapp.com | To obtain licensing information and to send AutoSupport messages to NetApp support.
 //end::nss-endpoints[]
 
 //tag::saas-endpoints[]
