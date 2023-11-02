@@ -15,13 +15,13 @@ sidebar:
       entries:
         - title: What's new
           url: /whats-new.html
-        - title: Limitations
+        - title: Known limitations
           url: /reference-limitations.html
     - title: Get started
       entries:
         - title: Learn the basics
           entries: 
-            - title: BlueXP overview
+            - title: BlueXP
               url: /concept-overview.html
             - title: Accounts
               url: /concept-netapp-accounts.html
@@ -41,13 +41,13 @@ sidebar:
               entries:
                 - title: AWS
                   entries:
-                    - title: Installation options
+                    - title: Connector installation options
                       url: /concept-install-options-aws.html
-                    - title: Create from BlueXP
+                    - title: Create a Connector from BlueXP
                       url: /task-install-connector-aws-bluexp.html
-                    - title: Create from the marketplace
+                    - title: Create a Connector from the marketplace
                       url: /task-install-connector-aws-marketplace.html
-                    - title: Install manually
+                    - title: Manually install the Connector
                       url: /task-install-connector-aws-manual.html
                 - title: Azure
                   entries:
