@@ -5,7 +5,7 @@ keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, p
 summary: Learn how BlueXP uses AWS credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more AWS accounts in BlueXP. For example, you might want to learn about when to add additional AWS credentials to BlueXP.
 ---
 
-= AWS credentials and permissions
+= Learn about AWS credentials and permissions
 :hardbreaks:
 :nofooter:
 :icons: font

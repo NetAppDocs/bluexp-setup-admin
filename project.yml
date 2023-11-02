@@ -51,21 +51,21 @@ sidebar:
                       url: /task-install-connector-aws-manual.html
                 - title: Azure
                   entries:
-                    - title: Installation options
+                    - title: Connector installation options
                       url: /concept-install-options-azure.html
-                    - title: Create from BlueXP
+                    - title: Create a Connector from BlueXP
                       url: /task-install-connector-azure-bluexp.html
-                    - title: Create from the marketplace
+                    - title: Create a Connector from the marketplace
                       url: /task-install-connector-azure-marketplace.html
-                    - title: Install manually
+                    - title: Manually install the Connector
                       url: /task-install-connector-azure-manual.html
                 - title: Google Cloud
                   entries:
-                    - title: Installation options
+                    - title: Connector installation options
                       url: /concept-install-options-google.html
-                    - title: Create from BlueXP or using gcloud
+                    - title: Create a Connector from BlueXP or gcloud
                       url: /task-install-connector-google-bluexp-gcloud.html
-                    - title: Install manually
+                    - title: Manually install the Connector
                       url: /task-install-connector-google-manual.html
                 - title: On premises
                   url: /task-install-connector-on-prem.html
@@ -103,11 +103,11 @@ sidebar:
           url: /concept-federation.html
         - title: BlueXP accounts
           entries:
-            - title: Manage your account
+            - title: Manage your BlueXP account
               url: /task-managing-netapp-accounts.html
             - title: Monitor operations in your account
               url: /task-monitor-cm-operations.html
-            - title: Create another account
+            - title: Create another BlueXP account
               url: /task-create-account.html
             - title: User roles
               url: /reference-user-roles.html
@@ -117,29 +117,29 @@ sidebar:
               url: /task-finding-system-id.html
             - title: Manage existing Connectors
               url: /task-managing-connectors.html
-            - title: Install an HTTPS certificate
+            - title: Install an HTTPS certificate for secure access
               url: /task-installing-https-cert.html
-            - title: Configure proxy settings
+            - title: Configure a Connector to use a proxy server
               url: /task-configuring-proxy.html
-            - title: Default configuration
+            - title: Default configuration for the Connector
               url: /reference-connector-default-config.html
-        - title: Credentials
+        - title: Credentials and subscriptions
           entries:
-            - title: Manage AWS credentials
+            - title: AWS
               entries:
-                - title: Overview
+                - title: Learn about AWS credentials and permissions
                   url: /concept-accounts-aws.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-aws-accounts.html
-            - title: Manage Azure credentials
+            - title: Azure
               entries:
-                - title: Overview
+                - title: Learn about Azure credentials and permissions
                   url: /concept-accounts-azure.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-azure-accounts.html
-            - title: Manage Google Cloud credentials
+            - title: Google Cloud
               entries:
-                - title: Overview
+                - title: Learn about Google Cloud projects and permissions
                   url: /concept-accounts-gcp.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-gcp-accounts.html
@@ -169,11 +169,11 @@ sidebar:
               url: /reference-permissions-gcp.html
         - title: Ports
           entries:
-            - title: Security group rules in AWS
+            - title: Connector security group rules in AWS
               url: /reference-ports-aws.html
-            - title: Security group rules in Azure
+            - title: Connector security group rules in Azure
               url: /reference-ports-azure.html
-            - title: Firewall rules in Google Cloud
+            - title: Connector firewall rules in Google Cloud
               url: /reference-ports-gcp.html
             - title: Ports for the on-prem Connector
               url: /reference-ports-on-prem.html

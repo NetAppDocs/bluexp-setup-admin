@@ -5,7 +5,7 @@ keywords: user, users, roles, role, task, permission, permissions, tasks, admin,
 summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles provide specific permissions to users. You can assign one of these roles when you associate a new user with your BlueXP account.
 ---
 
-= Roles
+= User roles
 :hardbreaks:
 :nofooter:
 :icons: font
