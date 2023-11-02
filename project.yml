@@ -127,19 +127,19 @@ sidebar:
           entries:
             - title: AWS
               entries:
-                - title: Learn about AWS credentials and permissions
+                - title: Learn about credentials and permissions
                   url: /concept-accounts-aws.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-aws-accounts.html
             - title: Azure
               entries:
-                - title: Learn about Azure credentials and permissions
+                - title: Learn about credentials and permissions
                   url: /concept-accounts-azure.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-azure-accounts.html
             - title: Google Cloud
               entries:
-                - title: Learn about Google Cloud projects and permissions
+                - title: Learn about projects and permissions
                   url: /concept-accounts-gcp.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-gcp-accounts.html
