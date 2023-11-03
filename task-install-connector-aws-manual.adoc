@@ -141,7 +141,7 @@ include::_include/manual-install.adoc[tag=main-steps]
 
 include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
-If you have Amazon S3 buckets in the same AWS account where you created the Connector, you'll see an Amazon S3 working environment appear on the Canvas automatically. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html[Learn how to manage S3 buckets from BlueXP^]
+If you have Amazon S3 buckets in the same AWS account where you created the Connector, you'll see an Amazon S3 working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html[Learn how to manage S3 buckets from BlueXP^]
 
 == Step 5: Provide permissions to BlueXP
 
