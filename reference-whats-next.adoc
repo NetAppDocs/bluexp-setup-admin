@@ -15,6 +15,8 @@ summary: Now that you've logged in and set up BlueXP in standard mode, users can
 [.lead]
 Now that you've logged in and set up BlueXP in standard mode, users can create and discover working environments and use BlueXP data services.
 
+TIP: If you installed a Connector in AWS, Microsoft Azure, or Google Cloud, then BlueXP automatically discovers information about the Amazon S3 buckets, Azure Blob storage, or Google Cloud Storage buckets in the location where the Connector is installed. A working environment is automatically added to the BlueXP canvas. 
+
 For help, go to the https://docs.netapp.com/us-en/bluexp-family/[home page for the BlueXP documentation^] to view the docs for all BlueXP services.
 
 .Related link
