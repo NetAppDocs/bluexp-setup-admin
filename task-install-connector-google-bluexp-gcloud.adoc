@@ -235,6 +235,8 @@ The instance should be ready in about 7 minutes. You should stay on the page unt
 .Result
 
 After the process is complete, the Connector is available for use from BlueXP.
+
+If you have Google Cloud Storage buckets in the same Google Cloud account where you created the Connector, you'll see a Google Cloud Storage working environment appear on the Canvas automatically. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html[Learn how to manage Google Cloud Storage from BlueXP^]
 --
 
 .gcloud

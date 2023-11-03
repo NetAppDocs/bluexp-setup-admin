@@ -157,6 +157,8 @@ include::_include/manual-install.adoc[tag=main-steps]
 
 include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
+If you have Azure Blob storage in the same Azure subscription where you created the Connector, you'll see an Azure Blob storage working environment appear on the Canvas automatically. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html[Learn how to manage Azure Blob storage from BlueXP^]
+
 == Step 5: Provide permissions to BlueXP
 
 Now that you've installed the Connector, you need to provide BlueXP with the Azure permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.

@@ -108,7 +108,7 @@ include::_include/manual-install.adoc[tag=main-steps]
 
 include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
-// end tabbed area
+If you have Google Cloud Storage buckets in the same Google Cloud account where you created the Connector, you'll see a Google Cloud Storage working environment appear on the Canvas automatically. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html[Learn how to manage Google Cloud Storage from BlueXP^]
 
 == Step 7: Provide permissions to BlueXP
 
