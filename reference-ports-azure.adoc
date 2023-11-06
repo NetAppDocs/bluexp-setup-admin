@@ -5,7 +5,7 @@ keywords: ports, security group, http, https, inbound, outbound
 summary: The Azure security group for the Connector requires both inbound and outbound rules. BlueXP automatically creates this security group when you create a Connector from BlueXP. You need to set up this security group for all other installation options.
 ---
 
-= Security group rules in Azure
+= Connector security group rules in Azure
 :hardbreaks:
 :nofooter:
 :icons: font
