@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-managing-connectors.html
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui
 summary: After you create a Connector, you might need to manage it every now and then. For example, you might want to switch between Connectors if you have more than one. Or you might need to manually upgrade the Connector when using BlueXP in private mode.
 ---
 
