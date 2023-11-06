@@ -21,7 +21,7 @@ Download the product installer from the NetApp Support Site and then manually in
 
 If you want to use BlueXP in the https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^] or the https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], then you should follow separate instructions to get started in those environments. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html[Learn how to get started with Cloud Volumes ONTAP in the AWS Secret Cloud or Top Secret Cloud^]
 
-.Required privileges
+.Before you begin
 
 Root privileges are required to install the Connector.
 
