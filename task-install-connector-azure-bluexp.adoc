@@ -361,3 +361,5 @@ The virtual machine should be ready in about 7 minutes. You should stay on the p
 .Result
 
 After the process is complete, the Connector is available for use from BlueXP.
+
+If you have Azure Blob storage in the same Azure subscription where you created the Connector, you'll see an Azure Blob storage working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html[Learn how to manage Azure Blob storage from BlueXP^]

@@ -1,0 +1,4 @@
+---
+permalink: task-viewing-amazon-s3.html
+redirect: bluexp-s3-storage/task-viewing-amazon-s3.html
+---

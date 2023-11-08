@@ -1,0 +1,4 @@
+---
+permalink: task-viewing-gcp-storage.html
+redirect: bluexp-google-cloud-storage/task-viewing-gcp-storage.html
+---
