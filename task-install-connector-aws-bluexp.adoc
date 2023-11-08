@@ -257,3 +257,5 @@ The instance should be ready in about 7 minutes. You should stay on the page unt
 .Result
 
 After the process is complete, the Connector is available for use from BlueXP.
+
+If you have Amazon S3 buckets in the same AWS account where you created the Connector, you'll see an Amazon S3 working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html[Learn how to manage S3 buckets from BlueXP^]
