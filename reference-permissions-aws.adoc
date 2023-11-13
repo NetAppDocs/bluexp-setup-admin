@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-permissions-aws.html
-keywords: permissions, actions, aws, aws permissions
+keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions
 summary: When BlueXP launches the Connector instance in AWS, it attaches a policy to the instance that provides the Connector with permissions to manage resources and processes within that AWS account. The Connector uses the permissions to make API calls to several AWS services, including EC2, S3, CloudFormation, IAM, the Key Management Service, and more.
 ---
 
