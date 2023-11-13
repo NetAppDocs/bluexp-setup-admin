@@ -216,6 +216,12 @@ homepage:
           url: concept-connectors.html
         - title: Manage Connectors
           url: task-managing-connectors.html
+        - title: View AWS permissions
+          url: reference-permissions-aws.html
+        - title: View Azure permissions
+          url: reference-permissions-azure.html
+        - title: View Google Cloud permissions
+          url: reference-permissions-gcp.html
     - title: AWS
       links:
         - title: Get started in a standard AWS region
@@ -226,8 +232,28 @@ homepage:
           url: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html
         - title: View IAM policies for the Connector
           url: reference-permissions-aws.html
-        - title: Manage AWS credentials
+        - title: Manage credentials and subscriptions
           url: task-adding-aws-accounts.html
+    - title: Azure
+      links:
+        - title: Get started in a standard Azure region
+          url: task-quick-start-standard-mode.html
+        - title: Get started in an Azure Gov region
+          url: task-quick-start-restricted-mode.html
+        - title: Get started in Azure IL6
+          url: https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html
+        - title: View the custom role for the Connector
+          url: reference-permissions-azure.html
+        - title: Manage credentials and subscriptions
+          url: task-adding-azure-accounts.html
+    - title: Google Cloud
+      links:
+        - title: Get started in a standard Google Cloud region
+          url: task-quick-start-standard-mode.html
+        - title: View the service account for the Connector
+          url: reference-permissions-gcp.html
+        - title: Manage credentials and subscriptions
+          url: task-adding-gcp-accounts.html
     - title: Permissions
       links:
         - title: Permissions summary
