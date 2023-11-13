@@ -254,6 +254,18 @@ homepage:
           url: reference-permissions-gcp.html
         - title: Manage credentials and subscriptions
           url: task-adding-gcp-accounts.html
+    - title: On premises
+      links:
+        - title: Install and set up a Connector in standard mode
+          url: task-install-connector-on-prem.html
+        - title: Install and set up a Connector in private mode
+          url: task-quick-start-private-mode.html
+    - title: Logging in
+      links:
+        - title: Log in to BlueXP
+          url: task-logging-in.html
+        - title: Using identity federation with BlueXP
+          url: concept-federation.html
     - title: Blogs & community
       links:
         - title: NetApp Community
