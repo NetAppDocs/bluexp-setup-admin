@@ -238,7 +238,7 @@ homepage:
       links:
         - title: Get started in a standard Azure region
           url: task-quick-start-standard-mode.html
-        - title: Get started in an Azure Gov region
+        - title: Get started in an Azure Government region
           url: task-quick-start-restricted-mode.html
         - title: Get started in Azure IL6
           url: task-quick-start-private-mode.html
