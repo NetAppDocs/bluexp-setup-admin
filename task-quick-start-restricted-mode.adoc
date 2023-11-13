@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-quick-start-restricted-mode.html
-keywords: quick start, restricted mode quick start
+keywords: quick start, restricted mode quick start, govcloud, government, aws gov, azure gov
 summary: Get started with BlueXP in restricted mode by preparing your environment, deploying the Connector, and subscribing to BlueXP.
 ---
 
@@ -15,7 +15,7 @@ summary: Get started with BlueXP in restricted mode by preparing your environmen
 [.lead]
 Get started with BlueXP in restricted mode by preparing your environment, deploying the Connector, and subscribing to BlueXP.
 
-Before you get started, you should have an understanding of link:concept-netapp-accounts.html[BlueXP accounts], link:concept-connectors.html[Connectors], and link:concept-modes.html[deployment modes].
+Restricted mode is typically used by state and local governments and regulated companies, including deployments in AWS GovCloud and Azure Government regions. Before you get started, you should have an understanding of link:concept-netapp-accounts.html[BlueXP accounts], link:concept-connectors.html[Connectors], and link:concept-modes.html[deployment modes].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-restricted-mode.html[Prepare for deployment]
 

@@ -214,36 +214,58 @@ homepage:
       links:
         - title: Learn about Connectors
           url: concept-connectors.html
-        - title: Create a Connector in AWS (standard mode)
-          url: task-install-connector-aws-bluexp.html
-        - title: Create a Connector in Azure (standard mode)
-          url: task-install-connector-azure-bluexp.html
-        - title: Create a Connector in Google Cloud (standard mode)
-          url: task-install-connector-google-bluexp-gcloud.html
-        - title: Create a Connector on premises (standard mode)
-          url: task-install-connector-on-prem.html
         - title: Manage Connectors
           url: task-managing-connectors.html
-    - title: Permissions
-      links:
-        - title: Permissions summary
-          url: reference-permissions.html
-        - title: AWS permissions for the Connector
+        - title: View AWS permissions
           url: reference-permissions-aws.html
-        - title: Azure permissions for the Connector
+        - title: View Azure permissions
           url: reference-permissions-azure.html
-        - title: Google Cloud permissions for the Connector
-          url: reference-permissions-gcp.html      
-    - title: Credentials
+        - title: View Google Cloud permissions
+          url: reference-permissions-gcp.html
+    - title: AWS
       links:
-        - title: Manage AWS credentials
+        - title: Get started in a standard AWS region
+          url: task-quick-start-standard-mode.html
+        - title: Get started in an AWS GovCloud region
+          url: task-quick-start-restricted-mode.html
+        - title: Get started in AWS Secret or Top Secret Cloud
+          url: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html
+        - title: View IAM policies for the Connector
+          url: reference-permissions-aws.html
+        - title: Manage credentials and subscriptions
           url: task-adding-aws-accounts.html
-        - title: Manage Azure credentials
+    - title: Azure
+      links:
+        - title: Get started in a standard Azure region
+          url: task-quick-start-standard-mode.html
+        - title: Get started in an Azure Government region
+          url: task-quick-start-restricted-mode.html
+        - title: Get started in Azure IL6
+          url: task-quick-start-private-mode.html
+        - title: View the custom role for the Connector
+          url: reference-permissions-azure.html
+        - title: Manage credentials and subscriptions
           url: task-adding-azure-accounts.html
-        - title: Manage Google Cloud credentials
+    - title: Google Cloud
+      links:
+        - title: Get started in a standard Google Cloud region
+          url: task-quick-start-standard-mode.html
+        - title: View the service account for the Connector
+          url: reference-permissions-gcp.html
+        - title: Manage credentials and subscriptions
           url: task-adding-gcp-accounts.html
-        - title: Manage NSS credentials for your account
-          url: task-adding-nss-accounts.html
+    - title: On premises
+      links:
+        - title: Install and set up a Connector in standard mode
+          url: task-install-connector-on-prem.html
+        - title: Install and set up a Connector in private mode
+          url: task-quick-start-private-mode.html
+    - title: Logging in
+      links:
+        - title: Log in to BlueXP
+          url: task-logging-in.html
+        - title: Using identity federation with BlueXP
+          url: concept-federation.html
     - title: Blogs & community
       links:
         - title: NetApp Community
