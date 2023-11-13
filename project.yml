@@ -214,16 +214,20 @@ homepage:
       links:
         - title: Learn about Connectors
           url: concept-connectors.html
-        - title: Create a Connector in AWS (standard mode)
-          url: task-install-connector-aws-bluexp.html
-        - title: Create a Connector in Azure (standard mode)
-          url: task-install-connector-azure-bluexp.html
-        - title: Create a Connector in Google Cloud (standard mode)
-          url: task-install-connector-google-bluexp-gcloud.html
-        - title: Create a Connector on premises (standard mode)
-          url: task-install-connector-on-prem.html
         - title: Manage Connectors
           url: task-managing-connectors.html
+    - title: AWS
+      links:
+        - title: Get started in a standard AWS region
+          url: task-quick-start-standard-mode.html
+        - title: Get started in an AWS GovCloud region
+          url: task-quick-start-restricted-mode.html
+        - title: Get started in AWS Secret or Top Secret Cloud
+          url: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html
+        - title: View IAM policies for the Connector
+          url: reference-permissions-aws.html
+        - title: Manage AWS credentials
+          url: task-adding-aws-accounts.html
     - title: Permissions
       links:
         - title: Permissions summary
