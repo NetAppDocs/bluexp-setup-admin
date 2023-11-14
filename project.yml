@@ -147,14 +147,6 @@ sidebar:
               url: /task-adding-nss-accounts.html
             - title: Manage credentials associated with your BlueXP login
               url: /task-manage-user-credentials.html
-        - title: Discovered cloud storage
-          entries:
-            - title: Manage your Amazon S3 buckets
-              url: /task-viewing-amazon-s3.html
-            - title: Manage your Azure Blob accounts
-              url: /task-viewing-azure-blob.html
-            - title: Manage your Google Cloud Storage buckets
-              url: /task-viewing-gcp-storage.html
     - title: Reference
       entries:
         - title: Permissions
