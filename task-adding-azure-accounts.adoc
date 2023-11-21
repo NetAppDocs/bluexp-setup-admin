@@ -5,7 +5,7 @@ keywords: permissions, microsoft, azure, permissions, custom role, role, json, a
 summary: Add and manage Azure credentials so that BlueXP has the permissions that it needs to deploy and manage cloud resources in your Azure subscriptions. If you manage multiple Azure Marketplace subscriptions, you can assign each one of them to different Azure credentials from the Credentials page.
 ---
 
-= Manage Azure credentials and subscriptions for BlueXP
+= Manage Azure credentials and marketplace subscriptions for BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -176,7 +176,9 @@ After you add your Azure credentials to BlueXP, you can associate an Azure Marke
 There are two scenarios in which you might associate an Azure Marketplace subscription after you've already added the credentials to BlueXP:
 
 * You didn't associate a subscription when you initially added the credentials to BlueXP.
-* You want to replace an existing Azure Marketplace subscription with a new subscription.
+* You want to change the Azure Marketplace subscription that is associated with Azure credentials. 
++
+Replacing the current marketplace subscription with a new subscription changes the marketplace subscription for any existing Cloud Volumes ONTAP working environments and all new working environments.
 
 .Before you begin
 
