@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-managing-connectors.html
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui
 summary: After you create a Connector, you might need to manage it every now and then. For example, you might want to switch between Connectors if you have more than one. Or you might need to manually upgrade the Connector when using BlueXP in private mode.
 ---
 
@@ -16,6 +16,13 @@ summary: After you create a Connector, you might need to manage it every now and
 After you create a Connector, you might need to manage it every now and then. For example, you might want to switch between Connectors if you have more than one. Or you might need to manually upgrade the Connector when using BlueXP in private mode.
 
 link:concept-connectors.html[Learn how Connectors work].
+
+[NOTE]
+====
+The Connector includes a local UI, which is accessible from the Connector host. This UI is provided for customers who are using BlueXP in restricted mode or private mode. When you use BlueXP in standard mode, you should access the user interface from the https://console.bluexp.netapp.com/[BlueXP SaaS console^]
+
+link:concept-modes.html[Learn about BlueXP deployment modes].
+====
 
 == Operating system and VM maintenance 
 
@@ -85,7 +92,7 @@ If you are using BlueXP in private mode, you can upgrade the Connector when a ne
 
 The Connector needs to restart during the upgrade process so the web-based console will be unavailable during the upgrade.
 
-NOTE: On hosts that have internet access, the Connector automatically updates its software to the latest version, as long as it has outbound internet access to obtain the software update.
+NOTE: When you use BlueXP in standard mode or restricted mode, the Connector automatically updates its software to the latest version, as long as it has outbound internet access to obtain the software update.
 
 .Steps
 

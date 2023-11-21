@@ -76,6 +76,8 @@ When you use BlueXP in standard mode, a Connector is required for the following 
 
 ^1^ While you can access these services without a Connector, a Connector is required to initiate actions from the services.
 
+A Connector is required to use BlueXP in restricted mode or private mode.
+
 == Connectors must be operational at all times
 
 Connectors are a fundamental part of the BlueXP service architecture. It's your responsibility to ensure that relevant Connectors are up, operational, and accessible at all times. While the service is designed to overcome short outages of Connector availability, you must take immediate action when required to remedy infrastructure failures.
@@ -115,9 +117,9 @@ link:concept-modes.html[Learn about BlueXP deployment modes].
 A BlueXP Account Admin can create a Connector directly from BlueXP, from your cloud provider's marketplace, or by manually installing the software on your own Linux host. How you get started depends on whether you're using BlueXP in standard mode, restricted mode, or private mode.
 
 * link:concept-modes.html[Learn about BlueXP deployment modes]
-* link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode]
-* link:task-quick-start-restricted-mode.html[Quick start for BlueXP in restricted mode]
-* link:task-quick-start-private-mode.html[Quick start for BlueXP in private mode]
+* link:task-quick-start-standard-mode.html[Get started with BlueXP in standard mode]
+* link:task-quick-start-restricted-mode.html[Get started with BlueXP in restricted mode]
+* link:task-quick-start-private-mode.html[Get started with BlueXP in private mode]
 
 == Permissions
 
@@ -135,7 +137,7 @@ To learn how to set up permissions, refer to the following:
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
-To view the exact permissions that the Connector needs, refer to the following pages:
+To view the exact permissions that the Connector needs for day-to-day operations, refer to the following pages:
 
 * link:reference-permissions-aws.html[Learn how the Connector uses AWS permissions]
 * link:reference-permissions-azure.html[Learn how the Connector uses Azure permissions]
@@ -145,7 +147,7 @@ To view the exact permissions that the Connector needs, refer to the following p
 
 We typically update the Connector software each month to introduce new features and to provide stability improvements. While most of the services and features in the BlueXP platform are offered through SaaS-based software, a few features and functionalities are dependent on the version of the Connector. That includes Cloud Volumes ONTAP management, on-prem ONTAP cluster management, settings, and help.
 
-The Connector automatically updates its software to the latest version, as long as it has outbound internet access to obtain the software update. If you're using BlueXP in private mode, then you'll need to manually upgrade the Connector.
+When you use BlueXP in standard mode or restricted mode, the Connector automatically updates its software to the latest version, as long as it has outbound internet access to obtain the software update. If you're using BlueXP in private mode, then you'll need to manually upgrade the Connector.
 
 link:task-managing-connectors.html[Learn how to manually upgrade the Connector software].
 
@@ -153,7 +155,7 @@ link:task-managing-connectors.html[Learn how to manually upgrade the Connector s
 
 include::_include/vm-maintenance.adoc[]
 
-<<Connectors must be operational at all times,Be aware that the Connector must be operational at all times>>. 
+<<Connectors must be operational at all times,Be aware that the Connector must be operational at all times>>.
 
 == Multiple working environments
 

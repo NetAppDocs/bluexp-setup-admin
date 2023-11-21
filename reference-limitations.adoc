@@ -19,10 +19,6 @@ These limitations are specific to BlueXP set up and administration: the Connecto
 
 == Connector limitations
 
-=== Proxy configuration with domain users
-
-BlueXP does not support domain users when configuring a proxy server for the Connector. When you enter a user name for the proxy server, it must be a local user.
-
 === Default EC2 instance settings should not be changed
 
 When you deploy the Connector in AWS, the following EC2 instance settings are configured by default:

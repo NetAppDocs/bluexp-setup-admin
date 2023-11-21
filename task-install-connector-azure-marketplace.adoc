@@ -199,7 +199,11 @@ https://_ipaddress_
 You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. You should enable restricted mode only if you have a secure environment and want to disconnect this account from BlueXP backend services. If that's the case, link:task-quick-start-restricted-mode.html[follow steps to get started with BlueXP in restricted mode].
 .. Select *Let's start*.
 
+.Result
+
 The Connector is now installed and is set up with your BlueXP account.
+
+If you have Azure Blob storage in the same Azure subscription where you created the Connector, you'll see an Azure Blob storage working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html[Learn how to manage Azure Blob storage from BlueXP^]
 
 == Step 5: Provide permissions to BlueXP
 

@@ -5,7 +5,7 @@ keywords: ports, firewall rules, http, https, inbound, outbound
 summary: The Google Cloud firewall rules for the Connector requires both inbound and outbound rules. BlueXP automatically creates this security group when you create a Connector from BlueXP. You need to set up this security group for all other installation options.
 ---
 
-= Firewall rules in Google Cloud
+= Connector firewall rules in Google Cloud
 :hardbreaks:
 :nofooter:
 :icons: font

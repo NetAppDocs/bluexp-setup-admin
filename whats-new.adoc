@@ -18,6 +18,18 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 8 November 2023
+
+=== Connector 3.9.35
+
+This release contains minor security improvements and bug fixes.
+
+== 6 October 2023
+
+=== Connector 3.9.34
+
+This release contains minor improvements and bug fixes.
+
 == 10 September 2023
 
 === Connector 3.9.33
@@ -27,6 +39,8 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png[A screenshot of the search option in the Key Pair field which appears on the Network page when creating a Connector in AWS from BlueXP.]
 
 * This update also includes bug fixes.
+
+//end::whats-new[]
 
 == 30 July 2023
 
@@ -110,8 +124,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html[See
 
 +
 https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
-
-//end::whats-new[]
 
 == 7 May 2023
 

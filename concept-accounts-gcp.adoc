@@ -5,7 +5,7 @@ keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, goo
 summary: Learn how BlueXP uses Google Cloud credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more Google Cloud projects. For example, you might want to learn about the service account that's associated with the Connector VM.
 ---
 
-= Learn about Google Cloud credentials, projects, and subscriptions
+= Learn about Google Cloud projects and permissions
 :hardbreaks:
 :nofooter:
 :icons: font
