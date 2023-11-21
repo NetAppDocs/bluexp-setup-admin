@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept-accounts-azure.html
-keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials
-summary: Learn how BlueXP uses Azure credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription
+summary: Learn how BlueXP uses Azure credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
 ---
 
 = Learn about Azure credentials and permissions
@@ -13,7 +13,7 @@ summary: Learn how BlueXP uses Azure credentials and permissions to perform acti
 :imagesdir: ./media/
 
 [.lead]
-Learn how BlueXP uses Azure credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
+Learn how BlueXP uses Azure credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
 
 == Initial Azure credentials
 
@@ -45,7 +45,38 @@ For example, you can switch between credentials when creating a new Cloud Volume
 
 image:screenshot_accounts_switch_azure.gif["A screenshot that shows selecting between cloud provider accounts after selecting Switch Account in the Details & Credentials page."]
 
-== What about Marketplace deployments and on-prem deployments?
+== Credentials and marketplace subscriptions
+
+The credentials that you add to a Connector must be associated with an Azure Marketplace subscription so that you can pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or through an annual contract, and to use other BlueXP services.
+
+link:task-adding-azure-accounts.html#subscribe[Learn how to associate an Azure subscription].
+
+Note the following about Azure credentials and marketplace subscriptions:
+
+* You can associate only one Azure Marketplace subscription with a set of Azure credentials
+* You can replace an existing marketplace subscription with a new subscription
+
+== FAQ
+
+The following question is related to credentials and subscriptions.
+
+=== Can I change the Azure Marketplace subscription for Cloud Volumes ONTAP working environments?
+
+Yes, you can. When you change the Azure Marketplace subscription that's associated with a set of Azure credentials, all existing and new Cloud Volumes ONTAP working environments will be charged against the new subscription.
+
+link:task-adding-azure-accounts.html#subscribe[Learn how to associate an Azure subscription].
+
+=== Can I add multiple Azure credentials, each with different marketplace subscriptions?
+
+All Azure credentials that belong to the same Azure subscription will be associated with the same Azure Marketplace subscription.
+
+If you have multiple Azure credentials that belong to different Azure subscriptions, then those credentials can be associated with the same Azure Marketplace subscription or with different marketplace subscriptions.
+
+=== Can I move existing Cloud Volumes ONTAP working environments to a different Azure subscription?
+
+No, it's not possible to move the Azure resources associated with your Cloud Volumes ONTAP working environment to a different Azure subscription.
+
+=== How do credentials work for marketplace deployments and on-prem deployments?
 
 The sections above describe the recommended deployment method for the Connector, which is from BlueXP. You can also deploy a Connector in Azure from the Azure Marketplace, and you can install the Connector software on your own Linux host.
 

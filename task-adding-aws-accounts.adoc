@@ -5,7 +5,7 @@ keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam p
 summary: Add and manage AWS credentials so that BlueXP has the permissions that it needs to deploy and manage cloud resources in your AWS accounts. If you manage multiple AWS subscriptions, you can assign each one of them to different AWS credentials from the Credentials page.
 ---
 
-= Manage AWS credentials and subscriptions for BlueXP
+= Manage AWS credentials and marketplace subscriptions for BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -202,7 +202,9 @@ After you add your AWS credentials to BlueXP, you can associate an AWS Marketpla
 There are two scenarios in which you might associate an AWS Marketplace subscription after you've already added the credentials to BlueXP:
 
 * You didn't associate a subscription when you initially added the credentials to BlueXP.
-* You want to replace an existing AWS Marketplace subscription with a new subscription.
+* You want to change the AWS Marketplace subscription that is associated with AWS credentials. 
++
+Replacing the current marketplace subscription with a new subscription changes the marketplace subscription for any existing Cloud Volumes ONTAP working environments and all new working environments.
 
 .Before you begin
 

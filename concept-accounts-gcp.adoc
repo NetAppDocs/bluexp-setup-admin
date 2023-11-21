@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-accounts-gcp.html
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project
-summary: Learn how BlueXP uses Google Cloud credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more Google Cloud projects. For example, you might want to learn about the service account that's associated with the Connector VM.
+summary: Learn how BlueXP uses Google Cloud credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more Google Cloud projects. For example, you might want to learn about the service account that's associated with the Connector VM.
 ---
 
 = Learn about Google Cloud projects and permissions
@@ -13,7 +13,7 @@ summary: Learn how BlueXP uses Google Cloud credentials and permissions to perfo
 :imagesdir: ./media/
 
 [.lead]
-Learn how BlueXP uses Google Cloud credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more Google Cloud projects. For example, you might want to learn about the service account that's associated with the Connector VM.
+Learn how BlueXP uses Google Cloud credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more Google Cloud projects. For example, you might want to learn about the service account that's associated with the Connector VM.
 
 == Project and permissions for BlueXP
 
@@ -34,6 +34,18 @@ To learn how to set up permissions, refer to the following pages:
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector[Set up Google Cloud permissions for standard mode]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
+
+== Credentials and marketplace subscriptions
+
+When you deploy a Connector in Google Cloud, BlueXP creates a default set of credentials for the Google Cloud service account in the project in which the Connector resides. These credentials must be associated with a Google Cloud Marketplace subscription so that you can pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) and use other BlueXP services.
+
+link:task-adding-gcp-accounts.html[Learn how to associate a Google Cloud Marketplace subscription].
+
+Note the following about Google Cloud credentials and marketplace subscriptions:
+
+* Only one set of Google Cloud credentials can be associated with a Connector
+* You can associate only one Google Cloud Marketplace subscription with the credentials
+* You can replace an existing marketplace subscription with a new subscription
 
 == Project for Cloud Volumes ONTAP
 
