@@ -18,6 +18,15 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 6 December 2023
+
+=== Connector 3.9.36
+
+This release includes minor improvements, bug fixes, and support for the Connector in the following cloud regions:
+
+* The Israel (Tel Aviv) region in AWS
+* The Saudi Arabia region in Google Cloud
+
 == 8 November 2023
 
 === Connector 3.9.35
