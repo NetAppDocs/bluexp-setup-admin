@@ -24,7 +24,12 @@ These endpoints are contacted from a user's computer when completing specific ac
 
 | 
 \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com  
+\https://*.console.bluexp.netapp.com
+
+| 
+\https://aiq.netapp.com
+
+| Required to access BlueXP digital advisor.
 
 | Your web browser contacts these URLs when you use the BlueXP web-based console.
 
