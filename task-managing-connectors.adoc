@@ -198,29 +198,31 @@ BlueXP removes the Connector from its records.
 
 == Uninstall the Connector software
 
-Uninstall the Connector software to troubleshoot issues or to permanently remove the software from the host. The steps that you need to use depends on whether you installed the Connector on a host that has internet access or a host in a restricted network that doesn't have internet access.
+Uninstall the Connector software to troubleshoot issues or to permanently remove the software from the host. The steps that you need to use depends on whether you installed the Connector on a host that has internet access (standard mode or restricted mode) or a host in a network that doesn't have internet access (private mode).
 
-=== Uninstall from a host with internet access
+=== Uninstall when using standard mode or restricted mode
 
-The online Connector includes an uninstallation script that you can use to uninstall the software.
+The steps below enable you to uninstall the Connector software when using BlueXP in standard mode or restricted mode.
 
-.Step
+.Steps
+
+. Connect to the Linux VM for the Connector.
 
 . From the Linux host, run the uninstallation script:
 +
-[source,cli]
-/opt/application/netapp/service-manager-2/uninstall.sh [silent]
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
 +
 _silent_ runs the script without prompting you for confirmation.
 
-=== Uninstall from a host without internet access
+=== Uninstall when using private mode
 
-Use these commands if you downloaded the Connector software from the NetApp Support Site and installed it in a restricted network that doesn't have internet access.
+The steps below enable you to uninstall the Connector software when using BlueXP in private mode where no internet access is available.
 
-.Step
+.Steps
+
+. Connect to the Linux VM for the Connector.
 
 . From the Linux host, run the following commands:
 +
-[source,cli]
-docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
-rm -rf /opt/application/netapp/ds
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
