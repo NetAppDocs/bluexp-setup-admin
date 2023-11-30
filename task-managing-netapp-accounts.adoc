@@ -107,11 +107,13 @@ The user can now access those workspaces from BlueXP, as long as the Connector w
 
 == Create and manage service accounts
 
-A service account acts as a "user" that can make authorized API calls to BlueXP for automation purposes. This makes it easier to manage automation because you don't need to build automation scripts based on a real person's user account who can leave the company at any time. And if you're using federation, you can create a token without generating a refresh token from the cloud.
+A service account acts as a "user" that can make authorized API calls to BlueXP for automation purposes. This makes it easier to manage automation because you don't need to build automation scripts based on a real person's user account who can leave the company at any time.
 
 You give permissions to a service account by assigning it a role, just like any other BlueXP user. You can also associate the service account with specific workspaces in order to control the working environments (resources) that the service can access.
 
 When you create the service account, BlueXP enables you to copy or download a client ID and client secret for the service account. This key pair is used for authentication with BlueXP.
+
+Note that a refresh token is not required for API operations when using a service account. https://docs.netapp.com/us-en/bluexp-automation/platform/grant_types.html[Learn about refresh tokens^]
 
 === Create a service account
 

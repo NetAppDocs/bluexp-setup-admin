@@ -5,7 +5,7 @@ The Connector is not supported on a host that is shared with other applications.
 
 //tag::os[]
 Supported operating systems::
-* Ubuntu 22.04
+* Ubuntu 22.04 LTS
 * CentOS 7.6, 7.7, 7.8, and 7.9
 * Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
 +
