@@ -210,8 +210,7 @@ The steps below enable you to uninstall the Connector software when using BlueXP
 
 . From the Linux host, run the uninstallation script:
 +
-[source,cli]
-/opt/application/netapp/service-manager-2/uninstall.sh [silent]
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
 +
 _silent_ runs the script without prompting you for confirmation.
 
@@ -222,13 +221,6 @@ The steps below enable you to uninstall the Connector software when using BlueXP
 .Steps
 
 . Connect to the Linux VM for the Connector.
-
-. From the Linux host, run the following commands:
-+
-pass:[.]
-[source,cli]
-./opt/application/netapp/ds/cleanup.sh
-rm -rf /opt/application/netapp/ds
 
 . From the Linux host, run the following commands:
 +
