@@ -303,9 +303,15 @@ BlueXP supports the following storage and data services with private mode when t
 | Notes
 
 | Backup and recovery
-| Only back up and restore of on-prem ONTAP volumes to StorageGRID systems is supported.
+a| 
 
+* Back up and restore of on-prem ONTAP volumes to StorageGRID systems is supported.
++
 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html[Learn how to back up on-prem ONTAP data to StorageGRID^]
+
+* Back up and restore of on-prem ONTAP volumes to ONTAP S3 is also supported.
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html[Learn how to back up on-prem ONTAP data to ONTAP S3^]
 
 | Classification
 a| 
