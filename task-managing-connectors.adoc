@@ -97,20 +97,22 @@ NOTE: When you use BlueXP in standard mode or restricted mode, the Connector aut
 .Steps
 
 . Download the Connector software from the https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab[NetApp Support Site^].
++
+Be sure to download the offline installer for private networks without internet access.
 
 . Copy the installer to the Linux host.
 
 . Assign permissions to run the script.
 +
 [source,cli]
-chmod +x /path/cloud-manager-connector-offline-<version>
+chmod +x /path/BlueXP-Connector-offline-<version>
 +
 Where <version> is the version of the Connector that you downloaded.
 
 . Run the installation script:
 +
 [source,cli]
-sudo /path/cloud-manager-connector-offline-<version>
+sudo /path/BlueXP-Connector-offline-<version>
 +
 Where <version> is the version of the Connector that you downloaded.
 
