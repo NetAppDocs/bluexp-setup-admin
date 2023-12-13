@@ -187,9 +187,6 @@ The Connector makes the following API requests when you use BlueXP classificatio
 The Connector makes the following API requests for BlueXP backup and recovery:
 
 //tag::backup-permissions[]
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Compute/virtualMachines/start/action
-* Microsoft.Compute/virtualMachines/deallocate/action
 * Microsoft.Storage/storageAccounts/listkeys/action
 * Microsoft.Storage/storageAccounts/read
 * Microsoft.Storage/storageAccounts/write
@@ -212,8 +209,6 @@ The Connector makes the following API requests for BlueXP backup and recovery:
 * Microsoft.Network/privateDnsZones/A/write
 * Microsoft.Network/privateDnsZones/read
 * Microsoft.Network/privateDnsZones/virtualNetworkLinks/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * Microsoft.Resources/deployments/delete
@@ -518,6 +513,18 @@ The Connector makes the following API requests for daily operations.
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
+
+=== 5 December, 2023
+
+The following permissions are no longer needed for BlueXP backup and recovery when backing up volume data to Azure Blob storage:
+
+* Microsoft.Compute/virtualMachines/read
+* Microsoft.Compute/virtualMachines/start/action
+* Microsoft.Compute/virtualMachines/deallocate/action
+* Microsoft.Compute/virtualMachines/extensions/delete
+* Microsoft.Compute/virtualMachines/delete
+
+These permissions are required for other BlueXP storage services, so they'll still remain in the custom role for the Connector if you're using those other storage services.
 
 === 12 May, 2023
 

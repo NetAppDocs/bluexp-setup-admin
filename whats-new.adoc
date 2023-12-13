@@ -27,6 +27,20 @@ This release includes minor improvements, bug fixes, and support for the Connect
 * The Israel (Tel Aviv) region in AWS
 * The Saudi Arabia region in Google Cloud
 
+== 5 December 2023
+
+=== Private mode release
+
+A new private mode release is now available for BlueXP. This release includes version 3.9.35 of the Connector and versions of the BlueXP services that are supported with private mode as of October 2023.
+
+This new release is available to download from the NetApp Support Site.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode[Learn about the BlueXP services that are included with private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+
 == 8 November 2023
 
 === Connector 3.9.35
@@ -39,6 +53,8 @@ This release contains minor security improvements and bug fixes.
 
 This release contains minor improvements and bug fixes.
 
+//end::whats-new[]
+
 == 10 September 2023
 
 === Connector 3.9.33
@@ -48,8 +64,6 @@ This release contains minor improvements and bug fixes.
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png[A screenshot of the search option in the Key Pair field which appears on the Network page when creating a Connector in AWS from BlueXP.]
 
 * This update also includes bug fixes.
-
-//end::whats-new[]
 
 == 30 July 2023
 
