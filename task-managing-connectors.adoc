@@ -30,6 +30,20 @@ include::_include/vm-maintenance.adoc[]
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be aware that the Connector must be operational at all times].
 
+== View a Connector's version
+
+You can view the version of your Connector to verify that the Connector automatically upgraded to the latest release or because you need to share it with your NetApp representative.
+
+.Steps
+
+. In the upper right of the BlueXP console, select the Help icon.
+
+. Select *Support > BlueXP Connector*.
++
+The version displays at the top of the page.
++
+image:screenshot-connector-version.png[A screenshot that shows the Connector version in the Support Dashboard.]
+
 == Switch between Connectors
 
 If you have multiple Connectors, you can switch between them to see the Working Environments that are associated with a specific Connector.

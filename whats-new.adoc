@@ -18,6 +18,15 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 11 January 2024
+
+=== Connector 3.9.36
+
+This release includes minor improvements, bug fixes, and support for the Connector in the following cloud regions:
+
+* The Israel (Tel Aviv) region in AWS
+* The Saudi Arabia region in Google Cloud
+
 == 5 December 2023
 
 === Private mode release
@@ -38,13 +47,13 @@ This new release is available to download from the NetApp Support Site.
 
 This release contains minor security improvements and bug fixes.
 
+//end::whats-new[]
+
 == 6 October 2023
 
 === Connector 3.9.34
 
 This release contains minor improvements and bug fixes.
-
-//end::whats-new[]
 
 == 10 September 2023
 
