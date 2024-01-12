@@ -363,7 +363,7 @@ Note that some services might be supported with limitations. For more details ab
 
 .11+| *Working environments*
 
-This section lists support for working environment management from the BlueXP canvas. It does not list supported backup destinations for BlueXP backup and recovery.
+This portion of the table lists support for working environment management from the BlueXP canvas. It does not list the supported backup destinations for BlueXP backup and recovery.
 | Amazon FSx for ONTAP | Yes | No
 | Amazon S3 | No | No
 | Azure Blob | No | No
