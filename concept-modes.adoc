@@ -311,7 +311,7 @@ BlueXP supports the following storage and data services with private mode when t
 | Backup and recovery
 a| 
 
-In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
+In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP volume data^]
 
 Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
 
