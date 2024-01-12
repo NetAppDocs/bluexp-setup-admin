@@ -286,7 +286,7 @@ BlueXP supports the following storage and data services with private mode when t
 
 Not supported in Google Cloud or in https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], or https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
-In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP data^]
+In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 
 Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
 
@@ -311,7 +311,7 @@ BlueXP supports the following storage and data services with private mode when t
 | Backup and recovery
 a| 
 
-In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP data^]
+In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 
 Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
 
@@ -361,9 +361,9 @@ Note that some services might be supported with limitations. For more details ab
 | Restricted mode
 | Private mode
 
-.11+| *Working environments*
+.11+| *Working environment management from the BlueXP canvas*
 
-This section lists support for storage discovery and management from the BlueXP canvas. This section does not cover supported backup destinations for BlueXP backup and recovery.
+This section does not pertain to supported backup destinations for BlueXP backup and recovery.
 | Amazon FSx for ONTAP | Yes | No
 | Amazon S3 | No | No
 | Azure Blob | No | No
@@ -379,9 +379,9 @@ This section lists support for storage discovery and management from the BlueXP 
 .16+| *Services*
 | Backup and recovery 
 | Yes
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP data^]
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 | Yes
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destination for ONTAP data^]
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 | Classification | Yes | Yes
 | Cloud ops | No | No
 | Copy and sync | No | No
