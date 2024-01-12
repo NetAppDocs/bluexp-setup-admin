@@ -187,9 +187,11 @@ BlueXP supports the following storage and data services with restricted mode:
 
 | Azure NetApp Files | Full support
 
-| Backup and recovery | Supported in Government regions and commercial regions with restricted mode. Not supported in sovereign regions with restricted mode. 
+| Backup and recovery | Supported in Government regions and commercial regions with restricted mode. Not supported in sovereign regions with restricted mode.
 
-The following features are not supported: Applications, Virtual Machines, and Kubernetes.
+In restricted mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode[View the list of supported backup destinations for ONTAP data^]
+
+Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
 
 | Classification a| Supported in Government regions with restricted mode. Not supported in commercial regions or in sovereign regions with restricted mode. 
 
@@ -284,6 +286,10 @@ BlueXP supports the following storage and data services with private mode when t
 
 Not supported in Google Cloud or in https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], or https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
+In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP data^]
+
+Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
+
 | Cloud Volumes ONTAP | Because there's no internet access, the following features aren't available: automated software upgrades and AutoSupport.
 
 | Digital wallet | You can use the digital wallet with the supported licensing options listed below for private mode.
@@ -305,13 +311,9 @@ BlueXP supports the following storage and data services with private mode when t
 | Backup and recovery
 a| 
 
-* Back up and restore of on-prem ONTAP volumes to StorageGRID systems is supported.
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html[Learn how to back up on-prem ONTAP data to StorageGRID^]
+In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP volume data^]
 
-* Back up and restore of on-prem ONTAP volumes to ONTAP S3 is also supported.
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html[Learn how to back up on-prem ONTAP data to ONTAP S3^]
+Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
 
 | Classification
 a| 
@@ -360,6 +362,8 @@ Note that some services might be supported with limitations. For more details ab
 | Private mode
 
 .11+| *Working environments*
+
+This portion of the table lists support for working environment management from the BlueXP canvas. It does not indicate the supported backup destinations for BlueXP backup and recovery.
 | Amazon FSx for ONTAP | Yes | No
 | Amazon S3 | No | No
 | Azure Blob | No | No
@@ -373,7 +377,13 @@ Note that some services might be supported with limitations. For more details ab
 | StorageGRID | No | No 
 
 .16+| *Services*
-| Backup and recovery | Yes | Yes 
+| Backup and recovery 
+| Yes
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode[View the list of supported backup destinations for ONTAP volume data^]
+| Yes
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP volume data^]
 | Classification | Yes | Yes
 | Cloud ops | No | No
 | Copy and sync | No | No
