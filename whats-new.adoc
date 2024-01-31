@@ -18,6 +18,22 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 7 February 2024
+
+=== Connector 3.9.37
+
+This release includes enhancements, minor security improvements, and bug fixes.
+
+The enhancements include the following:
+
+* The ability to edit your name in *User Settings*.
++
+image:screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
+
+* Cloud Volumes ONTAP enhancements.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-february-2024[Learn about Cloud Volumes ONTAP enhancements^]
+
 == 11 January 2024
 
 === Connector 3.9.36
