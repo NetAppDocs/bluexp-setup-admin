@@ -80,6 +80,9 @@ include::_include/networking.adoc[tag=proxy]
 //Ports
 include::_include/networking.adoc[tag=ports]
 
+//NTP
+include::_include/networking.adoc[tag=ntp]
+
 == Step 3: Set up cloud permissions
 
 If you want to use BlueXP services in AWS or Azure with an on-premises Connector, then you need to set up permissions in your cloud provider so that you can add the credentials to the Connector after you install it.

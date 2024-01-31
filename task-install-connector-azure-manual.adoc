@@ -81,6 +81,9 @@ include::_include/networking.adoc[tag=proxy]
 //Ports
 include::_include/networking.adoc[tag=ports]
 
+//NTP
+include::_include/networking.adoc[tag=ntp]
+
 == Step 3: Set up permissions
 
 You need to provide Azure permissions to BlueXP by using one of the following options:

@@ -93,7 +93,10 @@ With private mode, the only time that BlueXP sends outbound traffic is to your c
 Ports::
 There's no incoming traffic to the Connector, unless you initiate it.
 +
-HTTP (80) and HTTPS (443) provide access to the BlueXP console. SSH (22) is only needed if you need to connect to the host for troubleshooting. 
+HTTP (80) and HTTPS (443) provide access to the BlueXP console. SSH (22) is only needed if you need to connect to the host for troubleshooting.
+
+//NTP
+include::_include/networking.adoc[tag=ntp]
 
 == Step 5: Prepare cloud permissions
 
