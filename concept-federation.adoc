@@ -46,7 +46,7 @@ Identity federation uses open standards, such as Security Assertion Markup Langu
 BlueXP supports the following identity providers:
 
 * Security Assertion Markup Language (SAML) identity providers
-* Microsoft Azure Active Directory (AD)
+* Microsoft Entra ID
 * Active Directory Federation Services (ADFS)
 * PingFederate
 
@@ -106,9 +106,9 @@ Note that the page refreshes between testing the connection and enabling the con
 
 |===
 
-=== Microsoft Azure AD
+=== Microsoft Entra ID
 
-At a high-level, setting up a federated connection between BlueXP and Azure AD includes the following steps:
+At a high-level, setting up a federated connection between BlueXP and Microsoft Entra ID includes the following steps:
 
 [cols="10,15,75",width=100%,options="header"]
 |===
@@ -117,9 +117,9 @@ At a high-level, setting up a federated connection between BlueXP and Azure AD i
 | Completed by
 | Description
 
-| 1 | AD admin a| Configure Azure Active Directory to enable identity federation with BlueXP.
+| 1 | AD admin a| Configure Microsoft Entra ID to enable identity federation with BlueXP.
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2[View instructions for registering the application with Azure AD^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2[View instructions for registering the application with Microsoft Entra ID^]
 
 TIP: Do _not_ complete the steps that describe how to create a connection in auth0. You'll create that connection in the next step.
 
@@ -129,13 +129,13 @@ To complete this step, you need to obtain the following from your AD admin:
 
 * Client ID
 * Client secret value
-* Microsoft Azure AD domain
+* Microsoft Entra ID domain
 
 After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
 
 NOTE: Take note of the secret key expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
 
-| 3 | AD admin | Complete the configuration in Azure AD using the parameters shown on the Federation Setup page after finishing step 2.
+| 3 | AD admin | Complete the configuration in Microsoft Entra ID using the parameters shown on the Federation Setup page after finishing step 2.
 
 | 4 | BlueXP admin | Test and enable the connection from the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^]
 
