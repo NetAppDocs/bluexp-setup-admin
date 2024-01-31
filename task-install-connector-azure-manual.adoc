@@ -111,9 +111,9 @@ include::_include/azure-set-up-role.adoc[]
 
 .Service principal
 --
-Create and set up a service principal in Azure Active Directory and obtain the Azure credentials that BlueXP needs.
+Create and set up a service principal in Microsoft Entra ID and obtain the Azure credentials that BlueXP needs.
 
-.Create an Azure Active Directory application for role-based access control
+.Create a Microsoft Entra application for role-based access control
 
 include::_include/azure-set-up-service-principal.adoc[tag=app]
 

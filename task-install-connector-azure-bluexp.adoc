@@ -66,7 +66,7 @@ include::_include/networking.adoc[tag=ports]
 
 == Step 2: Create a custom role
 
-Create an Azure custom role that you can assign to your Azure account or to an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
+Create an Azure custom role that you can assign to your Azure account or to a Microsoft Entra service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
 
 Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
 
@@ -177,7 +177,7 @@ When creating the Connector from BlueXP, you need to provide a login that enable
 
 . Sign in with your Azure account when prompted. This account must have specific Azure permissions. This is the default option.
 
-. Provide details about an Azure AD service principal. This service principal also requires specific permissions.
+. Provide details about a Microsoft Entra service principal. This service principal also requires specific permissions.
 
 Follow the steps to prepare one of these authentication methods for use with BlueXP.
 
@@ -219,9 +219,9 @@ The Azure user now has the permissions required to deploy the Connector from Blu
 --
 Rather than logging in with your Azure account, you can provide BlueXP with the credentials for an Azure service principal that has the required permissions.
 
-Create and set up a service principal in Azure Active Directory and obtain the Azure credentials that BlueXP needs.
+Create and set up a service principal in Microsoft Entra ID and obtain the Azure credentials that BlueXP needs.
 
-.Create an Azure Active Directory application for role-based access control
+.Create a Microsoft Entra application for role-based access control
 
 include::_include/azure-set-up-service-principal.adoc[tag=app]
 
@@ -325,7 +325,7 @@ The form is owned and hosted by Microsoft. Your credentials are not provided to 
 +
 TIP: If you're already logged in to an Azure account, then BlueXP will automatically use that account. If you have multiple accounts, then you might need to log out first to ensure that you're using the right account.
 
-* Select *Active Directory service principal* to enter information about the Azure Active Directory service principal that grants the required permissions:
+* Select *Active Directory service principal* to enter information about the Microsoft Entra service principal that grants the required permissions:
 +
 ** Application (client) ID
 ** Directory (tenant) ID

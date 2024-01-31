@@ -517,7 +517,7 @@ Starting in December 2021, NetApp now uses Microsoft Azure Active Directory as t
 If you haven't yet migrated your NSS account to IDaaS, you first need to migrate the account and then update your credentials in Cloud Manager.
 
 * link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method[Learn how to update an NSS account to the new authentication method].
-* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login[Learn more about NetApp's use of Microsoft Azure AD for identity management^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login[Learn more about NetApp's use of Microsoft Entra ID for identity management^]
 
 === Change NSS accounts for Cloud Volumes ONTAP
 

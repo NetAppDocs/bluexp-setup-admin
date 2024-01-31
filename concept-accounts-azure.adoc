@@ -35,7 +35,7 @@ The system-assigned managed identity assigned to the Connector VM is associated 
 
 == Additional Azure credentials
 
-If you want to use different Azure credentials with BlueXP, then you must grant the required permissions by link:task-adding-azure-accounts.html[creating and setting up a service principal in Azure Active Directory] for each Azure account. The following image shows two additional accounts, each set up with a service principal and custom role that provides permissions:
+If you want to use different Azure credentials with BlueXP, then you must grant the required permissions by link:task-adding-azure-accounts.html[creating and setting up a service principal in Microsoft Entra ID] for each Azure account. The following image shows two additional accounts, each set up with a service principal and custom role that provides permissions:
 
 image:diagram_permissions_multiple_azure.png["A conceptual image that shows the initial Azure account, which receives permissions through a custom role and managed identity, and two additional accounts that receive permissions through a custom role and service principal."]
 
@@ -80,7 +80,7 @@ No, it's not possible to move the Azure resources associated with your Cloud Vol
 
 The sections above describe the recommended deployment method for the Connector, which is from BlueXP. You can also deploy a Connector in Azure from the Azure Marketplace, and you can install the Connector software on your own Linux host.
 
-If you use the Marketplace, you can provide permissions by assigning a custom role to the Connector VM and to a system-assigned managed identity, or you can use Azure AD service principal.
+If you use the Marketplace, you can provide permissions by assigning a custom role to the Connector VM and to a system-assigned managed identity, or you can use a Microsoft Entra service principal.
 
 For on-premises deployments, you can't set up a managed identity for the Connector, but you can provide permissions by using a service principal.
 

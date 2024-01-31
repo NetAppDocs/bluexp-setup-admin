@@ -114,9 +114,9 @@ You should now have access keys for an IAM user who has the required permissions
 
 .Azure
 --
-When the Connector is installed on premises, you need to provide BlueXP with Azure permissions by setting up a service principal in Azure Active Directory and obtaining the Azure credentials that BlueXP needs.
+When the Connector is installed on premises, you need to provide BlueXP with Azure permissions by setting up a service principal in Microsoft Entra ID and obtaining the Azure credentials that BlueXP needs.
 
-.Create an Azure Active Directory application for role-based access control
+.Create a Microsoft Entra application for role-based access control
 
 include::_include/azure-set-up-service-principal.adoc[tag=app]
 
