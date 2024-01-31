@@ -74,7 +74,7 @@ The following table provides a comparison of these modes.
 
 | API endpoint
 | The BlueXP SaaS layer
-| The BlueXP SaaS layer
+| The Connector
 | The Connector
 
 | Authentication
@@ -166,11 +166,10 @@ Connector upgrades::
 Automated upgrades of the Connector software are available from BlueXP with monthly updates.
 
 User interface access::
-The user interface is accessible from the Connector that's deployed in your cloud region.
+The user interface is accessible from the Connector virtual machine that's deployed in your cloud region.
 
 API endpoint::
-API calls are made to the following endpoint:
-\https://cloudmanager.cloud.netapp.com
+API calls are made to the Connector virtual machine.
 
 Authentication::
 Authentication is provided through BlueXP's cloud service using auth0. Identity federation is also available.

@@ -61,6 +61,11 @@ include::_include/networking.adoc[tag=proxy]
 //Ports
 include::_include/networking.adoc[tag=ports]
 
+//NTP
+include::_include/networking.adoc[tag=ntp]
++
+You'll need to implement this networking requirement after you create the Connector.
+
 == Step 2: Review VM requirements
 
 When you create the Connector, you need to choose a virtual machine type that meets the following requirements.
@@ -99,9 +104,9 @@ include::_include/azure-set-up-role.adoc[]
 
 .Service principal
 --
-Create and set up a service principal in Azure Active Directory and obtain the Azure credentials that BlueXP needs.
+Create and set up a service principal in Microsoft Entra ID and obtain the Azure credentials that BlueXP needs.
 
-.Create an Azure Active Directory application for role-based access control
+.Create a Microsoft Entra application for role-based access control
 
 include::_include/azure-set-up-service-principal.adoc[tag=app]
 
@@ -181,7 +186,7 @@ link:reference-ports-azure.html[View security group rules for Azure].
 
 * *Identity*: Under *Management*, select *Enable system assigned managed identity*.
 +
-This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[Learn more about managed identities for Azure resources^].
+This setting is important because a managed identity allows the Connector virtual machine to identify itself to Microsoft Entra ID without providing any credentials. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[Learn more about managed identities for Azure resources^].
 
 . On the *Review + create* page, review your selections and select *Create* to start the deployment.
 +

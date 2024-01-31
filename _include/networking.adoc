@@ -69,3 +69,8 @@ If you use a Standard SKU IP address instead, then BlueXP uses the _private_ IP 
 +
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku[Azure documentation: Public IP SKU^]
 //end::azure-public-ip[]
+
+//tag::ntp[]
+Enable NTP::
+If you're planning to use BlueXP classification to scan your corporate data sources, you should enable a Network Time Protocol (NTP) service on both the BlueXP Connector system and the BlueXP classification system so that the time is synchronized between the systems. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn more about BlueXP classification^]
+//end::ntp[]

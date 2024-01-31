@@ -93,7 +93,10 @@ With private mode, the only time that BlueXP sends outbound traffic is to your c
 Ports::
 There's no incoming traffic to the Connector, unless you initiate it.
 +
-HTTP (80) and HTTPS (443) provide access to the BlueXP console. SSH (22) is only needed if you need to connect to the host for troubleshooting. 
+HTTP (80) and HTTPS (443) provide access to the BlueXP console. SSH (22) is only needed if you need to connect to the host for troubleshooting.
+
+//NTP
+include::_include/networking.adoc[tag=ntp]
 
 == Step 5: Prepare cloud permissions
 
@@ -159,9 +162,9 @@ include::_include/azure-set-up-role.adoc[]
 
 .Azure service principal
 --
-Create and set up a service principal in Azure Active Directory and obtain the Azure credentials that BlueXP needs. You'll need to provide BlueXP with these credentials after you install the Connector and set up BlueXP.
+Create and set up a service principal in Microsoft Entra ID and obtain the Azure credentials that BlueXP needs. You'll need to provide BlueXP with these credentials after you install the Connector and set up BlueXP.
 
-.Create an Azure Active Directory application for role-based access control
+.Create a Microsoft Entra application for role-based access control
 
 include::_include/azure-set-up-service-principal.adoc[tag=app]
 
