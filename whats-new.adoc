@@ -331,11 +331,10 @@ BlueXP enables you to manage all of your storage and data assets from a single i
 +
 You can use BlueXP to create and administer cloud storage (for example, Cloud Volumes ONTAP and Azure NetApp Files), to move, protect, and analyze data, and to control many on-prem and edge storage devices.
 +
-* https://cloud.netapp.com[Learn more from the BlueXP website^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/index.html[Get started with BlueXP^] 
+https://bluexp.netapp.com[Learn more from the BlueXP website^]
 
 New navigation menu::
-In BlueXP's navigation menu, services are now organized by categories and are named according to their functionality. For example, you can access BlueXP backup and recovery (Cloud Backup) from the *Protection* category.
+In BlueXP's navigation menu, services are now organized by categories and are named according to their functionality. For example, you can access BlueXP backup and recovery from the *Protection* category.
 +
 image:screenshot-navigation-menu.png[A screenshot of the navigation menu in BlueXP that shows categories such as Storage and Health.]
 
