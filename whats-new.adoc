@@ -22,10 +22,8 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.37
 
-This release includes minor security improvements, bug fixes, and the following enhancement:
+This release includes minor security improvements, bug fixes, and an enhancement that enables you to edit your name in *User Settings*.
 
-You can now edit your name in *User Settings*.
-+
 image:screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
 
 == 11 January 2024
