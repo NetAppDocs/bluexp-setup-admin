@@ -21,17 +21,16 @@ The installer that is available on the NetApp Support Site might be an earlier v
 //tag::main-steps[]
 .Steps
 
-. 
-
-// start tabbed area
-
+. Depending on your operating system, install either Podman or Docker Engine.
++
+* Podman version 4.6.1 or later is required for Red Hat Enterprise Linux 8.8 and 9.3.
++
+* Docker Engine version 19.3.1 is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.x.
++
 [role="tabbed-block"]
 ====
-
 .Podman
 --
-Podman version 4.6.1 or later is required for Red Hat Enterprise Linux 8.8 and 9.3.
-
 .. Install Podman.
 +
 Podman is available from official Red Hat Enterprise Linux repositories. You can install podman by using the `yum` or `dnf` commands.
@@ -67,10 +66,8 @@ dnf install podman-compose
 
 --
 
-.Docker
+.Docker Engine
 --
-Docker Engine version 19.3.1 is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.x.
-
 .. Install Docker Engine.
 +
 https://docs.docker.com/engine/install/[View installation instructions^]
