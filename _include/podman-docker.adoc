@@ -1,0 +1,62 @@
+Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
+
+* Podman version 4.6.1 or later is required for Red Hat Enterprise Linux 8.8 and 9.3.
+
+* Docker Engine version 19.3.1 or later is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.x.
+
+.Steps
+
++
+[role="tabbed-block"]
+====
+.Podman
+--
+. Install Podman.
++
+Podman is available from official Red Hat Enterprise Linux repositories. You can install podman by using the `yum` or `dnf` commands.
++
+[source,cli]
+dnf install podman
+
+. Enable and start the podman.socket service.
++
+[source,cli]
+sudo systemctl enable --now podman.socket
+
+. Install python3.
++
+[source,cli]
+sudo dnf install python3
+
+. Install pip3.
++
+In most cases, installing python3 will automatically install pip3. If it's not installed, use the following command.
++
+[source,cli]
+sudo dnf install python3-pip
+
+. Install the podman-compose package 1.0.6 or later.
++
+podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository.
++
+[source,cli]
+dnf install podman-compose
+
+. Add podman-compose to the PATH environment variable.
+
+--
+
+.Docker Engine
+--
+. Install Docker Engine.
++
+https://docs.docker.com/engine/install/[View installation instructions^]
+
+. Verify that Docker is enabled and running.
++
+[source,cli]
+sudo systemctl enable docker && sudo systemctl start docker
+--
+
+====
+// end tabbed area

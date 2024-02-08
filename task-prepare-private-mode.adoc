@@ -39,7 +39,7 @@ The Connector software must run on a host that meets specific operating system r
 
 include::_include/os-reqs.adoc[tag=dedicated]
 
-include::_include/os-reqs.adoc[tag=os]
+include::_include/os-reqs.adoc[tag=os-private]
 
 include::_include/os-reqs.adoc[tag=hypervisor]
 
