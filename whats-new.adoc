@@ -22,15 +22,17 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.37
 
-This release includes minor security improvements and bug fixes. At this time, the 3.9.37 release is available for standard mode and restricted mode.
+This release of the BlueXP Connector includes minor security improvements and bug fixes. 
+
+At this time, the 3.9.37 release is available for standard mode and restricted mode.
 
 === Edit name
 
-If you NetApp cloud credentials to log in to BlueXP, you can now edit your name in *User Settings*.
+If you use NetApp cloud credentials to log in to BlueXP, you can now edit your name in *User Settings*.
 
 image:screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
 
-Editing your name is not supported if you log in with a federated connection or your NetApp Support Site account.
+Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
 
 == 11 January 2024
 
