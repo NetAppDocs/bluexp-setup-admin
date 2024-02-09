@@ -16,10 +16,10 @@ Podman version 4.6.1 or later is required.
 
 . Install Podman.
 +
-Podman is available from official Red Hat Enterprise Linux repositories. You can install podman by using the `yum` or `dnf` commands.
+Podman is available from official Red Hat Enterprise Linux repositories. You can install podman by using the `yum` or `dnf` commands. The install command installs the latest version available from the repo.
 +
 [source,cli]
-dnf install podman
+sudo dnf install podman
 
 . Enable and start the podman.socket service.
 +
@@ -40,10 +40,13 @@ sudo dnf install python3-pip
 
 . Install the podman-compose package 1.0.6 or later.
 +
-podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository.
+podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository. The install command installs the latest version available from the repo.
 +
 [source,cli]
-dnf install podman-compose
+sudo dnf install podman-compose
+
++
+TIP: Using the `dnf` command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host. If you install podman-compose using `pip3`,` then you should manually add the podman-compose path to the `secure_path` option in the /etc/sudoers file.
 
 . Add podman-compose to the PATH environment variable.
 
