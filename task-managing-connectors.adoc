@@ -143,16 +143,16 @@ If it's required for your business, you can change the internal IP address and p
 . If you changed the public IP address and you need to connect to the local user interface running on the Connector, restart the Connector instance to register the new IP address with BlueXP.
 
 . If you changed the private IP address, update the backup location for Cloud Volumes ONTAP configuration files so that the backups are being sent to the new private IP address on the Connector.
++
+You'll need to update the backup location for each Cloud Volumes ONTAP system.
 
-.. Run the following command from the Cloud Volumes ONTAP CLI to remove the current backup target:
+.. Run the following command from the Cloud Volumes ONTAP CLI to display the current backup target:
 [source,cli]
-system configuration backup settings modify -destination ""
+system configuration backup show
 
-.. Go to BlueXP and open the working environment.
-
-.. Select the menu and select *Advanced > Configuration Backups*.
-
-.. Select *Set Backup Target*.
+.. Run the following command to update the IP address for the backup target:
+[source,cli]
+system configuration backup settings modify -destination <target-location>
 
 == Edit a Connector's URIs
 
