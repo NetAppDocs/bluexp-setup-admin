@@ -34,9 +34,9 @@ image:screenshot-edit-name.png[A screenshot that shows the ability to edit your 
 
 Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
 
-=== Amazon EC2 Instance Metadata Service requirement
+=== IMDSv1 requirement for EC2 instances
 
-You should be aware that IMDSv1 is required on EC2 instances before you manually install the Connector software in AWS.
+You should be aware that the Instance Metadata Service Version 1 (IMDSv1) is required on Amazon EC2 instances before you manually install the Connector software in AWS.
 
 link:reference-limitations.html[Learn more about the requirement for IMDSv1 in AWS].
 
