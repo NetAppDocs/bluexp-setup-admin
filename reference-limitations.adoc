@@ -29,7 +29,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-in
 
 === Default EC2 instance settings should not be changed
 
-When you deploy the Connector in AWS, the following EC2 instance settings are configured by default:
+When you deploy the Connector in AWS from BlueXP or from the AWS Marketplace, the following EC2 instance settings are configured by default:
 
 * IMDSv2 is set to optional
 * HttpTokens is set to optional
