@@ -19,9 +19,17 @@ These limitations are specific to BlueXP set up and administration: the Connecto
 
 == Connector limitations
 
+=== IMDSv1 is required on EC2 instances
+
+Before you manually install the Connector software on an EC2 instance in AWS when using standard mode or restricted mode, you need to ensure that the EC2 instance uses the Instance Metadata Service Version 1 (IMDSv1). The Connector is not supported with IMDSv2.
+
+Because IMDSv2 is now the default version on a new EC2 instance, you need to modify the instance metadata options to restore the use of IMDSv1.
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1[AWS documentation: Restore the use of IMDSv1^]
+
 === Default EC2 instance settings should not be changed
 
-When you deploy the Connector in AWS, the following EC2 instance settings are configured by default:
+When you deploy the Connector in AWS from BlueXP or from the AWS Marketplace, the following EC2 instance settings are configured by default:
 
 * IMDSv2 is set to optional
 * HttpTokens is set to optional
