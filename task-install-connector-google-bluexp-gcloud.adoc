@@ -59,6 +59,11 @@ include::_include/networking.adoc[tag=proxy]
 //Ports
 include::_include/networking.adoc[tag=ports]
 
+//NTP
+include::_include/networking.adoc[tag=ntp]
++
+You'll need to implement this networking requirement after you create the Connector.
+
 == Step 2: Set up permissions to create the Connector
 
 Before you can deploy a Connector from BlueXP or by using gcloud, you need to set up permissions for the Google Cloud user who will deploy the Connector VM.

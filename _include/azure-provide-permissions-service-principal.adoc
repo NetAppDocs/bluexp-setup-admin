@@ -6,7 +6,7 @@ image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in 
 
 .. *Credentials Location*: Select *Microsoft Azure > Connector*.
 
-.. *Define Credentials*: Enter information about the Azure Active Directory service principal that grants the required permissions:
+.. *Define Credentials*: Enter information about the Microsoft Entra service principal that grants the required permissions:
 +
 * Application (client) ID
 * Directory (tenant) ID

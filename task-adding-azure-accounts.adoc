@@ -69,21 +69,21 @@ When you deploy a Connector from BlueXP, BlueXP enables a system-assigned manage
 
 TIP: An initial set of credentials isn't added if you manually installed the Connector software on an existing system. link:concept-accounts-azure.html[Learn about Azure credentials and permissions].
 
-If you want to deploy Cloud Volumes ONTAP using _different_ Azure credentials, then you must grant the required permissions by creating and setting up a service principal in Azure Active Directory for each Azure account. You can then add the new credentials to BlueXP.
+If you want to deploy Cloud Volumes ONTAP using _different_ Azure credentials, then you must grant the required permissions by creating and setting up a service principal in Microsoft Entra ID for each Azure account. You can then add the new credentials to BlueXP.
 
 === Grant Azure permissions using a service principal
 
-BlueXP needs permissions to perform actions in Azure. You can grant the required permissions to an Azure account by creating and setting up a service principal in Azure Active Directory and by obtaining the Azure credentials that BlueXP needs.
+BlueXP needs permissions to perform actions in Azure. You can grant the required permissions to an Azure account by creating and setting up a service principal in Microsoft Entra ID and by obtaining the Azure credentials that BlueXP needs.
 
 .About this task
 
-The following image depicts how BlueXP obtains permissions to perform operations in Azure. A service principal object, which is tied to one or more Azure subscriptions, represents BlueXP in Azure Active Directory and is assigned to a custom role that allows the required permissions.
+The following image depicts how BlueXP obtains permissions to perform operations in Azure. A service principal object, which is tied to one or more Azure subscriptions, represents BlueXP in Microsoft Entra ID and is assigned to a custom role that allows the required permissions.
 
-image:diagram_azure_authentication.png["Conceptual image that shows BlueXP obtaining authentication and authorization from Azure Active Directory before it can make an API call. In Active Directory, the BlueXP role defines permissions. It is tied to one or more Azure subscriptions and a service principal object that represents the Cloud Manger application."]
+image:diagram_azure_authentication.png["Conceptual image that shows BlueXP obtaining authentication and authorization from Microsoft Entra ID before it can make an API call. In Active Directory, the BlueXP role defines permissions. It is tied to one or more Azure subscriptions and a service principal object that represents the Cloud Manger application."]
 
 .Steps
 
-. <<Create an Azure Active Directory application>>.
+. <<Create a Microsoft Entra application>>.
 
 . <<Assign the application to a role>>.
 
@@ -93,9 +93,9 @@ image:diagram_azure_authentication.png["Conceptual image that shows BlueXP obtai
 
 . <<Create a client secret>>.
 
-==== Create an Azure Active Directory application
+==== Create a Microsoft Entra application
 
-Create an Azure Active Directory (AD) application and service principal that BlueXP can use for role-based access control.
+Create a Microsoft Entra application and service principal that BlueXP can use for role-based access control.
 
 .Steps
 
@@ -132,7 +132,7 @@ include::_include/azure-set-up-service-principal.adoc[tag=ids]
 
 ==== Create a client secret
 
-You need to create a client secret and then provide BlueXP with the value of the secret so BlueXP can use it to authenticate with Azure AD.
+You need to create a client secret and then provide BlueXP with the value of the secret so BlueXP can use it to authenticate with Microsoft Entra ID.
 
 .Steps
 

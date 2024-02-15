@@ -80,6 +80,9 @@ include::_include/networking.adoc[tag=proxy]
 //Ports
 include::_include/networking.adoc[tag=ports]
 
+//NTP
+include::_include/networking.adoc[tag=ntp]
+
 == Step 3: Set up cloud permissions
 
 If you want to use BlueXP services in AWS or Azure with an on-premises Connector, then you need to set up permissions in your cloud provider so that you can add the credentials to the Connector after you install it.
@@ -114,9 +117,9 @@ You should now have access keys for an IAM user who has the required permissions
 
 .Azure
 --
-When the Connector is installed on premises, you need to provide BlueXP with Azure permissions by setting up a service principal in Azure Active Directory and obtaining the Azure credentials that BlueXP needs.
+When the Connector is installed on premises, you need to provide BlueXP with Azure permissions by setting up a service principal in Microsoft Entra ID and obtaining the Azure credentials that BlueXP needs.
 
-.Create an Azure Active Directory application for role-based access control
+.Create a Microsoft Entra application for role-based access control
 
 include::_include/azure-set-up-service-principal.adoc[tag=app]
 
