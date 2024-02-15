@@ -30,15 +30,15 @@ At this time, the 3.9.37 release is available for standard mode and restricted m
 
 If you use NetApp cloud credentials to log in to BlueXP, you can now edit your name in *User Settings*.
 
-image:screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
 
 Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
 
-=== Amazon EC2 Instance Metadata Service requirement
+=== IMDSv1 requirement for EC2 instances
 
-You should be aware that IMDSv1 is required on EC2 instances before you manually install the Connector software in AWS.
+You should be aware that the Instance Metadata Service Version 1 (IMDSv1) is required on Amazon EC2 instances before you manually install the Connector software in AWS.
 
-link:reference-limitations.html[Learn more about the requirement for IMDSv1 in AWS].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html[Learn more about the requirement for IMDSv1 in AWS].
 
 == 11 January 2024
 
@@ -83,7 +83,7 @@ This release contains minor improvements and bug fixes.
 
 * When you create a Connector in AWS from BlueXP, you can now search within the Key Pair field to more easily find the key pair that you want to use with the Connector instance.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png[A screenshot of the search option in the Key Pair field which appears on the Network page when creating a Connector in AWS from BlueXP.]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png[A screenshot of the search option in the Key Pair field which appears on the Network page when creating a Connector in AWS from BlueXP.]
 
 * This update also includes bug fixes.
 
