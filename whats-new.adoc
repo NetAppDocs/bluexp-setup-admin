@@ -338,6 +338,35 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 == 1 November 2022
 
+=== Introduction of BlueXP
+
+NetApp BlueXP extends and enhances the capabilities that were provided through Cloud Manager. BlueXP is a unified control plane that provides a hybrid multicloud experience for storage and data services across on-premises and cloud environments.
+
+Unified management experience::
+BlueXP enables you to manage all of your storage and data assets from a single interface. 
++
+You can use BlueXP to create and administer cloud storage (for example, Cloud Volumes ONTAP and Azure NetApp Files), to move, protect, and analyze data, and to control many on-prem and edge storage devices.
++
+https://bluexp.netapp.com[Learn more from the BlueXP website^]
+
+New navigation menu::
+In BlueXP's navigation menu, services are now organized by categories and are named according to their functionality. For example, you can access BlueXP backup and recovery from the *Protection* category.
++
+image:screenshot-navigation-menu.png[A screenshot of the navigation menu in BlueXP that shows categories such as Storage and Health.]
+
+New product integrations::
+* You can now manage the Amazon S3 buckets in the AWS accounts where the Connector is installed.
+* You can now manage more on-prem storage systems, such as E-Series and StorageGRID. 
+* You can now use data services previously only available as a standalone service with a separate UI, such as BlueXP digital advisor (Active IQ).
+
+Learn more::
+* https://docs.netapp.com/us-en/bluexp-s3-storage/index.html[Manage Amazon S3 buckets^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html[Manage E-Series storage systems^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[Manage StorageGRID storage systems^]
+* https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html[Learn about Digital Advisor integration^]
+
+=== Prompt to update NSS credentials
+
 Cloud Manager now prompts you to update the credentials associated with your NetApp Support Site accounts when the refresh token associated with your account expires after 3 months. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials[Learn how to manage NSS accounts^]
 
 == 18 September 2022
@@ -532,8 +561,7 @@ Starting in December 2021, NetApp now uses Microsoft Azure Active Directory as t
 
 If you haven't yet migrated your NSS account to IDaaS, you first need to migrate the account and then update your credentials in Cloud Manager.
 
-* link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method[Learn how to update an NSS account to the new authentication method].
-* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login[Learn more about NetApp's use of Microsoft Azure AD for identity management^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login[Learn more about NetApp's use of Microsoft Azure Active Directory for identity management^]
 
 === Change NSS accounts for Cloud Volumes ONTAP
 

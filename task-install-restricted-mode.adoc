@@ -159,7 +159,7 @@ link:reference-ports-azure.html[View security group rules for Azure].
 
 * *Identity*: Under *Management*, select *Enable system assigned managed identity*.
 +
-This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[Learn more about managed identities for Azure resources^].
+This setting is important because a managed identity allows the Connector virtual machine to identify itself to Microsoft Entra ID without providing any credentials. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[Learn more about managed identities for Azure resources^].
 
 . On the *Review + create* page, review your selections and select *Create* to start the deployment.
 

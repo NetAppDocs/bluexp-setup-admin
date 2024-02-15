@@ -76,6 +76,9 @@ include::_include/networking.adoc[tag=proxy]
 //Ports
 include::_include/networking.adoc[tag=ports]
 
+//NTP
+include::_include/networking.adoc[tag=ntp]
+
 == Step 3: Set up permissions for the Connector
 
 include::_include/google-set-up-connector-permissions.adoc[]
