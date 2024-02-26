@@ -18,6 +18,22 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 6 March 2024
+
+=== Connector 3.9.38
+
+* This release of the BlueXP Connector includes minor security improvements and bug fixes.
+
+* We updated the Connector policy for AWS to include the "ec2:DescribeAvailabilityZones" permission. This permission is required for an upcoming release. We'll update the release notes with more details when that release is available.
++
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[View AWS permissions for the Connector].
+
+* At this time, the 3.9.38 release is available for standard mode and restricted mode.
+
+=== Connector and Cloud Volumes ONTAP settings
+
+
+
 == 15 February 2024
 
 === Connector 3.9.37
