@@ -29,13 +29,37 @@ Note that this operation restarts the Connector. Ensure that the Connector isn't
 
 .Steps
 
-. Select the *Connector* drop-down from the BlueXP header.
+. Navigate to the *Edit BlueXP Connector* page.
++
+How you navigate depends on whether you're using BlueXP in standard mode (accessing the BlueXP interface from the SaaS website) or using BlueXP in restricted mode or private mode (accessing the BlueXP interface locally from the Connector host).
++
+[role="tabbed-block"]
+====
 
-. Select *Manage Connectors*.
+.Standard mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Manage Connectors*.
 +
 image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
 
-. Select the action menu for a Connector and select *Edit Connector*.
+.. Select the action menu for a Connector and select *Edit Connector*.
+--
+
+.Restricted or private mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Edit Connector*.
++
+image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector option that is available after you expand the Connector menu.]
+--
+
+====
+// end tabbed area
 
 . Select *HTTP Proxy Configuration*.
 
@@ -64,13 +88,37 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 
 .Steps
 
-. Select the *Connector* drop-down from the BlueXP header.
+. Navigate to the *Edit BlueXP Connector* page:
++
+How you navigate depends on whether you're using BlueXP in standard mode (accessing the BlueXP interface from the SaaS website) or using BlueXP in restricted mode or private mode (accessing the BlueXP interface locally from the Connector host).
++
+[role="tabbed-block"]
+====
 
-. Select *Manage Connectors*.
+.Standard mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Manage Connectors*.
 +
 image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
 
-. Select the action menu for a Connector and select *Edit Connector*.
+.. Select the action menu for a Connector and select *Edit Connector*.
+--
+
+.Restricted or private mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Edit Connector*.
++
+image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector option that is available after you expand the Connector menu.]
+--
+
+====
+// end tabbed area
 
 . Select *Support Direct API Traffic*.
 
