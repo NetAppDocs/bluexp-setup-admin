@@ -100,6 +100,46 @@ You can't specify an authentication method when you create a Connector in Google
 +
 https://cloud.google.com/compute/docs/instances/connecting-to-instance[Google Cloud Docs: Connect to Linux VMs^]
 
+== Require the use of IMDSv2 on the Connector EC2 instance
+
+Starting in March 2024, BlueXP now supports the EC2 Instance Metadata Service (IMDSv2) with the Connector instance in AWS. All prior deployments used IMDSv1. If your security policies require IMDSv2, you can configure any existing Connector instance to use version 2.
+
+https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
+
+.About this task
+
+These steps require the use of the AWS CLI because you must change the response hop limit to 3.
+
+.Steps
+
+. Connect to the Linux VM for the Connector.
++
+When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
+
+. Install the AWS CLI.
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS Docs: Install or update to the latest version of the AWS CLI]
+
+. Use the `aws ec2 modify-instance-metadata-options` command to require the use of IMDSv2 and to change teh PUT response hop limit to 3.
++
+Example
++
+[source,awscli]
+aws ec2 modify-instance-metadata-options \
+    --instance-id i-1234567898abcdef0 \
+    --http-put-response-hop-limit 3 \
+	  --http-tokens required \
+    --http-endpoint enabled
+
++
+NOTE: Setting the `http-tokens` parameter to required means IMDSv2 is required. When `http-tokens` is required, you must also set `http-endpoint` to enabled.
+
+.Result
+
+The Connector instance is now configured to use IMDSv2.
+
 == Upgrade the Connector when using private mode
 
 If you are using BlueXP in private mode, you can upgrade the Connector when a newer version is available from the NetApp Support Site.
