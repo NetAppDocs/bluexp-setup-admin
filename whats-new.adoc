@@ -44,9 +44,17 @@ We updated the Connector policy for AWS to include the "ec2:DescribeAvailability
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[View AWS permissions for the Connector].
 
-=== Connector and Cloud Volumes ONTAP settings
+=== Proxy settings and Cloud Volumes ONTAP settings
 
+Proxy server settings for the Connector are now available from the *Manage Connectors* page.
 
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html[Learn how to configure the Connector to use a proxy server].
+
+In addition, we renamed the *Connector Settings* page to *Cloud Volumes ONTAP Settings*.
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png[A screenshot that shows the Cloud Volumes ONTAP Settings option that is available from the Settings menu.]
 
 == 15 February 2024
 

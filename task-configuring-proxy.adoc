@@ -29,11 +29,15 @@ Note that this operation restarts the Connector. Ensure that the Connector isn't
 
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Connector Settings*.
-+
-image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
+. Select the *Connector* drop-down from the BlueXP header.
 
-. Under *General*, select *HTTP Proxy Configuration*.
+. Select *Manage Connectors*.
++
+image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
+
+. Select the action menu for a Connector and select *Edit Connector*.
+
+. Select *HTTP Proxy Configuration*.
 
 . Set up the proxy:
 
@@ -60,10 +64,14 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Connector Settings*.
-+
-image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
+. Select the *Connector* drop-down from the BlueXP header.
 
-. Under *General*, select *Support Direct API Traffic*.
+. Select *Manage Connectors*.
++
+image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
+
+. Select the action menu for a Connector and select *Edit Connector*.
+
+. Select *Support Direct API Traffic*.
 
 . Select the checkbox to enable the option and then select *Save*.
