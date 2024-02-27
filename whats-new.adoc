@@ -22,7 +22,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.38
 
-At this time, the 3.9.38 release is available for standard mode and restricted mode.
+At this time, the 3.9.38 release is available for standard mode and restricted mode. This release includes the following changes.
 
 ==== Support for IMDSv2
 
@@ -34,7 +34,7 @@ BlueXP now supports the EC2 Instance Metadata Service (IMDSv2) with the Connecto
 
 * For existing Connectors, IMDSv1 is still supported but you can manually configure IMDSv2 on the EC2 instance if you prefer.
 +
-link:task-managing-connectors.html[Learn how to configure IMDSv2].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html[Learn how to configure IMDSv2].
 
 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
 

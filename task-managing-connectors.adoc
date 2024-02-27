@@ -115,26 +115,26 @@ These steps require the use of the AWS CLI because you must change the response 
 . Connect to the Linux VM for the Connector.
 +
 When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
-
++
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
 
 . Install the AWS CLI.
 +
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS Docs: Install or update to the latest version of the AWS CLI]
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS Docs: Install or update to the latest version of the AWS CLI^]
 
 . Use the `aws ec2 modify-instance-metadata-options` command to require the use of IMDSv2 and to change teh PUT response hop limit to 3.
 +
-Example
+*Example*
 +
 [source,awscli]
 aws ec2 modify-instance-metadata-options \
     --instance-id i-1234567898abcdef0 \
     --http-put-response-hop-limit 3 \
-	  --http-tokens required \
+    --http-tokens required \
     --http-endpoint enabled
 
 +
-NOTE: Setting the `http-tokens` parameter to required means IMDSv2 is required. When `http-tokens` is required, you must also set `http-endpoint` to enabled.
+NOTE: The `http-tokens` parameter sets IMDSv2 to required. When `http-tokens` is required, you must also set `http-endpoint` to enabled.
 
 .Result
 
