@@ -72,12 +72,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
 
-=== IMDSv1 requirement for EC2 instances
-
-You should be aware that the Instance Metadata Service Version 1 (IMDSv1) is required on Amazon EC2 instances before you manually install the Connector software in AWS.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html[Learn more about the requirement for IMDSv1 in AWS].
-
 == 11 January 2024
 
 === Connector 3.9.36

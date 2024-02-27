@@ -106,6 +106,10 @@ Starting in March 2024, BlueXP now supports the EC2 Instance Metadata Service (I
 
 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
 
+.Before you begin
+
+The Connector version must be 3.9.38 or later. 
+
 .About this task
 
 These steps require the use of the AWS CLI because you must change the response hop limit to 3.
@@ -122,13 +126,13 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS 
 +
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS Docs: Install or update to the latest version of the AWS CLI^]
 
-. Use the `aws ec2 modify-instance-metadata-options` command to require the use of IMDSv2 and to change teh PUT response hop limit to 3.
+. Use the `aws ec2 modify-instance-metadata-options` command to require the use of IMDSv2 and to change the PUT response hop limit to 3.
 +
 *Example*
 +
 [source,awscli]
 aws ec2 modify-instance-metadata-options \
-    --instance-id i-1234567898abcdef0 \
+    --instance-id <instance-id> \
     --http-put-response-hop-limit 3 \
     --http-tokens required \
     --http-endpoint enabled
