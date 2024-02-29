@@ -48,9 +48,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[
 
 === Proxy settings and Cloud Volumes ONTAP settings
 
-Proxy server settings for the Connector are now available from the *Manage Connectors* page.
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
+Proxy server settings for the Connector are now available from the *Manage Connectors* page (standard mode) or the *Edit Connectors* page (restricted mode and private mode).
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html[Learn how to configure the Connector to use a proxy server].
 
