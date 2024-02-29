@@ -22,7 +22,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.38
 
-At this time, the 3.9.38 release is available for standard mode and restricted mode. This release includes the following changes.
+At this time, the 3.9.38 release is available for standard mode and restricted mode. This release includes support for IMDSv2 in AWS and an AWS permissions update.
 
 ==== Support for IMDSv2
 
