@@ -30,6 +30,16 @@ include::_include/vm-maintenance.adoc[]
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be aware that the Connector must be operational at all times].
 
+== VM or instance type
+
+If you created a Connector directly from BlueXP, BlueXP deployed a virtual machine instance in your cloud provider using a default configuration. After you create the Connector, you should not change to a smaller VM instance that has less CPU or RAM.
+
+The CPU and RAM requirements are as follows:
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
+link:reference-connector-default-config.html[Learn about the default configuration for the Connector] 
+
 == View a Connector's version
 
 You can view the version of your Connector to verify that the Connector automatically upgraded to the latest release or because you need to share it with your NetApp representative.
