@@ -26,19 +26,19 @@ At this time, the 3.9.38 release is available for standard mode and restricted m
 
 ==== Support for IMDSv2
 
-BlueXP now supports the Amazon EC2 Instance Metadata Service (IMDSv2) with the Connector instance and with Cloud Volumes ONTAP instances, if the Connector is managing only Cloud Volumes ONTAP. BlueXP does not support IMDSv2 with a Connector that you use with any other BlueXP service (for example, backup and recovery or classification).
+BlueXP now supports the Amazon EC2 Instance Metadata Service (IMDSv2) with the Connector instance and with Cloud Volumes ONTAP instances. Only IMDSv1 was previously supported.
 
 IMDSv2 provides enhanced protection against vulnerabilities. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
-
-Note the following about how IMDSv2 is enabled on the Connector:
 
 * For new Connector deployments from BlueXP, from the AWS Marketplace, or using https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html[Terraform scripts^], IMDSv2 is enabled by default on the EC2 instance.
 
 * If you launch a new EC2 instance in AWS to manually install the Connector software, IMDSv2 is also enabled by default.
 
 * For existing Connectors, IMDSv1 is still supported but you can manually configure IMDSv2 on the EC2 instance if you prefer.
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html[Learn how to configure IMDSv2].
+
+* For Cloud Volumes ONTAP, IMDSv1 is enabled by default on new and existing instances. You can manually configure IMDSv2 on the EC2 instances if you prefer.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html[Learn how to configure IMDSv2 on existing instances].
 
 ==== AWS permissions update
 

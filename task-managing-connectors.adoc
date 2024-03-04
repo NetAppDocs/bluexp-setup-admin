@@ -100,9 +100,9 @@ You can't specify an authentication method when you create a Connector in Google
 +
 https://cloud.google.com/compute/docs/instances/connecting-to-instance[Google Cloud Docs: Connect to Linux VMs^]
 
-== Require the use of IMDSv2 on the Connector EC2 instance
+== Require the use of IMDSv2 on Amazon EC2 instances
 
-Starting in March 2024, BlueXP now supports the EC2 Instance Metadata Service (IMDSv2) with the Connector instance in AWS. All prior deployments used IMDSv1. If your security policies require IMDSv2, you can configure any existing Connector instance to use version 2.
+Starting in March 2024, BlueXP now supports the Amazon EC2 Instance Metadata Service (IMDSv2) with the Connector instance and Cloud Volumes ONTAP instances (including the mediator for HA deployments). All prior deployments used IMDSv1. If your security policies require IMDSv2, you can configure any existing Connector instance to use version 2.
 
 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
 
