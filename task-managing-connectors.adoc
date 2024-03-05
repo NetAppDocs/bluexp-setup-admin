@@ -121,7 +121,8 @@ If required by your security policies, you can configure your EC2 instances to u
 
 .Before you begin
 
-The Connector version must be 3.9.38 or later.
+* The Connector version must be 3.9.38 or later.
+* This change requires you to restart the Cloud Volumes ONTAP instances.
 
 .About this task
 
@@ -172,6 +173,8 @@ NOTE: The `http-tokens` parameter sets IMDSv2 to required. When `http-tokens` is
 * Select *Save*.
 
 .. Repeat these steps for other Cloud Volumes ONTAP instances, including the HA mediator.
+
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html[Stop and start the Cloud Volumes ONTAP instances^]
 
 .Result
 
