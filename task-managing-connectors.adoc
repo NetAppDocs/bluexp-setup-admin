@@ -112,13 +112,16 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance[Google Cl
 
 == Require the use of IMDSv2 on Amazon EC2 instances
 
-Starting in March 2024, BlueXP now supports the Amazon EC2 Instance Metadata Service (IMDSv2) with the Connector instance and Cloud Volumes ONTAP instances (including the mediator for HA deployments). All prior deployments used IMDSv1. If your security policies require IMDSv2, you can configure any existing Connector instance to use version 2.
+Starting in March 2024, BlueXP now supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector and with Cloud Volumes ONTAP (including the mediator for HA deployments). IMDSv2 provides enhanced protection against vulnerabilities. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
 
-https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
+* IMDSv2 is enabled by default on all new Connector EC2 instances. IMDSv1 was enabled prior to March 2024.
+* IMDSv1 is enabled by default on all new and existing Cloud Volumes ONTAP EC2 instances. 
+
+If required by your security policies, you can configure your EC2 instances to use IMDSv2.
 
 .Before you begin
 
-The Connector version must be 3.9.38 or later. 
+The Connector version must be 3.9.38 or later.
 
 .About this task
 
@@ -126,17 +129,19 @@ These steps require the use of the AWS CLI because you must change the response 
 
 .Steps
 
-. Connect to the Linux VM for the Connector.
+. Require use of IMDSv2 on the Connector instance: 
+
+.. Connect to the Linux VM for the Connector.
 +
 When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
 
-. Install the AWS CLI.
+.. Install the AWS CLI.
 +
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS Docs: Install or update to the latest version of the AWS CLI^]
 
-. Use the `aws ec2 modify-instance-metadata-options` command to require the use of IMDSv2 and to change the PUT response hop limit to 3.
+.. Use the `aws ec2 modify-instance-metadata-options` command to require the use of IMDSv2 and to change the PUT response hop limit to 3.
 +
 *Example*
 +
@@ -150,9 +155,25 @@ aws ec2 modify-instance-metadata-options \
 +
 NOTE: The `http-tokens` parameter sets IMDSv2 to required. When `http-tokens` is required, you must also set `http-endpoint` to enabled.
 
+. Require use of IMDSv2 on Cloud Volumes ONTAP instances:
+
+.. Go to the Amazon EC2 console.
+
+.. From the navigation pane, select *Instances*.
+
+.. Select a Cloud Volumes ONTAP instance.
+
+.. Select *Actions > Instance settings > Modify instance metadata options*.
+
+.. On the *Modify instance metadata options* dialog box, select the following:
++
+* For *Instance metadata service*, select *Enable*.
+* For *IMDSv2*, select *Required*.
+* Select *Save*.
+
 .Result
 
-The Connector instance is now configured to use IMDSv2.
+The Connector instance and Cloud Volumes ONTAP instances are now configured to use IMDSv2.
 
 == Upgrade the Connector when using private mode
 
