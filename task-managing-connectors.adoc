@@ -129,7 +129,7 @@ These steps require the use of the AWS CLI because you must change the response 
 
 .Steps
 
-. Require use of IMDSv2 on the Connector instance: 
+. Require the use of IMDSv2 on the Connector instance: 
 
 .. Connect to the Linux VM for the Connector.
 +
@@ -155,9 +155,9 @@ aws ec2 modify-instance-metadata-options \
 +
 NOTE: The `http-tokens` parameter sets IMDSv2 to required. When `http-tokens` is required, you must also set `http-endpoint` to enabled.
 
-. Require use of IMDSv2 on Cloud Volumes ONTAP instances:
+. Require the use of IMDSv2 on Cloud Volumes ONTAP instances:
 
-.. Go to the Amazon EC2 console.
+.. Go to the https://console.aws.amazon.com/ec2/[Amazon EC2 console^]
 
 .. From the navigation pane, select *Instances*.
 
@@ -170,6 +170,8 @@ NOTE: The `http-tokens` parameter sets IMDSv2 to required. When `http-tokens` is
 * For *Instance metadata service*, select *Enable*.
 * For *IMDSv2*, select *Required*.
 * Select *Save*.
+
+.. Repeat these steps for other Cloud Volumes ONTAP instances, including the HA mediator.
 
 .Result
 
