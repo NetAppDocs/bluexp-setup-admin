@@ -105,6 +105,8 @@ How you navigate depends on whether you're using BlueXP in standard mode (access
 image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
 
 .. Select the action menu for a Connector and select *Edit Connector*.
++
+image:screenshot-edit-connector-standard.png[A screenshot that shows the Edit Connectors option that is available from the action menu.]
 --
 
 .Restricted or private mode
