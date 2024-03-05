@@ -38,7 +38,7 @@ The CPU and RAM requirements are as follows:
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
-link:reference-connector-default-config.html[Learn about the default configuration for the Connector] 
+link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
 
 == View a Connector's version
 
