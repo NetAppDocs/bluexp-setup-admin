@@ -18,7 +18,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
-== 6 March 2024
+== 7 March 2024
 
 === Connector 3.9.38
 
