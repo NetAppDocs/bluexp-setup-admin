@@ -30,6 +30,16 @@ include::_include/vm-maintenance.adoc[]
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be aware that the Connector must be operational at all times].
 
+== VM or instance type
+
+If you created a Connector directly from BlueXP, BlueXP deployed a virtual machine instance in your cloud provider using a default configuration. After you create the Connector, you should not change to a smaller VM instance that has less CPU or RAM.
+
+The CPU and RAM requirements are as follows:
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
+link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
+
 == View a Connector's version
 
 You can view the version of your Connector to verify that the Connector automatically upgraded to the latest release or because you need to share it with your NetApp representative.
@@ -99,6 +109,76 @@ Google Cloud::
 You can't specify an authentication method when you create a Connector in Google Cloud. However, you can connect to the Linux VM instance using the Google Cloud Console or Google Cloud CLI (gcloud).
 +
 https://cloud.google.com/compute/docs/instances/connecting-to-instance[Google Cloud Docs: Connect to Linux VMs^]
+
+== Require the use of IMDSv2 on Amazon EC2 instances
+
+Starting in March 2024, BlueXP now supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector and with Cloud Volumes ONTAP (including the mediator for HA deployments). IMDSv2 provides enhanced protection against vulnerabilities. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
+
+* IMDSv2 is enabled by default on all new Connector EC2 instances. IMDSv1 was enabled prior to March 2024.
+* IMDSv1 is enabled by default on all new and existing Cloud Volumes ONTAP EC2 instances. 
+
+If required by your security policies, you can configure your EC2 instances to use IMDSv2.
+
+.Before you begin
+
+* The Connector version must be 3.9.38 or later.
+* This change requires you to restart the Cloud Volumes ONTAP instances.
+
+.About this task
+
+These steps require the use of the AWS CLI because you must change the response hop limit to 3.
+
+.Steps
+
+. Require the use of IMDSv2 on the Connector instance: 
+
+.. Connect to the Linux VM for the Connector.
++
+When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
+
+.. Install the AWS CLI.
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS Docs: Install or update to the latest version of the AWS CLI^]
+
+.. Use the `aws ec2 modify-instance-metadata-options` command to require the use of IMDSv2 and to change the PUT response hop limit to 3.
++
+*Example*
++
+[source,awscli]
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+
++
+NOTE: The `http-tokens` parameter sets IMDSv2 to required. When `http-tokens` is required, you must also set `http-endpoint` to enabled.
+
+. Require the use of IMDSv2 on Cloud Volumes ONTAP instances:
+
+.. Go to the https://console.aws.amazon.com/ec2/[Amazon EC2 console^]
+
+.. From the navigation pane, select *Instances*.
+
+.. Select a Cloud Volumes ONTAP instance.
+
+.. Select *Actions > Instance settings > Modify instance metadata options*.
+
+.. On the *Modify instance metadata options* dialog box, select the following:
++
+* For *Instance metadata service*, select *Enable*.
+* For *IMDSv2*, select *Required*.
+* Select *Save*.
+
+.. Repeat these steps for other Cloud Volumes ONTAP instances, including the HA mediator.
+
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html[Stop and start the Cloud Volumes ONTAP instances^]
+
+.Result
+
+The Connector instance and Cloud Volumes ONTAP instances are now configured to use IMDSv2.
 
 == Upgrade the Connector when using private mode
 
