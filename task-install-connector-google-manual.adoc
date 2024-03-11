@@ -36,12 +36,10 @@ include::_include/os-reqs.adoc[tag=google-machine]
 include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=container-req]
++
+<<Step 5: Install Podman or Docker Engine,Learn how to install Podman or Docker Engine>>.
 
-== Step 2: Install Podman or Docker Engine
-
-include::_include/podman-docker.adoc[]
-
-== Step 3: Set up networking
+== Step 2: Set up networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
@@ -83,13 +81,17 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 4: Set up permissions for the Connector
+== Step 3: Set up permissions for the Connector
 
 include::_include/google-set-up-connector-permissions.adoc[]
 
-== Step 5: Set up shared VPC permissions
+== Step 4: Set up shared VPC permissions
 
 include::_include/google-shared-vpc-permissions.adoc[]
+
+== Step 5: Install Podman or Docker Engine
+
+include::_include/podman-docker.adoc[]
 
 == Step 6: Enable Google Cloud APIs
 

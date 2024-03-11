@@ -176,6 +176,8 @@ Set up BlueXP.
 --
 include::_include/manual-install.adoc[tag=before]
 
+* Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
+
 include::_include/manual-install.adoc[tag=about]
 
 include::_include/manual-install.adoc[tag=main-steps]
