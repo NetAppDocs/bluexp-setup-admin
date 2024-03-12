@@ -182,7 +182,7 @@ Create a Connector directly from the BlueXP web-based console or by using gcloud
 
 .About this task
 
-Creating the Connector deploys a virtual machine instance in Google Cloud using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+Creating the Connector deploys a virtual machine instance in Google Cloud using a default configuration. After you create the Connector, you should not change to a smaller VM instance that has less CPU or RAM. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
 
 // start tabbed area
 

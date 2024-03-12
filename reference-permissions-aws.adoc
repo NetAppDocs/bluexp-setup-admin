@@ -70,6 +70,7 @@ The second policy provides permissions for the following services:
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1176,13 +1177,21 @@ The Connector makes the following API requests to manage tags on AWS resources w
 
 As permissions are added and removed, we'll note them in the sections below.
 
-=== 6 June, 2023
+=== 8 March 2024
+
+The following permission is now included in the Connector policy: 
+
+ec2:DescribeAvailabilityZones
+
+This permission is required for an upcoming release. We'll update the release notes with more details when that release is available.
+
+=== 6 June 2023
 
 The following permission is now required for Cloud Volumes ONTAP:
 
 kms:GenerateDataKeyWithoutPlaintext
 
-=== 14 February, 2023
+=== 14 February 2023
 
 The following permission is now required for BlueXP tiering:
 

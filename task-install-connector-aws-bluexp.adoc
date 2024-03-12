@@ -202,7 +202,7 @@ Create the Connector directly from the BlueXP web-based console.
 
 .About this task
 
-Creating the Connector from BlueXP deploys an EC2 instance in AWS using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+Creating the Connector from BlueXP deploys an EC2 instance in AWS using a default configuration. After you create the Connector, you should not change to a smaller EC2 instance type that has less CPU or RAM. link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
 
 .Before you begin
 
