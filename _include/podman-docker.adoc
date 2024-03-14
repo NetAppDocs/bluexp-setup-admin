@@ -10,7 +10,7 @@ Depending on your operating system, either Podman or Docker Engine is required b
 ====
 .Podman
 --
-Podman version 4.6.1 or later is required.
+Install Podman 4.6.1 or later.
 
 .Steps
 
@@ -52,7 +52,7 @@ TIP: Using the `dnf` command adds podman-compose to /usr/bin, which is already i
 
 .Docker Engine
 --
-Docker Engine version 19.3.1 or later is required.
+Install Docker Engine 19.3.1 or later.
 
 .Steps
 
