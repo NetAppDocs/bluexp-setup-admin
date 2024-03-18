@@ -88,6 +88,8 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
 
+//end::whats-new[]
+
 == 11 January 2024
 
 === Connector 3.9.36
@@ -96,8 +98,6 @@ This release includes minor improvements, bug fixes, and support for the Connect
 
 * The Israel (Tel Aviv) region in AWS
 * The Saudi Arabia region in Google Cloud
-
-//end::whats-new[]
 
 == 5 December 2023
 
