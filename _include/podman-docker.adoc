@@ -40,7 +40,7 @@ In most cases, installing python3 will automatically install pip3.
 [source,cli]
 pip3 --version
 
-.. Install pip3.
+.. If not already installed, install pip3.
 +
 [source,cli]
 sudo dnf install python3-pip
@@ -53,7 +53,7 @@ podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) 
 sudo dnf install podman-compose
 
 +
-TIP: Using the `dnf` command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host. If you install podman-compose using `pip3`, then you must manually add the podman-compose path to the `secure_path` option in the /etc/sudoers file.
+Using the `dnf` command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host. If you install podman-compose using `pip3` instead, then you must manually add the podman-compose path to the `secure_path` option in the /etc/sudoers file.
 
 --
 
