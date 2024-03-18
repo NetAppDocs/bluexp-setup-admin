@@ -31,9 +31,16 @@ sudo systemctl enable --now podman.socket
 [source,cli]
 sudo dnf install python3
 
-. Install pip3.
+. Install pip3 if it wasn't already installed.
 +
-In most cases, installing python3 will automatically install pip3. If it's not installed, use the following command.
+In most cases, installing python3 will automatically install pip3.
++
+.. Verify whether pip3 was installed.
++
+[source,cli]
+pip3 --version
+
+.. Install pip3.
 +
 [source,cli]
 sudo dnf install python3-pip
