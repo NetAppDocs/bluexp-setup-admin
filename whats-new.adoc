@@ -32,6 +32,36 @@ This new release is available to download from the NetApp Support Site.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
 
+== 25 March 2024
+
+=== Private mode release (3.9.38)
+
+A new private mode release is now available for BlueXP. This release includes the following versions of the BlueXP services that are supported with private mode.
+
+[cols=2*,options="header,autowidth"]
+|===
+
+| Service
+| Version included
+
+| Connector | 3.9.38
+| Backup and recovery | 12 March 2024
+| Classification | 4 March 2024
+| Cloud Volumes ONTAP management | ?
+| Digital wallet | ?
+| On-premises ONTAP cluster management | ?
+| Replication | ?
+
+|===
+
+This new release is available to download from the NetApp Support Site.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+
 == 8 March 2024
 
 === Connector 3.9.38
@@ -88,8 +118,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
 
-//end::whats-new[]
-
 == 11 January 2024
 
 === Connector 3.9.36
@@ -98,6 +126,8 @@ This release includes minor improvements, bug fixes, and support for the Connect
 
 * The Israel (Tel Aviv) region in AWS
 * The Saudi Arabia region in Google Cloud
+
+//end::whats-new[]
 
 == 5 December 2023
 
