@@ -18,6 +18,20 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 25 March 2024
+
+=== Private mode release (3.9.38)
+
+A new private mode release is now available for BlueXP. This release includes version 3.9.38 of the Connector and versions of the BlueXP services that are supported with private mode as of March 2024.
+
+This new release is available to download from the NetApp Support Site.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode[Learn about the BlueXP services that are included with private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+
 == 8 March 2024
 
 === Connector 3.9.38
@@ -87,7 +101,7 @@ This release includes minor improvements, bug fixes, and support for the Connect
 
 == 5 December 2023
 
-=== Private mode release
+=== Private mode release (3.9.35)
 
 A new private mode release is now available for BlueXP. This release includes version 3.9.35 of the Connector and versions of the BlueXP services that are supported with private mode as of October 2023.
 
