@@ -20,21 +20,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //tag::whats-new[]
 == 25 March 2024
 
-=== Private mode release (3.9.38)
-
-A new private mode release is now available for BlueXP. This release includes version 3.9.38 of the Connector and versions of the BlueXP services that are supported with private mode as of March 2024.
-
-This new release is available to download from the NetApp Support Site.
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode[Learn about the BlueXP services that are included with private mode]
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
-
-== 25 March 2024
-
-=== Private mode release (3.9.38)
+=== Private mode release
 
 A new private mode release is now available for BlueXP. This release includes the following versions of the BlueXP services that are supported with private mode.
 
@@ -47,10 +33,10 @@ A new private mode release is now available for BlueXP. This release includes th
 | Connector | 3.9.38
 | Backup and recovery | 12 March 2024
 | Classification | 4 March 2024
-| Cloud Volumes ONTAP management | ?
-| Digital wallet | ?
-| On-premises ONTAP cluster management | ?
-| Replication | ?
+| Cloud Volumes ONTAP management | 8 March 2024
+| Digital wallet | 30 July 2023
+| On-premises ONTAP cluster management | 30 July 2023
+| Replication | 18 Sept 2022
 
 |===
 
