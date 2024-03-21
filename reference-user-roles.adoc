@@ -26,37 +26,35 @@ The Compliance Viewer role is for read-only BlueXP classification access.
 | Compliance Viewer
 | SnapCenter Admin
 
-| Manage working environments |	Yes |	Yes | No | No
+| Manage working environments |	Yes | Yes | No | No
 
 | Enable services on working environments | Yes | Yes | No | No
 
+| Remove working environments from a workspace | Yes | Yes | No | No
+
+| Delete working environments | Yes | Yes | No | No
+
 | View data replication status | Yes |	Yes | No | No
 
-| View the timeline |	Yes |	Yes | No | No
+| View the timeline | Yes |	Yes | No | No
 
 | Switch between workspaces | Yes | Yes | Yes | No
 
 | View BlueXP classification scan results | Yes | Yes | Yes | No
 
-| Delete working environments | Yes | No | No | No
-
-| Connect Kubernetes clusters to working environments | Yes | No | No | No
-
 | Receive the Cloud Volumes ONTAP report | Yes | No | No | No
 
 | Create Connectors | Yes | No | No | No
 
-| Manage BlueXP accounts |	Yes |	No | No | No
+| Manage BlueXP accounts |	Yes | No | No | No
 
 | Manage credentials | Yes | No | No | No
 
 | Modify BlueXP settings |	Yes |	No | No | No
 
-| View and manage the Support Dashboard |	Yes |	No | No | No
+| View and manage the Support Dashboard | Yes |	No | No | No
 
-| Remove working environments from BlueXP | Yes |	No | No | No
-
-| Install an HTTPS certificate | Yes |	No | No | No
+| Install an HTTPS certificate | Yes | No | No | No
 
 |===
 
