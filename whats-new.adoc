@@ -18,6 +18,29 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 3 April 2024
+
+=== Connector 3.9.39
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes. 
+
+At this time, the 3.9.39 release is available for standard mode and restricted mode.
+
+=== AWS permissions to create a Connector
+
+Two additional permissions are now required to create a Connector in AWS from BlueXP:
+
+"ec2:DescribeLaunchTemplate",
+"ec2:CreateLaunchTemplate",
+
+These permissions are required to enable IMDSv2 on the EC2 instance.
+
+We have included these permissions in the policy that displays in the BlueXP user interface when creating a Connector and in the same policy that's provided in the documentation.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions[Learn how to set up AWS permissions to create a Connector from AWS].
+
+NOTE: This policy contains only the permissions needed to launch the Connector instance in AWS from BlueXP. It's not the same policy that gets assigned to the Connector instance.
+
 == 26 March 2024
 
 === Private mode release (3.9.38)
@@ -88,6 +111,8 @@ In addition, we renamed the *Connector Settings* page to *Cloud Volumes ONTAP Se
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png[A screenshot that shows the Cloud Volumes ONTAP Settings option that is available from the Settings menu.]
 
+//end::whats-new[]
+
 == 15 February 2024
 
 === Connector 3.9.37
@@ -103,8 +128,6 @@ If you use NetApp cloud credentials to log in to BlueXP, you can now edit your n
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
 
 Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
-
-//end::whats-new[]
 
 == 11 January 2024
 
