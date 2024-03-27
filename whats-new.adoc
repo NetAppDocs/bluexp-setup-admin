@@ -31,7 +31,7 @@ At this time, the 3.9.39 release is available for standard mode and restricted m
 Two additional permissions are now required to create a Connector in AWS from BlueXP:
 
 [source,json]
-"ec2:DescribeLaunchTemplate",
+"ec2:DescribeLaunchTemplates",
 "ec2:CreateLaunchTemplate",
 
 These permissions are required to enable IMDSv2 on the EC2 instance for the Connector.
