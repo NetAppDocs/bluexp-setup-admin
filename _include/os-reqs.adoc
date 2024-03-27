@@ -6,8 +6,11 @@ The Connector is not supported on a host that is shared with other applications.
 //tag::os[]
 Supported operating systems::
 * Ubuntu 22.04 LTS
-* CentOS 7.6, 7.7, 7.8, and 7.9
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.8, and 9.3
+* CentOS 7.6 to 7.9
+* Red Hat Enterprise Linux 
+** 7.6 to 7.9
+** 8.6 to 8.9
+** 9.1 to 9.3
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
@@ -73,7 +76,7 @@ Docker Engine:: Docker Engine version 19.3.1 or later is required on the host be
 //tag::container-req[]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-* Podman version 4.6.1 or later is required for Red Hat Enterprise Linux 8.8 and 9.3.
+* Podman version 4.6.1 or later is required for Red Hat Enterprise Linux 8.x and 9.x.
 +
 The following prerequisites must be met for Podman:
 +
