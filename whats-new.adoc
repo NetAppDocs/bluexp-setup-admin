@@ -30,16 +30,17 @@ At this time, the 3.9.39 release is available for standard mode and restricted m
 
 Two additional permissions are now required to create a Connector in AWS from BlueXP:
 
+[source,json]
 "ec2:DescribeLaunchTemplate",
 "ec2:CreateLaunchTemplate",
 
-These permissions are required to enable IMDSv2 on the EC2 instance.
+These permissions are required to enable IMDSv2 on the EC2 instance for the Connector.
 
 We have included these permissions in the policy that displays in the BlueXP user interface when creating a Connector and in the same policy that's provided in the documentation.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions[Learn how to set up AWS permissions to create a Connector from AWS].
-
 NOTE: This policy contains only the permissions needed to launch the Connector instance in AWS from BlueXP. It's not the same policy that gets assigned to the Connector instance.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions[Learn how to set up AWS permissions to create a Connector from AWS].
 
 == 26 March 2024
 
