@@ -57,6 +57,9 @@ If your organization requires deployment of a proxy server for all outgoing inte
 * IP address
 * Credentials
 * HTTPS certificate
+
++
+Note that BlueXP does not support transparent proxy servers.
 //end::proxy[]
 
 //tag::azure-public-ip[]

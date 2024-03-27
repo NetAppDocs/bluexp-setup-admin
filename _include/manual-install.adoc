@@ -8,6 +8,8 @@ You should have the following:
 * Details about a proxy server, if a proxy is required for internet access from the Connector.
 +
 You have the option to configure a proxy server after installation but doing so requires restarting the Connector.
++
+Note that BlueXP does not support transparent proxy servers.
 
 * A CA-signed certificate, if the proxy server uses HTTPS or if the proxy is an intercepting proxy.
 //end::before[]
