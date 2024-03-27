@@ -22,6 +22,7 @@ Supported operating systems::
 * Ubuntu 22.04 LTS
 * CentOS 7.6, 7.7, 7.8, and 7.9
 * Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
+
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
