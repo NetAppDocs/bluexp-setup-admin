@@ -1,0 +1,4301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>AWS permissions for the Connector | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="AWS permissions for the Connector | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html" />
+	<meta property="og:description" content="When BlueXP launches the Connector instance in AWS, it attaches a policy to the instance that provides the Connector with permissions to manage resources and..." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/bluexp-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="When BlueXP launches the Connector instance in AWS, it attaches a policy to the instance that provides the Connector with permissions to manage resources and...">
+  <meta name="keywords" content=" permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions"><!-- Icons -->
+  <link rel="icon" href="/us-en/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/us-en/bluexp-setup-admin/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/reference-permissions-aws.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/bluexp-setup-admin/js/na-search.js'></script><script src='/us-en/bluexp-setup-admin/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/us-en/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/jszip.min.js'></script><script src='/us-en/bluexp-setup-admin/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/us-en/bluexp-setup-admin/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/">
+                <image id="ie-header-logo" src="/us-en/bluexp-setup-admin/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">Docs</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/us-en/bluexp-setup-admin/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">English</span>
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/reference-permissions-aws.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/us-en/bluexp-setup-admin/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">All NetApp</span>
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">All docs</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Cloud docs</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/us-en/bluexp-setup-admin/">-->
+      Setup and administration
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/us-en/bluexp-setup-admin/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/us-en/bluexp-setup-admin/search.html" 
+        data-type="widget"
+        data-placeholder="Search documentation"
+        data-no-results-found="No results were found for {query}"
+        data-did-you-mean="Search for {suggestion}."
+        data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+        data-results-found="{hitCount} results found"
+        data-error-message="An error occurred. Please try again."
+        data-error-reset="Reset search"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Setup and administration docs"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/bluexp-setup-admin/index.html">
+        Setup and administration docs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Release notes"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Release notes</div>-->
+         Release notes
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What's new"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/whats-new.html">
+        What's new
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Known limitations"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/reference-limitations.html">
+        Known limitations
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started</div>-->
+         Get started
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn the basics"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Learn the basics</div>-->
+         Learn the basics
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-overview.html">
+        BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accounts"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-netapp-accounts.html">
+        Accounts
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connectors"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-connectors.html">
+        Connectors
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment modes"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-modes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-modes.html">
+        Deployment modes
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started with standard mode"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started with standard mode</div>-->
+         Get started with standard mode
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Getting started workflow"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-quick-start-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html">
+        Getting started workflow
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare networking for using the BlueXP console"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-networking-saas-console.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-networking-saas-console.html">
+        Prepare networking for using the BlueXP console
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Sign up to BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-sign-up-saas.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-sign-up-saas.html">
+        Sign up to BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Create a Connector</div>-->
+         Create a Connector
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector installation options"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-install-options-aws.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/concept-install-options-aws.html">
+        Connector installation options
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-aws-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        Create a Connector from BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from the marketplace"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-aws-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        Create a Connector from the marketplace
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manually install the Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-aws-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        Manually install the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector installation options"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-install-options-azure.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/concept-install-options-azure.html">
+        Connector installation options
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-azure-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        Create a Connector from BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from the marketplace"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-azure-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        Create a Connector from the marketplace
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manually install the Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-azure-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        Manually install the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector installation options"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-install-options-google.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/concept-install-options-google.html">
+        Connector installation options
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from BlueXP or gcloud"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-google-bluexp-gcloud.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        Create a Connector from BlueXP or gcloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manually install the Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-google-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-google-manual.html">
+        Manually install the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="On premises"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-connector-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-install-connector-on-prem.html">
+        On premises
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Subscribe to BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-subscribe-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-subscribe-standard-mode.html">
+        Subscribe to BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What you can do next"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-whats-next.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-whats-next.html">
+        What you can do next
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started with restricted mode"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started with restricted mode</div>-->
+         Get started with restricted mode
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Getting started workflow"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-quick-start-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-quick-start-restricted-mode.html">
+        Getting started workflow
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare for deployment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-prepare-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html">
+        Prepare for deployment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-install-restricted-mode.html">
+        Deploy the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Subscribe to BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-subscribe-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-subscribe-restricted-mode.html">
+        Subscribe to BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What you can do next"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-whats-next-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
+        What you can do next
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started with private mode"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started with private mode</div>-->
+         Get started with private mode
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Getting started workflow"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-quick-start-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-quick-start-private-mode.html">
+        Getting started workflow
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare for deployment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-prepare-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-prepare-private-mode.html">
+        Prepare for deployment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-install-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-install-private-mode.html">
+        Deploy the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What you can do next"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-whats-next-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-whats-next-private-mode.html">
+        What you can do next
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Log in to BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-logging-in.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/task-logging-in.html">
+        Log in to BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administer BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Administer BlueXP</div>-->
+         Administer BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Identity federation"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-federation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/concept-federation.html">
+        Identity federation
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP accounts"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXP accounts</div>-->
+         BlueXP accounts
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage your BlueXP account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-managing-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html">
+        Manage your BlueXP account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Monitor operations in your account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-monitor-cm-operations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-monitor-cm-operations.html">
+        Monitor operations in your account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create another BlueXP account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-create-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-create-account.html">
+        Create another BlueXP account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="User roles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-user-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-user-roles.html">
+        User roles
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connectors"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Connectors</div>-->
+         Connectors
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Find the system ID for a Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-finding-system-id.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-finding-system-id.html">
+        Find the system ID for a Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage existing Connectors"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-managing-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-managing-connectors.html">
+        Manage existing Connectors
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install an HTTPS certificate for secure access"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-installing-https-cert.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-installing-https-cert.html">
+        Install an HTTPS certificate for secure access
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure a Connector to use a proxy server"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-configuring-proxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-configuring-proxy.html">
+        Configure a Connector to use a proxy server
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Default configuration for the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-connector-default-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-connector-default-config.html">
+        Default configuration for the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Credentials and subscriptions"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Credentials and subscriptions</div>-->
+         Credentials and subscriptions
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn about credentials and permissions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-accounts-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/concept-accounts-aws.html">
+        Learn about credentials and permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials and subscriptions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-adding-aws-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-adding-aws-accounts.html">
+        Manage credentials and subscriptions
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn about credentials and permissions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-accounts-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/concept-accounts-azure.html">
+        Learn about credentials and permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials and subscriptions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-adding-azure-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-adding-azure-accounts.html">
+        Manage credentials and subscriptions
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn about projects and permissions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/concept-accounts-gcp.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/concept-accounts-gcp.html">
+        Learn about projects and permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials and subscriptions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-adding-gcp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html">
+        Manage credentials and subscriptions
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage NSS credentials associated with a BlueXP account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-adding-nss-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-adding-nss-accounts.html">
+        Manage NSS credentials associated with a BlueXP account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials associated with your BlueXP login"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-manage-user-credentials.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-manage-user-credentials.html">
+        Manage credentials associated with your BlueXP login
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Reference"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Reference</div>-->
+         Reference
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permissions"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Permissions</div>-->
+         Permissions
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permissions summary"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions.html">
+        Permissions summary
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS permissions for the Connector"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-permissions-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions-aws.html">
+        AWS permissions for the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure permissions for the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-permissions-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions-azure.html">
+        Azure permissions for the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud permissions for the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-permissions-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions-gcp.html">
+        Google Cloud permissions for the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ports"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Ports</div>-->
+         Ports
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector security group rules in AWS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-ports-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-aws.html">
+        Connector security group rules in AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector security group rules in Azure"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-ports-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-azure.html">
+        Connector security group rules in Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector firewall rules in Google Cloud"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-ports-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-gcp.html">
+        Connector firewall rules in Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ports for the on-prem Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/reference-ports-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-on-prem.html">
+        Ports for the on-prem Connector
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Knowledge and support"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Knowledge and support</div>-->
+         Knowledge and support
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Register for support"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/task-support-registration.html">
+        Register for support
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get help"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/task-get-help.html">
+        Get help
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Legal notices"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-permissions-aws.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/bluexp-setup-admin/legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/us-en/bluexp-setup-admin"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/us-en/bluexp-setup-admin"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">AWS permissions for the Connector</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-08 17:26:23 +0000">03/08/2024</time>
+        
+    
+    
+        <span>Contributors
+            <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-bcammett"><img  class="avatar avatar-small" alt="netapp-bcammett" width="20" height="20" src="https://avatars.githubusercontent.com/u/18287750?v=4" style="border-radius: 50%;"/></a>
+        
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Suggest changes</span>
+        <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html&page-title=AWS permissions for the Connector" class="page-nav-contribute-link" role="button">Request doc changes</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/reference-permissions-aws.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/us-en/bluexp-setup-admin/pdfs/fullsite-sidebar/BlueXP_setup_and_administration_documentation.pdf" >
+                    <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Release_notes.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Release notes
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Learn_the_basics.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Learn the basics
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_standard_mode.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started with standard mode
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Create_a_Connector.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Create a Connector
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_restricted_mode.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started with restricted mode
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_private_mode.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started with private mode
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Administer_BlueXP.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Administer BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/BlueXP_accounts.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXP accounts
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Connectors.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Connectors
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Credentials_and_subscriptions.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Credentials and subscriptions
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Reference.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Reference
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Permissions.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Permissions
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Ports.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Ports
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Knowledge_and_support.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Knowledge and support
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/us-en/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>When BlueXP launches the Connector instance in AWS, it attaches a policy to the instance that provides the Connector with permissions to manage resources and processes within that AWS account. The Connector uses the permissions to make API calls to several AWS services, including EC2, S3, CloudFormation, IAM, the Key Management Service (KMS), and more.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="iam-policies">IAM policies</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The IAM policies available below provide the permissions that a Connector needs to manage resources and processes within your public cloud environment based on your AWS region.</p>
+</div>
+<div class="paragraph">
+<p>Note the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you create a Connector in a standard AWS region directly from BlueXP, BlueXP automatically applies policies to the Connector. You don't need to do anything in this case.</p>
+</li>
+<li>
+<p>You need to set up the policies yourself if you deploy the Connector from the AWS Marketplace, if you manually install the Connector on a Linux host, or if you want to add additional AWS credentials to BlueXP.</p>
+</li>
+<li>
+<p>You also need to ensure that the policies are up to date as new permissions are added in subsequent releases.</p>
+</li>
+<li>
+<p>If needed, you can restrict the IAM policies by using the IAM <code>Condition</code> element. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html" target="_blank" rel="noopener">AWS documentation: Condition element</a></p>
+</li>
+<li>
+<p>To view step-by-step instructions for using these policies, refer to the following pages:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions">Set up permissions for an AWS Marketplace deployment</a></p>
+</li>
+<li>
+<p><a href="task-install-connector-on-prem.html#step-3-set-up-cloud-permissions">Set up permissions for on-prem deployments</a></p>
+</li>
+<li>
+<p><a href="task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions">Set up permissions for restricted mode</a></p>
+</li>
+<li>
+<p><a href="task-prepare-private-mode.html#step-5-prepare-cloud-permissions">Set up permissions for private mode</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Select your region to view the required policies:</p>
+</div>
+<details>
+<summary class="title">Standard regions</summary>
+<div class="content">
+<div class="paragraph">
+<p>For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS.</p>
+</div>
+<div class="paragraph">
+<p>The first policy provides permissions for the following services:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon S3 bucket discovery</p>
+</li>
+<li>
+<p>Backup and recovery</p>
+</li>
+<li>
+<p>Classification</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP</p>
+</li>
+<li>
+<p>FSx for ONTAP</p>
+</li>
+<li>
+<p>Tiering</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The second policy provides permissions for the following services:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Edge caching</p>
+</li>
+<li>
+<p>Kubernetes</p>
+</li>
+<li>
+<p>Remediation</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Policy #1</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeTags",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:CreatePlacementGroup",
+                "ec2:DescribeReservedInstancesOfferings",
+                "ec2:AssignPrivateIpAddresses",
+                "ec2:CreateRoute",
+                "ec2:DescribeVpcs",
+                "ec2:ReplaceRoute",
+                "ec2:UnassignPrivateIpAddresses",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DeleteNetworkInterface",
+                "ec2:DeleteSnapshot",
+                "ec2:DeleteTags",
+                "ec2:DeleteRoute",
+                "ec2:DeletePlacementGroup",
+                "ec2:DescribePlacementGroups",
+                "ec2:DescribeVolumesModifications",
+                "ec2:ModifyVolume",
+                "cloudformation:CreateStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "cloudformation:DeleteStack",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:ListInstanceProfiles",
+                "iam:DeleteRole",
+                "iam:DeleteRolePolicy",
+                "iam:DeleteInstanceProfile",
+                "iam:GetRolePolicy",
+                "iam:GetRole",
+                "sts:DecodeAuthorizationMessage",
+                "sts:AssumeRole",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListBucket",
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketPolicy",
+                "s3:GetBucketAcl",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion",
+                "s3:PutObject",
+                "s3:ListAllMyBuckets",
+                "s3:GetObject",
+                "s3:GetEncryptionConfiguration",
+                "kms:List*",
+                "kms:ReEncrypt*",
+                "kms:Describe*",
+                "kms:CreateGrant",
+                "fsx:Describe*",
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "cvoServicePolicy"
+        },
+        {
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:TerminateInstances",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeRegions",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:DescribeVpcEndpoints",
+                "kms:ListAliases",
+                "athena:StartQueryExecution",
+                "athena:GetQueryResults",
+                "athena:GetQueryExecution",
+                "glue:GetDatabase",
+                "glue:GetTable",
+                "glue:CreateTable",
+                "glue:CreateDatabase",
+                "glue:GetPartitions",
+                "glue:BatchCreatePartition",
+                "glue:BatchDeletePartition"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "backupPolicy"
+        },
+        {
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketAcl",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:GetObject",
+                "s3:PutEncryptionConfiguration",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion",
+                "s3:ListBucketMultipartUploads",
+                "s3:PutObject",
+                "s3:PutBucketAcl",
+                "s3:AbortMultipartUpload",
+                "s3:ListMultipartUploadParts",
+                "s3:DeleteBucket",
+                "s3:GetObjectVersionTagging",
+                "s3:GetObjectVersionAcl",
+                "s3:GetObjectRetention",
+                "s3:GetObjectTagging",
+                "s3:GetObjectVersion",
+                "s3:PutObjectVersionTagging",
+                "s3:PutObjectRetention",
+                "s3:DeleteObjectTagging",
+                "s3:DeleteObjectVersionTagging",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetBucketVersioning",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutBucketVersioning",
+                "s3:BypassGovernanceRetention",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketOwnershipControls"
+            ],
+            "Resource": [
+                "arn:aws:s3:::netapp-backup-*"
+            ],
+            "Effect": "Allow",
+            "Sid": "backupS3Policy"
+        },
+        {
+            "Action": [
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:DeleteBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::fabric-pool*"
+            ],
+            "Effect": "Allow",
+            "Sid": "fabricPoolS3Policy"
+        },
+        {
+            "Action": [
+                "ec2:DescribeRegions"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "fabricPoolPolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/netapp-adc-manager": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume",
+                "ec2:StopInstances",
+                "ec2:DeleteVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Action": [
+                "ec2:DeleteVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Policy #2</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:DescribeRegions",
+                "eks:ListClusters",
+                "eks:DescribeCluster",
+                "iam:GetInstanceProfile"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "K8sServicePolicy"
+        },
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudwatch:GetMetricStatistics",
+                "cloudformation:ListStacks"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "GFCservicePolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/GFCInstance": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:CreateTags",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "tag:getResources",
+                "tag:getTagKeys",
+                "tag:getTagValues",
+                "tag:TagResources",
+                "tag:UntagResources"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "tagServicePolicy"
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">GovCloud (US) regions</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListInstanceProfiles",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "ec2:ModifyVolumeAttribute",
+                "sts:DecodeAuthorizationMessage",
+                "ec2:DescribeImages",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeInstances",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:StopInstances",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:CreateBucket",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "kms:List*",
+                "kms:ReEncrypt*",
+                "kms:Describe*",
+                "kms:CreateGrant",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Sid": "backupPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:s3:::netapp-backup-*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-us-gov:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Secret regions</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup",
+                "iam:ListinstanceProfiles"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Top Secret regions</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup",
+                "iam:ListinstanceProfiles"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-the-aws-permissions-are-used">How the AWS permissions are used</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following sections describe how the permissions are used for each BlueXP service. This information can be helpful if your corporate policies dictate that permissions are only provided as needed.</p>
+</div>
+<div class="sect2">
+<h3 id="amazon-fsx-for-ontap">Amazon FSx for ONTAP</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to manage Amazon FSx for ONTAP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:DescribeInstances</p>
+</li>
+<li>
+<p>ec2:DescribeInstanceStatus</p>
+</li>
+<li>
+<p>ec2:DescribeInstanceAttribute</p>
+</li>
+<li>
+<p>ec2:DescribeRouteTables</p>
+</li>
+<li>
+<p>ec2:DescribeImages</p>
+</li>
+<li>
+<p>ec2:CreateTags</p>
+</li>
+<li>
+<p>ec2:DescribeVolumes</p>
+</li>
+<li>
+<p>ec2:DescribeSecurityGroups</p>
+</li>
+<li>
+<p>ec2:DescribeNetworkInterfaces</p>
+</li>
+<li>
+<p>ec2:DescribeSubnets</p>
+</li>
+<li>
+<p>ec2:DescribeVpcs</p>
+</li>
+<li>
+<p>ec2:DescribeDhcpOptions</p>
+</li>
+<li>
+<p>ec2:DescribeSnapshots</p>
+</li>
+<li>
+<p>ec2:DescribeKeyPairs</p>
+</li>
+<li>
+<p>ec2:DescribeRegions</p>
+</li>
+<li>
+<p>ec2:DescribeTags</p>
+</li>
+<li>
+<p>ec2:DescribeIamInstanceProfileAssociations</p>
+</li>
+<li>
+<p>ec2:DescribeReservedInstancesOfferings</p>
+</li>
+<li>
+<p>ec2:DescribeVpcEndpoints</p>
+</li>
+<li>
+<p>ec2:DescribeVpcs</p>
+</li>
+<li>
+<p>ec2:DescribeVolumesModifications</p>
+</li>
+<li>
+<p>ec2:DescribePlacementGroups</p>
+</li>
+<li>
+<p>kms:List*</p>
+</li>
+<li>
+<p>kms:Describe*</p>
+</li>
+<li>
+<p>kms:CreateGrant</p>
+</li>
+<li>
+<p>kms:ListAliases</p>
+</li>
+<li>
+<p>fsx:Describe*</p>
+</li>
+<li>
+<p>fsx:List*</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="amazon-s3-bucket-discovery">Amazon S3 bucket discovery</h3>
+<div class="paragraph">
+<p>The Connector makes the following API request to discover Amazon S3 buckets:</p>
+</div>
+<div class="paragraph">
+<p>s3:GetEncryptionConfiguration</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="backup-and-recovery">Backup and recovery</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to manage backups in Amazon S3:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:GetBucketLocation</p>
+</li>
+<li>
+<p>s3:ListAllMyBuckets</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:CreateBucket</p>
+</li>
+<li>
+<p>s3:GetLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:PutLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:PutBucketTagging</p>
+</li>
+<li>
+<p>s3:ListBucketVersions</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:PutBucketPublicAccessBlock</p>
+</li>
+<li>
+<p>kms:List*</p>
+</li>
+<li>
+<p>kms:Describe*</p>
+</li>
+<li>
+<p>s3:GetObject</p>
+</li>
+<li>
+<p>ec2:DescribeVpcEndpoints</p>
+</li>
+<li>
+<p>kms:ListAliases</p>
+</li>
+<li>
+<p>s3:PutEncryptionConfiguration</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Connector makes the following API requests when you use the Search &amp; Restore method to restore volumes and files:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:CreateBucket</p>
+</li>
+<li>
+<p>s3:DeleteObject</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersion</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:ListBucketVersions</p>
+</li>
+<li>
+<p>s3:ListBucketMultipartUploads</p>
+</li>
+<li>
+<p>s3:PutObject</p>
+</li>
+<li>
+<p>s3:PutBucketAcl</p>
+</li>
+<li>
+<p>s3:PutLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:PutBucketPublicAccessBlock</p>
+</li>
+<li>
+<p>s3:AbortMultipartUpload</p>
+</li>
+<li>
+<p>s3:ListMultipartUploadParts</p>
+</li>
+<li>
+<p>athena:StartQueryExecution</p>
+</li>
+<li>
+<p>athena:GetQueryResults</p>
+</li>
+<li>
+<p>athena:GetQueryExecution</p>
+</li>
+<li>
+<p>athena:StopQueryExecution</p>
+</li>
+<li>
+<p>glue:CreateDatabase</p>
+</li>
+<li>
+<p>glue:CreateTable</p>
+</li>
+<li>
+<p>glue:BatchDeletePartition</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Connector makes the following API requests when you use DataLock and Ransomware protection for your volume backups:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:GetObjectVersionTagging</p>
+</li>
+<li>
+<p>s3:GetBucketObjectLockConfiguration</p>
+</li>
+<li>
+<p>s3:GetObjectVersionAcl</p>
+</li>
+<li>
+<p>s3:PutObjectTagging</p>
+</li>
+<li>
+<p>s3:DeleteObject</p>
+</li>
+<li>
+<p>s3:DeleteObjectTagging</p>
+</li>
+<li>
+<p>s3:GetObjectRetention</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersionTagging</p>
+</li>
+<li>
+<p>s3:PutObject</p>
+</li>
+<li>
+<p>s3:GetObject</p>
+</li>
+<li>
+<p>s3:PutBucketObjectLockConfiguration</p>
+</li>
+<li>
+<p>s3:GetLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:ListBucketByTags</p>
+</li>
+<li>
+<p>s3:GetBucketTagging</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersion</p>
+</li>
+<li>
+<p>s3:ListBucketVersions</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:PutBucketTagging</p>
+</li>
+<li>
+<p>s3:GetObjectTagging</p>
+</li>
+<li>
+<p>s3:PutBucketVersioning</p>
+</li>
+<li>
+<p>s3:PutObjectVersionTagging</p>
+</li>
+<li>
+<p>s3:GetBucketVersioning</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:BypassGovernanceRetention</p>
+</li>
+<li>
+<p>s3:PutObjectRetention</p>
+</li>
+<li>
+<p>s3:GetBucketLocation</p>
+</li>
+<li>
+<p>s3:GetObjectVersion</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Connector makes the following API requests if you use a different AWS account for your Cloud Volumes ONTAP backups than you're using for the source volumes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:PutBucketPolicy</p>
+</li>
+<li>
+<p>s3:PutBucketOwnershipControls</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="classification">Classification</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to deploy the BlueXP classification instance:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:DescribeInstances</p>
+</li>
+<li>
+<p>ec2:DescribeInstanceStatus</p>
+</li>
+<li>
+<p>ec2:RunInstances</p>
+</li>
+<li>
+<p>ec2:TerminateInstances</p>
+</li>
+<li>
+<p>ec2:CreateTags</p>
+</li>
+<li>
+<p>ec2:CreateVolume</p>
+</li>
+<li>
+<p>ec2:AttachVolume</p>
+</li>
+<li>
+<p>ec2:CreateSecurityGroup</p>
+</li>
+<li>
+<p>ec2:DeleteSecurityGroup</p>
+</li>
+<li>
+<p>ec2:DescribeSecurityGroups</p>
+</li>
+<li>
+<p>ec2:CreateNetworkInterface</p>
+</li>
+<li>
+<p>ec2:DescribeNetworkInterfaces</p>
+</li>
+<li>
+<p>ec2:DeleteNetworkInterface</p>
+</li>
+<li>
+<p>ec2:DescribeSubnets</p>
+</li>
+<li>
+<p>ec2:DescribeVpcs</p>
+</li>
+<li>
+<p>ec2:CreateSnapshot</p>
+</li>
+<li>
+<p>ec2:DescribeRegions</p>
+</li>
+<li>
+<p>cloudformation:CreateStack</p>
+</li>
+<li>
+<p>cloudformation:DeleteStack</p>
+</li>
+<li>
+<p>cloudformation:DescribeStacks</p>
+</li>
+<li>
+<p>cloudformation:DescribeStackEvents</p>
+</li>
+<li>
+<p>iam:AddRoleToInstanceProfile</p>
+</li>
+<li>
+<p>ec2:AssociateIamInstanceProfile</p>
+</li>
+<li>
+<p>ec2:DescribeIamInstanceProfileAssociations</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Connector makes the following API requests to scan S3 buckets when you use BlueXP classification:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>iam:AddRoleToInstanceProfile</p>
+</li>
+<li>
+<p>ec2:AssociateIamInstanceProfile</p>
+</li>
+<li>
+<p>ec2:DescribeIamInstanceProfileAssociations</p>
+</li>
+<li>
+<p>s3:GetBucketTagging</p>
+</li>
+<li>
+<p>s3:GetBucketLocation</p>
+</li>
+<li>
+<p>s3:ListAllMyBuckets</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:GetBucketPolicyStatus</p>
+</li>
+<li>
+<p>s3:GetBucketPolicy</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:GetObject</p>
+</li>
+<li>
+<p>iam:GetRole</p>
+</li>
+<li>
+<p>s3:DeleteObject</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersion</p>
+</li>
+<li>
+<p>s3:PutObject</p>
+</li>
+<li>
+<p>sts:AssumeRole</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to deploy and manage Cloud Volumes ONTAP in AWS.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Action</th>
+<th class="tableblock halign-left valign-top">Used for deployment?</th>
+<th class="tableblock halign-left valign-top">Used for daily operations?</th>
+<th class="tableblock halign-left valign-top">Used for deletion?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="13"><p class="tableblock">Create and manage IAM roles and instance profiles for Cloud Volumes ONTAP instances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:ListInstanceProfiles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:CreateRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:DeleteRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:PutRolePolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:CreateInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:DeleteRolePolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:AddRoleToInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:RemoveRoleFromInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:DeleteInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:PassRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AssociateIamInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeIamInstanceProfileAssociations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DisassociateIamInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decode authorization status messages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sts:DecodeAuthorizationMessage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Describe the specified images (AMIs) available to the account</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeImages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Describe the route tables in a VPC (required for HA pairs only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeRouteTables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Stop, start, and monitor instances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:StartInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:StopInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeInstanceStatus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:RunInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:TerminateInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyInstanceAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verify that enhanced networking is enabled for supported instance types</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeInstanceAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tag resources with the "WorkingEnvironment" and "WorkingEnvironmentId" tags which are used for maintenance and cost allocation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateTags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="6"><p class="tableblock">Manage EBS volumes that Cloud Volumes ONTAP uses as back-end storage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeVolumes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyVolumeAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AttachVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DetachVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Create and manage security groups for Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateSecurityGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteSecurityGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeSecurityGroups</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:RevokeSecurityGroupEgress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AuthorizeSecurityGroupEgress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AuthorizeSecurityGroupIngress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:RevokeSecurityGroupIngress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">Create and manage network interfaces for Cloud Volumes ONTAP in the target subnet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateNetworkInterface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeNetworkInterfaces</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteNetworkInterface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyNetworkInterfaceAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Get the list of destination subnets and security groups</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeSubnets</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeVpcs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get DNS servers and the default domain name for Cloud Volumes ONTAP instances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeDhcpOptions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Take snapshots of EBS volumes for Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateSnapshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteSnapshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeSnapshots</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capture the Cloud Volumes ONTAP console, which is attached to AutoSupport messages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:GetConsoleOutput</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the list of available key pairs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeKeyPairs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the list of available AWS regions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeRegions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Manage tags for resources associated with Cloud Volumes ONTAP instances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteTags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeTags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">Create and manage stacks for AWS CloudFormation templates</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cloudformation:CreateStack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cloudformation:DeleteStack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cloudformation:DescribeStacks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cloudformation:DescribeStackEvents</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cloudformation:ValidateTemplate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="15"><p class="tableblock">Create and manage an S3 bucket that a Cloud Volumes ONTAP system uses as a capacity tier for data tiering</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:CreateBucket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:DeleteBucket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetLifecycleConfiguration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:PutLifecycleConfiguration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:PutBucketTagging</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:ListBucketVersions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketPolicyStatus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketPublicAccessBlock</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketAcl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketPolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:PutBucketPublicAccessBlock</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketTagging</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketLocation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:ListAllMyBuckets</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:ListBucket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">Enable data encryption of Cloud Volumes ONTAP using the AWS Key Management Service (KMS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kms:List*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kms:ReEncrypt*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kms:Describe*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kms:CreateGrant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kms:GenerateDataKeyWithoutPlaintext</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Create and manage an AWS spread placement group for two HA nodes and the mediator in a single AWS Availability Zone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreatePlacementGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeletePlacementGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Create reports</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fsx:Describe*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fsx:List*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Create and manage aggregates that support the Amazon EBS Elastic Volumes feature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeVolumesModifications</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="edge-caching">Edge caching</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to deploy BlueXP edge caching instances during deployment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>cloudformation:DescribeStacks</p>
+</li>
+<li>
+<p>cloudwatch:GetMetricStatistics</p>
+</li>
+<li>
+<p>cloudformation:ListStacks</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="kubernetes">Kubernetes</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to discover and manage Amazon EKS clusters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:DescribeRegions</p>
+</li>
+<li>
+<p>eks:ListClusters</p>
+</li>
+<li>
+<p>eks:DescribeCluster</p>
+</li>
+<li>
+<p>iam:GetInstanceProfile</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="remediation">Remediation</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to manage tags on AWS resources when you use BlueXP remediation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:CreateTags</p>
+</li>
+<li>
+<p>ec2:DeleteTags</p>
+</li>
+<li>
+<p>ec2:DescribeTags</p>
+</li>
+<li>
+<p>tag:getResources</p>
+</li>
+<li>
+<p>tag:getTagKeys</p>
+</li>
+<li>
+<p>tag:getTagValues</p>
+</li>
+<li>
+<p>tag:TagResources</p>
+</li>
+<li>
+<p>tag:UntagResources</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="change-log">Change log</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As permissions are added and removed, we'll note them in the sections below.</p>
+</div>
+<div class="sect2">
+<h3 id="8-march-2024">8 March 2024</h3>
+<div class="paragraph">
+<p>The following permission is now included in the Connector policy:</p>
+</div>
+<div class="paragraph">
+<p>ec2:DescribeAvailabilityZones</p>
+</div>
+<div class="paragraph">
+<p>This permission is required for an upcoming release. We'll update the release notes with more details when that release is available.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="6-june-2023">6 June 2023</h3>
+<div class="paragraph">
+<p>The following permission is now required for Cloud Volumes ONTAP:</p>
+</div>
+<div class="paragraph">
+<p>kms:GenerateDataKeyWithoutPlaintext</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="14-february-2023">14 February 2023</h3>
+<div class="paragraph">
+<p>The following permission is now required for BlueXP tiering:</p>
+</div>
+<div class="paragraph">
+<p>ec2:DescribeVpcEndpoints</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">On this page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie settings</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Send feedback about this page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/bluexp-setup-admin/js/ie-tabbed-blocks.js'></script>
+    <script src='/us-en/bluexp-setup-admin/js/ie-sidebar.js'></script>
+  </body>
+
+</html>

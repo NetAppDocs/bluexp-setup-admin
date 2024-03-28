@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bluexp-setup-admin | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/us-en/bluexp-setup-admin/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/us-en/bluexp-setup-admin</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>en-us</language>
+    <ttl>60</ttl>
+    <pubDate>Thu, 28 Mar 2024 17:40:59 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Mar 2024 17:40:59 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>What's new (26 Mar 2024)</title>
+      <pubDate>Tue, 26 Mar 2024 15:19:20 +0000</pubDate>
+      <link>https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html?time=1711466360</link>
+      <guid isPermaLink="false">Tue, 26 Mar 2024 15:19:20 +0000</guid>
+      <description><![CDATA[ Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more. ]]></description>
+    </item>
+    
+    
+  </channel>
+</rss>

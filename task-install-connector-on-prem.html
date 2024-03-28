@@ -1,0 +1,3269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Install and set up a Connector on premises | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Install and set up a Connector on premises | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html" />
+	<meta property="og:description" content="Install a Connector on premises and then log in and set it up to work with your BlueXP account." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/bluexp-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Install a Connector on premises and then log in and set it up to work with your BlueXP account.">
+  <meta name="keywords" content=" install connector, on prem connector installation, on prem connector, install connector on prem, manual install"><!-- Icons -->
+  <link rel="icon" href="/us-en/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/us-en/bluexp-setup-admin/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-on-prem.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/bluexp-setup-admin/js/na-search.js'></script><script src='/us-en/bluexp-setup-admin/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/us-en/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/jszip.min.js'></script><script src='/us-en/bluexp-setup-admin/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/us-en/bluexp-setup-admin/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/">
+                <image id="ie-header-logo" src="/us-en/bluexp-setup-admin/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">Docs</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/us-en/bluexp-setup-admin/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">English</span>
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-on-prem.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/us-en/bluexp-setup-admin/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">All NetApp</span>
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">All docs</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Cloud docs</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/us-en/bluexp-setup-admin/">-->
+      Setup and administration
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/us-en/bluexp-setup-admin/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/us-en/bluexp-setup-admin/search.html" 
+        data-type="widget"
+        data-placeholder="Search documentation"
+        data-no-results-found="No results were found for {query}"
+        data-did-you-mean="Search for {suggestion}."
+        data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+        data-results-found="{hitCount} results found"
+        data-error-message="An error occurred. Please try again."
+        data-error-reset="Reset search"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Setup and administration docs"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/bluexp-setup-admin/index.html">
+        Setup and administration docs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Release notes"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Release notes</div>-->
+         Release notes
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What's new"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/whats-new.html">
+        What's new
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Known limitations"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/reference-limitations.html">
+        Known limitations
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started</div>-->
+         Get started
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn the basics"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Learn the basics</div>-->
+         Learn the basics
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-overview.html">
+        BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accounts"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-netapp-accounts.html">
+        Accounts
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connectors"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-connectors.html">
+        Connectors
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment modes"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-modes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/concept-modes.html">
+        Deployment modes
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started with standard mode"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started with standard mode</div>-->
+         Get started with standard mode
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Getting started workflow"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-quick-start-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html">
+        Getting started workflow
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare networking for using the BlueXP console"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-networking-saas-console.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-networking-saas-console.html">
+        Prepare networking for using the BlueXP console
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Sign up to BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-sign-up-saas.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-sign-up-saas.html">
+        Sign up to BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Create a Connector</div>-->
+         Create a Connector
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector installation options"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-install-options-aws.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/concept-install-options-aws.html">
+        Connector installation options
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-aws-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        Create a Connector from BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from the marketplace"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-aws-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        Create a Connector from the marketplace
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manually install the Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-aws-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        Manually install the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector installation options"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-install-options-azure.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/concept-install-options-azure.html">
+        Connector installation options
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-azure-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        Create a Connector from BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from the marketplace"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-azure-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        Create a Connector from the marketplace
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manually install the Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-azure-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        Manually install the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector installation options"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-install-options-google.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/concept-install-options-google.html">
+        Connector installation options
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a Connector from BlueXP or gcloud"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-google-bluexp-gcloud.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        Create a Connector from BlueXP or gcloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manually install the Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-google-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/bluexp-setup-admin/task-install-connector-google-manual.html">
+        Manually install the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="On premises"
+      data-li-level="4#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-connector-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-install-connector-on-prem.html">
+        On premises
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Subscribe to BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-subscribe-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-subscribe-standard-mode.html">
+        Subscribe to BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What you can do next"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-whats-next.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-whats-next.html">
+        What you can do next
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started with restricted mode"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started with restricted mode</div>-->
+         Get started with restricted mode
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Getting started workflow"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-quick-start-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-quick-start-restricted-mode.html">
+        Getting started workflow
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare for deployment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-prepare-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html">
+        Prepare for deployment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-install-restricted-mode.html">
+        Deploy the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Subscribe to BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-subscribe-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-subscribe-restricted-mode.html">
+        Subscribe to BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What you can do next"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-whats-next-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
+        What you can do next
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started with private mode"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started with private mode</div>-->
+         Get started with private mode
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Getting started workflow"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-quick-start-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-quick-start-private-mode.html">
+        Getting started workflow
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare for deployment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-prepare-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-prepare-private-mode.html">
+        Prepare for deployment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-install-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-install-private-mode.html">
+        Deploy the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What you can do next"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-whats-next-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-whats-next-private-mode.html">
+        What you can do next
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Log in to BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-logging-in.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/task-logging-in.html">
+        Log in to BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administer BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Administer BlueXP</div>-->
+         Administer BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Identity federation"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-federation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/concept-federation.html">
+        Identity federation
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP accounts"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXP accounts</div>-->
+         BlueXP accounts
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage your BlueXP account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-managing-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html">
+        Manage your BlueXP account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Monitor operations in your account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-monitor-cm-operations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-monitor-cm-operations.html">
+        Monitor operations in your account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create another BlueXP account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-create-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-create-account.html">
+        Create another BlueXP account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="User roles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-user-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-user-roles.html">
+        User roles
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connectors"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Connectors</div>-->
+         Connectors
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Find the system ID for a Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-finding-system-id.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-finding-system-id.html">
+        Find the system ID for a Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage existing Connectors"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-managing-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-managing-connectors.html">
+        Manage existing Connectors
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install an HTTPS certificate for secure access"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-installing-https-cert.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-installing-https-cert.html">
+        Install an HTTPS certificate for secure access
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure a Connector to use a proxy server"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-configuring-proxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-configuring-proxy.html">
+        Configure a Connector to use a proxy server
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Default configuration for the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-connector-default-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-connector-default-config.html">
+        Default configuration for the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Credentials and subscriptions"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Credentials and subscriptions</div>-->
+         Credentials and subscriptions
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn about credentials and permissions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-accounts-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/concept-accounts-aws.html">
+        Learn about credentials and permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials and subscriptions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-adding-aws-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-adding-aws-accounts.html">
+        Manage credentials and subscriptions
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn about credentials and permissions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-accounts-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/concept-accounts-azure.html">
+        Learn about credentials and permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials and subscriptions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-adding-azure-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-adding-azure-accounts.html">
+        Manage credentials and subscriptions
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn about projects and permissions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/concept-accounts-gcp.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/concept-accounts-gcp.html">
+        Learn about projects and permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials and subscriptions"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-adding-gcp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html">
+        Manage credentials and subscriptions
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage NSS credentials associated with a BlueXP account"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-adding-nss-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-adding-nss-accounts.html">
+        Manage NSS credentials associated with a BlueXP account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage credentials associated with your BlueXP login"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-manage-user-credentials.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/task-manage-user-credentials.html">
+        Manage credentials associated with your BlueXP login
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Reference"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Reference</div>-->
+         Reference
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permissions"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Permissions</div>-->
+         Permissions
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permissions summary"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions.html">
+        Permissions summary
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS permissions for the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-permissions-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions-aws.html">
+        AWS permissions for the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure permissions for the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-permissions-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions-azure.html">
+        Azure permissions for the Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud permissions for the Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-permissions-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-permissions-gcp.html">
+        Google Cloud permissions for the Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ports"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Ports</div>-->
+         Ports
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector security group rules in AWS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-ports-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-aws.html">
+        Connector security group rules in AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector security group rules in Azure"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-ports-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-azure.html">
+        Connector security group rules in Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector firewall rules in Google Cloud"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-ports-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-gcp.html">
+        Connector firewall rules in Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ports for the on-prem Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/reference-ports-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-setup-admin/reference-ports-on-prem.html">
+        Ports for the on-prem Connector
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Knowledge and support"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Knowledge and support</div>-->
+         Knowledge and support
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Register for support"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/task-support-registration.html">
+        Register for support
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get help"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-setup-admin/task-get-help.html">
+        Get help
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Legal notices"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-install-connector-on-prem.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/bluexp-setup-admin/legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/us-en/bluexp-setup-admin"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/us-en/bluexp-setup-admin"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Install and set up a Connector on premises</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-01-31 20:42:41 +0000">01/31/2024</time>
+        
+    
+    
+        <span>Contributors
+            <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-bcammett"><img  class="avatar avatar-small" alt="netapp-bcammett" width="20" height="20" src="https://avatars.githubusercontent.com/u/18287750?v=4" style="border-radius: 50%;"/></a>
+        
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Suggest changes</span>
+        <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html&page-title=Install and set up a Connector on premises" class="page-nav-contribute-link" role="button">Request doc changes</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-connector-on-prem.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/bluexp-setup-admin/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/us-en/bluexp-setup-admin/pdfs/fullsite-sidebar/BlueXP_setup_and_administration_documentation.pdf" >
+                    <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Release_notes.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Release notes
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Learn_the_basics.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Learn the basics
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_standard_mode.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started with standard mode
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Create_a_Connector.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Create a Connector
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_restricted_mode.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started with restricted mode
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_private_mode.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started with private mode
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Administer_BlueXP.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Administer BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/BlueXP_accounts.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXP accounts
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Connectors.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Connectors
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Credentials_and_subscriptions.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Credentials and subscriptions
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Reference.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Reference
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Permissions.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Permissions
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Ports.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Ports
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Knowledge_and_support.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Knowledge and support
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/us-en/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Install a Connector on premises and then log in and set it up to work with your BlueXP account.</p>
+</div>
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should review <a href="reference-limitations.html">Connector limitations</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-1-review-host-requirements">Step 1: Review host requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. Ensure that your host meets these requirements before you install the Connector.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Dedicated host</dt>
+<dd>
+<p>The Connector is not supported on a host that is shared with other applications. The host must be a dedicated host.</p>
+</dd>
+<dt class="hdlist1">Supported operating systems</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Ubuntu 22.04 LTS</p>
+</li>
+<li>
+<p>CentOS 7.6, 7.7, 7.8, and 7.9</p>
+</li>
+<li>
+<p>Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9</p>
+<div class="paragraph">
+<p>The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.</p>
+</div>
+<div class="paragraph">
+<p>The Connector is supported on English-language versions of these operating systems.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Hypervisor</dt>
+<dd>
+<p>A bare metal or hosted hypervisor that is certified to run Ubuntu, CentOS, or Red Hat Enterprise Linux is required.</p>
+<div class="paragraph">
+<p><a href="https://access.redhat.com/certified-hypervisors" target="_blank" rel="noopener">Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?</a></p>
+</div>
+</dd>
+<dt class="hdlist1">CPU</dt>
+<dd>
+<p>4 cores or 4 vCPUs</p>
+</dd>
+<dt class="hdlist1">RAM</dt>
+<dd>
+<p>14 GB</p>
+</dd>
+<dt class="hdlist1">Disk space in /opt</dt>
+<dd>
+<p>100 GiB of space must be available</p>
+</dd>
+<dt class="hdlist1">Disk space in /var</dt>
+<dd>
+<p>20 GiB of space must be available</p>
+</dd>
+<dt class="hdlist1">Docker Engine</dt>
+<dd>
+<p>Docker Engine version 19.3.1 or later is required on the host before you install the Connector. <a href="https://docs.docker.com/engine/install/" target="_blank" rel="noopener">View installation instructions</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-2-set-up-networking">Step 2: Set up networking</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Connections to target networks</dt>
+<dd>
+<p>A Connector requires a network connection to the location where you're planning to create and manage working environments. For example, the network where you plan to create Cloud Volumes ONTAP systems or a storage system in your on-premises environment.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Outbound internet access</dt>
+<dd>
+<p>The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Endpoints contacted during manual installation</dt>
+<dd>
+<p>When you manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>https://support.netapp.com</p>
+</li>
+<li>
+<p>https://mysupport.netapp.com</p>
+</li>
+<li>
+<p>https://cloudmanager.cloud.netapp.com/tenancy</p>
+</li>
+<li>
+<p>https://stream.cloudmanager.cloud.netapp.com</p>
+</li>
+<li>
+<p>https://production-artifacts.cloudmanager.cloud.netapp.com</p>
+</li>
+<li>
+<p>https://*.blob.core.windows.net</p>
+</li>
+<li>
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+<div class="paragraph">
+<p>The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Endpoints contacted from the Connector</dt>
+<dd>
+<p>The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.</p>
+<div class="paragraph">
+<p>Note that the endpoints listed below are all CNAME entries.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Endpoints</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>AWS services (amazonaws.com):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CloudFormation</p>
+</li>
+<li>
+<p>Elastic Compute Cloud (EC2)</p>
+</li>
+<li>
+<p>Identity and Access Management (IAM)</p>
+</li>
+<li>
+<p>Key Management Service (KMS)</p>
+</li>
+<li>
+<p>Security Token Service (STS)</p>
+</li>
+<li>
+<p>Simple Storage Service (S3)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in AWS. The exact endpoint depends on the AWS region that you're using. <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html" target="_blank" rel="noopener">Refer to AWS documentation for details</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.azure.com<br>
+https://login.microsoftonline.com<br>
+https://blob.core.windows.net<br>
+https://core.windows.net</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in Azure public regions.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.chinacloudapi.cn<br>
+https://login.chinacloudapi.cn<br>
+https://blob.core.chinacloudapi.cn<br>
+https://core.chinacloudapi.cn</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in Azure China regions.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://www.googleapis.com/compute/v1/<br>
+https://compute.googleapis.com/compute/v1<br>
+https://cloudresourcemanager.googleapis.com/v1/projects<br>
+https://www.googleapis.com/compute/beta<br>
+https://storage.googleapis.com/storage/v1<br>
+https://www.googleapis.com/storage/v1<br>
+https://iam.googleapis.com/v1<br>
+https://cloudkms.googleapis.com/v1<br>
+https://www.googleapis.com/deploymentmanager/v2/projects</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in Google Cloud.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://support.netapp.com<br>
+https://mysupport.netapp.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To obtain licensing information and to send AutoSupport messages to NetApp support.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://*.cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://netapp-cloud-account.auth0.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To provide SaaS features and services within BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.blob.core.windows.net</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To upgrade the Connector and its Docker components.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Proxy server</dt>
+<dd>
+<p>If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You'll need to provide this information during installation.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IP address</p>
+</li>
+<li>
+<p>Credentials</p>
+</li>
+<li>
+<p>HTTPS certificate</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that BlueXP does not support transparent proxy servers.</p>
+</div>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Ports</dt>
+<dd>
+<p>There's no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy to send AutoSupport messages from Cloud Volumes ONTAP to NetApp Support.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>HTTP (80) and HTTPS (443) provide access to the local UI, which you'll use in rare circumstances.</p>
+</li>
+<li>
+<p>SSH (22) is only needed if you need to connect to the host for troubleshooting.</p>
+</li>
+<li>
+<p>Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn't available.</p>
+<div class="paragraph">
+<p>If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those systems to use a proxy server that's included with the Connector. The only requirement is to ensure that the Connector's security group allows inbound connections over port 3128. You'll need to open this port after you deploy the Connector.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Enable NTP</dt>
+<dd>
+<p>If you're planning to use BlueXP classification to scan your corporate data sources, you should enable a Network Time Protocol (NTP) service on both the BlueXP Connector system and the BlueXP classification system so that the time is synchronized between the systems. <a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html" target="_blank" rel="noopener">Learn more about BlueXP classification</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-3-set-up-cloud-permissions">Step 3: Set up cloud permissions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to use BlueXP services in AWS or Azure with an on-premises Connector, then you need to set up permissions in your cloud provider so that you can add the credentials to the Connector after you install it.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-setup-admin/images/tip.svg" alt="Tip">
+</td>
+<td class="content">
+Why not Google Cloud? When the Connector is installed on your premises, it can't manage your resources in Google Cloud. The Connector must be installed in Google Cloud to manage any resources that reside there.
+</td>
+</tr>
+</table>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">AWS</div>
+<div class="content">
+<div class="paragraph">
+<p>When the Connector is installed on premises, you need to provide BlueXP with AWS permissions by adding access keys for an IAM user who has the required permissions.</p>
+</div>
+<div class="paragraph">
+<p>You must use this authentication method if the Connector is installed on premises. You can't use an IAM role.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select <strong>Policies &gt; Create policy</strong>.</p>
+</li>
+<li>
+<p>Select <strong>JSON</strong> and copy and paste the contents of the <a href="reference-permissions-aws.html">IAM policy for the Connector</a>.</p>
+</li>
+<li>
+<p>Finish the remaining steps to create the policy.</p>
+<div class="paragraph">
+<p>Depending on the BlueXP services that you're planning to use, you might need to create a second policy.</p>
+</div>
+<div class="paragraph">
+<p>For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. <a href="reference-permissions-aws.html">Learn more about IAM policies for the Connector</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Attach the policies to an IAM user.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html" target="_blank" rel="noopener">AWS Documentation: Creating IAM Roles</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html" target="_blank" rel="noopener">AWS Documentation: Adding and Removing IAM Policies</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ensure that the user has an access key that you can add to BlueXP after you install the Connector.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>You should now have access keys for an IAM user who has the required permissions. After you install the Connector, you'll need to associate these credentials with the Connector from BlueXP.</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Azure</div>
+<div class="content">
+<div class="paragraph">
+<p>When the Connector is installed on premises, you need to provide BlueXP with Azure permissions by setting up a service principal in Microsoft Entra ID and obtaining the Azure credentials that BlueXP needs.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Create a Microsoft Entra application for role-based access control</div>
+<ol class="arabic">
+<li>
+<p>Ensure that you have permissions in Azure to create an Active Directory application and to assign the application to a role.</p>
+<div class="paragraph">
+<p>For details, refer to <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">Microsoft Azure Documentation: Required permissions</a></p>
+</div>
+</li>
+<li>
+<p>From the Azure portal, open the <strong>Microsoft Entra ID</strong> service.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_ad.png" alt="Shows the Active Directory service in Microsoft Azure."></span></p>
+</div>
+</li>
+<li>
+<p>In the menu, select <strong>App registrations</strong>.</p>
+</li>
+<li>
+<p>Select <strong>New registration</strong>.</p>
+</li>
+<li>
+<p>Specify details about the application:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Enter a name for the application.</p>
+</li>
+<li>
+<p><strong>Account type</strong>: Select an account type (any will work with BlueXP).</p>
+</li>
+<li>
+<p><strong>Redirect URI</strong>: You can leave this field blank.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select <strong>Register</strong>.</p>
+<div class="paragraph">
+<p>You've created the AD application and service principal.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Assign the application to a role</div>
+<ol class="arabic">
+<li>
+<p>Create a custom role:</p>
+<div class="paragraph">
+<p>Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role" target="_blank" rel="noopener">Azure documentation</a></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Copy the contents of the <a href="reference-permissions-azure.html">custom role permissions for the Connector</a> and save them in a JSON file.</p>
+</li>
+<li>
+<p>Modify the JSON file by adding Azure subscription IDs to the assignable scope.</p>
+<div class="paragraph">
+<p>You should add the ID for each Azure subscription from which users will create Cloud Volumes ONTAP systems.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the JSON file to create a custom role in Azure.</p>
+<div class="paragraph">
+<p>The following steps describe how to create the role by using Bash in Azure Cloud Shell.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start <a href="https://docs.microsoft.com/en-us/azure/cloud-shell/overview" target="_blank" rel="noopener">Azure Cloud Shell</a> and choose the Bash environment.</p>
+</li>
+<li>
+<p>Upload the JSON file.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_shell_upload.png" alt="A screenshot of the Azure Cloud Shell where you can choose the option to upload a file."></span></p>
+</div>
+</li>
+<li>
+<p>Use the Azure CLI to create the custom role:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Connector_Policy.json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should now have a custom role called BlueXP Operator that you can assign to the Connector virtual machine.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Assign the application to the role:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>From the Azure portal, open the <strong>Subscriptions</strong> service.</p>
+</li>
+<li>
+<p>Select the subscription.</p>
+</li>
+<li>
+<p>Select <strong>Access control (IAM) &gt; Add &gt; Add role assignment</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Role</strong> tab, select the <strong>BlueXP Operator</strong> role and select <strong>Next</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Members</strong> tab, complete the following steps:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Keep <strong>User, group, or service principal</strong> selected.</p>
+</li>
+<li>
+<p>Select <strong>Select members</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-azure-service-principal-role.png" alt="A screenshot of the Azure portal that shows the Members tab when adding a role to an application."></span></p>
+</div>
+</li>
+<li>
+<p>Search for the name of the application.</p>
+<div class="paragraph">
+<p>Here's an example:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_service_principal_role.png" alt="A screenshot of the Azure portal that shows the Add role assignment form in the Azure portal."></span></p>
+</div>
+</li>
+<li>
+<p>Select the application and select <strong>Select</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Next</strong>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select <strong>Review + assign</strong>.</p>
+<div class="paragraph">
+<p>The service principal now has the required Azure permissions to deploy the Connector.</p>
+</div>
+<div class="paragraph">
+<p>If you want to deploy Cloud Volumes ONTAP from multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Add Windows Azure Service Management API permissions</div>
+<ol class="arabic">
+<li>
+<p>In the <strong>Microsoft Entra ID</strong> service, select <strong>App registrations</strong> and select the application.</p>
+</li>
+<li>
+<p>Select <strong>API permissions &gt; Add a permission</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Microsoft APIs</strong>, select <strong>Azure Service Management</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_service_mgmt_apis.gif" alt="A screenshot of the Azure portal that shows the Azure Service Management API permissions."></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>Access Azure Service Management as organization users</strong> and then select <strong>Add permissions</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_service_mgmt_apis_add.gif" alt="A screenshot of the Azure portal that shows adding the Azure Service Management APIs."></span></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Get the application ID and directory ID for the application</div>
+<ol class="arabic">
+<li>
+<p>In the <strong>Microsoft Entra ID</strong> service, select <strong>App registrations</strong> and select the application.</p>
+</li>
+<li>
+<p>Copy the <strong>Application (client) ID</strong> and the <strong>Directory (tenant) ID</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_app_ids.gif" alt="A screenshot that shows the application (client) ID and directory (tenant) ID for an application in Microsoft Entra IDy."></span></p>
+</div>
+<div class="paragraph">
+<p>When you add the Azure account to BlueXP, you need to provide the application (client) ID and the directory (tenant) ID for the application. BlueXP uses the IDs to programmatically sign in.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Create a client secret</div>
+<ol class="arabic">
+<li>
+<p>Open the <strong>Microsoft Entra ID</strong> service.</p>
+</li>
+<li>
+<p>Select <strong>App registrations</strong> and select your application.</p>
+</li>
+<li>
+<p>Select <strong>Certificates &amp; secrets &gt; New client secret</strong>.</p>
+</li>
+<li>
+<p>Provide a description of the secret and a duration.</p>
+</li>
+<li>
+<p>Select <strong>Add</strong>.</p>
+</li>
+<li>
+<p>Copy the value of the client secret.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_client_secret.gif" alt="A screenshot of the Azure portal that shows a client secret for the Microsoft Entra service principal."></span></p>
+</div>
+<div class="paragraph">
+<p>You now have a client secret that BlueXP can use it to authenticate with Microsoft Entra ID.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. After you install the Connector, you'll need to associate these credentials with the Connector from BlueXP.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-4-install-the-connector">Step 4: Install the Connector</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Download and install the Connector software on an existing Linux host on premises.</p>
+</div>
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Root privileges to install the Connector.</p>
+</li>
+<li>
+<p>Details about a proxy server, if a proxy is required for internet access from the Connector.</p>
+<div class="paragraph">
+<p>You have the option to configure a proxy server after installation but doing so requires restarting the Connector.</p>
+</div>
+<div class="paragraph">
+<p>Note that BlueXP does not support transparent proxy servers.</p>
+</div>
+</li>
+<li>
+<p>A CA-signed certificate, if the proxy server uses HTTPS or if the proxy is an intercepting proxy.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">About this task</div>
+<p>The installer that is available on the NetApp Support Site might be an earlier version. After installation, the Connector automatically updates itself if a new version is available.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Verify that docker is enabled and running.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">sudo systemctl enable docker &amp;&amp; sudo systemctl start docker</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>If the <em>http_proxy</em> or <em>https_proxy</em> system variables are set on the host, remove them:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">unset http_proxy
+unset https_proxy</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you don't remove these system variables, the installation will fail.</p>
+</div>
+</li>
+<li>
+<p>Download the Connector software from the <a href="https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab" target="_blank" rel="noopener">NetApp Support Site</a>, and then copy it to the Linux host.</p>
+<div class="paragraph">
+<p>You should download the "online" Connector installer that's meant for use in your network or in the cloud. A separate "offline" installer is available for the Connector, but it's only supported with private mode deployments.</p>
+</div>
+</li>
+<li>
+<p>Assign permissions to run the script.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">chmod +x BlueXP-Connector-Cloud-&lt;version&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Where &lt;version&gt; is the version of the Connector that you downloaded.</p>
+</div>
+</li>
+<li>
+<p>Run the installation script.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli"> ./BlueXP-Connector-Cloud-&lt;version&gt; --proxy &lt;HTTP or HTTPS proxy server&gt; --cacert &lt;path and file name of a CA-signed certificate&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The --proxy and --cacert parameters are optional. If you have a proxy server, you will need to enter the parameters as shown. The installer doesn't prompt you to provide information about a proxy.</p>
+</div>
+<div class="paragraph">
+<p>Here's an example of the command using both optional parameters:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli"> ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>--proxy configures the Connector to use an HTTP or HTTPS proxy server using one of the following formats:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>http://address:port</p>
+</li>
+<li>
+<p>http://user-name:password@address:port</p>
+</li>
+<li>
+<p>http://domain-name%92user-name:password@address:port</p>
+</li>
+<li>
+<p>https://address:port</p>
+</li>
+<li>
+<p>https://user-name:password@address:port</p>
+</li>
+<li>
+<p>https://domain-name%92user-name:password@address:port</p>
+<div class="paragraph">
+<p>Note the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The user can be a local user or domain user.</p>
+</li>
+<li>
+<p>For a domain user, you must use the ASCII code for the \ as shown above.</p>
+</li>
+<li>
+<p>BlueXP doesn't support passwords that include the @ character.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>--cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>The Connector is now installed. At the end of the installation, the Connector service (occm) restarts twice if you specified a proxy server.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-5-set-up-the-connector">Step 5: Set up the Connector</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sign up or log in and then set up the Connector to work with your BlueXP account.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Open a web browser and enter the following URL:</p>
+<div class="paragraph">
+<p>https://<em>ipaddress</em></p>
+</div>
+<div class="paragraph">
+<p><em>ipaddress</em> can be localhost, a private IP address, or a public IP address, depending on the configuration of the host. For example, if the Connector is in the public cloud without a public IP address, you must enter a private IP address from a host that has a connection to the Connector host.</p>
+</div>
+</li>
+<li>
+<p>Sign up or log in.</p>
+</li>
+<li>
+<p>After you log in, set up BlueXP:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Specify the BlueXP account to associate with the Connector.</p>
+</li>
+<li>
+<p>Enter a name for the system.</p>
+</li>
+<li>
+<p>Under <strong>Are you running in a secured environment?</strong> keep restricted mode disabled.</p>
+<div class="paragraph">
+<p>You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. (In addition, restricted mode isn't supported when the Connector is installed on premises.)</p>
+</div>
+</li>
+<li>
+<p>Select <strong>Let's start</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>BlueXP is now set up with the Connector that you just installed.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-6-provide-permissions-to-bluexp">Step 6: Provide permissions to BlueXP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After you install and set up the Connector, add your cloud credentials so that BlueXP has the required permissions to perform actions in AWS or Azure.</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">AWS</div>
+<div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>If you just created these credentials in AWS, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>In the upper right of the BlueXP console, select the Settings icon, and select <strong>Credentials</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="A screenshot that shows the Settings icon in the upper right of the BlueXP console."></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>Add Credentials</strong> and follow the steps in the wizard.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Credentials Location</strong>: Select <strong>Amazon Web Services &gt; Connector</strong>.</p>
+</li>
+<li>
+<p><strong>Define Credentials</strong>: Enter an AWS access key and secret key.</p>
+</li>
+<li>
+<p><strong>Marketplace Subscription</strong>: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.</p>
+</li>
+<li>
+<p><strong>Review</strong>: Confirm the details about the new credentials and select <strong>Add</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>BlueXP now has the permissions that it needs to perform actions in AWS on your behalf.</p>
+</div>
+<div class="paragraph">
+<p>You can now go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> to start using the Connector with BlueXP.</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Azure</div>
+<div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>If you just created these credentials in Azure, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>In the upper right of the BlueXP console, select the Settings icon, and select <strong>Credentials</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="A screenshot that shows the Settings icon in the upper right of the BlueXP console."></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>Add Credentials</strong> and follow the steps in the wizard.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Credentials Location</strong>: Select <strong>Microsoft Azure &gt; Connector</strong>.</p>
+</li>
+<li>
+<p><strong>Define Credentials</strong>: Enter information about the Microsoft Entra service principal that grants the required permissions:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Application (client) ID</p>
+</li>
+<li>
+<p>Directory (tenant) ID</p>
+</li>
+<li>
+<p>Client Secret</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Marketplace Subscription</strong>: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.</p>
+</li>
+<li>
+<p><strong>Review</strong>: Confirm the details about the new credentials and select <strong>Add</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>BlueXP now has the permissions that it needs to perform actions in Azure on your behalf. You can now go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> to start using the Connector with BlueXP.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/us-en/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">On this page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie settings</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Send feedback about this page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/bluexp-setup-admin/js/ie-tabbed-blocks.js'></script>
+    <script src='/us-en/bluexp-setup-admin/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
