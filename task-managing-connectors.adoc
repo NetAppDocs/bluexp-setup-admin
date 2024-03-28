@@ -122,6 +122,12 @@ If required by your security policies, you can configure your EC2 instances to u
 .Before you begin
 
 * The Connector version must be 3.9.38 or later.
+
+* Cloud Volumes ONTAP must be running one of the following versions:
+** 9.12.1 P2 (or any subsequent patch)
+** 9.13.0 P4 (or any subsequent patch)
+** 9.13.1 or any version after this release
+
 * This change requires you to restart the Cloud Volumes ONTAP instances.
 
 .About this task
