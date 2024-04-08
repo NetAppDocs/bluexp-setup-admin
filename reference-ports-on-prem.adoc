@@ -26,7 +26,7 @@ These inbound rules apply to all BlueXP deployment models.
 
 | HTTP | 80 a| 
 * Provides HTTP access from client web browsers to the local user interface
-* To upgrade Cloud Volumes ONTAP
+* Upgrade Cloud Volumes ONTAP
 | HTTPS | 443 |	Provides HTTPS access from client web browsers to the local user interface
 
 |===
