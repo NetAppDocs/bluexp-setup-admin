@@ -27,7 +27,7 @@ The Google Cloud firewall rules for the Connector requires both inbound and outb
 | SSH | 22 | Provides SSH access to the Connector host
 | HTTP | 80 a| 
 * Provides HTTP access from client web browsers to the local user interface
-* Upgrade Cloud Volumes ONTAP
+* Used during the Cloud Volumes ONTAP upgrade process
 | HTTPS |443 | Provides HTTPS access from client web browsers to the local user interface
 | TCP | 3128 | Provides Cloud Volumes ONTAP with internet access to send AutoSupport messages to NetApp Support. You must manually open this port after deployment. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html[Learn how the Connector is used as a proxy for AutoSupport messages^]
 
