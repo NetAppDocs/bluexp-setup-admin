@@ -56,5 +56,11 @@ Disk space in /var:: 20 GiB of space must be available
 //end::disk-space[]
 
 //tag::docker[]
-Docker Engine:: Docker Engine version 19.3.1 or later is required on the host before you install the Connector. https://docs.docker.com/engine/install/[View installation instructions^]
+Docker Engine:: 
+Docker Engine is required on the host before you install the Connector. 
++
+* The minimum supported version is 19.3.1.
+* The maximum supported version is 25.0.5.
++
+https://docs.docker.com/engine/install/[View installation instructions^]
 //end::docker[]
