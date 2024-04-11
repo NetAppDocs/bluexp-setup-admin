@@ -62,7 +62,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
 
-* For new Connector deployments from BlueXP, from the AWS Marketplace, or using https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html[Terraform scripts^], IMDSv2 is enabled by default on the EC2 instance.
+* For new Connector deployments from BlueXP or using https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html[Terraform scripts^], IMDSv2 is enabled by default on the EC2 instance.
 
 * If you launch a new EC2 instance in AWS and then manually install the Connector software, IMDSv2 is also enabled by default.
 
