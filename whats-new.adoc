@@ -18,6 +18,12 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 11 April 2024
+
+We have updated Docker Engine requirements to specify the maximum supported version on the Connector, which is 25.0.5. The minimum supported version is still 19.3.1.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
+
 == 26 March 2024
 
 === Private mode release (3.9.38)
@@ -88,6 +94,8 @@ In addition, we renamed the *Connector Settings* page to *Cloud Volumes ONTAP Se
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png[A screenshot that shows the Cloud Volumes ONTAP Settings option that is available from the Settings menu.]
 
+//end::whats-new[]
+
 == 15 February 2024
 
 === Connector 3.9.37
@@ -103,8 +111,6 @@ If you use NetApp cloud credentials to log in to BlueXP, you can now edit your n
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
 
 Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
-
-//end::whats-new[]
 
 == 11 January 2024
 
