@@ -18,15 +18,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
-== 11 April 2024
-
-=== Docker Engine update
-
-We have updated Docker Engine requirements to specify the maximum supported version on the Connector, which is 25.0.5. The minimum supported version is still 19.3.1.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
-
-== 3 April 2024
+== 17 April 2024
 
 === Connector 3.9.39
 
@@ -49,6 +41,14 @@ We have included these permissions in the policy that displays in the BlueXP use
 NOTE: This policy contains only the permissions needed to launch the Connector instance in AWS from BlueXP. It's not the same policy that gets assigned to the Connector instance.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions[Learn how to set up AWS permissions to create a Connector from AWS].
+
+== 11 April 2024
+
+=== Docker Engine update
+
+We have updated Docker Engine requirements to specify the maximum supported version on the Connector, which is 25.0.5. The minimum supported version is still 19.3.1.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
 
 == 26 March 2024
 
@@ -79,6 +79,8 @@ This new release is available to download from the NetApp Support Site.
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+
+//end::whats-new[]
 
 == 8 March 2024
 
@@ -119,10 +121,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html[Lea
 In addition, we renamed the *Connector Settings* page to *Cloud Volumes ONTAP Settings*.
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png[A screenshot that shows the Cloud Volumes ONTAP Settings option that is available from the Settings menu.]
-
-//end::whats-new[]
-
-//end::whats-new[]
 
 == 15 February 2024
 
