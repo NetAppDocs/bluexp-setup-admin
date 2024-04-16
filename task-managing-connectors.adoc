@@ -126,9 +126,9 @@ The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
 
 * If you launch the Connector from the AWS Marketplace, IMDSv1 is enabled by default. You can manually configure IMDSv2 on the EC2 instance.
 
-* For existing Connectors, both IMDSv1 and IMDSv2 are supported.
+* For existing Connectors, IMDSv1 is still supported but you can manually configure IMDSv2 on the EC2 instance if you prefer.
 
-* For Cloud Volumes ONTAP, IMDSv1 is enabled by default on new and existing instances, but IMDSv2 is also supported.
+* For Cloud Volumes ONTAP, IMDSv1 is enabled by default on new and existing instances. You can manually configure IMDSv2 on the EC2 instances if you prefer.
 
 .Before you begin
 
