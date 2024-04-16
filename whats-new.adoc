@@ -18,6 +18,14 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 11 April 2024
+
+=== Docker Engine update
+
+We have updated Docker Engine requirements to specify the maximum supported version on the Connector, which is 25.0.5. The minimum supported version is still 19.3.1.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
+
 == 3 April 2024
 
 === Connector 3.9.39
@@ -86,7 +94,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
 
-* For new Connector deployments from BlueXP, from the AWS Marketplace, or using https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html[Terraform scripts^], IMDSv2 is enabled by default on the EC2 instance.
+* For new Connector deployments from BlueXP or using https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html[Terraform scripts^], IMDSv2 is enabled by default on the EC2 instance.
 
 * If you launch a new EC2 instance in AWS and then manually install the Connector software, IMDSv2 is also enabled by default.
 
@@ -111,6 +119,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html[Lea
 In addition, we renamed the *Connector Settings* page to *Cloud Volumes ONTAP Settings*.
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png[A screenshot that shows the Cloud Volumes ONTAP Settings option that is available from the Settings menu.]
+
+//end::whats-new[]
 
 //end::whats-new[]
 

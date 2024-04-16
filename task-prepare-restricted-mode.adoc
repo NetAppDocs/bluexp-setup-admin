@@ -57,13 +57,6 @@ include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=docker]
 
-IMDSv1::
-The Instance Metadata Service Version 1 (IMDSv1) is required on EC2 instances. The Connector is not supported with IMDSv2.
-+
-Because IMDSv2 is now the default version on a new EC2 instance, you need to modify the instance metadata options to restore the use of IMDSv1.
-+
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1[AWS documentation: Restore the use of IMDSv1^]
-
 == Step 4: Prepare networking
 
 Set up your networking so the Connector can manage resources and processes within your public cloud environment. Other than having a virtual network and subnet for the Connector, you'll need to ensure that the following requirements are met.

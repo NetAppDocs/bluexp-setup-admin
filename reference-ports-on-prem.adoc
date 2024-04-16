@@ -24,7 +24,9 @@ These inbound rules apply to all BlueXP deployment models.
 | Port
 | Purpose
 
-| HTTP | 80 | Provides HTTP access from client web browsers to the local user interface
+| HTTP | 80 a| 
+* Provides HTTP access from client web browsers to the local user interface
+* Used during the Cloud Volumes ONTAP upgrade process
 | HTTPS | 443 |	Provides HTTPS access from client web browsers to the local user interface
 
 |===

@@ -15,11 +15,15 @@ summary: If your corporate policies require you to use a proxy server for all co
 [.lead]
 If your corporate policies require you to use a proxy server for all communication to the internet, then you need to configure your Connectors to use that proxy server. If you didn't configure a Connector to use a proxy server during installation, then you can configure the Connector to use that proxy server at any time.
 
-BlueXP supports HTTP and HTTPS. The proxy server can be in the cloud or in your network.
-
 Configuring the Connector to use a proxy server provides outbound internet access if a public IP address or a NAT gateway isn't available. This proxy server provides only the Connector with an outbound connection. It doesn't provide any connectivity for Cloud Volumes ONTAP systems.
 
 If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. The only requirement is to ensure that the Connector's security group allows inbound connections over port 3128. You'll need to open this port after you deploy the Connector.
+
+== Supported configurations
+
+* BlueXP supports HTTP and HTTPS. 
+* The proxy server can be in the cloud or in your network. 
+* BlueXP does not support transparent proxy servers.
 
 == Enable a proxy on a Connector
 
