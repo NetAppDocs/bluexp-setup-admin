@@ -19,14 +19,11 @@ These limitations are specific to BlueXP set up and administration: the Connecto
 
 == Connector limitations
 
-=== Default EC2 instance settings should not be changed
+=== Transparent proxy servers aren't supported
 
-When you deploy the Connector in AWS, the following EC2 instance settings are configured by default:
+BlueXP does not support transparent proxy servers with the Connector.
 
-* IMDSv2 is set to optional
-* HttpTokens is set to optional
-
-These settings should not be changed to required. Changing these settings to required impacts the Connector and Cloud Volumes ONTAP availability.
+link:task-configuring-proxy.html[Learn more about using a proxy server with the Connector].
 
 === Possible conflict with IP addresses in the 172 range
 

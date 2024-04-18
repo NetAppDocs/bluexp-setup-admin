@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, features, new, release notes, enhancements, fixes
+keywords: what's new, features, new, release notes, enhancements, fixes, connectors
 summary: "Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more."
 ---
 
@@ -18,6 +18,102 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 11 April 2024
+
+=== Docker Engine update
+
+We have updated Docker Engine requirements to specify the maximum supported version on the Connector, which is 25.0.5. The minimum supported version is still 19.3.1.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
+
+== 26 March 2024
+
+=== Private mode release (3.9.38)
+
+A new private mode release is now available for BlueXP. This release includes the following versions of the BlueXP services that are supported with private mode.
+
+[cols=2*,options="header,autowidth"]
+|===
+
+| Service
+| Version included
+
+| Connector | 3.9.38
+| Backup and recovery | 12 March 2024
+| Classification | 4 March 2024
+| Cloud Volumes ONTAP management | 8 March 2024
+| Digital wallet | 30 July 2023
+| On-premises ONTAP cluster management | 30 July 2023
+| Replication | 18 Sept 2022
+
+|===
+
+This new release is available to download from the NetApp Support Site.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+
+== 8 March 2024
+
+=== Connector 3.9.38
+
+At this time, the 3.9.38 release is available for standard mode and restricted mode. This release includes support for IMDSv2 in AWS and an AWS permissions update.
+
+==== Support for IMDSv2
+
+BlueXP now supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector instance and with Cloud Volumes ONTAP instances. IMDSv2 provides enhanced protection against vulnerabilities. Only IMDSv1 was previously supported. 
+
+https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
+
+The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
+
+* For new Connector deployments from BlueXP or using https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html[Terraform scripts^], IMDSv2 is enabled by default on the EC2 instance.
+
+* If you launch a new EC2 instance in AWS and then manually install the Connector software, IMDSv2 is also enabled by default.
+
+* For existing Connectors, IMDSv1 is still supported but you can manually configure IMDSv2 on the EC2 instance if you prefer.
+
+* For Cloud Volumes ONTAP, IMDSv1 is enabled by default on new and existing instances. You can manually configure IMDSv2 on the EC2 instances if you prefer.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances[Learn how to configure IMDSv2 on existing instances].
+
+==== AWS permissions update
+
+We updated the Connector policy for AWS to include the "ec2:DescribeAvailabilityZones" permission. This permission is required for an upcoming release. We'll update the release notes with more details when that release is available.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[View AWS permissions for the Connector].
+
+=== Proxy settings and Cloud Volumes ONTAP settings
+
+Proxy server settings for the Connector are now available from the *Manage Connectors* page (standard mode) or the *Edit Connectors* page (restricted mode and private mode).
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html[Learn how to configure the Connector to use a proxy server].
+
+In addition, we renamed the *Connector Settings* page to *Cloud Volumes ONTAP Settings*.
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png[A screenshot that shows the Cloud Volumes ONTAP Settings option that is available from the Settings menu.]
+
+//end::whats-new[]
+
+== 15 February 2024
+
+=== Connector 3.9.37
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes. 
+
+At this time, the 3.9.37 release is available for standard mode and restricted mode.
+
+=== Edit name
+
+If you use NetApp cloud credentials to log in to BlueXP, you can now edit your name in *User Settings*.
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png[A screenshot that shows the ability to edit your name under User Settings.]
+
+Editing your name is not supported if you log in with a federated connection or with your NetApp Support Site account.
+
 == 11 January 2024
 
 === Connector 3.9.36
@@ -29,7 +125,7 @@ This release includes minor improvements, bug fixes, and support for the Connect
 
 == 5 December 2023
 
-=== Private mode release
+=== Private mode release (3.9.35)
 
 A new private mode release is now available for BlueXP. This release includes version 3.9.35 of the Connector and versions of the BlueXP services that are supported with private mode as of October 2023.
 
@@ -47,8 +143,6 @@ This new release is available to download from the NetApp Support Site.
 
 This release contains minor security improvements and bug fixes.
 
-//end::whats-new[]
-
 == 6 October 2023
 
 === Connector 3.9.34
@@ -61,7 +155,7 @@ This release contains minor improvements and bug fixes.
 
 * When you create a Connector in AWS from BlueXP, you can now search within the Key Pair field to more easily find the key pair that you want to use with the Connector instance.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png[A screenshot of the search option in the Key Pair field which appears on the Network page when creating a Connector in AWS from BlueXP.]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png[A screenshot of the search option in the Key Pair field which appears on the Network page when creating a Connector in AWS from BlueXP.]
 
 * This update also includes bug fixes.
 
@@ -638,6 +732,82 @@ link:task-managing-netapp-accounts.html#allow-private-previews[Learn more about 
 You can also allow third-party services in your account to get access to third-party services that are available in Cloud Manager.
 
 link:task-managing-netapp-accounts.html#allow-third-party-services[Learn more about this option].
+
+== 8 March 2021
+
+This update includes enhancements to several features and services.
+
+=== Cloud Volumes ONTAP enhancements
+
+This release of Cloud Manager includes enhancements to the management of Cloud Volumes ONTAP.
+
+==== Enhancement available in all cloud providers
+
+Cloud Manager can now deploy and manage Cloud Volumes ONTAP 9.9.0.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html[Learn about the new features included in this release of Cloud Volumes ONTAP^].
+
+==== Enhancements available in AWS
+
+* You can now deploy Cloud Volumes ONTAP 9.8 in the AWS Commercial Cloud Services (C2S) environment.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html[Learn how to get started in C2S^]
+
+* Cloud Manager has always enabled you to encrypt Cloud Volumes ONTAP data using the AWS Key Management Service (KMS). Starting with Cloud Volumes ONTAP 9.9.0, data on EBS disks and data tiered to S3 are encrypted if you select a customer-managed CMK. Previously, only EBS data would be encrypted.
++
+Note that you'll need to provide the Cloud Volumes ONTAP IAM role with access to use the CMK.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html[Learn more about setting up the AWS KMS with Cloud Volumes ONTAP^]
+
+==== Enhancement available in Azure
+
+You can now deploy Cloud Volumes ONTAP 9.8 in the Azure Department of Defense (DoD) Impact Level 6 (IL6).
+
+==== Enhancements available in Google Cloud
+
+* We've reduced the number of IP addresses that are required for Cloud Volumes ONTAP 9.8 and later in Google Cloud. By default, one less IP address is required (we unified the intercluster LIF with the node management LIF). You also have the option to skip the creation of the SVM management LIF when using the API, which would reduce the need for an additional IP address.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html[Learn more about IP address requirements in Google Cloud^]
+
+* When you deploy a Cloud Volumes ONTAP HA pair in Google Cloud, you can now choose shared VPCs for VPC-1, VPC-2, and VPC-3. Previously, only VPC-0 could be a shared VPC. This change is supported with Cloud Volumes ONTAP 9.8 and later.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html[Learn more about Google Cloud networking requirements^]
+
+=== Connector enhancements
+
+* Cloud Manager now notifies Admin users through an email when a Connector isn't running.
++
+Keeping your Connectors up and running helps to ensure the best management of Cloud Volumes ONTAP and other NetApp Cloud Services.
+
+* Cloud Manager now displays a notification if you need to change the instance type for your Connector.
++
+Changing the instance type ensures that you can use the new features and capabilities that you're currently missing.
+
+=== Cloud Sync enhancements
+
+* Cloud Sync now supports sync relationships between ONTAP S3 Storage and SMB servers:
+** ONTAP S3 Storage to an SMB server
+** An SMB server to ONTAP S3 Storage
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html[View supported sync relationships^]
+
+* Cloud Sync now enables you to unify a data broker group's configuration directly from the user interface.
++
+We don't recommend changing the configuration on your own. You should consult with NetApp to understand when to change the configuration and how to change it.
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#set-up-a-unified-configuration[Learn more about defining a unified configuration^]
+
+=== Cloud Tiering enhancements
+
+* When tiering to Google Cloud Storage, you can apply a lifecycle rule so that the tiered data transitions from the Standard storage class to lower-cost Nearline, Coldline, or Archive storage after 30 days.
+
+* Cloud Tiering now displays if you have any undiscovered on-prem ONTAP clusters so that you can add them to Cloud Manager to enable tiering or other services on those clusters.
++
+https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering[Learn how to discover these additional clusters^]
+
+=== Azure NetApp Files enhancements
+
+Now you can dynamically change the service level for a volume to meet workload needs and optimize your costs. The volume is moved to the other capacity pool with no impact to the volume. https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level[Learn more^]
 
 == 9 February 2021
 

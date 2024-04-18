@@ -8,6 +8,8 @@ You should have the following:
 * Details about a proxy server, if a proxy is required for internet access from the Connector.
 +
 You have the option to configure a proxy server after installation but doing so requires restarting the Connector.
++
+Note that BlueXP does not support transparent proxy servers.
 
 * A CA-signed certificate, if the proxy server uses HTTPS or if the proxy is an intercepting proxy.
 //end::before[]
@@ -51,7 +53,7 @@ The --proxy and --cacert parameters are optional. If you have a proxy server, yo
 Here's an example of the command using both optional parameters:
 +
 [source,cli]
- ./BlueXP-Connector-Cloud-v3.9.35 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 +
 --proxy configures the Connector to use an HTTP or HTTPS proxy server using one of the following formats:
 +
