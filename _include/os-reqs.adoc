@@ -92,5 +92,10 @@ The following prerequisites must be met for Podman:
 ** The podman-compose package version 1.0.6 or later should be installed
 ** podman-compose should be added to the PATH environment variable
 
-* Docker Engine version 19.3.1 or later is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.x.
+* Docker Engine is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.x.
++
+** The minimum supported version is 19.3.1.
+** The maximum supported version is 25.0.5.
++
+https://docs.docker.com/engine/install/[View installation instructions^]
 //end::container-req[]
