@@ -112,12 +112,23 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance[Google Cl
 
 == Require the use of IMDSv2 on Amazon EC2 instances
 
-Starting in March 2024, BlueXP now supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector and with Cloud Volumes ONTAP (including the mediator for HA deployments). IMDSv2 provides enhanced protection against vulnerabilities. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
+Starting in March 2024, BlueXP now supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector and with Cloud Volumes ONTAP (including the mediator for HA deployments). In most cases, IMDSv2 is automatically configured on new EC2 instances. IMDSv1 was enabled prior to March 2024. If required by your security policies, you might need to manually configure IMDSv2 on your EC2 instances.
 
-* IMDSv2 is enabled by default on all new Connector EC2 instances. IMDSv1 was enabled prior to March 2024.
-* IMDSv1 is enabled by default on all new and existing Cloud Volumes ONTAP EC2 instances. 
+.About this task
 
-If required by your security policies, you can configure your EC2 instances to use IMDSv2.
+IMDSv2 provides enhanced protection against vulnerabilities. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/[Learn more about IMDSv2 from the AWS Security Blog^]
+
+The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
+
+* For new Connector deployments from BlueXP or using https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html[Terraform scripts^], IMDSv2 is enabled by default on the EC2 instance.
+
+* If you launch a new EC2 instance in AWS and then manually install the Connector software, IMDSv2 is also enabled by default.
+
+* If you launch the Connector from the AWS Marketplace, IMDSv1 is enabled by default. You can manually configure IMDSv2 on the EC2 instance.
+
+* For existing Connectors, IMDSv1 is still supported but you can manually configure IMDSv2 on the EC2 instance if you prefer.
+
+* For Cloud Volumes ONTAP, IMDSv1 is enabled by default on new and existing instances. You can manually configure IMDSv2 on the EC2 instances if you prefer.
 
 .Before you begin
 
