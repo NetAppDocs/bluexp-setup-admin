@@ -14,6 +14,12 @@ Install Podman 4.6.1 or later.
 
 .Steps
 
+. Remove the podman-docker package if it's installed on the host.
++
+[source,cli]
+dnf remove podman-docker
+rm /var/run/docker.sock
+
 . Install Podman.
 +
 Podman is available from official Red Hat Enterprise Linux repositories. You can install podman by using the `yum` or `dnf` commands. The install command installs the latest version available from the repo.
@@ -49,11 +55,16 @@ sudo dnf install python3-pip
 +
 podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository. The install command installs the latest version available from the repo.
 +
+If the EPEL repository isn't already available from your system, you'll need to add it first.
++
 [source,cli]
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 sudo dnf install podman-compose
 
 +
-Using the `dnf` command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host. If you install podman-compose using `pip3` instead, then you must manually add the podman-compose path to the `secure_path` option in the /etc/sudoers file.
+Using the `dnf` command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host. 
++
+If you install podman-compose using `pip3` instead and you invoke the Connector installation using sudo, then you must manually add the podman-compose path (/usr/local/bin) to the `secure_path` option in the /etc/sudoers file.
 
 --
 
