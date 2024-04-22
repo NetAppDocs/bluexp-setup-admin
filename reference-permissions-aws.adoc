@@ -57,7 +57,6 @@ The second policy provides permissions for the following services:
  
 * Edge caching
 * Kubernetes
-* Remediation
 
 // start tabbed area
 [role="tabbed-block"]
@@ -1157,21 +1156,6 @@ The Connector makes the following API requests to discover and manage Amazon EKS
 * eks:DescribeCluster
 * iam:GetInstanceProfile
 //end::kubernetes-permissions[]
-
-=== Remediation
-
-The Connector makes the following API requests to manage tags on AWS resources when you use BlueXP remediation:
-
-//tag::app-template-permissions[]
-* ec2:CreateTags
-* ec2:DeleteTags
-* ec2:DescribeTags
-* tag:getResources
-* tag:getTagKeys
-* tag:getTagValues
-* tag:TagResources
-* tag:UntagResources
-//end::app-template-permissions[]
 
 == Change log
 
