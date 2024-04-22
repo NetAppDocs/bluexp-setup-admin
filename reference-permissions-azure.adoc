@@ -478,19 +478,6 @@ The Connector makes the following API requests to discover and manage clusters r
 * Microsoft.ContainerService/managedClusters/listClusterUserCredential/action
 //end::kubernetes-permissions[]
 
-=== Remediation
-
-The Connector makes the following API requests to manage tags on Azure resources when you use BlueXP remediation:
-
-//tag::app-template-permissions[]
-* Microsoft.Resources/resources/read
-* Microsoft.Resources/subscriptions/operationresults/read
-* Microsoft.Resources/subscriptions/resourceGroups/read
-* Microsoft.Resources/subscriptions/resourcegroups/resources/read
-* Microsoft.Resources/tags/read
-* Microsoft.Resources/tags/write
-//end::app-template-permissions[]
-
 === Tiering
 
 The Connector makes the following API requests when you set up BlueXP tiering.
