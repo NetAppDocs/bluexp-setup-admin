@@ -3,6 +3,10 @@ Go to the Azure portal and assign the Azure custom role to the Connector virtual
 .Steps
 
 . From the Azure Portal, open the *Subscriptions* service and select your subscription.
++
+It's important to assign the role from the *Subscriptions* service because this specifies the scope of the role assignment at the subscription level. The _scope_ defines the set of resources that the access applies to. If you specify a scope at a different level (for example, at the virtual machine level), your ability to complete actions from within BlueXP will be affected.
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview[Microsoft Azure documentation: Understand scope for Azure RBAC^]
 
 . Select *Access control (IAM)* > *Add* > *Add role assignment*.
 
@@ -14,7 +18,7 @@ NOTE: BlueXP Operator is the default name provided in the BlueXP policy. If you 
 
 .. Assign access to a *Managed identity*.
 
-.. Select *Select members*, select the subscription in which the Connector virtual machine was created, choose *Virtual machine*, and then select the Connector virtual machine.
+.. Select *Select members*, select the subscription in which the Connector virtual machine was created, under *Managed identity*, choose *Virtual machine*, and then select the Connector virtual machine.
 
 .. Select *Select*.
 
