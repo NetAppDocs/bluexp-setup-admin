@@ -18,6 +18,10 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 9 May 2024
+
+features
+
 == 22 April 2024
 
 === Connector 3.9.39
@@ -50,6 +54,8 @@ We have updated Docker Engine requirements to specify the maximum supported vers
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
 
+//end::whats-new[]
+
 == 26 March 2024
 
 === Private mode release (3.9.38)
@@ -79,8 +85,6 @@ This new release is available to download from the NetApp Support Site.
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
-
-//end::whats-new[]
 
 == 8 March 2024
 
