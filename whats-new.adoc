@@ -20,7 +20,26 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //tag::whats-new[]
 == 9 May 2024
 
-features
+This release of the BlueXP Connector includes support for additional operating systems, minor security improvements, and bug fixes. 
+
+At this time, the 3.9.39 release is available for standard mode and restricted mode.
+
+=== Support for RHEL 8 and 9
+
+The Connector is now supported on hosts running the following versions of Red Hat Enterprise Linux:
+
+* 8.6 to 8.9
+* 9.1 to 9.3
+
+Note the following about support for these RHEL versions:
+
+* These newer versions of RHEL require Podman as the container orchestration tool (previous versions of RHEL required Docker Engine, which is no longer supported).
+
+* This support is available for new Connector installations on RHEL hosts running on your premises or in the cloud when using BlueXP in standard mode or restricted mode.
+
+* If you have an existing Connector running on RHEL 7.x with Docker Engine, we don't support upgrading the OS to RHEL 8.x or 9.x with Podman.
++
+You need to perform a fresh installation of the Connector on a host running RHEL 8.x or 9.x with Podman.
 
 == 22 April 2024
 
