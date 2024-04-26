@@ -27,7 +27,7 @@ Root privileges are required to install the Connector.
 
 .Steps
 
-. Verify that docker is enabled and running.
+. Verify that Docker is enabled and running.
 +
 [source,cli]
 sudo systemctl enable docker && sudo systemctl start docker

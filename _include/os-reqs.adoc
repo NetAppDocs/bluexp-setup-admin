@@ -96,6 +96,4 @@ The following prerequisites must be met for Podman:
 +
 ** The minimum supported version is 19.3.1.
 ** The maximum supported version is 25.0.5.
-+
-https://docs.docker.com/engine/install/[View installation instructions^]
 //end::container-req[]
