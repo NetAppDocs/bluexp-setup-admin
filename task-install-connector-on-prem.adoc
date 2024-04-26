@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-install-connector-on-prem.html
+permalink: task-install-connector-on-prem-option.html
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install
 summary: Install a Connector on premises and then log in and set it up to work with your BlueXP account.
 ---
@@ -35,10 +35,11 @@ include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=container-req]
 
-+
-<<Step 4: Install Podman or Docker Engine,Learn how to install Podman or Docker Engine>>.
+== Step 2: Install Podman or Docker Engine
 
-== Step 2: Set up networking
+include::_include/podman-docker.adoc[]
+
+== Step 3: Set up networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
@@ -86,7 +87,7 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 3: Set up cloud permissions
+== Step 4: Set up cloud permissions
 
 If you want to use BlueXP services in AWS or Azure with an on-premises Connector, then you need to set up permissions in your cloud provider so that you can add the credentials to the Connector after you install it.
 
@@ -149,10 +150,6 @@ Your service principal is now setup and you should have copied the application (
 
 ====
 // end tabbed area
-
-== Step 4: Install Podman or Docker Engine
-
-include::_include/podman-docker.adoc[]
 
 == Step 5: Install the Connector
 

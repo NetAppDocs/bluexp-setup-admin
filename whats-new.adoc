@@ -41,6 +41,15 @@ Note the following about support for these RHEL versions:
 +
 You need to perform a fresh installation of the Connector on a host running RHEL 8.x or 9.x with Podman.
 
+<link to installation instructions>
+
+<limitations with backup and recovery and ransomware>
+
+At this time, BlueXP backup and recovery has two limitations when using the Podman engine. See Backup and Restore limitations for details. single-file restore and ransomware scanning
+https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html
+
+<note about default OS on BlueXP and MP installs>
+
 == 22 April 2024
 
 === Connector 3.9.39

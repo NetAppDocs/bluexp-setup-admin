@@ -83,14 +83,14 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 //tag::container-req[]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-* Podman version 4.6.1 or later is required for Red Hat Enterprise Linux 8.x and 9.x.
+* Podman version 4.6.1 is required for Red Hat Enterprise Linux 8.x and 9.x.
 +
 The following prerequisites must be met for Podman:
 +
 ** The podman.socket service must be enabled and started
-** python3 should be installed
-** The podman-compose package version 1.0.6 or later should be installed
-** podman-compose should be added to the PATH environment variable
+** python3 must be installed
+** The podman-compose package version 1.0.6 must be installed
+** podman-compose must be added to the PATH environment variable
 
 * Docker Engine is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.x.
 +
