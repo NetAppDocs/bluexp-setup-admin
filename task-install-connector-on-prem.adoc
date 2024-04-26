@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-install-connector-on-prem-option.html
+permalink: task-install-connector-on-prem.html
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install
 summary: Install a Connector on premises and then log in and set it up to work with your BlueXP account.
 ---
