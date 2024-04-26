@@ -31,7 +31,7 @@ link:concept-modes.html[Learn how private mode works].
 
 In private mode, you can install the Connector on premises or in the cloud by manually installing the Connector on your own Linux host.
 
-Where you install the Connector determines which BlueXP services and features are available. For example, the Connector must be installed in the cloud if you want to deploy and manage Cloud Volumes ONTAP. link:concept-modes.html#private-mode[Learn more about private mode].
+Where you install the Connector determines which BlueXP services and features are available when using private mode. For example, the Connector must be installed in the cloud if you want to deploy and manage Cloud Volumes ONTAP. link:concept-modes.html#private-mode[Learn more about private mode].
 
 == Step 3: Review host requirements
 
