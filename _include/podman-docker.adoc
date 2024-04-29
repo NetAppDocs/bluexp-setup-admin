@@ -22,7 +22,7 @@ rm /var/run/docker.sock
 
 . Install Podman.
 +
-Podman is available from official Red Hat Enterprise Linux repositories. You can install podman by using the `yum` or `dnf` commands. The install command installs the latest version available from the repo.
+Podman is available from official Red Hat Enterprise Linux repositories.
 +
 [source,cli]
 sudo dnf install podman-2:4.6.1
@@ -39,7 +39,7 @@ sudo dnf install python3
 
 . Install the podman-compose package 1.0.6.
 +
-podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository. The install command installs the latest version available from the repo.
+podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository.
 +
 If the EPEL repository isn't already available from your system, you'll need to add it first.
 +
