@@ -57,9 +57,6 @@ include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=container-req]
 
-+
-<<Step 4: Install Podman or Docker Engine,Learn how to install Podman or Docker Engine>>.
-
 == Step 4: Install Podman or Docker Engine
 
 If you're planning to manually install the Connector software, you need to prepare the host by installing Podman or Docker Engine.
