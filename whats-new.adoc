@@ -49,9 +49,11 @@ Deployment mode::
 RHEL 8 and 9 are supported when using BlueXP in standard mode or restricted mode.
 
 Existing Connectors on RHEL 7 hosts::
+The Connector is still supported on RHEL 7 hosts.
++ 
 If you have an existing Connector running on RHEL 7, we don't support upgrading the OS to RHEL 8 or 9.
 +
-If you want to run your existing Connector on a RHEL 8 or 9 host, you need to set up a _new_ RHEL 8 or 9 host and install Podman. You can then perform a new Connector installation and configure it to discover the working environments that the old Connector was managing.
+If you want to run your existing Connector on a RHEL 8 or 9 host instead, then you need to set up a _new_ RHEL 8 or 9 host and install Podman. You can then perform a new Connector installation and configure it to discover the working environments that the old Connector was managing.
 
 Limitations::
 * When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has two limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
