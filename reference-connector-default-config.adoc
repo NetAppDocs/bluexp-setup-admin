@@ -64,7 +64,7 @@ Log files are contained in the following folders:
 or
 * /opt/application/netapp/service-manager-2/logs (starting with new 3.9.23 installations)
 +
-The logs in these folders provide details about the Connector and docker images.
+The logs in these folders provide details about the Connector.
 
 * /opt/application/netapp/cloudmanager/docker_occm/data/log
 +
