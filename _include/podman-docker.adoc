@@ -25,7 +25,7 @@ rm /var/run/docker.sock
 Podman is available from official Red Hat Enterprise Linux repositories. You can install podman by using the `yum` or `dnf` commands. The install command installs the latest version available from the repo.
 +
 [source,cli]
-sudo dnf install podman
+sudo dnf install podman-2:4.6.1
 
 . Enable and start the podman.socket service.
 +
@@ -45,7 +45,7 @@ If the EPEL repository isn't already available from your system, you'll need to 
 +
 [source,cli]
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
-sudo dnf install podman-compose
+sudo dnf install podman-compose-1.0.6
 
 +
 NOTE: Using the `dnf install` command meets the requirement for adding podman-compose to the PATH environment variable. The installation command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host.
