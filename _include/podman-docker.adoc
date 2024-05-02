@@ -60,6 +60,8 @@ Install a version of Docker Engine between 19.3.1 and 25.0.5.
 . Install Docker Engine.
 +
 https://docs.docker.com/engine/install/[View installation instructions from Docker^]
++
+Be sure to follow the steps to install a specific version of Docker Engine. Installing the latest version will install a version of Docker that BlueXP doesn't support.
 
 . Verify that Docker is enabled and running.
 +

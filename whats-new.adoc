@@ -48,12 +48,10 @@ RHEL 8 and 9 are supported with _new_ Connector installations when manually inst
 +
 When deploying the Connector from BlueXP or from the marketplace, the operating system is still Ubuntu 22.04 LTS with Docker Engine as the container orchestration tool.
 
-Existing Connectors on RHEL 7 hosts::
-The Connector is still supported on RHEL 7 hosts.
+Ubuntu, CentOS, and RHEL 7::
+The Connector is still supported on Ubuntu, CentOS, and RHEL 7 with Docker (we don't support Podman with these operating systems). There's nothing that you need to do if you have an existing Connector on these operating systems.
 + 
-If you have an existing Connector running on RHEL 7, we don't support upgrading the operating system to RHEL 8 or 9.
-+
-If you need to run your Connector on a RHEL 8 or 9 host instead, then you need to set up a _new_ RHEL 8 or 9 host and install Podman. You can then perform a new Connector installation and configure it to discover the working environments that the old Connector was managing.
+If you have an existing Connector running on RHEL 7, we don't support upgrading the operating system to RHEL 8 or 9. If you need to run your Connector on a RHEL 8 or 9 host instead, then you need to set up a _new_ RHEL 8 or 9 host and install Podman. You can then perform a new Connector installation and configure it to discover the working environments that the old Connector was managing.
 
 Limitations::
 * When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
