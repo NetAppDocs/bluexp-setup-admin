@@ -63,7 +63,7 @@ Connections to target networks::
 The Connector must have a network connection to the location where you plan to manage storage. For example, the VPC or VNet where you plan to deploy Cloud Volumes ONTAP, or the data center where your on-premises ONTAP clusters reside.
 
 Endpoints for day-to-day operations::
-The Connector contacts the following endpoints to manage resources and processes within your public cloud environment.
+If you are planning to create Cloud Volumes ONTAP systems, the Connector needs connectivity to endpoints in your cloud provider's publicly available resources.
 +
 [cols="2a,1a",options="header,autowidth"]
 |===
