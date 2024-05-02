@@ -37,9 +37,9 @@ sudo systemctl enable --now podman.socket
 [source,cli]
 sudo dnf install python3
 
-. Install Extra Packages for Enterprise Linux (EPEL) if they're not already available on your system.
+. Install the EPEL repository package if it's not already available on your system.
 +
-podman-compose is available from the EPEL repository.
+This step is required because podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository.
 +
 For Red Hat Enterprise Linux 9:
 +
