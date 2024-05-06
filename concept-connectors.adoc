@@ -122,6 +122,56 @@ A BlueXP Account Admin can create a Connector directly from BlueXP, from your cl
 * link:task-quick-start-restricted-mode.html[Get started with BlueXP in restricted mode]
 * link:task-quick-start-private-mode.html[Get started with BlueXP in private mode]
 
+== Operating system for the Connector
+
+The operating system for the Connector is determined by the BlueXP deployment mode and installation method.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Standard mode
+--
+From BlueXP:: 
+Ubuntu 22.04 LTS
+
+From the AWS Marketplace:: 
+Ubuntu 22.04 LTS
+
+From the Azure Marketplace:: 
+Ubuntu 22.04 LTS
+
+Manual installation::
+* Ubuntu 22.04 LTS
+* RHEL 8.6 to 8.9
+* RHEL 9.1 to 9.3
+--
+
+.Restricted mode
+--
+From the AWS Marketplace:: 
+Ubuntu 22.04 LTS
+
+From the Azure Marketplace:: 
+Ubuntu 22.04 LTS
+
+Manual installation::
+* Ubuntu 22.04 LTS
+* RHEL 8.6 to 8.9
+* RHEL 9.1 to 9.3
+--
+
+.Private mode
+--
+Manual installation::
+Ubuntu 22.04 LTS
+--
+
+====
+
+// end tabbed area
+
 == Permissions
 
 Specific permissions are needed to create the Connector directly from BlueXP and another set of permissions are needed for the Connector instance itself. If you create the Connector in AWS or Azure directly from BlueXP, then BlueXP creates the Connector with the permissions that it needs.
