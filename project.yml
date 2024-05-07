@@ -113,8 +113,8 @@ sidebar:
               url: /reference-user-roles.html
         - title: Connectors
           entries:
-            - title: Operating system changes for the Connector
-              url: /concept-connector-operating-system-changes.html
+            - title: RHEL 8 and 9 support
+              url: /reference-connector-operating-system-changes.html
             - title: Maintain the VM and OS
               url: /task-maintain-connectors.html
             - title: Install an HTTPS certificate
