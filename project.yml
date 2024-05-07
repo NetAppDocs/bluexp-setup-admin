@@ -114,7 +114,7 @@ sidebar:
         - title: Connectors
           entries:
             - title: Operating system changes for the Connector
-              url: /connector-operating-system-changes.html
+              url: /concept-connector-operating-system-changes.html
             - title: Maintain the VM and OS
               url: /task-maintain-connectors.html
             - title: Install an HTTPS certificate
