@@ -1134,6 +1134,9 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | ec2:DescribeVolumesModifications | No | Yes | No
 | ec2:ModifyVolume | No | Yes | No
 
+| Check whether the Availability Zone is an AWS Local Zone and validates that all deployment parameters are compatible
+| ec2:DescribeAvailabilityZones | Yes | No | Yes
+
 |===
 
 === Edge caching
