@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: connector-operating-system-changes.html
+permalink: concept-connector-operating-system-changes.html
 keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens
 summary: BlueXP now supports the Connector running on Red Hat Enterprise Linux 8 and 9. You might have questions about support for these new operating systems or the operating system versions that were already supported.
 ---
