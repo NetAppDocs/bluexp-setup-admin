@@ -22,7 +22,7 @@ Starting with the 3.9.40 release, the Connector is now supported on hosts runnin
 
 Note the following about support for these RHEL versions:
 
-Limitation::
+Backup and recovery limitations::
 When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
 
 Container orchestration tool::
@@ -113,7 +113,7 @@ Refer to the following pages for details about host requirements, Podman require
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud] (standard mode)
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
 
-How to discover working environments::
+How to rediscover your working environments::
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html[Create or discover an FSx for ONTAP working environment^]
