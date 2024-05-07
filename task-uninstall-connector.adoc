@@ -1,0 +1,78 @@
+---
+sidebar: sidebar
+permalink: task-uninstall-connector.html
+keywords: uninstall, remove connector, uninstall connector
+summary: Uninstall the Connector software to troubleshoot issues or to permanently remove the software from the host. The steps that you need to use depends on the deployment mode that you're using. Once a Connector has been removed from your environment, you can remove it from BlueXP.
+---
+
+= Uninstall and remove the Connector
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Uninstall the Connector software to troubleshoot issues or to permanently remove the software from the host. The steps that you need to use depends on the deployment mode that you're using. Once a Connector has been removed from your environment, you can remove it from BlueXP.
+
+link:concept-modes.html[Learn about BlueXP deployment modes].
+
+== Uninstall the Connector when using standard or restricted mode
+
+If you're using BlueXP in standard mode or restricted mode (in other words, the Connector host has outbound connectivity), then you should follow the steps below to uninstall the Connector software.
+
+.Steps
+
+. Connect to the Linux VM for the Connector.
+
+. From the Linux host, run the uninstallation script:
++
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
++
+_silent_ runs the script without prompting you for confirmation.
+
+.Result
+
+The Connector software is now uninstalled from the Linux host.
+
+== Uninstall the Connector when using private mode
+
+If you're using BlueXP in private mode (in other words, the Connector host has _no_ outbound connectivity), then you should follow the steps below to uninstall the Connector software.
+
+.Step
+
+. Connect to the Linux VM for the Connector.
+
+. From the Linux host, run the following commands:
++
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
+.Result
+
+The Connector software is now uninstalled from the Linux host.
+
+== Remove Connectors from BlueXP
+
+If a Connector is inactive, you can remove it from the list of Connectors in BlueXP. You might do this if you deleted the Connector virtual machine or if you uninstalled the Connector software.
+
+Note the following about removing a Connector:
+
+* This action doesn't delete the virtual machine.
+* This action can't be reverted--once you remove a Connector from BlueXP, you can't add it back.
+
+.Steps
+
+. Select the *Connector* drop-down from the BlueXP header.
+
+. Select *Manage Connectors*.
+
+. Select the action menu for an inactive Connector and select *Remove Connector*.
++
+image:screenshot_connector_remove.gif[A screenshot of the Connector widget where you can remove an inactive Connector.]
+
+. Enter the name of the Connector to confirm and then select *Remove*.
+
+.Result
+
+BlueXP removes the Connector from its records.

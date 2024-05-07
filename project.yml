@@ -17,8 +17,6 @@ sidebar:
           url: /whats-new.html
         - title: Known limitations
           url: /reference-limitations.html
-        - title: Known limitations
-          url: /connector-operating-system-changes.html
     - title: Get started
       entries:
         - title: Learn the basics
@@ -115,15 +113,25 @@ sidebar:
               url: /reference-user-roles.html
         - title: Connectors
           entries:
-            - title: Find the system ID for a Connector
-              url: /task-finding-system-id.html
-            - title: Manage existing Connectors
-              url: /task-managing-connectors.html
-            - title: Install an HTTPS certificate for secure access
+            - title: Operating system changes for the Connector
+              url: /connector-operating-system-changes.html
+            - title: Maintain the VM and OS
+              url: /task-maintain-connectors.html
+            - title: Install an HTTPS certificate
               url: /task-installing-https-cert.html
-            - title: Configure a Connector to use a proxy server
+            - title: Configure proxy settings
               url: /task-configuring-proxy.html
-            - title: Default configuration for the Connector
+            - title: Require the use of IMDSv2
+              url: /task-require-imdsv2.html
+            - title: Upgrade a Connector in private mode
+              url: /task-upgrade-connector.html
+            - title: Work with multiple Connectors
+              url: /task-manage-multiple-connectors.html
+            - title: Troubleshoot issues
+              url: /task-troubleshoot-connector.html
+            - title: Uninstall and remove the Connector
+              url: /task-uninstall-connector.html
+            - title: Default configuration
               url: /reference-connector-default-config.html
         - title: Credentials and subscriptions
           entries:
