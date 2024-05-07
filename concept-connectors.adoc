@@ -137,15 +137,18 @@ From BlueXP::
 Ubuntu 22.04 LTS
 
 From the AWS Marketplace:: 
-Ubuntu 22.04 LTS
+Ubuntu 22.04 LTS 
 
 From the Azure Marketplace:: 
 Ubuntu 22.04 LTS
 
 Manual installation::
 * Ubuntu 22.04 LTS
-* RHEL 8.6 to 8.9
-* RHEL 9.1 to 9.3
+* CentOS 7.6 to 7.9
+* Red Hat Enterprise Linux 
+** 7.6 to 7.9
+** 8.6 to 8.9
+** 9.1 to 9.3
 --
 
 .Restricted mode
@@ -158,14 +161,19 @@ Ubuntu 22.04 LTS
 
 Manual installation::
 * Ubuntu 22.04 LTS
-* RHEL 8.6 to 8.9
-* RHEL 9.1 to 9.3
+* CentOS 7.6 to 7.9
+* Red Hat Enterprise Linux 
+** 7.6 to 7.9
+** 8.6 to 8.9
+** 9.1 to 9.3
 --
 
 .Private mode
 --
 Manual installation::
-Ubuntu 22.04 LTS
+* Ubuntu 22.04 LTS
+* CentOS 7.6, 7.7, 7.8, and 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
 --
 
 ====

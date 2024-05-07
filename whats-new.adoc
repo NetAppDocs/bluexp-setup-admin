@@ -36,12 +36,15 @@ The Connector is now supported on hosts running the following versions of Red Ha
 Note the following about support for these RHEL versions:
 
 Container orchestration tool::
-These newer versions of RHEL require Podman as the container orchestration tool. Docker Engine is required for RHEL 7, but Docker Engine is not supported with RHEL 8 and later.
+These newer versions of RHEL require Podman as the container orchestration tool. Docker Engine is required for Ubuntu, CentOS, and RHEL 7, but Docker Engine is not supported with RHEL 8 and later.
 +
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View requirements for Podman].
 
 Deployment mode::
 RHEL 8 and 9 are supported when using BlueXP in standard mode or restricted mode.
+
+Limitation::
+When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
 
 New manual installations only::
 RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
@@ -49,12 +52,15 @@ RHEL 8 and 9 are supported with _new_ Connector installations when manually inst
 When deploying the Connector from BlueXP or from the marketplace, the operating system is still Ubuntu 22.04 LTS with Docker Engine as the container orchestration tool.
 
 Ubuntu, CentOS, and RHEL 7::
-The Connector is still supported on Ubuntu, CentOS, and RHEL 7 with Docker (we don't support Podman with these operating systems). There's nothing that you need to do if you have an existing Connector on these operating systems.
+At this time, the Connector is still supported on Ubuntu, CentOS, and RHEL 7 with Docker (we don't support Podman with these operating system versions).
 + 
-If you have an existing Connector running on RHEL 7, we don't support upgrading the operating system to RHEL 8 or 9. If you need to run your Connector on a RHEL 8 or 9 host instead, then you need to set up a _new_ RHEL 8 or 9 host and install Podman. You can then perform a new Connector installation and configure it to discover the working environments that the old Connector was managing.
-
-Limitation::
-When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
+If you have an existing Connector running on RHEL 7, we don't support upgrading the operating system to RHEL 8 or 9. If you need to run your Connector on a RHEL 8 or 9 host instead, then you should do the following:
++
+. Set up a RHEL 8 or 9 host.
+. Install Podman.
+. Take note of the current configuration of the Connector, which includes the working environments that it's managing. 
+. Perform a _new_ Connector installation.
+. Configure the Connector to discover the working environments that the old Connector was managing.
 
 Refer to the following pages for details about host requirements and steps to install Podman and the Connector:
 

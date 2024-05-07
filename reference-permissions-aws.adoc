@@ -1161,13 +1161,11 @@ The Connector makes the following API requests to discover and manage Amazon EKS
 
 As permissions are added and removed, we'll note them in the sections below.
 
-=== 8 March 2024
+=== 9 May 2024
 
-The following permission is now included in the Connector policy: 
+The following permissions is now required for Cloud Volumes ONTAP:
 
 ec2:DescribeAvailabilityZones
-
-This permission is required for an upcoming release. We'll update the release notes with more details when that release is available.
 
 === 6 June 2023
 

@@ -17,6 +17,8 @@ sidebar:
           url: /whats-new.html
         - title: Known limitations
           url: /reference-limitations.html
+        - title: Known limitations
+          url: /connector-operating-system-changes.html
     - title: Get started
       entries:
         - title: Learn the basics

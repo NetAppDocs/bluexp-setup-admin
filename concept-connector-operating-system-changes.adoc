@@ -1,0 +1,59 @@
+---
+sidebar: sidebar
+permalink: connector-operating-system-changes.html
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens
+summary: BlueXP now supports the Connector running on Red Hat Enterprise Linux 8 and 9. You might have questions about support for these new operating systems or the operating system versions that were already supported.
+---
+
+= Operating system changes for the Connector
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+BlueXP now supports the Connector running on Red Hat Enterprise Linux 8 and 9. You might have questions about support for these new operating systems or the operating system versions that were already supported.
+
+Starting with the 3.9.40 release, the Connector is now supported on hosts running the following versions of Red Hat Enterprise Linux:
+
+* 8.6 to 8.9
+* 9.1 to 9.3
+
+Note the following about support for these RHEL versions:
+
+Container orchestration tool::
+These newer versions of RHEL require Podman as the container orchestration tool. Docker Engine is required for Ubuntu 22.04, CentOS 7, and RHEL 7, but Docker Engine is not supported with RHEL 8 and later.
++
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View requirements for Podman].
+
+Deployment mode::
+RHEL 8 and 9 are supported when using BlueXP in standard mode or restricted mode.
+
+Limitation::
+When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
+
+New manual installations only::
+RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
++
+TIP: When deploying the Connector from BlueXP or from the marketplace, the operating system is still Ubuntu 22.04 LTS with Docker Engine as the container orchestration tool.
+
+Ubuntu, CentOS, and RHEL 7::
+At this time, the Connector is still supported on Ubuntu, CentOS, and RHEL 7 with Docker (we don't support Podman with these operating system versions).
++ 
+If you have an existing Connector running on RHEL 7, we don't support upgrading the operating system to RHEL 8 or 9. If you need to run your Connector on a RHEL 8 or 9 host instead, then you should do the following:
++
+. Set up a RHEL 8 or 9 host.
+. Install Podman.
+. Take note of the current configuration of the Connector, which includes the working environments that it's managing. 
+. Perform a _new_ Connector installation.
+. Configure the Connector to discover the working environments that the old Connector was managing.
+
+How to get started with RHEL 8 and 9::
+Refer to the following pages for details about host requirements and steps to install Podman and the Connector:
++
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html[Manually install the Connector in AWS] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html[Manually install the Connector in Azure] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
