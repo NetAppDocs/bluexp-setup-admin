@@ -37,7 +37,7 @@ Podman is required as the container orchestration tool for these operating syste
 
 You should be aware of Podman requirements, a known limitation, a summary of operating system support, what to do if you have a RHEL 7 host, how to get started, and more.
 
-link:reference-connector-new-operating-system-support.html[RHEL 8 and 9 support for the Connector]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
 
 == 22 April 2024
 
