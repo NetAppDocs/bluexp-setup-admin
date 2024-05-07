@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-connector-operating-system-changes.html
 keywords: connector, operating systems, connector operating systems, os support, supported operating systems, rhel 8, rhel 9, red hat, docker, podman
-summary: BlueXP now supports the Connector running on Red Hat Enterprise Linux 8 and 9. You might have questions about support for these new operating systems or for other operating systems that are also supported.
+summary: Starting with the 3.9.40 release, BlueXP supports the Connector running on Red Hat Enterprise Linux 8 and 9. You might have questions about support for these new operating systems or for other operating systems that are also supported.
 ---
 
 = RHEL 8 and 9 support for the Connector
@@ -13,9 +13,9 @@ summary: BlueXP now supports the Connector running on Red Hat Enterprise Linux 8
 :imagesdir: ./media/
 
 [.lead]
-BlueXP now supports the Connector running on Red Hat Enterprise Linux 8 and 9. You might have questions about support for these new operating systems or for other operating systems that are also supported.
+Starting with the 3.9.40 release, BlueXP supports the Connector running on Red Hat Enterprise Linux 8 and 9. You might have questions about support for these new operating systems or for other operating systems that are also supported.
 
-Starting with the 3.9.40 release, the Connector is now supported on hosts running the following versions of Red Hat Enterprise Linux:
+The Connector is supported on hosts running the following versions of Red Hat Enterprise Linux 8 and 9:
 
 * 8.6 to 8.9
 * 9.1 to 9.3
