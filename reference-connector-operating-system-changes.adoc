@@ -117,15 +117,15 @@ Ubuntu 22.04 LTS
 --
 Manual installation::
 * Ubuntu 22.04 LTS
-* CentOS 7.6, 7.7, 7.8, and 7.9
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
+* CentOS 7.6 to 7.9
+* Red Hat Enterprise Linux 7.6 to 7.9
 --
 
 ====
 
 == Related links
 
-== How to get started with RHEL 8 and 9
+=== How to get started with RHEL 8 and 9
 
 Refer to the following pages for details about host requirements, Podman requirements, and steps to install Podman and the Connector:
 
@@ -135,7 +135,7 @@ Refer to the following pages for details about host requirements, Podman require
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud] (standard mode)
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
 
-== How to rediscover your working environments
+=== How to rediscover your working environments
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]
