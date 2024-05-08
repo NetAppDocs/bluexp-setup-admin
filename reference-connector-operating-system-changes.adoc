@@ -17,7 +17,7 @@ As we add and remove support for the Connector on specific Linux operating syste
 
 == Support for RHEL 8 and 9
 
-Starting with the 3.9.40 release, BlueXP supports the Connector running on the following versions of Red Hat Enterprise Linux (RHEL) 8 and 9:
+Starting with the 3.9.40 release, BlueXP supports the Connector with the following versions of Red Hat Enterprise Linux (RHEL):
 
 * 8.6 to 8.9
 * 9.1 to 9.3
@@ -39,10 +39,7 @@ New manual installations only::
 RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
 
 RHEL upgrades::
-We don't support upgrading RHEL 7 hosts to RHEL 8 or 9 with an existing Connector. Learn more about existing Connectors on RHEL 7 or CentOS 7.
-
-BlueXP and marketplace deployments::
-RHEL 8 and 9 are not supported with deployments from BlueXP or from your cloud provider's marketplace.
+We don't support upgrading RHEL 7 hosts to RHEL 8 or 9 with an existing Connector. <<Existing Connectors on RHEL 7 or CentOS 7,Learn more about existing Connectors on RHEL 7 or CentOS 7>>.
 
 == End of support for RHEL 7 and CentOS 7
 
@@ -52,10 +49,11 @@ https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-e
 
 === Existing Connectors on RHEL 7 or CentOS 7
 
-If you have an existing Connector running on RHEL 7 or CentOS 7, we don't support upgrading or converting the operating system to RHEL 8 or 9. If you need to run your existing Connector on a RHEL 8 or 9 host instead, then you should do the following:
+If you have an existing Connector running on RHEL 7 or CentOS 7, we don't support upgrading or converting the operating system to RHEL 8 or 9. To start running a Connector on a RHEL 8 or 9 host instead, you'll need to do the following:
 
-. Set up a RHEL 8 or 9 host and install Podman.
-. Take note of the current configuration of the Connector, which includes the working environments that it's managing. 
+. Set up a RHEL 8 or 9 host.
+. Install Podman.
+. Take note of the current configuration of the Connector, which includes the working environments that it's currently managing. 
 . Perform a _new_ Connector installation.
 . Configure the Connector to discover the working environments that the old Connector was managing.
 
@@ -136,6 +134,8 @@ Refer to the following pages for details about host requirements, Podman require
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
 
 === How to rediscover your working environments
+
+Refer to the following pages to rediscover your working environments after a new Connector deployment.
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]
