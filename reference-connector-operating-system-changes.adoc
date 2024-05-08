@@ -17,7 +17,7 @@ As we add and remove support for the Connector on specific Linux operating syste
 
 == Support for RHEL 8 and 9
 
-Starting with the 3.9.40 release, BlueXP supports the Connector running on the following versions of Red Hat Enterprise Linux 8 and 9:
+Starting with the 3.9.40 release, BlueXP supports the Connector running on the following versions of Red Hat Enterprise Linux (RHEL) 8 and 9:
 
 * 8.6 to 8.9
 * 9.1 to 9.3
@@ -40,35 +40,11 @@ RHEL 8 and 9 are supported with _new_ Connector installations when manually inst
 +
 RHEL 8 and 9 are not supported with deployments from BlueXP or from your cloud provider's marketplace.
 
-How to get started with RHEL 8 and 9::
-Refer to the following pages for details about host requirements, Podman requirements, and steps to install Podman and the Connector:
-+
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html[Manually install the Connector in AWS] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html[Manually install the Connector in Azure] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
+== End of support for RHEL 7 and CentOS 7
 
-How to rediscover your working environments::
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
-* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]
-* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html[Create or discover an FSx for ONTAP working environment^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html[Create an Azure NetApp Files working environment^]
-* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html[Discover E-Series systems^]
-* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[Discover StorageGRID systems^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html[Add an Amazon Kubernetes cluster^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html[Add an Azure Kubernetes cluster^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html[Add a Google Cloud Kubernetes cluster^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html[Import an OpenShift cluster^]
+On June 30, 2024, RHEL 7 will reach end of maintenance (EOM), while CentOS 7 will reach end of life (EOL). NetApp will continue to support the Connector on these Linux distributions until June 30, 2024.
 
-== Support for RHEL 7 and CentOS 7
-
-On June 30, 2024, RHEL 7 will reach end of maintenance (EOM), while CentOS 7 will reach end of life (EOL). NetApp will continue to support the Connector with these Linux distributions until June 30, 2024.
-
-https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance[Red Hat: What to know about Red Hat Enterprise Liunx 7 End of Maintenance^]
-
-Container orchestration tool::
-Docker Engine is required for these operating systems. Podman is not supported.
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance[Red Hat: What to know about Red Hat Enterprise Linux 7 End of Maintenance^]
 
 Existing Connectors on RHEL 7 or CentOS 7:: 
 If you have an existing Connector running on RHEL 7 or CentOS 7, we don't support upgrading or converting the operating system to RHEL 8 or 9. If you need to run your existing Connector on a RHEL 8 or 9 host instead, then you should do the following:
@@ -85,6 +61,8 @@ The Connector is still supported on Ubuntu 22.04 LTS. Docker Engine is required 
 == Summary of supported operating systems
 
 Here's a summary of the operating system support that was described in the previous sections.
+
+NOTE: NetApp will continue to support the Connector on RHEL 7 and CentOS 7 until June 30, 2024.
 
 // start tabbed area
 
@@ -137,3 +115,26 @@ Manual installation::
 --
 
 ====
+
+== Related links
+
+How to get started with RHEL 8 and 9::
+Refer to the following pages for details about host requirements, Podman requirements, and steps to install Podman and the Connector:
++
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html[Manually install the Connector in AWS] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html[Manually install the Connector in Azure] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud] (standard mode)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
+
+How to rediscover your working environments::
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html[Create or discover an FSx for ONTAP working environment^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html[Create an Azure NetApp Files working environment^]
+* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html[Discover E-Series systems^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[Discover StorageGRID systems^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html[Add an Amazon Kubernetes cluster^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html[Add an Azure Kubernetes cluster^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html[Add a Google Cloud Kubernetes cluster^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html[Import an OpenShift cluster^]
