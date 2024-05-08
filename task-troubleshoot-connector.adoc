@@ -91,5 +91,4 @@ https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmco
 
 == Get help from the NetApp Knowledge Base
 
-https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki
-link:[View troubleshooting information created by the NetApp Support team].
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki[View troubleshooting information created by the NetApp Support team].

@@ -108,7 +108,7 @@ This new release is available to download from the NetApp Support Site.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
 
 == 8 March 2024
 
@@ -134,7 +134,7 @@ The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
 
 * For Cloud Volumes ONTAP, IMDSv1 is enabled by default on new and existing instances. You can manually configure IMDSv2 on the EC2 instances if you prefer.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances[Learn how to configure IMDSv2 on existing instances].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html[Learn how to configure IMDSv2 on existing instances].
 
 ==== AWS permissions update
 
@@ -189,7 +189,7 @@ This new release is available to download from the NetApp Support Site.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
 
 == 8 November 2023
 
@@ -384,7 +384,6 @@ The cloud region can be a region for secure US agencies like AWS Top Secret Clou
 To get started, manually install the Connector software, log in to the BlueXP console that's running on the Connector, add your BYOL license to the BlueXP digital wallet, and then deploy Cloud Volumes ONTAP.
 +
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-onprem-no-internet.html[Install the Connector in a location without internet access^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui[Access the BlueXP console on the Connector^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses[Add an unassigned license^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html[Get started with Cloud Volumes ONTAP^]
 

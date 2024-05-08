@@ -17,6 +17,8 @@ sidebar:
           url: /whats-new.html
         - title: Known limitations
           url: /reference-limitations.html
+        - title: Changes to supported Linux operating systems
+          url: /reference-connector-operating-system-changes.html
     - title: Get started
       entries:
         - title: Learn the basics
@@ -113,21 +115,19 @@ sidebar:
               url: /reference-user-roles.html
         - title: Connectors
           entries:
-            - title: RHEL 8 and 9 support
-              url: /reference-connector-operating-system-changes.html
             - title: Maintain the VM and OS
               url: /task-maintain-connectors.html
-            - title: Install an HTTPS certificate
+            - title: Install an HTTPS certificate for secure access
               url: /task-installing-https-cert.html
-            - title: Configure proxy settings
+            - title: Configure a Connector to use a proxy server
               url: /task-configuring-proxy.html
-            - title: Require the use of IMDSv2
+            - title: Require the use of IMDSv2 on EC2 instances
               url: /task-require-imdsv2.html
-            - title: Upgrade a Connector in private mode
+            - title: Upgrade a Connector when using private mode
               url: /task-upgrade-connector.html
             - title: Work with multiple Connectors
               url: /task-manage-multiple-connectors.html
-            - title: Troubleshoot issues
+            - title: Troubleshoot the Connector
               url: /task-troubleshoot-connector.html
             - title: Uninstall and remove the Connector
               url: /task-uninstall-connector.html
@@ -216,8 +216,6 @@ homepage:
       links:
         - title: Learn about Connectors
           url: concept-connectors.html
-        - title: Manage Connectors
-          url: task-managing-connectors.html
         - title: View AWS permissions
           url: reference-permissions-aws.html
         - title: View Azure permissions

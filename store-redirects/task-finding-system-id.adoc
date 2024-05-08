@@ -1,0 +1,4 @@
+---
+permalink: task-finding-system-id.html
+redirect: bluexp-setup-admin/task-troubleshoot-connector.html
+---

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-require-imdsv2.html
 keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui
-summary: Starting in March 2024, BlueXP now supports IMDSv2 with the Connector and with Cloud Volumes ONTAP. In most cases, IMDSv2 is automatically configured on new EC2 instances. IMDSv1 was enabled prior to March 2024. If required by your security policies, you might need to manually configure IMDSv2 on your EC2 instances.
+summary: BlueXP supports IMDSv2 with the Connector and with Cloud Volumes ONTAP. In most cases, IMDSv2 is automatically configured on new EC2 instances. IMDSv1 was enabled prior to March 2024. If required by your security policies, you might need to manually configure IMDSv2 on your EC2 instances.
 ---
 
 = Require the use of IMDSv2 on Amazon EC2 instances
@@ -13,7 +13,7 @@ summary: Starting in March 2024, BlueXP now supports IMDSv2 with the Connector a
 :imagesdir: ./media/
 
 [.lead]
-Starting in March 2024, BlueXP now supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector and with Cloud Volumes ONTAP (including the mediator for HA deployments). In most cases, IMDSv2 is automatically configured on new EC2 instances. IMDSv1 was enabled prior to March 2024. If required by your security policies, you might need to manually configure IMDSv2 on your EC2 instances.
+BlueXP supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector and with Cloud Volumes ONTAP (including the mediator for HA deployments). In most cases, IMDSv2 is automatically configured on new EC2 instances. IMDSv1 was enabled prior to March 2024. If required by your security policies, you might need to manually configure IMDSv2 on your EC2 instances.
 
 .Before you begin
 
