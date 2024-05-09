@@ -7,12 +7,14 @@ The Connector is not supported on a host that is shared with other applications.
 Supported operating systems::
 * Ubuntu 22.04 LTS
 * CentOS 7.6 to 7.9
++
+NetApp will continue to support the Connector with CentOS 7 until June 30, 2024.
 * Red Hat Enterprise Linux 
 ** 7.6 to 7.9
 ** 8.6 to 8.9
 ** 9.1 to 9.3
 +
-NetApp will continue to support the Connector on RHEL 7 and CentOS 7 until June 30, 2024.
+NetApp will continue to support the Connector with RHEL 7 until June 30, 2024.
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
