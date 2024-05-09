@@ -1,4 +1,4 @@
 ---
 permalink: task-managing-connectors.html
-redirect: bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html
+redirect: bluexp-setup-admin/task-maintain-connectors.html
 ---
