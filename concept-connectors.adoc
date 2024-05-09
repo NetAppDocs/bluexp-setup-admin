@@ -158,12 +158,6 @@ include::_include/vm-maintenance.adoc[]
 
 <<Connectors must be operational at all times,Be aware that the Connector must be operational at all times>>.
 
-== Multiple working environments
-
-A Connector can manage multiple working environments in BlueXP. The maximum number of working environments that a single Connector should manage varies. It depends on the type of working environments, the number of volumes, the amount of capacity being managed, and the number of users.
-
-If you have a large-scale deployment, work with your NetApp representative to size your environment. If you experience any issues along the way, reach out to us by using the in-product chat.
-
 == Multiple working environments and Connectors
 
 A Connector can manage multiple working environments in BlueXP. The maximum number of working environments that a single Connector should manage varies. It depends on the type of working environments, the number of volumes, the amount of capacity being managed, and the number of users.

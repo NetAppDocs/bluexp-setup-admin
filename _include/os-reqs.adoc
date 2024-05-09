@@ -23,9 +23,11 @@ The Connector is supported on English-language versions of these operating syste
 Supported operating systems::
 * Ubuntu 22.04 LTS
 * CentOS 7.6, 7.7, 7.8, and 7.9
++
+NetApp will continue to support the Connector with CentOS 7 until June 30, 2024.
 * Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
 +
-NetApp will continue to support the Connector on RHEL 7 and CentOS 7 until June 30, 2024.
+NetApp will continue to support the Connector with RHEL 7 until June 30, 2024.
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
@@ -86,7 +88,7 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 //tag::container-req[]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-* Podman version 4.6.1 is required for Red Hat Enterprise Linux 8.x and 9.x.
+* Podman version 4.6.1 is required for Red Hat Enterprise Linux 8 and 9.
 +
 The following prerequisites must be met for Podman:
 +
@@ -95,7 +97,7 @@ The following prerequisites must be met for Podman:
 ** The podman-compose package version 1.0.6 must be installed
 ** podman-compose must be added to the PATH environment variable
 
-* Docker Engine is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.x.
+* Docker Engine is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.
 +
 ** The minimum supported version is 19.3.1.
 ** The maximum supported version is 25.0.5.

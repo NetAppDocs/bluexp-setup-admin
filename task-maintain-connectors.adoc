@@ -15,7 +15,7 @@ summary: Maintaining the operating system on the Connector host is your responsi
 [.lead]
 Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
 
-TIP: You should be aware of link:reference-connector-operating-system-changes.html[changes to supported Linux operating systems].
+TIP: If you have an existing Connector, you should be aware of link:reference-connector-operating-system-changes.html[changes to supported Linux operating systems].
 
 == Operating system patches and the Connector
 
