@@ -11,10 +11,10 @@ Supported operating systems::
 NetApp will continue to support the Connector with CentOS 7 until June 30, 2024.
 * Red Hat Enterprise Linux 
 ** 7.6 to 7.9
-** 8.6 to 8.9
-** 9.1 to 9.3
 +
 NetApp will continue to support the Connector with RHEL 7 until June 30, 2024.
+** 8.6 to 8.9
+** 9.1 to 9.3
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
