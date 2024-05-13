@@ -53,7 +53,6 @@ If you have an existing Connector running on RHEL 7 or CentOS 7, we don't suppor
 
 . Set up a RHEL 8 or 9 host.
 . Install Podman.
-. Take note of the current configuration of the Connector, which includes the working environments that it's currently managing. 
 . Perform a _new_ Connector installation.
 . Configure the Connector to discover the working environments that the old Connector was managing.
 
