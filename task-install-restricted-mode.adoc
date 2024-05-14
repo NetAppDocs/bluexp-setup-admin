@@ -242,7 +242,7 @@ If you deployed the Connector from the Azure Marketplace or if you manually inst
 
 These steps don't apply if you deployed the Connector from the AWS Marketplace because you chose the required IAM role during deployment. 
 
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to prepare cloud permissions].
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Learn how to prepare cloud permissions].
 
 // start tabbed area
 

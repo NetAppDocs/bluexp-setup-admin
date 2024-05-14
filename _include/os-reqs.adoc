@@ -40,7 +40,7 @@ The Connector is supported on English-language versions of these operating syste
 Hypervisor::
 A bare metal or hosted hypervisor that is certified to run Ubuntu, CentOS, or Red Hat Enterprise Linux is required.
 +
-https://access.redhat.com/certified-hypervisors[Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?^]
+https://access.redhat.com/articles/973163[Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?^]
 //end::hypervisor[]
 
 //tag::cpu-ram[]
