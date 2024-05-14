@@ -32,8 +32,8 @@ Note the following:
 * To view step-by-step instructions for using these policies, refer to the following pages:
 
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions[Set up permissions for an AWS Marketplace deployment]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions[Set up permissions for on-prem deployments]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up permissions for on-prem deployments]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 Select your region to view the required policies:
