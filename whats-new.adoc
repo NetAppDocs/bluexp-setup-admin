@@ -35,7 +35,7 @@ The Connector is now supported on hosts running the following versions of Red Ha
 
 Podman is required as the container orchestration tool for these operating systems.
 
-You should be aware of Podman requirements, a known limitation, a summary of operating system support, what to do if you have a RHEL 7 host, how to get started, and more.
+You should be aware of Podman requirements, known limitations, a summary of operating system support, what to do if you have a RHEL 7 host, how to get started, and more.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
 
