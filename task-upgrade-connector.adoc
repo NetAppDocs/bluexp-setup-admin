@@ -5,7 +5,7 @@ keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, 
 summary: BlueXP automatically upgrades a Connector to the latest release when you use BlueXP in standard mode or restricted mode. New versions are typically released each month to introduce new features and to provide stability improvements. If you prefer, you can configure the Connector to pull image updates from a local repository instead. For private mode deployments, you always need to manually upgrade the Connector yourself.
 ---
 
-= Upgrade the Connector when using private mode
+= Upgrade a Connector when using private mode
 :hardbreaks:
 :nofooter:
 :icons: font
