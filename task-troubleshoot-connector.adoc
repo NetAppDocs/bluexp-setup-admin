@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+permalink: task-troubleshoot-connector.html
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure
+summary: To troubleshoot issues with the Connector, you can work with NetApp Support who might ask for your system ID or the latest AutoSupport messages. You can also view the NetApp Knowledge Base to troubleshoot issues yourself.
+---
+
+= Troubleshoot the Connector
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+To troubleshoot issues with the Connector, you can work with NetApp Support who might ask for your system ID, Connector version, or the latest AutoSupport messages. You can also view the NetApp Knowledge Base to troubleshoot issues yourself.
+
+.Related link
+
+link:task-get-help.html[Get help from NetApp Support].
+
+== Find the system ID for a Connector
+
+To help you get started, your NetApp representative might ask you for the system ID of your Connector. The ID is typically used for licensing and troubleshooting purposes.
+
+.Steps
+
+. In the upper right of the BlueXP console, select the Help icon.
+
+. Select *Support > BlueXP Connector*.
++
+The system ID appears at the top of the page.
++
+*Example*
++
+image:screenshot-system-id.png[A screenshot that shows the System ID for BlueXP that appears in the Support Dashboard.]
+
+== View a Connector's version
+
+You can view the version of your Connector to verify that the Connector automatically upgraded to the latest release or because you need to share it with your NetApp representative.
+
+.Steps
+
+. In the upper right of the BlueXP console, select the Help icon.
+
+. Select *Support > BlueXP Connector*.
++
+The version displays at the top of the page.
++
+image:screenshot-connector-version.png[A screenshot that shows the Connector version in the Support Dashboard.]
+
+== Download or send an AutoSupport message
+
+If you're having problems, NetApp personnel might ask you to send an AutoSupport message to NetApp support for troubleshooting purposes.
+
+.Steps
+
+. In the upper right of the BlueXP console, select the Help icon, and select *Support*.
++
+image:screenshot-help-support.png[A screenshot of the Help menu where Support is the first option listed]
+
+. Select *BlueXP Connector*.
+
+. Depending on how you need to send the information to NetApp support, choose one of the following options:
+
+.. Select the option to download the AutoSupport message to your local machine. You can then send it to NetApp Support using a preferred method.
+
+.. Select *Send AutoSupport* to directly send the message to NetApp Support.
+
++
+image:screenshot-connector-autosupport.png[A screenshot of the Support Dashboard showing where users can select to download and send AutoSupport messages.]
+
+== Fix download failures when using a Google Cloud NAT gateway
+
+The Connector automatically downloads software updates for Cloud Volumes ONTAP. The download can fail if your configuration uses a Google Cloud NAT gateway. You can correct this issue by limiting the number of parts that the software image is divided into. This step must be completed by using the BlueXP API.
+
+.Step
+
+.	Submit a PUT request to /occm/config with the following JSON as body:
++
+[source.json]
+{
+  "maxDownloadSessions": 32
+}
++
+The value for _maxDownloadSessions_ can be 1 or any integer greater than 1. If the value is 1, then the downloaded image will not be divided.
++
+Note that 32 is an example value. The value that you should use depends on your NAT configuration and the number of sessions that you can have simultaneously.
+
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig[Learn more about the /occm/config API call^]
+
+== Get help from the NetApp Knowledge Base
+
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki[View troubleshooting information created by the NetApp Support team].

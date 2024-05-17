@@ -35,9 +35,13 @@ include::_include/os-reqs.adoc[tag=azure-vm]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
-include::_include/os-reqs.adoc[tag=docker]
+include::_include/os-reqs.adoc[tag=container-req]
 
-== Step 2: Set up networking
+== Step 2: Install Podman or Docker Engine
+
+include::_include/podman-docker.adoc[]
+
+== Step 3: Set up networking
 
 Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
@@ -84,7 +88,7 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 3: Set up permissions
+== Step 4: Set up permissions
 
 You need to provide Azure permissions to BlueXP by using one of the following options:
 
@@ -144,7 +148,7 @@ Your service principal is now setup and you should have copied the application (
 ====
 // end tabbed area
 
-== Step 4: Install the Connector
+== Step 5: Install the Connector
 
 After the pre-requisites are complete, you can manually install the software on your own Linux host.
 
@@ -162,7 +166,7 @@ include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
 If you have Azure Blob storage in the same Azure subscription where you created the Connector, you'll see an Azure Blob storage working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html[Learn how to manage Azure Blob storage from BlueXP^]
 
-== Step 5: Provide permissions to BlueXP
+== Step 6: Provide permissions to BlueXP
 
 Now that you've installed the Connector, you need to provide BlueXP with the Azure permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
 

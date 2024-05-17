@@ -1,0 +1,93 @@
+---
+sidebar: sidebar
+permalink: task-maintain-connectors.html
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector
+summary: Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
+---
+
+= Maintain the Connector VM and operating system 
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
+
+TIP: If you have an existing Connector, you should be aware of link:reference-connector-operating-system-changes.html[changes to supported Linux operating systems].
+
+== Operating system patches and the Connector
+
+You don't need to stop any services on the Connector host when applying OS security patches.
+
+== VM or instance type
+
+If you created a Connector directly from BlueXP, BlueXP deployed a virtual machine instance in your cloud provider using a default configuration. After you create the Connector, you should not change to a smaller VM instance that has less CPU or RAM.
+
+The CPU and RAM requirements are as follows:
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
+link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
+
+== Stopping the starting the Connector VM
+
+If you need to stop and then start the Connector VM, then you should do so from your cloud provider's console or by using the standard procedures for on-premises management.
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be aware that the Connector must be operational at all times].
+
+== Connect to the Linux VM
+
+If you need to connect to the Linux VM that the Connector runs on, you can do so by using the connectivity options available from your cloud provider.
+
+AWS::
+When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
+
+Azure::
+When you created the Connector VM in Azure, you specified a user name and chose to authenticate with a password or SSH public key. Use the authentication method that you chose to connect to the VM.
++
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm[Azure Docs: SSH into your VM^]
+
+Google Cloud::
+You can't specify an authentication method when you create a Connector in Google Cloud. However, you can connect to the Linux VM instance using the Google Cloud Console or Google Cloud CLI (gcloud).
++
+https://cloud.google.com/compute/docs/instances/connecting-to-instance[Google Cloud Docs: Connect to Linux VMs^]
+
+== Change the IP address for a Connector
+
+If it's required for your business, you can change the internal IP address and public IP address of the Connector instance that is automatically assigned by your cloud provider.
+
+.Steps
+
+. Follow the instructions from your cloud provider to change the local IP address or public IP address (or both) for the Connector instance.
+
+. If you changed the public IP address and you need to connect to the local user interface running on the Connector, restart the Connector instance to register the new IP address with BlueXP.
+
+. If you changed the private IP address, update the backup location for Cloud Volumes ONTAP configuration files so that the backups are being sent to the new private IP address on the Connector.
++
+You'll need to update the backup location for each Cloud Volumes ONTAP system.
+
+.. Run the following command from the Cloud Volumes ONTAP CLI to display the current backup target:
+[source,cli]
+system configuration backup show
+
+.. Run the following command to update the IP address for the backup target:
+[source,cli]
+system configuration backup settings modify -destination <target-location>
+
+== Edit a Connector's URIs
+
+Add and remove the Uniform Resource Identifier (URI) for a Connector.
+
+.Steps
+
+. Select the *Connector* drop-down from the BlueXP header.
+
+. Select *Manage Connectors*.
+
+. Select the action menu for a Connector and select *Edit URIs*.
+
+. Add and remove URIs and then select *Apply*.

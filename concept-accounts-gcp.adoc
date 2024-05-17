@@ -32,7 +32,7 @@ image:diagram_permissions_gcp.png[A conceptual image depicting the permissions r
 To learn how to set up permissions, refer to the following pages:
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector[Set up Google Cloud permissions for standard mode]
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 == Credentials and marketplace subscriptions
