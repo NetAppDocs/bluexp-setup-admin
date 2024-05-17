@@ -27,6 +27,7 @@ If you deployed the Connector from BlueXP or from the cloud provider's marketpla
 * The operating system for the image is Ubuntu 22.04 LTS.
 +
 The operating system does not include a GUI. You must use a terminal to access the system.
+* The installation includes Docker Engine, which is the required container orchestration tool.
 * The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
 * The default system disk is a 100 GiB gp2 disk.
 
@@ -38,6 +39,7 @@ If you deployed the Connector from BlueXP or from the cloud provider's marketpla
 * The operating system for the image is Ubuntu 22.04 LTS.
 +
 The operating system does not include a GUI. You must use a terminal to access the system.
+* The installation includes Docker Engine, which is the required container orchestration tool.
 * The default system disk is a 100 GiB premium SSD disk.
 
 === Google Cloud details
@@ -48,6 +50,7 @@ If you deployed the Connector from BlueXP, note the following:
 * The operating system for the image is Ubuntu 22.04 LTS.
 +
 The operating system does not include a GUI. You must use a terminal to access the system.
+* The installation includes Docker Engine, which is the required container orchestration tool.
 * The default system disk is a 100 GiB SSD persistent disk.
 
 === Installation folder
@@ -64,7 +67,7 @@ Log files are contained in the following folders:
 or
 * /opt/application/netapp/service-manager-2/logs (starting with new 3.9.23 installations)
 +
-The logs in these folders provide details about the Connector and docker images.
+The logs in these folders provide details about the Connector.
 
 * /opt/application/netapp/cloudmanager/docker_occm/data/log
 +

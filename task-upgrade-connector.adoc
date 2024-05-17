@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: task-upgrade-connector.html
+keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode
+summary: BlueXP automatically upgrades a Connector to the latest release when you use BlueXP in standard mode or restricted mode. New versions are typically released each month to introduce new features and to provide stability improvements. If you prefer, you can configure the Connector to pull image updates from a local repository instead. For private mode deployments, you always need to manually upgrade the Connector yourself.
+---
+
+= Upgrade a Connector when using private mode
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you are using BlueXP in private mode, you can upgrade the Connector when a newer version is available from the NetApp Support Site.
+
+TIP: When you use BlueXP in standard mode or restricted mode, you don't need to manually upgrade the Connector. BlueXP automatically upgrades a Connector to the latest release, as long as the Connector has outbound internet access to obtain the software update.
+
+.About this task
+
+The Connector needs to restart during the upgrade process so the web-based console will be unavailable during the upgrade.
+
+.Steps
+
+. Download the Connector software from the https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab[NetApp Support Site^].
++
+Be sure to download the offline installer for private networks without internet access.
+
+. Copy the installer to the Linux host.
+
+. Assign permissions to run the script.
++
+[source,cli]
+chmod +x /path/BlueXP-Connector-offline-<version>
++
+Where <version> is the version of the Connector that you downloaded.
+
+. Run the installation script:
++
+[source,cli]
+sudo /path/BlueXP-Connector-offline-<version>
++
+Where <version> is the version of the Connector that you downloaded.
+
+. After the upgrade is complete, you can verify the Connector's version by going to *Help > Support > Connector*.

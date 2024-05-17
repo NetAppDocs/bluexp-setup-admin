@@ -23,11 +23,6 @@ The installer that is available on the NetApp Support Site might be an earlier v
 //tag::main-steps[]
 .Steps
 
-. Verify that docker is enabled and running.
-+
-[source,cli]
-sudo systemctl enable docker && sudo systemctl start docker
-
 . If the _http_proxy_ or _https_proxy_ system variables are set on the host, remove them:
 +
 [source,cli]
@@ -58,7 +53,7 @@ The --proxy and --cacert parameters are optional. If you have a proxy server, yo
 Here's an example of the command using both optional parameters:
 +
 [source,cli]
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 +
 --proxy configures the Connector to use an HTTP or HTTPS proxy server using one of the following formats:
 +
@@ -71,9 +66,14 @@ Here's an example of the command using both optional parameters:
 +
 Note the following:
 +
-** The user can be a local user or domain user. 
-** For a domain user, you must use the ASCII code for the \ as shown above. 
-** BlueXP doesn't support passwords that include the @ character.
+** The user can be a local user or domain user.
+** For a domain user, you must use the ASCII code for a \ as shown above.
+** BlueXP doesn't support user names or passwords that include the @ character.
+** If the password includes any of the following special characters, you must escape that special character by prepending it with a backslash: & or !
++
+For example:
++
+\http://bxpproxyuser:netapp1\!@address:3128
 
 +
 --cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.

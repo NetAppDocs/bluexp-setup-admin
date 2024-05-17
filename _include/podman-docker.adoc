@@ -1,0 +1,81 @@
+Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
+
+* Podman is required for Red Hat Enterprise Linux 8 and 9.
+
+* Docker Engine is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.
+
+.Steps
+
+[role="tabbed-block"]
+====
+.Podman
+--
+Install Podman 4.6.1.
+
+.Steps
+
+. Remove the podman-docker package if it's installed on the host.
++
+[source,cli]
+dnf remove podman-docker
+rm /var/run/docker.sock
+
+. Install Podman.
++
+Podman is available from official Red Hat Enterprise Linux repositories.
++
+[source,cli]
+sudo dnf install podman-2:4.6.1
+
+. Enable and start the podman.socket service.
++
+[source,cli]
+sudo systemctl enable --now podman.socket
+
+. Install python3.
++
+[source,cli]
+sudo dnf install python3
+
+. Install the EPEL repository package if it's not already available on your system.
++
+This step is required because podman-compose is available from the Extra Packages for Enterprise Linux (EPEL) repository.
++
+For Red Hat Enterprise Linux 9:
++
+[source,cli]
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
++
+For Red Hat Enterprise Linux 8:
++
+[source,cli]
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+. Install podman-compose package 1.0.6. 
++
+[source,cli]
+sudo dnf install podman-compose-1.0.6
++
+NOTE: Using the `dnf install` command meets the requirement for adding podman-compose to the PATH environment variable. The installation command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host.
+--
+
+.Docker Engine
+--
+Install a version of Docker Engine between 19.3.1 and 25.0.5.
+
+.Steps
+
+. Install Docker Engine.
++
+https://docs.docker.com/engine/install/[View installation instructions from Docker^]
++
+Be sure to follow the steps to install a specific version of Docker Engine. Installing the latest version will install a version of Docker that BlueXP doesn't support.
+
+. Verify that Docker is enabled and running.
++
+[source,cli]
+sudo systemctl enable docker && sudo systemctl start docker
+--
+
+====
+// end tabbed area

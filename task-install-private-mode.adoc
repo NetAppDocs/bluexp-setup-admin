@@ -27,7 +27,7 @@ Root privileges are required to install the Connector.
 
 .Steps
 
-. Verify that docker is enabled and running.
+. Verify that Docker is enabled and running.
 +
 [source,cli]
 sudo systemctl enable docker && sudo systemctl start docker
@@ -86,7 +86,7 @@ This user account runs locally on the system. There's no connection to the auth0
 
 The Connector is now installed and set up.
 
-When new versions of the Connector software are available, they'll be posted to the NetApp Support Site. link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector].
+When new versions of the Connector software are available, they'll be posted to the NetApp Support Site. link:task-upgrade-connector.html[Learn how to upgrade the Connector].
 
 .What's next?
 

@@ -134,8 +134,8 @@ To learn how to set up permissions, refer to the following:
 ** link:concept-install-options-aws.html[Connector installation options in AWS]
 ** link:concept-install-options-azure.html[Connector installation options in Azure]
 ** link:concept-install-options-google.html[Connector installation options in Google Cloud]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions[Set up cloud permissions for on-prem deployments]
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up cloud permissions for on-prem deployments]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 To view the exact permissions that the Connector needs for day-to-day operations, refer to the following pages:
@@ -150,7 +150,7 @@ We typically update the Connector software each month to introduce new features 
 
 When you use BlueXP in standard mode or restricted mode, the Connector automatically updates its software to the latest version, as long as it has outbound internet access to obtain the software update. If you're using BlueXP in private mode, then you'll need to manually upgrade the Connector.
 
-link:task-managing-connectors.html[Learn how to manually upgrade the Connector software].
+link:task-upgrade-connector.html[Learn how to manually upgrade the Connector software].
 
 == Operating system and VM maintenance
 
@@ -158,13 +158,11 @@ include::_include/vm-maintenance.adoc[]
 
 <<Connectors must be operational at all times,Be aware that the Connector must be operational at all times>>.
 
-== Multiple working environments
+== Multiple working environments and Connectors
 
 A Connector can manage multiple working environments in BlueXP. The maximum number of working environments that a single Connector should manage varies. It depends on the type of working environments, the number of volumes, the amount of capacity being managed, and the number of users.
 
 If you have a large-scale deployment, work with your NetApp representative to size your environment. If you experience any issues along the way, reach out to us by using the in-product chat.
-
-== Multiple Connectors
 
 In some cases, you might only need one Connector, but you might find yourself needing two or more Connectors.
 
@@ -173,24 +171,3 @@ Here are a few examples:
 * You have a multi-cloud environment (for example, AWS and Azure) and you prefer to have one Connector in AWS and another in Azure. Each manages the Cloud Volumes ONTAP systems running in those environments.
 
 * A service provider might use one BlueXP account to provide services for their customers, while using another account to provide disaster recovery for one of their business units. Each account would have separate Connectors.
-
-=== When to switch
-
-When you create your first Connector, BlueXP automatically uses that Connector for each additional working environment that you create. Once you create an additional Connector, you'll need to switch between them to see the working environments that are specific to each Connector.
-
-link:task-managing-connectors.html[Learn how to switch between Connectors].
-
-=== Disaster recovery
-
-You can manage a working environment with multiple Connectors at the same time for disaster recovery purposes. If one Connector goes down, you can switch to the other Connector to immediately manage the working environment.
-
-To set up this configuration:
-
-. link:task-managing-connectors.html[Switch to another Connector].
-. Discover the existing working environment.
-+
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
-* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover ONTAP clusters^]
-. Set the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage-management.html[Capacity Management Mode^]
-+
-Only the main Connector should be set to *Automatic Mode*. If you switch to another Connector for DR purposes, then you can change the Capacity Management Mode as needed.

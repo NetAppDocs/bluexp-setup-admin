@@ -35,9 +35,13 @@ include::_include/os-reqs.adoc[tag=google-machine]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
-include::_include/os-reqs.adoc[tag=docker]
+include::_include/os-reqs.adoc[tag=container-req]
 
-== Step 2: Set up networking
+== Step 2: Install Podman or Docker Engine
+
+include::_include/podman-docker.adoc[]
+
+== Step 3: Set up networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
@@ -79,15 +83,15 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 3: Set up permissions for the Connector
+== Step 4: Set up permissions for the Connector
 
 include::_include/google-set-up-connector-permissions.adoc[]
 
-== Step 4: Set up shared VPC permissions
+== Step 5: Set up shared VPC permissions
 
 include::_include/google-shared-vpc-permissions.adoc[]
 
-== Step 5: Enable Google Cloud APIs
+== Step 6: Enable Google Cloud APIs
 
 Several Google Cloud APIs must be enabled before you can deploy Cloud Volumes ONTAP systems in Google Cloud.
 
@@ -99,7 +103,7 @@ include::_include/google-cloud-apis.adoc[]
 
 https://cloud.google.com/apis/docs/getting-started#enabling_apis[Google Cloud documentation: Enabling APIs^]
 
-== Step 6: Install the Connector
+== Step 7: Install the Connector
 
 After the pre-requisites are complete, you can manually install the software on your own Linux host.
 
@@ -113,7 +117,7 @@ include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
 If you have Google Cloud Storage buckets in the same Google Cloud account where you created the Connector, you'll see a Google Cloud Storage working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html[Learn how to manage Google Cloud Storage from BlueXP^]
 
-== Step 7: Provide permissions to BlueXP
+== Step 8: Provide permissions to BlueXP
 
 You need to provide BlueXP with the Google Cloud permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Google Cloud.
 

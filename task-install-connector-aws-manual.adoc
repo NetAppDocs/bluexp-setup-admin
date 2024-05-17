@@ -37,9 +37,13 @@ include::_include/os-reqs.adoc[tag=aws-key-pair]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
-include::_include/os-reqs.adoc[tag=docker]
+include::_include/os-reqs.adoc[tag=container-req]
 
-== Step 2: Set up networking
+== Step 2: Install Podman or Docker Engine
+
+include::_include/podman-docker.adoc[]
+
+== Step 3: Set up networking
 
 Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
@@ -81,7 +85,7 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 3: Set up permissions
+== Step 4: Set up permissions
 
 You need to provide AWS permissions to BlueXP by using one of the following options:
 
@@ -132,7 +136,7 @@ You now have an IAM user that has the required permissions and an access key tha
 ====
 // end tabbed area
 
-== Step 4: Install the Connector
+== Step 5: Install the Connector
 
 After the pre-requisites are complete, you can manually install the software on your own Linux host.
 
@@ -146,7 +150,7 @@ include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
 If you have Amazon S3 buckets in the same AWS account where you created the Connector, you'll see an Amazon S3 working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html[Learn how to manage S3 buckets from BlueXP^]
 
-== Step 5: Provide permissions to BlueXP
+== Step 6: Provide permissions to BlueXP
 
 Now that you've installed the Connector, you need to provide BlueXP with the AWS permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in AWS.
 

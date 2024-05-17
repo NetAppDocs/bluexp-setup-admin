@@ -33,9 +33,13 @@ include::_include/os-reqs.adoc[tag=cpu-ram]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
-include::_include/os-reqs.adoc[tag=docker]
+include::_include/os-reqs.adoc[tag=container-req]
 
-== Step 2: Set up networking
+== Step 2: Install Podman or Docker Engine
+
+include::_include/podman-docker.adoc[]
+
+== Step 3: Set up networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
@@ -83,7 +87,7 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 3: Set up cloud permissions
+== Step 4: Set up cloud permissions
 
 If you want to use BlueXP services in AWS or Azure with an on-premises Connector, then you need to set up permissions in your cloud provider so that you can add the credentials to the Connector after you install it.
 
@@ -147,7 +151,7 @@ Your service principal is now setup and you should have copied the application (
 ====
 // end tabbed area
 
-== Step 4: Install the Connector
+== Step 5: Install the Connector
 
 Download and install the Connector software on an existing Linux host on premises.
 
@@ -161,7 +165,7 @@ include::_include/manual-install.adoc[tag=main-steps]
 
 The Connector is now installed. At the end of the installation, the Connector service (occm) restarts twice if you specified a proxy server.
 
-== Step 5: Set up the Connector
+== Step 6: Set up the Connector
 
 Sign up or log in and then set up the Connector to work with your BlueXP account.
 
@@ -187,7 +191,7 @@ You should keep restricted mode disabled because these steps describe how to use
 
 BlueXP is now set up with the Connector that you just installed.
 
-== Step 6: Provide permissions to BlueXP
+== Step 7: Provide permissions to BlueXP
 
 After you install and set up the Connector, add your cloud credentials so that BlueXP has the required permissions to perform actions in AWS or Azure.
 

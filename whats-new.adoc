@@ -18,6 +18,40 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 17 May 2024
+
+=== Connector 3.9.40
+
+This release of the BlueXP Connector includes support for additional operating systems, minor security improvements, and bug fixes.
+
+At this time, the 3.9.40 release is available for standard mode and restricted mode.
+
+==== Support for RHEL 8 and 9
+
+The Connector is now supported on hosts running the following versions of Red Hat Enterprise Linux with _new_ Connector installations:
+
+* 8.6 to 8.9
+* 9.1 to 9.3
+
+Podman is required as the container orchestration tool for these operating systems.
+
+You should be aware of Podman requirements, known limitations, a summary of operating system support, what to do if you have a RHEL 7 host, how to get started, and more.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
+==== End of support for RHEL 7 and CentOS 7
+
+On June 30, 2024, RHEL 7 will reach end of maintenance (EOM), while CentOS 7 will reach end of life (EOL). NetApp will continue to support the Connector on these Linux distributions until June 30, 2024.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn what to do if you have an existing Connector running on RHEL 7 or CentOS 7].
+
+==== AWS permissions update
+
+In the 3.9.38 release, we updated the Connector policy for AWS to include the "ec2:DescribeAvailabilityZones" permission. This permission is now required to support AWS Local Zones with Cloud Volumes ONTAP.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[View AWS permissions for the Connector].
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn more about support for AWS Local Zones^]
+
 == 22 April 2024
 
 === Connector 3.9.39
@@ -50,6 +84,8 @@ We have updated Docker Engine requirements to specify the maximum supported vers
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
 
+//end::whats-new[]
+
 == 26 March 2024
 
 === Private mode release (3.9.38)
@@ -78,9 +114,7 @@ This new release is available to download from the NetApp Support Site.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
-
-//end::whats-new[]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
 
 == 8 March 2024
 
@@ -106,7 +140,7 @@ The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
 
 * For Cloud Volumes ONTAP, IMDSv1 is enabled by default on new and existing instances. You can manually configure IMDSv2 on the EC2 instances if you prefer.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances[Learn how to configure IMDSv2 on existing instances].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html[Learn how to configure IMDSv2 on existing instances].
 
 ==== AWS permissions update
 
@@ -161,7 +195,7 @@ This new release is available to download from the NetApp Support Site.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode[Learn how to upgrade the Connector when using private mode]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
 
 == 8 November 2023
 
@@ -356,7 +390,6 @@ The cloud region can be a region for secure US agencies like AWS Top Secret Clou
 To get started, manually install the Connector software, log in to the BlueXP console that's running on the Connector, add your BYOL license to the BlueXP digital wallet, and then deploy Cloud Volumes ONTAP.
 +
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-onprem-no-internet.html[Install the Connector in a location without internet access^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui[Access the BlueXP console on the Connector^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses[Add an unassigned license^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html[Get started with Cloud Volumes ONTAP^]
 

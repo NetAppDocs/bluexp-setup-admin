@@ -6,19 +6,41 @@ The Connector is not supported on a host that is shared with other applications.
 //tag::os[]
 Supported operating systems::
 * Ubuntu 22.04 LTS
-* CentOS 7.6, 7.7, 7.8, and 7.9
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
+* CentOS 7.6 to 7.9
++
+NetApp will continue to support the Connector with CentOS 7 until June 30, 2024.
+* Red Hat Enterprise Linux 
+** 7.6 to 7.9
++
+NetApp will continue to support the Connector with RHEL 7 until June 30, 2024.
+** 8.6 to 8.9
+** 9.1 to 9.3
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
 The Connector is supported on English-language versions of these operating systems.
 //end::os[]
 
+//tag::os-private[]
+Supported operating systems::
+* Ubuntu 22.04 LTS
+* CentOS 7.6, 7.7, 7.8, and 7.9
++
+NetApp will continue to support the Connector with CentOS 7 until June 30, 2024.
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
++
+NetApp will continue to support the Connector with RHEL 7 until June 30, 2024.
++
+The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
++
+The Connector is supported on English-language versions of these operating systems.
+//end::os-private[]
+
 //tag::hypervisor[]
 Hypervisor::
 A bare metal or hosted hypervisor that is certified to run Ubuntu, CentOS, or Red Hat Enterprise Linux is required.
 +
-https://access.redhat.com/certified-hypervisors[Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?^]
+https://access.redhat.com/articles/973163[Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?^]
 //end::hypervisor[]
 
 //tag::cpu-ram[]
@@ -64,3 +86,21 @@ Docker Engine is required on the host before you install the Connector.
 +
 https://docs.docker.com/engine/install/[View installation instructions^]
 //end::docker[]
+
+//tag::container-req[]
+Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
++
+* Podman version 4.6.1 is required for Red Hat Enterprise Linux 8 and 9.
++
+The following prerequisites must be met for Podman:
++
+** The podman.socket service must be enabled and started
+** python3 must be installed
+** The podman-compose package version 1.0.6 must be installed
+** podman-compose must be added to the PATH environment variable
+
+* Docker Engine is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.
++
+** The minimum supported version is 19.3.1.
+** The maximum supported version is 25.0.5.
+//end::container-req[]

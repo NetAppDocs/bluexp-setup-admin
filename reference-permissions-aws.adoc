@@ -32,8 +32,8 @@ Note the following:
 * To view step-by-step instructions for using these policies, refer to the following pages:
 
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions[Set up permissions for an AWS Marketplace deployment]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions[Set up permissions for on-prem deployments]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up permissions for on-prem deployments]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 Select your region to view the required policies:
@@ -1134,6 +1134,9 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | ec2:DescribeVolumesModifications | No | Yes | No
 | ec2:ModifyVolume | No | Yes | No
 
+| Check whether the Availability Zone is an AWS Local Zone and validates that all deployment parameters are compatible
+| ec2:DescribeAvailabilityZones | Yes | No | Yes
+
 |===
 
 === Edge caching
@@ -1161,13 +1164,11 @@ The Connector makes the following API requests to discover and manage Amazon EKS
 
 As permissions are added and removed, we'll note them in the sections below.
 
-=== 8 March 2024
+=== 9 May 2024
 
-The following permission is now included in the Connector policy: 
+The following permissions is now required for Cloud Volumes ONTAP:
 
 ec2:DescribeAvailabilityZones
-
-This permission is required for an upcoming release. We'll update the release notes with more details when that release is available.
 
 === 6 June 2023
 

@@ -1,0 +1,51 @@
+---
+sidebar: sidebar
+permalink: task-manage-multiple-connectors.html
+keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors
+summary: If you use multiple Connectors, BlueXP enables you to switch between those Connectors directly from the console. You can also manage a single working environment with multiple Connectors.
+---
+
+= Work with multiple Connectors
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you use multiple Connectors, BlueXP enables you to switch between those Connectors directly from the console. You can also manage a single working environment with multiple Connectors.
+
+== Switch between Connectors
+
+If you have multiple Connectors, you can switch between them to see the Working Environments that are associated with a specific Connector.
+
+For example, let's say that you're working in a multi-cloud environment. You might have one Connector in AWS and another in Google Cloud. You'd need to switch between those Connectors to manage the Cloud Volumes ONTAP systems running in those clouds.
+
+.Step
+
+. Select the *Connector* drop-down, select another Connector, and then select *Switch*.
++
+image:screenshot_connector_switch.gif[A screenshot that shows the Connector icon in the header and the Switch action.]
+
+.Result
+
+BlueXP refreshes and shows the Working Environments associated with the selected Connector.
+
+== Set up a disaster recovery configuration
+
+You can manage a working environment with multiple Connectors at the same time for disaster recovery purposes. If one Connector goes down, you can switch to the other Connector to immediately manage the working environment.
+
+.Steps
+
+. Switch to the other Connector that you want to manage with the working environment.
+
+. Discover the existing working environment.
++
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Discover ONTAP clusters^]
+
+. If you're managing a Cloud Volumes ONTAP working environment, select *Settings > Connector Settings* and set the Capacity Management Mode to *Manual Mode*.
++
+To avoid contention issues, only the main Connector should be set to *Automatic Mode*.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html#capacity-management[Learn more about the capacity management mode^]
