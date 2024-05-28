@@ -75,8 +75,6 @@ With either option, the first step is to create an IAM policy. This policy conta
 
 If needed, you can restrict the IAM policy by using the IAM `Condition` element. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html[AWS documentation: Condition element^]
 
-TIP: When BlueXP creates the Connector, it applies a new set of permissions to the Connector instance that enables the Connector to manage AWS resources.
-
 .Steps
 
 . Go to the AWS IAM console.
@@ -87,7 +85,7 @@ TIP: When BlueXP creates the Connector, it applies a new set of permissions to t
 
 . Copy and paste the following policy:
 +
-As a reminder, this policy contains only the permissions needed to launch the Connector instance in AWS from BlueXP. link:reference-permissions-aws.html[View permissions required for the Connector instance itself].
+This policy contains only the permissions needed to launch the Connector instance in AWS from BlueXP. When BlueXP creates the Connector, it applies a new set of permissions to the Connector instance that enables the Connector to manage AWS resources. link:reference-permissions-aws.html[View permissions required for the Connector instance itself].
 +
 [source,json]
 {
@@ -207,7 +205,9 @@ Create the Connector directly from the BlueXP web-based console.
 
 .About this task
 
-Creating the Connector from BlueXP deploys an EC2 instance in AWS using a default configuration. After you create the Connector, you should not change to a smaller EC2 instance type that has less CPU or RAM. link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
+* Creating the Connector from BlueXP deploys an EC2 instance in AWS using a default configuration. After you create the Connector, you should not change to a smaller EC2 instance type that has less CPU or RAM. link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
+
+* When BlueXP creates the Connector, it creates an IAM role and an instance profile for the instance. This role includes permissions that enables the Connector to manage AWS resources. You need to ensure that the role is kept up to date as new permissions are added in subsequent releases. link:reference-permissions-aws.html[Learn more about the IAM policy for the Connector].
 
 .Before you begin
 
