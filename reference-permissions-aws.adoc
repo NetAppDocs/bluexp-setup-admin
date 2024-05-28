@@ -21,11 +21,11 @@ The IAM policies available below provide the permissions that a Connector needs 
 
 Note the following:
 
-* If you create a Connector in a standard AWS region directly from BlueXP, BlueXP automatically applies policies to the Connector. You don't need to do anything in this case.
+* If you create a Connector in a standard AWS region directly from BlueXP, BlueXP automatically applies policies to the Connector.
 
 * You need to set up the policies yourself if you deploy the Connector from the AWS Marketplace, if you manually install the Connector on a Linux host, or if you want to add additional AWS credentials to BlueXP.
 
-* You also need to ensure that the policies are up to date as new permissions are added in subsequent releases.
+* In either case, you need to ensure that the policies are up to date as new permissions are added in subsequent releases. If new permissions are required, they will be listed in the release notes.
 
 * If needed, you can restrict the IAM policies by using the IAM `Condition` element. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html[AWS documentation: Condition element^]
 

@@ -79,7 +79,7 @@ Note that you can create an Azure custom role using the Azure portal, Azure Powe
 
 . Copy the required permissions for a new custom role in Azure and save them in a JSON file.
 +
-NOTE: This custom role contains only the permissions needed to launch the Connector VM in Azure from BlueXP. Don't use this policy for other situations. When BlueXP creates the Connector, it applies a new set of permissions to the Connector VM that enables the Connector to manage the resources in your public cloud environment.
+NOTE: This custom role contains only the permissions needed to launch the Connector VM in Azure from BlueXP. Don't use this policy for other situations. When BlueXP creates the Connector, it applies a new set of permissions to the Connector VM that enables the Connector to manage Azure resources.
 +
 [source,json]
 {
@@ -288,7 +288,9 @@ Create the Connector directly from the BlueXP web-based console.
 
 .About this task
 
-Creating the Connector from BlueXP deploys a virtual machine in Azure using a default configuration. After you create the Connector, you should not change to a smaller VM type that has less CPU or RAM. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+* Creating the Connector from BlueXP deploys a virtual machine in Azure using a default configuration. After you create the Connector, you should not change to a smaller VM type that has less CPU or RAM. link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
+
+* When BlueXP deploys the Connector, it creates a custom role and assigns it to the Connector VM. This role includes permissions that enables the Connector to manage Azure resources. You need to ensure that the role is kept up to date as new permissions are added in subsequent releases. link:reference-permissions-azure.html[Learn more about the custom role for the Connector].
 
 .Before you begin
 
