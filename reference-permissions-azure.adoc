@@ -19,18 +19,20 @@ When BlueXP launches the Connector VM in Azure, it attaches a custom role to the
 
 The custom role shown below provides the permissions that a Connector needs to manage resources and processes within your Azure network.
 
-When you create a Connector directly from BlueXP, BlueXP automatically applies this custom role to the Connector.
+Note the following:
 
-If you deploy the Connector from the Azure Marketplace or if you manually install the Connector on a Linux host, then you'll need to set up the custom role yourself.
+* When you create a Connector directly from BlueXP, BlueXP automatically applies this custom role to the Connector.
 
-To view step-by-step instructions for using these policies, refer to the following pages:
+* If you deploy the Connector from the Azure Marketplace or if you manually install the Connector on a Linux host, then you'll need to set up the custom role yourself.
 
-* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions[Set up permissions for an Azure Marketplace deployment]
-* link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up permissions for on-prem deployments]
-* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
+* In either case, you need to ensure that the role is up to date as new permissions are added in subsequent releases.
 
-You also need to ensure that the role is up to date as new permissions are added in subsequent releases.
+* To view step-by-step instructions for using these policies, refer to the following pages:
+
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions[Set up permissions for an Azure Marketplace deployment]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up permissions for on-prem deployments]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 [source,json]
 {
