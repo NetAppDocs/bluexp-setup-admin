@@ -24,7 +24,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 A new private mode release is now available for BlueXP. This release includes the following versions of the BlueXP services that are supported with private mode.
 
-Note that this private mode release does _not_ include support for RHEL 8 and 9.
+Note that this private mode release does _not_ include support for the Connector with Red Hat Enterprise Linux 8 and 9.
 
 [cols=2*,options="header,autowidth"]
 |===
