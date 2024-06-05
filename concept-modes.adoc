@@ -194,12 +194,6 @@ Back up and restore of application data, virtual machine data, and Kubernetes da
 
 | Classification a| Supported in Government regions with restricted mode. Not supported in commercial regions or in sovereign regions with restricted mode. 
 
-The following limitations apply:
-
-* OneDrive accounts, SharePoint accounts, and Google Drive accounts can't be scanned.
-
-* Microsoft Azure Information Protection (AIP) label functionality can't be integrated.
-
 | Cloud Volumes ONTAP | Full support
 
 | Digital wallet | You can use the digital wallet with the supported licensing options listed below for restricted mode.
