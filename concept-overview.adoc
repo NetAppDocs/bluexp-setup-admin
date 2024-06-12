@@ -39,7 +39,6 @@ Mobility::
 Move data where it's needed by syncing, copying, tiering, and caching data.
 
 ** https://bluexp.netapp.com/cloud-sync-service[Copy and sync^]
-** https://bluexp.netapp.com/global-file-cache[Edge caching^]
 ** https://bluexp.netapp.com/cloud-tiering[Tiering^]
 
 Protection::
