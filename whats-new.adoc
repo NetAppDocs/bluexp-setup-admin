@@ -74,7 +74,7 @@ At this time, the 3.9.40 release is available for standard mode and restricted m
 
 ==== Support for RHEL 8 and 9
 
-The Connector is now supported on hosts running the following versions of Red Hat Enterprise Linux with _new_ Connector installations:
+The Connector is now supported on hosts running the following versions of Red Hat Enterprise Linux with _new_ Connector installations when using BlueXP in standard mode or restricted mode:
 
 * 8.6 to 8.9
 * 9.1 to 9.3
