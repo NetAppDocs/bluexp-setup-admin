@@ -18,6 +18,14 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 12 June 2024
+
+=== Connector 3.9.41
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes. 
+
+The 3.9.41 release is available for standard mode and restricted mode.
+
 == 4 June 2024
 
 === Private mode release (3.9.40)
