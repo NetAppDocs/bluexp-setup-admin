@@ -73,8 +73,12 @@ The Connector is supported in Google Cloud on a VM instance with an OS that supp
 
 //tag::disk-space[]
 Disk space in /opt:: 100 GiB of space must be available
++
+BlueXP uses /opt to install the /opt/application/netapp directory and it's contents.
 
 Disk space in /var:: 20 GiB of space must be available
++
+BlueXP requires this space in /var because Docker or Podman are architected to create the containers within this directory. Specifically, they will create containers in the /var/lib/containers/storage directory. External mounts or symlinks do not work for this space.
 //end::disk-space[]
 
 //tag::docker[]
