@@ -39,7 +39,11 @@ You can skip the sign up page if you have an NSS account. BlueXP will sign you u
 +
 Note that only English characters are allowed in the sign up form.
 
-. When prompted, review the End User License Agreement and accept the terms.
+. Check your inbox for an email from NetApp that includes instructions to verify your email address.
++
+This step is required before you can log in to BlueXP.
+
+. After you log in, review the End User License Agreement and accept the terms.
 
 . On the *Welcome* page, enter a name for your account.
 +
