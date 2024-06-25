@@ -18,6 +18,26 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 3 July 2024
+
+=== Connector 3.9.42
+
+This release includes minor improvements, bug fixes, and support for the Connector in the AWS Canada West (Calgary) region.
+
+=== New CPU and RAM requirements
+
+To improve the performance of BlueXP and the Connector, we now require additional CPU and RAM for the Connector virtual machine:
+
+CPU:: 5 cores or 5 vCPUs (the previous requirement was 4 vCPUs)
+
+RAM:: 18 GB (the previous requirement was 14 GB)
+
+This requirement applies to new and existing Connectors.
+
+=== Email verification now required
+
+New users who sign up to BlueXP are now required to verify their email address before they can log in.
+
 == 12 June 2024
 
 === Connector 3.9.41
