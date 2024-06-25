@@ -44,9 +44,9 @@ https://access.redhat.com/articles/973163[Red Hat Solution: Which hypervisors ar
 //end::hypervisor[]
 
 //tag::cpu-ram[]
-CPU:: 4 cores or 4 vCPUs
+CPU:: 5 cores or 5 vCPUs
 
-RAM:: 14 GB
+RAM:: 18 GB
 //end::cpu-ram[]
 
 //tag::aws-ec2[]

@@ -256,8 +256,8 @@ You should have the following:
 
 * An understanding of VM instance requirements.
 +
-** *CPU*: 4 cores or 4 vCPUs
-** *RAM*: 14 GB
+** *CPU*: 5 cores or 5 vCPUs
+** *RAM*: 18 GB
 ** *Machine type*: We recommend n2-standard-4.
 +
 The Connector is supported in Google Cloud on a VM instance with an OS that supports Shielded VM features.
