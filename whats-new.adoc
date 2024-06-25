@@ -28,9 +28,8 @@ This release includes minor improvements, bug fixes, and support for the Connect
 
 To improve the performance of BlueXP and the Connector, we now require additional CPU and RAM for the Connector virtual machine:
 
-CPU:: 5 cores or 5 vCPUs (the previous requirement was 4 vCPUs)
-
-RAM:: 18 GB (the previous requirement was 14 GB)
+* *CPU*: 5 cores or 5 vCPUs (the previous requirement was 4 vCPUs)
+* *RAM*: 18 GB (the previous requirement was 14 GB)
 
 This requirement applies to new and existing Connectors.
 
