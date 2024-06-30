@@ -5,7 +5,7 @@ keywords: sign up, signing up, sign in, signing in, login with netapp, log in wi
 summary: BlueXP is accessible from a web-based console. When you get started with BlueXP, your first step is to sign up using your existing NetApp Support Site credentials or by creating a NetApp cloud login.
 ---
 
-= Sign up to BlueXP
+= Sign up or log in to BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,33 +13,38 @@ summary: BlueXP is accessible from a web-based console. When you get started wit
 :imagesdir: ./media/ 
 
 [.lead]
-BlueXP is accessible from a web-based console. When you get started with BlueXP, your first step is to sign up using your existing NetApp Support Site credentials or by creating a NetApp cloud login.
+BlueXP is accessible from a web-based console. When you get started with BlueXP, your first step is to sign up or to log in using your NetApp Support Site credentials or SSO credentials from your corporate directory.
 
 .About this task
 
-You can sign up to BlueXP using one of the following options:
+When you access BlueXP for the first time, BlueXP enables you to sign up or log in using one of the following options:
 
-* Your existing NetApp Support Site (NSS) credentials
+BlueXP login::
+You can sign up by creating a BlueXP login. This authentication method requires you to specify your email address and a password. After you verify your email address, you can log in and then create a BlueXP account if you don't already belong to one.
 
-* A NetApp cloud login by specifying your email address and a password
+NetApp Support Site (NSS) credentials::
+If you have existing NetApp Support Site credentials, you don't need to sign up to BlueXP. You just log in using your NSS credentials and then BlueXP prompts you to create a BlueXP account, if you don't already belong to one.
 
-Both options support a federated connection, which enables single sign-on using credentials from your corporate directory (federated identity). You can set up a federation connection after you sign up. link:concept-federation.html[Learn how to use identity federation with BlueXP].
+Federated connection::
+You can use single sign-on to log in using credentials from your corporate directory (federated identity). The first user in your organization's account must first sign up to BlueXP or log in using NSS credentials, and then set up identity federation. After that, each subsequent user can simply log in using their SSO credentials. 
++
+link:concept-federation.html[Learn how to use identity federation with BlueXP].
 
 .Steps
 
 . Open a web browser and go to the https://console.bluexp.netapp.com[BlueXP console^]
 
-. If you have a NetApp Support Site account, enter the email address associated with your NSS account directly on the *Log in* page.
+. If you have a NetApp Support Site account or if you already set up identity federation, enter the email address associated with your account directly on the *Log in* page.
 +
 You can skip the sign up page if you have an NSS account. BlueXP will sign you up as part of this initial login.
 
-. If you don't have an NSS account and you want to sign up by creating a NetApp cloud login, select *Sign up*.
+. If you want to sign up by creating a BlueXP login, select *Sign up*.
 
-. On the *Sign up* page, enter the required information to create a NetApp cloud login.
+.. On the *Sign up* page, enter the required information to create a BlueXP login.
 +
 Note that only English characters are allowed in the sign up form.
 
-. Check your inbox for an email from NetApp that includes instructions to verify your email address.
+.. Check your inbox for an email from NetApp that includes instructions to verify your email address.
 +
 This step is required before you can log in to BlueXP.
 
