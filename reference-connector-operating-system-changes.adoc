@@ -67,8 +67,6 @@ Docker Engine is required for this operating system. Podman is not supported.
 
 Here's a summary of the operating system support that was described in the previous sections.
 
-NOTE: NetApp will continue to support the Connector on RHEL 7 and CentOS 7 until June 30, 2024.
-
 // start tabbed area
 
 [role="tabbed-block"]
@@ -78,7 +76,6 @@ NOTE: NetApp will continue to support the Connector on RHEL 7 and CentOS 7 until
 --
 Manual installation::
 * Ubuntu 22.04 LTS
-* CentOS 7.6 to 7.9
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.9
 ** 9.1 to 9.3
@@ -97,7 +94,6 @@ Ubuntu 22.04 LTS
 --
 Manual installation::
 * Ubuntu 22.04 LTS
-* CentOS 7.6 to 7.9
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.9
 ** 9.1 to 9.3
