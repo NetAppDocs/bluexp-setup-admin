@@ -2,7 +2,7 @@ Depending on your operating system, either Podman or Docker Engine is required b
 
 * Podman is required for Red Hat Enterprise Linux 8 and 9.
 
-* Docker Engine is required for Ubuntu, CentOS, and Red Hat Enterprise Linux 7.
+* Docker Engine is required for Ubuntu.
 
 .Steps
 

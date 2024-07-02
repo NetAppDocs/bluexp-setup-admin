@@ -44,7 +44,7 @@ If you have an existing Connector running on a RHEL 7 host, we don't support upg
 
 == End of support for RHEL 7 and CentOS 7
 
-On June 30, 2024, RHEL 7 will reach end of maintenance (EOM), while CentOS 7 will reach end of life (EOL). NetApp will continue to support the Connector on these Linux distributions until June 30, 2024.
+On June 30, 2024, RHEL 7 reached end of maintenance (EOM), while CentOS 7 reached end of life (EOL). NetApp stopped supporting the Connector on these Linux distributions on June 30, 2024.
 
 https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance[Red Hat: What to know about Red Hat Enterprise Linux 7 End of Maintenance^]
 
@@ -80,7 +80,6 @@ Manual installation::
 * Ubuntu 22.04 LTS
 * CentOS 7.6 to 7.9
 * Red Hat Enterprise Linux 
-** 7.6 to 7.9
 ** 8.6 to 8.9
 ** 9.1 to 9.3
 
@@ -100,7 +99,6 @@ Manual installation::
 * Ubuntu 22.04 LTS
 * CentOS 7.6 to 7.9
 * Red Hat Enterprise Linux 
-** 7.6 to 7.9
 ** 8.6 to 8.9
 ** 9.1 to 9.3
 
@@ -114,9 +112,7 @@ Ubuntu 22.04 LTS
 .Private mode
 --
 Manual installation::
-* Ubuntu 22.04 LTS
-* CentOS 7.6 to 7.9
-* Red Hat Enterprise Linux 7.6 to 7.9
+Ubuntu 22.04 LTS
 --
 
 ====
