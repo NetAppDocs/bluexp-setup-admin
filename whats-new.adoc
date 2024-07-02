@@ -98,6 +98,8 @@ In the 3.9.38 release, we updated the Connector policy for AWS to include the "e
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[View AWS permissions for the Connector].
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn more about support for AWS Local Zones^]
 
+//end::whats-new[]
+
 == 22 April 2024
 
 === Connector 3.9.39
@@ -129,8 +131,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-blue
 We have updated Docker Engine requirements to specify the maximum supported version on the Connector, which is 25.0.5. The minimum supported version is still 19.3.1.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
-
-//end::whats-new[]
 
 == 26 March 2024
 
