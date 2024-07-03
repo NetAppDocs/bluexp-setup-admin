@@ -18,13 +18,13 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
-== 3 July 2024
+== 7 July 2024
 
 === Connector 3.9.42
 
 This release includes minor improvements, bug fixes, and support for the Connector in the AWS Canada West (Calgary) region.
 
-=== New CPU and RAM requirements
+=== Updated CPU and RAM requirements
 
 To improve the performance of BlueXP and the Connector, we now require additional CPU and RAM for the Connector virtual machine:
 
@@ -32,6 +32,14 @@ To improve the performance of BlueXP and the Connector, we now require additiona
 * *RAM*: 18 GB (the previous requirement was 14 GB)
 
 This requirement applies to new and existing Connectors.
+
+=== Updated Docker Engine requirements
+
+When the Connector is installed on an Ubuntu host, the minimum supported version of Docker Engine is now 23.0.6. It was previously 19.3.1.
+
+The maximum supported version is still 25.0.5.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
 
 === Email verification now required
 
