@@ -30,9 +30,9 @@ A bare metal or hosted hypervisor that is certified to run a supported operating
 //end::hypervisor[]
 
 //tag::cpu-ram[]
-CPU:: 5 cores or 5 vCPUs
+CPU:: 4 cores or 4 vCPUs
 
-RAM:: 18 GB
+RAM:: 14 GB
 //end::cpu-ram[]
 
 //tag::aws-ec2[]

@@ -24,15 +24,6 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 This release includes minor improvements, bug fixes, and support for the Connector in the AWS Canada West (Calgary) region.
 
-=== Updated CPU and RAM requirements
-
-To improve the performance of BlueXP and the Connector, we now require additional CPU and RAM for the Connector virtual machine:
-
-* *CPU*: 5 cores or 5 vCPUs (the previous requirement was 4 vCPUs)
-* *RAM*: 18 GB (the previous requirement was 14 GB)
-
-This requirement applies to new and existing Connectors.
-
 === Updated Docker Engine requirements
 
 When the Connector is installed on an Ubuntu host, the minimum supported version of Docker Engine is now 23.0.6. It was previously 19.3.1.
