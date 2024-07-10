@@ -17,14 +17,9 @@ As we add and remove support for the Connector on specific Linux operating syste
 
 == Support for RHEL 8 and 9
 
-BlueXP supports the Connector with the following versions of Red Hat Enterprise Linux (RHEL):
+BlueXP now supports the Connector with specific versions of Red Hat Enterprise Linux 8 and 9.
 
-* 8.6 to 8.9
-* 9.1 to 9.3
-
-This support was introduced with the 3.9.40 release for standard mode and restricted mode, and with the 3.9.42 release for private mode. 
-
-Note the following about support for these RHEL versions:
+Note the following about support for RHEL 8 and 9:
 
 Limitations::
 * When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
@@ -32,6 +27,9 @@ Limitations::
 
 Container orchestration tool::
 Podman is required as the container orchestration tool when you install the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
+
+Deployment mode::
+RHEL 8 and 9 are supported when using BlueXP in standard mode, restricted mode, and private mode.
 
 New manual installations only::
 RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
