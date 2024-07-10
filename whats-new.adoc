@@ -94,6 +94,8 @@ This release of the BlueXP Connector includes minor security improvements and bu
 
 The 3.9.41 release is available for standard mode and restricted mode.
 
+//end::whats-new[]
+
 == 4 June 2024
 
 === Private mode release (3.9.40)
@@ -165,8 +167,6 @@ In the 3.9.38 release, we updated the Connector policy for AWS to include the "e
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[View AWS permissions for the Connector].
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn more about support for AWS Local Zones^]
-
-//end::whats-new[]
 
 == 22 April 2024
 
