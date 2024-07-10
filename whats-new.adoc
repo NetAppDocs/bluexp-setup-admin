@@ -28,6 +28,12 @@ A new private mode release is now available to download from the NetApp Support 
 
 This release includes support for installing the Connector on a Red Hat Enterprise Linux 8 or 9 host when using private mode.
 
+Podman is required as the container orchestration tool for these operating systems.
+
+You should be aware of Podman requirements, known limitations, a summary of operating system support, what to do if you have a RHEL 7 host, how to get started, and more.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
 ==== Versions included in this release
 
 This release includes the following versions of the BlueXP services that are supported with private mode.

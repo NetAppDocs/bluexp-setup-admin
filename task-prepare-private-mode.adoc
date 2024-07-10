@@ -57,7 +57,7 @@ include::_include/os-reqs.adoc[tag=container-req]
 
 == Step 4: Install Podman or Docker Engine
 
-If you're planning to manually install the Connector software, you need to prepare the host by installing Podman or Docker Engine.
+You need to prepare the host for the Connector by installing Podman or Docker Engine.
 
 include::_include/podman-docker.adoc[]
 
@@ -201,7 +201,7 @@ include::_include/google-set-up-service-account.adoc[]
 ====
 // end tabbed area
 
-== Step 76: Enable Google Cloud APIs
+== Step 7: Enable Google Cloud APIs
 
 Several APIs are required to deploy Cloud Volumes ONTAP in Google Cloud.
 
