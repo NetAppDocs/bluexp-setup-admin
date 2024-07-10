@@ -17,10 +17,12 @@ As we add and remove support for the Connector on specific Linux operating syste
 
 == Support for RHEL 8 and 9
 
-Starting with the 3.9.40 release, BlueXP supports the Connector with the following versions of Red Hat Enterprise Linux (RHEL):
+BlueXP supports the Connector with the following versions of Red Hat Enterprise Linux (RHEL):
 
 * 8.6 to 8.9
 * 9.1 to 9.3
+
+This support was introduced with the 3.9.40 release for standard mode and restricted mode, and with the 3.9.42 release for private mode. 
 
 Note the following about support for these RHEL versions:
 
@@ -32,9 +34,6 @@ Container orchestration tool::
 Podman is required as the container orchestration tool when you install the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
 +
 link:task-install-connector-on-prem.html#step-1-review-host-requirements[View requirements for Podman].
-
-Deployment mode::
-RHEL 8 and 9 are supported when using BlueXP in standard mode or restricted mode.
 
 New manual installations only::
 RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
@@ -59,7 +58,7 @@ If you have an existing Connector running on RHEL 7 or CentOS 7, we don't suppor
 
 == Continued support for Ubuntu 22.04 LTS
 
-The Connector is still supported on Ubuntu 22.04 LTS and is the default operating system for deployments from BlueXP and from the marketplace. 
+The Connector is still supported on Ubuntu 22.04 LTS and is the default operating system for deployments from BlueXP and from the marketplace.
 
 Docker Engine is required for this operating system. Podman is not supported.
 
@@ -98,17 +97,20 @@ Manual installation::
 ** 8.6 to 8.9
 ** 9.1 to 9.3
 
-Deployment from the AWS Marketplace:: 
+Deployment from the AWS Marketplace::
 Ubuntu 22.04 LTS
 
-Deployment from the Azure Marketplace:: 
+Deployment from the Azure Marketplace::
 Ubuntu 22.04 LTS
 --
 
 .Private mode
 --
 Manual installation::
-Ubuntu 22.04 LTS
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux 
+** 8.6 to 8.9
+** 9.1 to 9.3
 --
 
 ====
@@ -119,11 +121,30 @@ Ubuntu 22.04 LTS
 
 Refer to the following pages for details about host requirements, Podman requirements, and steps to install Podman and the Connector:
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html[Manually install the Connector in AWS] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html[Manually install the Connector in Azure] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Standard mode
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html[Manually install the Connector in AWS]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html[Manually install the Connector in Azure]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud]
+--
+
+.Restricted mode
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
+--
+
+.Private mode
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html[Prepare for deployment in private mode]
+--
+
+====
 
 === How to rediscover your working environments
 

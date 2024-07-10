@@ -18,6 +18,50 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 31 July 2024
+
+=== Private mode release (3.9.42)
+
+A new private mode release is now available to download from the NetApp Support Site. 
+
+==== Support for RHEL8 and 9
+
+This release includes support for installing the Connector on a Red Hat Enterprise Linux 8 or 9 host when using private mode.
+
+==== Versions included in this release
+
+This release includes the following versions of the BlueXP services that are supported with private mode.
+
+[cols=2*,options="header,autowidth"]
+|===
+
+| Service
+| Version included
+
+| Connector | 3.9.42
+| Backup and recovery | 18 July 2024
+| Classification | 1 July 2024 (version 1.33)
+| Cloud Volumes ONTAP management | 10 June 2024
+| Digital wallet | 30 July 2023
+| On-premises ONTAP cluster management | 30 July 2023
+| Replication | 18 Sept 2022
+
+|===
+
+To learn more about what's included in the versions of these BlueXP services, refer to the release notes for each BlueXP service.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[Learn what's new with BlueXP backup and recovery^]
+
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[Learn what's new with BlueXP classification^]
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn what's new with Cloud Volumes ONTAP management in BlueXP^]
+
 == 8 July 2024
 
 === Connector 3.9.42

@@ -53,7 +53,7 @@ include::_include/os-reqs.adoc[tag=google-machine]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
-include::_include/os-reqs.adoc[tag=docker]
+include::_include/os-reqs.adoc[tag=container-req]
 
 == Step 4: Prepare networking for the Connector
 

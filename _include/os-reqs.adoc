@@ -17,16 +17,19 @@ The Connector is supported on English-language versions of these operating syste
 
 //tag::os-private[]
 Supported operating system::
-Ubuntu 22.04 LTS
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux 
+** 8.6 to 8.9
+** 9.1 to 9.3
 +
-The Connector is supported on English-language versions of this operating system.
+The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
++
+The Connector is supported on English-language versions of these operating systems.
 //end::os-private[]
 
 //tag::hypervisor[]
 Hypervisor::
 A bare metal or hosted hypervisor that is certified to run a supported operating system is required.
-//+
-//[Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?^]
 //end::hypervisor[]
 
 //tag::cpu-ram[]
