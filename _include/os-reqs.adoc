@@ -7,7 +7,7 @@ The Connector is not supported on a host that is shared with other applications.
 Supported operating systems::
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux 
-** 8.6 to 8.9
+** 8.6 to 8.10
 ** 9.1 to 9.3
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
