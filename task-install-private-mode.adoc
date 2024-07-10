@@ -23,14 +23,11 @@ If you want to use BlueXP in the https://aws.amazon.com/federal/secret-cloud/[AW
 
 .Before you begin
 
-Root privileges are required to install the Connector.
+* Root privileges are required to install the Connector.
+
+* Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 
 .Steps
-
-. Verify that Docker is enabled and running.
-+
-[source,cli]
-sudo systemctl enable docker && sudo systemctl start docker
 
 . Download the Connector software from the https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab[NetApp Support Site^]
 +

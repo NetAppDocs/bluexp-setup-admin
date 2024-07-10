@@ -55,7 +55,13 @@ include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=container-req]
 
-== Step 4: Prepare networking for the Connector
+== Step 4: Install Podman or Docker Engine
+
+If you're planning to manually install the Connector software, you need to prepare the host by installing Podman or Docker Engine.
+
+include::_include/podman-docker.adoc[]
+
+== Step 5: Prepare networking
 
 Set up your networking so the Connector can manage resources and processes within your public cloud environment. Other than having a virtual network and subnet for the Connector, you'll need to ensure that the following requirements are met.
 
@@ -98,7 +104,7 @@ HTTP (80) and HTTPS (443) provide access to the BlueXP console. SSH (22) is only
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 5: Prepare cloud permissions
+== Step 6: Prepare cloud permissions
 
 If the Connector is installed in the cloud and you are planning to create Cloud Volumes ONTAP systems, then BlueXP requires permissions from your cloud provider. You need to set up permissions in your cloud provider and then associate those permission with the Connector instance after you install it.
 
@@ -195,7 +201,7 @@ include::_include/google-set-up-service-account.adoc[]
 ====
 // end tabbed area
 
-== Step 6: Enable Google Cloud APIs
+== Step 76: Enable Google Cloud APIs
 
 Several APIs are required to deploy Cloud Volumes ONTAP in Google Cloud.
 

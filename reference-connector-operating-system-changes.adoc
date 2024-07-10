@@ -32,8 +32,6 @@ Limitations::
 
 Container orchestration tool::
 Podman is required as the container orchestration tool when you install the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
-+
-link:task-install-connector-on-prem.html#step-1-review-host-requirements[View requirements for Podman].
 
 New manual installations only::
 RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
