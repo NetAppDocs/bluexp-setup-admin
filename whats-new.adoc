@@ -24,6 +24,8 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 This release includes minor improvements, bug fixes, and support for the Connector in the AWS Canada West (Calgary) region.
 
+The 3.9.42 release is available for standard mode and restricted mode.
+
 === Updated Docker Engine requirements
 
 When the Connector is installed on an Ubuntu host, the minimum supported version of Docker Engine is now 23.0.6. It was previously 19.3.1.
