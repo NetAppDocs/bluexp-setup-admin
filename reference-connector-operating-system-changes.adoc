@@ -132,7 +132,3 @@ Refer to the following pages to rediscover your working environments after a new
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html[Create an Azure NetApp Files working environment^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html[Discover E-Series systems^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[Discover StorageGRID systems^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html[Add an Amazon Kubernetes cluster^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html[Add an Azure Kubernetes cluster^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html[Add a Google Cloud Kubernetes cluster^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html[Import an OpenShift cluster^]
