@@ -18,23 +18,13 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
-== 7 Aug 2024
+== 15 July 2024
 
-=== Connector 3.9.43
+=== Support for RHEL 8.10
 
-This release of the BlueXP Connector includes minor improvements, bug fixes, and support for a new version of Red Hat Enterprise Linux.
-
-At this time, the 3.9.43 release is available for standard mode and restricted mode.
-
-==== Support for RHEL 8.10
-
-This release includes support for installing the Connector on a Red Hat Enterprise Linux 8.10 host when using standard mode or restricted mode.
+BlueXP now supports installing the Connector on a Red Hat Enterprise Linux 8.10 host when using standard mode or restricted mode.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
-
-==== GTC validation?
-
-Asked Itsik.
 
 == 8 July 2024
 
@@ -63,6 +53,8 @@ New users who sign up to BlueXP are now required to verify their email address b
 This release of the BlueXP Connector includes minor security improvements and bug fixes. 
 
 The 3.9.41 release is available for standard mode and restricted mode.
+
+//end::whats-new[]
 
 == 4 June 2024
 
@@ -135,8 +127,6 @@ In the 3.9.38 release, we updated the Connector policy for AWS to include the "e
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html[View AWS permissions for the Connector].
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn more about support for AWS Local Zones^]
-
-//end::whats-new[]
 
 == 22 April 2024
 
