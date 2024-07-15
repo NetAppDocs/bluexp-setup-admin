@@ -15,9 +15,60 @@ summary: As we add and remove support for the Connector on specific Linux operat
 [.lead]
 As we add and remove support for the Connector on specific Linux operating systems, you might have questions about how this support affects your existing Connector deployments.
 
-== Support for RHEL 8 and 9
+== Supported operating systems
 
-BlueXP now supports the Connector with specific versions of Red Hat Enterprise Linux 8 and 9.
+The BlueXP Connector is supported with the following Linux operating systems.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Standard mode
+--
+Manual installation::
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux 
+** 8.6 to 8.10
+** 9.1 to 9.3
+
+Deployment from BlueXP:: 
+Ubuntu 22.04 LTS
+
+Deployment from the AWS Marketplace:: 
+Ubuntu 22.04 LTS 
+
+Deployment from the Azure Marketplace:: 
+Ubuntu 22.04 LTS
+--
+
+.Restricted mode
+--
+Manual installation::
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
+** 8.6 to 8.10
+** 9.1 to 9.3
+
+Deployment from the AWS Marketplace:: 
+Ubuntu 22.04 LTS
+
+Deployment from the Azure Marketplace:: 
+Ubuntu 22.04 LTS
+--
+
+.Private mode
+--
+Manual installation::
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux 
+** 8.6 to 8.10
+** 9.1 to 9.3
+--
+
+====
+
+== Support for RHEL 8 and 9
 
 Note the following about support for RHEL 8 and 9:
 
@@ -57,59 +108,6 @@ If you have an existing Connector running on RHEL 7 or CentOS 7, we don't suppor
 The Connector is still supported on Ubuntu 22.04 LTS and is the default operating system for deployments from BlueXP and from the marketplace.
 
 Docker Engine is required for this operating system. Podman is not supported.
-
-== Summary of supported operating systems
-
-Here's a summary of the operating system support that was described in the previous sections.
-
-// start tabbed area
-
-[role="tabbed-block"]
-====
-
-.Standard mode
---
-Manual installation::
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux 
-** 8.6 to 8.9
-** 9.1 to 9.3
-
-Deployment from BlueXP:: 
-Ubuntu 22.04 LTS
-
-Deployment from the AWS Marketplace:: 
-Ubuntu 22.04 LTS 
-
-Deployment from the Azure Marketplace:: 
-Ubuntu 22.04 LTS
---
-
-.Restricted mode
---
-Manual installation::
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux 
-** 8.6 to 8.9
-** 9.1 to 9.3
-
-Deployment from the AWS Marketplace::
-Ubuntu 22.04 LTS
-
-Deployment from the Azure Marketplace::
-Ubuntu 22.04 LTS
---
-
-.Private mode
---
-Manual installation::
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux 
-** 8.6 to 8.9
-** 9.1 to 9.3
---
-
-====
 
 == Related links
 

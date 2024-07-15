@@ -28,7 +28,7 @@ A new private mode release is now available to download from the NetApp Support 
 
 This release includes support for installing the Connector on a Red Hat Enterprise Linux 8 or 9 host when using private mode. The following versions are supported:
 
-* 8.6 to 8.9
+* 8.6 to 8.10
 * 9.1 to 9.3
 
 Podman is required as the container orchestration tool for these operating systems.
@@ -71,6 +71,16 @@ To learn more about what's included in the versions of these BlueXP services, re
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn what's new with Cloud Volumes ONTAP management in BlueXP^]
 
+== 15 July 2024
+
+=== Support for RHEL 8.10
+
+BlueXP now supports installing the Connector on a Red Hat Enterprise Linux 8.10 host when using standard mode or restricted mode. 
+
+Support for RHEL 8.10 starts with the 3.9.40 release of the Connector.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
 == 8 July 2024
 
 === Connector 3.9.42
@@ -78,6 +88,8 @@ To learn more about what's included in the versions of these BlueXP services, re
 This release includes minor improvements, bug fixes, and support for the Connector in the AWS Canada West (Calgary) region.
 
 The 3.9.42 release is available for standard mode and restricted mode.
+
+//end::whats-new[]
 
 === Updated Docker Engine requirements
 
@@ -98,8 +110,6 @@ New users who sign up to BlueXP are now required to verify their email address b
 This release of the BlueXP Connector includes minor security improvements and bug fixes. 
 
 The 3.9.41 release is available for standard mode and restricted mode.
-
-//end::whats-new[]
 
 == 4 June 2024
 
