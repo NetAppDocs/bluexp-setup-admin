@@ -15,54 +15,9 @@ summary: As we add and remove support for the Connector on specific Linux operat
 [.lead]
 As we add and remove support for the Connector on specific Linux operating systems, you might have questions about how this support affects your existing Connector deployments.
 
-== Support for RHEL 8 and 9
+== Supported operating systems
 
-BlueXP now supports the Connector with specific versions of Red Hat Enterprise Linux 8 and 9.
-
-Note the following about support for RHEL 8 and 9:
-
-Limitations::
-* When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
-* BlueXP classification is supported if you install the Connector on a RHEL 8 or 9 host that resides on-premises. It's not supported if the RHEL 8 or 9 host resides in AWS, Azure, or Google Cloud.
-
-Container orchestration tool::
-Podman is required as the container orchestration tool when you install the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
-+
-link:task-install-connector-on-prem.html#step-1-review-host-requirements[View requirements for Podman].
-
-Deployment mode::
-RHEL 8 and 9 are supported when using BlueXP in standard mode or restricted mode.
-
-New manual installations only::
-RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
-
-RHEL upgrades::
-If you have an existing Connector running on a RHEL 7 host, we don't support upgrading the RHEL 7 operating system to RHEL 8 or 9. <<Existing Connectors on RHEL 7 or CentOS 7,Learn more about existing Connectors on RHEL 7 or CentOS 7>>.
-
-== End of support for RHEL 7 and CentOS 7
-
-On June 30, 2024, RHEL 7 reached end of maintenance (EOM), while CentOS 7 reached end of life (EOL). NetApp stopped supporting the Connector on these Linux distributions on June 30, 2024.
-
-https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance[Red Hat: What to know about Red Hat Enterprise Linux 7 End of Maintenance^]
-
-=== Existing Connectors on RHEL 7 or CentOS 7
-
-If you have an existing Connector running on RHEL 7 or CentOS 7, we don't support upgrading or converting the operating system to RHEL 8 or 9. To start running a Connector on a RHEL 8 or 9 host instead, you need to do the following:
-
-. Set up a RHEL 8 or 9 host.
-. Install Podman.
-. Perform a _new_ Connector installation.
-. Configure the Connector to discover the working environments that the old Connector was managing.
-
-== Continued support for Ubuntu 22.04 LTS
-
-The Connector is still supported on Ubuntu 22.04 LTS and is the default operating system for deployments from BlueXP and from the marketplace.
-
-Docker Engine is required for this operating system. Podman is not supported.
-
-== Summary of supported operating systems
-
-Here's a summary of the operating system support that was described in the previous sections.
+The BlueXP Connector is supported with the following Linux operating systems.
 
 // start tabbed area
 
@@ -109,6 +64,49 @@ Ubuntu 22.04 LTS
 --
 
 ====
+
+== Support for RHEL 8 and 9
+
+Note the following about support for RHEL 8 and 9:
+
+Limitations::
+* When the Connector is installed on a RHEL 8 or 9 host, BlueXP backup and recovery has limitations related to single-file restore and ransomware scanning. For details, refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html[known limitations for BlueXP backup and recovery^]
+* BlueXP classification is supported if you install the Connector on a RHEL 8 or 9 host that resides on-premises. It's not supported if the RHEL 8 or 9 host resides in AWS, Azure, or Google Cloud.
+
+Container orchestration tool::
+Podman is required as the container orchestration tool when you install the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
++
+link:task-install-connector-on-prem.html#step-1-review-host-requirements[View requirements for Podman].
+
+Deployment mode::
+RHEL 8 and 9 are supported when using BlueXP in standard mode or restricted mode.
+
+New manual installations only::
+RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
+
+RHEL upgrades::
+If you have an existing Connector running on a RHEL 7 host, we don't support upgrading the RHEL 7 operating system to RHEL 8 or 9. <<Existing Connectors on RHEL 7 or CentOS 7,Learn more about existing Connectors on RHEL 7 or CentOS 7>>.
+
+== End of support for RHEL 7 and CentOS 7
+
+On June 30, 2024, RHEL 7 reached end of maintenance (EOM), while CentOS 7 reached end of life (EOL). NetApp stopped supporting the Connector on these Linux distributions on June 30, 2024.
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance[Red Hat: What to know about Red Hat Enterprise Linux 7 End of Maintenance^]
+
+=== Existing Connectors on RHEL 7 or CentOS 7
+
+If you have an existing Connector running on RHEL 7 or CentOS 7, we don't support upgrading or converting the operating system to RHEL 8 or 9. To start running a Connector on a RHEL 8 or 9 host instead, you need to do the following:
+
+. Set up a RHEL 8 or 9 host.
+. Install Podman.
+. Perform a _new_ Connector installation.
+. Configure the Connector to discover the working environments that the old Connector was managing.
+
+== Continued support for Ubuntu 22.04 LTS
+
+The Connector is still supported on Ubuntu 22.04 LTS and is the default operating system for deployments from BlueXP and from the marketplace.
+
+Docker Engine is required for this operating system. Podman is not supported.
 
 == Related links
 
