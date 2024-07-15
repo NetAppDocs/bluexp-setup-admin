@@ -18,6 +18,18 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 7 Aug 2024
+
+=== Connector 3.9.43
+
+This release includes minor improvements and bug fixes.
+
+The 3.9.42 release is available for standard mode and restricted mode.
+
+=== GTC change
+
+Waiting on Itsik
+
 == 15 July 2024
 
 === Support for RHEL 8.10
