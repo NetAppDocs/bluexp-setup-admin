@@ -22,7 +22,9 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Support for RHEL 8.10
 
-BlueXP now supports installing the Connector on a Red Hat Enterprise Linux 8.10 host when using standard mode or restricted mode.
+BlueXP now supports installing the Connector on a Red Hat Enterprise Linux 8.10 host when using standard mode or restricted mode. 
+
+Support for RHEL 8.10 starts with the 3.9.40 release of the Connector.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
 
