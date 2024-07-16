@@ -1,6 +1,6 @@
 .Steps
 
-. Go to the https://aws.amazon.com/marketplace/pp/B018REK8QG[BlueXP page on the AWS Marketplace^]
+. Go to the https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui[BlueXP Connector listing on the AWS Marketplace^]
 
 . On the Marketplace page, select *Continue to Subscribe* and then select *Continue to Configuration*.
 +
