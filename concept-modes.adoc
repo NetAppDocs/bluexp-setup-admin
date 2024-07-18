@@ -190,7 +190,7 @@ BlueXP supports the following storage and data services with restricted mode:
 
 In restricted mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode[View the list of supported backup destinations for ONTAP data^]
 
-Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
+Back up and restore of application data and virtual machine data is not supported.
 
 | Classification a| Supported in Government regions with restricted mode. Not supported in commercial regions or in sovereign regions with restricted mode. 
 
@@ -281,7 +281,7 @@ Not supported in Google Cloud or in https://aws.amazon.com/federal/secret-cloud/
 
 In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP data^]
 
-Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
+Back up and restore of application data and virtual machine data is not supported.
 
 | Cloud Volumes ONTAP | Because there's no internet access, the following features aren't available: automated software upgrades and AutoSupport.
 
@@ -306,7 +306,7 @@ a|
 
 In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP volume data^]
 
-Back up and restore of application data, virtual machine data, and Kubernetes data is not supported.
+Back up and restore of application data and virtual machine data is not supported.
 
 | Classification
 a| 
@@ -354,7 +354,7 @@ Note that some services might be supported with limitations. For more details ab
 | Restricted mode
 | Private mode
 
-.11+| *Working environments*
+.10+| *Working environments*
 
 This portion of the table lists support for working environment management from the BlueXP canvas. It does not indicate the supported backup destinations for BlueXP backup and recovery.
 | Amazon FSx for ONTAP | Yes | No
@@ -364,12 +364,11 @@ This portion of the table lists support for working environment management from 
 | Cloud Volumes ONTAP | Yes | Yes 
 | Cloud Volumes Service for Google Cloud | No | No
 | Google Cloud Storage | No | No
-| Kubernetes clusters | No | No
 | On-prem ONTAP clusters | Yes | Yes
 | E-Series | No | No
 | StorageGRID | No | No 
 
-.16+| *Services*
+.15+| *Services*
 | Backup and recovery 
 | Yes
 
@@ -385,7 +384,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Disaster recovery | No | No
 | Economic efficiency | No | No
 | Edge caching | No | No
-| Migration reports | No | No
 | Operational resiliency | No | No
 | Ransomware protection | No | No
 | Replication | Yes | Yes

@@ -162,7 +162,10 @@ Note the following:
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -466,20 +469,6 @@ The Connector makes the following API requests when you use BlueXP edge caching:
 * Microsoft.Resources/deployments/delete
 //end::gfc-permissions[]
 
-=== Kubernetes
-
-The Connector makes the following API requests to discover and manage clusters running in Azure Kubernetes Service (AKS):
-
-//tag::kubernetes-permissions[]
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Resources/subscriptions/locations/read
-* Microsoft.Resources/subscriptions/operationresults/read
-* Microsoft.Resources/subscriptions/resourceGroups/read
-* Microsoft.Resources/subscriptions/resourcegroups/resources/read
-* Microsoft.ContainerService/managedClusters/read
-* Microsoft.ContainerService/managedClusters/listClusterUserCredential/action
-//end::kubernetes-permissions[]
-
 === Tiering
 
 The Connector makes the following API requests when you set up BlueXP tiering.
@@ -502,6 +491,14 @@ The Connector makes the following API requests for daily operations.
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
+
+=== 7 August, 2024
+
+The following permissions were added to the JSON policy because they are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets:
+
+* Microsoft.Compute/virtualMachineScaleSets/write
+* Microsoft.Compute/virtualMachineScaleSets/read
+* Microsoft.Compute/virtualMachineScaleSets/delete
 
 === 5 December, 2023
 

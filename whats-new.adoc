@@ -22,9 +22,23 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.43
 
-This release includes minor improvements and bug fixes.
+This release includes minor improvements, bug fixes, and the requirement for new Azure permissions.
 
-The 3.9.42 release is available for standard mode and restricted mode.
+The 3.9.43 release is available for standard mode and restricted mode.
+
+==== Azure permissions update
+
+We updated the Connector policy for Azure to include the following permissions:
+
+[source,json]
+Microsoft.Compute/virtualMachineScaleSets/write
+Microsoft.Compute/virtualMachineScaleSets/read
+Microsoft.Compute/virtualMachineScaleSets/delete
+
+These permissions are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets.
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn about Cloud Volumes ONTAP support for Virtual Machine Scale Sets^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
 
 === GTC change
 

@@ -53,10 +53,7 @@ The first policy provides permissions for the following services:
 * FSx for ONTAP
 * Tiering
 
-The second policy provides permissions for the following services:
- 
-* Edge caching
-* Kubernetes
+The second policy provides permissions for BlueXP edge caching.
 
 // start tabbed area
 [role="tabbed-block"]
@@ -1148,17 +1145,6 @@ The Connector makes the following API requests to deploy BlueXP edge caching ins
 * cloudwatch:GetMetricStatistics
 * cloudformation:ListStacks
 //end::gfc-permissions[]
-
-=== Kubernetes
-
-The Connector makes the following API requests to discover and manage Amazon EKS clusters:
-
-//tag::kubernetes-permissions[]
-* ec2:DescribeRegions
-* eks:ListClusters
-* eks:DescribeCluster
-* iam:GetInstanceProfile
-//end::kubernetes-permissions[]
 
 == Change log
 
