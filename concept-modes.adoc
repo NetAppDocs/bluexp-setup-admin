@@ -369,7 +369,7 @@ This portion of the table lists support for working environment management from 
 | E-Series | No | No
 | StorageGRID | No | No 
 
-.16+| *Services*
+.17+| *Services*
 | Backup and recovery 
 | Yes
 
@@ -389,6 +389,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Operational resiliency | No | No
 | Ransomware protection | No | No
 | Replication | Yes | Yes
+| Software updates | No | No
 | Sustainability | No | No
 | Tiering | No | No
 | Volume caching | No | No
