@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: task-iam-get-started.html
+keywords: 
+summary: 
+---
+
+= Get started with IAM
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]

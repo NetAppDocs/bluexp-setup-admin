@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: faq-accounts-to-organizations.html
+keywords: 
+summary: 
+---
+
+= Moving from accounts to IAM
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]

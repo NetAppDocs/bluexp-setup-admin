@@ -1,0 +1,77 @@
+---
+sidebar: sidebar
+permalink: task-iam-switch-organizations-projects.html
+keywords: 
+summary: 
+---
+
+= Switch between projects and organizations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+
+== Switch between projects
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+== Switch between organizations
+
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+

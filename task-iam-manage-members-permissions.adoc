@@ -1,0 +1,227 @@
+---
+sidebar: sidebar
+permalink: task-iam-manage-members-permissions.html
+keywords: 
+summary: 
+---
+
+= Manage members and their permissions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+
+
+== Add a member to your organization
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+== View organization members
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+=== View the members in your organization
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+=== View the members associated with a project or folder
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+
+=== View the folders and projects associated with a member
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+
+== Change member roles (add a role, modify an existing role, remove a role)
+
+=== Change roles for multiple members in your organization (from Overview page)
+
+== Recreate secrets for a service account
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
+
+
+== Remove a member from your organization
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]

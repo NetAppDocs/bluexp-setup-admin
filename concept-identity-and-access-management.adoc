@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: concept-identity-and-access-management.html
+keywords: 
+summary: 
+---
+
+= Learn about BlueXP Identity and Access Management
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]

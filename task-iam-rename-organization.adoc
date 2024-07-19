@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: task-iam-rename-organization.html
+keywords: 
+summary: 
+---
+
+= Rename your organization
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+
+
+
+.About this task
+
+
+
+.Before you begin
+
+* 
+
+.Steps
+
+. 
+
+.Result
+
+This is the result of this task.
+
+.What's next
+
+This is what you should do or expect next.
+
+.Related information
+
+* https://addressoflink.html[Link to an external target^]
+* link:samerepoadoc.html[Link to another page in the repository]
