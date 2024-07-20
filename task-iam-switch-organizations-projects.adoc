@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-iam-switch-organizations-projects.html
-keywords: 
-summary: 
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects
+summary: Switch between projects and organizations to access the resources associated with those projects and organizations.
 ---
 
 = Switch between projects and organizations
@@ -13,65 +13,42 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-
+If you have permissions to access multiple projects within your organization, or if you are a member of multiple organizations, you can easily switch between projects and organizations to access the associated resources.
 
 == Switch between projects
 
-
-
-.About this task
-
-
+If your organization includes multiple projects and you have access to those projects, you can switch between them at any time.
 
 .Before you begin
 
-* 
+You must be on any page in the BlueXP console other than the Identity and Access Management pages. You can't switch to another project when viewing any of the IAM pages.
 
 .Steps
 
-. 
+. At the top of BlueXP, select *Scope*.
++
+image:screenshot-iam-switch-projects.png[A screenshot of the BlueXP top banner where you can select the Scope drop-down and then select another project.]
+
+. Browse through the folders and projects in your organization, select the project that you want, and then select *Switch*.
++
+image:screenshot-iam-switch-projects-select.png[A screenshot of the Scope menu where you can select a new project.]
 
 .Result
 
-This is the result of this task.
-
-.What's next
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
+BlueXP switches to the selected project and displays the resources associated with that project.
 
 == Switch between organizations
 
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
+If you are a member of multiple organizations, you can switch between them at any time.
 
 .Steps
 
-. 
+. At the top of BlueXP, select *Organization*.
++
+image:screenshot-iam-switch-organizations.png[A screenshot of the BlueXP top banner where you can select the Organization drop-down and then select another organization.]
+
+. Select another organization and then select *Switch*.
 
 .Result
 
-This is the result of this task.
-
-.What's next
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-
+BlueXP switches to the selected organization and displays the resources associated with that organization.

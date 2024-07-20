@@ -101,6 +101,24 @@ sidebar:
           url: /task-logging-in.html
     - title: Administer BlueXP
       entries:
+        - title: Identity and access management
+          entries:
+            - title: Learn about IAM
+              url: /concept-identity-and-access-management.html
+            - title: Moving from accounts to IAM
+              url: /faq-accounts-to-organizations.html
+            - title: Get started
+              url: /task-iam-get-started.html
+            - title: Organize your resources with folders and projects
+              url: /task-iam-manage-folders-projects.html
+            - title: Manage members and their permissions
+              url: /task-iam-manage-members-permissions.html
+            - title: Manage your resource hierarchy
+              url: /task-iam-manage-resources.html
+            - title: Switch between organizations and projects
+              url: /task-iam-switch-organizations-projects.html
+            - title: Rename your organization
+              url: /task-iam-rename-organization.html
         - title: Identity federation
           url: /concept-federation.html
         - title: BlueXP accounts
