@@ -17,15 +17,11 @@ If needed, you can change the name of your organization.
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option1.png[The settings icon which displays in the top right of the BlueXP web console.] and then select *Settings > Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] and then select *Identity & Access Management*.
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] and then select *Settings > Identity & Access Management*.
-
-. In the upper right of the BlueXP console, select *Settings > Identity & Access Management*.
+. From the *Overview* page, navigate to the first row in the *Scopes* table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit organization*.
 +
-image:screenshot-settings-iam.png[The settings menu which shows the Identity & Access Management option.]
-
-. From the *Overview* page, navigate to the first row in the *Scopes* table, select image:icon-action.png["An icon that is three side-by-side dots"], and then select *Edit organization*.
+image:screenshot-iam-edit-organization.png[A screenshot of Overview page that shows the actions icon and the Edit organization option.]
 
 . Enter a new organization name and select *Edit*.
 
