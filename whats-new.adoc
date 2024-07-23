@@ -40,9 +40,9 @@ These permissions are required for Cloud Volumes ONTAP support of Virtual Machin
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn about Cloud Volumes ONTAP support for Virtual Machine Scale Sets^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
 
-=== GTC change
+=== User validation for identity federation
 
-Waiting on Itsik
+If you use identity federation with BlueXP, each user who logs in to BlueXP for the first time will need to complete a quick form to validate their identity.
 
 == 15 July 2024
 
