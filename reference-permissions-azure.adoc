@@ -454,21 +454,6 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 
 |===
 
-=== Edge caching
-
-The Connector makes the following API requests when you use BlueXP edge caching:
-
-//tag::gfc-permissions[]
-* Microsoft.Insights/Metrics/Read
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft.Resources/deployments/delete
-//end::gfc-permissions[]
-
 === Tiering
 
 The Connector makes the following API requests when you set up BlueXP tiering.
