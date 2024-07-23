@@ -31,11 +31,11 @@ The 3.9.43 release is available for standard mode and restricted mode.
 We updated the Connector policy for Azure to include the following permissions:
 
 [source,json]
-Microsoft.Compute/virtualMachineScaleSets/write
-Microsoft.Compute/virtualMachineScaleSets/read
-Microsoft.Compute/virtualMachineScaleSets/delete
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
 
-These permissions are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets.
+These permissions are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets. If you have existing Connectors and you want to use this new feature, you'll need to add these permissions to the custom roles that are associated with your Azure credentials.
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn about Cloud Volumes ONTAP support for Virtual Machine Scale Sets^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
