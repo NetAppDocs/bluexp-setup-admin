@@ -452,6 +452,11 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | Encrypt storage accounts during creation
 | Microsoft.ManagedIdentity/userAssignedIdentities/assign/action | Yes | Yes | No
 
+.3+| Use Virtual Machine Scale Sets in Flexible orchestration mode in order to specify specific zones for Cloud Volumes ONTAP
+| Microsoft.Compute/virtualMachineScaleSets/write | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/read | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/delete | No | No | Yes
+
 |===
 
 === Tiering
