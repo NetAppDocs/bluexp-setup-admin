@@ -10,7 +10,7 @@ Depending on your operating system, either Podman or Docker Engine is required b
 ====
 .Podman
 --
-Install Podman 4.6.1.
+Install a supported version of Podman.
 
 .Steps
 
