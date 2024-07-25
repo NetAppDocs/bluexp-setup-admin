@@ -39,7 +39,7 @@ summary:
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -68,7 +68,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -97,7 +97,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -126,7 +126,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -155,7 +155,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -184,7 +184,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -217,7 +217,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -246,7 +246,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -275,7 +275,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -304,7 +304,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -333,7 +333,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
@@ -362,7 +362,7 @@ This is what you should do or expect next.
 
 This is the result of this task.
 
-.What's next
+.What's next?
 
 This is what you should do or expect next.
 
