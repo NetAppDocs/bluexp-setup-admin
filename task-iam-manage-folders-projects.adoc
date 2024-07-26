@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-folders-projects.html
-keywords: 
-summary: 
+keywords: folders, projects, resource hierarchy, create folders, create projects
+summary: BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects.
 ---
 
 = Organize your resources with folders and projects
@@ -13,17 +13,107 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects. You can organize your company resources according to your needs and assign resources at any level of your organization.
+
+== Add a folder or project
+
+You must create at least one project to allocate access to resources. Projects are the foundation of NetApp identity access and management. You can optionally create folders to group related projects.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. From the *Organization* page, select *Add folder or project*.
+
+. Select *Folder* or *Project*.
+
+. Provide details about the folder or project:
++
+* *Folder name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside underneath the organization or within a folder.
+* *Resources*: Select the resources that you want to associate with this folder or project
+* *Access*: Specify the organization members that should have access to the folder or project and then select a role for each member. The role defines the permissions that the member has within the folder or project. 
+
+. Select *Add*.
+
+.Result
+
+BlueXP creates the folder and associates the specified resources and members.
+
+== View the resources and members associated with a folder or project
+
+You might need to verify which resources and members are associated with a folder or project. 
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
+
+. On the *Edit* page, select *Resources* to view the associated resources or *Access* to view the members who have access to the folder or project.
+
+.What's next?
+
+If needed, you can change the associated resources or modify member access.
+
+== Modify the resources associated with a folder or project
+
+You can modify the resources that are associated with a folder or project by associating or disassociating a resource.
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
+
+. On the *Edit* page, select *Resources*.
+
+. Select the resources that you'd like to associate or disassociate.
++
+After you select one or more resources, the actions to *Associate resources* or *Disassociate resources* are available.
+
+. Depending on the resources that you selected, select either *Associate resources* or *Disassociate resources*.
+
+. Select *Apply*
+
+.Result
+
+BlueXP associates the resource with the folder or project.
+
+== Modify member access to a folder or project
 
 
-== Manage folders
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
+
+. On the *Edit* page, select *Access*.
++
+BlueXP displays the list of members who have access to the folder or project.
+
+. Modify member access:
++
+* *Add a member*: Select the member that you'd like to add to the folder or project and assign them a role.
+* *Change a user's role*: For any members with a role other than Organization Admin, select their existing role and then choose a new role.
+* *Remove member access*: ?
+
+. Select *Apply*.
+
+.Result
+
+BlueXP updates the members who have access to the folder or project.
+
+== Rename a folder or project
 
 
 
-=== Add folders
+.Steps
 
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
 
+. On the *Edit* page, enter a new name and select *Apply*.
 
-.About this task
+.Result
+
+BlueXP updates the name of the folder or project.
+
+== Delete a folder or project
 
 
 
@@ -33,340 +123,10 @@ summary:
 
 .Steps
 
-. 
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Delete*.
+
+. Confirm that you want to delete the folder or project.
 
 .Result
 
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== View the resources and members associated with a folder
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Rename a folder
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Associate resources with a folder
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Modify member roles in a folder
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Delete a folder
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-== Manage projects
-
-
-
-=== Add projects
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== View the resources and members associated with a project
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Rename a project
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Associate resources with a project
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Modify member roles in a project
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
-
-=== Delete a project
-
-
-
-.About this task
-
-
-
-.Before you begin
-
-* 
-
-.Steps
-
-. 
-
-.Result
-
-This is the result of this task.
-
-.What's next?
-
-This is what you should do or expect next.
-
-.Related information
-
-* https://addressoflink.html[Link to an external target^]
-* link:samerepoadoc.html[Link to another page in the repository]
+BlueXP deletes the folder or project. That folder or project is no longer available to users.
