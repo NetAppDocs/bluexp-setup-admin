@@ -78,6 +78,7 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 //end::docker[]
 
 //tag::container-req[]
+[[podman-versions]]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
 * Podman is required for Red Hat Enterprise Linux 8 and 9.
