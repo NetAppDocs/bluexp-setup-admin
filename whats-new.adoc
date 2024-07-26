@@ -22,13 +22,9 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.43
 
-This release includes minor improvements, bug fixes, an update on Podman support, and the requirement for new Azure permissions.
+This release includes minor improvements, bug fixes, and the requirement for new Azure permissions.
 
 The 3.9.43 release is available for standard mode and restricted mode.
-
-==== Support for Podman 4.9.4 with RHEL 8.10
-
-Podman version 4.9.4 is now supported when installing the Connector on a Red Hat Enterprise Linux 8.10 host.
 
 ==== Azure permissions update
 
@@ -58,6 +54,10 @@ As a result of this change, the default VM instance type when deploying the Conn
 * Google Cloud: n2-standard-8
 
 This requirement applies to new and existing Connectors.
+
+=== Support for Podman 4.9.4 with RHEL 8.10
+
+Podman version 4.9.4 is now supported when installing the Connector on a Red Hat Enterprise Linux 8.10 host.
 
 === User validation for identity federation
 
