@@ -18,7 +18,7 @@ These steps describe how to launch the instance from the EC2 Console because the
 
 * *Application and OS Image*: Skip this section. The Connector AMI is already selected.
 
-* *Instance type*: Depending on region availability, choose an instance type that meets RAM and CPU requirements (t3.xlarge is recommended).
+* *Instance type*: Depending on region availability, choose an instance type that meets RAM and CPU requirements (t3.2xlarge is recommended).
 
 * *Key pair (login)*: Select the key pair that you want to use to securely connect to the instance.
 

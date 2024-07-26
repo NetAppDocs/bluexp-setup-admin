@@ -44,6 +44,21 @@ These permissions are required for Cloud Volumes ONTAP support of Virtual Machin
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn about Cloud Volumes ONTAP support for Virtual Machine Scale Sets^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
 
+=== Updated CPU and RAM requirements
+
+To provide higher reliability and to improve the performance of BlueXP and the Connector, we now require additional CPU and RAM for the Connector virtual machine:
+
+* CPU: 8 cores or 8 vCPUs (the previous requirement was 4)
+* RAM: 32 GB (the previous requirement was 14 GB)
+
+As a result of this change, the default VM instance type when deploying the Connector from BlueXP or from the cloud provider's marketplace is as follows:
+
+* AWS: t3.2xlarge
+* Azure: Standard_D8s_v3
+* Google Cloud: n2-standard-8
+
+This requirement applies to new and existing Connectors.
+
 === User validation for identity federation
 
 If you use identity federation with BlueXP, each user who logs in to BlueXP for the first time will need to complete a quick form to validate their identity.
