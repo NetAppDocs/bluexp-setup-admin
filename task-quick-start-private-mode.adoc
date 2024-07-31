@@ -22,7 +22,7 @@ Before you get started, you should have an understanding of link:concept-netapp-
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-private-mode.html[Prepare for deployment]
 
 [role="quick-margin-list"]
-.. Prepare a dedicated Linux host that meets requirements for CPU, RAM, disk space, Docker Engine, and more.
+.. Prepare a dedicated Linux host that meets requirements for CPU, RAM, disk space, container orchestration tool, and more.
 
 .. Set up networking that provides access to the target networks.
 
