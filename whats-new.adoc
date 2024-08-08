@@ -63,7 +63,7 @@ Podman version 4.9.4 is now supported when installing the Connector on a Red Hat
 === User validation for identity federation
 
 If you use identity federation with BlueXP, each user who logs in to BlueXP for the first time will need to complete a quick form to validate their identity.
-=======
+
 == 31 July 2024
 
 === Private mode release (3.9.42)
