@@ -89,7 +89,7 @@ image:screenshot-gov-cloud-mktp.png[A screenshot that shows the BlueXP offering 
 
 . Follow the prompts to configure and deploy the instance:
 
-* *Choose an Instance Type*: Depending on region availability, choose one of the supported instance types (t3.xlarge is recommended).
+* *Choose an Instance Type*: Depending on region availability, choose one of the supported instance types (t3.2xlarge is recommended).
 +
 link:task-prepare-restricted-mode.html[Review the instance requirements].
 
@@ -141,7 +141,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Learn ho
 +
 Note the following as you configure the VM:
 
-* *VM size*: Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.
+* *VM size*: Choose a VM size that meets CPU and RAM requirements. We recommend Standard_D8s_v3.
 
 * *Disks*: The Connector can perform optimally with either HDD or SSD disks.
 

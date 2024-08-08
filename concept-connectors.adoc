@@ -64,7 +64,6 @@ When you use BlueXP in standard mode, a Connector is required for the following 
 * Disaster recovery
 * E-Series systems
 * Economic efficiency ^1^
-* Edge caching
 * Google Cloud Storage buckets
 * On-premises ONTAP cluster integration with BlueXP data services
 * Operational resiliency ^1^

@@ -176,7 +176,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 +
 Note the following as you configure the VM:
 
-* *VM size*: Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.
+* *VM size*: Choose a VM size that meets CPU and RAM requirements. We recommend Standard_D8s_v3.
 
 * *Disks*: The Connector can perform optimally with either HDD or SSD disks.
 

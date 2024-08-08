@@ -30,14 +30,14 @@ A bare metal or hosted hypervisor that is certified to run a supported operating
 //end::hypervisor[]
 
 //tag::cpu-ram[]
-CPU:: 4 cores or 4 vCPUs
+CPU:: 8 cores or 8 vCPUs
 
-RAM:: 14 GB
+RAM:: 32 GB
 //end::cpu-ram[]
 
 //tag::aws-ec2[]
 AWS EC2 instance type::
-An instance type that meets the CPU and RAM requirements above. We recommend t3.xlarge.
+An instance type that meets the CPU and RAM requirements above. We recommend t3.2xlarge.
 //end::aws-ec2[]
 
 //tag::aws-key-pair[]
@@ -47,12 +47,12 @@ When you create the Connector, you'll need to select an EC2 key pair to use with
 
 //tag::azure-vm[]
 Azure VM size::
-An instance type that meets the CPU and RAM requirements above. We recommend DS3 v2.
+An instance type that meets the CPU and RAM requirements above. We recommend Standard_D8s_v3.
 //end::azure-vm[]
 
 //tag::google-machine[]
 Google Cloud machine type::
-An instance type that meets the CPU and RAM requirements above. We recommend n2-standard-4.
+An instance type that meets the CPU and RAM requirements above. We recommend n2-standard-8.
 +
 The Connector is supported in Google Cloud on a VM instance with an OS that supports https://cloud.google.com/compute/shielded-vm/docs/shielded-vm[Shielded VM features^]
 //end::google-machine[]
@@ -78,9 +78,42 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 //end::docker[]
 
 //tag::container-req[]
+[[podman-versions]]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-* Podman version 4.6.1 is required for Red Hat Enterprise Linux 8 and 9.
+* Podman is required for Red Hat Enterprise Linux 8 and 9.
++
+[cols="50a,50a" options="header"] 
+
+|=== 
+
+// header row 
+
+a| RHEL version 
+
+a| Supported Podman version
+
+// First body row 
+
+a| RHEL 8.6 to 8.9
+
+a| Podman 4.6.1
+
+// Second body row 
+
+a| RHEL 8.10
+
+a| Podman 4.6.1 and 4.9.4
+
+// Third body row 
+
+a| RHEL 9.1 to 9.3
+
+a| Podman 4.6.1
+
+// table end 
+
+|===
 +
 The following prerequisites must be met for Podman:
 +

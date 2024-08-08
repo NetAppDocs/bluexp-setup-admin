@@ -452,22 +452,12 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | Encrypt storage accounts during creation
 | Microsoft.ManagedIdentity/userAssignedIdentities/assign/action | Yes | Yes | No
 
+.3+| Use Virtual Machine Scale Sets in Flexible orchestration mode in order to specify specific zones for Cloud Volumes ONTAP
+| Microsoft.Compute/virtualMachineScaleSets/write | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/read | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/delete | No | No | Yes
+
 |===
-
-=== Edge caching
-
-The Connector makes the following API requests when you use BlueXP edge caching:
-
-//tag::gfc-permissions[]
-* Microsoft.Insights/Metrics/Read
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft.Resources/deployments/delete
-//end::gfc-permissions[]
 
 === Tiering
 
