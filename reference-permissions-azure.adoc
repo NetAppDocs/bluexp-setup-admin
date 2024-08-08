@@ -162,7 +162,10 @@ Note the following:
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -449,36 +452,12 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | Encrypt storage accounts during creation
 | Microsoft.ManagedIdentity/userAssignedIdentities/assign/action | Yes | Yes | No
 
+.3+| Use Virtual Machine Scale Sets in Flexible orchestration mode in order to specify specific zones for Cloud Volumes ONTAP
+| Microsoft.Compute/virtualMachineScaleSets/write | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/read | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/delete | No | No | Yes
+
 |===
-
-=== Edge caching
-
-The Connector makes the following API requests when you use BlueXP edge caching:
-
-//tag::gfc-permissions[]
-* Microsoft.Insights/Metrics/Read
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft.Resources/deployments/delete
-//end::gfc-permissions[]
-
-=== Kubernetes
-
-The Connector makes the following API requests to discover and manage clusters running in Azure Kubernetes Service (AKS):
-
-//tag::kubernetes-permissions[]
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Resources/subscriptions/locations/read
-* Microsoft.Resources/subscriptions/operationresults/read
-* Microsoft.Resources/subscriptions/resourceGroups/read
-* Microsoft.Resources/subscriptions/resourcegroups/resources/read
-* Microsoft.ContainerService/managedClusters/read
-* Microsoft.ContainerService/managedClusters/listClusterUserCredential/action
-//end::kubernetes-permissions[]
 
 === Tiering
 
@@ -502,6 +481,14 @@ The Connector makes the following API requests for daily operations.
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
+
+=== 7 August, 2024
+
+The following permissions were added to the JSON policy because they are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets:
+
+* Microsoft.Compute/virtualMachineScaleSets/write
+* Microsoft.Compute/virtualMachineScaleSets/read
+* Microsoft.Compute/virtualMachineScaleSets/delete
 
 === 5 December, 2023
 

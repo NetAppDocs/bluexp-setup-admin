@@ -349,12 +349,6 @@ includedPermissions:
 | To enable BlueXP classification.
 
 |
-- container.clusters.get
-- container.clusters.list
-
-| To discover Kubernetes clusters running in Google Kubernetes Engine.
-
-|
 - compute.instanceGroups.get
 - compute.addresses.get
 - compute.instances.updateNetworkInterface

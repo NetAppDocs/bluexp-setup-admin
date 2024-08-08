@@ -18,6 +18,52 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+
+== 8 Aug 2024
+
+=== Connector 3.9.43
+
+This release includes minor improvements, bug fixes, and the requirement for new Azure permissions.
+
+The 3.9.43 release is available for standard mode and restricted mode.
+
+==== Azure permissions update
+
+We updated the Connector policy for Azure to include the following permissions:
+
+[source,json]
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+
+These permissions are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets. If you have existing Connectors and you want to use this new feature, you'll need to add these permissions to the custom roles that are associated with your Azure credentials.
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn about Cloud Volumes ONTAP support for Virtual Machine Scale Sets^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
+
+=== Updated CPU and RAM requirements
+
+To provide higher reliability and to improve the performance of BlueXP and the Connector, we now require additional CPU and RAM for the Connector virtual machine:
+
+* CPU: 8 cores or 8 vCPUs (the previous requirement was 4)
+* RAM: 32 GB (the previous requirement was 14 GB)
+
+As a result of this change, the default VM instance type when deploying the Connector from BlueXP or from the cloud provider's marketplace is as follows:
+
+* AWS: t3.2xlarge
+* Azure: Standard_D8s_v3
+* Google Cloud: n2-standard-8
+
+This requirement applies to new and existing Connectors.
+
+=== Support for Podman 4.9.4 with RHEL 8.10
+
+Podman version 4.9.4 is now supported when installing the Connector on a Red Hat Enterprise Linux 8.10 host.
+
+=== User validation for identity federation
+
+If you use identity federation with BlueXP, each user who logs in to BlueXP for the first time will need to complete a quick form to validate their identity.
+=======
 == 31 July 2024
 
 === Private mode release (3.9.42)
@@ -70,6 +116,7 @@ To learn more about what's included in the versions of these BlueXP services, re
 * https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[Learn what's new with BlueXP classification^]
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn what's new with Cloud Volumes ONTAP management in BlueXP^]
+
 
 == 15 July 2024
 

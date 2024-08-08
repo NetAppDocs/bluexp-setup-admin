@@ -46,7 +46,6 @@ Use automated protection mechanisms to protect data against data loss, unplanned
 
 ** https://bluexp.netapp.com/cloud-backup[Backup and recovery^]
 ** https://bluexp.netapp.com/replication[Replication^]
-** https://bluexp.netapp.com/solutions/kubernetes[Data protection for Kubernetes workloads^]
 
 Analysis and control::
 Use tools to monitor, map, and optimize your data storage and infrastructure. Gain actionable intelligence to optimize storage health, resiliency, and economics.

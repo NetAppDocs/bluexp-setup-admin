@@ -44,20 +44,6 @@ Select your region to view the required policies:
 ====
 For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS.
 
-The first policy provides permissions for the following services:
-
-* Amazon S3 bucket discovery
-* Backup and recovery
-* Classification
-* Cloud Volumes ONTAP
-* FSx for ONTAP
-* Tiering
-
-The second policy provides permissions for the following services:
- 
-* Edge caching
-* Kubernetes
-
 // start tabbed area
 [role="tabbed-block"]
 =====
@@ -1138,27 +1124,6 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | ec2:DescribeAvailabilityZones | Yes | No | Yes
 
 |===
-
-=== Edge caching
-
-The Connector makes the following API requests to deploy BlueXP edge caching instances during deployment:
-
-//tag::gfc-permissions[]
-* cloudformation:DescribeStacks
-* cloudwatch:GetMetricStatistics
-* cloudformation:ListStacks
-//end::gfc-permissions[]
-
-=== Kubernetes
-
-The Connector makes the following API requests to discover and manage Amazon EKS clusters:
-
-//tag::kubernetes-permissions[]
-* ec2:DescribeRegions
-* eks:ListClusters
-* eks:DescribeCluster
-* iam:GetInstanceProfile
-//end::kubernetes-permissions[]
 
 == Change log
 
