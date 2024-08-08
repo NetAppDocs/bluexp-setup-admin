@@ -1,7 +1,7 @@
 ---
 permalink: legal-notices.html
 sidebar: sidebar
-keywords:
+keywords:netapp
 summary:
 ---
 
