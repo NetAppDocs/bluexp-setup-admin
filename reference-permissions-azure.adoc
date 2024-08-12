@@ -452,11 +452,6 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | Encrypt storage accounts during creation
 | Microsoft.ManagedIdentity/userAssignedIdentities/assign/action | Yes | Yes | No
 
-.3+| Required for an upcoming Cloud Volumes ONTAP release
-| Microsoft.Compute/virtualMachineScaleSets/write | Yes | No | No
-| Microsoft.Compute/virtualMachineScaleSets/read | Yes | No | No
-| Microsoft.Compute/virtualMachineScaleSets/delete | No | No | Yes
-
 |===
 
 === Tiering
@@ -481,14 +476,6 @@ The Connector makes the following API requests for daily operations.
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
-
-=== 7 August, 2024
-
-The following permissions were added to the JSON policy because they are required for an upcoming Cloud Volumes ONTAP release:
-
-* Microsoft.Compute/virtualMachineScaleSets/write
-* Microsoft.Compute/virtualMachineScaleSets/read
-* Microsoft.Compute/virtualMachineScaleSets/delete
 
 === 5 December, 2023
 
