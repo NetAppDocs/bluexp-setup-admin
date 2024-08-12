@@ -49,6 +49,8 @@ While a Connector isn't required for direct discovery of an on-premises ONTAP cl
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Learn more about discovery and management options for on-prem ONTAP clusters^]
 
+* Software updates
+
 * Sustainability
 
 == When a Connector is required
