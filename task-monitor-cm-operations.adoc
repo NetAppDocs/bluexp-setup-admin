@@ -71,21 +71,6 @@ image:screenshot_notification_filters.png[A screenshot showing the two types of 
 
 For example, if you want to see only "Error" and "Warning" notifications for BlueXP operations, select those entries and you'll see only those types of notifications.
 
-// === Selecting which account and which user notifications you will see
-//
-// By default, you'll see only your notification in the current account. You can choose to view notifications for the current account or all accounts, and you can choose to view notifications for your actions or all user actions.
-//
-// .Steps
-//
-// . In the Notification Center, select image:button_3_vert_dots.png[an icon with three vertical dots] and select *Settings*.
-//
-// image:screenshot_notification_settings.png[A screenshot of the available settings for the Notification Center.]
-//
-// . Choose from the following options:
-//
-// * Show notifications for the current account or for all accounts.
-// * Show notifications for just your user login, or for all users in the account.
-
 === Dismiss notifications
 
 You can remove notifications from the page if you no longer need to see them. You can dismiss all notifications at once, or you can dismiss individual notifications.
@@ -102,7 +87,7 @@ You can send specific types of notifications by email so you can be informed of 
 
 [NOTE]
 ====
-* At this time, notifications are sent by email for the following BlueXP features and services: Connector, BlueXP digital wallet, BlueXP copy and sync, BlueXP backup and recovery, BlueXP tiering, and BlueXP migration reports. Additional services will be added in future releases.
+* At this time, notifications are sent by email for the following BlueXP features and services: Connector, BlueXP digital wallet, BlueXP copy and sync, BlueXP backup and recovery, and BlueXP tiering. Additional services will be added in future releases.
 * Sending email notifications is not supported when the Connector is installed in a site without internet access.
 ====
 
