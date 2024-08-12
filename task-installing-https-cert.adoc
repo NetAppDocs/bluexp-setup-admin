@@ -13,7 +13,7 @@ summary: By default, BlueXP uses a self-signed certificate for HTTPS access to t
 :imagesdir: ./media/
 
 [.lead]
-By default, BlueXP uses a self-signed certificate for HTTPS access to the web console. If required by your business, you can install a certificate signed by a certificate authority (CA), which provides better security protection than a self-signed certificate.
+When you access the https://console.bluexp.netapp.com/[BlueXP web-based console^], BlueXP uses a self-signed certificate for HTTPS access. If required by your business, you can install a certificate signed by a certificate authority (CA), which provides better security protection than a self-signed certificate. After you install the certificate, BlueXP uses the CA-signed certificate when users access the web-based console.
 
 == Before you begin
 
