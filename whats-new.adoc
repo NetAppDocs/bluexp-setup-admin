@@ -27,19 +27,6 @@ This release includes minor improvements, bug fixes, and the requirement for new
 
 The 3.9.43 release is available for standard mode and restricted mode.
 
-==== Azure permissions update
-
-We updated the Connector policy for Azure to include the following permissions:
-
-[source,json]
-"Microsoft.Compute/virtualMachineScaleSets/write",
-"Microsoft.Compute/virtualMachineScaleSets/read",
-"Microsoft.Compute/virtualMachineScaleSets/delete"
-
-These permissions are required for an upcoming Cloud Volumes ONTAP release. The Cloud Volumes ONTAP release notes will include more details when that release is available.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
-
 === Updated CPU and RAM requirements
 
 To provide higher reliability and to improve the performance of BlueXP and the Connector, we now require additional CPU and RAM for the Connector virtual machine:
