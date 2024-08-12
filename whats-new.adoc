@@ -19,7 +19,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 //tag::whats-new[]
 
-== 8 Aug 2024
+== 8 August 2024
 
 === Connector 3.9.43
 
@@ -36,10 +36,9 @@ We updated the Connector policy for Azure to include the following permissions:
 "Microsoft.Compute/virtualMachineScaleSets/read",
 "Microsoft.Compute/virtualMachineScaleSets/delete"
 
-These permissions are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets. If you have existing Connectors and you want to use this new feature, you'll need to add these permissions to the custom roles that are associated with your Azure credentials.
+These permissions are required for an upcoming Cloud Volumes ONTAP release. The Cloud Volumes ONTAP release notes will include more details when that release is available.
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn about Cloud Volumes ONTAP support for Virtual Machine Scale Sets^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
 
 === Updated CPU and RAM requirements
 
