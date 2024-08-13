@@ -13,11 +13,11 @@ summary: BlueXP's identity and access management enables you to represent a comp
 :imagesdir: ./media/
 
 [.lead]
-BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects. You can organize your company resources according to your needs and assign resources at any level of your organization.
+BlueXP's identity and access management enables you to represent your organization's complete resource hierarchy using folders and projects. You can organize your resources according to your needs and assign resources at any level of your organization.
 
 == Add a folder or project
 
-You must create at least one project to allocate access to resources. Projects are the foundation of NetApp identity access and management. You can optionally create folders to group related projects.
+You must create at least one project to allocate access to resources. Projects are the foundation of NetApp's identity access and management. You can optionally create folders to group related projects together.
 
 .Steps
 
@@ -29,25 +29,28 @@ You must create at least one project to allocate access to resources. Projects a
 
 . Provide details about the folder or project:
 +
-* *Folder name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside underneath the organization or within a folder.
-* *Resources*: Select the resources that you want to associate with this folder or project
+* *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside underneath the organization or within a folder.
+* *Resources*: Select the resources that you want to associate with this folder or project.
 * *Access*: Specify the organization members that should have access to the folder or project and then select a role for each member. The role defines the permissions that the member has within the folder or project. 
 
 . Select *Add*.
 
 .Result
 
-BlueXP creates the folder and associates the specified resources and members.
+BlueXP creates the folder or project and associates the specified resources and members.
 
 == View the resources and members associated with a folder or project
 
-You might need to verify which resources and members are associated with a folder or project. 
+To verify that your resources are organized appropriately and accessible to the right members in your organization, you can view which resources and members are associated with a folder or project.
 
 .Steps
 
 . From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
 
-. On the *Edit* page, select *Resources* to view the associated resources or *Access* to view the members who have access to the folder or project.
+. On the *Edit* page, select the following options:
++
+* Select *Resources* to view the associated resources. In the table, the *Allocated* column identifies the resources that are allocated to the folder or project. 
+* Select *Access* to view the members who have access to the folder or project.
 
 .What's next?
 
@@ -62,6 +65,8 @@ You can modify the resources that are associated with a folder or project by ass
 . From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
 
 . On the *Edit* page, select *Resources*.
++
+In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
 
 . Select the resources that you'd like to associate or disassociate.
 +
@@ -77,7 +82,7 @@ BlueXP associates the resource with the folder or project.
 
 == Modify member access to a folder or project
 
-
+Modify member access to a folder or project to ensure that the right users have access to the resources associated with the folder or project.
 
 .Steps
 
@@ -101,7 +106,7 @@ BlueXP updates the members who have access to the folder or project.
 
 == Rename a folder or project
 
-
+If needed, you can change the name of your folders and projects.
 
 .Steps
 
@@ -115,11 +120,12 @@ BlueXP updates the name of the folder or project.
 
 == Delete a folder or project
 
-
+You can delete the folders and projects that you no longer need.
 
 .Before you begin
 
-* 
+* The folder or project must not have any associated resources.
+* A folder must not contain any subfolders or projects.
 
 .Steps
 
@@ -129,4 +135,4 @@ BlueXP updates the name of the folder or project.
 
 .Result
 
-BlueXP deletes the folder or project. That folder or project is no longer available to users.
+BlueXP deletes the folder or project. That folder or project is no longer available to organization members.
