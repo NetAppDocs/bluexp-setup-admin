@@ -25,7 +25,7 @@ You must be on any page in the BlueXP console other than the Identity and Access
 
 .Steps
 
-. At the top of BlueXP, select *Scope*.
+. At the top of BlueXP, select *Project*.
 +
 image:screenshot-iam-switch-projects.png[A screenshot of the BlueXP top banner where you can select the Scope drop-down and then select another project.]
 
