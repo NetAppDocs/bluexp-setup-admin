@@ -256,9 +256,9 @@ You should have the following:
 
 * An understanding of VM instance requirements.
 +
-** *CPU*: 4 cores or 4 vCPUs
-** *RAM*: 14 GB
-** *Machine type*: We recommend n2-standard-4.
+** *CPU*: 8 cores or 8 vCPUs
+** *RAM*: 32 GB
+** *Machine type*: We recommend n2-standard-8.
 +
 The Connector is supported in Google Cloud on a VM instance with an OS that supports Shielded VM features.
 
@@ -294,7 +294,7 @@ $ gcloud components update
 +
 [source,bash]
 gcloud compute instances create <instance-name>
-  --machine-type=n2-standard-4
+  --machine-type=n2-standard-8
   --image-project=netapp-cloudmanager
   --image-family=cloudmanager
   --scopes=cloud-platform

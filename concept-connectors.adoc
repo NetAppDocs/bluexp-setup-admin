@@ -49,6 +49,8 @@ While a Connector isn't required for direct discovery of an on-premises ONTAP cl
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Learn more about discovery and management options for on-prem ONTAP clusters^]
 
+* Software updates
+
 * Sustainability
 
 == When a Connector is required
@@ -64,10 +66,7 @@ When you use BlueXP in standard mode, a Connector is required for the following 
 * Disaster recovery
 * E-Series systems
 * Economic efficiency ^1^
-* Edge caching
 * Google Cloud Storage buckets
-* Kubernetes clusters
-* Migration reports
 * On-premises ONTAP cluster integration with BlueXP data services
 * Operational resiliency ^1^
 * Ransomware protection
@@ -136,7 +135,7 @@ To learn how to set up permissions, refer to the following:
 ** link:concept-install-options-google.html[Connector installation options in Google Cloud]
 ** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up cloud permissions for on-prem deployments]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions[Set up permissions for private mode]
 
 To view the exact permissions that the Connector needs for day-to-day operations, refer to the following pages:
 

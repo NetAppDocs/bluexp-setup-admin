@@ -60,7 +60,10 @@ Ubuntu 22.04 LTS
 .Private mode
 --
 Manual installation::
-Ubuntu 22.04 LTS
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux 
+** 8.6 to 8.10
+** 9.1 to 9.3
 --
 
 ====
@@ -75,11 +78,15 @@ Limitations::
 
 Container orchestration tool::
 Podman is required as the container orchestration tool when you install the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
-+
-link:task-install-connector-on-prem.html#step-1-review-host-requirements[View requirements for Podman].
 
 Deployment mode::
-RHEL 8 and 9 are supported when using BlueXP in standard mode or restricted mode.
+RHEL 8 and 9 are supported when using BlueXP in standard mode, restricted mode, and private mode.
+
+Supported Connector versions::
+RHEL 8 and 9 are supported starting with the following versions of the Connector:
++
+* 3.9.40 when using BlueXP in standard mode or restricted mode
+* 3.9.42 when using BlueXP in private mode
 
 New manual installations only::
 RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
@@ -114,11 +121,30 @@ Docker Engine is required for this operating system. Podman is not supported.
 
 Refer to the following pages for details about host requirements, Podman requirements, and steps to install Podman and the Connector:
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html[Manually install the Connector in AWS] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html[Manually install the Connector in Azure] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud] (standard mode)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Standard mode
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html[Manually install the Connector in AWS]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html[Manually install the Connector in Azure]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html[Manually install the Connector in Google Cloud]
+--
+
+.Restricted mode
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html[Prepare for deployment in restricted mode]
+--
+
+.Private mode
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html[Prepare for deployment in private mode]
+--
+
+====
 
 === How to rediscover your working environments
 

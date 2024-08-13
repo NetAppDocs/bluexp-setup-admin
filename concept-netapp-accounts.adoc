@@ -51,7 +51,7 @@ A working environment represents a storage system. For example:
 
 * A Cloud Volumes ONTAP system
 * An on-premises ONTAP cluster
-* A Kubernetes cluster
+* A StorageGRID system
 
 link:task-setting-up-netapp-accounts.html[Learn how to add a workspace].
 
