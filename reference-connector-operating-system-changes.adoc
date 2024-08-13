@@ -82,6 +82,12 @@ Podman is required as the container orchestration tool when you install the Conn
 Deployment mode::
 RHEL 8 and 9 are supported when using BlueXP in standard mode, restricted mode, and private mode.
 
+Supported Connector versions::
+RHEL 8 and 9 are supported starting with the following versions of the Connector:
++
+* 3.9.40 when using BlueXP in standard mode or restricted mode
+* 3.9.42 when using BlueXP in private mode
+
 New manual installations only::
 RHEL 8 and 9 are supported with _new_ Connector installations when manually installing the Connector on hosts running on your premises or in the cloud.
 
