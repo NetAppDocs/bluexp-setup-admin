@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-iam-get-started.html
-keywords: 
-summary: 
+keywords: iam, quick start, get started, get started with iam
+summary: "To get started with IAM, customize the organization’s hierarchy, add additional members, add or discover resources, and associate those resources with projects."
 ---
 
 = Get started with IAM
@@ -13,3 +13,42 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+When you sign up to BlueXP and create a new organization, it includes one member (you) and one default project. To set up your organization's resource hierarchy to meet your business needs, you'll need to customize the hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy. You'll complete all of these actions from BlueXP's Identity and Access Management (IAM) system.
+
+The steps to get started with IAM includes the following. The order in which you complete these steps depends on your organization's needs.
+
+* Edit the default project or add to your organization's hierarchy
++
+You can simply use the default project or create additional projects and folders that match the needs of your business.
++
+link:task-iam-manage-folders-projects.html[Learn how to organize your resources with folders and projects]
+
+* Add members
++
+If multiple people in your business need to access and manage resources from BlueXP, you'll need to add them to your organization and provide them with the appropriate permissions across your resource hierarchy. 
++
+link:task-iam-manage-members-permissions.html[Learn how to manage members and their permissions]
+
+* Add or discover resources
++
+From the BlueXP canvas or from the IAM Resources page, you can add or discover storage resources as _working environments_. A working environment represents a storage system. For example, a Cloud Volumes ONTAP system or an on-premises ONTAP cluster.
++
+After you add or discover your resources, they are available to associate with any folder or project in the organization.
++
+link:task-iam-manage-resources.html#discover-resources[Learn how to discover existing resources directly from IAM]
++
+Learn how to create working environments or discover existing resources from the BlueXP canvas:
++
+** https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html[Amazon FSx for NetApp ONTAP^]
+** https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html[Azure NetApp Files^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html[Cloud Volumes ONTAP^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html[Cloud Volumes Service for Google Cloud^]
+** https://docs.netapp.com/us-en/bluexp-e-series/index.html[E-Series systems^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html[On-premises ONTAP clusters^]
+** https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[StorageGRID^]
+
+* Associate resources with specific folders and projects
++
+When you add or discover a resource, that resource is automatically associated with the project that was selected when you added or discovered the resource. If you want to make that resource available to another folder or project in your organization, then you'll need to create an association between the folder or project and the resource.
++
+link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy]

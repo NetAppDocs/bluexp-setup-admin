@@ -45,14 +45,6 @@ Correct. Accounts stay the same, except that they are now called projects. Your 
 
 The workspaces in your accounts (again, now called projects) also remain the same.
 
-== Will there be any downtime?	
-
-No downtime is expected during the migration.
-
-== When will this happen?
-
-We can't provide a specific time frame, but we can say that the migration will start in January 2023 and continue gradually over the first half of the year.
-
 == How can I tell if the migration was successful?
 
 We will validate that your migration was successful by making sure that all Connectors and devices are working properly. After a successful migration, you will immediately see the new organization model in the user interface.
@@ -60,10 +52,6 @@ We will validate that your migration was successful by making sure that all Conn
 == What if there's an issue during the migration?
 
 If there are any issues, we can immediately revert all of your accounts back to their previous configuration.
-
-== Are the same user roles still available?
-
-Several new predefined roles are available. link:reference-roles.html[Learn about predefined roles].
 
 == Were user roles changed during the migration?
 

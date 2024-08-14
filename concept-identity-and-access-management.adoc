@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Learn about BlueXP Identity and Access Management
+= Learn about BlueXP identity and access management
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,3 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+An _organization_ is the top level of your hierarchy. It consists of resources, members, projects, and folders. Members and resources must be added at the organization level before they are available to a project or folder.
