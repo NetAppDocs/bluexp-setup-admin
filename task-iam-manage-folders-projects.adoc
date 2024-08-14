@@ -13,11 +13,11 @@ summary: BlueXP's identity and access management enables you to represent a comp
 :imagesdir: ./media/
 
 [.lead]
-BlueXP's identity and access management enables you to represent your organization's complete resource hierarchy using folders and projects. You can organize your resources according to your needs and assign resources at any level of your organization.
+BlueXP's identity and access management enables you to represent your organization's complete resource hierarchy using folders and projects. A _project_ represents a workspace in BlueXP that organization members access to manage _resources_ (for example, a Cloud Volumes ONTAP system or on-premises ONTAP cluster). A _folder_ groups related projects together. After you organize your resources into folders and projects, you can grant granular access to resources by providing organization members with permissions to specific folders and projects.
 
 == Add a folder or project
 
-You must create at least one project to allocate access to resources. Projects are the foundation of NetApp's identity access and management. You can optionally create folders to group related projects together.
+You must create at least one project that members can access to manage your organization's resources. You can optionally create folders to group related projects together.
 
 .Steps
 
@@ -29,9 +29,9 @@ You must create at least one project to allocate access to resources. Projects a
 
 . Provide details about the folder or project:
 +
-* *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside underneath the organization or within a folder.
-* *Resources*: Select the resources that you want to associate with this folder or project.
-* *Access*: Specify the organization members that should have access to the folder or project and then select a role for each member. The role defines the permissions that the member has within the folder or project. 
+* *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside directly underneath the organization or within a folder.
+* *Resources*: Select the resources that you want to associate with this folder or project. 
+* *Access*: Specify the organization members who should have access to the folder or project and then select a role for each member. A role defines the permissions that members have for the folder or project. 
 
 . Select *Add*.
 
@@ -46,19 +46,24 @@ To verify that your resources are organized appropriately and accessible to the 
 .Steps
 
 . From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
++
+image:screenshot-iam-edit-project.png[A screenshot of the Organization page that shows the Edit project option when selecting the action menu for a project in the table.]
 
 . On the *Edit* page, select the following options:
 +
-* Select *Resources* to view the associated resources. In the table, the *Allocated* column identifies the resources that are allocated to the folder or project. 
+* Select *Resources* to view the associated resources. In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
++
+image:screenshot-iam-allocated-resources.png[A screenshot of the Edit project page that shows the available resources that you can associate or disassociate with the project.]
 * Select *Access* to view the members who have access to the folder or project.
 
 .What's next?
 
-If needed, you can change the associated resources or modify member access.
+If needed, you can <<modify-resources,modify the associated resources>> or <<modify-members,modify member access>>.
 
+[#modify-resources]
 == Modify the resources associated with a folder or project
 
-You can modify the resources that are associated with a folder or project by associating or disassociating a resource.
+You can modify the resources that are associated with a folder or project by associating or disassociating a resource. For example, you might want to associate a resource with another project since that resource has capacity that another team can utilize.
 
 .Steps
 
@@ -69,10 +74,10 @@ You can modify the resources that are associated with a folder or project by ass
 In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
 
 . Select the resources that you'd like to associate or disassociate.
-+
-After you select one or more resources, the actions to *Associate resources* or *Disassociate resources* are available.
 
 . Depending on the resources that you selected, select either *Associate resources* or *Disassociate resources*.
++
+image:screenshot-iam-associate-resources.png[A screenshot of the Edit project page that shows the Associate resources option that is available after you select resources that aren't currently associated.]
 
 . Select *Apply*
 
@@ -80,6 +85,7 @@ After you select one or more resources, the actions to *Associate resources* or 
 
 BlueXP associates the resource with the folder or project.
 
+[#modify-members]
 == Modify member access to a folder or project
 
 Modify member access to a folder or project to ensure that the right users have access to the resources associated with the folder or project.
@@ -124,8 +130,8 @@ You can delete the folders and projects that you no longer need.
 
 .Before you begin
 
-* The folder or project must not have any associated resources.
-* A folder must not contain any subfolders or projects.
+* The folder or project must not have any associated resources. <<modify-resources,Learn how to disassociate resources>>.
+* A folder must not contain any subfolders or projects. You need to delete those folders and projects first.
 
 .Steps
 
