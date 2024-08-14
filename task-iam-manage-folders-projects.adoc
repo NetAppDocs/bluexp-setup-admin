@@ -39,6 +39,7 @@ You must create at least one project that members can access to manage your orga
 
 BlueXP creates the folder or project and associates the specified resources and members.
 
+[#view-associated-resources-members]
 == View the resources and members associated with a folder or project
 
 To verify that your resources are organized appropriately and accessible to the right members in your organization, you can view which resources and members are associated with a folder or project.

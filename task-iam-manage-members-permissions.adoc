@@ -13,7 +13,7 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-Manage your organization's members to provide permissions across the levels of your organization's resource hierarchy. You can associate new users and service accounts, manage member roles, and more.
+Associate members with your organization and provide them permissions to the resources in the entire organization or to specific folders and projects. You can associate new human users and service accounts, manage member roles, and more.
 
 == Associate new members with your organization
 
