@@ -13,7 +13,7 @@ summary: BlueXP's identity and access management enables you to represent a comp
 :imagesdir: ./media/
 
 [.lead]
-BlueXP's identity and access management enables you to represent your organization's complete resource hierarchy using folders and projects. A _project_ represents a workspace in BlueXP that organization members access to manage _resources_ (for example, a Cloud Volumes ONTAP system or on-premises ONTAP cluster). A _folder_ groups related projects together. After you organize your resources into folders and projects, you can grant granular access to resources by providing organization members with permissions to specific folders and projects.
+BlueXP's identity and access management enables you to represent your organization's complete resource hierarchy using folders and projects. A _project_ represents a workspace in BlueXP that organization members access to manage _resources_ (for example, a Cloud Volumes ONTAP system). A _folder_ groups related projects together. After you organize your resources into folders and projects, you can grant granular access to resources by providing organization members with permissions to specific folders and projects.
 
 == Add a folder or project
 
@@ -49,7 +49,7 @@ To verify that your resources are organized appropriately and accessible to the 
 +
 image:screenshot-iam-edit-project.png[A screenshot of the Organization page that shows the Edit project option when selecting the action menu for a project in the table.]
 
-. On the *Edit* page, select the following options:
+. On the *Edit* page, view details about resources and member access:
 +
 * Select *Resources* to view the associated resources. In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
 +
@@ -63,7 +63,7 @@ If needed, you can <<modify-resources,modify the associated resources>> or <<mod
 [#modify-resources]
 == Modify the resources associated with a folder or project
 
-You can modify the resources that are associated with a folder or project by associating or disassociating a resource. For example, you might want to associate a resource with another project since that resource has capacity that another team can utilize.
+You can modify the resources that are associated with a folder or project by associating or disassociating a resource. For example, you might want to associate a resource with another project because that resource has capacity that another team can utilize.
 
 .Steps
 

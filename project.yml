@@ -113,14 +113,14 @@ sidebar:
               url: /task-iam-manage-folders-projects.html
             - title: Manage members and their permissions
               url: /task-iam-manage-members-permissions.html
-            - title: Predefined roles
-              url: /reference-predefined-roles.html
             - title: Manage your resource hierarchy
               url: /task-iam-manage-resources.html
             - title: Switch between organizations and projects
               url: /task-iam-switch-organizations-projects.html
             - title: Rename your organization
               url: /task-iam-rename-organization.html
+            - title: Predefined roles
+              url: /reference-predefined-roles.html
         - title: Identity federation
           url: /concept-federation.html
         - title: BlueXP accounts
