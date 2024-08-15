@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: reference-predefined-roles.html
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, snapcenter system, role, iam role, admin
+summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
+---
+
+= Predefined IAM roles
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization. Before you assign these roles, you should understand the permissions that each role includes.
+
+== Organization admin
+
+This role provides full control of the entire BlueXP organization. 
+
+A member who has this role can complete the following actions:
+
+* Manage all working environments
+* Manage credentials
+* View the BlueXP timeline
+* Manage IAM
+* Create Connectors
+* Register BlueXP for support and submit cases
+* Manage alert and notification settings
+* Install a CA-signed certificate for web-console access
+
+== Folder or project admin
+
+This role provides full control of one or more projects and folders.
+
+A member who has this role can complete the following actions:
+
+* Manage all working environments in the projects and folders that the member has permissions for.
+* Manage credentials
+* View the BlueXP timeline
+* Manage IAM?
+* Create Connectors?
+* Register BlueXP for support and submit cases?
+
+== Classification viewer
+
+This role provides the ability view BlueXP classification scan results without having the ability to manage BlueXP classification settings.
+
+No other actions are available to a member who has this role.
+
+== SnapCenter admin
+
+This role provides the ability to back up application-consistent Snapshots from on-premises ONTAP systems using BlueXP backup and recovery for applications.
+
+No other actions are available to a member who has this role.
+
+== SnapCenter system
+
+?

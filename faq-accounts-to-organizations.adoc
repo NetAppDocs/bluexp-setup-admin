@@ -13,54 +13,31 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-In the first half of 2023, we will migrate your existing BlueXP accounts into an organization. There's nothing that you need to do, but you might want to better understand how this change affects you. This FAQ attempts to answers the questions that you might have.
-
-== Can you explain what's happening?
-
-BlueXP is introducing a new resource and access management model that will provide more control over permissions and user roles. As a part of this change, we're introducing a new resource hierarchy model. The top-level element in the hierarchy model is now an _organization_. Previously, the top-level entry was an account. Your existing accounts will be migrated to the new resource hierarchy model.
-
-== What benefits does this change provide?
+BlueXP is introducing a new resource and access management model that provides more granular management of resources and permissions. As a part of this change, we're introducing a new resource hierarchy model. The top-level element in the hierarchy model is now an _organization_. Previously, the top-level entry was an account. Your existing accounts will be migrated to the new resource hierarchy model.
 
 These enhancements provide better control over the actions that users can perform and the resources that they can access. 
 
 * A top-level organization enables you to manage access across your various projects
-* You can now assign multiple roles to users and service accounts
-* For users, the roles that you assign can be scoped to the entire organization, to an entire project, or to specific workspaces within a project
+* For users, the roles that you assign can be scoped to the entire organization or to a specific folder or project
+
+	- New terms
+		Account   ---> Organization
+		Workspace ---> Project
+
+    - More granular permissions management
+		- You can now associate a user with multiple roles, with each role scoped a folder or project
+
+	- More granular resource management
+		- You can now use folders to group projects (previously workspaces)
+		- You can associate a resource to one or more folders or projects
+
+There's no change to your existing users or working environments. When you log in, you'll notice these changes:
+
+* Your account is now called an organization
+* Your workspaces are now called projects
+* The names of user roles have changed:
+** is now 
+** is now
+** is now
 +
-Meanwhile, service accounts are associated with specific projects and can be scoped to specific workspaces in a project. 
-
-We plan to introduce additional enhancements in subsequent releases.
-
-== What happens during the migration?
-
-Migrating from the existing resource hierarchy model to the new model basically means that we're adding an organization entity on top of your current accounts. However, accounts are now called _projects_.
-
-If you have multiple accounts that use the same Marketplace subscriptions, you will see these accounts as multiple projects under a new organization. All of your subscriptions will be part of the new organization and associated with each of your projects.
-
-== So there's no change to my existing accounts?
-
-Correct. Accounts stay the same, except that they are now called projects. Your projects will contain workspaces and all of your working environments. 
-
-== What about my workspaces?
-
-The workspaces in your accounts (again, now called projects) also remain the same.
-
-== How can I tell if the migration was successful?
-
-We will validate that your migration was successful by making sure that all Connectors and devices are working properly. After a successful migration, you will immediately see the new organization model in the user interface.
-
-== What if there's an issue during the migration?
-
-If there are any issues, we can immediately revert all of your accounts back to their previous configuration.
-
-== Were user roles changed during the migration?
-
-The names of the user roles have changed, but there are no differences from a permissions perspective.
-
-== Will users have access to resources that they didn't have access to before?
-
-No, users will not have access to any resources that they couldn't access prior to the migration. As noted in the previous question, user permissions have not changed.
-
-== Can I create my own roles?
-
-Custom roles are not supported at this time.
+While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same resources as before.

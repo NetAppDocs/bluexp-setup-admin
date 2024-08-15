@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept-identity-and-access-management.html
-keywords: 
-summary: 
+keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy
+summary: "BlueXP's identity and access management (IAM) system enables you to control access to your resources."
 ---
 
 = Learn about BlueXP identity and access management
@@ -13,4 +13,84 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-An _organization_ is the top level of your hierarchy. It consists of resources, members, projects, and folders. Members and resources must be added at the organization level before they are available to a project or folder.
+BlueXP's identity and access management (IAM) system enables you to control access to your resources. With IAM, you can organize your resources according to your organization's hierarchy. For example, you can organize resources by site or department. You can then assign members with permissions to access specific resources in the hierarchy and prevent access to other resources.
+
+Identity and access management is supported when operating BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage users and resources. link:concept-netapp-accounts.html[Learn about BlueXP accounts].
+
+== How IAM works
+
+BlueXP IAM enables you to provide access by defining which members have permissions to specific resources in your organization's hierarchy. For example, a human user can have project admin permissions for a project that has five associated resources.
+
+When using BlueXP IAM, you'll manage the following components:
+
+* Your organization
+* Folders
+* Projects
+* Resources
+* Members
+* Roles and permissions
+
+Organization::
+When you sign up to BlueXP, you're prompted to create a new organization. An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your consists of projects, folders, members, and resources.
+
+Folders::
+A _folder_ enables you to group related projects together and further divide your organization. For example, a folder might represent a department or a site. 
++
+Folders can contain projects, other folders, or a combination of both.
++
+You don't need to create folders. They are optional.
+
+Projects::
+A _project_ represents a workspace in BlueXP that organization members access in order to manage resources. For example, a project can include a Cloud Volumes ONTAP system, an on-premises ONTAP cluster, or an FSx for ONTAP file system.
+
+Resources::
+A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
++
+You can associate a resource with any level: the entire organization, one or more folders, or one or more projects.
+
+Members::
+Members of your organization are human users or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
++
+An organization has at least one administrator (the user who creates the organization is automatically assigned the administrator role). Other users can be part of the same organization and have different permissions on different levels of the resource hierarchy.
+
+Roles and permissions::
+In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions on resources.
++
+When you associate a member with a role, you need to select the organization, a folder, or a project. The role that you select gives a member permissions to the resources in the organization, folder, or project.
++
+BlueXP supports several predefined roles that you can assign to the members of your organization. link:reference-predefined-roles.html[Learn about IAM predefined roles].
++
+Custom roles are not supported at this time.
+
+== What you can do with IAM
+
+The following examples describe how you might use IAM to manage your BlueXP organization:
+
+* Grant specific roles to specific users so that they can only complete the required tasks.
+* Modify member permissions because they moved departments or because they need additional permissions.
+* Remove a user who left the company.
+* Add folders or projects to your hierarchy since a new business unit has added NetApp storage.
+* Move resources from one project to another, since that resource has capacity and another team can utilize it.
+* Create a service account to complete specified tasks without human intervention.
+* View the resources that a member can access.
+* View the members and resources associated with a specific folder.
+
+== Resource hierarchy
+
+BlueXP resources are organized hierarchically:
+
+* The organization is the top of the hierarchy.
+* Folders are children of the organization, or of another folder.
+* Projects are children of the organization, or of a folder.
+* Resources are associated with folders and projects.
+
+<image>
+
+== Examples
+
+<example 1>
+
+<example 2>
+
+== Related information
+
