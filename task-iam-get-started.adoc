@@ -13,7 +13,7 @@ summary: "To get started with IAM, customize the organization's hierarchy, add a
 :imagesdir: ./media/
 
 [.lead]
-When you sign up to BlueXP and create a new organization, it includes one member (you) and one default project. To set up your organization's identity and access management to meet your business needs, you'll need to customize the organization's hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy. You'll complete all of these actions from BlueXP's Identity and Access Management (IAM) system.
+When you sign up to BlueXP and create a new organization, it includes one member (an Organization admin) and one default project. To set up your organization's identity and access management to meet your business needs, you'll need to customize the organization's hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy. You'll complete all of these actions from BlueXP's Identity and Access Management (IAM) system.
 
 The steps to get started with IAM include the following. The order in which you complete these steps might be different, depending on your organization's needs.
 
@@ -36,7 +36,7 @@ link:task-iam-manage-members-permissions.html[Learn how to manage members and th
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Add or discover resources
 
 [role="quick-margin-para"]
-From the *IAM Resources* page or from the *BlueXP canvas*, you can add or discover storage resources as _working environments_. A working environment represents a storage system that members manage. For example, a Cloud Volumes ONTAP system or an on-premises ONTAP cluster.
+Add or discover resources as _working environments_. A working environment represents a storage system that organization members manage from within a project. For example, a Cloud Volumes ONTAP system or an on-premises ONTAP cluster.
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html#discover-resources[Learn how to discover existing resources directly from IAM]
@@ -50,7 +50,7 @@ From the *IAM Resources* page or from the *BlueXP canvas*, you can add or discov
 ** https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html[On-premises ONTAP clusters^]
 ** https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[StorageGRID^]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with specific folders and projects
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with additional folders and projects
 
 [role="quick-margin-para"]
 When you add or discover a resource in BlueXP, that resource is automatically associated with the project that was selected when you added or discovered the resource. If you want to make that resource available to another folder or project in your organization, then you'll need to create an association between them.
