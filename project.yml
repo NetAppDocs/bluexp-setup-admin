@@ -1,5 +1,5 @@
 settings:
-  name: Setup and administration
+  name: BlueXP setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
@@ -9,7 +9,7 @@ settings:
   rss_page: "whats-new.html"
 sidebar:
   entries:
-    - title: Setup and administration docs
+    - title: BlueXP setup and administration docs
       url: /index.html
     - title: Release notes
       entries:
