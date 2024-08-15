@@ -117,7 +117,7 @@ sidebar:
           entries:
             - title: Maintain the VM and OS
               url: /task-maintain-connectors.html
-            - title: Install an HTTPS certificate for secure access
+            - title: Install a CA-signed certificate for web-console access
               url: /task-installing-https-cert.html
             - title: Configure a Connector to use a proxy server
               url: /task-configuring-proxy.html
