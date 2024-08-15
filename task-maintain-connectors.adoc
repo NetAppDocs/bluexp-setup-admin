@@ -70,9 +70,13 @@ If it's required for your business, you can change the internal IP address and p
 +
 You'll need to update the backup location for each Cloud Volumes ONTAP system.
 
-.. Run the following command from the Cloud Volumes ONTAP CLI to display the current backup target:
+.. From the Cloud Volumes ONTAP CLI, set the privilege level to advanced:
 [source,cli]
-system configuration backup show
+set -privilege advanced
+
+.. Run the following command to display the current backup target:
+[source,cli]
+system configuration backup settings show
 
 .. Run the following command to update the IP address for the backup target:
 [source,cli]
