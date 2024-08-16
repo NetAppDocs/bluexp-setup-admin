@@ -15,7 +15,7 @@ summary: "To get started with IAM, customize the organization's hierarchy, add a
 [.lead]
 When you sign up to BlueXP and create a new organization, it includes one member (an Organization admin) and one default project. To set up BlueXP identity and access management (IAM) to meet your business needs, you'll need to customize your organization's hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy. You'll complete all of these actions from BlueXP IAM.
 
-You must have *Organization admin* permissions to manage the entire organization. If you have *Folder or project admin* permissions, you can only manage the folders and projects for which you have permissions.
+You must have *Organization admin* permissions to administer the entire organization from BlueXP IAM. If you have *Folder or project admin* permissions, you can only administer the folders and projects for which you have permissions.
 
 The steps to get started with IAM include the following. The order in which you complete these steps might be different, depending on your organization's needs.
 

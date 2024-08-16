@@ -103,9 +103,9 @@ sidebar:
       entries:
         - title: Identity and access management
           entries:
-            - title: Learn about IAM
+            - title: Learn about BlueXP IAM
               url: /concept-identity-and-access-management.html
-            - title: Get started
+            - title: Get started with BlueXP IAM
               url: /task-iam-get-started.html
             - title: Organize your resources with folders and projects
               url: /task-iam-manage-folders-projects.html
