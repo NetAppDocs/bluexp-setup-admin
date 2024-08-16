@@ -37,9 +37,9 @@ When you sign up to BlueXP, you're prompted to create a new organization. An _or
 === Folders
 
 A _folder_ enables you to group related projects together and further divide your organization. For example, a folder might represent a department or a site. 
-+
+
 Folders can contain projects, other folders, or a combination of both.
-+
+
 You don't need to create folders. They are optional.
 
 === Projects
@@ -49,23 +49,23 @@ A _project_ represents a workspace in BlueXP that organization members access in
 === Resources
 
 A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
-+
+
 You can associate a resource with any level: the entire organization, one or more folders, or one or more projects.
 
 === Members
 
 Members of your organization are human users or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
-+
+
 An organization has at least one administrator (the user who creates the organization is automatically assigned the administrator role). Other users can be part of the same organization and have different permissions on different levels of the resource hierarchy.
 
 === Roles and permissions
 
 In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions on resources.
-+
+
 When you associate a member with a role, you need to select the entire organization, a specific folder, or a specific project. The role that you select gives a member permissions to the resources in the selected part of the resource hierarchy.
-+
+
 Each organization member can have a role assigned at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and project 2. Or you can assign a member role A for project 1 and role B for project 2.
-+
+
 BlueXP supports several predefined roles that you can assign to the members of your organization. Custom roles are not supported at this time.link:reference-predefined-roles.html[Learn about IAM predefined roles].
 
 == What you can do with IAM

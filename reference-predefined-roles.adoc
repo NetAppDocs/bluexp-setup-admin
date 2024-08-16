@@ -26,7 +26,7 @@ A member who has this role can complete the following actions:
 * Manage all working environments
 * Manage credentials
 * View the BlueXP timeline
-* Manage IAM
+* Administer IAM
 * Create Connectors
 * Register BlueXP for support and submit cases
 * Manage alert and notification settings
@@ -40,10 +40,10 @@ Provides full control of one or more projects and folders.
 Permissions::
 A member who has this role can complete the following actions:
 
-* Manage all working environments in the projects and folders that the member has permissions for.
+* Manage all working environments in the projects and folders for which you have permissions
 * Manage credentials
 * View the BlueXP timeline
-* Manage IAM?
+* Administer IAM by managing the folders and projects for which you have permissions
 * Create Connectors?
 * Register BlueXP for support and submit cases?
 
