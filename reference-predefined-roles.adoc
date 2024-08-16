@@ -5,7 +5,7 @@ keywords: predefined roles, iam roles, organization admin, folder or project adm
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
 
-= Predefined IAM roles
+= Predefined BlueXP IAM roles
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,8 +17,10 @@ BlueXP identity and access management includes several predefined roles that you
 
 == Organization admin
 
-This role provides full control of the entire BlueXP organization. 
+Description::
+Provides full control of the entire BlueXP organization. 
 
+Permissions::
 A member who has this role can complete the following actions:
 
 * Manage all working environments
@@ -32,8 +34,10 @@ A member who has this role can complete the following actions:
 
 == Folder or project admin
 
-This role provides full control of one or more projects and folders.
+Description::
+Provides full control of one or more projects and folders.
 
+Permissions::
 A member who has this role can complete the following actions:
 
 * Manage all working environments in the projects and folders that the member has permissions for.
@@ -45,16 +49,28 @@ A member who has this role can complete the following actions:
 
 == Classification viewer
 
-This role provides the ability view BlueXP classification scan results without having the ability to manage BlueXP classification settings.
+Description::
+Provides the ability view BlueXP classification scan results without permission to manage BlueXP classification settings.
 
+Permissions::
+View BlueXP classification scan results.
++
 No other actions are available to a member who has this role.
 
 == SnapCenter admin
 
-This role provides the ability to back up application-consistent Snapshots from on-premises ONTAP systems using BlueXP backup and recovery for applications.
+Description::
+Provides the ability to back up snapshots from on-premises ONTAP clusters.
 
+Permissions::
+Back up application-consistent Snapshots from on-premises ONTAP systems using BlueXP backup and recovery for applications.
++
 No other actions are available to a member who has this role.
 
 == SnapCenter system
 
+Description::
+?
+
+Permissions::
 ?

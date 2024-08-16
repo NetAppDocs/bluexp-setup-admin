@@ -30,30 +30,36 @@ When using BlueXP IAM, you'll manage the following components:
 * Members
 * Roles and permissions
 
-Organization::
+=== Organization
+
 When you sign up to BlueXP, you're prompted to create a new organization. An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of projects, folders, members, and resources.
 
-Folders::
+=== Folders
+
 A _folder_ enables you to group related projects together and further divide your organization. For example, a folder might represent a department or a site. 
 +
 Folders can contain projects, other folders, or a combination of both.
 +
 You don't need to create folders. They are optional.
 
-Projects::
+=== Projects
+
 A _project_ represents a workspace in BlueXP that organization members access in order to manage resources. For example, a project can include a Cloud Volumes ONTAP system, an on-premises ONTAP cluster, or an FSx for ONTAP file system.
 
-Resources::
+=== Resources
+
 A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
 +
 You can associate a resource with any level: the entire organization, one or more folders, or one or more projects.
 
-Members::
+=== Members
+
 Members of your organization are human users or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 +
 An organization has at least one administrator (the user who creates the organization is automatically assigned the administrator role). Other users can be part of the same organization and have different permissions on different levels of the resource hierarchy.
 
-Roles and permissions::
+=== Roles and permissions
+
 In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions on resources.
 +
 When you associate a member with a role, you need to select the entire organization, a specific folder, or a specific project. The role that you select gives a member permissions to the resources in the selected part of the resource hierarchy.

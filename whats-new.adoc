@@ -19,6 +19,31 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 //tag::whats-new[]
 
+== 4 September 2024
+
+=== BlueXP identity and access management 
+
+BlueXP identity and access management (IAM) is a new resource and access management model that provides more granular management of resources and permissions:
+
+* A top-level _organization_ enables you to manage access across your various _projects_ (previously workspaces)
+* Folders enable you to group related projects and divide your organization
+* Enhanced resource management enables you to associate a resource with one or more folders or projects
+* Each organization member can have a role assigned at different levels of the organization hierarchy
+
+These enhancements provide better control over the actions that users can perform and the resources that they can access.
+
+There's no change to your existing users or working environments. When you log in, you'll notice these changes:
+
+* Your account is now called an organization
+* Your workspaces are now called projects
+* The names of user roles have changed
++
+While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same resources as before.
+
+BlueXP IAM is supported is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage users and resources.
+
+link:concept-identity-and-access-management.html[Learn more about BlueXP IAM].
+
 == 8 August 2024
 
 === Connector 3.9.43

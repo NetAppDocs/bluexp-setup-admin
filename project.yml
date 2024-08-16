@@ -105,8 +105,6 @@ sidebar:
           entries:
             - title: Learn about IAM
               url: /concept-identity-and-access-management.html
-            - title: Moving from accounts to IAM
-              url: /faq-accounts-to-organizations.html
             - title: Get started
               url: /task-iam-get-started.html
             - title: Organize your resources with folders and projects
