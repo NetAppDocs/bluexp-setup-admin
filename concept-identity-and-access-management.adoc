@@ -92,7 +92,7 @@ BlueXP resources are organized hierarchically:
 
 The following image illustrates this hierarchy.
 
-<image>
+image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the resource hierarchy for BlueXP IAM: an organization, folders, projects, and resources."]
 
 == Examples
 
