@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-iam-rename-organization.html
 keywords: rename organization, change organization name, name change, rename, change name
-summary: If needed, you can change the name of your organization.
+summary: If needed, you can change the name of your BlueXP organization.
 ---
 
-= Rename your organization
+= Rename your BlueXP organization
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: If needed, you can change the name of your organization.
 :imagesdir: ./media/
 
 [.lead]
-If needed, you can change the name of your organization.
+If needed, you can change the name of your BlueXP organization. The organization name appears at the top of the BlueXP web-based console.
 
 .Steps
 

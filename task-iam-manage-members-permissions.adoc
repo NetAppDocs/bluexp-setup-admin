@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, projec
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Manage members and their permissions
+= Manage BlueXP members and their permissions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -169,7 +169,7 @@ If needed, link:task-iam-manage-folders-projects.html#modify-members[modify memb
 [#manage-permissions]
 == Manage a member's permissions
 
-A role defines the permissions assigned to a member at the organization, folder, or project level. Each organization member can have multiple roles assigned at different levels of the organization hierarchy. For example, you can assign a member role A for project 1 and role B for project 2.
+A role defines the permissions assigned to a member at the organization, folder, or project level. Each organization member can have a role assigned at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and role B for project 2.
 
 TIP: A member who is assigned the Organization admin role can't be assigned any additional roles. They already have permissions across the entire organization.
 

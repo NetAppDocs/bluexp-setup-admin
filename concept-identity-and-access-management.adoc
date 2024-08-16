@@ -13,9 +13,9 @@ summary: "BlueXP's identity and access management (IAM) system enables you to co
 :imagesdir: ./media/
 
 [.lead]
-BlueXP's identity and access management (IAM) system enables you to control access to your resources. With IAM, you can organize your resources according to your organization's hierarchy. For example, you can organize resources by site or department. You can then assign members with permissions to access specific resources in the hierarchy and prevent access to other resources.
+BlueXP identity and access management (IAM) enables you to control access to your resources. With IAM, you can organize your resources according to your organization's hierarchy. For example, you can organize resources by site or department. You can then assign members permissions to access specific resources in the hierarchy and prevent access to other resources.
 
-Identity and access management is supported when operating BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage users and resources. link:concept-netapp-accounts.html[Learn about BlueXP accounts].
+Identity and access management is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage users and resources. link:concept-netapp-accounts.html[Learn about BlueXP accounts].
 
 == How IAM works
 
@@ -31,7 +31,7 @@ When using BlueXP IAM, you'll manage the following components:
 * Roles and permissions
 
 Organization::
-When you sign up to BlueXP, you're prompted to create a new organization. An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your consists of projects, folders, members, and resources.
+When you sign up to BlueXP, you're prompted to create a new organization. An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of projects, folders, members, and resources.
 
 Folders::
 A _folder_ enables you to group related projects together and further divide your organization. For example, a folder might represent a department or a site. 
@@ -56,11 +56,11 @@ An organization has at least one administrator (the user who creates the organiz
 Roles and permissions::
 In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions on resources.
 +
-When you associate a member with a role, you need to select the organization, a folder, or a project. The role that you select gives a member permissions to the resources in the organization, folder, or project.
+When you associate a member with a role, you need to select the entire organization, a specific folder, or a specific project. The role that you select gives a member permissions to the resources in the selected part of the resource hierarchy.
 +
-BlueXP supports several predefined roles that you can assign to the members of your organization. link:reference-predefined-roles.html[Learn about IAM predefined roles].
+Each organization member can have a role assigned at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and project 2. Or you can assign a member role A for project 1 and role B for project 2.
 +
-Custom roles are not supported at this time.
+BlueXP supports several predefined roles that you can assign to the members of your organization. Custom roles are not supported at this time.link:reference-predefined-roles.html[Learn about IAM predefined roles].
 
 == What you can do with IAM
 
@@ -80,9 +80,11 @@ The following examples describe how you might use IAM to manage your BlueXP orga
 BlueXP resources are organized hierarchically:
 
 * The organization is the top of the hierarchy.
-* Folders are children of the organization, or of another folder.
-* Projects are children of the organization, or of a folder.
+* Folders are children of the organization or of another folder.
+* Projects are children of the organization or of a folder.
 * Resources are associated with folders and projects.
+
+The following image illustrates this hierarchy.
 
 <image>
 

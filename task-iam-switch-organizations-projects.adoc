@@ -5,7 +5,7 @@ keywords: switch organizations, switch projects, projects, organizations, change
 summary: Switch between projects and organizations to access the resources associated with those projects and organizations.
 ---
 
-= Switch between projects and organizations
+= Switch between BlueXP projects and organizations
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: Switch between projects and organizations to access the resources assoc
 :imagesdir: ./media/
 
 [.lead]
-If you have permissions to access multiple projects within your organization, or if you are a member of multiple organizations, you can easily switch between projects and organizations to access the associated resources.
+If you have permissions to access multiple projects within your BlueXP organization, or if you are a member of multiple organizations, you can easily switch between projects and organizations to access the associated resources.
 
 == Switch between projects
 

@@ -5,7 +5,7 @@ keywords: folders, projects, resource hierarchy, create folders, create projects
 summary: BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects.
 ---
 
-= Organize your resources with folders and projects
+= Organize your resources in BlueXP with folders and projects
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: BlueXP's identity and access management enables you to represent a comp
 :imagesdir: ./media/
 
 [.lead]
-BlueXP's identity and access management enables you to represent your organization's complete resource hierarchy using folders and projects. A _project_ represents a workspace in BlueXP that organization members access to manage _resources_ (for example, a Cloud Volumes ONTAP system). A _folder_ groups related projects together. After you organize your resources into folders and projects, you can grant granular access to resources by providing organization members with permissions to specific folders and projects.
+BlueXP identity and access management (IAM) enables you to represent your organization's complete resource hierarchy using folders and projects. A _project_ represents a workspace in BlueXP that organization members access to manage _resources_ (for example, a Cloud Volumes ONTAP system). A _folder_ groups related projects together. After you organize your resources into folders and projects, you can grant granular access to resources by providing organization members with permissions to specific folders and projects.
 
 == Add a folder or project
 

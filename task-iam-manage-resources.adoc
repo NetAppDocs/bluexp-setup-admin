@@ -5,7 +5,7 @@ keywords: resource, hierarchy, association, access, resource permissions, resour
 summary: Manage the resource hierarchy of your organization by associating resources with specific projects and folders.
 ---
 
-= Manage your organization's resource hierarchy
+= Manage the resource hierarchy in your BlueXP organization
 :hardbreaks:
 :nofooter:
 :icons: font
