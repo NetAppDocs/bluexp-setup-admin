@@ -88,7 +88,7 @@ BlueXP resources are organized hierarchically:
 * The organization is the top of the hierarchy.
 * Folders are children of the organization or of another folder.
 * Projects are children of the organization or of a folder.
-* Resources are associated with folders and projects.
+* Resources are associated with one or more folders or projects.
 
 The following image illustrates this hierarchy.
 
@@ -96,9 +96,19 @@ image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the re
 
 == Examples
 
-<example 1>
+The following examples show how you might set up your organization.
 
-<example 2>
+=== Simple organization
+
+The following diagram shows a simple example where you have...
+
+image:diagram-iam-example-hierarchy-simple.png[image]
+
+=== Advanced organization
+
+The following diagram shows an advanced example where you have...
+
+image:diagram-iam-example-hierarchy-advanced.png[image]
 
 == Related information
 
