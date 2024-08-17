@@ -100,15 +100,15 @@ The following examples show how you might set up your organization.
 
 === Simple organization
 
-The following diagram shows a simple example where you have...
+The following diagram shows a simple example of an organization that uses the default project and no folders. A single member manages the entire organization.
 
-image:diagram-iam-example-hierarchy-simple.png[image]
+image:diagram-iam-example-hierarchy-simple.png["A conceptual diagram that shows an organization with a project, associated resources, and one organization admin."]
 
 === Advanced organization
 
-The following diagram shows an advanced example where you have...
+The following diagram shows an advanced example of an organization that uses folders to organize the projects for each geographic location in the business. The members include an organization admin and an admin for each folder in the organization.
 
-image:diagram-iam-example-hierarchy-advanced.png[image]
+image:diagram-iam-example-hierarchy-advanced.png["A conceptual diagram that shows an organization with three folders, each with three projects, and their associated resources. There are four members: one organization admin and three folder admins."]
 
 == Related information
 
