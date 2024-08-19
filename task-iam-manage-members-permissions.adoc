@@ -13,7 +13,7 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-Associate members with your organization and provide them permissions to the resources in the entire organization or to specific folders and projects. You can associate new human users and service accounts, manage member roles, and more.
+Associate members with your organization and provide them permissions to the resources in the entire organization or in specific folders and projects. You can associate new human users and service accounts, manage member roles, and more.
 
 == Associate new members with your organization
 
@@ -25,7 +25,7 @@ You can associate two types of members with your organization: a human user and 
 
 ==== 
 
-.User
+.Human user
 
 -- 
 
@@ -44,19 +44,23 @@ You can associate two types of members with your organization: a human user and 
 * *Entity Type*: Keep *User* selected.
 * *User's email*: Enter the user's email address that is associated with the BlueXP login that they created.
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
-* *Select a role*: A role provides a member with specific permissions for the resources that are associated with the organization, folder, or project that you selected. 
+* *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
-* If you selected the organization, you can choose from any role other than *Folder or project admin*. 
-* If you selected a folder or project, you can choose from any role other than *Organization admin*. 
+** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
+** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-predefined-roles.html[Learn about predefined roles].
+link:reference-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
 
 . Select *Add*.
 
 .Result
 
-The user should receive an email from NetApp BlueXP titled "Account Association." The email includes the information needed to access BlueXP.
+BlueXP adds the user to the organization.
+
+.What's next?
+
+The user should receive an email from NetApp BlueXP. The email includes information that the member can use to access BlueXP.
 
 -- 
 
@@ -77,12 +81,12 @@ The user should receive an email from NetApp BlueXP titled "Account Association.
 * *Entity Type*: Select *Service account*.
 * *Service account name*: Enter a name for the service account.
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
-* *Select a role*: A role provides a member with specific permissions for the resources that are associated with the organization, folder, or project that you selected. 
+* *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
-* If you selected the organization, you can choose from any role other than *Folder or project admin*. 
-* If you selected a folder or project, you can choose from any role other than *Organization admin*. 
+** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
+** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-predefined-roles.html[Learn about predefined roles].
+link:reference-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
 
 . Select *Add*.
@@ -189,7 +193,7 @@ The following example shows a member who has the Organization admin role, which 
 
 image:screenshot-iam-member-details-org-admin.png[A screenshot of the details page for a member who has Organization admin permissions.]
 
-=== Add roles
+=== Add a role to a member
 
 Provide a user with additional permissions in your organization by adding roles that apply to the organization, folder, or project level.
 
@@ -200,12 +204,12 @@ Provide a user with additional permissions in your organization by adding roles 
 . Complete the steps in the dialog box to associate the member:
 +
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
-* *Select a role*: A role provides a member with specific permissions for the resources that are associated with the organization, folder, or project that you selected. 
+* *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
-* If you selected the organization, you can choose from any role other than *Folder or project admin*. 
-* If you selected a folder or project, you can choose from any role other than *Organization admin*. 
+** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
+** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-predefined-roles.html[Learn about predefined roles].
+link:reference-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
 
 . Select *Add new roles*.

@@ -50,10 +50,10 @@ A member who has this role can complete the following actions:
 == Classification viewer
 
 Description::
-Provides the ability view BlueXP classification scan results without permission to manage BlueXP classification settings.
+Provides the ability view BlueXP classification scan results.
 
 Permissions::
-View BlueXP classification scan results.
+View scan results from BlueXP classification without permissions to manage any BlueXP classification settings.
 +
 No other actions are available to a member who has this role.
 

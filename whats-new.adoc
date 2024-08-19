@@ -25,8 +25,8 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 BlueXP identity and access management (IAM) is a new resource and access management model that provides more granular management of resources and permissions:
 
-* A top-level _organization_ enables you to manage access across your various _projects_ (previously workspaces)
-* Folders enable you to group related projects and divide your organization
+* A top-level _organization_ enables you to manage access across your various _projects_
+* _Folders_ enable you to group related projects together
 * Enhanced resource management enables you to associate a resource with one or more folders or projects
 * Each organization member can have a role assigned at different levels of the organization hierarchy
 
@@ -34,13 +34,16 @@ These enhancements provide better control over the actions that users can perfor
 
 There's no change to your existing users or working environments. When you log in, you'll notice these changes:
 
-* Your account is now called an organization
-* Your workspaces are now called projects
-* The names of user roles have changed
+* Your _account_ is now called an _organization_
+* Your _workspaces_ are now called _projects_
+* The names of user roles have changed:
+** _Account admin_ is now _Organization admin_
+** _Workspace admin_ is now _Folder or project admin_
+** _Compliance viewer_ is now _Classification viewer_
 +
 While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same resources as before.
 
-BlueXP IAM is supported is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage users and resources.
+BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll continue using a BlueXP _account_ to manage workspaces, users, and resources.
 
 link:concept-identity-and-access-management.html[Learn more about BlueXP IAM].
 

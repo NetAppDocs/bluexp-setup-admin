@@ -31,7 +31,9 @@ You must create at least one project that members can access to manage your orga
 +
 * *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside directly underneath the organization or within a folder.
 * *Resources*: Select the resources that you want to associate with this folder or project. 
-* *Access*: Specify the organization members who should have access to the folder or project and then select a role for each member. A role defines the permissions that members have for the folder or project. 
+* *Access*: Specify the organization members who should have access to the folder or project and then select a role for each member. A role defines the permissions that members have for the folder or project.
++
+link:reference-predefined-roles.html[Learn about predefined IAM roles].
 
 . Select *Add*.
 
@@ -50,7 +52,7 @@ To verify that your resources are organized appropriately and accessible to the 
 +
 image:screenshot-iam-edit-project.png[A screenshot of the Organization page that shows the Edit project option when selecting the action menu for a project in the table.]
 
-. On the *Edit* page, view details about resources and member access:
+. On the *Edit* page, view details about associated resources and member access:
 +
 * Select *Resources* to view the associated resources. In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
 +
@@ -84,7 +86,7 @@ image:screenshot-iam-associate-resources.png[A screenshot of the Edit project pa
 
 .Result
 
-BlueXP associates the resource with the folder or project.
+BlueXP associates the resources                  with the folder or project. Organization members who have permissions for that folder or project can now access the associated resources.
 
 [#modify-members]
 == Modify member access to a folder or project
