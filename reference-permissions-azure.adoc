@@ -452,6 +452,11 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | Encrypt storage accounts during creation
 | Microsoft.ManagedIdentity/userAssignedIdentities/assign/action | Yes | Yes | No
 
+.3+| Use Virtual Machine Scale Sets in Flexible orchestration mode in order to specify specific zones for Cloud Volumes ONTAP
+| Microsoft.Compute/virtualMachineScaleSets/write | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/read | Yes | No | No
+| Microsoft.Compute/virtualMachineScaleSets/delete | No | No | Yes
+
 |===
 
 === Tiering
@@ -477,7 +482,15 @@ The Connector makes the following API requests for daily operations.
 
 As permissions are added and removed, we'll note them in the sections below.
 
-=== 5 December, 2023
+=== 22 August 2024
+
+The following permissions were added to the JSON policy because they are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets:
+
+* Microsoft.Compute/virtualMachineScaleSets/write
+* Microsoft.Compute/virtualMachineScaleSets/read
+* Microsoft.Compute/virtualMachineScaleSets/delete
+
+=== 5 December 2023
 
 The following permissions are no longer needed for BlueXP backup and recovery when backing up volume data to Azure Blob storage:
 
@@ -489,7 +502,7 @@ The following permissions are no longer needed for BlueXP backup and recovery wh
 
 These permissions are required for other BlueXP storage services, so they'll still remain in the custom role for the Connector if you're using those other storage services.
 
-=== 12 May, 2023
+=== 12 May 2023
 
 The following permissions were added to the JSON policy because they are required for Cloud Volumes ONTAP management:
 
@@ -501,13 +514,13 @@ The following permissions were removed from the JSON policy because they are no 
 * Microsoft.Storage/storageAccounts/blobServices/containers/write
 * Microsoft.Network/publicIPAddresses/delete
 
-=== 23 March, 2023
+=== 23 March 2023
 
 The "Microsoft.Storage/storageAccounts/delete" permission is no longer needed for BlueXP classification.
 
 This permission is still required for Cloud Volumes ONTAP.
 
-=== 5 January, 2023
+=== 5 January 2023
 
 The following permissions were added to the JSON policy:
 
