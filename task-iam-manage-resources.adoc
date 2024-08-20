@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-resources.html
-keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management
 summary: Manage the resource hierarchy of your organization by associating resources with specific projects and folders.
 ---
 
@@ -13,7 +13,7 @@ summary: Manage the resource hierarchy of your organization by associating resou
 :imagesdir: ./media/
 
 [.lead]
-When you associate a member with your organization, you provide permissions at the organization, folder, or project level. To ensure that those members have permissions to access the right resources, you'll need to manage the resource hierarchy of your organization by associating resources with specific projects and folders.
+When you use BlueXP identity and access management (IAM) to associate a member with your organization, you provide permissions at the organization, folder, or project level. To ensure that those members have permissions to access the right resources, you'll need to manage the resource hierarchy of your organization by associating resources with specific projects and folders.
 
 A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
 

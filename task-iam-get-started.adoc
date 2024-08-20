@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-get-started.html
-keywords: iam, quick start, get started, get started with iam
+keywords: iam, quick start, get started, get started with iam, identity and access management
 summary: "To get started with IAM, customize the organization's hierarchy, add additional members, add or discover resources, and associate those resources with projects."
 ---
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-members-permissions.html
-keywords: user, service account, member, role, permissions, organization, project, folder
+keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
@@ -13,7 +13,7 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-Associate members with your organization and provide them permissions to the resources in the entire organization or in specific folders and projects. You can associate new human users and service accounts, manage member roles, and more.
+BlueXP identity and access management (IAM) enables you to associate members with your organization and provide them permissions to the resources in the entire organization or in specific folders and projects. You can associate new human users and service accounts, manage member roles, and more.
 
 == Associate new members with your organization
 

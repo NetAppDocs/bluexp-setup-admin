@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-rename-organization.html
-keywords: rename organization, change organization name, name change, rename, change name
+keywords: rename organization, change organization name, name change, rename, change name, iam, identity and access management
 summary: If needed, you can change the name of your BlueXP organization.
 ---
 
@@ -13,7 +13,7 @@ summary: If needed, you can change the name of your BlueXP organization.
 :imagesdir: ./media/
 
 [.lead]
-If needed, you can change the name of your BlueXP organization. The organization name appears at the top of the BlueXP web-based console.
+If needed, you can change the name of your BlueXP organization from BlueXP identity and access management (IAM). The organization name appears at the top of the BlueXP web-based console.
 
 .Steps
 

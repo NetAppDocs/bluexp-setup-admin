@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-switch-organizations-projects.html
-keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management
 summary: Switch between projects and organizations to access the resources associated with those projects and organizations.
 ---
 
@@ -21,7 +21,7 @@ If your organization includes multiple projects and you have access to those pro
 
 .Before you begin
 
-You must be on any page in the BlueXP console other than the Identity and Access Management (IAM) pages. You can't switch to another project when viewing any of the IAM pages.
+You must be on any page in the BlueXP console other than the BlueXP identity and access management (IAM) pages. You can't switch to another project when viewing any of the IAM pages.
 
 .Steps
 

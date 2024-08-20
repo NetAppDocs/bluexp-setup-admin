@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-folders-projects.html
-keywords: folders, projects, resource hierarchy, create folders, create projects
+keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management
 summary: BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects.
 ---
 
