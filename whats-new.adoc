@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, enhancements, fixes, connectors
-summary: "Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more."
+summary: "Learn what's new with BlueXP administration features: BlueXP IAM, Connectors, cloud provider credentials, and more."
 ---
 
 = What's new
@@ -13,7 +13,7 @@ summary: "Learn what's new with BlueXP administration features: BlueXP accounts,
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more.
+Learn what's new with BlueXP administration features: BlueXP identity and access management (IAM), Connectors, cloud provider credentials, and more.
 
 //All links and images must use the absolute URL.
 
@@ -28,7 +28,7 @@ BlueXP identity and access management (IAM) is a new resource and access managem
 * A top-level _organization_ enables you to manage access across your various _projects_
 * _Folders_ enable you to group related projects together
 * Enhanced resource management enables you to associate a resource with one or more folders or projects
-* Each organization member can have a role assigned at different levels of the organization hierarchy
+* Enhanced access management enables you to assign a role to members at different levels of the organization hierarchy
 
 These enhancements provide better control over the actions that users can perform and the resources that they can access.
 

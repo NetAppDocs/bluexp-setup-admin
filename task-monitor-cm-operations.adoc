@@ -91,11 +91,11 @@ You can send specific types of notifications by email so you can be informed of 
 * Sending email notifications is not supported when the Connector is installed in a site without internet access.
 ====
 
-The filters you set in the Notification Center do not determine the types of notifications you'll receive by email. By default, BlueXP Account Admins will receive emails for all "Critical" and "Recommendation" notifications. These notifications are across all services - you can't choose to receive notifications for only certain services, for example Connectors or BlueXP backup and recovery. 
+The filters you set in the Notification Center do not determine the types of notifications you'll receive by email. By default, BlueXP Organization or Account admins will receive emails for all "Critical" and "Recommendation" notifications. These notifications are across all services - you can't choose to receive notifications for only certain services, for example Connectors or BlueXP backup and recovery. 
 
 All other users and recipients are configured not to receive any notification emails - so you'll need to configure notification settings for any additional users. 
 
-You must be an Account Admin to customize the notifications settings.
+You must be an Organization or Account admin to customize the notifications settings.
 
 .Steps
 

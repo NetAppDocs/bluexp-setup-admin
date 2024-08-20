@@ -171,4 +171,4 @@ Here are a few examples:
 
 * You have a multi-cloud environment (for example, AWS and Azure) and you prefer to have one Connector in AWS and another in Azure. Each manages the Cloud Volumes ONTAP systems running in those environments.
 
-* A service provider might use one BlueXP account to provide services for their customers, while using another account to provide disaster recovery for one of their business units. Each account would have separate Connectors.
+* A service provider might use one BlueXP organization to provide services for their customers, while using another organization to provide disaster recovery for one of their business units. Each organization would have separate Connectors.

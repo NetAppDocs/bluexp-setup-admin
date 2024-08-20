@@ -22,13 +22,13 @@ The BlueXP platform provides four main pillars of data management: storage, mobi
 Storage:: 
 Discover, deploy, and manage storage, whether it's in AWS, Azure, Google Cloud, or on premises.
 
-* Set up and use https://bluexp.netapp.com/ontap-cloud[Cloud Volumes ONTAP^] for efficient, multi-protocol data management across clouds.
-
 * Set up and use cloud file-storage services:
 +
 ** https://bluexp.netapp.com/azure-netapp-files[Azure NetApp Files^]
-** https://bluexp.netapp.com/fsx-for-ontap[Amazon FSx for ONTAP^]
+** https://bluexp.netapp.com/fsx-for-ontap[Amazon FSx for NetApp ONTAP^]
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp[Cloud Volumes Service for Google Cloud^]
+
+* Set up and use https://bluexp.netapp.com/ontap-cloud[Cloud Volumes ONTAP^] for efficient, multi-protocol data management across clouds.
 
 * Discover and manage https://bluexp.netapp.com/netapp-on-premises[on-premises storage^]:
 ** E-Series systems
@@ -45,7 +45,9 @@ Protection::
 Use automated protection mechanisms to protect data against data loss, unplanned outages, ransomware, and other cyber threats.
 
 ** https://bluexp.netapp.com/cloud-backup[Backup and recovery^]
+** https://bluexp.netapp.com/disaster-recovery[Disaster recovery^]
 ** https://bluexp.netapp.com/replication[Replication^]
+** https://bluexp.netapp.com/ransomware-protection[Ransomware protection^]
 
 Analysis and control::
 Use tools to monitor, map, and optimize your data storage and infrastructure. Gain actionable intelligence to optimize storage health, resiliency, and economics.
@@ -67,17 +69,25 @@ Pricing for BlueXP depends on the services that you plan to use. https://bluexp.
 
 == How BlueXP works
 
-BlueXP includes a web-based console that's provided through the SaaS layer, accounts that provide multi-tenancy, and Connectors that manage working environments and enable BlueXP cloud services.
+BlueXP includes a web-based console that's provided through the SaaS layer, a resource and access management system, and Connectors that manage working environments and enable BlueXP cloud services.
 
 === Software-as-a-service
 
-BlueXP is accessible through a https://console.bluexp.netapp.com[web-based console^] and APIs. This SaaS experience enables you to automatically access the latest features as they're released and to easily switch between your BlueXP accounts and Connectors.
+BlueXP is accessible through a https://console.bluexp.netapp.com[web-based console^] and APIs. This SaaS experience enables you to automatically access the latest features as they're released and to easily switch between your BlueXP organizations, projects, and Connectors.
 
-=== BlueXP account
+=== BlueXP identity and access management (IAM)
 
-When you log in to BlueXP for the first time, you're prompted to create a _BlueXP account_. This account provides multi-tenancy and enables you to organize users and resources in isolated _workspaces_.
+BlueXP identity and access management (IAM) is a resource and access management model that provides granular management of resources and permissions:
 
-link:concept-netapp-accounts.html[Learn more about accounts].
+* A top-level _organization_ enables you to manage access across your various _projects_
+* _Folders_ enable you to group related projects together
+* Resource management enables you to associate a resource with one or more folders or projects
+* Access management enables you to assign a role to members at different levels of the organization hierarchy
+
+BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage workspaces, users, and resources.
+
+* link:concept-identity-and-access-management.html[Learn more about BlueXP IAM].
+* link:concept-netapp-accounts.html[Learn about BlueXP accounts].
 
 === Connectors
 
@@ -85,9 +95,9 @@ You don't need a Connector to get started with BlueXP, but you'll need to create
 
 link:concept-connectors.html[Learn more about Connectors].
 
-=== Restricted mode and private mode 
+=== Deployment modes 
 
-BlueXP is also supported in environments that have security and connectivity restrictions. You can use _restricted mode_ or _private mode_ to limit outbound connectivity to the BlueXP SaaS layer.
+BlueXP is supported in environments that have security and connectivity restrictions. You can use _restricted mode_ or _private mode_ to limit outbound connectivity to the BlueXP SaaS layer.
 
 link:concept-modes.html[Learn more about BlueXP deployment modes].
 

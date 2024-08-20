@@ -20,10 +20,10 @@ BlueXP is accessible from a web-based console. When you get started with BlueXP,
 When you access BlueXP for the first time, BlueXP enables you to sign up or log in using one of the following options:
 
 BlueXP login::
-You can sign up by creating a BlueXP login. This authentication method requires you to specify your email address and a password. After you verify your email address, you can log in and then create a BlueXP account if you don't already belong to one.
+You can sign up by creating a BlueXP login. This authentication method requires you to specify your email address and a password. After you verify your email address, you can log in and then create a BlueXP organization, if you don't already belong to one.
 
 NetApp Support Site (NSS) credentials::
-If you have existing NetApp Support Site credentials, you don't need to sign up to BlueXP. You log in using your NSS credentials and then BlueXP prompts you to create a BlueXP account, if you don't already belong to one.
+If you have existing NetApp Support Site credentials, you don't need to sign up to BlueXP. You log in using your NSS credentials and then BlueXP prompts you to create a BlueXP organization, if you don't already belong to one.
 +
 Note that the default password experience is a one-time passcode (OTP) to the registered email address. A new OTP is generated with each sign-in attempt.
 
