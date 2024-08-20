@@ -45,7 +45,7 @@ If you're using BlueXP in private mode (in other words, the Connector host has _
 
 . From the Linux host, run the following commands:
 +
-`./opt/application/netapp/ds/cleanup.sh`
+`/opt/application/netapp/ds/cleanup.sh`
 `rm -rf /opt/application/netapp/ds`
 
 .Result
