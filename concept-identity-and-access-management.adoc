@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-identity-and-access-management.html
 keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, iam
-summary: "BlueXP's identity and access management (IAM) system enables you to control access to your resources."
+summary: BlueXP identity and access management (IAM) enables you to control access to your resources.
 ---
 
 = Learn about BlueXP identity and access management
@@ -15,7 +15,10 @@ summary: "BlueXP's identity and access management (IAM) system enables you to co
 [.lead]
 BlueXP identity and access management (IAM) enables you to control access to your resources. With IAM, you can organize your resources according to your organization's hierarchy. For example, you can organize resources by site or department. You can then assign members permissions to access specific resources in the hierarchy and prevent access to other resources.
 
-BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you use a BlueXP _account_ to manage users and resources. link:concept-netapp-accounts.html[Learn about BlueXP accounts].
+BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you use a BlueXP _account_ to manage users and resources. 
+
+* link:concept-netapp-accounts.html[Learn about BlueXP accounts]
+* link:concept-modes.html[Learn about BlueXP deployment modes]
 
 == How BlueXP IAM works
 
@@ -52,7 +55,7 @@ An organization can have one or many projects. A project can reside directly und
 
 A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
 
-You can associate a resource at any level of your hierarchy: the entire organization, one or more folders, or one or more projects. For example, you might make a Cloud Volumes ONTAP system available to the entire organization, to two projects, or just to a single project. How you associate a resource depends on your organization's needs.
+You can associate a resource across different levels of your resource hierarchy: with one or more folders or with one or more projects. For example, you might associate a Cloud Volumes ONTAP system with all projects in your organization or just with a single project. How you associate a resource depends on your organization's needs.
 
 === Members
 
@@ -66,7 +69,7 @@ In BlueXP IAM, you don't grant permissions directly to organization members. Ins
 
 When you associate a member with a role, you need to select the entire organization, a specific folder, or a specific project. The role that you select gives a member permissions to the resources in the selected part of the resource hierarchy.
 
-Each organization member can have a role assigned at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and project 2. Or you can assign a member role A for project 1 and role B for project 2.
+You can assign each organization member a role at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and project 2. Or you can assign a member role A for project 1 and role B for project 2.
 
 BlueXP supports several predefined roles that you can assign to the members of your organization. Custom roles are not supported at this time. 
 
@@ -77,11 +80,10 @@ link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
 The following examples describe how you might use IAM to manage your BlueXP organization:
 
 * Grant specific roles to specific users so that they can only complete the required tasks.
-* Modify member permissions because they moved departments or because they need additional permissions.
+* Modify member permissions because they moved departments or because they have additional responsibilities.
 * Remove a user who left the company.
 * Add folders or projects to your hierarchy because a new business unit has added NetApp storage.
-* Move resources from one project to another because that resource has capacity and another team can utilize it.
-* Create a service account to complete specified tasks without human intervention.
+* Move resources from one project to another because that resource has capacity that another team can utilize.
 * View the resources that a member can access.
 * View the members and resources associated with a specific project.
 
