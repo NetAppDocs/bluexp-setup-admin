@@ -27,6 +27,8 @@ A member who has this role can complete all actions in BlueXP.
 
 Description::
 Provides full control of one or more projects and folders.
++
+Note that if you assign this role at the folder level, the member has permissions to all projects that are associated with that folder.
 
 Permissions::
 A member who has this role can complete the following actions in BlueXP:
