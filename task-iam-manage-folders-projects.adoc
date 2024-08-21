@@ -30,7 +30,9 @@ You can create additional projects that members can access to manage your organi
 . Provide details about the folder or project:
 +
 * *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside directly underneath the organization or within a folder.
-* *Resources*: Select the resources that you want to associate with this folder or project. 
+* *Resources*: Select the resources that you want to associate with this folder or project.
++
+link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
 * *Access*: Specify the organization members who should have access to the folder or project and then select a role for each member. A role defines the permissions that members have for the folder or project.
 +
 link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
@@ -77,6 +79,8 @@ You can modify the resources that are associated with a folder or project by ass
 In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
 
 . Select the resources that you'd like to associate or disassociate.
++
+link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
 
 . Depending on the resources that you selected, select either *Associate resources* or *Disassociate resources*.
 +

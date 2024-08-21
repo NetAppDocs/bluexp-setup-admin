@@ -137,11 +137,9 @@ If you want to make a resource available to another folder or project in your or
 +
 NOTE: If you have multiple Connectors, the Connector that manages the working environment must be selected to view the working environment from the BlueXP canvas. link:task-manage-multiple-connectors.html[Learn how to work with multiple Connectors].
 
-* If you associate a resource with a folder, only users who have permissions for that folder will have access to that resource. For example, imagine the following scenario:
-** Folder 1 includes project A and project B
-** Resource XYZ is associated with folder 1 and project A
-** An organization member has permissions for project B
-** That organization member won't have access to resource XYZ
+* Associating a resource with a folder doesn't automatically make that resource accessible from all projects in the folder. Organization members can't access a resource from a project until you associate the resource with that specific project.
++
+An _Organization admin_ might associate a resource with a folder so that the _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
 
 .Steps
 

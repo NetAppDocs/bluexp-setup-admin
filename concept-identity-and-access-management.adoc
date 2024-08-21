@@ -22,7 +22,7 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 == How BlueXP IAM works
 
-BlueXP IAM enables you to provide access by defining which members have permissions to specific resources in your organization's hierarchy. For example, a human user can have project admin permissions for a project that has five associated resources.
+BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific resources in the organization's hierarchy. For example, a human user can have project admin permissions for a project that has five associated resources.
 
 When using BlueXP IAM, you'll manage the following components:
 
@@ -55,13 +55,14 @@ An organization can have one or many projects. A project can reside directly und
 
 A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
 
-When you create or discover a resource, the resource is associated with the currently selected project. You can then associate the resource across different levels of your resource hierarchy: with one or more folders or with one or more projects. 
+When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can associate the resource across different levels of your resource hierarchy: with one or more folders or with one or more projects. 
 
-For example, you might associate a Cloud Volumes ONTAP system with all projects in your organization or with just a single project. How you associate a resource depends on your organization's needs.
+For example, you might associate a Cloud Volumes ONTAP system with all projects in your organization, three projects, or with just a single project. How you associate a resource depends on your organization's needs.
 
+[#associate-resource-folder]
 ==== When to associate a resource with a folder
 
-An organization admin might associate a resource with a folder so that the folder or project admin can then associate that resource with the appropriate projects that reside in the folder.
+An _Organization admin_ might associate a resource with a folder so that the _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
 
 Associating a resource with a folder doesn't automatically make that resource accessible from all projects in the folder. Organization members can't access a resource from a project until you associate the resource with that specific project.
 
