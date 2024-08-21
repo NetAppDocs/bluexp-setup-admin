@@ -21,7 +21,7 @@ You can create additional projects that members can access to manage your organi
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . From the *Organization* page, select *Add folder or project*.
 

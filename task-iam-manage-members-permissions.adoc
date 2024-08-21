@@ -33,7 +33,7 @@ You can associate two types of members with your organization: a human user and 
 
 . If the user hasn't already done so, ask them to go to the https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . Select *Members*.
 
@@ -72,7 +72,7 @@ The user should receive an email from NetApp BlueXP. The email includes informat
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . Select *Members*.
 
@@ -125,7 +125,7 @@ View a complete list of your organization's members.
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . Select *Members*.
 
@@ -160,7 +160,7 @@ View which members have permissions to a specific project or folder so that you 
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
 
@@ -187,7 +187,7 @@ To understand which resources and permissions are available to a member, you can
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . Select *Members*.
 
@@ -296,7 +296,7 @@ Recreating the credentials deletes the existing credentials for the service acco
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . Select *Members*.
 

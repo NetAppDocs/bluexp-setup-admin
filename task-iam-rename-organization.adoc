@@ -17,7 +17,7 @@ If needed, you can change the name of your BlueXP organization from BlueXP ident
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option2.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . From the *Organization* page, navigate to the first row in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit organization*.
 +
