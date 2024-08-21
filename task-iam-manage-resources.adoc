@@ -81,6 +81,12 @@ You can sort the values by selecting the arrow next to the column header. If you
 image:screenshot-iam-sort-table.png[A screenshot that shows the Discovered in BlueXP column in the Resources table with an arrow next to the column header that enables you to sort the contents of the table in ascending or descending order.]
 
 . For an undiscovered resource, select *Connect*.
++
+BlueXP loads the discovery process from the BlueXP canvas.
+
+. If needed, change the currently selected project so that you associate the resource with the right project.
++
+image:screenshot-iam-switch-projects.png[A screenshot of the BlueXP top banner where you can select the Scope drop-down and then select another project.]
 
 . Follow the prompts to discover the resource.
 

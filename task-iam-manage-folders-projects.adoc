@@ -33,7 +33,7 @@ You must create at least one project that members can access to manage your orga
 * *Resources*: Select the resources that you want to associate with this folder or project. 
 * *Access*: Specify the organization members who should have access to the folder or project and then select a role for each member. A role defines the permissions that members have for the folder or project.
 +
-link:reference-predefined-roles.html[Learn about predefined IAM roles].
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 
 . Select *Add*.
 

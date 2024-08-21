@@ -70,7 +70,7 @@ Each organization member can have a role assigned at different levels of the org
 
 BlueXP supports several predefined roles that you can assign to the members of your organization. Custom roles are not supported at this time. 
 
-link:reference-predefined-roles.html[Learn about IAM predefined roles].
+link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
 
 == What you can do with BlueXP IAM
 
@@ -122,4 +122,4 @@ image:diagram-iam-example-hierarchy-advanced.png["A conceptual diagram that show
 * link:task-iam-manage-resources.html[Manage the resource hierarchy in your BlueXP organization]
 * link:task-iam-switch-organizations-projects.html[Switch between BlueXP projects and organizations]
 * link:task-iam-rename-organization.html[Rename your BlueXP organization]
-* link:reference-predefined-roles.html[Predefined BlueXP IAM roles]
+* link:reference-iam-predefined-roles.html[Predefined BlueXP IAM roles]

@@ -49,7 +49,7 @@ You can associate two types of members with your organization: a human user and 
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
 ** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-predefined-roles.html[Learn about predefined IAM roles].
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
 
 . Select *Add*.
@@ -86,7 +86,7 @@ The user should receive an email from NetApp BlueXP. The email includes informat
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
 ** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-predefined-roles.html[Learn about predefined IAM roles].
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
 
 . Select *Add*.
@@ -209,7 +209,7 @@ Provide a user with additional permissions in your organization by adding roles 
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
 ** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-predefined-roles.html[Learn about predefined IAM roles].
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
 
 . Select *Add new roles*.

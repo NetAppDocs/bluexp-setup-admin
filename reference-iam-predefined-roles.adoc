@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: reference-predefined-roles.html
+permalink: reference-iam-predefined-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, snapcenter system, role, iam role, admin, iam, identity and access management
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
@@ -21,16 +21,7 @@ Description::
 Provides full control of the entire BlueXP organization. 
 
 Permissions::
-A member who has this role can complete the following actions:
-
-* Manage all working environments
-* Manage credentials
-* View the BlueXP timeline
-* Administer IAM
-* Create Connectors
-* Register BlueXP for support and submit cases
-* Manage alert and notification settings
-* Install a CA-signed certificate for web-console access
+A member who has this role can complete all actions in BlueXP.
 
 == Folder or project admin
 
@@ -38,14 +29,14 @@ Description::
 Provides full control of one or more projects and folders.
 
 Permissions::
-A member who has this role can complete the following actions:
+A member who has this role can complete the following actions in BlueXP:
 
-* Manage all working environments in the projects and folders for which you have permissions
+* Manage all working environments in the projects and folders for which they have permissions
 * Manage credentials
 * View the BlueXP timeline
-* Administer IAM by managing the folders and projects for which you have permissions
-* Create Connectors?
-* Register BlueXP for support and submit cases?
+* Administer IAM by managing the folders and projects for which they have permissions
+* Create Connectors
+* Register BlueXP for support and submit cases
 
 == Classification viewer
 
@@ -70,7 +61,7 @@ No other actions are available to a member who has this role.
 == SnapCenter system
 
 Description::
-?
+Internal only role that shouldn't be available to users in BlueXP?
 
 Permissions::
 ?
