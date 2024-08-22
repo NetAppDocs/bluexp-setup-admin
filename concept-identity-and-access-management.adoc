@@ -22,7 +22,7 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 == How BlueXP IAM works
 
-BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific resources in the organization's hierarchy. For example, a human user can have project admin permissions for a project that has five associated resources.
+BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific resources in the organization's hierarchy. For example, a member can have project admin permissions for a project that has five associated resources.
 
 When using BlueXP IAM, you'll manage the following components:
 
@@ -68,7 +68,7 @@ Associating a resource with a folder doesn't automatically make that resource ac
 
 === Members
 
-Members of your organization are human users or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
+Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 
 An organization has at least one administrator (the user who creates the organization is automatically assigned the administrator role). You can add other members to the organization and assign different permissions across different levels of the resource hierarchy.
 
@@ -88,7 +88,7 @@ link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
 
 The following examples describe how you might use IAM to manage your BlueXP organization:
 
-* Grant specific roles to specific users so that they can only complete the required tasks.
+* Grant specific roles to specific members so that they can only complete the required tasks.
 * Modify member permissions because they moved departments or because they have additional responsibilities.
 * Remove a user who left the company.
 * Add folders or projects to your hierarchy because a new business unit has added NetApp storage.

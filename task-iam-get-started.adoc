@@ -17,7 +17,7 @@ When you sign up to BlueXP and create a new organization, it includes one member
 
 You must have *Organization admin* permissions to administer the entire organization from BlueXP IAM. If you have *Folder or project admin* permissions, you can only administer the folders and projects for which you have permissions.
 
-The steps to get started with IAM include the following. The order in which you complete these steps might be different, depending on your organization's needs.
+Follow these steps to set up a new BlueXP organization. The order in which you complete these steps might be different, depending on your organization's needs.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Edit the default project or add to your organization's hierarchy
 
@@ -27,10 +27,10 @@ You can simply use the default project or you can create additional projects and
 [role="quick-margin-para"]
 link:task-iam-manage-folders-projects.html[Learn how to organize your resources with folders and projects].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add members
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Associate members with your organization
 
 [role="quick-margin-para"]
-If multiple people in your business need to access and manage resources from BlueXP, you'll need to add them to your organization and provide them with the appropriate permissions across your resource hierarchy. 
+If multiple people in your business need to access and manage resources from BlueXP, you'll need to associate their user accounts with your organization and provide the appropriate permissions across your resource hierarchy. You also have the option to add service accounts to your organization.
 
 [role="quick-margin-para"]
 link:task-iam-manage-members-permissions.html[Learn how to manage members and their permissions].

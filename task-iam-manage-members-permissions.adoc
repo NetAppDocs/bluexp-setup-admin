@@ -13,11 +13,11 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) enables you to associate members with your organization and provide them permissions to the resources in the entire organization or in specific folders and projects. You can associate new human users and service accounts, manage member roles, and more.
+BlueXP identity and access management (IAM) enables you to associate members with your organization and provide them permissions to the resources in the entire organization or in specific folders and projects. You can associate new user accounts and service accounts, manage member roles, and more.
 
 == Associate new members with your organization
 
-You can associate two types of members with your organization: a human user and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
+You can associate two types of members with your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
 
 // start tabbed area 
 
@@ -25,13 +25,15 @@ You can associate two types of members with your organization: a human user and 
 
 ====
 
-.Human user
+.User account
 
 -- 
 
 .Steps
 
 . If the user hasn't already done so, ask them to go to the https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
++
+When the user signs up, they should complete the *Sign up* page, verify their email address, and then log in. When prompted to create an organization, the user should close out of BlueXP and let you know that they've created their user account. You can then associate the user with your existing BlueXP organization.
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
@@ -45,7 +47,7 @@ You can associate two types of members with your organization: a human user and 
 * *User's email*: Enter the user's email address that is associated with the BlueXP login that they created.
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
 +
-Note that if you select a folder, the member will have permissions to all projects that are associated with that folder.
+Note that if you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
 * *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
@@ -84,7 +86,7 @@ The user should receive an email from NetApp BlueXP. The email includes informat
 * *Service account name*: Enter a name for the service account.
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
 +
-Note that if you select a folder, the member will have permissions to all projects that are associated with that folder.
+Note that if you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
 * *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
@@ -148,7 +150,7 @@ If you need to understand which resources a member of your organization can acce
 
 .Result
 
-BlueXP displays details about the member, which includes the folders and projects that the user has permissions for across your organization's resource hierarchy.
+BlueXP displays details about the member, which includes the folders and projects that the member has permissions for across your organization's resource hierarchy.
 
 Here's an example of a member who has permissions to a folder and a project.
 
@@ -156,7 +158,7 @@ image:screenshot-iam-member-details.png[A screenshot of the details page for a m
 
 === View the members associated with a project or folder
 
-View which members have permissions to a specific project or folder so that you can verify the right users have access to the right resources.
+View which members have permissions to a specific project or folder so that you can verify the right members have access to the right resources.
 
 .Steps
 
@@ -195,7 +197,7 @@ To understand which resources and permissions are available to a member, you can
 
 .Result
 
-BlueXP displays the roles associated with that user at the organization, folder, and project level.
+BlueXP displays the roles associated with that member at the organization, folder, and project level.
 
 The following example shows a member who has the Organization admin role, which gives them access to all resources in the organization.
 
@@ -203,7 +205,7 @@ image:screenshot-iam-member-details-org-admin.png[A screenshot of the details pa
 
 === Add a role to a member
 
-Provide a user with additional permissions in your organization by adding roles that apply to the organization, folder, or project level.
+Provide a member with additional permissions in your organization by adding roles that apply to the organization, folder, or project level.
 
 .Steps
 
@@ -213,7 +215,7 @@ Provide a user with additional permissions in your organization by adding roles 
 +
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
 +
-Note that if you select a folder, the member will have permissions to all projects that are associated with that folder.
+Note that if you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
 * *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
@@ -240,7 +242,7 @@ If you need to modify a member's permissions, you can do so by changing the role
 
 .Result
 
-BlueXP updates the roles associated with that user at the organization, folder, and project level.
+BlueXP updates the roles associated with that member at the organization, folder, and project level.
 
 === Remove permissions for a folder or project
 
@@ -320,7 +322,7 @@ You might need to remove a member from your organization--for example, if they l
 
 .About this task
 
-This task doesn't delete the member's BlueXP account or NetApp Support Site account. It simply removes the user and their associated permissions from your organization.
+This task doesn't delete the member's BlueXP account or NetApp Support Site account. It simply removes the member and their associated permissions from your organization.
 
 .Steps
 

@@ -59,7 +59,10 @@ image:screenshot-iam-edit-project.png[A screenshot of the Organization page that
 * Select *Resources* to view the associated resources. In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
 +
 image:screenshot-iam-allocated-resources.png[A screenshot of the Edit project page that shows the available resources that you can associate or disassociate with the project.]
+
 * Select *Access* to view the members who have access to the folder or project.
++
+image:screenshot-iam-member-access.png[A screenshot of the Edit project page that shows the members who have access to the project.]
 
 .What's next?
 
@@ -95,7 +98,7 @@ BlueXP associates the resources                  with the folder or project. Org
 [#modify-members]
 == Modify member access to a folder or project
 
-Modify member access to a folder or project to ensure that the right users have access to the resources associated with the folder or project.
+Modify member access to a folder or project to ensure that the right members have access to the resources associated with the folder or project.
 
 .Steps
 
@@ -108,7 +111,7 @@ BlueXP displays the list of members who have access to the folder or project.
 . Modify member access:
 +
 * *Add a member*: Select the member that you'd like to add to the folder or project and assign them a role.
-* *Change a user's role*: For any members with a role other than Organization Admin, select their existing role and then choose a new role.
+* *Change a member's role*: For any members with a role other than Organization Admin, select their existing role and then choose a new role.
 * *Remove member access*: For members who have a role defined at the folder or project for which you're viewing, you can remove their access.
 +
 If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove member access when viewing this folder or project. You need to switch to that part of the hierarchy. Alternatively, you can link:task-iam-manage-members-permissions.html#manage-permissions[manage permissions from the Members page].
