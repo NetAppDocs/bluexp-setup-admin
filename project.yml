@@ -117,20 +117,18 @@ sidebar:
               url: /task-iam-rename-organization.html
             - title: Predefined IAM roles
               url: /reference-iam-predefined-roles.html
-        - title: Identity federation
-          url: /concept-federation.html
         - title: BlueXP accounts
           entries:
             - title: Learn about accounts
               url: /concept-netapp-accounts.html
             - title: Manage your BlueXP account
               url: /task-managing-netapp-accounts.html
-            - title: Monitor operations in your account
-              url: /task-monitor-cm-operations.html
             - title: Create another BlueXP account
               url: /task-create-account.html
             - title: User roles
               url: /reference-user-roles.html
+        - title: Identity federation
+          url: /concept-federation.html
         - title: Connectors
           entries:
             - title: Maintain the VM and OS
@@ -175,6 +173,8 @@ sidebar:
               url: /task-adding-nss-accounts.html
             - title: Manage credentials associated with your BlueXP login
               url: /task-manage-user-credentials.html
+        - title: Monitor BlueXP operations
+          url: /task-monitor-cm-operations.html
     - title: Reference
       entries:
         - title: Permissions

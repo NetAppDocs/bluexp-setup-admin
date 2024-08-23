@@ -13,9 +13,12 @@ summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter A
 :imagesdir: ./media/
 
 [.lead]
-The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles provide specific permissions to users. You can assign one of these roles when you associate a new user with your BlueXP account.
+When you use BlueXP in restricted mode or private mode, you'll use a _BlueXP account_ to manage users. You can provide specific permissions to users in your account by selecting from the Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles.
 
-The Compliance Viewer role is for read-only BlueXP classification access.
+If you're using BlueXP in standard mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
+* link:concept-modes.html[Learn about BlueXP deployment modes]
 
 [cols=5*,options="header",cols="24,19,19,19,19"]
 |===
@@ -25,6 +28,8 @@ The Compliance Viewer role is for read-only BlueXP classification access.
 | Workspace Admin
 | Compliance Viewer
 | SnapCenter Admin
+
+| Create Connectors | Yes | Yes | No | No
 
 | Manage working environments |	Yes | Yes | No | No
 
@@ -42,9 +47,9 @@ The Compliance Viewer role is for read-only BlueXP classification access.
 
 | View BlueXP classification scan results | Yes | Yes | Yes | No
 
-| Receive the Cloud Volumes ONTAP report | Yes | No | No | No
+| Complete actions from Backup and recovery > Applications | Yes | No | No | Yes
 
-| Create Connectors | Yes | No | No | No
+| Receive the Cloud Volumes ONTAP report | Yes | No | No | No
 
 | Manage BlueXP accounts |	Yes | No | No | No
 
@@ -58,7 +63,6 @@ The Compliance Viewer role is for read-only BlueXP classification access.
 
 |===
 
-.Related links
+.Related link
 
-* link:task-setting-up-netapp-accounts.html[Setting up workspaces and users in the BlueXP account]
-* link:task-managing-netapp-accounts.html[Managing workspaces and users in the BlueXP account]
+link:task-managing-netapp-accounts.html[Manage your BlueXP account]
