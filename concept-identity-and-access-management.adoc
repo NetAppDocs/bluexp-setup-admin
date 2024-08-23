@@ -33,6 +33,17 @@ When using BlueXP IAM, you'll manage the following components:
 * Members
 * Roles and permissions
 
+BlueXP resources are organized hierarchically:
+
+* The organization is the top of the hierarchy.
+* Folders are children of the organization or of another folder.
+* Projects are children of the organization or of a folder.
+* Resources are associated with one or more folders or projects.
+
+The following image illustrates this hierarchy at a basic level.
+
+image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the resource hierarchy for BlueXP IAM: an organization, folders, projects, and resources."]
+
 === Organization
 
 When you sign up to BlueXP, you're prompted to create a new organization. An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of folders, projects, members, roles, and resources.
@@ -95,19 +106,6 @@ The following examples describe how you might use IAM to manage your BlueXP orga
 * Move resources from one project to another because that resource has capacity that another team can utilize.
 * View the resources that a member can access.
 * View the members and resources associated with a specific project.
-
-== Resource hierarchy
-
-BlueXP resources are organized hierarchically:
-
-* The organization is the top of the hierarchy.
-* Folders are children of the organization or of another folder.
-* Projects are children of the organization or of a folder.
-* Resources are associated with one or more folders or projects.
-
-The following image illustrates this hierarchy at a basic level.
-
-image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the resource hierarchy for BlueXP IAM: an organization, folders, projects, and resources."]
 
 == Examples
 
