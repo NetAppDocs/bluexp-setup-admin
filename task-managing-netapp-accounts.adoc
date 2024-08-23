@@ -13,7 +13,7 @@ summary: Manage your BlueXP account by adding users, creating service accounts f
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in restricted mode or private mode, you'll use a _BlueXP account_ to organize users and resources in isolated _workspaces_. When you create your account, it only includes a single admin user and a workspace. You can manage the account to fit your needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
+When you use BlueXP in restricted mode or private mode, you'll use a _BlueXP account_ to manage users and organize resources. When you create your account, it only includes a single admin user and a workspace. You can manage the account to fit your needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
 
 If you're using BlueXP in standard mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
 
