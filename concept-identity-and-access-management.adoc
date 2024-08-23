@@ -95,18 +95,6 @@ BlueXP supports several predefined roles that you can assign to the members of y
 
 link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
 
-== What you can do with BlueXP IAM
-
-The following examples describe how you might use IAM to manage your BlueXP organization:
-
-* Grant specific roles to specific members so that they can only complete the required tasks.
-* Modify member permissions because they moved departments or because they have additional responsibilities.
-* Remove a user who left the company.
-* Add folders or projects to your hierarchy because a new business unit has added NetApp storage.
-* Move resources from one project to another because that resource has capacity that another team can utilize.
-* View the resources that a member can access.
-* View the members and resources associated with a specific project.
-
 == Examples
 
 The following examples show how you might set up your organization.
@@ -122,6 +110,18 @@ image:diagram-iam-example-hierarchy-simple.png["A conceptual diagram that shows 
 The following diagram shows an advanced example of an organization that uses folders to organize the projects for each geographic location in the business. Each project has its own set of associated resources. The members include an organization admin and an admin for each folder in the organization.
 
 image:diagram-iam-example-hierarchy-advanced.png["A conceptual diagram that shows an organization with three folders, each with three projects, and their associated resources. There are four members: one organization admin and three folder admins."]
+
+== What you can do with BlueXP IAM
+
+The following examples describe how you might use IAM to manage your BlueXP organization:
+
+* Grant specific roles to specific members so that they can only complete the required tasks.
+* Modify member permissions because they moved departments or because they have additional responsibilities.
+* Remove a user who left the company.
+* Add folders or projects to your hierarchy because a new business unit has added NetApp storage.
+* Move resources from one project to another because that resource has capacity that another team can utilize.
+* View the resources that a member can access.
+* View the members and resources associated with a specific project.
 
 == Related information
 
