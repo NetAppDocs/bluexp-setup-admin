@@ -169,7 +169,7 @@ sidebar:
                   url: /concept-accounts-gcp.html
                 - title: Manage credentials and subscriptions
                   url: /task-adding-gcp-accounts.html
-            - title: Manage NSS credentials associated with a BlueXP account
+            - title: Manage NSS credentials associated with a BlueXP organization or account
               url: /task-adding-nss-accounts.html
             - title: Manage credentials associated with your BlueXP login
               url: /task-manage-user-credentials.html

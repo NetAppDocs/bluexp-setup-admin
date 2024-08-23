@@ -36,7 +36,7 @@ At this point, you're logged in and can start using several BlueXP services like
 You don't need a Connector to get started with BlueXP, but you can create a Connector to unlock all BlueXP features and services. The Connector is NetApp software that enables BlueXP to manage resources and processes within your hybrid cloud environment.
 
 [role="quick-margin-para"]
-A BlueXP Account Admin can create a Connector in your cloud or on-premises network.
+You can create a Connector in your cloud or on-premises network.
 
 [role="quick-margin-list"]
 * link:concept-connectors.html[Learn more about when Connectors are required and how they work]

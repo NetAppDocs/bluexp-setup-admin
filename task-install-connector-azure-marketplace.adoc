@@ -197,7 +197,7 @@ Azure deploys the virtual machine with the specified settings. The virtual machi
 https://_ipaddress_
 
 . After you log in, set up the Connector:
-.. Specify the BlueXP account to associate with the Connector.
+.. Specify the BlueXP organization to associate with the Connector.
 .. Enter a name for the system.
 .. Under *Are you running in a secured environment?* keep restricted mode disabled.
 +
@@ -206,7 +206,7 @@ You should keep restricted mode disabled because these steps describe how to use
 
 .Result
 
-The Connector is now installed and is set up with your BlueXP account.
+The Connector is now installed and is set up with your BlueXP organization.
 
 If you have Azure Blob storage in the same Azure subscription where you created the Connector, you'll see an Azure Blob storage working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html[Learn how to manage Azure Blob storage from BlueXP^]
 

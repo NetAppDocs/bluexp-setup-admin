@@ -330,15 +330,15 @@ https://_ipaddress_
 
 . After you log in, set up the Connector:
 
-.. Specify the BlueXP account to associate with the Connector.
+.. Specify the BlueXP organization to associate with the Connector.
 +
-link:concept-netapp-accounts.html[Learn about BlueXP accounts].
+link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management].
 
 .. Enter a name for the system.
 
 .Result
 
-The Connector is now installed and set up with your BlueXP account.
+The Connector is now installed and set up with your BlueXP organization.
 
 Open a web browser and go to the https://console.bluexp.netapp.com[BlueXP console^] to start using the Connector with BlueXP.
 --

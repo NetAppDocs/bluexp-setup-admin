@@ -21,7 +21,7 @@ You'll be redirected to the BlueXP website.
 .. From the *Subscription Assignment* page:
 +
 //tag::assignment[]
-* Select the BlueXP accounts that you'd like to associate this subscription with.
+* Select the BlueXP organizations or accounts that you'd like to associate this subscription with.
 * In the *Replace existing subscription* field, choose whether you'd like to automatically replace the existing subscription for one account with this new subscription.
 +
 BlueXP replaces the existing subscription for all credentials in the account with this new subscription. If a set of credentials wasn't ever associated with a subscription, then this new subscription won't be associated with those credentials.

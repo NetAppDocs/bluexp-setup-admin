@@ -214,21 +214,27 @@ You need to create a Connector before you can change BlueXP settings. link:conce
 
 include::_include/subscribe-aws.adoc[]
 
-== Associate an existing subscription with your account
+== Associate an existing subscription with your organization or account
 
-When you subscribe to BlueXP from the AWS Marketplace, the last step in the process is to associate the subscription with your BlueXP accounts from the BlueXP website. If you didn't complete this step, then you can't use the subscription with your BlueXP account. 
+When you subscribe to BlueXP from the AWS Marketplace, the last step in the process is to associate the subscription with your BlueXP organizations or BlueXP accounts from the BlueXP website. If you didn't complete this step, then you can't use the subscription with your BlueXP organization or account.
+
+TIP: If you're using BlueXP in standard mode, you'll have a _BlueXP organization_, which you manage using BlueXP identity and access management (IAM). But if you're using BlueXP in restricted mode or private mode, then you'll have a _BlueXP account_.
++
+* link:concept-modes.html[Learn about BlueXP deployment modes]
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 
 Follow the steps below if you subscribed to BlueXP from the AWS Marketplace, but you missed the step to associate the subscription with your account.
 
 .Steps
 
-. Go to the BlueXP digital wallet to confirm that you didn't associate your subscription with your BlueXP account.
+. Go to the BlueXP digital wallet to confirm that you didn't associate your subscription with your BlueXP organization or account.
 
 .. From the BlueXP navigation menu, select *Governance > Digital wallet*.
 .. Select *Subscriptions*.
 .. Verify that your BlueXP subscription doesn't appear.
 +
-You'll only see the subscriptions that are associated with the account that you're currently viewing. If you don't see your subscription, proceed with the following steps.
+You'll only see the subscriptions that are associated with the organization or account that you're currently viewing. If you don't see your subscription, proceed with the following steps.
 
 . Log in to the AWS Console and navigate to *AWS Marketplace Subscriptions*.
 
@@ -254,7 +260,7 @@ include::_include/subscribe-aws.adoc[tag=assignment]
 +
 image:screenshot-subscription-assignment.png[A screenshot of the Subscription Assignment page that enables you to choose the exact BlueXP accounts to associate with this subscription.]
 
-. Go to the BlueXP digital wallet to confirm that the subscription is associated with your BlueXP account.
+. Go to the BlueXP digital wallet to confirm that the subscription is associated with your BlueXP organization or account.
 
 .. From the BlueXP navigation menu, select *Governance > Digital wallet*.
 .. Select *Subscriptions*.

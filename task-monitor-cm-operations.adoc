@@ -123,7 +123,7 @@ image:screenshot-add-email-recipient.png[A screenshot showing how to add new ema
 
 == Audit user activity
 
-The Timeline in BlueXP shows the actions that users completed to manage your organization or account. This includes management actions such as associating users, creating workspaces, creating Connectors, and more.
+The Timeline in BlueXP shows the actions that users completed to manage your organization or account. This includes management actions such as associating users, creating working environments, creating Connectors, and more.
 
 Checking the Timeline can be helpful if you need to identify who performed a specific action, or if you need to identify the status of an action.
 

@@ -5,7 +5,7 @@ keywords: https certificate, certificate, adding, installing, ca, certificate au
 summary: By default, BlueXP uses a self-signed certificate for HTTPS access to the web console. You can install a certificate signed by a certificate authority (CA), which provides better security protection than a self-signed certificate.
 ---
 
-= Install a CA-signed certificate for web-console access
+= Install a CA-signed certificate for web console access
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -58,7 +58,7 @@ The certificate must use the Privacy Enhanced Mail (PEM) Base-64 encoded X.509 f
 
 .Result
 
-BlueXP now uses the CA-signed certificate to provide secure HTTPS access. The following image shows a BlueXP account that is configured for secure access:
+BlueXP now uses the CA-signed certificate to provide secure HTTPS access. The following image shows an example of the HTTPS Setup page after configuring secure access:
 
 image:screenshot_https_cert.gif[Screen shot: Shows the HTTPS Setup page after you install a signed certificate. The page shows the certificate properties and an option to renew the certificate.]
 

@@ -28,7 +28,7 @@ This step sends your transfer request to NetApp.
 
 .. On the pop-up dialog box, select *Register with NetApp, Inc.*
 +
-This step must be completed to link the Google Cloud subscription to your BlueXP account. The process of linking a subscription isn't complete until you are redirected from this page and then sign in to BlueXP.
+This step must be completed to link the Google Cloud subscription with your BlueXP organization or account. The process of linking a subscription isn't complete until you are redirected from this page and then sign in to BlueXP.
 +
 image:screenshot_gcp_marketplace_register.png[A screenshot of a registration pop-up.]
  
@@ -36,7 +36,7 @@ image:screenshot_gcp_marketplace_register.png[A screenshot of a registration pop
 +
 NOTE: If someone from your organization has already subscribed to the NetApp BlueXP subscription from your billing account, then you will be redirected to https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=[the Cloud Volumes ONTAP page on the BlueXP website^] instead. If this is unexpected, contact your NetApp sales team. Google enables only one subscription per Google billing account.
 +
-* Select the BlueXP accounts that you'd like to associate this subscription with.
+* Select the BlueXP organizations or accounts that you'd like to associate this subscription with.
 * In the *Replace existing subscription* field, choose whether you'd like to automatically replace the existing subscription for one account with this new subscription.
 +
 BlueXP replaces the existing subscription for all credentials in the account with this new subscription. If a set of credentials wasn't ever associated with a subscription, then this new subscription won't be associated with those credentials.

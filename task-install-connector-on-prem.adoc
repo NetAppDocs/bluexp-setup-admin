@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-install-connector-on-prem.html
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install
-summary: Install a Connector on premises and then log in and set it up to work with your BlueXP account.
+summary: Install a Connector on premises and then log in and set it up to work with your BlueXP organization.
 ---
 
 = Install and set up a Connector on premises
@@ -13,7 +13,7 @@ summary: Install a Connector on premises and then log in and set it up to work w
 :imagesdir: ./media/
 
 [.lead]
-Install a Connector on premises and then log in and set it up to work with your BlueXP account.
+Install a Connector on premises and then log in and set it up to work with your BlueXP organization.
 
 .Before you begin
 
@@ -167,7 +167,7 @@ The Connector is now installed. At the end of the installation, the Connector se
 
 == Step 6: Set up the Connector
 
-Sign up or log in and then set up the Connector to work with your BlueXP account.
+Sign up or log in and then set up the Connector to work with your BlueXP organization.
 
 .Steps
 
@@ -180,7 +180,7 @@ _ipaddress_ can be localhost, a private IP address, or a public IP address, depe
 . Sign up or log in.
 
 . After you log in, set up BlueXP:
-.. Specify the BlueXP account to associate with the Connector.
+.. Specify the BlueXP organization to associate with the Connector.
 .. Enter a name for the system.
 .. Under *Are you running in a secured environment?* keep restricted mode disabled.
 +

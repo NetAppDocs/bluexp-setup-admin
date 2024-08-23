@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-adding-nss-accounts.html
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss
-summary: Associate a NetApp Support Site account with your BlueXP account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP account.
+summary: Associate a NetApp Support Site account with your BlueXP organization or account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP organization or account.
 ---
 
-= Manage NSS credentials associated with a BlueXP account
+= Manage NSS credentials associated with a BlueXP organization or account
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,13 +13,19 @@ summary: Associate a NetApp Support Site account with your BlueXP account to ena
 :imagesdir: ./media/
 
 [.lead]
-Associate a NetApp Support Site account with your BlueXP account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP account.
+Associate a NetApp Support Site account with your BlueXP organization or account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP organization or account.
 
-NOTE: BlueXP also supports associating one NSS account per BlueXP user. link:task-manage-user-credentials.html[Learn how to manage user-level credentials].
+BlueXP also supports associating one NSS account per BlueXP user account. link:task-manage-user-credentials.html[Learn how to manage user-level credentials].
+
+TIP: If you're using BlueXP in standard mode, you'll have a _BlueXP organization_, which you manage using BlueXP identity and access management (IAM). But if you're using BlueXP in restricted mode or private mode, then you'll have a _BlueXP account_.
++
+* link:concept-modes.html[Learn about BlueXP deployment modes]
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 
 == Overview
 
-Associating NetApp Support Site credentials with your specific BlueXP account ID is required to enable the following tasks in BlueXP:
+Associating NetApp Support Site credentials with your specific BlueXP account serial number is required to enable the following tasks in BlueXP:
 
 * Deploying Cloud Volumes ONTAP when you bring your own license (BYOL)
 +
@@ -31,11 +37,11 @@ Providing your NSS account is required to activate support for your system and t
 
 * Upgrading Cloud Volumes ONTAP software to the latest release
 
-These credentials are associated with your specific BlueXP account ID. Users who belong to the BlueXP account can access these credentials from *Support > NSS Management*.
+These credentials are associated with your specific BlueXP account serial number. Users who belong to the BlueXP organization or account can access these credentials from *Support > NSS Management*.
 
 == Add an NSS account
 
-The Support Dashboard enables you to add and manage your NetApp Support Site accounts for use with BlueXP at the BlueXP account level.
+The Support Dashboard enables you to add and manage your NetApp Support Site accounts for use with BlueXP at the BlueXP organization or account level.
 
 * If you have a customer-level account, you can add one or more NSS accounts.
 

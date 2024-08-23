@@ -114,7 +114,7 @@ link:concept-modes.html[Learn about BlueXP deployment modes].
 
 == How to create a Connector
 
-A BlueXP Account Admin can create a Connector directly from BlueXP, from your cloud provider's marketplace, or by manually installing the software on your own Linux host. How you get started depends on whether you're using BlueXP in standard mode, restricted mode, or private mode.
+You can create a Connector directly from BlueXP, from your cloud provider's marketplace, or by manually installing the software on your own Linux host. How you get started depends on whether you're using BlueXP in standard mode, restricted mode, or private mode.
 
 * link:concept-modes.html[Learn about BlueXP deployment modes]
 * link:task-quick-start-standard-mode.html[Get started with BlueXP in standard mode]
