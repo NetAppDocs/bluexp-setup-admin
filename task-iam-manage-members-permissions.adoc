@@ -19,9 +19,9 @@ BlueXP identity and access management (IAM) enables you to associate members wit
 
 You can associate two types of members with your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
 
-// start tabbed area 
+// start tabbed area
 
-[role="tabbed-block"] 
+[role="tabbed-block"]
 
 ====
 
