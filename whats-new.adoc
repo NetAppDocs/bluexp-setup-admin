@@ -34,7 +34,7 @@ Support for this release includes an update to the Connector policy for Azure. T
 
 These permissions are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets. If you have existing Connectors and you want to use this new feature, you'll need to add these permissions to the custom roles that are associated with your Azure credentials.
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes[Learn about Cloud Volumes ONTAP support for Virtual Machine Scale Sets^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes[Learn about the Cloud Volumes ONTAP 9.15.1 release^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
 
 == 8 August 2024
