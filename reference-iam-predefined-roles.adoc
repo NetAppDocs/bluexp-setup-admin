@@ -34,9 +34,11 @@ Permissions::
 A member who has this role can complete the following actions in BlueXP:
 
 * Manage all working environments in the projects and folders for which they have permissions
+* Administer IAM by managing only the folders and projects for which they have permissions
++
+Management actions include associating and dissociating resources, members, and Connectors with the folders and projects.
 * Manage credentials
 * View the BlueXP timeline
-* Administer IAM by managing the folders and projects for which they have permissions
 * Create Connectors
 * Register BlueXP for support and submit cases
 
@@ -53,10 +55,10 @@ No other actions are available to a member who has this role.
 == SnapCenter admin
 
 Description::
-Provides the ability to back up snapshots from on-premises ONTAP clusters.
+Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
 
 Permissions::
-Back up application-consistent Snapshots from on-premises ONTAP systems using BlueXP backup and recovery for applications.
+Complete any action from Backup and recovery > Applications.
 +
 No other actions are available to a member who has this role.
 

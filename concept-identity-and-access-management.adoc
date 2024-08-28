@@ -13,7 +13,9 @@ summary: BlueXP identity and access management (IAM) enables you to control acce
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) enables you to control access to your resources. With IAM, you can organize your resources according to your organization's hierarchy. For example, you can organize resources by site or department. You can then assign members permissions to access specific resources in the hierarchy and prevent access to other resources.
+BlueXP identity and access management (IAM) enables you to control access to your resources. With IAM, you can organize your resources according to your organization's hierarchy. For example, you can organize resources by site or department. You can then assign members permissions to access specific resources in the hierarchy and prevent access to other resources. 
+
+BlueXP IAM replaces and enhances the previous functionality provided by BlueXP accounts. link:whats-new.html#iam[Learn more about the introduction of BlueXP IAM].
 
 BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you use a BlueXP _account_ to manage users and resources. 
 
