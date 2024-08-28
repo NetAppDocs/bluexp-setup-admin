@@ -8,7 +8,7 @@ Supported operating systems::
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.10
-** 9.1 to 9.3
+** 9.1 to 9.4
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
@@ -84,39 +84,7 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 [[podman-versions]]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-* Podman is required for Red Hat Enterprise Linux 8 and 9.
-+
-[cols="50a,50a" options="header"] 
-
-|=== 
-
-// header row 
-
-a| RHEL version 
-
-a| Supported Podman version
-
-// First body row 
-
-a| RHEL 8.6 to 8.9
-
-a| Podman 4.6.1
-
-// Second body row 
-
-a| RHEL 8.10
-
-a| Podman 4.6.1 and 4.9.4
-
-// Third body row 
-
-a| RHEL 9.1 to 9.3
-
-a| Podman 4.6.1
-
-// table end 
-
-|===
+* Podman version 4.6.1 or 4.9.4 is required when installing the Connector on a Red Hat Enterprise Linux host.
 +
 The following prerequisites must be met for Podman:
 +

@@ -19,7 +19,42 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 //tag::whats-new[]
 
-== 22 Aug 2024
+== 4 September 2024
+
+=== Connector 3.9.44
+
+This release includes minor improvements and bug fixes.
+
+The 3.9.43 release is available for standard mode and restricted mode.
+
+=== Updated permissions?
+
+=== Support for Docker Engine 26?
+
+=== Support for RHEL 9.4
+
+BlueXP now supports installing the Connector on a Red Hat Enterprise Linux 9.4 host when using BlueXP in standard mode or restricted mode. 
+
+Support for RHEL 9.4 starts with the 3.9.40 release of the Connector.
+
+The updated list of supported RHEL versions for standard mode and restricted mode now includes the following:
+
+* 8.6 to 8.10
+* 9.1 to 9.4
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
+=== Support for Podman 4.9.4 with all RHEL versions
+
+Podman 4.9.4 is now supported with all supported versions of Red Hat Enterprise Linux. Version 4.9.4 was previously supported with only RHEL 8.10.
+
+As a result of this support, Podman versions 4.6.1 and 4.9.4 are supported with Red Hat Enterprise Linux hosts.
+
+Podman is required for RHEL hosts starting with the 3.9.40 release of the Connector.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
+== 22 August 2024
 
 === Connector 3.9.43 patch
 
@@ -41,7 +76,7 @@ These permissions are required for Cloud Volumes ONTAP support of Virtual Machin
 
 === Connector 3.9.43
 
-This release includes minor improvements, bug fixes, and the requirement for new Azure permissions.
+This release includes minor improvements and bug fixes.
 
 The 3.9.43 release is available for standard mode and restricted mode.
 
