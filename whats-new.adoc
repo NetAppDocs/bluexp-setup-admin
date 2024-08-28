@@ -27,8 +27,6 @@ This release includes minor improvements and bug fixes.
 
 The 3.9.43 release is available for standard mode and restricted mode.
 
-=== Updated permissions?
-
 === Support for Docker Engine 26?
 
 === Support for RHEL 9.4
@@ -53,6 +51,13 @@ As a result of this support, Podman versions 4.6.1 and 4.9.4 are supported with 
 Podman is required for RHEL hosts starting with the 3.9.40 release of the Connector.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
+=== Updated AWS and Azure permissions
+
+We updated the AWS and Azure policies for the Connector to remove permissions that are no longer required. The permissions were related to BlueXP edge caching and discovery and management of Kubernetes clusters, which are no longer supported as of August, 2024.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[Learn what changed in the AWS policy]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[Learn what changed in the Azure policy]
 
 == 22 August 2024
 
