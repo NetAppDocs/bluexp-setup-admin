@@ -61,11 +61,3 @@ Permissions::
 Complete any action from Backup and recovery > Applications.
 +
 No other actions are available to a member who has this role.
-
-== SnapCenter system
-
-Description::
-Internal only role that shouldn't be available to users in BlueXP?
-
-Permissions::
-?
