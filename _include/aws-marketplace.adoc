@@ -4,7 +4,7 @@
 
 . On the Marketplace page, select *Continue to Subscribe*.
 +
-image:screenshot-subscribe-aws.png[A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace.]
+image:screenshot-subscribe-aws-continue.png[A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace.]
 
 . To subscribe to the software, select *Accept Terms*.
 +
