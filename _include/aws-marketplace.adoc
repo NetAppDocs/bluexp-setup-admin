@@ -10,7 +10,7 @@ image:screenshot-subscribe-aws.png[A screenshot that shows the Continue to Subsc
 +
 The subscription process can take a few minutes.
 
-. Select *Continue to Configuration*.
+. After the subscription process is complete, select *Continue to Configuration*.
 +
 image:screenshot-subscribe-aws-configuration.png[A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace.]
 
