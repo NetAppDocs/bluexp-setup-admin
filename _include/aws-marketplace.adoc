@@ -2,13 +2,21 @@
 
 . Go to the https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui[BlueXP Connector listing on the AWS Marketplace^]
 
-. On the Marketplace page, select *Continue to Subscribe* and then select *Continue to Configuration*.
+. On the Marketplace page, select *Continue to Subscribe*.
 +
 image:screenshot-subscribe-aws.png[A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace.]
 
-. Change any of the default options and select *Continue to Launch*.
+. To subscribe to the software, select *Accept Terms*.
++
+The subscription process can take a few minutes.
 
-. Under *Choose Action*, select *Launch through EC2* and then select *Launch*.
+. Select *Continue to Configuration*.
++
+image:screenshot-subscribe-aws-configuration.png[A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace.]
+
+. On the *Configure this software* page, ensure that you've selected the correct region and then select *Continue to Launch*.
+
+. On the *Launch this software* page, under *Choose Action*, select *Launch through EC2* and then select *Launch*.
 +
 These steps describe how to launch the instance from the EC2 Console because the console enables you to attach an IAM role to the Connector instance. This isn't possible using the *Launch from Website* action.
 
@@ -16,9 +24,9 @@ These steps describe how to launch the instance from the EC2 Console because the
 
 * *Name and tags*: Enter a name and tags for the instance.
 
-* *Application and OS Image*: Skip this section. The Connector AMI is already selected.
+* *Application and OS Images*: Skip this section. The Connector AMI is already selected.
 
-* *Instance type*: Depending on region availability, choose an instance type that meets RAM and CPU requirements (t3.2xlarge is recommended).
+* *Instance type*: Depending on region availability, choose an instance type that meets RAM and CPU requirements (t3.2xlarge is preselected and recommended).
 
 * *Key pair (login)*: Select the key pair that you want to use to securely connect to the instance.
 
@@ -26,9 +34,7 @@ These steps describe how to launch the instance from the EC2 Console because the
 +
 ** Choose the desired VPC and subnet.
 ** Specify whether the instance should have a public IP address.
-** Specify firewall settings that enable the required connection methods for the Connector instance: SSH, HTTP, and HTTPS.
-+
-A few more rule are required for specific configurations.
+** Specify security group settings that enable the required connection methods for the Connector instance: SSH, HTTP, and HTTPS.
 +
 link:reference-ports-aws.html[View security group rules for AWS].
 
