@@ -25,7 +25,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 This release includes an enhancement to SSL certificates and bug fixes.
 
-The 3.9.43 release is available for standard mode and restricted mode.
+The 3.9.44 release is available for standard mode and restricted mode.
 
 ==== Updated SSL certificate for local UI access
 
