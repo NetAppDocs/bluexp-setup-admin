@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-predefined-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, snapcenter system, role, iam role, admin, iam, identity and access management
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
 
