@@ -72,7 +72,7 @@ NOTE: Using the `dnf install` command meets the requirement for adding podman-co
 
 .Docker Engine
 --
-Install a version of Docker Engine between 23.0.6 and 25.0.5.
+Install a supported version of Docker Engine. <<docker-versions,View the Docker Engine versions that BlueXP supports>>.
 
 .Steps
 

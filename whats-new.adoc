@@ -23,13 +23,24 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.44
 
-This release includes an enhancement to SSL certificates and bug fixes.
+This release includes support for Docker Engine 26, an enhancement to SSL certificates, and bug fixes.
 
 The 3.9.44 release is available for standard mode and restricted mode.
 
+==== Support for Docker Engine 26
+
+Docker Engine is the required container orchestration tool when installing the Connector on Ubuntu 22.04 LTS.
+
+Starting with the 3.9.44 release of the Connector, Docker Engine 26 is now supported with _new_ Connector installations.
+
+The updated list of supported Docker Engine versions is as follows:
+
+* The minimum supported version is 23.0.6.
+* The maximum supported version is 26.0.0.
+
 ==== Updated SSL certificate for local UI access
 
-When you use BlueXP in restricted mode or private mode, the user interface is accessible from the Connector virtual machine that's deployed in your cloud region or on premises. By default, BlueXP uses a self-signed SSL certificate to provide secure HTTPS access to the web-based console running on the Connector.
+When you use BlueXP in restricted mode or private mode, the user interface is accessible from the Connector virtual machine that's deployed in your cloud region or on-premises. By default, BlueXP uses a self-signed SSL certificate to provide secure HTTPS access to the web-based console running on the Connector.
 
 In this release, we made changes to the SSL certificate for new and existing Connectors:
 
