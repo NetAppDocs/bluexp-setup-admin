@@ -7,7 +7,7 @@ summary: Before you can open a support case with NetApp technical support, you n
 
 = Register for support
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 include::https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/_include/support-registration.adoc[]

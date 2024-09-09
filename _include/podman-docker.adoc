@@ -72,7 +72,7 @@ NOTE: Using the `dnf install` command meets the requirement for adding podman-co
 
 .Docker Engine
 --
-Install a supported version of Docker Engine. <<docker-versions,View the Docker Engine versions that BlueXP supports>>.
+Install a supported version of Docker Engine. <<podman-versions,View the Docker Engine versions that BlueXP supports>>.
 
 .Steps
 

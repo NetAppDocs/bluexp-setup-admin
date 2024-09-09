@@ -71,7 +71,6 @@ BlueXP requires this space in `/var` because Docker or Podman are architected to
 //end::disk-space[]
 
 //tag::docker[]
-[[docker-versions]]
 Docker Engine:: 
 Docker Engine is required on the host before you install the Connector. 
 +
@@ -87,10 +86,11 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 [[podman-versions]]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-* Podman version 4.6.1 or 4.9.4 is required when installing the Connector on a Red Hat Enterprise Linux host.
+* Podman is required for Red Hat Enterprise Linux.
 +
 The following prerequisites must be met for Podman:
 +
+** Podman version 4.6.1 or 4.9.4 is required
 ** The podman.socket service must be enabled and started
 ** python3 must be installed
 ** The podman-compose package version 1.0.6 must be installed
@@ -98,6 +98,8 @@ The following prerequisites must be met for Podman:
 
 * Docker Engine is required for Ubuntu.
 +
-** The minimum supported version is 23.0.6.
-** The maximum supported version is 25.0.5.
+* The minimum supported version is 23.0.6.
+* The maximum supported version is 26.0.0.
++
+Note that Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector. 
 //end::container-req[]

@@ -46,7 +46,7 @@ In this release, we made changes to the SSL certificate for new and existing Con
 
 * The Common Name for the certificate now matches the short host name
 
-* The Certificate Subject Alternative Name is the Fully Qualified Domain Name (FQDN) of the host machine (mentioned in NewCertificate2.png)
+* The Certificate Subject Alternative Name is the Fully Qualified Domain Name (FQDN) of the host machine
 
 === Support for RHEL 9.4
 
