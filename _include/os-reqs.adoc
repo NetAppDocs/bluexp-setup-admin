@@ -98,8 +98,8 @@ The following prerequisites must be met for Podman:
 
 * Docker Engine is required for Ubuntu.
 +
-* The minimum supported version is 23.0.6.
-* The maximum supported version is 26.0.0.
+** The minimum supported version is 23.0.6.
+** The maximum supported version is 26.0.0.
 +
 Note that Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector. 
 //end::container-req[]
