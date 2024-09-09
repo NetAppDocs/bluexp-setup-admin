@@ -111,6 +111,8 @@ sidebar:
               url: /task-iam-manage-members-permissions.html
             - title: Manage your resource hierarchy
               url: /task-iam-manage-resources.html
+            - title: Associate Connectors with folders and projects
+              url: /task-iam-associate-connectors.html
             - title: Switch between projects and organizations
               url: /task-iam-switch-organizations-projects.html
             - title: Rename your organization

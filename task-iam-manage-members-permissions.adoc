@@ -15,6 +15,8 @@ summary: Manage your organization's members to provide permissions across differ
 [.lead]
 BlueXP identity and access management (IAM) enables you to associate members with your organization and provide them permissions to the resources in the entire organization or in specific folders and projects. You can associate new user accounts and service accounts, manage member roles, and more.
 
+TIP: To ensure that you don't lose access to your BlueXP organization, it's a best practice to have two members with the Organization admin role.
+
 == Associate new members with your organization
 
 You can associate two types of members with your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
@@ -120,6 +122,16 @@ There are a few ways to view details about the members of your organization:
 * You can view a list of all members in the organization
 * You can view the members associated with a specific project or folder
 * You can view the projects or folders associated with a specific member
+
+Note that the *Members* page shows details about three types of members:
+
+* User accounts
+* Service accounts
+* Connectors
+
+BlueXP IAM includes details about Connectors so that you can associate the Connectors with the folders and projects in your organization. For example, you might associate a Connector with another project so that members can use the Connector to discover and create resources in that project. 
+
+link:task-iam-associate-connectors.html[Learn how to associate Connectors with folders and projects].
 
 === View the members in your organization
 

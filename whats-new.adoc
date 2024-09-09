@@ -22,7 +22,7 @@ Learn what's new with BlueXP administration features: BlueXP identity and access
 == 4 September 2024
 
 [#iam]
-=== BlueXP identity and access management 
+=== BlueXP identity and access management
 
 BlueXP identity and access management (IAM) is a new resource and access management model that replaces and enhances the previous functionality provided by BlueXP accounts when using BlueXP in standard mode. 
 
@@ -35,7 +35,7 @@ BlueXP IAM provides more granular management of resources and permissions:
 
 These enhancements provide better control over the actions that users can perform and the resources that they can access.
 
-==== Affect on your existing account
+==== How BlueXP IAM affects your existing account
 
 When you log in to BlueXP, you'll notice these changes:
 
@@ -45,6 +45,9 @@ When you log in to BlueXP, you'll notice these changes:
 ** _Account admin_ is now _Organization admin_
 ** _Workspace admin_ is now _Folder or project admin_
 ** _Compliance viewer_ is now _Classification viewer_
+* Under Settings, you can now access BlueXP identity and access management and take advantage of the enhancements noted above
+
+image:screenshot-iam-introduction.png[A screenshot of BlueXP that shows the Organization and Project selectable from the top of the interface as well as identity and access management which is available from the Settings menu.]
 
 There are no changes to your existing users or working environments.
 
@@ -54,7 +57,7 @@ If you had multiple BlueXP accounts, you now have multiple BlueXP organizations.
 
 ==== API for BlueXP IAM
 
-This change does introduce a new API for BlueXP IAM, but it is backwards compatible with the previous tenancy API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]
+This change introduces a new API for BlueXP IAM, but it is backwards compatible with the previous tenancy API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]
 
 ==== Supported deployment modes
 

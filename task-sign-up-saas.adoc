@@ -28,7 +28,7 @@ If you have existing NetApp Support Site credentials, you don't need to sign up 
 Note that the default password experience is a one-time passcode (OTP) to the registered email address. A new OTP is generated with each sign-in attempt.
 
 Federated connection::
-You can use single sign-on to log in using credentials from your corporate directory (federated identity). The first user in your organization's account must sign up to BlueXP or log in using NSS credentials, and then set up identity federation. After that, each subsequent user can simply log in using their SSO credentials. 
+You can use single sign-on to log in using credentials from your corporate directory (federated identity). The first user in your organization's account must sign up to BlueXP or log in using NSS credentials, and then set up identity federation. After that, you can add members from your corporate identity to your organization. Those users can then log in using their SSO credentials. 
 +
 link:concept-federation.html[Learn how to use identity federation with BlueXP].
 

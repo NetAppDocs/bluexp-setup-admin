@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: task-iam-associate-connectors.html
+keywords: connector, associate connector, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource
+summary: To make a Connector available to use with another folder or project in your organization, you need to create an association from BlueXP IAM.
+---
+
+= Associate Connectors with folders and projects
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP identity and access management (IAM).
+
+.About this task
+	
+* When you associate a Connector with a project, that Connector is accessible from the BlueXP canvas when viewing the project.
+
+* Associating a Connector with a folder doesn't automatically make that Connector accessible from all projects in the folder. Organization members can't access a Connector from a project until you associate the Connector with that specific project.
++
+An Organization admin might associate a Connector with a folder so that the Folder or project admin can make the decision to associate that Connector with the appropriate projects that reside in the folder.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
+
+. From the table, find the Connector that you want to associate.
++
+To find the Connector, you can use the search that's above the table and you can filter the contents of the table by selecting Connector from the *Type* column.
+
+. To first view the folders and projects that the Connector is associated with, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
++
+BlueXP displays details about the folders and projects that the Connector is associated with.
+
+. Select *Associate to folder or project*.
+
+. Select a folder or project and then select *Accept*.
+
+. To associate the Connector with an additional folder or project, select *Add folder or project* and then select the folder or project.
+
+. Select *Associate Connector*.
+
+.Result
+
+BlueXP associates the Connector with the selected folders and projects. Members who have permissions for those folders and projects now have the ability to select that Connector.
+
+.After you finish
+
+If you want to associate the resources that the Connector manages with the same folders and projects, you can do so from the Resources page.
+
+link:task-iam-manage-resources.html#associate-resource[Learn how to associate a resource with folders and projects].

@@ -155,6 +155,12 @@ An _Organization admin_ might associate a resource with a folder so that the _Fo
 
 BlueXP associates the resource with the selected folders and projects. Members who have permissions for those folders and projects now have the ability to access the resource in BlueXP.
 
+.After you finish
+
+If the resource that you associated is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource isn't accessible from the BlueXP canvas.
+
+link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
+
 [#remove-resource]
 == Remove a resource from a folder or project
 

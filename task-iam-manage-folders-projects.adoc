@@ -19,6 +19,14 @@ BlueXP identity and access management (IAM) enables you to represent your organi
 
 You can create additional projects that members can access to manage your organization's resources. You can optionally create folders to group related projects together.
 
+.About this task
+
+The depth of your organization's hierarchy can go down to 7 levels. As a result, you can create nested folders down to 6 levels. The last nested folder can then include projects at the seventh level of the hierarchy.
+
+The following image illustrates the maximum depth of your organization's hierarchy:
+
+image:screenshot-iam-max-depth.png[A screenshot that shows an organization, six nested folders, and a project in the last nested folder.]
+
 .Steps
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
