@@ -60,7 +60,7 @@ NOTE: If you deployed a Connector from BlueXP, BlueXP automatically added AWS cr
 
 You can set up a trust relationship between the source AWS account in which you deployed the Connector instance and other AWS accounts by using IAM roles. You would then provide BlueXP with the ARN of the IAM roles from the trusted accounts.
 
-If the Connector is installed on premises, you can't use this authentication method. You must use AWS keys.
+If the Connector is installed on-premises, you can't use this authentication method. You must use AWS keys.
 
 .Steps
 
@@ -84,7 +84,7 @@ The account now has the required permissions. <<add-the-credentials,You can now 
 
 If you want to provide BlueXP with AWS keys for an IAM user, then you need to grant the required permissions to that user. The BlueXP IAM policy defines the AWS actions and resources that BlueXP is allowed to use.
 
-You must use this authentication method if the Connector is installed on premises. You can't use an IAM role.
+You must use this authentication method if the Connector is installed on-premises. You can't use an IAM role.
 
 .Steps
 
