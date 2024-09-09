@@ -13,11 +13,12 @@ summary: To create a Connector in Google Cloud from BlueXP or by using gcloud, y
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector in Google Cloud from BlueXP or by using gcloud, you need to set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, and then create the Connector.
+A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. The available installation options include creating the Connector in AWS directly from BlueXP or by using gcloud. To create a Connector in Google Cloud from BlueXP or by using gcloud, you need to set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, and then create the Connector.
 
 .Before you begin
 
-You should review link:reference-limitations.html[Connector limitations].
+* You should have an link:concept-connectors.html[understanding of Connectors].
+* You should review link:reference-limitations.html[Connector limitations].
 
 == Step 1: Set up networking
 
