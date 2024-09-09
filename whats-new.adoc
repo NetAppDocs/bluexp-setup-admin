@@ -35,7 +35,9 @@ BlueXP IAM provides more granular management of resources and permissions:
 
 These enhancements provide better control over the actions that users can perform and the resources that they can access.
 
-There are no changes to your existing users or working environments. No conversion or migration is required. When you log in, you'll notice these changes:
+==== Affect on your existing account
+
+When you log in to BlueXP, you'll notice these changes:
 
 * Your _account_ is now called an _organization_
 * Your _workspaces_ are now called _projects_
@@ -43,14 +45,25 @@ There are no changes to your existing users or working environments. No conversi
 ** _Account admin_ is now _Organization admin_
 ** _Workspace admin_ is now _Folder or project admin_
 ** _Compliance viewer_ is now _Classification viewer_
-+
-While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same resources as before.
 
-This change does introduce a new API for BlueXP IAM, but it is backwards compatible with the previous tenancy API. Learn about the API for BlueXP IAM. !!! link to be added !!!
+There are no changes to your existing users or working environments.
+
+While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same working environments as before.
+
+If you had multiple BlueXP accounts, you now have multiple BlueXP organizations.
+
+==== API for BlueXP IAM
+
+This change does introduce a new API for BlueXP IAM, but it is backwards compatible with the previous tenancy API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]
+
+==== Supported deployment modes
 
 BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll continue using a BlueXP _account_ to manage workspaces, users, and resources.
 
-link:concept-identity-and-access-management.html[Learn more about BlueXP IAM].
+==== Learn more
+
+* link:concept-identity-and-access-management.html[Learn more about BlueXP IAM]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
 
 == 8 August 2024
 
