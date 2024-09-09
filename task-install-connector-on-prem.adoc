@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-install-connector-on-prem.html
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install
-summary: Install a Connector on premises and then log in and set it up to work with your BlueXP account.
+summary: Install a Connector on-premises and then log in and set it up to work with your BlueXP account.
 ---
 
-= Install and set up a Connector on premises
+= Install and set up a Connector on-premises
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,12 @@ summary: Install a Connector on premises and then log in and set it up to work w
 :imagesdir: ./media/
 
 [.lead]
-Install a Connector on premises and then log in and set it up to work with your BlueXP account.
+A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. To run the Connector on-premises, you need to review host requirements, set up your networking, prepare cloud permissions, install the Connector, set up the Connector, and then and then provide the permissions that you prepared.
 
 .Before you begin
 
-You should review link:reference-limitations.html[Connector limitations].
+* You should have an link:concept-connectors.html[understanding of Connectors].
+* You should review link:reference-limitations.html[Connector limitations].
 
 == Step 1: Review host requirements
 
@@ -100,9 +101,9 @@ TIP: Why not Google Cloud? When the Connector is installed on your premises, it 
 
 .AWS
 --
-When the Connector is installed on premises, you need to provide BlueXP with AWS permissions by adding access keys for an IAM user who has the required permissions. 
+When the Connector is installed on-premises, you need to provide BlueXP with AWS permissions by adding access keys for an IAM user who has the required permissions. 
 
-You must use this authentication method if the Connector is installed on premises. You can't use an IAM role.
+You must use this authentication method if the Connector is installed on-premises. You can't use an IAM role.
 
 .Steps
 
@@ -121,7 +122,7 @@ You should now have access keys for an IAM user who has the required permissions
 
 .Azure
 --
-When the Connector is installed on premises, you need to provide BlueXP with Azure permissions by setting up a service principal in Microsoft Entra ID and obtaining the Azure credentials that BlueXP needs.
+When the Connector is installed on-premises, you need to provide BlueXP with Azure permissions by setting up a service principal in Microsoft Entra ID and obtaining the Azure credentials that BlueXP needs.
 
 .Create a Microsoft Entra application for role-based access control
 
@@ -153,7 +154,7 @@ Your service principal is now setup and you should have copied the application (
 
 == Step 5: Install the Connector
 
-Download and install the Connector software on an existing Linux host on premises.
+Download and install the Connector software on an existing Linux host on-premises.
 
 include::_include/manual-install.adoc[tag=before]
 
@@ -184,7 +185,7 @@ _ipaddress_ can be localhost, a private IP address, or a public IP address, depe
 .. Enter a name for the system.
 .. Under *Are you running in a secured environment?* keep restricted mode disabled.
 +
-You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. (In addition, restricted mode isn't supported when the Connector is installed on premises.)
+You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. (In addition, restricted mode isn't supported when the Connector is installed on-premises.)
 .. Select *Let's start*.
 
 .Result
