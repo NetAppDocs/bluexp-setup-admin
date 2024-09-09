@@ -117,7 +117,7 @@ As a result of this change, the default VM instance type when deploying the Conn
 * Azure: Standard_D8s_v3
 * Google Cloud: n2-standard-8
 
-This requirement applies to new and existing Connectors.
+The updated CPU and RAM requirements apply to all new Connectors. For existing Connectors, increasing the CPU and RAM is recommended to provide improved performance and reliability.
 
 === Support for Podman 4.9.4 with RHEL 8.10
 
