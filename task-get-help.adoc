@@ -7,7 +7,7 @@ summary: NetApp provides support for BlueXP in a variety of ways. Extensive free
 
 = Get help
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 include::https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/_include/get-help.adoc[]

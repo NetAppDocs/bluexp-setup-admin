@@ -8,7 +8,7 @@ Supported operating systems::
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.10
-** 9.1 to 9.3
+** 9.1 to 9.4
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
@@ -75,7 +75,9 @@ Docker Engine::
 Docker Engine is required on the host before you install the Connector. 
 +
 * The minimum supported version is 23.0.6.
-* The maximum supported version is 25.0.5.
+* The maximum supported version is 26.0.0.
++
+Note that Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector. 
 +
 https://docs.docker.com/engine/install/[View installation instructions^]
 //end::docker[]
@@ -84,42 +86,11 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 [[podman-versions]]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-* Podman is required for Red Hat Enterprise Linux 8 and 9.
-+
-[cols="50a,50a" options="header"] 
-
-|=== 
-
-// header row 
-
-a| RHEL version 
-
-a| Supported Podman version
-
-// First body row 
-
-a| RHEL 8.6 to 8.9
-
-a| Podman 4.6.1
-
-// Second body row 
-
-a| RHEL 8.10
-
-a| Podman 4.6.1 and 4.9.4
-
-// Third body row 
-
-a| RHEL 9.1 to 9.3
-
-a| Podman 4.6.1
-
-// table end 
-
-|===
+* Podman is required for Red Hat Enterprise Linux.
 +
 The following prerequisites must be met for Podman:
 +
+** Podman version 4.6.1 or 4.9.4 is required
 ** The podman.socket service must be enabled and started
 ** python3 must be installed
 ** The podman-compose package version 1.0.6 must be installed
@@ -128,5 +99,7 @@ The following prerequisites must be met for Podman:
 * Docker Engine is required for Ubuntu.
 +
 ** The minimum supported version is 23.0.6.
-** The maximum supported version is 25.0.5.
+** The maximum supported version is 26.0.0.
++
+Note that Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector. 
 //end::container-req[]
