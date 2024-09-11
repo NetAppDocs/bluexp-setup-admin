@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing
-summary: By default, BlueXP uses a self-signed certificate for HTTPS access to the web console. You can install a certificate signed by a certificate authority (CA), which provides better security protection than a self-signed certificate.
+summary: Install a CA-signed certificate for user access to the web-based console when using BlueXP in restricted mode or private mode.
 ---
 
-= Install a CA-signed certificate for web console access
+= Install a CA-signed certificate for web-based console access
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,11 @@ summary: By default, BlueXP uses a self-signed certificate for HTTPS access to t
 :imagesdir: ./media/
 
 [.lead]
-By default, BlueXP uses a self-signed SSL certificate to provide secure access to the https://console.bluexp.netapp.com/[BlueXP web-based console^] using an HTTPS connection. If required by your business, you can install a certificate signed by a certificate authority (CA), which provides better security protection than a self-signed certificate. After you install the certificate, BlueXP uses the CA-signed certificate when users access the web-based console.
+When you use BlueXP in restricted mode or private mode, the user interface is accessible from the Connector virtual machine that's deployed in your cloud region or on-premises. By default, BlueXP uses a self-signed SSL certificate to provide secure HTTPS access to the web-based console running on the Connector. If required by your business, you can install a certificate signed by a certificate authority (CA), which provides better security protection than a self-signed certificate. After you install the certificate, BlueXP uses the CA-signed certificate when users access the web-based console.
 
 == Before you begin
 
-You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how].
+You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how to create a Connector].
 
 == Install an HTTPS certificate
 
@@ -58,7 +58,7 @@ The certificate must use the Privacy Enhanced Mail (PEM) Base-64 encoded X.509 f
 
 .Result
 
-BlueXP now uses the CA-signed certificate to provide secure HTTPS access. The following image shows an example of the HTTPS Setup page after configuring secure access:
+BlueXP now uses the CA-signed certificate to provide secure HTTPS access. The following image shows a Connector that is configured for secure access:
 
 image:screenshot_https_cert.gif[Screen shot: Shows the HTTPS Setup page after you install a signed certificate. The page shows the certificate properties and an option to renew the certificate.]
 

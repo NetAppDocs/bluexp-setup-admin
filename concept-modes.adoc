@@ -34,7 +34,7 @@ This mode is typically used by state and local governments and regulated compani
 <<Restricted mode, Learn more about outbound connectivity to the SaaS layer>>.
 
 Private mode::
-A BlueXP Connector is installed on premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has _no_ connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
+A BlueXP Connector is installed on-premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has _no_ connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
 +
 A secure region includes https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], and https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
@@ -234,13 +234,13 @@ Note that you can't change the restricted mode setting after BlueXP creates the 
 
 == Private mode
 
-In private mode, you can install a Connector either on premises or in the cloud and then use BlueXP to manage data across your hybrid cloud. There is no connectivity to the BlueXP SaaS layer.
+In private mode, you can install a Connector either on-premises or in the cloud and then use BlueXP to manage data across your hybrid cloud. There is no connectivity to the BlueXP SaaS layer.
 
 The following image shows an example of a private mode deployment where the Connector is installed in the cloud and manages both Cloud Volumes ONTAP and an on-premises ONTAP cluster.
 
 image:diagram-private-mode-cloud.png["A conceptual image that shows a virtual network in the cloud where a Connector is running and providing access to the web-based console, and is managing Cloud Volumes ONTAP and an AFF cluster in an on-premises data center."]
 
-Meanwhile, the second image shows an example of a private mode deployment where the Connector is installed on premises, manages an on-premises ONTAP cluster, and provides access to supported BlueXP data services.
+Meanwhile, the second image shows an example of a private mode deployment where the Connector is installed on-premises, manages an on-premises ONTAP cluster, and provides access to supported BlueXP data services.
 
 image:diagram-private-mode-onprem.png["A conceptual image that shows an on-premises data center where a Connector is running and providing access to the web-based console, BlueXP data services, and is managing an AFF cluster in an on-premises data center."]
 
@@ -250,16 +250,16 @@ Outbound communication::
 No outbound connectivity is required to the BlueXP SaaS layer. All packages, dependencies, and essential components are packaged with the Connector and served from the local machine. Connectivity to your cloud provider's publicly available resources is required only if you are deploying Cloud Volumes ONTAP.
 
 Supported location for the Connector::
-In private mode, the Connector is supported in the cloud or on premises.
+In private mode, the Connector is supported in the cloud or on-premises.
 
 Connector installation::
-Manual installations of the Connector are supported on your own Linux host in the cloud or on premises.
+Manual installations of the Connector are supported on your own Linux host in the cloud or on-premises.
 
 Connector upgrades::
 You need to upgrade the Connector software manually. The Connector software is published to the NetApp Support Site at undefined intervals.
 
 User interface access::
-The user interface is accessible from the Connector that's deployed in your cloud region or on premises.
+The user interface is accessible from the Connector that's deployed in your cloud region or on-premises.
 
 API endpoint::
 API calls are made to the Connector virtual machine.

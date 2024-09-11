@@ -20,7 +20,7 @@ NetApp BlueXP provides your organization with a single control plane that helps 
 The BlueXP platform provides four main pillars of data management: storage, mobility, protection, and analysis and control.
 
 Storage:: 
-Discover, deploy, and manage storage, whether it's in AWS, Azure, Google Cloud, or on premises.
+Discover, deploy, and manage storage, whether it's in AWS, Azure, Google Cloud, or on-premises.
 
 * Set up and use cloud file-storage services:
 +

@@ -13,11 +13,12 @@ summary: To create a Connector in AWS from BlueXP, you need to set up your netwo
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector in AWS from BlueXP, you need to set up your networking, prepare AWS permissions, and then create the Connector.
+A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. One of the available installation options is to create a Connector in AWS directly from BlueXP. To create a Connector in AWS from BlueXP, you need to set up your networking, prepare AWS permissions, and then create the Connector.
 
 .Before you begin
 
-You should review link:reference-limitations.html[Connector limitations].
+* You should have an link:concept-connectors.html[understanding of Connectors].
+* You should review link:reference-limitations.html[Connector limitations].
 
 == Step 1: Set up networking
 

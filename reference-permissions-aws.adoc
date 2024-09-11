@@ -335,44 +335,6 @@ For standard regions, the permissions are spread across two policies. Two polici
     "Statement": [
         {
             "Action": [
-                "ec2:DescribeRegions",
-                "eks:ListClusters",
-                "eks:DescribeCluster",
-                "iam:GetInstanceProfile"
-            ],
-            "Resource": "*",
-            "Effect": "Allow",
-            "Sid": "K8sServicePolicy"
-        },
-        {
-            "Action": [
-                "cloudformation:DescribeStacks",
-                "cloudwatch:GetMetricStatistics",
-                "cloudformation:ListStacks"
-            ],
-            "Resource": "*",
-            "Effect": "Allow",
-            "Sid": "GFCservicePolicy"
-        },
-        {
-            "Condition": {
-                "StringLike": {
-                    "ec2:ResourceTag/GFCInstance": "*"
-                }
-            },
-            "Action": [
-                "ec2:StartInstances",
-                "ec2:TerminateInstances",
-                "ec2:AttachVolume",
-                "ec2:DetachVolume"
-            ],
-            "Resource": [
-                "arn:aws:ec2:*:*:instance/*"
-            ],
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
                 "ec2:CreateTags",
                 "ec2:DeleteTags",
                 "ec2:DescribeTags",
@@ -388,6 +350,7 @@ For standard regions, the permissions are spread across two policies. Two polici
         }
     ]
 }
+
 --
 =====
 // end tabbed area
@@ -1128,6 +1091,56 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
+
+=== 9 September 2024
+
+Permissions were removed from policy #2 for standard regions because BlueXP no longer supports BlueXP edge caching and discovery and management of Kubernetes clusters.
+
+// Start snippet: collapsible block (open on page load)
+.View the permissions that were removed from the policy
+[%collapsible]
+====
+[source,json]
+        {
+            "Action": [
+                "ec2:DescribeRegions",
+                "eks:ListClusters",
+                "eks:DescribeCluster",
+                "iam:GetInstanceProfile"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "K8sServicePolicy"
+        },
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudwatch:GetMetricStatistics",
+                "cloudformation:ListStacks"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "GFCservicePolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/GFCInstance": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+====
+// End snippet
 
 === 9 May 2024
 

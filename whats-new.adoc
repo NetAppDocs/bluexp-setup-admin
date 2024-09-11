@@ -19,6 +19,83 @@ Learn what's new with BlueXP administration features: BlueXP identity and access
 
 //tag::whats-new[]
 
+== 9 September 2024
+
+=== Connector 3.9.44
+
+This release includes support for Docker Engine 26, an enhancement to SSL certificates, and bug fixes.
+
+The 3.9.44 release is available for standard mode and restricted mode.
+
+==== Support for Docker Engine 26
+
+Docker Engine is the required container orchestration tool when installing the Connector on Ubuntu 22.04 LTS.
+
+Starting with the 3.9.44 release of the Connector, Docker Engine 26 is now supported with _new_ Connector installations.
+
+The updated list of supported Docker Engine versions is as follows:
+
+* The minimum supported version is 23.0.6.
+* The maximum supported version is 26.0.0.
+
+==== Updated SSL certificate for local UI access
+
+When you use BlueXP in restricted mode or private mode, the user interface is accessible from the Connector virtual machine that's deployed in your cloud region or on-premises. By default, BlueXP uses a self-signed SSL certificate to provide secure HTTPS access to the web-based console running on the Connector.
+
+In this release, we made changes to the SSL certificate for new and existing Connectors:
+
+* The Common Name for the certificate now matches the short host name
+
+* The Certificate Subject Alternative Name is the Fully Qualified Domain Name (FQDN) of the host machine
+
+=== Support for RHEL 9.4
+
+BlueXP now supports installing the Connector on a Red Hat Enterprise Linux 9.4 host when using BlueXP in standard mode or restricted mode. 
+
+Support for RHEL 9.4 starts with the 3.9.40 release of the Connector.
+
+The updated list of supported RHEL versions for standard mode and restricted mode now includes the following:
+
+* 8.6 to 8.10
+* 9.1 to 9.4
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
+=== Support for Podman 4.9.4 with all RHEL versions
+
+Podman 4.9.4 is now supported with all supported versions of Red Hat Enterprise Linux. Version 4.9.4 was previously supported with only RHEL 8.10.
+
+The updated list of supported Podman versions includes 4.6.1 and 4.9.4 with Red Hat Enterprise Linux hosts.
+
+Podman is required for RHEL hosts starting with the 3.9.40 release of the Connector.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
+
+=== Updated AWS and Azure permissions
+
+We updated the AWS and Azure policies for the Connector to remove permissions that are no longer required. The permissions were related to BlueXP edge caching and discovery and management of Kubernetes clusters, which are no longer supported as of August, 2024.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log[Learn what changed in the AWS policy].
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
+
+== 22 August 2024
+
+=== Connector 3.9.43 patch
+
+We updated the Connector to support the Cloud Volumes ONTAP 9.15.1 release. 
+
+Support for this release includes an update to the Connector policy for Azure. The policy now includes the following permissions:
+
+[source,json]
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+
+These permissions are required for Cloud Volumes ONTAP support of Virtual Machine Scale Sets. If you have existing Connectors and you want to use this new feature, you'll need to add these permissions to the custom roles that are associated with your Azure credentials.
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes[Learn about the Cloud Volumes ONTAP 9.15.1 release^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
+
 == 4 September 2024
 
 [#iam]
@@ -72,7 +149,7 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 === Connector 3.9.43
 
-This release includes minor improvements, bug fixes, and the requirement for new Azure permissions.
+This release includes minor improvements and bug fixes.
 
 The 3.9.43 release is available for standard mode and restricted mode.
 
@@ -89,7 +166,7 @@ As a result of this change, the default VM instance type when deploying the Conn
 * Azure: Standard_D8s_v3
 * Google Cloud: n2-standard-8
 
-This requirement applies to new and existing Connectors.
+The updated CPU and RAM requirements apply to all new Connectors. For existing Connectors, increasing the CPU and RAM is recommended to provide improved performance and reliability.
 
 === Support for Podman 4.9.4 with RHEL 8.10
 

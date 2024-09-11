@@ -67,7 +67,7 @@ sidebar:
                       url: /task-install-connector-google-bluexp-gcloud.html
                     - title: Manually install the Connector
                       url: /task-install-connector-google-manual.html
-                - title: On premises
+                - title: On-premises
                   url: /task-install-connector-on-prem.html
             - title: Subscribe to BlueXP
               url: /task-subscribe-standard-mode.html
