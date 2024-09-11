@@ -47,7 +47,6 @@ Add or discover resources in BlueXP as _working environments_. A working environ
 ** https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html[Amazon FSx for NetApp ONTAP^]
 ** https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html[Azure NetApp Files^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html[Cloud Volumes ONTAP^]
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html[Cloud Volumes Service for Google Cloud^]
 ** https://docs.netapp.com/us-en/bluexp-e-series/index.html[E-Series systems^]
 ** https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html[On-premises ONTAP clusters^]
 ** https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[StorageGRID^]
