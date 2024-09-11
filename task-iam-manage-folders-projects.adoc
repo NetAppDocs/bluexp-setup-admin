@@ -81,6 +81,10 @@ If needed, you can <<modify-resources,modify the associated resources>> or <<mod
 
 You can modify the resources that are associated with a folder or project by associating or disassociating a resource. For example, you might want to associate a resource with another project because that resource has capacity that another team can utilize.
 
+.Before you begin
+
+link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
+
 .Steps
 
 . From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
@@ -90,8 +94,6 @@ You can modify the resources that are associated with a folder or project by ass
 In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
 
 . Select the resources that you'd like to associate or disassociate.
-+
-link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
 
 . Depending on the resources that you selected, select either *Associate resources* or *Disassociate resources*.
 +

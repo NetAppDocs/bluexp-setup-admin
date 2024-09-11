@@ -131,7 +131,7 @@ The following examples describe how you might use IAM to manage your BlueXP orga
 * link:task-iam-manage-folders-projects.html[Organize your resources in BlueXP with folders and projects]
 * link:task-iam-manage-members-permissions.html[Manage BlueXP members and their permissions]
 * link:task-iam-manage-resources.html[Manage the resource hierarchy in your BlueXP organization]
-* link:task-iam-associate-connectors.html[Learn how to associate Connectors with folders and projects]
+* link:task-iam-associate-connectors.html[Associate Connectors with folders and projects]
 * link:task-iam-switch-organizations-projects.html[Switch between BlueXP projects and organizations]
 * link:task-iam-rename-organization.html[Rename your BlueXP organization]
 * link:reference-iam-predefined-roles.html[Predefined BlueXP IAM roles]
