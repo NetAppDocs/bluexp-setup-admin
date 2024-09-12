@@ -70,40 +70,12 @@ Disk space in /var:: 20 GiB of space must be available
 BlueXP requires this space in `/var` because Docker or Podman are architected to create the containers within this directory. Specifically, they will create containers in the `/var/lib/containers/storage` directory. External mounts or symlinks do not work for this space.
 //end::disk-space[]
 
-//tag::docker[]
-Docker Engine:: 
-Docker Engine is required on the host before you install the Connector.
-+
-[cols=2*,options="header,autowidth"]
-|===
-
-| Connector version
-| Supported versions of Docker Engine
-
-| New Connector installation starting with the 3.9.44 release | 23.0.6 to 26.0.0
-| Connectors created prior to the 3.9.44 release | 23.0.6 to 25.0.5
-|===
-+
-https://docs.docker.com/engine/install/[View installation instructions^]
-//end::docker[]
-+
-[cols=2*,options="header,autowidth"]
-|===
-
-| Connector version
-| Minimum version of Docker Engine
-| Maximum version of Docker Engine
-
-| New Connector installation starting with the 3.9.44 release | 23.0.6 | 26.0.0
-| Connectors created prior to the 3.9.44 release | 23.0.6 | 25.0.5
-|===
-+
-https://docs.docker.com/engine/install/[View installation instructions^]
-//end::docker[]
-
 //tag::container-req[]
-[[podman-versions]]
 Container orchestration tool:: Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
+//end::container-req[]
+
+//tag::podman-req[]
+[[podman-versions]]
 +
 * Podman is required for Red Hat Enterprise Linux.
 +
@@ -114,21 +86,10 @@ The following prerequisites must be met for Podman:
 ** python3 must be installed
 ** The podman-compose package version 1.0.6 must be installed
 ** podman-compose must be added to the PATH environment variable
+//end::podman-req[]
 
+//tag::docker-req[]
 * Docker Engine is required for Ubuntu.
-+
-[cols=2*,options="header,autowidth"]
-|===
-
-| Connector version
-| Supported versions of Docker Engine
-
-| New Connector installation starting with the 3.9.44 release | 23.0.6 to 26.0.0
-| Connectors created prior to the 3.9.44 release | 23.0.6 to 25.0.5
-|===
-+
-https://docs.docker.com/engine/install/[View installation instructions^]
-//end::docker[]
 +
 [cols=3*,options="header,autowidth"]
 |===
@@ -137,9 +98,18 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 | Minimum version of Docker Engine
 | Maximum version of Docker Engine
 
-| New Connector installation starting with the 3.9.44 release | 23.0.6 | 26.0.0
+| _New_ Connector installation starting with 3.9.44 | 23.0.6 | 26.0.0
 | Connectors created prior to the 3.9.44 release | 23.0.6 | 25.0.5
 |===
 +
 https://docs.docker.com/engine/install/[View installation instructions^]
-//end::container-req[]
+//end::docker-req[]
+
+//tag::docker-private[]
+* Docker Engine is required for Ubuntu.
++
+** The minimum supported version is 23.0.6.
+** The maximum supported version is 25.0.5.
++
+https://docs.docker.com/engine/install/[View installation instructions^]
+//end::docker-req-private[]
