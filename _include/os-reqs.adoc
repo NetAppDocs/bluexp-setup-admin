@@ -130,7 +130,7 @@ The following prerequisites must be met for Podman:
 https://docs.docker.com/engine/install/[View installation instructions^]
 //end::docker[]
 +
-[cols=2*,options="header,autowidth"]
+[cols=3*,options="header,autowidth"]
 |===
 
 | Connector version
