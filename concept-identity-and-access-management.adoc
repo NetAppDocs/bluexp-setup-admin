@@ -32,6 +32,7 @@ When using BlueXP IAM, you'll manage the following components:
 * Folders
 * Projects
 * Resources
+* Connectors
 * Members
 * Roles and permissions
 
@@ -78,6 +79,16 @@ For example, you might associate a Cloud Volumes ONTAP system with all projects 
 An _Organization admin_ might associate a resource with a folder so that the _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
 
 Associating a resource with a folder doesn't automatically make that resource accessible from all projects in the folder. Organization members can't access a resource from a project until you associate the resource with that specific project.
+
+=== Connectors
+
+When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP IAM:
+
+* When you associate a Connector with a project, that Connector is accessible from the BlueXP canvas when viewing the project.
+
+* Associating a Connector with a folder doesn't automatically make that Connector accessible from all projects in the folder. Organization members can't access a Connector from a project until you associate the Connector with that specific project.
++
+An _Organization admin_ might associate a Connector with a folder so that the _Folder or project admin_ can make the decision to associate that Connector with the appropriate projects that reside in the folder.
 
 === Members
 
