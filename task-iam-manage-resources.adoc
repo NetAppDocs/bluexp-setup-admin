@@ -63,6 +63,35 @@ If you have a large number of resources in your organization, you can use the se
 
 The contents of the Resources table refreshes to show the resources that match your search and filter selections.
 
+[#associate-resource]
+== Associate a resource with folders and projects
+
+If you want to make a resource available to another folder or project in your organization, then you'll need to create an association between the folder or project and the resource.
+
+.Before you begin
+
+You should understand how resource association works. link:concept-identity-and-access-management.html#resources[Learn about resources, including when to associate a resource with a folder].
+
+.Steps
+
+. From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Associate to folders or projects*.
+
+. Select a folder or project and then select *Accept*.
+
+. To associate an additional folder or project, select *Add folder or project* and then select the folder or project.
+
+. Select *Associate resources*.
+
+.Result
+
+BlueXP associates the resource with the selected folders and projects. Members who have permissions for those folders and projects now have the ability to access the resource in BlueXP.
+
+.After you finish
+
+If the resource that you associated is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource isn't accessible from the BlueXP canvas.
+
+link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
+
 [#discover-resources]
 == Discover an undiscovered resource
 
@@ -125,41 +154,6 @@ image:screenshot-iam-resource-details.png[A screenshot of the resource details p
 * You can <<associate-resource,associate the resource with an additional project or folder>>.
 * You can <<remove-resource,remove the resource from a specific folder or project>>.
 * If you need to determine which organization members have access to the resource, you can link:task-iam-manage-folders-projects.html#view-associated-resources-members[view the members who have access to the folders and projects that are associated with the resource].
-
-[#associate-resource]
-== Associate a resource with folders and projects
-
-If you want to make a resource available to another folder or project in your organization, then you'll need to create an association between the folder or project and the resource.
-
-.About this task
-
-* If you associate a resource with a project, that resource (working environment) is now accessible from the BlueXP canvas when viewing that project.
-+
-NOTE: If you have multiple Connectors, the Connector that manages the working environment must be selected to view the working environment from the BlueXP canvas. link:task-manage-multiple-connectors.html[Learn how to work with multiple Connectors].
-
-* Associating a resource with a folder doesn't automatically make that resource accessible from all projects in the folder. Organization members can't access a resource from a project until you associate the resource with that specific project.
-+
-An _Organization admin_ might associate a resource with a folder so that the _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
-
-.Steps
-
-. From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Associate to folders or projects*.
-
-. Select a folder or project and then select *Accept*.
-
-. To associate an additional folder or project, select *Add folder or project* and then select the folder or project.
-
-. Select *Associate resources*.
-
-.Result
-
-BlueXP associates the resource with the selected folders and projects. Members who have permissions for those folders and projects now have the ability to access the resource in BlueXP.
-
-.After you finish
-
-If the resource that you associated is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource isn't accessible from the BlueXP canvas.
-
-link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
 
 [#remove-resource]
 == Remove a resource from a folder or project

@@ -69,14 +69,16 @@ An organization can have one or many projects. A project can reside directly und
 
 A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
 
-When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can also associate the resource across different levels of your resource hierarchy: with one or more folders or with one or more projects. 
+When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can choose to associate the resource across different levels of your resource hierarchy: with one or more folders or with one or more projects. 
 
 For example, you might associate a Cloud Volumes ONTAP system with all projects in your organization, with three projects, or with just a single project. How you associate a resource depends on your organization's needs.
 
 [#associate-resource-folder]
 ==== When to associate a resource with a folder
 
-Associating a resource with a folder is optional. An _Organization admin_ might associate a resource with a folder so that the _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
+You also have the option to associate a resource with a folder, but this is optional.
+
+An _Organization admin_ might associate a resource with a folder so that a _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
 
 For example, let's say you have a folder that contains two projects:
 
@@ -86,27 +88,13 @@ The _Organization admin_ can associate a resource with the folder:
 
 image:diagram-iam-resource-association-folder-2.png["A diagram that shows a folder, a resource that is associated with the folder, and two projects that reside in the folder: project A and project B."]
 
-This enables the _Folder or project admin_ to decide which projects that resource should be made available to. After making that decision, the admin can associate the resource with the projects. No members can access that resource from the projects in the folder until an association is made with specific projects. Associating a resource with a folder doesn't automatically make that resource accessible from all projects in the folder.
+Associating the resource with the folder doesn't automatically make that resource accessible from all projects in the folder. But the _Folder or project admin_ can now decide which projects that resource should be made available to. After making that decision, the admin can then associate the resource with the right projects.
 
 In this example, the admin chooses Project A:
 
 image:diagram-iam-resource-association-folder-3.png["A diagram that shows a folder, two projects that reside in the folder: project A and project B, and a resource that is associated with project A."]
 
 Members who have permissions for project A can now access the resource.
-
-=== Connectors
-
-When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP IAM:
-
-* Associate a Connector with a project
-+
-When you associate a Connector with a project, that Connector is accessible from the BlueXP canvas when viewing the project.
-
-* Associate a Connector with a folder
-+
-Associating a Connector with a folder doesn't automatically make that Connector accessible from all projects in the folder. Organization members can't access a Connector from a project until you associate the Connector with that specific project.
-+
-An _Organization admin_ might associate a Connector with a folder so that the _Folder or project admin_ can make the decision to associate that Connector with the appropriate projects that reside in the folder.
 
 === Members
 
@@ -125,6 +113,20 @@ You can assign each organization member a role at different levels of the organi
 BlueXP supports several predefined roles that you can assign to the members of your organization. Custom roles are not supported at this time. 
 
 link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
+
+=== Connectors
+
+When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP IAM:
+
+* Associate a Connector with a project
++
+When you associate a Connector with a project, that Connector is accessible from the BlueXP canvas when viewing the project.
+
+* Associate a Connector with a folder
++
+Associating a Connector with a folder doesn't automatically make that Connector accessible from all projects in the folder. Organization members can't access a Connector from a project until you associate the Connector with that specific project.
++
+An _Organization admin_ might associate a Connector with a folder so that the _Folder or project admin_ can make the decision to associate that Connector with the appropriate projects that reside in the folder.
 
 == Examples
 
@@ -154,7 +156,7 @@ The following examples describe how you might use IAM to manage your BlueXP orga
 * View the resources that a member can access.
 * View the members and resources associated with a specific project.
 
-== Related information
+== Where to go next
 
 * link:task-iam-get-started.html[Get started with BlueXP IAM]
 * link:task-iam-manage-folders-projects.html[Organize your resources in BlueXP with folders and projects]
