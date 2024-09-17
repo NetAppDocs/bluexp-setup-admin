@@ -84,7 +84,10 @@ You should understand how resource association works. link:concept-identity-and-
 
 .Result
 
-BlueXP associates the resource with the selected folders and projects. Members who have permissions for those folders and projects now have the ability to access the resource in BlueXP.
+BlueXP associates the resource with the selected folders and projects. 
+
+* If you associated the resource with projects, members who have permissions for those projects now have the ability to access the resource in BlueXP.
+* If you associated the resource with a folder, a _Folder or project admin_ can now access the resource from within BlueXP IAM. link:concept-identity-and-access-management.html#resources[Learn about associating a resource with a folder].
 
 .After you finish
 
