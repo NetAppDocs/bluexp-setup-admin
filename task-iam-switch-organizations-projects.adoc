@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: task-iam-switch-organizations-projects.html
-keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management
-summary: Switch between projects and organizations to access the resources associated with those projects and organizations.
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors
+summary: Switch between organizations, projects, and Connectors to access the resources associated with them.
 ---
 
-= Switch between BlueXP projects and organizations
+= Switch between BlueXP organizations, projects, and Connectors
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,23 @@ summary: Switch between projects and organizations to access the resources assoc
 :imagesdir: ./media/
 
 [.lead]
-If you have permissions to access multiple projects within your BlueXP organization, or if you are a member of multiple organizations, you can easily switch between projects and organizations to access the associated resources.
+If you are a member of multiple organizations or if you have permissions to access multiple projects or Connectors within your BlueXP organization, you can easily switch between organizations, projects, and Connectors to access the associated resources.
+
+== Switch between organizations
+
+If you are a member of multiple organizations, you can switch between them at any time.
+
+.Steps
+
+. At the top of BlueXP, select *Organization*.
++
+image:screenshot-iam-switch-organizations.png[A screenshot of the BlueXP top banner where you can select the Organization drop-down and then select another organization.]
+
+. Select another organization and then select *Switch*.
+
+.Result
+
+BlueXP switches to the selected organization and displays the resources associated with that organization.
 
 == Switch between projects
 
@@ -37,18 +53,20 @@ image:screenshot-iam-switch-projects-select.png[A screenshot of the Scope menu w
 
 BlueXP switches to the selected project and displays the resources associated with that project.
 
-== Switch between organizations
+== Switch between Connectors
 
-If you are a member of multiple organizations, you can switch between them at any time.
+If you have multiple Connectors, you can switch between them to see the working environments that are associated with a specific Connector.
 
 .Steps
 
-. At the top of BlueXP, select *Organization*.
-+
-image:screenshot-iam-switch-organizations.png[A screenshot of the BlueXP top banner where you can select the Organization drop-down and then select another organization.]
+. At the top of BlueXP, select *Connector*.
 
-. Select another organization and then select *Switch*.
+. Select another Connector and then select *Switch*.
 
 .Result
 
-BlueXP switches to the selected organization and displays the resources associated with that organization.
+BlueXP refreshes and shows the working environments associated with the selected Connector.
+
+.Related link
+
+link:task-iam-associate-connectors.html[Associate Connectors with folders and projects].
