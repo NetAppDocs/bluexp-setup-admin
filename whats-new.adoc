@@ -19,6 +19,44 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 //tag::whats-new[]
 
+== 23 September 2024
+
+=== Private mode release (3.9.44)
+
+A new private mode release is now available to download from the NetApp Support Site. This release includes the following versions of the BlueXP services that are supported with private mode.
+
+Note that this private mode release does _not_ include support for the Connector with Red Hat Enterprise Linux 8 and 9.
+
+[cols=2*,options="header,autowidth"]
+|===
+
+| Service
+| Version included
+
+| Connector | 3.9.44
+| Backup and recovery | 18 September 2024
+| Classification | 15 May 2024 (version 1.31)
+| Cloud Volumes ONTAP management | 9 September 2024
+| Digital wallet | 30 July 2023
+| On-premises ONTAP cluster management | 22 April 2024
+| Replication | 18 Sept 2022
+
+|===
+
+To learn more about what's included in the versions of these BlueXP services, refer to the release notes for each BlueXP service.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[Learn what's new with BlueXP backup and recovery^]
+
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[Learn what's new with BlueXP classification^]
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn what's new with Cloud Volumes ONTAP management in BlueXP^]
+
 == 9 September 2024
 
 === Connector 3.9.44
@@ -176,7 +214,6 @@ To learn more about what's included in the versions of these BlueXP services, re
 * https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[Learn what's new with BlueXP classification^]
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn what's new with Cloud Volumes ONTAP management in BlueXP^]
-
 
 == 15 July 2024
 
