@@ -45,7 +45,7 @@ This release includes the following versions of the BlueXP components and servic
 
 For the Connector, the 3.9.44 private mode release includes the updates introduced in the August 2024 and September 2024 releases. Most notably, support for Red Hat Enterprise Linux 9.4.
 
-To learn more about what's included in the versions of these BlueXP components and services, refer to the release notes for each BlueXP service.
+To learn more about what's included in the versions of these BlueXP components and services, refer to the release notes for each BlueXP service:
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024[What's new in the September 2024 release of the Connector]
 
