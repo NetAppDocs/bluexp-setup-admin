@@ -5,7 +5,7 @@ keywords: connector, associate connector, folder, project, associate folder with
 summary: To make a Connector available to use with another folder or project in your organization, you need to create an association from BlueXP IAM.
 ---
 
-= Make a BlueXP Connector available to folders and projects
+= Make a BlueXP Connector available to other folders and projects
 :hardbreaks:
 :nofooter:
 :icons: font
