@@ -391,7 +391,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Tiering | No | No
 | Volume caching | No | No
 
-.5+| *Features*
+.7+| *Features*
+| BlueXP identity and access management | No | No
+| BlueXP accounts | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 
