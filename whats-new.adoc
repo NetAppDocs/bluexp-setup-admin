@@ -1050,7 +1050,7 @@ image:screenshot_nss_management.png[A screenshot of the NSS Management tab in th
 
 The Timeline in Cloud Manager now shows actions and events related to account management. The actions include things like associating users, creating workspaces, and creating Connectors. Checking the Timeline can be helpful if you need to identify who performed a specific action, or if you need to identify the status of an action.
 
-link:task-monitor-cm-operations.html#audit-user-activity-in-your-account[Learn how to filter the Timeline to the Tenancy service].
+link:task-monitor-cm-operations.html#audit-user-activity[Learn how to filter the Timeline to the Tenancy service].
 
 == 11 April 2021
 
