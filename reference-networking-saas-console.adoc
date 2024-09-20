@@ -87,7 +87,7 @@ AWS services (amazonaws.com):
 
 Beyond these endpoints, you also need to ensure that the Connector has outbound internet access to contact specific endpoints for day-to-day operations. You can find the list of these endpoints by following the links in the next section below.
 
-.Related links
+.Related information
 
 * Prepare networking for the Connector
 

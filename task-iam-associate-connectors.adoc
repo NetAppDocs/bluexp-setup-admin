@@ -55,7 +55,7 @@ If you want to associate the resources that the Connector manages with the same 
 
 link:task-iam-manage-resources.html#associate-resource[Learn how to associate a resource with folders and projects].
 
-.Related links
+.Related information
 
 * link:concept-connectors.html[Learn about BlueXP Connectors]
 * link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]

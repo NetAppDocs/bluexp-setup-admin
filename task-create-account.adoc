@@ -34,7 +34,7 @@ NOTE: You can't change the restricted mode setting after BlueXP creates the acco
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html[Learn how to use this API call^]
 
-.Related links
+.Related information
 
 * link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 * link:concept-modes.html[Learn about BlueXP deployment modes]
