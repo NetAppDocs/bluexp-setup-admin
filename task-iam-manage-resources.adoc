@@ -21,6 +21,12 @@ A _resource_ is a working environment that BlueXP already manages or an undiscov
 
 To start managing your resource hierarchy, you should be aware of the resources that are associated with your organization.
 
+.About this task
+
+BlueXP automatically discovers information about resources that are associated with your organization and displays them in the *Resources* page as undiscovered resources. If there are any undiscovered resources, you can discover them from the BlueXP canvas as working environments. After you discover the resources, your organization's members can them from the BlueXP canvas.
+
+Learn more about discovering resources from link:task-iam-get-started.html[Get started with BlueXP IAM].
+
 .Steps
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
@@ -31,6 +37,8 @@ To start managing your resource hierarchy, you should be aware of the resources 
 
 The resources associated with your organization display in the *Resources* table.
 
+The *Discovered in BlueXP* column identifies whether you have any resources that haven't been discovered in BlueXP yet.
+
 .What's next?
 
 To find a specific resource, you can <<find-resources,search and filter the contents of the table>>. 
@@ -40,6 +48,7 @@ After you've found the resource that you're looking for, you can complete any of
 * <<view-folders-and-projects,View the folders and projects that are associated with the resource>>
 * <<associate-resource,Associate the resource with additional folders and projects>>
 * <<remove-resource,Remove the resource from a folder or project>>
+* link:task-iam-get-started.html[Discover an undiscovered resource]
 
 [#find-resources]
 == Find specific resources in your organization
@@ -94,46 +103,6 @@ BlueXP associates the resource with the selected folders and projects.
 If the resource that you associated is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource isn't accessible from the BlueXP canvas.
 
 link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
-
-[#discover-resources]
-== Discover an undiscovered resource
-
-BlueXP automatically discovers information about resources that are associated with your organization and displays them on the *Resources* page as undiscovered resources. You can view the list of undiscovered resources and discover them one at a time so that members can manage them from the BlueXP canvas as working environments.
-
-.Steps
-
-. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
-
-. Select *Resources*.
-
-. In the *Resources* table, quickly identify all undiscovered resources by sorting the values of the *Discovered in BlueXP* column by ascending or descending order.
-+
-You can sort the values by selecting the arrow next to the column header. If you don't see an arrow, that means there's only one value available in the column. If the value is Yes, that means you don't have any undiscovered resources.
-+
-image:screenshot-iam-sort-table.png[A screenshot that shows the Discovered in BlueXP column in the Resources table with an arrow next to the column header that enables you to sort the contents of the table in ascending or descending order.]
-
-. For an undiscovered resource, select *Connect*.
-+
-BlueXP loads the discovery process from the BlueXP canvas.
-
-. If needed, change the currently selected project so that you associate the resource with the right project.
-+
-image:screenshot-iam-switch-projects.png[A screenshot of the BlueXP top banner where you can select the Scope drop-down and then select another project.]
-
-. Follow the prompts to discover the resource.
-
-.Result
-
-BlueXP discovers the resource as a new working environment that is accessible from the BlueXP canvas.
-
-.Related information
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Add existing Cloud Volumes ONTAP systems to BlueXP^]
-* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]
-* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html[Create or discover an FSx for ONTAP working environment^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html[Create an Azure NetApp Files working environment^]
-* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html[Discover E-Series systems^]
-* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[Discover StorageGRID systems^]
 
 [#view-folders-and-projects]
 == View the folders and projects associated with a resource
