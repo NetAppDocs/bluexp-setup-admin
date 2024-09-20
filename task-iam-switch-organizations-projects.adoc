@@ -15,6 +15,8 @@ summary: Switch between organizations, projects, and Connectors to access the re
 [.lead]
 You might belong to multiple BlueXP organizations or have permissions to access multiple projects or Connectors within a BlueXP organization. When needed, you can easily switch between organizations, projects, and Connectors to access the resources associated with that organization, project, or Connector.
 
+TIP: You might belong to multiple organizations if you were invited to join another organization or if you created an additional organization yourself. You can create an additional organization by using the API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/post-organizations.html[Learn how to create a new organization^]
+
 == Switch between organizations
 
 If you are a member of multiple organizations, you can switch between them at any time.
