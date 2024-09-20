@@ -13,7 +13,7 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) enables you to associate members with your organization and provide them permissions to the resources in the entire organization or in specific folders and projects. You can associate new user accounts and service accounts, manage member roles, and more.
+BlueXP identity and access management (IAM) enables you to associate members with your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
 TIP: To ensure that you don't lose access to your BlueXP organization, it's a best practice to have two members with the Organization admin role.
 

@@ -24,7 +24,7 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 == How BlueXP IAM works
 
-BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific resources in the organization's hierarchy. For example, a member can have project admin permissions for a project that has five associated resources.
+BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific resources in the organization's hierarchy. For example, a member can have project admin permissions for a project that has five associated resources. 
 
 When using BlueXP IAM, you'll manage the following components:
 
@@ -49,11 +49,11 @@ image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the re
 
 === Organization
 
-An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of folders, projects, members, roles, Connectors, and resources.
+An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of folders, projects, members, roles, and resources. Connectors are associated with specific projects in the organization.
 
 === Folders
 
-A _folder_ enables you to group related projects together and further divide your organization. For example, a folder might represent a department or a site. 
+A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a department or a geographical location. 
 
 Folders can contain projects, other folders, or a combination of both.
 
@@ -69,14 +69,14 @@ An organization can have one or many projects. A project can reside directly und
 
 A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
 
-When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can choose to associate the resource across different levels of your resource hierarchy: with one or more folders or with one or more projects. 
+When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can choose to associate the resource with additional projects in your organization.
 
 For example, you might associate a Cloud Volumes ONTAP system with all projects in your organization, with three projects, or with just a single project. How you associate a resource depends on your organization's needs.
 
 [#associate-resource-folder]
 ==== When to associate a resource with a folder
 
-You also have the option to associate a resource with a folder, but this is optional.
+You also have the option to associate a resource with a folder, but this is optional and meets the needs of a specific use case.
 
 An _Organization admin_ might associate a resource with a folder so that a _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
 
@@ -88,9 +88,9 @@ The _Organization admin_ can associate a resource with the folder:
 
 image:diagram-iam-resource-association-folder-2.png["A diagram that shows a folder, a resource that is associated with the folder, and two projects that reside in the folder: project A and project B."]
 
-Associating the resource with the folder doesn't automatically make that resource accessible from all projects in the folder. But the _Folder or project admin_ can now decide which projects that resource should be made available to. After making that decision, the admin can then associate the resource with the right projects.
+Associating the resource with the folder doesn't automatically make that resource accessible from all projects in the folder. But the _Folder or project admin_ can then decide which projects that resource should be made available to. After making that decision, the admin can then associate the resource with the right projects.
 
-In this example, the admin chooses Project A:
+In this example, the admin associates the resource with Project A:
 
 image:diagram-iam-resource-association-folder-3.png["A diagram that shows a folder, two projects that reside in the folder: project A and project B, and a resource that is associated with project A."]
 
@@ -100,17 +100,19 @@ Members who have permissions for project A can now access the resource.
 
 Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 
-An organization has at least one administrator (the user who creates the organization is automatically assigned the administrator role). You can add other members to the organization and assign different permissions across different levels of the resource hierarchy.
+An organization has at least one user with the _Organization admin_ role (the user who creates the organization is automatically assigned this role). You can add other members to the organization and assign different permissions across different levels of the resource hierarchy.
 
 === Roles and permissions
 
-In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy.
+In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. 
 
 When you associate a member with a role, you need to select the entire organization, a specific folder, or a specific project. The role that you select gives a member permissions to the resources in the selected part of the resource hierarchy.
 
 You can assign each organization member a role at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and project 2. Or you can assign a member role A for project 1 and role B for project 2.
 
-BlueXP supports several predefined roles that you can assign to the members of your organization. Custom roles are not supported at this time. 
+By providing permissions to a specific part of your resource hierarchy, you can restrict access rights to only the resources that a member needs to complete their tasks.
+
+BlueXP supports several predefined roles that you can assign to the members of your organization. Custom roles are not supported at this time.
 
 link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
 
@@ -128,7 +130,7 @@ Associating a Connector with a folder doesn't automatically make that Connector 
 +
 An _Organization admin_ might associate a Connector with a folder so that the _Folder or project admin_ can make the decision to associate that Connector with the appropriate projects that reside in the folder.
 
-== Examples
+== IAM examples
 
 The following examples show how you might set up your organization.
 
@@ -140,7 +142,7 @@ image:diagram-iam-example-hierarchy-simple.png["A conceptual diagram that shows 
 
 === Advanced organization
 
-The following diagram shows an advanced example of an organization that uses folders to organize the projects for each geographic location in the business. Each project has its own set of associated resources. The members include an organization admin and an admin for each folder in the organization.
+The following diagram shows an organization that uses folders to organize the projects for each geographic location in the business. Each project has its own set of associated resources. The members include an organization admin and an admin for each folder in the organization.
 
 image:diagram-iam-example-hierarchy-advanced.png["A conceptual diagram that shows an organization with three folders, each with three projects, and their associated resources. There are four members: one organization admin and three folder admins."]
 

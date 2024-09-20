@@ -64,7 +64,7 @@ image:screenshot-iam-edit-project.png[A screenshot of the Organization page that
 
 . On the *Edit* page, view details about associated resources and member access:
 +
-* Select *Resources* to view the associated resources. In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
+* Select *Resources* to view the associated resources. In the table, the *Status* column identifies the resources that are associated with the folder or project.
 +
 image:screenshot-iam-allocated-resources.png[A screenshot of the Edit project page that shows the available resources that you can associate or disassociate with the project.]
 
@@ -91,7 +91,7 @@ link:concept-identity-and-access-management.html#associate-resource-folder[Learn
 
 . On the *Edit* page, select *Resources*.
 +
-In the table, the *Allocated* column identifies the resources that are allocated to the folder or project.
+In the table, the *Status* column identifies the resources that are associated with the folder or project.
 
 . Select the resources that you'd like to associate or disassociate.
 
