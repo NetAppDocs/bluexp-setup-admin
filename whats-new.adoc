@@ -49,11 +49,15 @@ When you log in to BlueXP, you'll notice these changes:
 
 image:screenshot-iam-introduction.png[A screenshot of BlueXP that shows the Organization and Project selectable from the top of the interface as well as identity and access management which is available from the Settings menu.]
 
-There are no changes to your existing users or working environments.
+Note the following:
 
-While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same working environments as before.
+* There are no changes to your existing users or working environments. 
 
-If you had multiple BlueXP accounts, you now have multiple BlueXP organizations.
+* While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same working environments as before.
+
+* There are no changes to how you log in to BlueXP. BlueXP IAM works with NetApp cloud logins, NSS credentials, and federated connections just like BlueXP accounts did.
+
+* If you had multiple BlueXP accounts, you now have multiple BlueXP organizations.
 
 ==== API for BlueXP IAM
 
