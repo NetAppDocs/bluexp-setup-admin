@@ -41,7 +41,7 @@ When the user signs up, they should complete the *Sign up* page, verify their em
 
 . Select *Members*.
 
-. Select *Associate a member*.
+. Select *Add a member*.
 
 . Complete the steps in the dialog box to associate the member:
 +
@@ -80,7 +80,7 @@ The user should receive an email from NetApp BlueXP. The email includes informat
 
 . Select *Members*.
 
-. Select *Associate a member*.
+. Select *Add a member*.
 
 . Complete the steps in the dialog box to associate the member:
 +
@@ -345,3 +345,10 @@ This task doesn't delete the member's BlueXP account or NetApp Support Site acco
 .Result
 
 BlueXP removes the member. If that member logs in to BlueXP again, they no longer have access to your BlueXP organization.
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* link:reference-iam-predefined-roles.html[Predefined BlueXP IAM roles]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

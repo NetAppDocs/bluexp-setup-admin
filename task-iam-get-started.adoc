@@ -61,4 +61,5 @@ link:task-iam-manage-resources.html[Learn how to manage your organization's reso
 
 .Related information
 
-https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

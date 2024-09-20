@@ -13,7 +13,7 @@ summary: Switch between organizations, projects, and Connectors to access the re
 :imagesdir: ./media/
 
 [.lead]
-If you are a member of multiple organizations or if you have permissions to access multiple projects or Connectors within your BlueXP organization, you can easily switch between organizations, projects, and Connectors to access the associated resources.
+You might belong to multiple BlueXP organizations or have permissions to access multiple projects or Connectors within a BlueXP organization. When needed, you can easily switch between organizations, projects, and Connectors to access the resources associated with that organization, project, or Connector.
 
 == Switch between organizations
 
@@ -70,3 +70,9 @@ BlueXP refreshes and shows the working environments associated with the selected
 .Related link
 
 link:task-iam-associate-connectors.html[Associate Connectors with folders and projects].
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

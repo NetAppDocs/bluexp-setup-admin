@@ -174,3 +174,9 @@ To remove a resource from a folder or project, you need to remove the associatio
 .Result
 
 BlueXP removes the association. Members can no longer access the resource from that folder or project.
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

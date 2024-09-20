@@ -13,7 +13,7 @@ summary: If needed, you can change the name of your BlueXP organization.
 :imagesdir: ./media/
 
 [.lead]
-If needed, you can change the name of your BlueXP organization from BlueXP identity and access management (IAM). The organization name appears at the top of the BlueXP web-based console.
+If needed, you can change the name of your BlueXP organization from BlueXP identity and access management (IAM). The organization name appears at the top of the BlueXP web-based console and within the IAM pages.
 
 .Steps
 
@@ -28,3 +28,9 @@ image:screenshot-iam-edit-organization.png[A screenshot of Overview page that sh
 .Result
 
 BlueXP updates the name of your organization. You should immediately see the updated name at the top of the BlueXP console.
+
+.Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

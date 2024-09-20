@@ -13,7 +13,7 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization. Before you assign these roles, you should understand the permissions that each role includes.
+BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
 
 == Organization admin
 
@@ -61,3 +61,10 @@ Permissions::
 Complete any action from Backup and recovery > Applications.
 +
 No other actions are available to a member who has this role.
+
+== Related links
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* link:task-iam-manage-members-permissions.html[Manage BlueXP members and their permissions]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

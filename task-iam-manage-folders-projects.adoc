@@ -164,3 +164,9 @@ You can delete the folders and projects that you no longer need.
 .Result
 
 BlueXP deletes the folder or project. That folder or project is no longer available to organization members.
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]
