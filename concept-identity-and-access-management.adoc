@@ -32,9 +32,9 @@ When using BlueXP IAM, you'll manage the following components:
 * Folders
 * Projects
 * Resources
-* Connectors
 * Members
 * Roles and permissions
+* Connectors
 
 BlueXP resources are organized hierarchically:
 

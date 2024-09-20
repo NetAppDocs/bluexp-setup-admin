@@ -95,7 +95,7 @@ In the table, the *Status* column identifies the resources that are associated w
 
 . Select the resources that you'd like to associate or disassociate.
 
-. Depending on the resources that you selected, select either *Associate resources* or *Disassociate resources*.
+. Depending on the resources that you selected, select either *Associate with the project* or *Disassociate from the project*.
 +
 image:screenshot-iam-associate-resources.png[A screenshot of the Edit project page that shows the Associate resources option that is available after you select resources that aren't currently associated.]
 
@@ -103,7 +103,7 @@ image:screenshot-iam-associate-resources.png[A screenshot of the Edit project pa
 
 .Result
 
-BlueXP associates the resources                  with the folder or project. Organization members who have permissions for that folder or project can now access the associated resources.
+BlueXP associates the resources with the folder or project. Organization members who have permissions for that folder or project can now access the associated resources.
 
 [#modify-members]
 == Modify member access to a folder or project
