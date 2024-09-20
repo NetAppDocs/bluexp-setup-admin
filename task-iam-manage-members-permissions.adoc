@@ -164,7 +164,7 @@ If you need to understand which resources a member of your organization can acce
 
 BlueXP displays details about the member, which includes the folders and projects that the member has permissions for across your organization's resource hierarchy.
 
-Here's an example of a member who has permissions to a folder and a project.
+Here's an example of a member who is assigned the _Folder or project admin_ role for a folder, which provides permissions to the three projects in the folder.
 
 image:screenshot-iam-member-details.png[A screenshot of the details page for a member who has permissions to a project and a folder.]
 
