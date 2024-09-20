@@ -117,7 +117,7 @@ If you just created these credentials in your cloud provider, it might take a fe
 +
 image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
 
-. On the *Account credentials* page, select *Add Credentials* and follow the steps in the wizard.
+. On the *Organization credentials* or *Account credentials* page, select *Add Credentials* and follow the steps in the wizard.
 
 .. *Credentials Location*: Select *Amazon Web Services > Connector*.
 
@@ -178,7 +178,7 @@ If you just created the IAM role, it might take a few minutes until they are ava
 +
 image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
 
-. On the *Account credentials* page, select *Add Credentials* and follow the steps in the wizard.
+. On the *Organization credentials* or *Account credentials* page, select *Add Credentials* and follow the steps in the wizard.
 
 .. *Credentials Location*: Select *Amazon Web Services > BlueXP*.
 
@@ -269,7 +269,7 @@ image:screenshot-subscription-assignment.png[A screenshot of the Subscription As
 . Confirm that the subscription is associated with your AWS credentials.
 
 .. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
-.. On the *Account credentials* page, verify that the subscription is associated with your AWS credentials.
+.. On the *Organization credentials* or *Account credentials* page, verify that the subscription is associated with your AWS credentials.
 +
 Here's an example.
 +
@@ -285,7 +285,7 @@ TIP: You can't edit the credentials for an instance profile that is associated w
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 
-. On the *Account credentials* page, select the action menu for a set of credentials and then select *Edit Credentials*.
+. On the *Organization credentials* or *Account credentials* page, select the action menu for a set of credentials and then select *Edit Credentials*.
 
 . Make the required changes and then select *Apply*.
 
@@ -299,6 +299,6 @@ TIP: You can't delete the credentials for an instance profile that is associated
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 
-. On the *Account credentials* page, select the action menu for a set of credentials and then select *Delete Credentials*.
+. On the *Organization credentials* or *Account credentials* page, select the action menu for a set of credentials and then select *Delete Credentials*.
 
 . Select *Delete* to confirm.

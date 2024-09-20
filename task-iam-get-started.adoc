@@ -40,16 +40,16 @@ link:task-iam-manage-members-permissions.html[Learn how to manage members and th
 [role="quick-margin-para"]
 Add or discover resources in BlueXP as _working environments_. A working environment represents a storage system that organization members manage from within a project. For example, a Cloud Volumes ONTAP system or an on-premises ONTAP cluster.
 
+[role="quick-margin-para"]
+Learn how to create or discover resources from the BlueXP canvas:
+
 [role="quick-margin-list"]
-* link:task-iam-manage-resources.html#discover-resources[Learn how to discover resources directly from IAM].
-* Learn how to create or discover resources from the BlueXP canvas:
-+
-** https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html[Amazon FSx for NetApp ONTAP^]
-** https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html[Azure NetApp Files^]
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html[Cloud Volumes ONTAP^]
-** https://docs.netapp.com/us-en/bluexp-e-series/index.html[E-Series systems^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html[On-premises ONTAP clusters^]
-** https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[StorageGRID^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html[Amazon FSx for NetApp ONTAP^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html[Azure NetApp Files^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html[Cloud Volumes ONTAP^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html[E-Series systems^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html[On-premises ONTAP clusters^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[StorageGRID^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with additional projects
 

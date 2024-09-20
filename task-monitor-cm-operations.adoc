@@ -101,7 +101,7 @@ You must be a BlueXP admin to customize the notifications settings.
 +
 image:screenshot-settings-notifications.png[A screenshot showing how to display the Alerts and Notifications Settings page.]
 
-. Select a user, or multiple users, from either the _Account Users_ tab or the _Additional Recipients_ tab, and choose the type of notifications to be sent:
+. Select a user, or multiple users, from either the _Users_ tab or the _Additional Recipients_ tab, and choose the type of notifications to be sent:
 
 * To make changes for a single user, select the menu in the Notifications column for that user, check the types of Notifications to be sent, and select *Apply*.
 * To make changes for multiple users, check the box for each user, select *Manage Email Notifications*, check the types of Notifications to be sent, and select *Apply*.
@@ -111,7 +111,7 @@ image:screenshot-change-notifications.png[A screenshot showing how to change not
 
 === Add additional email recipients
 
-The users who appear in the _Account Users_ tab are populated automatically from the users in your BlueXP organization or account. You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
+The users who appear in the _Users_ tab are populated automatically from the users in your BlueXP organization or account. You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
 
 .Steps
 
