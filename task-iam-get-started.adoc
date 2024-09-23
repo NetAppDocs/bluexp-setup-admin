@@ -54,10 +54,11 @@ Learn how to create or discover resources from the BlueXP canvas:
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with additional projects
 
 [role="quick-margin-para"]
-When you add or discover a resource in BlueXP, that resource is automatically associated with the project that was selected when you added or discovered the working environment. If you want to make that resource available to another project in your organization, then you'll need to create an association between them.
+When you create or discover a resource in BlueXP, that resource is automatically associated with the project that was selected when you created or discovered the working environment. If you want to make that resource available to another project in your organization, then you'll need to create an association between them. If the resource is managed by a Connector, then you also need to create an association between the project and the associated Connector.
 
-[role="quick-margin-para"]
-link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy].
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy]
+* link:task-iam-associate-connectors.html[Learn how to make a BlueXP Connector available to other folders and projects]
 
 .Related information
 

@@ -34,12 +34,11 @@ Permissions::
 A member who has this role can complete the following actions in BlueXP:
 
 * Manage all working environments in the projects and folders for which they have permissions
-* Administer IAM by managing only the folders and projects for which they have permissions
+* From BlueXP IAM, manage only the folders and projects for which they have permissions
 +
 Management actions include associating and dissociating resources, members, and Connectors with the folders and projects.
 * Manage credentials
 * View the BlueXP timeline
-* Create Connectors
 * Register BlueXP for support and submit cases
 
 == Classification viewer

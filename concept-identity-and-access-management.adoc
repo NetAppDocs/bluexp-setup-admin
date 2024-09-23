@@ -71,7 +71,9 @@ A _resource_ is a working environment that BlueXP already manages or an undiscov
 
 When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can choose to associate the resource with additional projects in your organization.
 
-For example, you might associate a Cloud Volumes ONTAP system with all projects in your organization, with three projects, or with just a single project. How you associate a resource depends on your organization's needs.
+For example, you might associate a Cloud Volumes ONTAP system with one additional project or with all projects in your organization. How you associate a resource depends on your organization's needs.
+
+TIP: You can also associate a Connector with another folder or project in your organization. <<Connectors,Learn more about using Connectors with BlueXP IAM>>.
 
 [#associate-resource-folder]
 ==== When to associate a resource with a folder
@@ -116,9 +118,17 @@ BlueXP supports several predefined roles that you can assign to the members of y
 
 link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
 
+[#associate-connectors]
 === Connectors
 
-When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP IAM:
+When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. You might want to make that Connector available to use with another project in the following cases:
+
+* You want to use that Connector to create or discover additional working environments in another project
+* You associated an existing resource with another project and that resource is managed by a Connector
++
+If a resource that you associated with additional project is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas when viewing that project.
+
+You can create an association from the *Members* page in BlueXP IAM:
 
 * Associate a Connector with a project
 +

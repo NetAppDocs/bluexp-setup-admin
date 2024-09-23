@@ -31,6 +31,8 @@ BlueXP IAM provides more granular management of resources and permissions:
 * A top-level _organization_ enables you to manage access across your various _projects_
 * _Folders_ enable you to group related projects together
 * Enhanced resource management enables you to associate a resource with one or more folders or projects
++
+For example, you can associate a Cloud Volumes ONTAP system with multiple projects
 * Enhanced access management enables you to assign a role to members at different levels of the organization hierarchy
 
 These enhancements provide better control over the actions that users can perform and the resources that they can access.

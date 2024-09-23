@@ -42,7 +42,7 @@ Associate users with your BlueXP account so those users can create and manage wo
 +
 image:screenshot-account-settings-menu.png[A screenshot that shows the Account Settings option in the top banner of BlueXP.]
 
-. select *Manage Account* next to the currently selected account.
+. Select *Manage Account* next to the currently selected account.
 +
 image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
 

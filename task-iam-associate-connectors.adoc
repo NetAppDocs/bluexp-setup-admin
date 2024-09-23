@@ -13,15 +13,11 @@ summary: To make a Connector available to use with another folder or project in 
 :imagesdir: ./media/
 
 [.lead]
-A Connector is required to manage several resources from BlueXP. When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP identity and access management (IAM).
+A Connector is required to manage several types of working environments from BlueXP. When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP identity and access management (IAM).
 
-.About this task
-	
-* When you associate a Connector with a project, that Connector is accessible from the BlueXP canvas when viewing the project.
+.Before you begin
 
-* Associating a Connector with a folder doesn't automatically make that Connector accessible from all projects in the folder. Organization members can't access a Connector from a project until you associate the Connector with that specific project.
-+
-An Organization admin might associate a Connector with a folder so that the Folder or project admin can make the decision to associate that Connector with the appropriate projects that reside in the folder.
+You should understand how Connector association works. link:concept-identity-and-access-management.html#associate-connectors[Learn about using Connectors with BlueXP IAM].
 
 .Steps
 

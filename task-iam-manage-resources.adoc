@@ -100,7 +100,7 @@ BlueXP associates the resource with the selected folders and projects.
 
 .After you finish
 
-If the resource that you associated is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource isn't accessible from the BlueXP canvas.
+If the resource that you associated is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas.
 
 link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
 
