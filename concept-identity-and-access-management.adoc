@@ -51,6 +51,8 @@ image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the re
 
 An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of folders, projects, members, roles, and resources. Connectors are associated with specific projects in the organization.
 
+When you sign up to BlueXP, you're prompted to create a new organization.
+
 === Folders
 
 A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a department or a geographical location. 
