@@ -34,10 +34,26 @@ Permissions::
 A member who has this role can complete the following actions in BlueXP:
 
 * Manage all working environments in the projects and folders for which they have permissions
-* From BlueXP IAM, manage only the folders and projects for which they have permissions
-+
-Management actions include associating and dissociating resources, members, and Connectors with the folders and projects.
-* Manage credentials
+* From BlueXP IAM, an admin of a folder can complete the following actions:
+** Add folders or projects within a folder
+** Edit folders and projects: their names, associated resources, and member access
+** Delete folders and projects
+** Add a user account and associate a role at the folder or project level
+** Associate a Connector with a folder or project
+** Add a role to a member at the folder or project level
+** View resources associated with the assigned folder or project
+** Associate viewable resources with additional folders or projects
+** Dissociate a resource from a folder or project
+* From BlueXP IAM, an admin of a project can complete the following actions:
+** Edit projects: their names, associated resources, and member access
+** Delete projects
+** Add a user account and associate a role at the project level
+** Associate a Connector with a project
+** Add a role to a member at the project level
+** View resources associated with the assigned project
+** Associate viewable resources with additional projects
+** Dissociate a resource from a project
+* Manage credentials from Settings > Credentials 
 * View the BlueXP timeline
 * Register BlueXP for support and submit cases
 
