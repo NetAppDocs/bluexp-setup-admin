@@ -29,7 +29,7 @@ You can install the certificate using one of the following options:
 
 * Generate a certificate signing request (CSR) from BlueXP, submit the certificate request to a CA, and then install the CA-signed certificate on the Connector.
 +
-The key pair that BlueXP uses to generate the CSR is stored internally on the Connector's keystore. BlueXP retrieves the same key pair (private key) when you install the certificate on the Connector.
+The key pair that BlueXP uses to generate the CSR is stored internally on the Connector. BlueXP automatically retrieves the same key pair (private key) when you install the certificate on the Connector.
 
 * Install a CA-signed certificate that you already have.
 +
