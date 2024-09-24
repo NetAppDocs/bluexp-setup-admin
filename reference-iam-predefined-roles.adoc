@@ -5,7 +5,7 @@ keywords: predefined roles, iam roles, organization admin, folder or project adm
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
 
-= Predefined BlueXP IAM roles
+= Predefined BlueXP IAM roles and permissions
 :hardbreaks:
 :nofooter:
 :icons: font

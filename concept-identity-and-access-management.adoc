@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-identity-and-access-management.html
 keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, iam
-summary: BlueXP identity and access management (IAM) enables you to control access to your resources.
+summary: BlueXP identity and access management (IAM) enables you to control access to your organization's resources.
 ---
 
 = Learn about BlueXP identity and access management
