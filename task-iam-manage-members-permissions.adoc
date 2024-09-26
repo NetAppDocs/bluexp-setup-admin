@@ -117,13 +117,11 @@ BlueXP adds the service account to your organization.
 
 == View organization members
 
-There are a few ways to view details about the members of your organization:
+You can view a list of all members in your BlueXP organization. If you need to understand which resources a member of your organization can access, you can view the folders and projects associated with that member, along with their roles.
 
-* You can view a list of all members in the organization
-* You can view the members associated with a specific project or folder
-* You can view the projects or folders associated with a specific member
+.About this task
 
-Note that the *Members* page shows details about three types of members:
+The *Members* page shows details about three types of members:
 
 * User accounts
 * Service accounts
@@ -133,30 +131,13 @@ BlueXP IAM includes details about Connectors so that you can associate the Conne
 
 link:task-iam-associate-connectors.html[Learn how to associate Connectors with folders and projects].
 
-=== View the members in your organization
-
-View a complete list of your organization's members.
-
 .Steps
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . Select *Members*.
-
-.Result
-
++
 The members of your organization appear in the *Members* table.
-
-.What's next?
-
-You can now <<view-folders-and-projects,view the folders and projects associated with that member>> and <<manage-permissions,modify their permissions (roles)>>.
-
-[#view-folders-and-projects]
-=== View the folders and projects associated with a member
-
-If you need to understand which resources a member of your organization can access, you can view the folders and projects associated with that member, along with their roles. 
-
-.Steps
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
@@ -168,25 +149,9 @@ Here's an example of a member who is assigned the _Folder or project admin_ role
 
 image:screenshot-iam-member-details.png[A screenshot of the details page for a member who has permissions to a project and a folder.]
 
-=== View the members associated with a project or folder
+.Related information
 
-View which members have permissions to a specific project or folder so that you can verify the right members have access to the right resources.
-
-.Steps
-
-. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
-
-. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
-
-. On the *Edit a project* page, select *Access*.
-
-.Result
-
-BlueXP displays the members who have access to the folder or project.
-
-.What's next?
-
-If needed, link:task-iam-manage-folders-projects.html#modify-members[modify member access to the folder or project].
+link:task-iam-manage-folders-projects.html#view-associated-resources-members[View all of the members associated with a specific folder or project].
 
 [#manage-permissions]
 == Manage a member's permissions
