@@ -191,9 +191,9 @@ link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 
 BlueXP adds the roles. The member now has permissions for the resources in the organization, folder, or project that you selected.
 
-=== Change member roles
+=== Change from one role to another
 
-If you need to modify a member's permissions, you can do so by changing the role that's associated with that member at the organization, folder, or project level.
+If you need to modify a member's permissions, you can change the role that's associated with that member at the organization, folder, or project level.
 
 If you need to change the roles for multiple members in your organization, you can use a bulk action to complete the changes all at once.
 
