@@ -34,6 +34,7 @@ Permissions::
 A member who has this role can complete the following actions in BlueXP:
 
 * Manage all working environments in the projects and folders for which they have permissions
+
 * From BlueXP IAM, an admin of a folder can complete the following actions:
 ** Add folders or projects within a folder
 ** Edit folders and projects: their names, associated resources, and member access
@@ -44,6 +45,7 @@ A member who has this role can complete the following actions in BlueXP:
 ** View resources associated with the assigned folder or project
 ** Associate viewable resources with additional folders or projects
 ** Dissociate a resource from a folder or project
+
 * From BlueXP IAM, an admin of a project can complete the following actions:
 ** Edit projects: their names, associated resources, and member access
 ** Delete projects
@@ -53,6 +55,7 @@ A member who has this role can complete the following actions in BlueXP:
 ** View resources associated with the assigned project
 ** Associate viewable resources with additional projects
 ** Dissociate a resource from a project
+
 * Manage credentials from Settings > Credentials 
 * View the BlueXP timeline
 * Register BlueXP for support and submit cases
@@ -73,9 +76,11 @@ Description::
 Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
 
 Permissions::
-Complete any action from Backup and recovery > Applications.
+A member who has this role can complete the following actions in BlueXP:
 +
-No other actions are available to a member who has this role.
+* Complete any action from Backup and recovery > Applications
+* Access to the BlueXP canvas, which includes the working environments in the projects for which they have permissions
+* Access to all BlueXP services
 
 == Related links
 

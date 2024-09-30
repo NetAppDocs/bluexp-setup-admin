@@ -74,6 +74,12 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 * link:concept-identity-and-access-management.html[Learn more about BlueXP IAM]
 * link:task-iam-get-started.html[Get started with BlueXP IAM]
 
+=== Connector 3.9.45
+
+This release includes support for Docker Engine 26, an enhancement to SSL certificates, and bug fixes.
+
+The 3.9.45release is available for standard mode and restricted mode.
+
 == 9 September 2024
 
 === Connector 3.9.44

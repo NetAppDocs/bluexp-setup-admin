@@ -36,6 +36,8 @@ You can associate two types of members with your organization: a user account an
 . If the user hasn't already done so, ask them to go to the https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
 +
 When the user signs up, they should complete the *Sign up* page, verify their email address, and then log in. When prompted to create an organization, the user should close out of BlueXP and let you know that they've created their user account. You can then associate the user with your existing BlueXP organization.
++
+link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 

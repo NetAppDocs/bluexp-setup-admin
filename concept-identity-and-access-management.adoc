@@ -55,7 +55,7 @@ When you sign up to BlueXP, you're prompted to create a new organization.
 
 === Folders
 
-A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a department or a geographical location. 
+A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a geographical location (EU or US East), a site (London or Toronto), or a business unit (engineering or marketing). 
 
 Folders can contain projects, other folders, or a combination of both.
 
