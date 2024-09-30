@@ -139,6 +139,8 @@ These permissions are required for Cloud Volumes ONTAP support of Virtual Machin
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes[Learn about the Cloud Volumes ONTAP 9.15.1 release^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
 
+//end::whats-new[]
+
 == 8 August 2024
 
 === Connector 3.9.43
@@ -240,8 +242,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 This release includes minor improvements, bug fixes, and support for the Connector in the AWS Canada West (Calgary) region.
 
 The 3.9.42 release is available for standard mode and restricted mode.
-
-//end::whats-new[]
 
 === Updated Docker Engine requirements
 
