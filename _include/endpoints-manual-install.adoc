@@ -4,6 +4,7 @@ When you manually install the Connector on your own Linux host, the installer fo
 
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
+* \https://signin.b2c.netapp.com (this endpoint is the CNAME URL for \https://mysupport.netapp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
