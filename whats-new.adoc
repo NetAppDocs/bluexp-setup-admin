@@ -78,7 +78,21 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 This release includes support for Docker Engine 26, an enhancement to SSL certificates, and bug fixes.
 
-The 3.9.45release is available for standard mode and restricted mode.
+The 3.9.45 release is available for standard mode and restricted mode.
+
+==== Support for Ubuntu 24.04 LTS
+
+Starting with the 3.9.45 release, BlueXP now supports installing the Connector on an Ubuntu 22.04 LTS host when using BlueXP in standard mode or restricted mode.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
+
+==== Support for SELinux with RHEL hosts
+
+Starting with the 3.9.45 release, BlueXP now supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
+
+BlueXP does not support SELinux with Ubuntu hosts.
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux[Learn more about SELinux^]
 
 == 9 September 2024
 
