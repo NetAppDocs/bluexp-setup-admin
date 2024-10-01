@@ -59,8 +59,8 @@ BlueXP supports the Connector with the following operating systems. A container 
 |===
 
 | Operating system
-| Supported versions
-| First supported Connector version
+| Supported OS versions
+| Supported Connector versions
 | Required container tool
 | SELinux
 
@@ -71,27 +71,27 @@ BlueXP supports the Connector with the following operating systems. A container 
 
 8.6 to 8.10
 
-| 3.9.40 with BlueXP in standard mode or restricted mode
+| 3.9.40 or later with BlueXP standard mode and restricted mode
 
-3.9.42 with BlueXP in private mode
+3.9.42 or later with BlueXP private mode
 
 | Podman version 4.6.1 or 4.9.4
-| SELinux is supported in enforcing mode or permissive mode
+| Supported in enforcing mode or permissive mode
 
 .2+| Ubuntu
 
 | 24.04 LTS
-| 3.9.45 with BlueXP in standard mode or restricted mode
+| 3.9.45 or later with BlueXP standard mode and restricted mode
 | Docker Engine 26.0.0
-| SELinux is not supported
+| Not supported
 
 | 22.04 LTS
 | 3.9.29 or later
-| Docker Engine 23.0.6 - 26.0.0
+| Docker Engine 23.0.6 to 26.0.0
 
-26.0.0 is supported with _new_ Connector installations starting with the 3.9.44 release.
+26.0.0 is supported with _new_ Connector 3.9.44 or later installations
 
-| SELinux is not supported
+| Not supported
 
 |===
 +
