@@ -26,13 +26,15 @@ The Connector software must run on a host that meets specific operating system r
 
 include::_include/os-reqs.adoc[tag=dedicated]
 
+include::_include/os-reqs.adoc[tag=hypervisor]
+
 include::_include/os-reqs.adoc[tag=os]
 
 include::_include/os-reqs.adoc[tag=selinux]
 
-include::_include/os-reqs.adoc[tag=container-req]
+include::_include/os-reqs.adoc[tag=podman]
 
-include::_include/os-reqs.adoc[tag=hypervisor]
+include::_include/os-reqs.adoc[tag=ubuntu]
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
