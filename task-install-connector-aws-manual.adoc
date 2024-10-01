@@ -30,11 +30,9 @@ include::_include/os-reqs.adoc[tag=hypervisor]
 
 include::_include/os-reqs.adoc[tag=os]
 
-include::_include/os-reqs.adoc[tag=selinux]
-
 include::_include/os-reqs.adoc[tag=podman]
 
-include::_include/os-reqs.adoc[tag=ubuntu]
+include::_include/os-reqs.adoc[tag=docker-engine]
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
 

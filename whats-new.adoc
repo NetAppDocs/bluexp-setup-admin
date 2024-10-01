@@ -82,7 +82,7 @@ The 3.9.45 release is available for standard mode and restricted mode.
 
 ==== Support for Ubuntu 24.04 LTS
 
-Starting with the 3.9.45 release, BlueXP now supports installing the Connector on an Ubuntu 22.04 LTS host when using BlueXP in standard mode or restricted mode.
+Starting with the 3.9.45 release, BlueXP now supports new installations of the Connector on Ubuntu 24.04 LTS hosts when using BlueXP in standard mode or restricted mode.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
 

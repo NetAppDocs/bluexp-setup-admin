@@ -32,16 +32,12 @@ a|
 +
 Notes:
 
+* Starting with the 3.9.45 release, BlueXP supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
++
+BlueXP does not support SELinux with Ubuntu hosts.
 * The Connector is supported on English-language versions of these operating systems.
 * For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 //end::os[]
-
-//tag::selinux[]
-SELinux::
-Starting with the 3.9.45 release, BlueXP supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
-+
-BlueXP does not support SELinux with Ubuntu hosts.
-//end::selinux[]
 
 //tag::os-private[]
 Supported operating systems::
