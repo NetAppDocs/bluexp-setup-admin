@@ -7,26 +7,38 @@ The Connector is not supported on a host that is shared with other applications.
 Supported operating systems::
 BlueXP supports the Connector with the following operating systems:
 +
-[cols="50,50",options="header"]
+[cols="2a,2a,2a",options="header"]
 |===
 
 | Operating system
 | Supported Connector versions
+| Required container orchestration tool
 
-a| Red Hat Enterprise Linux
+| Red Hat Enterprise Linux
 
 * 8.6 to 8.10
 * 9.1 to 9.4
 
-a|
+|
 * 3.9.40 or later when using BlueXP in standard mode or restricted mode
 * 3.9.42 or later when using BlueXP in private mode
 
+| Podman is required before you install the Connector on a Red Hat Enterprise Linux host:
++
+* Podman version 4.6.1 or 4.9.4 is required
+* The podman.socket service must be enabled and started
+* python3 must be installed
+* The podman-compose package version 1.0.6 must be installed
+* podman-compose must be added to the PATH environment variable
+
 | Ubuntu 24.04 LTS
 | 3.9.45 or later when using BlueXP in standard mode or restricted mode
+| Docker Engine 26.0.0 is required
 
 | Ubuntu 22.04 LTS
 | 3.9.29 or later
+| Docker Engine 23.0.6 to 26.0.0
+Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector.
 
 |===
 +
@@ -108,15 +120,13 @@ https://docs.docker.com/engine/install/[View installation instructions^]
 
 //tag::podman[]
 Podman on RHEL hosts::
-Podman is required before you install the Connector on a Red Hat Enterprise Linux host.
+Podman is required before you install the Connector on a Red Hat Enterprise Linux host. The following prerequisites must be met for Podman:
 +
-The following prerequisites must be met for Podman:
-+
-** Podman version 4.6.1 or 4.9.4 is required
-** The podman.socket service must be enabled and started
-** python3 must be installed
-** The podman-compose package version 1.0.6 must be installed
-** podman-compose must be added to the PATH environment variable
+* Podman version 4.6.1 or 4.9.4 is required
+* The podman.socket service must be enabled and started
+* python3 must be installed
+* The podman-compose package version 1.0.6 must be installed
+* podman-compose must be added to the PATH environment variable
 //end::podman[]
 
 //tag::docker-engine[]
