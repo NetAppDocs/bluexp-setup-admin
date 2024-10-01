@@ -20,7 +20,7 @@ Supported operating system::
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.10
-** 9.1 to 9.3
+** 9.1 to 9.4
 +
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
@@ -102,14 +102,22 @@ The following prerequisites must be met for Podman:
 | Connectors created prior to the 3.9.44 release | 23.0.6 | 25.0.5
 |===
 +
-https://docs.docker.com/engine/install/[View installation instructions^]
+https://docs.docker.com/engine/install/[View Docker installation instructions^]
 //end::docker-req[]
 
 //tag::docker-req-private[]
 * Docker Engine is required for Ubuntu.
 +
-** The minimum supported version is 23.0.6.
-** The maximum supported version is 25.0.5.
+[cols=3*,options="header,autowidth"]
+|===
+
+| Connector version
+| Minimum version of Docker Engine
+| Maximum version of Docker Engine
+
+| _New_ Connector installation starting with 3.9.44 | 23.0.6 | 26.0.0
+| Connectors created prior to the 3.9.44 release | 23.0.6 | 25.0.5
+|===
 +
-https://docs.docker.com/engine/install/[View installation instructions^]
+https://docs.docker.com/engine/install/[View Docker installation instructions^]
 //end::docker-req-private[]
