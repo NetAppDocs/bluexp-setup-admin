@@ -5,7 +5,7 @@ keywords: folders, projects, resource hierarchy, create folders, create projects
 summary: BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects.
 ---
 
-= Organize your resources in BlueXP with folders and projects
+= Organize your resources in BlueXP IAM with folders and projects
 :hardbreaks:
 :nofooter:
 :icons: font

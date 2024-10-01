@@ -107,7 +107,7 @@ sidebar:
               url: /task-iam-get-started.html
             - title: Organize your resources with folders and projects
               url: /task-iam-manage-folders-projects.html
-            - title: Manage members and their permissions
+            - title: Add members and manage their permissions
               url: /task-iam-manage-members-permissions.html
             - title: Manage your resource hierarchy
               url: /task-iam-manage-resources.html

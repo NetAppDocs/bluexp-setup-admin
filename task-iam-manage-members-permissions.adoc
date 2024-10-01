@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, projec
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Manage BlueXP members and their permissions
+= Add BlueXP IAM members and manage their permissions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,13 +13,13 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) enables you to associate members with your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
+BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
 TIP: To ensure that you don't lose access to your BlueXP organization, it's a best practice to have two members with the Organization admin role.
 
-== Associate new members with your organization
+== Add members to your organization
 
-You can associate two types of members with your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
+You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
 
 // start tabbed area
 
@@ -35,7 +35,7 @@ You can associate two types of members with your organization: a user account an
 
 . If the user hasn't already done so, ask them to go to the https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
 +
-When the user signs up, they should complete the *Sign up* page, verify their email address, and then log in. When prompted to create an organization, the user should close out of BlueXP and let you know that they've created their user account. You can then associate the user with your existing BlueXP organization.
+When the user signs up, they should complete the *Sign up* page, verify their email address, and then log in. When prompted to create an organization, the user should close out of BlueXP and let you know that they've created their user account. You can then add the user to your existing BlueXP organization.
 +
 link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 
@@ -45,7 +45,7 @@ link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 
 . Select *Add a member*.
 
-. Complete the steps in the dialog box to associate the member:
+. To add the member, complete the steps in the dialog box:
 +
 * *Entity Type*: Keep *User* selected.
 * *User's email*: Enter the user's email address that is associated with the BlueXP login that they created.
@@ -84,7 +84,7 @@ The user should receive an email from NetApp BlueXP. The email includes informat
 
 . Select *Add a member*.
 
-. Complete the steps in the dialog box to associate the member:
+. To add the member, complete the steps in the dialog box:
 +
 * *Entity Type*: Select *Service account*.
 * *Service account name*: Enter a name for the service account.
@@ -174,7 +174,7 @@ Provide a member with additional permissions in your organization by adding role
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Add a role*.
 
-. Complete the steps in the dialog box to associate the member:
+. To add a role, complete the steps in the dialog box:
 +
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
 +
