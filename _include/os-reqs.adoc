@@ -55,7 +55,7 @@ BlueXP does not support SELinux with Ubuntu hosts.
 Operating system requirements::
 BlueXP supports the Connector with the following operating systems. Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
 +
-[cols="2a,2a,2a",options="header"]
+[cols="2a,2a,2a,2a",options="header"]
 |===
 
 | Operating system
