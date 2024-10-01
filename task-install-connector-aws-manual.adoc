@@ -28,6 +28,10 @@ include::_include/os-reqs.adoc[tag=dedicated]
 
 include::_include/os-reqs.adoc[tag=os]
 
+include::_include/os-reqs.adoc[tag=selinux]
+
+include::_include/os-reqs.adoc[tag=container-req]
+
 include::_include/os-reqs.adoc[tag=hypervisor]
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
@@ -37,8 +41,6 @@ include::_include/os-reqs.adoc[tag=aws-ec2]
 include::_include/os-reqs.adoc[tag=aws-key-pair]
 
 include::_include/os-reqs.adoc[tag=disk-space]
-
-include::_include/os-reqs.adoc[tag=container-req]
 
 == Step 2: Install Podman or Docker Engine
 

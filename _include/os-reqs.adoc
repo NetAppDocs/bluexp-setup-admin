@@ -5,18 +5,43 @@ The Connector is not supported on a host that is shared with other applications.
 
 //tag::os[]
 Supported operating systems::
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux 
-** 8.6 to 8.10
-** 9.1 to 9.4
-+
-The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
-+
-The Connector is supported on English-language versions of these operating systems.
+[cols="50,50",options="header"]
+|===
+
+| Operating system
+| Connector version
+
+a| Red Hat Enterprise Linux
+
+* 8.6 to 8.10
+* 9.1 to 9.4
+
+a|
+* 3.9.40 or later when using BlueXP in standard mode or restricted mode
+* 3.9.42 or later when using BlueXP in private mode
+
+| Ubuntu 24.04 LTS
+| 3.9.45 or later when using BlueXP in standard mode or restricted mode
+
+| Ubuntu 22.04 LTS
+| 3.9.29 or later
+
+|===
+Notes:
+
+* The Connector is supported on English-language versions of these operating systems.
+* For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 //end::os[]
 
+//tag:selinux[]
+SELinux::
+Starting with the 3.9.45 release, BlueXP supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
++
+BlueXP does not support SELinux with Ubuntu hosts.
+//end::selinux[]
+
 //tag::os-private[]
-Supported operating system::
+Supported operating systems::
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.10
@@ -97,6 +122,21 @@ The following prerequisites must be met for Podman:
 ** podman-compose must be added to the PATH environment variable
 
 * Docker Engine is required for Ubuntu.
++
+[cols="50,50",options="header"]
+|===
+
+| Ubuntu version
+| Supported Docker Engine versions
+
+| Ubuntu 24.04 LTS
+| 26.0.0
+
+| Ubuntu 22.04 LTS
+| 23.0.6 to 26.0.0
+
+
+|===
 +
 ** The minimum supported version is 23.0.6.
 ** The maximum supported version is 26.0.0.
