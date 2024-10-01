@@ -5,7 +5,7 @@ The Connector is not supported on a host that is shared with other applications.
 
 //tag::os[]
 Operating system requirements::
-BlueXP supports the Connector with the following operating systems. Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
+BlueXP supports the Connector with the following operating systems. A container orchestration tool is required before you install the Connector.
 +
 [cols="2a,2a,2a",options="header"]
 |===
@@ -53,39 +53,45 @@ BlueXP does not support SELinux with Ubuntu hosts.
 
 //tag::os2[]
 Operating system requirements::
-BlueXP supports the Connector with the following operating systems. Depending on your operating system, either Podman or Docker Engine is required before you install the Connector.
+BlueXP supports the Connector with the following operating systems. A container orchestration tool is required before you install the Connector.
 +
-[cols="2a,2a,2a,2a",options="header"]
+[cols="2a,2a,2a,2a,2a",options="header"]
 |===
 
 | Operating system
-| Supported Connector versions
-| Required container orchestration tool
+| Supported versions
+| First supported Connector version
+| Required container tool
 | SELinux
 
 | Red Hat Enterprise Linux
 
-* 8.6 to 8.10
-* 9.1 to 9.4
-
 |
-* 3.9.40 or later when using BlueXP in standard mode or restricted mode
-* 3.9.42 or later when using BlueXP in private mode
+9.1 to 9.4
 
-| Podman version 4.6.1 or 4.9.4 is required
-| SELinux is supported in either enforcing mode or permissive mode
+8.6 to 8.10
 
-| Ubuntu 24.04 LTS
-| 3.9.45 or later when using BlueXP in standard mode or restricted mode
-| Docker Engine 26.0.0 is required
+| 3.9.40 with BlueXP in standard mode or restricted mode
+
+3.9.42 with BlueXP in private mode
+
+| Podman version 4.6.1 or 4.9.4
+| SELinux is supported in enforcing mode or permissive mode
+
+.2+| Ubuntu
+
+| 24.04 LTS
+| 3.9.45 with BlueXP in standard mode or restricted mode
+| Docker Engine 26.0.0
 | SELinux is not supported
 
-| Ubuntu 22.04 LTS
+| 22.04 LTS
 | 3.9.29 or later
-| A version of Docker Engine between 23.0.6 to 26.0.0 is required
-| SELinux is not supported
+| Docker Engine 23.0.6 - 26.0.0
 
 26.0.0 is supported with _new_ Connector installations starting with the 3.9.44 release.
+
+| SELinux is not supported
 
 |===
 +
