@@ -35,6 +35,8 @@ A member who has this role can complete the following actions in BlueXP:
 
 * Manage all working environments in the projects and folders for which they have permissions
 
+* Set up and use all BlueXP services
+
 * From BlueXP IAM, an admin of a folder can complete the following actions:
 ** Add folders or projects within a folder
 ** Edit folders and projects: their names, associated resources, and member access
@@ -60,16 +62,6 @@ A member who has this role can complete the following actions in BlueXP:
 * View the BlueXP timeline
 * Register BlueXP for support and submit cases
 
-== Classification viewer
-
-Description::
-Provides the ability view BlueXP classification scan results.
-
-Permissions::
-View scan results from BlueXP classification without permissions to manage any BlueXP classification settings.
-+
-No other actions are available to a member who has this role.
-
 == SnapCenter admin
 
 Description::
@@ -79,8 +71,18 @@ Permissions::
 A member who has this role can complete the following actions in BlueXP:
 +
 * Complete any action from Backup and recovery > Applications
-* Access to the BlueXP canvas, which includes the working environments in the projects for which they have permissions
-* Access to all BlueXP services
+* Manage all working environments in the projects and folders for which they have permissions
+* Use all configured BlueXP services
+
+== Classification viewer
+
+Description::
+Provides the ability view BlueXP classification scan results.
+
+Permissions::
+View scan results from BlueXP classification without permissions to manage any BlueXP classification settings.
++
+No other actions are available to a member who has this role.
 
 == Related links
 
