@@ -41,7 +41,9 @@ image:screenshot-iam-max-depth.png[A screenshot that shows an organization, six 
 * *Resources*: Select the resources that you want to associate with this folder or project.
 +
 link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
-* *Access*: Specify the organization members who should have access to the folder or project and then select a role for each member. A role defines the permissions that members have for the folder or project.
+* *Access*: View the members who will have access to the folder or project based on the existing permissions already defined in your resource hierarchy.
++
+If needed, select *Add a member* to specify additional organization members who should have access to the folder or project and then select a role. A role defines the permissions that members have for the folder or project.
 +
 link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 

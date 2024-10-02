@@ -21,12 +21,6 @@ A _resource_ is a working environment that BlueXP already manages or an undiscov
 
 To start managing your resource hierarchy, you should be aware of the resources that are associated with your organization.
 
-.About this task
-
-BlueXP automatically discovers information about resources that are associated with your organization and displays them in the *Resources* page as undiscovered resources. If there are any undiscovered resources, you can discover them from the BlueXP canvas as working environments. After you discover the resources, your organization's members can them from the BlueXP canvas.
-
-Learn more about discovering resources from link:task-iam-get-started.html[Get started with BlueXP IAM].
-
 .Steps
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
@@ -37,7 +31,9 @@ Learn more about discovering resources from link:task-iam-get-started.html[Get s
 
 The resources associated with your organization display in the *Resources* table.
 
-The *Discovered in BlueXP* column identifies whether you have any resources that haven't been discovered in BlueXP yet.
+The *Discovered in BlueXP* column identifies whether you have any resources that haven't been discovered in BlueXP yet. If there are any undiscovered resources, you can discover them from the BlueXP canvas as working environments. After you discover the resources, your organization's members can manage them from the canvas.
+
+Learn more about discovering resources from link:task-iam-get-started.html[Get started with BlueXP IAM].
 
 .What's next?
 
@@ -131,6 +127,10 @@ image:screenshot-iam-resource-details.png[A screenshot of the resource details p
 == Remove a resource from a folder or project
 
 To remove a resource from a folder or project, you need to remove the association between the folder or project and the resource. After you remove the association, organization members can no longer manage the resource from the folder or project.
+
+.About this task
+
+If you want to remove a discovered resource from the entire organization, you need to remove the working environment from the BlueXP canvas.
 
 .Steps
 

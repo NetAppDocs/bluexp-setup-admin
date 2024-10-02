@@ -15,6 +15,12 @@ summary: To make a Connector available to use with another folder or project in 
 [.lead]
 A Connector is required to manage several types of working environments from BlueXP. When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. If you want to make that Connector available to use with another folder or project in your organization, then you need to create an association from BlueXP identity and access management (IAM).
 
+.About this task
+
+* When a _Folder or project admin_ views the *Connectors* page, the page displays all Connectors in the organization. However, a member with this role can only view and assocaite Connectors with the folders and projects for which they have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
+
+* Due to a known issue, the Connectors page in BlueXP IAM displays any old Connectors that you previously removed from BlueXP.
+
 .Before you begin
 
 You should understand how Connector association works. link:concept-identity-and-access-management.html#associate-connectors[Learn about using Connectors with BlueXP IAM].

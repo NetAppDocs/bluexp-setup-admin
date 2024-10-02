@@ -17,6 +17,10 @@ BlueXP identity and access management (IAM) enables you to add members to your o
 
 TIP: To ensure that you don't lose access to your BlueXP organization, it's a best practice to have two members with the Organization admin role.
 
+.About this task
+
+When a _Folder or project admin_ views the *Members* page, the page displays all members in the organization. However, a member with this role can only view and manage member permissions for the folders and projects for which they have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
+
 == Add members to your organization
 
 You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
