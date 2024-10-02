@@ -35,7 +35,7 @@ A member who has this role can complete the following actions in BlueXP:
 
 * Manage all working environments in the projects and folders for which they have permissions
 
-* Set up and use all BlueXP services
+* Use all BlueXP services
 
 * From BlueXP IAM, an admin of a folder can complete the following actions:
 ** Add folders or projects within a folder
@@ -72,7 +72,7 @@ A member who has this role can complete the following actions in BlueXP:
 +
 * Complete any action from Backup and recovery > Applications
 * Manage all working environments in the projects and folders for which they have permissions
-* Use all configured BlueXP services
+* Use all BlueXP services
 
 == Classification viewer
 
