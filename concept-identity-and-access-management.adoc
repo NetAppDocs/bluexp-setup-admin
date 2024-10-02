@@ -130,7 +130,7 @@ When you create a Connector, BlueXP automatically associates that Connector with
 +
 If a resource that you associated with additional project is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas when viewing that project.
 
-You can create an association from the *Members* page in BlueXP IAM:
+You can create an association from the *Connectors* page in BlueXP IAM:
 
 * Associate a Connector with a project
 +
