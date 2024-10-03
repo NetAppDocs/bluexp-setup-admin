@@ -55,7 +55,10 @@ link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 * *User's email*: Enter the user's email address that is associated with the BlueXP login that they created.
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
 +
-Note that if you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
+Note the following:
++
+* You can only select from the folders and projects for which you have admin access.
+* If you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
 * *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
@@ -94,7 +97,10 @@ The user should receive an email from NetApp BlueXP. The email includes informat
 * *Service account name*: Enter a name for the service account.
 * *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
 +
-Note that if you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
+Note the following:
++
+* You can only select from the folders and projects for which you have admin access.
+* If you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
 * *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
 ** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
