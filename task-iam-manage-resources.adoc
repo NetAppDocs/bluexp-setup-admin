@@ -84,6 +84,8 @@ You should understand how resource association works. link:concept-identity-and-
 . Select a folder or project and then select *Accept*.
 
 . To associate an additional folder or project, select *Add folder or project* and then select the folder or project.
++
+Note that you can only select from the folders and projects for which you have admin access.
 
 . Select *Associate resources*.
 
