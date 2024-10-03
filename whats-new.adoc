@@ -196,6 +196,8 @@ We updated the AWS and Azure policies for the Connector to remove permissions th
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log[Learn what changed in the AWS policy].
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
 
+//tag::whats-new[]
+
 == 22 August 2024
 
 === Connector 3.9.43 patch
@@ -213,8 +215,6 @@ These permissions are required for Cloud Volumes ONTAP support of Virtual Machin
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes[Learn about the Cloud Volumes ONTAP 9.15.1 release^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
-
-//end::whats-new[]
 
 == 8 August 2024
 
