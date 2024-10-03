@@ -21,7 +21,19 @@ You need to create a Connector before you can change BlueXP settings. link:conce
 
 == Install an HTTPS certificate
 
-Install a certificate signed by a CA for secure access.
+Install a certificate signed by a CA for secure access to the web-based console running on the Connector.
+
+.About this task
+
+You can install the certificate using one of the following options:
+
+* Generate a certificate signing request (CSR) from BlueXP, submit the certificate request to a CA, and then install the CA-signed certificate on the Connector.
++
+The key pair that BlueXP uses to generate the CSR is stored internally on the Connector. BlueXP automatically retrieves the same key pair (private key) when you install the certificate on the Connector.
+
+* Install a CA-signed certificate that you already have.
++
+With this option, the CSR is not generated through BlueXP. You generate the CSR separately and store the private key externally. You provide BlueXP with the private key when you install the certificate.
 
 .Steps
 

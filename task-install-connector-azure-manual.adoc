@@ -37,6 +37,8 @@ include::_include/os-reqs.adoc[tag=azure-vm]
 include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=container-req]
+include::_include/os-reqs.adoc[tag=podman-req]
+include::_include/os-reqs.adoc[tag=docker-req]
 
 == Step 2: Install Podman or Docker Engine
 

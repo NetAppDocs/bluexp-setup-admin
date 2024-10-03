@@ -54,6 +54,8 @@ include::_include/os-reqs.adoc[tag=google-machine]
 include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=container-req]
+include::_include/os-reqs.adoc[tag=podman-req]
+include::_include/os-reqs.adoc[tag=docker-req-private]
 
 == Step 4: Install Podman or Docker Engine
 

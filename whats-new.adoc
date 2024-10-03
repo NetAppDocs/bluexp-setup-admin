@@ -94,6 +94,52 @@ BlueXP does not support SELinux with Ubuntu hosts.
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux[Learn more about SELinux^]
 
+== 30 September 2024
+
+=== Private mode release (3.9.44)
+
+A new private mode release is now available to download from the NetApp Support Site. 
+
+This release includes the following versions of the BlueXP components and services that are supported with private mode.
+
+[cols=2*,options="header,autowidth"]
+|===
+
+| Service
+| Version included
+
+| Connector | 3.9.44
+| Backup and recovery | 27 September 2024
+| Classification | 15 May 2024 (version 1.31)
+| Cloud Volumes ONTAP management | 9 September 2024
+| Digital wallet | 30 July 2023
+| On-premises ONTAP cluster management | 22 April 2024
+| Replication | 18 Sept 2022
+
+|===
+
+For the Connector, the 3.9.44 private mode release includes the updates introduced in the August 2024 and September 2024 releases. Most notably, support for Red Hat Enterprise Linux 9.4.
+
+To learn more about what's included in the versions of these BlueXP components and services, refer to the release notes for each BlueXP service:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024[What's new in the September 2024 release of the Connector]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024[What's new in the August 2024 release of the Connector]
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[What's new with BlueXP backup and recovery^]
+
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[What's new with BlueXP classification^]
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new with Cloud Volumes ONTAP management in BlueXP^]
+
+For more details about private mode, including how to upgrade, refer to the following:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
+
 == 9 September 2024
 
 === Connector 3.9.44
@@ -102,16 +148,13 @@ This release includes support for Docker Engine 26, an enhancement to SSL certif
 
 The 3.9.44 release is available for standard mode and restricted mode.
 
-==== Support for Docker Engine 26
+==== Support for Docker Engine 26 with new installations
 
-Docker Engine is the required container orchestration tool when installing the Connector on Ubuntu 22.04 LTS.
+Starting with the 3.9.44 release of the Connector, Docker Engine 26 is now supported with _new_ Connector installations on Ubuntu hosts.
 
-Starting with the 3.9.44 release of the Connector, Docker Engine 26 is now supported with _new_ Connector installations.
+If you have an existing Connector created prior to the 3.9.44 release, then Docker Engine 25.0.5 is still the maximum supported version on Ubuntu hosts.
 
-The updated list of supported Docker Engine versions is as follows:
-
-* The minimum supported version is 23.0.6.
-* The maximum supported version is 26.0.0.
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[Learn more about Docker Engine requirements].
 
 ==== Updated SSL certificate for local UI access
 
@@ -256,7 +299,6 @@ To learn more about what's included in the versions of these BlueXP services, re
 * https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[Learn what's new with BlueXP classification^]
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[Learn what's new with Cloud Volumes ONTAP management in BlueXP^]
-
 
 == 15 July 2024
 
