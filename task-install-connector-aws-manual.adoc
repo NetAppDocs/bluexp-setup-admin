@@ -38,6 +38,7 @@ include::_include/os-reqs.adoc[tag=aws-key-pair]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
+[[podman-configuration]]
 == Step 2: Install Podman or Docker Engine
 
 include::_include/podman-docker.adoc[]
