@@ -30,12 +30,6 @@ include::_include/os-reqs.adoc[tag=hypervisor]
 
 include::_include/os-reqs.adoc[tag=os]
 
-include::_include/os-reqs.adoc[tag=os2]
-
-include::_include/os-reqs.adoc[tag=podman]
-
-include::_include/os-reqs.adoc[tag=docker-engine]
-
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
 include::_include/os-reqs.adoc[tag=aws-ec2]

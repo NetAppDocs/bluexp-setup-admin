@@ -51,10 +51,10 @@ A member who has this role can complete the following actions in BlueXP:
 * From BlueXP IAM, an admin of a project can administer that project and its associated resources as follows:
 ** Edit the project: its name, associated resources, and member access
 ** Add a user account and associate a role at the project level
-** Associate a Connector with the project
+** Associate a Connector with a project, if the member has admin permissions to other projects that have other associated Connectors
 ** Add a role to a member at the project level
 ** View resources associated with the project
-** Associate viewable resources with the project
+** Associate resources with the project, if the member has admin permissions to other projects that have other associated resources
 ** Dissociate a resource from the project
 ** Delete the project
 
@@ -80,7 +80,7 @@ Description::
 Provides the ability view BlueXP classification scan results.
 
 Permissions::
-View scan results from BlueXP classification without permissions to manage any BlueXP classification settings.
+View compliance information and generate reports for systems that they have permission to access. These users cannot enable or disable scanning of volumes, buckets, or database schemas.
 +
 No other actions are available to a member who has this role.
 

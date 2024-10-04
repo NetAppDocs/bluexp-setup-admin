@@ -40,6 +40,8 @@ image:screenshot-iam-max-depth.png[A screenshot that shows an organization, six 
 * *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside directly underneath the organization or within a folder.
 * *Resources*: Select the resources that you want to associate with this folder or project.
 +
+You can only select from the resources that are associated with the parent of the folder or project. If the parent is the organization, then you can choose from any resource in the organization. If the parent is a folder, then you can only select from the resources that are associated with the folder.
++
 link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
 * *Access*: View the members who will have access to the folder or project based on the existing permissions already defined in your resource hierarchy.
 +
@@ -124,6 +126,11 @@ BlueXP displays the list of members who have access to the folder or project.
 +
 * *Add a member*: Select the member that you'd like to add to the folder or project and assign them a role.
 * *Change a member's role*: For any members with a role other than Organization Admin, select their existing role and then choose a new role.
++
+If a role was provided at a higher level of the hierarchy (at the folder or organization level), then you should consider whether to change the role at the lower level or the higher level. For example, if you assigned the _Folder or project admin_ role at the folder level, changing the role at the project level to lower-level permissions won't alter the permissions for the member. Because roles are inherited down the organization hierarchy, the member would still have admin permissions at the project level.
++
+link:concept-identity-and-access-management.html#role-inheritance[Learn more about role inheritance]. 
+
 * *Remove member access*: For members who have a role defined at the folder or project for which you're viewing, you can remove their access.
 +
 If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove member access when viewing this folder or project. You need to switch to that part of the hierarchy. Alternatively, you can link:task-iam-manage-members-permissions.html#manage-permissions[manage permissions from the Members page].

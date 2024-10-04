@@ -69,7 +69,7 @@ An organization can have one or many projects. A project can reside directly und
 
 === Resources
 
-A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
+A _resource_ is a working environment that BlueXP already manages.
 
 When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can choose to associate the resource with additional projects in your organization.
 
@@ -116,6 +116,7 @@ By providing permissions to a specific part of your resource hierarchy, you can 
 
 When you associate a member with a role, you need to select the entire organization, a specific folder, or a specific project. The role that you select gives a member permissions to the resources in the selected part of the hierarchy.
 
+[#role-inheritance]
 ==== Role inheritance
 
 When you assign a role, the role is inherited down the organization hierarchy:
@@ -148,9 +149,12 @@ Custom roles are not supported at this time.
 [#associate-connectors]
 === Connectors
 
-When you create a Connector, BlueXP automatically associates that Connector with the currently selected project in your organization. You might want to make that Connector available to use with another project in the following cases:
+When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. But if you have other members in your organization with different roles, those members can only access that Connector from the project in which it was created, unless you associate that Connector with other projects.
 
-* You want to use an existing Connector to create or discover additional working environments in another project
+You might want to make a Connector available to use with another project in the following cases:
+
+* You want to allow members in your organization to use an existing Connector to create or discover additional working environments in another project
+
 * You associated an existing resource with another project and that resource is managed by a Connector
 +
 If a resource that you associated with additional project is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas when viewing that project.

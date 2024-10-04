@@ -13,9 +13,7 @@ summary: Manage the resource hierarchy of your organization by associating resou
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP identity and access management (IAM) to associate a member with your organization, you provide permissions at the organization, folder, or project level. To ensure that those members have permissions to access the right resources, you'll need to manage the resource hierarchy of your organization by associating resources with specific projects and folders.
-
-A _resource_ is a working environment that BlueXP already manages or an undiscovered resource that is associated with your organization (for example, an on-premises ONTAP cluster or StorageGRID system). BlueXP is aware of undiscovered resources based on your organization's telemetry data.
+When you use BlueXP identity and access management (IAM) to associate a member with your organization, you provide permissions at the organization, folder, or project level. To ensure that those members have permissions to access the right resources, you'll need to manage the resource hierarchy of your organization by associating resources with specific projects and folders. A _resource_ is a working environment that BlueXP already manages.
 
 == View the resources in your organization
 
@@ -31,10 +29,6 @@ To start managing your resource hierarchy, you should be aware of the resources 
 
 The resources associated with your organization display in the *Resources* table.
 
-The *Discovered in BlueXP* column identifies whether you have any resources that haven't been discovered in BlueXP yet. If there are any undiscovered resources, you can discover them from the BlueXP canvas as working environments. After you discover the resources, your organization's members can manage them from the canvas.
-
-Learn more about discovering resources from link:task-iam-get-started.html[Get started with BlueXP IAM].
-
 .What's next?
 
 To find a specific resource, you can <<find-resources,search and filter the contents of the table>>. 
@@ -44,7 +38,6 @@ After you've found the resource that you're looking for, you can complete any of
 * <<view-folders-and-projects,View the folders and projects that are associated with the resource>>
 * <<associate-resource,Associate the resource with additional folders and projects>>
 * <<remove-resource,Remove the resource from a folder or project>>
-* link:task-iam-get-started.html[Discover an undiscovered resource]
 
 [#find-resources]
 == Find specific resources in your organization
@@ -98,7 +91,7 @@ BlueXP associates the resource with the selected folders and projects.
 
 .After you finish
 
-If the resource that you associated is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas.
+If the resource that you associated is discovered using a BlueXP Connector and you have other members in your organization, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas by members who don't have the _Organization admin_ role.
 
 link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
 

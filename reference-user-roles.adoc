@@ -29,11 +29,13 @@ If you're using BlueXP in standard mode, you won't have a BlueXP account. Instea
 | Compliance Viewer
 | SnapCenter Admin
 
-| Create Connectors | Yes | Yes | No | No
+| Create Connectors | Yes | No | No | No
 
-| Manage working environments |	Yes | Yes | No | No
+| Manage working environments |	Yes | Yes | No | Yes
 
-| Enable services on working environments | Yes | Yes | No | No
+| Enable services on working environments | Yes | Yes | No | Yes
+
+| Use BlueXP services | Yes | Yes | No | Yes
 
 | Remove working environments from a workspace | Yes | Yes | No | No
 
@@ -43,23 +45,19 @@ If you're using BlueXP in standard mode, you won't have a BlueXP account. Instea
 
 | View the timeline | Yes |	Yes | No | No
 
-| Switch between workspaces | Yes | Yes | Yes | No
+| Switch between workspaces | Yes | Yes | Yes | Yes
 
 | View BlueXP classification scan results | Yes | Yes | Yes | No
 
-| Complete actions from *Backup and recovery > Applications* | Yes | No | No | Yes
-
 | Receive the Cloud Volumes ONTAP report | Yes | No | No | No
 
-| Manage BlueXP accounts |	Yes | No | No | No
+| Manage BlueXP accounts | Yes | No | No | No
 
-| Manage credentials | Yes | No | No | No
+| Manage credentials | Yes | Yes | No | No
 
-| Modify BlueXP settings |	Yes |	No | No | No
+| Modify BlueXP settings |	Yes | Yes | No | No
 
-| View and manage the Support Dashboard | Yes |	No | No | No
-
-| Install an HTTPS certificate | Yes | No | No | No
+| View and manage the Support Dashboard | Yes |	Yes | No | No
 
 |===
 
