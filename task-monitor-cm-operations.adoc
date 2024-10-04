@@ -40,7 +40,7 @@ Checking the Timeline can be helpful if you need to identify who performed a spe
 
 .Steps
 
-. From the BlueXP menu bar, select *Settings > Timeline*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Timeline*.
 
 . Use the filters above the table to change which actions display in the table.
 +
