@@ -86,9 +86,11 @@ Starting with the 3.9.45 release, BlueXP now supports new installations of the C
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
 
-==== Support for SELinux with RHEL hosts
+=== Support for SELinux with RHEL hosts
 
-Starting with the 3.9.45 release, BlueXP now supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
+BlueXP now supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
+
+Support for SELinux starts with the 3.9.40 release for standard mode and restricted mode and with the 3.9.42 release for private mode.
 
 BlueXP does not support SELinux with Ubuntu hosts.
 
