@@ -5,54 +5,7 @@ The Connector is not supported on a host that is shared with other applications.
 
 //tag::os[]
 Operating system requirements::
-BlueXP supports the Connector with the following operating systems. A container orchestration tool is required before you install the Connector.
-+
-[cols="2a,2a,2a",options="header"]
-|===
-
-| Operating system
-| Supported Connector versions
-| Required container orchestration tool
-
-| Red Hat Enterprise Linux
-
-* 8.6 to 8.10
-* 9.1 to 9.4
-
-|
-* 3.9.40 or later when using BlueXP in standard mode or restricted mode
-* 3.9.42 or later when using BlueXP in private mode
-
-| Podman version 4.6.1 or 4.9.4 is required
-
-* The podman.socket service must be enabled and started
-* python3 must be installed
-* The podman-compose package version 1.0.6 must be installed
-* podman-compose must be added to the PATH environment variable
-
-| Ubuntu 24.04 LTS
-| 3.9.45 or later when using BlueXP in standard mode or restricted mode
-| Docker Engine 26.0.0 is required
-
-| Ubuntu 22.04 LTS
-| 3.9.29 or later
-| Docker Engine 23.0.6 to 26.0.0 is required
-
-Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector.
-
-|===
-+
-Notes:
-
-* Starting with the 3.9.45 release, BlueXP supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
-+
-BlueXP does not support SELinux with Ubuntu hosts.
-* The Connector is supported on English-language versions of these operating systems.
-* For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
-//end::os[]
-
-//tag::os2[]
-Operating system requirements::
+[[podman-versions]]
 BlueXP supports the Connector with the following operating systems. A container orchestration tool is required before you install the Connector.
 +
 [cols="2a,2a,2a,2a,2a",options="header"]
@@ -76,6 +29,9 @@ BlueXP supports the Connector with the following operating systems. A container 
 3.9.42 or later with BlueXP private mode
 
 | Podman version 4.6.1 or 4.9.4
+
+<<podman-configuration,View Podman configuration requirements>>.
+
 | Supported in enforcing mode or permissive mode
 
 .2+| Ubuntu
@@ -99,7 +55,7 @@ Notes:
 
 * The Connector is supported on English-language versions of these operating systems.
 * For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
-//end::os2[]
+//end::os[]
 
 //tag::os-private[]
 Supported operating systems::
