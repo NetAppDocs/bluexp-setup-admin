@@ -3,9 +3,13 @@ Dedicated host::
 The Connector is not supported on a host that is shared with other applications. The host must be a dedicated host.
 //end::dedicated[]
 
+//tag::hypervisor[]
+Hypervisor::
+A bare metal or hosted hypervisor that is certified to run a supported operating system is required.
+//end::hypervisor[]
+
 //tag::os[]
-Operating system requirements::
-[[podman-versions]]
+[[podman-versions]]Operating system requirements::
 BlueXP supports the Connector with the following operating systems. A container orchestration tool is required before you install the Connector.
 +
 [cols="2a,2a,2a,2a,2a",options="header"]
@@ -68,11 +72,6 @@ The host must be registered with Red Hat Subscription Management. If it's not re
 +
 The Connector is supported on English-language versions of these operating systems.
 //end::os-private[]
-
-//tag::hypervisor[]
-Hypervisor::
-A bare metal or hosted hypervisor that is certified to run a supported operating system is required.
-//end::hypervisor[]
 
 //tag::cpu-ram[]
 CPU:: 8 cores or 8 vCPUs
