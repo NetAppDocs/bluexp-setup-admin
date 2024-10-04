@@ -64,6 +64,8 @@ Notes:
 //tag::os-private[]
 [[podman-versions]]Operating system and container requirements::
 BlueXP supports the Connector with the following operating systems. A container orchestration tool is required before you install the Connector.
++
+[cols="2a,2a,2a,2a,2a",options="header"]
 |===
 
 | Operating system
@@ -152,7 +154,7 @@ Docker Engine is required on the host before you install the Connector.
 * The minimum supported version is 23.0.6.
 * The maximum supported version is 26.0.0.
 +
-Note that Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector. 
+Note that Docker Engine 26 is supported with _new_ Connector installations starting with the 3.9.44 release of the Connector.
 +
 https://docs.docker.com/engine/install/[View installation instructions^]
 //end::docker[]
