@@ -41,9 +41,9 @@ When you deploy the Connector from the AWS or Azure Marketplace, the image inclu
 
 include::_include/os-reqs.adoc[tag=dedicated]
 
-include::_include/os-reqs.adoc[tag=os]
-
 include::_include/os-reqs.adoc[tag=hypervisor]
+
+include::_include/os-reqs.adoc[tag=os]
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
@@ -55,10 +55,7 @@ include::_include/os-reqs.adoc[tag=google-machine]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
-include::_include/os-reqs.adoc[tag=container-req]
-include::_include/os-reqs.adoc[tag=podman-req]
-include::_include/os-reqs.adoc[tag=docker-req]
-
+[[podman-configuration]]
 == Step 4: Install Podman or Docker Engine
 
 If you're planning to manually install the Connector software, you need to prepare the host by installing Podman or Docker Engine.

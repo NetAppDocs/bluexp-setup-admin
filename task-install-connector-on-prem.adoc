@@ -26,18 +26,15 @@ The Connector software must run on a host that meets specific operating system r
 
 include::_include/os-reqs.adoc[tag=dedicated]
 
-include::_include/os-reqs.adoc[tag=os]
-
 include::_include/os-reqs.adoc[tag=hypervisor]
+
+include::_include/os-reqs.adoc[tag=os]
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
-include::_include/os-reqs.adoc[tag=container-req]
-include::_include/os-reqs.adoc[tag=podman-req]
-include::_include/os-reqs.adoc[tag=docker-req]
-
+[[podman-configuration]]
 == Step 2: Install Podman or Docker Engine
 
 include::_include/podman-docker.adoc[]
