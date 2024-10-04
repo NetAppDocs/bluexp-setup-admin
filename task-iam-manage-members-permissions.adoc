@@ -57,7 +57,7 @@ link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 +
 Note the following:
 +
-* You can only select from the folders and projects for which you have admin access.
+* You can only select from the folders and projects for which you have admin permissions.
 * If you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
 * *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
@@ -99,7 +99,7 @@ The user should receive an email from NetApp BlueXP. The email includes informat
 +
 Note the following:
 +
-* You can only select from the folders and projects for which you have admin access.
+* You can only select from the folders and projects for which you have admin permissions.
 * If you select a folder, the member will have permissions to all projects and folders that are associated with that folder.
 * *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
