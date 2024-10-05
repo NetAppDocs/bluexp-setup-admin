@@ -38,7 +38,7 @@ link:concept-federation.html[Learn how to use identity federation with BlueXP].
 
 . If you have a NetApp Support Site account or if you already set up identity federation, enter the email address associated with your account directly on the *Log in* page.
 +
-You can skip the sign up page if you have an NSS account. BlueXP will sign you up as part of this initial login.
+In both of these cases, BlueXP will sign you up as part of this initial login.
 
 . If you want to sign up by creating a BlueXP login, select *Sign up*.
 
@@ -52,16 +52,16 @@ This step is required before you can log in to BlueXP.
 
 . After you log in, review the End User License Agreement and accept the terms.
 
-. On the *Welcome* page, enter a name for your account.
+. On the *Welcome* page, enter a name for your BlueXP organization.
 +
-If your business already has an account and you want to join it, then you should close out of BlueXP and ask the owner to associate you with the account. After the owner adds you, you can log in and you'll have access to the account. link:task-managing-netapp-accounts.html#add-users[Learn how to add members to an existing account].
+An organization is the top-level element in BlueXP identity and access management (IAM). link:concept-identity-and-access-management.html[Learn about BlueXP IAM].
 +
-An account is the top-level element in NetApp's identity platform. It enables you to add and manage users, roles, permissions, and working environments.
+If your business already has a BlueXP organization and you want to join it, then you should close out of BlueXP and ask the owner to associate you with the organization. After the owner adds you, you can log in and you'll have access to the account. link:task-iam-manage-members-permissions#add-members[Learn how to add members to an existing organization].
 +
 image:screenshot-account-selection.png[A screenshot of the Welcome page that appears when you log in with a new account that doesn't belong to an account.]
 
-. Select *Create Account*.
+. Select *Create Organization*.
 
 .Result
 
-You now have a BlueXP login and an account. In most cases, the next step is to create a Connector, which connects BlueXP's services to your hybrid cloud environment.
+You now have a BlueXP login and an organization. In most cases, the next step is to create a Connector, which connects BlueXP's services to your hybrid cloud environment.

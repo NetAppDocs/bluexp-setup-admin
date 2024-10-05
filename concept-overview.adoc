@@ -36,7 +36,7 @@ Discover, deploy, and manage storage, whether it's in AWS, Azure, Google Cloud, 
 ** StorageGRID systems
 
 Mobility::
-Move data where it's needed by syncing, copying, tiering, and caching data.
+Move data where it's needed by syncing, copying, and tiering data.
 
 ** https://bluexp.netapp.com/cloud-sync-service[Copy and sync^]
 ** https://bluexp.netapp.com/cloud-tiering[Tiering^]
@@ -57,7 +57,7 @@ Use tools to monitor, map, and optimize your data storage and infrastructure. Ga
 ** https://bluexp.netapp.com/digital-advisor[Economic efficiency^]
 ** https://bluexp.netapp.com/digital-advisor[Operational resiliency^]
 
-https://bluexp.netapp.com/[Learn more about how you can use BlueXP to help your organization^]
+https://bluexp.netapp.com/[Learn more about how you can use BlueXP to manage data across your hybrid multicloud environment^]
 
 == Supported cloud providers
 
@@ -86,12 +86,12 @@ BlueXP identity and access management (IAM) is a resource and access management 
 
 BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage workspaces, users, and resources.
 
-* link:concept-identity-and-access-management.html[Learn more about BlueXP IAM].
-* link:concept-netapp-accounts.html[Learn about BlueXP accounts].
+* link:concept-identity-and-access-management.html[Learn more about BlueXP IAM]
+* link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 
 === Connectors
 
-You don't need a Connector to get started with BlueXP, but you'll need to create a Connector to unlock all BlueXP features and services. A Connector enables the management of resources and processes across your on-premises and cloud environments. It's required to manage working environments (for example, Cloud Volumes ONTAP and on-premises ONTAP clusters) and to use many BlueXP data services.
+You don't need a Connector to get started with BlueXP, but you'll need to create a Connector to unlock all BlueXP features and services. A Connector enables the management of resources and processes across your on-premises and cloud environments. It's required to manage working environments (for example, Cloud Volumes ONTAP) and to use many BlueXP services.
 
 link:concept-connectors.html[Learn more about Connectors].
 

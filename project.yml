@@ -33,7 +33,7 @@ sidebar:
           entries:
             - title: Getting started workflow
               url: /task-quick-start-standard-mode.html
-            - title: Prepare networking for using the BlueXP console
+            - title: Prepare networking for the BlueXP console
               url: /reference-networking-saas-console.html
             - title: Sign up to BlueXP
               url: /task-sign-up-saas.html

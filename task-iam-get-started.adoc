@@ -57,7 +57,7 @@ Learn how to create or discover resources from the BlueXP canvas:
 When you create or discover a resource in BlueXP, that resource is automatically associated with the project that was selected when you created or discovered the working environment. If you want to make that resource available to another project in your organization, then you'll need to create an association between them. If the resource is managed by a Connector, then you also need to create an association between the project and the associated Connector.
 
 [role="quick-margin-list"]
-* link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy]
+* link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy].
 * link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
 
 .Related information

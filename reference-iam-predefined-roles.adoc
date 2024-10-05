@@ -80,7 +80,7 @@ Description::
 Provides the ability view BlueXP classification scan results.
 
 Permissions::
-View compliance information and generate reports for systems that they have permission to access. These users cannot enable or disable scanning of volumes, buckets, or database schemas.
+View compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
 +
 No other actions are available to a member who has this role.
 

@@ -15,7 +15,7 @@ summary: When you set up BlueXP in restricted mode or private mode, you're promp
 [.lead]
 When you set up BlueXP in restricted mode or private mode, you're prompted to create a _BlueXP account_, which enables you to manage users and organize resources. This account might be all that you need, but if your business requires multiple accounts, then you'll need to create additional accounts by using the Tenancy API.
 
-If you're using BlueXP in standard mode, you won't have a BlueXP account. Instead, you'll have an organization that you manage using BlueXP identity and access management (IAM). link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
+If you're using BlueXP in standard mode, you won't have a BlueXP account. Instead, you'll have an organization that you manage using BlueXP identity and access management (IAM). link:concept-identity-and-access-management.html[Learn about BlueXP IAM].
 
 .Steps
 

@@ -13,7 +13,7 @@ summary: BlueXP identity and access management (IAM) enables you to control acce
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) provides resource and access management that enables you to control access to your resources. With IAM, you can organize your resources according to your organization's hierarchy. For example, you can organize resources by site or department. You can then assign members permissions to access specific resources in the hierarchy and prevent access to other resources.
+BlueXP identity and access management (IAM) enables you to organize and control access to your NetApp resources. You can organize your resources according to your organization's hierarchy. For example, you can organize resources by geographical location, site, or business unit. You can then assign permissions to members at specific parts of the hierarchy, which prevents access to resources in other parts of the hierarchy.
 
 BlueXP IAM replaces and enhances the previous functionality provided by BlueXP accounts. link:whats-new.html#iam[Learn more about the introduction of BlueXP IAM].
 
@@ -24,7 +24,7 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 == How BlueXP IAM works
 
-BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific resources in the organization's hierarchy. For example, a member can have project admin permissions for a project that has five associated resources. 
+BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific parts of the organization's hierarchy. For example, a member can have project admin permissions for a project that has five associated resources. 
 
 When using BlueXP IAM, you'll manage the following components:
 
@@ -69,7 +69,7 @@ An organization can have one or many projects. A project can reside directly und
 
 === Resources
 
-A _resource_ is a working environment that BlueXP already manages.
+A _resource_ is a working environment that you created or discovered in BlueXP.
 
 When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can choose to associate the resource with additional projects in your organization.
 
@@ -110,7 +110,7 @@ An organization has at least one user with the _Organization admin_ role (the us
 
 In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy.
 
-By providing permissions to a specific part of your resource hierarchy, you can restrict access rights to only the resources that a member needs to complete their tasks.
+By providing permissions at a specific part of the resource hierarchy, you can restrict access rights to only the resources that a member needs to complete their tasks.
 
 ==== Where you can assign roles in the hierarchy
 
@@ -157,7 +157,7 @@ You might want to make a Connector available to use with another project in the 
 
 * You associated an existing resource with another project and that resource is managed by a Connector
 +
-If a resource that you associated with additional project is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas when viewing that project.
+If a resource that you associated with additional project is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas by members who don't have the _Organization admin_ role.
 
 You can create an association from the *Connectors* page in BlueXP IAM:
 
@@ -195,7 +195,7 @@ The following examples describe how you might use IAM to manage your BlueXP orga
 * Modify member permissions because they moved departments or because they have additional responsibilities.
 * Remove a user who left the company.
 * Add folders or projects to your hierarchy because a new business unit has added NetApp storage.
-* Move resources from one project to another because that resource has capacity that another team can utilize.
+* Associate a resource with another project because that resource has capacity that another team can utilize.
 * View the resources that a member can access.
 * View the members and resources associated with a specific project.
 
@@ -208,5 +208,6 @@ The following examples describe how you might use IAM to manage your BlueXP orga
 * link:task-iam-associate-connectors.html[Associate Connectors with folders and projects]
 * link:task-iam-switch-organizations-projects.html[Switch between BlueXP projects and organizations]
 * link:task-iam-rename-organization.html[Rename your BlueXP organization]
+* link:task-iam-audit-actions-timeline.html[Monitor or audit IAM activity]
 * link:reference-iam-predefined-roles.html[Predefined BlueXP IAM roles]
 * https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

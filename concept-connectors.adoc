@@ -147,11 +147,11 @@ It's your responsibility to update the Connector policies as new permissions are
 
 == Connector upgrades
 
-We typically update the Connector software each month to introduce new features and to provide stability improvements. While most of the services and features in the BlueXP platform are offered through SaaS-based software, a few features and functionalities are dependent on the version of the Connector. That includes Cloud Volumes ONTAP management, on-prem ONTAP cluster management, settings, and help.
+We typically update the Connector software each month to introduce new features and to provide stability improvements. While most of the services and features in the BlueXP platform are offered through SaaS-based software, a few features are dependent on the version of the Connector. That includes Cloud Volumes ONTAP management, on-prem ONTAP cluster management, settings, and help.
 
 When you use BlueXP in standard mode or restricted mode, the Connector automatically updates its software to the latest version, as long as it has outbound internet access to obtain the software update. If you're using BlueXP in private mode, then you'll need to manually upgrade the Connector.
 
-link:task-upgrade-connector.html[Learn how to manually upgrade the Connector software].
+link:task-upgrade-connector.html[Learn how to manually upgrade the Connector software when using private mode].
 
 == Operating system and VM maintenance
 

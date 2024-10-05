@@ -5,7 +5,7 @@ keywords: networking, urls, endpoints, web browser, console, network, set up net
 summary: As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints when completing a few administrative tasks. Computers that access the BlueXP console should have connections to these endpoints.
 ---
 
-= Prepare networking for using the BlueXP console
+= Prepare networking for the BlueXP console
 :hardbreaks:
 :nofooter:
 :icons: font
