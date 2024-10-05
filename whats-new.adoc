@@ -13,7 +13,7 @@ summary: "Learn what's new with BlueXP administration features: BlueXP IAM, Conn
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new with BlueXP administration features: BlueXP identity and access management (IAM), Connectors, cloud provider credentials, and more.
+Learn what's new with BlueXP administration features: identity and access management (IAM), Connectors, cloud provider credentials, and more.
 
 //All links and images must use the absolute URL.
 
@@ -28,12 +28,12 @@ BlueXP identity and access management (IAM) is a new resource and access managem
 
 BlueXP IAM provides more granular management of resources and permissions:
 
-* A top-level _organization_ enables you to manage access across your various _projects_
-* _Folders_ enable you to group related projects together
-* Enhanced resource management enables you to associate a resource with one or more folders or projects
+* A top-level _organization_ enables you to manage access across your various _projects_.
+* _Folders_ enable you to group related projects together.
+* Enhanced resource management enables you to associate a resource with one or more folders or projects.
 +
-For example, you can associate a Cloud Volumes ONTAP system with multiple projects
-* Enhanced access management enables you to assign a role to members at different levels of the organization hierarchy
+For example, you can associate a Cloud Volumes ONTAP system with multiple projects.
+* Enhanced access management enables you to assign a role to members at different levels of the organization hierarchy.
 
 These enhancements provide better control over the actions that users can perform and the resources that they can access.
 
@@ -47,7 +47,7 @@ When you log in to BlueXP, you'll notice these changes:
 ** _Account admin_ is now _Organization admin_
 ** _Workspace admin_ is now _Folder or project admin_
 ** _Compliance viewer_ is now _Classification viewer_
-* Under Settings, you can now access BlueXP identity and access management and take advantage of the enhancements noted above
+* Under Settings, you can access BlueXP identity and access management to take advantage of these enhancements
 
 image:screenshot-iam-introduction.png[A screenshot of BlueXP that shows the Organization and Project selectable from the top of the interface as well as identity and access management which is available from the Settings menu.]
 
@@ -57,7 +57,7 @@ Note the following:
 
 * While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same working environments as before.
 
-* There are no changes to how you log in to BlueXP. BlueXP IAM works with NetApp cloud logins, NSS credentials, and federated connections just like BlueXP accounts did.
+* There are no changes to how you log in to BlueXP. BlueXP IAM works with NetApp cloud logins, NetApp Support Site credentials, and federated connections just like BlueXP accounts did.
 
 * If you had multiple BlueXP accounts, you now have multiple BlueXP organizations.
 
@@ -69,9 +69,9 @@ This change introduces a new API for BlueXP IAM, but it is backwards compatible 
 
 BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll continue using a BlueXP _account_ to manage workspaces, users, and resources.
 
-==== Learn more
+==== Where to go next
 
-* link:concept-identity-and-access-management.html[Learn more about BlueXP IAM]
+* link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
 * link:task-iam-get-started.html[Get started with BlueXP IAM]
 
 === Connector 3.9.45

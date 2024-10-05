@@ -1,7 +1,7 @@
 indexpage:
   title: BlueXP setup and administration documentation
-  lead: Get started with NetApp BlueXP so that you can start building, protecting, and governing data across your on-premises and cloud environments. After set up is complete, you can administer BlueXP identity and access management (IAM), Connectors, cloud provider accounts, and more.
-  summary: "Get started with NetApp BlueXP so that you can start building, protecting, and governing data across your on-premises and cloud environments. After set up is complete, you can administer BlueXP identity and access management (IAM), Connectors, cloud provider accounts, and more."
+  lead: Get started with NetApp BlueXP so that you can start building, protecting, and governing data across your on-premises and cloud environments. After set up is complete, you can control access to your resources using BlueXP identity and access management (IAM) and administer Connectors, cloud provider accounts, and more.
+  summary: "Get started with NetApp BlueXP so that you can start building, protecting, and governing data across your on-premises and cloud environments. After set up is complete, you can control access to your resources using BlueXP identity and access management (IAM) and administer Connectors, cloud provider accounts, and more."
   keywords: bluexp, connector, accounts, get started, setup, administration, sign up, log in, login, permissions
   tiles:
     - title: Get started
@@ -80,7 +80,7 @@ indexpage:
       links:
         - title: Log in to BlueXP
           url: task-logging-in.html
-        - title: Using identity federation with BlueXP
+        - title: Use identity federation with BlueXP
           url: concept-federation.html
     - title: Blogs & community
       links:
