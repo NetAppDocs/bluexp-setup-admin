@@ -51,6 +51,8 @@ Note that only English characters are allowed in the sign up form.
 This step is required before you can log in to BlueXP.
 
 . After you log in, review the End User License Agreement and accept the terms.
++
+If your user account doesn't already belong to an organization, you'll be prompted to create one.
 
 . On the *Welcome* page, enter a name for your BlueXP organization.
 +
@@ -58,9 +60,9 @@ An organization is the top-level element in BlueXP identity and access managemen
 +
 If your business already has a BlueXP organization and you want to join it, then you should close out of BlueXP and ask the owner to associate you with the organization. After the owner adds you, you can log in and you'll have access to the account. link:task-iam-manage-members-permissions#add-members[Learn how to add members to an existing organization].
 +
-image:screenshot-account-selection.png[A screenshot of the Welcome page that appears when you log in with a new account that doesn't belong to an account.]
+image:screenshot-create-organization.png[A screenshot of the Welcome page that appears when you log in with a new user account that doesn't belong to an organization.]
 
-. Select *Create Organization*.
+. Select *Let's Start*.
 
 .Result
 

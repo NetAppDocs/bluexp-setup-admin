@@ -25,7 +25,7 @@ For example, let's say that you're working in a multi-cloud environment. You mig
 
 . Select the *Connector* drop-down, select another Connector, and then select *Switch*.
 +
-image:screenshot_connector_switch.gif[A screenshot that shows the Connector icon in the header and the Switch action.]
+image:screenshot-connector-switch.png[A screenshot that shows the Connector icon in the header and the Switch action.]
 
 .Result
 

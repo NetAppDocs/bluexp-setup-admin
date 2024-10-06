@@ -115,7 +115,7 @@ If you just created these credentials in your cloud provider, it might take a fe
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 +
-image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
+image:screenshot-settings-icon-organization.png[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
 
 . On the *Organization credentials* or *Account credentials* page, select *Add Credentials* and follow the steps in the wizard.
 
@@ -176,7 +176,7 @@ If you just created the IAM role, it might take a few minutes until they are ava
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 +
-image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
+image:screenshot-settings-icon-organization.png[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
 
 . On the *Organization credentials* or *Account credentials* page, select *Add Credentials* and follow the steps in the wizard.
 
