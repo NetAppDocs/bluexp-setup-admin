@@ -196,7 +196,7 @@ Edit your Azure credentials in BlueXP by modifying the details about your Azure 
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 
-. On the *Account credentials* page, select the action menu for a set of credentials and then select *Edit Credentials*.
+. On the *Organization credentials* or *Account credentials* page, select the action menu for a set of credentials and then select *Edit Credentials*.
 
 . Make the required changes and then select *Apply*.
 
@@ -208,6 +208,6 @@ If you no longer need a set of credentials, you can delete them from BlueXP. You
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 
-. On the *Account credentials* page, select the action menu for a set of credentials and then select *Delete Credentials*.
+. On the *Organization credentials* or *Account credentials* page, select the action menu for a set of credentials and then select *Delete Credentials*.
 
 . Select *Delete* to confirm.

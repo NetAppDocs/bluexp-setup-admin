@@ -52,7 +52,7 @@ If Cloud Volumes ONTAP systems don't have an outbound internet connection to sen
 
 //tag::proxy[]
 Proxy server::
-If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You'll need to provide this information during installation. Note that BlueXP does not support transparent proxy servers.
+If your business requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You'll need to provide this information during installation. Note that BlueXP does not support transparent proxy servers.
 +
 * IP address
 * Credentials

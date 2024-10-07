@@ -1,6 +1,6 @@
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 +
-image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
+image:screenshot-settings-icon-organization.png[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
 
 . Select *Add Credentials* and follow the steps in the wizard.
 

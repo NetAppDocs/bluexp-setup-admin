@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+permalink: task-iam-switch-organizations-projects.html
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors
+summary: Switch between organizations, projects, and Connectors to access the resources associated with them.
+---
+
+= Switch between BlueXP organizations, projects, and Connectors
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You might belong to multiple BlueXP organizations or have permissions to access multiple projects or Connectors within a BlueXP organization. When needed, you can easily switch between organizations, projects, and Connectors to access the resources associated with that organization, project, or Connector.
+
+TIP: You might belong to multiple organizations if you were invited to join another organization or if you created an additional organization yourself. You can create an additional organization by using the API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/post-organizations.html[Learn how to create a new organization^]
+
+== Switch between organizations
+
+If you are a member of multiple organizations, you can switch between them at any time.
+
+.Steps
+
+. At the top of BlueXP, select *Organization*.
++
+image:screenshot-iam-switch-organizations.png[A screenshot of the BlueXP top banner where you can select the Organization drop-down and then select another organization.]
+
+. Select another organization and then select *Switch*.
+
+.Result
+
+BlueXP switches to the selected organization and displays the resources associated with that organization.
+
+== Switch between projects
+
+If your organization includes multiple projects and you have access to those projects, you can switch between them at any time.
+
+.Before you begin
+
+You must be on any page in the BlueXP console other than the BlueXP identity and access management (IAM) pages. You can't switch to another project when viewing any of the IAM pages.
+
+.Steps
+
+. At the top of BlueXP, select *Project*.
++
+image:screenshot-iam-switch-projects.png[A screenshot of the BlueXP top banner where you can select the Scope drop-down and then select another project.]
+
+. Browse through the folders and projects in your organization, select the project that you want, and then select *Switch*.
++
+image:screenshot-iam-switch-projects-select.png[A screenshot of the Scope menu where you can select a new project.]
+
+.Result
+
+BlueXP switches to the selected project and displays the resources associated with that project.
+
+== Switch between Connectors
+
+If you have multiple Connectors, you can switch between them to see the working environments that are associated with a specific Connector.
+
+.Steps
+
+. At the top of BlueXP, select *Connector*.
+
+. Select another Connector and then select *Switch*.
+
+.Result
+
+BlueXP refreshes and shows the working environments associated with the selected Connector.
+
+.Related link
+
+link:task-iam-associate-connectors.html[Associate Connectors with folders and projects].
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

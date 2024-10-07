@@ -19,7 +19,7 @@ While BlueXP inhibits the flow of traffic, communication, and data when using re
 
 == Overview
 
-BlueXP offers the following deployment modes for your account. Each mode differs in terms of outbound connectivity requirements, deployment location, installation process, authentication method, available data and storage services, and charging methods.
+BlueXP offers three deployment modes. Each mode differs in terms of outbound connectivity requirements, deployment location, installation process, authentication method, available data and storage services, and charging methods.
 
 Standard mode::
 BlueXP is accessible to users as a cloud service from the web-based console. Depending on the BlueXP services that you're planning to use, a BlueXP admin creates one or more Connectors to manage data within your hybrid cloud environment. 
@@ -392,7 +392,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Tiering | No | No
 | Volume caching | No | No
 
-.5+| *Features*
+.7+| *Features*
+| BlueXP identity and access management | No | No
+| BlueXP accounts | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 

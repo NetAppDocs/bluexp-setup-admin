@@ -1,0 +1,181 @@
+---
+sidebar: sidebar
+permalink: task-iam-manage-folders-projects.html
+keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management
+summary: BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects.
+---
+
+= Organize your resources in BlueXP IAM with folders and projects
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+BlueXP identity and access management (IAM) enables you to organize your NetApp resources using projects and folders. A _project_ represents a workspace in BlueXP that organization members access to manage _resources_ (for example, a Cloud Volumes ONTAP system). A _folder_ groups related projects together. After you organize your resources into folders and projects, you can grant granular access to resources by providing organization members with permissions to specific folders and projects.
+
+== Add a folder or project
+
+When you create your BlueXP organization, it includes a single project. You can create additional projects to manage your organization's resources. You can optionally create folders to group related projects together.
+
+.About this task
+
+The depth of your organization's hierarchy can go down to 7 levels. As a result, you can create nested folders down to 6 levels. The last nested folder can then include projects at the seventh level of the hierarchy.
+
+The following image illustrates the maximum depth of your organization's hierarchy:
+
+image:screenshot-iam-max-depth.png[A screenshot that shows an organization, six nested folders, and a project in the last nested folder.]
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. From the *Organization* page, select *Add folder or project*.
+
+. Select *Folder* or *Project*.
+
+. Provide details about the folder or project:
++
+* *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside directly underneath the organization or within a folder.
+* *Resources*: Select the resources that you want to associate with this folder or project.
++
+You can only select from the resources that are associated with the parent of the folder or project. If the parent is the organization, then you can choose from any resource in the organization. If the parent is a folder, then you can only select from the resources that are associated with the folder.
++
+link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
+* *Access*: View the members who will have access to the folder or project based on the existing permissions already defined in your resource hierarchy.
++
+If needed, select *Add a member* to specify additional organization members who should have access to the folder or project and then select a role. A role defines the permissions that members have for the folder or project.
++
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+
+. Select *Add*.
+
+.Result
+
+BlueXP creates the folder or project and associates the specified resources and members.
+
+[#view-associated-resources-members]
+== View the resources and members associated with a folder or project
+
+To verify that your resources are organized appropriately and accessible to the right members in your organization, you can view which resources and members are associated with a folder or project.
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
++
+image:screenshot-iam-edit-project.png[A screenshot of the Organization page that shows the Edit project option when selecting the action menu for a project in the table.]
+
+. On the *Edit* page, view details about associated resources and member access:
++
+* Select *Resources* to view the associated resources. In the table, the *Status* column identifies the resources that are associated with the folder or project.
++
+image:screenshot-iam-allocated-resources.png[A screenshot of the Edit project page that shows the available resources that you can associate or disassociate with the project.]
+
+* Select *Access* to view the members who have access to the folder or project.
++
+image:screenshot-iam-member-access.png[A screenshot of the Edit project page that shows the members who have access to the project.]
+
+.What's next?
+
+If needed, you can <<modify-resources,modify the associated resources>> or <<modify-members,modify member access>>.
+
+[#modify-resources]
+== Modify the resources associated with a folder or project
+
+You can modify the resources that are associated with a folder or project by associating or disassociating a resource. For example, you might want to associate a resource with another project because that resource has capacity that another team can utilize.
+
+.Before you begin
+
+link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
+
+. On the *Edit* page, select *Resources*.
++
+In the table, the *Status* column identifies the resources that are associated with the folder or project.
+
+. Select the resources that you'd like to associate or disassociate.
+
+. Depending on the resources that you selected, select either *Associate with the project* or *Disassociate from the project*.
++
+image:screenshot-iam-associate-resources.png[A screenshot of the Edit project page that shows the Associate resources option that is available after you select resources that aren't currently associated.]
+
+. Select *Apply*
+
+.Result
+
+BlueXP associates the resources with the folder or project. Organization members who have permissions for that folder or project can now access the associated resources.
+
+[#modify-members]
+== Modify member access to a folder or project
+
+Modify member access to a folder or project to ensure that the right members have access to the resources associated with the folder or project.
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
+
+. On the *Edit* page, select *Access*.
++
+BlueXP displays the list of members who have access to the folder or project.
+
+. Modify member access:
++
+* *Add a member*: Select the member that you'd like to add to the folder or project and assign them a role.
+* *Change a member's role*: For any members with a role other than Organization Admin, select their existing role and then choose a new role.
++
+If a role was provided at a higher level of the hierarchy (at the folder or organization level), then you should consider whether to change the role at the lower level or the higher level. For example, if you assigned the _Folder or project admin_ role at the folder level, changing the role at the project level to lower-level permissions won't alter the permissions for the member. Because roles are inherited down the organization hierarchy, the member would still have admin permissions at the project level.
++
+link:concept-identity-and-access-management.html#role-inheritance[Learn more about role inheritance]. 
+
+* *Remove member access*: For members who have a role defined at the folder or project for which you're viewing, you can remove their access.
++
+If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove member access when viewing this folder or project. You need to switch to that part of the hierarchy. Alternatively, you can link:task-iam-manage-members-permissions.html#manage-permissions[manage permissions from the Members page].
+
+. Select *Apply*.
+
+.Result
+
+BlueXP updates the members who have access to the folder or project.
+
+== Rename a folder or project
+
+If needed, you can change the name of your folders and projects.
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
+
+. On the *Edit* page, enter a new name and select *Apply*.
+
+.Result
+
+BlueXP updates the name of the folder or project.
+
+== Delete a folder or project
+
+You can delete the folders and projects that you no longer need.
+
+.Before you begin
+
+* The folder or project must not have any associated resources. <<modify-resources,Learn how to disassociate resources>>.
+* A folder must not contain any subfolders or projects. You need to delete those folders and projects first.
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Delete*.
+
+. Confirm that you want to delete the folder or project.
+
+.Result
+
+BlueXP deletes the folder or project. That folder or project is no longer available to organization members.
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

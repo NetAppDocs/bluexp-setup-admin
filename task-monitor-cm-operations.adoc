@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: task-monitor-cm-operations.html
-keywords: administer, monitor, account, timeline, notifications, alerts, events, notification center, email
-summary: You can monitor the status of the operations that BlueXP is performing to see if there are any issues that you need to address. You can view the status in the Notification Center, in the Timeline, or have notifications sent to your email.
+keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email
+summary: You can monitor the status of the operations that BlueXP is performing to see if there are any issues that you need to address. You can view the status in the Timeline, the Notification Center, or have notifications sent to your email.
 ---
 
-= Monitor operations in your account
+= Monitor BlueXP operations
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,9 @@ summary: You can monitor the status of the operations that BlueXP is performing 
 :imagesdir: ./media/
 
 [.lead]
-You can monitor the status of the operations that BlueXP is performing to see if there are any issues that you need to address. You can view the status in the Notification Center, in the Timeline, or have notifications sent to your email.
+You can monitor the status of the operations that BlueXP is performing to see if there are any issues that you need to address. You can view the status in the Timeline, the Notification Center, or have notifications sent to your email.
 
-The following table provides a comparison of the Notification Center and the Timeline so you can understand what each has to offer.
+The following table provides a comparison of the Timeline and the Notification Center so you can understand what each has to offer.
 
 [cols=2*,options="header",cols="47,47",width="95%"]
 |===
@@ -28,21 +28,43 @@ The following table provides a comparison of the Notification Center and the Tim
 | Shows only actions initiated in the user interface | Shows all actions from the UI or APIs
 | Shows user-initiated actions | Shows all actions, whether user-initiated or system-initiated
 | Filter results by importance | Filter by service, action, user, status, and more
-| Provides the ability to email notifications to Account users and to others | No email capability
-// | Provides the ability to retry a failed action | No ability to retry a failed action
+| Provides the ability to email notifications to users and to others | No email capability
 
 |===
+
+== Audit user activity from the BlueXP timeline
+
+The Timeline in BlueXP shows the actions that users completed to manage your organization or account. This includes management actions such as associating users, creating working environments, creating Connectors, and more.
+
+Checking the Timeline can be helpful if you need to identify who performed a specific action, or if you need to identify the status of an action.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Timeline*.
+
+. Use the filters above the table to change which actions display in the table.
++
+For example, you can use the *Service* filter to show actions related to a specific BlueXP service, or you can use the *User* filter to show actions related to a specific user account.
+
+.Result
+
+The Timeline updates to show you completed management actions.
 
 == Monitor activities using the Notification Center
 
 Notifications track the progress of operations that you've initiated in BlueXP so you can verify whether the operation was successful or not. They enable you to view the status for many BlueXP actions that you initiated during your current login session. Not all BlueXP services report information into the Notification Center at this time.
-// Notifications can even prompt you to retry a failed operation.
 
 You can display the notifications by selecting the notification bell (image:icon_bell.png[notification bell]) in the menu bar. The color of the little bubble in the bell indicates the highest level severity notification that is active. So if you see a red bubble, it means there's an important notification that you should look at.
 
 image:screenshot_notification_full.png[A screenshot showing the a list of current notifications in the Notification Center.]
 
-You can also configure BlueXP to send certain types of notifications by email so you can be informed of important system activity even when you're not logged into the system. Emails can be sent to any users who are part of your BlueXP account, or to any other recipients who need to be aware of certain types of system activity. See how to <<Set email notification settings,set email notification settings>>.
+You can also configure BlueXP to send certain types of notifications by email so you can be informed of important system activity even when you're not logged into the system. Emails can be sent to any users who are part of your BlueXP organization or account, or to any other recipients who need to be aware of certain types of system activity. See how to <<Set email notification settings,set email notification settings>>.
+
+=== Comparing the Notification Center with BlueXP alerts
+
+The Notification Center enables you to view the status of operations you've initiated from BlueXP and set up alert notifications for certain types of system activities. Meanwhile, BlueXP alerts enables you to view issues or potential risks in your ONTAP storage environment related to capacity, availability, performance, protection, and security.
+
+https://docs.netapp.com/us-en/bluexp-alerts/index.html[Learn more about BlueXP alerts^]
 
 === Notification types
 
@@ -83,7 +105,7 @@ image:screenshot_notification_dismiss1.png[A screenshot showing the how to dismi
 
 === Set email notification settings
 
-You can send specific types of notifications by email so you can be informed of important system activity even when you're not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP account, or to any other recipients who need to be aware of certain types of system activity.
+You can send specific types of notifications by email so you can be informed of important system activity even when you're not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP organization or account, or to any other recipients who need to be aware of certain types of system activity.
 
 [NOTE]
 ====
@@ -91,11 +113,11 @@ You can send specific types of notifications by email so you can be informed of 
 * Sending email notifications is not supported when the Connector is installed in a site without internet access.
 ====
 
-The filters you set in the Notification Center do not determine the types of notifications you'll receive by email. By default, BlueXP Account Admins will receive emails for all "Critical" and "Recommendation" notifications. These notifications are across all services - you can't choose to receive notifications for only certain services, for example Connectors or BlueXP backup and recovery. 
+The filters you set in the Notification Center do not determine the types of notifications you'll receive by email. By default, any BlueXP admin will receive emails for all "Critical" and "Recommendation" notifications. These notifications are across all services - you can't choose to receive notifications for only certain services, for example Connectors or BlueXP backup and recovery. 
 
 All other users and recipients are configured not to receive any notification emails - so you'll need to configure notification settings for any additional users. 
 
-You must be an Account Admin to customize the notifications settings.
+You must be a BlueXP admin to customize the notifications settings.
 
 .Steps
 
@@ -103,7 +125,7 @@ You must be an Account Admin to customize the notifications settings.
 +
 image:screenshot-settings-notifications.png[A screenshot showing how to display the Alerts and Notifications Settings page.]
 
-. Select a user, or multiple users, from either the _Account Users_ tab or the _Additional Recipients_ tab, and choose the type of notifications to be sent:
+. Select a user, or multiple users, from either the _Users_ tab or the _Additional Recipients_ tab, and choose the type of notifications to be sent:
 
 * To make changes for a single user, select the menu in the Notifications column for that user, check the types of Notifications to be sent, and select *Apply*.
 * To make changes for multiple users, check the box for each user, select *Manage Email Notifications*, check the types of Notifications to be sent, and select *Apply*.
@@ -113,7 +135,7 @@ image:screenshot-change-notifications.png[A screenshot showing how to change not
 
 === Add additional email recipients
 
-The users who appear in the _Account Users_ tab are populated automatically from the users in your BlueXP account (from the link:task-managing-netapp-accounts.html#create-and-manage-users[Manage Account page]). You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
+The users who appear in the _Users_ tab are populated automatically from the users in your BlueXP organization or account. You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
 
 .Steps
 
@@ -122,19 +144,3 @@ The users who appear in the _Account Users_ tab are populated automatically from
 image:screenshot-add-email-recipient.png[A screenshot showing how to add new email recipients for alerts and notifications.]
 
 . Enter the name, email address, and select the types of Notifications that recipient will receive, and select *Add New Recipient*.
-
-== Audit user activity in your account
-
-The Timeline in BlueXP shows the actions that users completed to manage your account. This includes management actions such as associating users, creating workspaces, creating Connectors, and more.
-
-Checking the Timeline can be helpful if you need to identify who performed a specific action, or if you need to identify the status of an action.
-
-.Steps
-
-. From the BlueXP menu bar, select *Settings > Timeline*.
-
-. Under the Filters, select *Service*, enable *Tenancy*, and select *Apply*.
-
-.Result
-
-The Timeline updates to show you account management actions.

@@ -1,0 +1,329 @@
+---
+sidebar: sidebar
+permalink: task-iam-manage-members-permissions.html
+keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management
+summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
+---
+
+= Add BlueXP IAM members and manage their permissions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
+
+TIP: To ensure that you don't lose access to your BlueXP organization, it's a best practice to have two members with the Organization admin role.
+
+.About this task
+
+When a _Folder or project admin_ views the *Members* page, the page displays all members in the organization. However, a member with this role can only view and manage member permissions for the folders and projects for which they have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
+
+[#add-members]
+== Add members to your organization
+
+You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
+
+// start tabbed area
+
+[role="tabbed-block"]
+
+====
+
+.User account
+
+-- 
+
+.Steps
+
+. If the user hasn't already done so, ask them to go to the https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
++
+When the user signs up, they should complete the *Sign up* page, verify their email address, and then log in. When prompted to create an organization, the user should close out of BlueXP and let you know that they've created their user account. You can then add the user to your existing BlueXP organization.
++
+link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
+
+. Select *Add a member*.
+
+. To add the member, complete the steps in the dialog box:
++
+* *Entity Type*: Keep *User* selected.
+* *User's email*: Enter the user's email address that is associated with the BlueXP login that they created.
+* *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
++
+Note the following:
++
+** You can only select from the folders and projects for which you have admin permissions.
+** If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
+* *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
++
+** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
+** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
++
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+* *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
+
+. Select *Add*.
+
+.Result
+
+BlueXP adds the user to the organization.
+
+.What's next?
+
+The user should receive an email from NetApp BlueXP. The email includes information that the member can use to access BlueXP.
+
+-- 
+
+.Service account 
+
+-- 
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
+
+. Select *Add a member*.
+
+. To add the member, complete the steps in the dialog box:
++
+* *Entity Type*: Select *Service account*.
+* *Service account name*: Enter a name for the service account.
+* *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
++
+Note the following:
++
+** You can only select from the folders and projects for which you have admin permissions.
+** If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
+* *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
++
+** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
+** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
++
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+* *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
+
+. Select *Add*.
+
+. Download or copy the client ID and client secret.
++
+The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely. Note that you can recreate the client ID and client secret later on as needed.
+
+. Select *Close*.
+
+.Result
+
+BlueXP adds the service account to your organization.
+
+-- 
+
+==== 
+
+// end tabbed area 
+
+== View organization members
+
+You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy.
+
+.About this task
+
+The *Members* page shows details about two types of members: user accounts and service accounts.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
++
+The members of your organization appear in the *Members* table.
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+
+.Result
+
+BlueXP displays details about the member, which includes the folders and projects that the member has permissions for across your organization's resource hierarchy.
+
+Here's an example of a member who is assigned the _Folder or project admin_ role for a folder, which provides permissions to the three projects in the folder.
+
+image:screenshot-iam-member-details.png[A screenshot of the details page for a member who has permissions to a project and a folder.]
+
+Here's another example that shows a member who has the Organization admin role, which gives the user access to all resources in the organization.
+
+image:screenshot-iam-member-details-org-admin.png[A screenshot of the details page for a member who has Organization admin permissions.]
+
+.Related information
+
+link:task-iam-manage-folders-projects.html#view-associated-resources-members[View all of the members associated with a specific folder or project].
+
+[#manage-permissions]
+== Manage a member's permissions
+
+A role defines the permissions assigned to a member at the organization, folder, or project level. Each organization member can have a role assigned at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and role B for project 2.
+
+TIP: A member who is assigned the Organization admin role can't be assigned any additional roles. They already have permissions across the entire organization.
+
+=== Add a role to a member
+
+Provide a member with additional permissions in your organization by adding roles that apply to the organization, folder, or project level.
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Add a role*.
+
+. To add a role, complete the steps in the dialog box:
++
+* *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
++
+If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
+
+* *Select a role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
++
+** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
+** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
++
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+* *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project, and then choose a role.
+
+. Select *Add new roles*.
+
+.Result
+
+BlueXP adds the roles. The member now has permissions for the resources in the organization, folder, or project that you selected.
+
+=== Change from one role to another
+
+If you need to modify a member's permissions, you can change the role that's associated with that member at the organization, folder, or project level.
+
+If you need to change the roles for multiple members in your organization, you can use a bulk action to complete the changes all at once.
+
+// start tabbed area
+
+[role="tabbed-block"]
+
+====
+
+.One member
+
+-- 
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+
+. In the table, navigate to the organization, folder, or project and then select a new role.
+
+.Result
+
+BlueXP updates the roles associated with that member at the organization, folder, and project level.
+
+-- 
+
+.Multiple members
+
+-- 
+
+.Steps
+
+. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit organization*, *Edit folder*, or *Edit project*.
+
+. On the *Edit* page, select *Access*.
+
+. Select all members or individually select two or more members.
+
+. Select *Define role*.
++
+image:screenshot-iam-define-role.png[A screenshot of the Access portion of the edit dialog box that enables you to choose the Define role action after selecting two or more members.]
+
+. Select the role that you'd like to assign to the members and then select *Define*.
+
+.Result
+
+BlueXP updates the roles for all of the members that you selected.
+
+-- 
+
+==== 
+
+// end tabbed area
+
+=== Remove permissions for a folder or project
+
+You can remove a member's permissions to a specific folder or project by removing their role.
+
+.About this task
+
+If a member has permissions in your organization to _only_ one folder or project, you can't remove that role. You have two choices:
+
+* If you want the member to have permissions to another part of the resource hierarchy, you need to add that role first and then delete the existing role.
+
+* If you don't want the member to have permissions to anything, then you can simply remove the member from your organization.
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+
+. In the table, navigate to the folder or project level and then select image:icon-delete.png[An icon of a garbage can]
+
+.Result
+
+BlueXP removes permissions for that member at the folder or project level.
+
+== Recreate the credentials for a service account
+
+You can recreate the credentials (client ID and client secret) for a service account at any time. You might recreate the credentials if you lost them or if your business requires that you rotate security credentials after a period of time.
+
+.About this task
+
+Recreating the credentials deletes the existing credentials for the service account and then creates new credentials. You will not be able to use the previous credentials.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
+
+. In the *Members* table, navigate to a service account, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Recreate secrets*.
+
+. Select *Recreate*.
+
+. Download or copy the client ID and client secret.
++
+The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely.
+
+. Select *Close*.
+
+.Result
+
+A new client ID and client secret are now associated with the service account.
+
+== Remove a member from your organization
+
+You might need to remove a member from your organization--for example, if they left your company.
+
+.About this task
+
+This task doesn't delete the member's BlueXP account or NetApp Support Site account. It simply removes the member and their associated permissions from your organization.
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Delete user*.
+
+. Confirm that you want to remove the member from your organization.
+
+.Result
+
+BlueXP removes the member. If that member logs in to BlueXP again, they no longer have access to your BlueXP organization.
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* link:reference-iam-predefined-roles.html[Predefined BlueXP IAM roles]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

@@ -89,7 +89,7 @@ At the end of the installation, the Connector service (occm) restarts twice if y
 https://_ipaddress_
 
 . After you log in, set up the Connector:
-.. Specify the BlueXP account to associate with the Connector.
+.. Specify the BlueXP organization to associate with the Connector.
 .. Enter a name for the system.
 .. Under *Are you running in a secured environment?* keep restricted mode disabled.
 +
@@ -98,5 +98,5 @@ You should keep restricted mode disabled because these steps describe how to use
 
 .Result
 
-The Connector is now installed and is set up with your BlueXP account.
+The Connector is now installed and is set up with your BlueXP organization.
 //end::standard-mode-steps-for-cloud[]

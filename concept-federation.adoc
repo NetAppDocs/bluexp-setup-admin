@@ -5,7 +5,7 @@ keywords: identity federation, federation, federated identity, set up identity f
 summary: Identity federation enables single sign-on with BlueXP so that users can log in using credentials from your corporate identity. To get started, learn how identity federation works with BlueXP and then review an overview of the setup process.
 ---
 
-= Using identity federation with BlueXP
+= Enable single sign-on by using identity federation with BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
