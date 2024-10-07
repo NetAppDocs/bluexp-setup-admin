@@ -57,6 +57,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Le
 
 When you use BlueXP in standard mode, a Connector is required for the following features and services in BlueXP:
 
+* Alerts
 * Amazon FSx for ONTAP management features
 * Amazon S3 storage
 * Azure Blob storage

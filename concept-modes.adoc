@@ -368,7 +368,8 @@ This portion of the table lists support for working environment management from 
 | E-Series | No | No
 | StorageGRID | No | No 
 
-.15+| *Services*
+.16+| *Services*
+| Alerts | No | No
 | Backup and recovery 
 | Yes
 
