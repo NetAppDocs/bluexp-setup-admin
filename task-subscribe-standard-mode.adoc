@@ -49,7 +49,7 @@ include::_include/subscribe-google.adoc[]
 ====
 // end tabbed area
 
-.Related links
+.Related information
 
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html[Manage BYOL capacity-based licenses for Cloud Volumes ONTAP^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BYOL licenses for BlueXP data services^]

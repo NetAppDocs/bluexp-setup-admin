@@ -1,0 +1,4 @@
+---
+permalink: reference-checklist-cm.html
+redirect: bluexp-setup-admin/reference-iam-predefined-roles.html
+---

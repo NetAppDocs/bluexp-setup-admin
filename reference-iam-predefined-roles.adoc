@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+permalink: reference-iam-predefined-roles.html
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
+summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
+---
+
+= Predefined BlueXP IAM roles and permissions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
+
+== Organization admin
+
+Description::
+Provides full control of the entire BlueXP organization. 
+
+Permissions::
+A member who has this role can complete all actions in BlueXP.
+
+== Folder or project admin
+
+Description::
+Provides full control of one or more projects and folders.
++
+Note that if you assign this role at the folder level, the member has permissions to all projects that are associated with that folder.
+
+Permissions::
+A member who has this role can complete the following actions in BlueXP:
+
+* Manage all working environments in the projects and folders for which they have permissions
+
+* Use all BlueXP services
+
+* From BlueXP IAM, an admin of a folder can administer the folders, projects, and resources that are children of that folder:
+** Add folders or projects within the folder
+** Edit folders and projects: their names, associated resources, and member access
+** Delete folders and projects
+** Add a user account and associate a role at the folder or project level
+** Associate a Connector with a folder or project
+** Add a role to a member at the folder or project level
+** View resources associated with folders and projects
+** Associate viewable resources with additional folders or projects
+** Dissociate a resource from a folder or project
+
+* From BlueXP IAM, an admin of a project can administer that project and its associated resources as follows:
+** Edit the project: its name, associated resources, and member access
+** Add a user account and associate a role at the project level
+** Associate a Connector with a project, if the member has admin permissions to other projects that have other associated Connectors
+** Add a role to a member at the project level
+** View resources associated with the project
+** Associate resources with the project, if the member has admin permissions to other projects that have other associated resources
+** Dissociate a resource from the project
+** Delete the project
+
+* Manage credentials from Settings > Credentials 
+* View the BlueXP timeline
+* Register BlueXP for support and submit cases
+
+== SnapCenter admin
+
+Description::
+Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
+
+Permissions::
+A member who has this role can complete the following actions in BlueXP:
++
+* Complete any action from Backup and recovery > Applications
+* Manage all working environments in the projects and folders for which they have permissions
+* Use all BlueXP services
+
+== Classification viewer
+
+Description::
+Provides the ability view BlueXP classification scan results.
+
+Permissions::
+View compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
++
+No other actions are available to a member who has this role.
+
+== Related links
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* link:task-iam-manage-members-permissions.html[Manage BlueXP members and their permissions]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]

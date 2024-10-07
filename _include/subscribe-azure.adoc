@@ -20,12 +20,12 @@ image:screenshot_azure_add_subscription.png[A screenshot of the action menu for 
 You'll be redirected to the BlueXP website.
 .. From the *Subscription Assignment* page:
 +
-* Select the BlueXP accounts that you'd like to associate this subscription with.
-* In the *Replace existing subscription* field, choose whether you'd like to automatically replace the existing subscription for one account with this new subscription.
+* Select the BlueXP organizations or accounts that you'd like to associate this subscription with.
+* In the *Replace existing subscription* field, choose whether you'd like to automatically replace the existing subscription for one organization or account with this new subscription.
 +
-BlueXP replaces the existing subscription for all credentials in the account with this new subscription. If a set of credentials wasn't ever associated with a subscription, then this new subscription won't be associated with those credentials.
+BlueXP replaces the existing subscription for all credentials in the organization or account with this new subscription. If a set of credentials wasn't ever associated with a subscription, then this new subscription won't be associated with those credentials.
 +
-For all other accounts, you'll need to manually associate the subscription by repeating these steps.
+For all other organizations or accounts, you'll need to manually associate the subscription by repeating these steps.
 
 * Select *Save*.
 +

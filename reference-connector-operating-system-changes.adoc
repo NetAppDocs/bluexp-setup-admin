@@ -27,33 +27,35 @@ The BlueXP Connector is supported with the following Linux operating systems.
 .Standard mode
 --
 Manual installation::
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.10
 ** 9.1 to 9.4
 
-Deployment from BlueXP:: 
+Deployment from BlueXP::
 Ubuntu 22.04 LTS
 
-Deployment from the AWS Marketplace:: 
+Deployment from the AWS Marketplace::
 Ubuntu 22.04 LTS 
 
-Deployment from the Azure Marketplace:: 
+Deployment from the Azure Marketplace::
 Ubuntu 22.04 LTS
 --
 
 .Restricted mode
 --
 Manual installation::
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 ** 8.6 to 8.10
 ** 9.1 to 9.4
 
-Deployment from the AWS Marketplace:: 
+Deployment from the AWS Marketplace::
 Ubuntu 22.04 LTS
 
-Deployment from the Azure Marketplace:: 
+Deployment from the Azure Marketplace::
 Ubuntu 22.04 LTS
 --
 
@@ -63,7 +65,7 @@ Manual installation::
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux 
 ** 8.6 to 8.10
-** 9.1 to 9.3
+** 9.1 to 9.4
 --
 
 ====
@@ -108,12 +110,6 @@ If you have an existing Connector running on RHEL 7 or CentOS 7, we don't suppor
 . Install Podman.
 . Perform a _new_ Connector installation.
 . Configure the Connector to discover the working environments that the old Connector was managing.
-
-== Continued support for Ubuntu 22.04 LTS
-
-The Connector is still supported on Ubuntu 22.04 LTS and is the default operating system for deployments from BlueXP and from the marketplace.
-
-Docker Engine is required for this operating system. Podman is not supported.
 
 == Related links
 
