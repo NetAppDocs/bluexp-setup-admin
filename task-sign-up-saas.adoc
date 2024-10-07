@@ -20,15 +20,15 @@ BlueXP is accessible from a web-based console. When you get started with BlueXP,
 When you access BlueXP for the first time, BlueXP enables you to sign up or log in using one of the following options:
 
 BlueXP login::
-You can sign up by creating a BlueXP login. This authentication method requires you to specify your email address and a password. After you verify your email address, you can log in and then create a BlueXP account if you don't already belong to one.
+You can sign up by creating a BlueXP login. This authentication method requires you to specify your email address and a password. After you verify your email address, you can log in and then create a BlueXP organization, if you don't already belong to one.
 
 NetApp Support Site (NSS) credentials::
-If you have existing NetApp Support Site credentials, you don't need to sign up to BlueXP. You log in using your NSS credentials and then BlueXP prompts you to create a BlueXP account, if you don't already belong to one.
+If you have existing NetApp Support Site credentials, you don't need to sign up to BlueXP. You log in using your NSS credentials and then BlueXP prompts you to create a BlueXP organization, if you don't already belong to one.
 +
 Note that the default password experience is a one-time passcode (OTP) to the registered email address. A new OTP is generated with each sign-in attempt.
 
 Federated connection::
-You can use single sign-on to log in using credentials from your corporate directory (federated identity). The first user in your organization's account must sign up to BlueXP or log in using NSS credentials, and then set up identity federation. After that, each subsequent user can simply log in using their SSO credentials. 
+You can use single sign-on to log in using credentials from your corporate directory (federated identity). The first user in your organization's account must sign up to BlueXP or log in using NSS credentials, and then set up identity federation. After that, you can add members from your corporate identity to your organization. Those users can then log in using their SSO credentials. 
 +
 link:concept-federation.html[Learn how to use identity federation with BlueXP].
 
@@ -38,7 +38,7 @@ link:concept-federation.html[Learn how to use identity federation with BlueXP].
 
 . If you have a NetApp Support Site account or if you already set up identity federation, enter the email address associated with your account directly on the *Log in* page.
 +
-You can skip the sign up page if you have an NSS account. BlueXP will sign you up as part of this initial login.
+In both of these cases, BlueXP will sign you up as part of this initial login.
 
 . If you want to sign up by creating a BlueXP login, select *Sign up*.
 
@@ -51,17 +51,19 @@ Note that only English characters are allowed in the sign up form.
 This step is required before you can log in to BlueXP.
 
 . After you log in, review the End User License Agreement and accept the terms.
++
+If your user account doesn't already belong to a BlueXP organization, you'll be prompted to create one.
 
-. On the *Welcome* page, enter a name for your account.
+. On the *Welcome* page, enter a name for your BlueXP organization.
 +
-If your business already has an account and you want to join it, then you should close out of BlueXP and ask the owner to associate you with the account. After the owner adds you, you can log in and you'll have access to the account. link:task-managing-netapp-accounts.html#add-users[Learn how to add members to an existing account].
+An organization is the top-level element in BlueXP identity and access management (IAM). link:concept-identity-and-access-management.html[Learn about BlueXP IAM].
 +
-An account is the top-level element in NetApp's identity platform. It enables you to add and manage users, roles, permissions, and working environments.
+If your business already has a BlueXP organization and you want to join it, then you should close out of BlueXP and ask the owner to associate you with the organization. After the owner adds you, you can log in and you'll have access to the account. link:task-iam-manage-members-permissions#add-members[Learn how to add members to an existing organization].
 +
-image:screenshot-account-selection.png[A screenshot of the Welcome page that appears when you log in with a new account that doesn't belong to an account.]
+image:screenshot-create-organization.png[A screenshot of the Welcome page that appears when you log in with a new user account that doesn't belong to an organization.]
 
-. Select *Create Account*.
+. Select *Let's Start*.
 
 .Result
 
-You now have a BlueXP login and an account. In most cases, the next step is to create a Connector, which connects BlueXP's services to your hybrid cloud environment.
+You now have a BlueXP login and an organization. In most cases, the next step is to create a Connector, which connects BlueXP's services to your hybrid cloud environment.

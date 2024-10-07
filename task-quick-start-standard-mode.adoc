@@ -15,17 +15,17 @@ summary: Get started with BlueXP in standard mode by preparing networking for th
 [.lead]
 Get started with BlueXP in standard mode by preparing networking for the BlueXP console, signing up and creating an account, optionally creating a Connector, and subscribing to BlueXP.
 
-In standard mode, BlueXP is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:concept-netapp-accounts.html[BlueXP accounts], link:concept-connectors.html[Connectors], and link:concept-modes.html[deployment modes].
+In standard mode, BlueXP is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:concept-modes.html[deployment modes] and link:concept-connectors.html[Connectors].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:reference-networking-saas-console.html[Prepare networking for using the BlueXP console]
 
 [role="quick-margin-para"]
 Computers that access the BlueXP console should have connections to specific endpoints to complete a few administrative tasks. If your network restricts outbound access, you should ensure that these endpoints are allowed.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] link:task-sign-up-saas.html[Sign up and create an account]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] link:task-sign-up-saas.html[Sign up and create an organization]
 
 [role="quick-margin-para"]
-Go to the https://console.bluexp.netapp.com[BlueXP console^] and sign up. You'll be given the option to create an account, but you can skip that step if you're being invited to an existing account.
+Go to the https://console.bluexp.netapp.com[BlueXP console^] and sign up. You'll be given the option to create a BlueXP organization, but you can skip that step if you're being invited to an existing organization.
 
 [role="quick-margin-para"]
 At this point, you're logged in and can start using several BlueXP services like Digital Advisor, Amazon FSx for ONTAP, Azure NetApp Files, and more. link:concept-connectors.html[Learn what you can do without a Connector].
@@ -36,7 +36,7 @@ At this point, you're logged in and can start using several BlueXP services like
 You don't need a Connector to get started with BlueXP, but you can create a Connector to unlock all BlueXP features and services. The Connector is NetApp software that enables BlueXP to manage resources and processes within your hybrid cloud environment.
 
 [role="quick-margin-para"]
-A BlueXP Account Admin can create a Connector in your cloud or on-premises network.
+You can create a Connector in your cloud or on-premises network.
 
 [role="quick-margin-list"]
 * link:concept-connectors.html[Learn more about when Connectors are required and how they work]

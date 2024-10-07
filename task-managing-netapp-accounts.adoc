@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-managing-netapp-accounts.html
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account
-summary: When you create a BlueXP account, it only includes a single admin user and a workspace. You can manage the account to fit your organization's needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
+summary: Manage your BlueXP account by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
 ---
 
 = Manage your BlueXP account
@@ -13,9 +13,12 @@ summary: When you create a BlueXP account, it only includes a single admin user 
 :imagesdir: ./media/
 
 [.lead]
-When you create a BlueXP account, it only includes a single admin user and a workspace. You can manage the account to fit your organization's needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
+When you use BlueXP in restricted mode or private mode, you'll use a _BlueXP account_ to manage users and organize resources. When you create your account, it only includes a single admin user and a workspace. You can manage the account to fit your needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
 
-link:concept-netapp-accounts.html[Learn how BlueXP accounts work].
+If you're using BlueXP in standard mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
+* link:concept-modes.html[Learn about BlueXP deployment modes]
 
 == Manage your account with the Tenancy API
 
@@ -39,7 +42,7 @@ Associate users with your BlueXP account so those users can create and manage wo
 +
 image:screenshot-account-settings-menu.png[A screenshot that shows the Account Settings option in the top banner of BlueXP.]
 
-. select *Manage Account* next to the currently selected account.
+. Select *Manage Account* next to the currently selected account.
 +
 image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
 

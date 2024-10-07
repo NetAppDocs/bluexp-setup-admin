@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, enhancements, fixes, connectors
-summary: "Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more."
+summary: "Learn what's new with BlueXP administration features: BlueXP IAM, Connectors, cloud provider credentials, and more."
 ---
 
 = What's new
@@ -13,11 +13,88 @@ summary: "Learn what's new with BlueXP administration features: BlueXP accounts,
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more.
+Learn what's new with BlueXP administration features: identity and access management (IAM), Connectors, cloud provider credentials, and more.
 
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+
+== 7 October 2024
+
+[#iam]
+=== BlueXP identity and access management
+
+BlueXP identity and access management (IAM) is a new resource and access management model that replaces and enhances the previous functionality provided by BlueXP accounts when using BlueXP in standard mode. 
+
+BlueXP IAM provides more granular management of resources and permissions:
+
+* A top-level _organization_ enables you to manage access across your various _projects_.
+* _Folders_ enable you to group related projects together.
+* Enhanced resource management enables you to associate a resource with one or more folders or projects.
++
+For example, you can associate a Cloud Volumes ONTAP system with multiple projects.
+* Enhanced access management enables you to assign a role to members at different levels of the organization hierarchy.
+
+These enhancements provide better control over the actions that users can perform and the resources that they can access.
+
+==== How BlueXP IAM affects your existing account
+
+When you log in to BlueXP, you'll notice these changes:
+
+* Your _account_ is now called an _organization_
+* Your _workspaces_ are now called _projects_
+* The names of user roles have changed:
+** _Account admin_ is now _Organization admin_
+** _Workspace admin_ is now _Folder or project admin_
+** _Compliance viewer_ is now _Classification viewer_
+* Under Settings, you can access BlueXP identity and access management to take advantage of these enhancements
+
+image:screenshot-iam-introduction.png[A screenshot of BlueXP that shows the Organization and Project selectable from the top of the interface as well as identity and access management which is available from the Settings menu.]
+
+Note the following:
+
+* There are no changes to your existing users or working environments. 
+
+* While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same working environments as before.
+
+* There are no changes to how you log in to BlueXP. BlueXP IAM works with NetApp cloud logins, NetApp Support Site credentials, and federated connections just like BlueXP accounts did.
+
+* If you had multiple BlueXP accounts, you now have multiple BlueXP organizations.
+
+==== API for BlueXP IAM
+
+This change introduces a new API for BlueXP IAM, but it is backwards compatible with the previous tenancy API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]
+
+==== Supported deployment modes
+
+BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll continue using a BlueXP _account_ to manage workspaces, users, and resources.
+
+==== Where to go next
+
+* link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
+* link:task-iam-get-started.html[Get started with BlueXP IAM]
+
+=== Connector 3.9.45
+
+This release includes expanded operating system support and bug fixes.
+
+The 3.9.45 release is available for standard mode and restricted mode.
+
+==== Support for Ubuntu 24.04 LTS
+
+Starting with the 3.9.45 release, BlueXP now supports new installations of the Connector on Ubuntu 24.04 LTS hosts when using BlueXP in standard mode or restricted mode.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
+
+=== Support for SELinux with RHEL hosts
+
+BlueXP now supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
+
+Support for SELinux starts with the 3.9.40 release for standard mode and restricted mode and with the 3.9.42 release for private mode.
+
+BlueXP does not support SELinux with Ubuntu hosts.
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux[Learn more about SELinux^]
 
 == 30 September 2024
 
@@ -121,6 +198,8 @@ We updated the AWS and Azure policies for the Connector to remove permissions th
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log[Learn what changed in the AWS policy].
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
 
+//tag::whats-new[]
+
 == 22 August 2024
 
 === Connector 3.9.43 patch
@@ -138,8 +217,6 @@ These permissions are required for Cloud Volumes ONTAP support of Virtual Machin
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes[Learn about the Cloud Volumes ONTAP 9.15.1 release^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html[View Azure permissions for the Connector].
-
-//end::whats-new[]
 
 == 8 August 2024
 
@@ -1043,7 +1120,7 @@ image:screenshot_nss_management.png[A screenshot of the NSS Management tab in th
 
 The Timeline in Cloud Manager now shows actions and events related to account management. The actions include things like associating users, creating workspaces, and creating Connectors. Checking the Timeline can be helpful if you need to identify who performed a specific action, or if you need to identify the status of an action.
 
-link:task-monitor-cm-operations.html#audit-user-activity-in-your-account[Learn how to filter the Timeline to the Tenancy service].
+link:task-monitor-cm-operations.html[Learn how to filter the Timeline to the Tenancy service].
 
 == 11 April 2021
 
