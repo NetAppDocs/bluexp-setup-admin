@@ -52,7 +52,7 @@ This step is required before you can log in to BlueXP.
 
 . After you log in, review the End User License Agreement and accept the terms.
 +
-If your user account doesn't already belong to an organization, you'll be prompted to create one.
+If your user account doesn't already belong to a BlueXP organization, you'll be prompted to create one.
 
 . On the *Welcome* page, enter a name for your BlueXP organization.
 +

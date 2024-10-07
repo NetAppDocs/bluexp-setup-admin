@@ -106,6 +106,10 @@ If you want to use BlueXP services with Google Cloud, then you must use a Connec
 
 * On your premises
 
+== Communication with cloud providers
+
+The Connector uses TLS 1.2 for all communication to AWS, Azure, and Google Cloud.
+
 == Restricted mode and private mode
 
 To use BlueXP in restricted mode or private mode, you get started with BlueXP by installing the Connector and then accessing the user interface that's running locally on the Connector.
