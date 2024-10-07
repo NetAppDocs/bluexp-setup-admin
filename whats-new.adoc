@@ -198,7 +198,7 @@ We updated the AWS and Azure policies for the Connector to remove permissions th
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log[Learn what changed in the AWS policy].
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
 
-//tag::whats-new[]
+//end::whats-new[]
 
 == 22 August 2024
 
