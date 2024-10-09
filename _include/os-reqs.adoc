@@ -121,6 +121,14 @@ Key pair::
 When you create the Connector, you'll need to select an EC2 key pair to use with the instance.
 //end::aws-key-pair[]
 
+//tag::aws-imdsv2[]
+PUT response hop limit when using IMDSv2::
+If IMDSv2 is enabled on the EC2 instance (this is the default setting for new EC2 instances), you must change the PUT response hop limit on the instance to 3. If you don't change the limit on the EC2 instance, you'll receive a UI initialization error when you try to set up the Connector.
++
+* link:task-require-imdsv2.html[Require the use of IMDSv2 on Amazon EC2 instances]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit[AWS documentation: Change the PUT response hop limit^]
+//end::aws-imdsv2[]
+
 //tag::azure-vm[]
 Azure VM size::
 An instance type that meets the CPU and RAM requirements above. We recommend Standard_D8s_v3.

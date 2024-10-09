@@ -49,7 +49,7 @@ When you log in to BlueXP, you'll notice these changes:
 ** _Compliance viewer_ is now _Classification viewer_
 * Under Settings, you can access BlueXP identity and access management to take advantage of these enhancements
 
-image:screenshot-iam-introduction.png[A screenshot of BlueXP that shows the Organization and Project selectable from the top of the interface as well as identity and access management which is available from the Settings menu.]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png[A screenshot of BlueXP that shows the Organization and Project selectable from the top of the interface as well as identity and access management which is available from the Settings menu.]
 
 Note the following:
 
@@ -71,8 +71,8 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 ==== Where to go next
 
-* link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
-* link:task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html[Learn about BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html[Get started with BlueXP IAM]
 
 === Connector 3.9.45
 
