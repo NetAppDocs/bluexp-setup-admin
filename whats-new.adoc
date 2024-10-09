@@ -71,8 +71,8 @@ BlueXP IAM is supported when using BlueXP in standard mode. If you're using Blue
 
 ==== Where to go next
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html[Learn about BlueXP IAM]
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html[Get started with BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html[Learn about BlueXP IAM]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html[Get started with BlueXP IAM]
 
 === Connector 3.9.45
 

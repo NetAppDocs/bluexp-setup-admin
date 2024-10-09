@@ -36,7 +36,7 @@ include::_include/os-reqs.adoc[tag=aws-ec2]
 
 include::_include/os-reqs.adoc[tag=aws-key-pair]
 
-include::_include/os-reqs.adoc[tag=imdsv2]
+include::_include/os-reqs.adoc[tag=aws-imdsv2]
 
 include::_include/os-reqs.adoc[tag=disk-space]
 
