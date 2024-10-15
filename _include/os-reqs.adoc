@@ -144,7 +144,7 @@ The Connector is supported in Google Cloud on a VM instance with an OS that supp
 //tag::disk-space[]
 Disk space in /opt:: 100 GiB of space must be available
 +
-BlueXP uses `/opt` to install the `/opt/application/netapp` directory and it's contents.
+BlueXP uses `/opt` to install the `/opt/application/netapp` directory and its contents.
 
 Disk space in /var:: 20 GiB of space must be available
 +
