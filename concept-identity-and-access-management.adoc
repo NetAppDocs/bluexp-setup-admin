@@ -142,10 +142,6 @@ BlueXP supports several predefined roles that you can assign to the members of y
 
 link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
 
-==== Custom roles
-
-Custom roles are not supported at this time.
-
 [#associate-connectors]
 === Connectors
 
