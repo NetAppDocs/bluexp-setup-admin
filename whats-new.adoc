@@ -19,6 +19,12 @@ Learn what's new with BlueXP administration features: identity and access manage
 
 //tag::whats-new[]
 
+== 10 October 2024
+
+=== Connector 3.9.45 patch
+
+This patch includes bug fixes.
+
 == 7 October 2024
 
 [#iam]
@@ -142,6 +148,8 @@ For more details about private mode, including how to upgrade, refer to the foll
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
 
+//end::whats-new[]
+
 == 9 September 2024
 
 === Connector 3.9.44
@@ -197,8 +205,6 @@ We updated the AWS and Azure policies for the Connector to remove permissions th
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log[Learn what changed in the AWS policy].
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
-
-//end::whats-new[]
 
 == 22 August 2024
 
