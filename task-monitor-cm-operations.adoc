@@ -109,7 +109,7 @@ You can send specific types of notifications by email so you can be informed of 
 
 [NOTE]
 ====
-* At this time, notifications are sent by email for the following BlueXP features and services: the Connector, BlueXP digital wallet, BlueXP copy and sync, and BlueXP backup and recovery.
+* Notifications are sent by email for the following BlueXP features and services: the Connector, BlueXP digital wallet, BlueXP copy and sync, and BlueXP backup and recovery.
 * Sending email notifications is not supported when the Connector is installed in a site without internet access.
 ====
 
