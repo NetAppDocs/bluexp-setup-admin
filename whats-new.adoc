@@ -4,7 +4,6 @@ permalink: whats-new.html
 keywords: what's new, features, new, release notes, enhancements, fixes, connectors
 summary: "Learn what's new with BlueXP administration features: BlueXP IAM, Connectors, cloud provider credentials, and more."
 ---
-
 = What's new
 :hardbreaks:
 :nofooter:
@@ -17,138 +16,17 @@ Learn what's new with BlueXP administration features: identity and access manage
 
 //All links and images must use the absolute URL.
 
-//tag::whats-new[]
-
 == 10 October 2024
 
-=== Connector 3.9.45 patch
-
-This patch includes bug fixes.
+include::_whatsnew/2024-10-10.adoc[]
 
 == 7 October 2024
 
-[#iam]
-=== BlueXP identity and access management
-
-BlueXP identity and access management (IAM) is a new resource and access management model that replaces and enhances the previous functionality provided by BlueXP accounts when using BlueXP in standard mode. 
-
-BlueXP IAM provides more granular management of resources and permissions:
-
-* A top-level _organization_ enables you to manage access across your various _projects_.
-* _Folders_ enable you to group related projects together.
-* Enhanced resource management enables you to associate a resource with one or more folders or projects.
-+
-For example, you can associate a Cloud Volumes ONTAP system with multiple projects.
-* Enhanced access management enables you to assign a role to members at different levels of the organization hierarchy.
-
-These enhancements provide better control over the actions that users can perform and the resources that they can access.
-
-==== How BlueXP IAM affects your existing account
-
-When you log in to BlueXP, you'll notice these changes:
-
-* Your _account_ is now called an _organization_
-* Your _workspaces_ are now called _projects_
-* The names of user roles have changed:
-** _Account admin_ is now _Organization admin_
-** _Workspace admin_ is now _Folder or project admin_
-** _Compliance viewer_ is now _Classification viewer_
-* Under Settings, you can access BlueXP identity and access management to take advantage of these enhancements
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png[A screenshot of BlueXP that shows the Organization and Project selectable from the top of the interface as well as identity and access management which is available from the Settings menu.]
-
-Note the following:
-
-* There are no changes to your existing users or working environments. 
-
-* While the names of the roles have changed, there are no differences from a permissions perspective. Users will continue to have access to the same working environments as before.
-
-* There are no changes to how you log in to BlueXP. BlueXP IAM works with NetApp cloud logins, NetApp Support Site credentials, and federated connections just like BlueXP accounts did.
-
-* If you had multiple BlueXP accounts, you now have multiple BlueXP organizations.
-
-==== API for BlueXP IAM
-
-This change introduces a new API for BlueXP IAM, but it is backwards compatible with the previous tenancy API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html[Learn about the API for BlueXP IAM^]
-
-==== Supported deployment modes
-
-BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll continue using a BlueXP _account_ to manage workspaces, users, and resources.
-
-==== Where to go next
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html[Learn about BlueXP IAM]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html[Get started with BlueXP IAM]
-
-=== Connector 3.9.45
-
-This release includes expanded operating system support and bug fixes.
-
-The 3.9.45 release is available for standard mode and restricted mode.
-
-==== Support for Ubuntu 24.04 LTS
-
-Starting with the 3.9.45 release, BlueXP now supports new installations of the Connector on Ubuntu 24.04 LTS hosts when using BlueXP in standard mode or restricted mode.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[View Connector host requirements].
-
-=== Support for SELinux with RHEL hosts
-
-BlueXP now supports the Connector with Red Hat Enterprise Linux hosts that have SELinux enabled in either enforcing mode or permissive mode.
-
-Support for SELinux starts with the 3.9.40 release for standard mode and restricted mode and with the 3.9.42 release for private mode.
-
-BlueXP does not support SELinux with Ubuntu hosts.
-
-https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux[Learn more about SELinux^]
+include::_whatsnew/2024-10-07.adoc[]
 
 == 30 September 2024
 
-=== Private mode release (3.9.44)
-
-A new private mode release is now available to download from the NetApp Support Site. 
-
-This release includes the following versions of the BlueXP components and services that are supported with private mode.
-
-[cols=2*,options="header,autowidth"]
-|===
-
-| Service
-| Version included
-
-| Connector | 3.9.44
-| Backup and recovery | 27 September 2024
-| Classification | 15 May 2024 (version 1.31)
-| Cloud Volumes ONTAP management | 9 September 2024
-| Digital wallet | 30 July 2023
-| On-premises ONTAP cluster management | 22 April 2024
-| Replication | 18 Sept 2022
-
-|===
-
-For the Connector, the 3.9.44 private mode release includes the updates introduced in the August 2024 and September 2024 releases. Most notably, support for Red Hat Enterprise Linux 9.4.
-
-To learn more about what's included in the versions of these BlueXP components and services, refer to the release notes for each BlueXP service:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024[What's new in the September 2024 release of the Connector]
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024[What's new in the August 2024 release of the Connector]
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[What's new with BlueXP backup and recovery^]
-
-* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[What's new with BlueXP classification^]
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new with Cloud Volumes ONTAP management in BlueXP^]
-
-For more details about private mode, including how to upgrade, refer to the following:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
-
-//end::whats-new[]
+include::_whatsnew/2024-09-30.adoc[]
 
 == 9 September 2024
 
@@ -158,7 +36,7 @@ This release includes support for Docker Engine 26, an enhancement to SSL certif
 
 The 3.9.44 release is available for standard mode and restricted mode.
 
-==== Support for Docker Engine 26 with new installations
+.Support for Docker Engine 26 with new installations
 
 Starting with the 3.9.44 release of the Connector, Docker Engine 26 is now supported with _new_ Connector installations on Ubuntu hosts.
 
@@ -166,7 +44,7 @@ If you have an existing Connector created prior to the 3.9.44 release, then Dock
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements[Learn more about Docker Engine requirements].
 
-==== Updated SSL certificate for local UI access
+.Updated SSL certificate for local UI access
 
 When you use BlueXP in restricted mode or private mode, the user interface is accessible from the Connector virtual machine that's deployed in your cloud region or on-premises. By default, BlueXP uses a self-signed SSL certificate to provide secure HTTPS access to the web-based console running on the Connector.
 
@@ -261,7 +139,7 @@ If you use identity federation with BlueXP, each user who logs in to BlueXP for 
 
 A new private mode release is now available to download from the NetApp Support Site. 
 
-==== Support for RHEL 8 and 9
+.Support for RHEL 8 and 9
 
 This release includes support for installing the Connector on a Red Hat Enterprise Linux 8 or 9 host when using BlueXP in private mode. The following versions of RHEL are supported:
 
@@ -274,7 +152,7 @@ You should be aware of Podman requirements, known limitations, a summary of oper
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
 
-==== Versions included in this release
+.Versions included in this release
 
 This release includes the following versions of the BlueXP services that are supported with private mode.
 
@@ -392,7 +270,7 @@ This release of the BlueXP Connector includes support for additional operating s
 
 At this time, the 3.9.40 release is available for standard mode and restricted mode.
 
-==== Support for RHEL 8 and 9
+.Support for RHEL 8 and 9
 
 The Connector is now supported on hosts running the following versions of Red Hat Enterprise Linux with _new_ Connector installations when using BlueXP in standard mode or restricted mode:
 
@@ -405,13 +283,13 @@ You should be aware of Podman requirements, known limitations, a summary of oper
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn about support for RHEL 8 and 9 with the Connector].
 
-==== End of support for RHEL 7 and CentOS 7
+.End of support for RHEL 7 and CentOS 7
 
 On June 30, 2024, RHEL 7 will reach end of maintenance (EOM), while CentOS 7 will reach end of life (EOL). NetApp will continue to support the Connector on these Linux distributions until June 30, 2024.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html[Learn what to do if you have an existing Connector running on RHEL 7 or CentOS 7].
 
-==== AWS permissions update
+.AWS permissions update
 
 In the 3.9.38 release, we updated the Connector policy for AWS to include the "ec2:DescribeAvailabilityZones" permission. This permission is now required to support AWS Local Zones with Cloud Volumes ONTAP.
 
@@ -486,7 +364,7 @@ This new release is available to download from the NetApp Support Site.
 
 At this time, the 3.9.38 release is available for standard mode and restricted mode. This release includes support for IMDSv2 in AWS and an AWS permissions update.
 
-==== Support for IMDSv2
+.Support for IMDSv2
 
 BlueXP now supports the Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) with the Connector instance and with Cloud Volumes ONTAP instances. IMDSv2 provides enhanced protection against vulnerabilities. Only IMDSv1 was previously supported. 
 
@@ -506,7 +384,7 @@ The Instance Metadata Service (IMDS) is enabled as follows on EC2 instances:
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html[Learn how to configure IMDSv2 on existing instances].
 
-==== AWS permissions update
+.AWS permissions update
 
 We updated the Connector policy for AWS to include the "ec2:DescribeAvailabilityZones" permission. This permission is required for an upcoming release. We'll update the release notes with more details when that release is available.
 
@@ -1164,13 +1042,13 @@ This update includes enhancements to several features and services.
 
 This release of Cloud Manager includes enhancements to the management of Cloud Volumes ONTAP.
 
-==== Enhancement available in all cloud providers
+.Enhancement available in all cloud providers
 
 Cloud Manager can now deploy and manage Cloud Volumes ONTAP 9.9.0.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html[Learn about the new features included in this release of Cloud Volumes ONTAP^].
 
-==== Enhancements available in AWS
+.Enhancements available in AWS
 
 * You can now deploy Cloud Volumes ONTAP 9.8 in the AWS Commercial Cloud Services (C2S) environment.
 +
@@ -1182,11 +1060,11 @@ Note that you'll need to provide the Cloud Volumes ONTAP IAM role with access to
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html[Learn more about setting up the AWS KMS with Cloud Volumes ONTAP^]
 
-==== Enhancement available in Azure
+.Enhancement available in Azure
 
 You can now deploy Cloud Volumes ONTAP 9.8 in the Azure Department of Defense (DoD) Impact Level 6 (IL6).
 
-==== Enhancements available in Google Cloud
+.Enhancements available in Google Cloud
 
 * We've reduced the number of IP addresses that are required for Cloud Volumes ONTAP 9.8 and later in Google Cloud. By default, one less IP address is required (we unified the intercluster LIF with the node management LIF). You also have the option to skip the creation of the SVM management LIF when using the API, which would reduce the need for an additional IP address.
 +
