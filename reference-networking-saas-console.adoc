@@ -15,11 +15,11 @@ summary: As you use the BlueXP web-based console that's provided through the Saa
 [.lead]
 When you log in and use the BlueXP web-based console, BlueXP contacts several endpoints to complete the actions that you initiate. Computers that access the BlueXP console must have connections to these endpoints.
 
-These endpoints are contacted from a user's computer when completing specific actions from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's provided through the SaaS layer. 
+These endpoints are contacted in two scenarios:
 
-If you manually install the Connector, the endpoints are also contacted from a user's computer when you open a web browser, enter the IP address of the Connector host, and then log in and set up the Connector.
+* From a user's computer when completing specific actions from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's available as software as a service (SaaS).
 
-You should also refer to networking requirements for the Connector and for specific BlueXP services. For details, refer to the related links at the end of this page.
+* If you manually install the Connector, the endpoints are also contacted from a user's computer when opening a web browser, entering the IP address of the Connector host, and then logging in and setting up the Connector.
 
 [cols=2*,options="header,autowidth"]
 |===

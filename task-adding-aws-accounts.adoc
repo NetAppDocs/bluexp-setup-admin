@@ -141,7 +141,7 @@ Add AWS credentials to BlueXP by providing the ARN of an IAM role that gives Blu
 
 === Set up the IAM role
 
-Set up an IAM role that enables the BlueXP SaaS layer to assume the role.
+Set up an IAM role that enables the BlueXP software as a service (SaaS) layer to assume the role.
 
 .Steps
 
