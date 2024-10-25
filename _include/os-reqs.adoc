@@ -34,7 +34,7 @@ BlueXP supports the Connector with the following operating systems when using Bl
 
 <<podman-configuration,View Podman configuration requirements>>.
 
-| Supported in enforcing mode or permissive mode
+| Supported in enforcing mode or permissive mode ^1^
 
 .2+| Ubuntu
 
@@ -55,8 +55,9 @@ BlueXP supports the Connector with the following operating systems when using Bl
 +
 Notes:
 
-* The Connector is supported on English-language versions of these operating systems.
-* For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
+. Management of Cloud Volumes ONTAP systems is not supported by Connectors that have SELinux enabled on the operating system.
+. The Connector is supported on English-language versions of these operating systems.
+. For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 //end::os[]
 
 //tag::os-private[]
@@ -85,7 +86,7 @@ BlueXP supports the Connector with the following operating systems when using Bl
 
 <<podman-configuration,View Podman configuration requirements>>.
 
-| Supported in enforcing mode or permissive mode
+| Supported in enforcing mode or permissive mode ^1^
 
 | Ubuntu
 
@@ -101,8 +102,9 @@ BlueXP supports the Connector with the following operating systems when using Bl
 +
 Notes:
 
-* The Connector is supported on English-language versions of these operating systems.
-* For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
+. Management of Cloud Volumes ONTAP systems is not supported by Connectors that have SELinux enabled on the operating system.
+. The Connector is supported on English-language versions of these operating systems.
+. For RHEL, the host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 //end::os-private[]
 
 //tag::cpu-ram[]

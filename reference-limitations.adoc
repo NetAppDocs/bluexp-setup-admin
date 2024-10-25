@@ -15,7 +15,7 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 
-These limitations are specific to BlueXP set up and administration: the Connector, the SaaS platform, and more.
+These limitations are specific to BlueXP set up and administration: the Connector, the software as a service (SaaS) platform, and more.
 
 == Connector limitations
 
