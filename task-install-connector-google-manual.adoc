@@ -51,6 +51,9 @@ include::_include/networking.adoc[tag=networks]
 //Outbound internet access
 include::_include/networking.adoc[tag=outbound]
 
+//Endpoints contacted from your web browser
+include::_include/endpoints-console.adoc[]
+
 //Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 +
