@@ -98,7 +98,11 @@ BlueXP now supports the Connector with Red Hat Enterprise Linux hosts that have 
 
 Support for SELinux starts with the 3.9.40 release for standard mode and restricted mode and with the 3.9.42 release for private mode.
 
-BlueXP does not support SELinux with Ubuntu hosts.
+Note the following limitations:
+
+* BlueXP does not support SELinux with Ubuntu hosts.
+
+* Management of Cloud Volumes ONTAP systems it not supported by Connectors that have SELinux enabled on the operating system.
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux[Learn more about SELinux^]
 
