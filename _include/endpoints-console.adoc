@@ -1,4 +1,4 @@
 Endpoints contacted from computers when using the BlueXP web-based console::
-Computers that access the BlueXP console from a web browser must have the ability contact several endpoints. You'll need to use the BlueXP console to set up the Connector and for day-to-day use of BlueXP.
+Computers that access the BlueXP console from a web browser must have the ability to contact several endpoints. You'll need to use the BlueXP console to set up the Connector and for day-to-day use of BlueXP.
 +
 link:reference-networking-saas-console.html[Prepare networking for the BlueXP console].

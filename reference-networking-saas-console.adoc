@@ -19,7 +19,7 @@ These endpoints are contacted in two scenarios:
 
 * From a user's computer when completing specific actions from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's available as software as a service (SaaS).
 
-* If you manually install the Connector, the endpoints are also contacted from a user's computer when opening a web browser, entering the IP address of the Connector host, and then logging in and setting up the Connector.
+* From a user's computer when opening a web browser, entering the IP address of the Connector host, and then logging in and setting up the Connector. These steps are required if you manually install the Connector.
 
 [cols=2*,options="header,autowidth"]
 |===
