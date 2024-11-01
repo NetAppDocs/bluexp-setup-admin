@@ -77,6 +77,11 @@ In restricted mode, the BlueXP user interface is accessible from the Connector. 
 | Endpoints
 | Purpose
 
+|
+\https://api.bluexp.netapp.com
+
+| The BlueXP web-based console contacts this endpoint to interact with the BlueXP API for actions related to authorization, licensing, subscriptions, credentials, notifications, and more.
+
 | \https://signin.b2c.netapp.com
 | Required to update NetApp Support Site (NSS) credentials or to add new NSS credentials to BlueXP.
 
