@@ -13,9 +13,13 @@ summary: As you use the BlueXP web-based console that's provided through the Saa
 :imagesdir: ./media/
 
 [.lead]
-As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints when completing a few administrative tasks. Computers that access the BlueXP console should have connections to these endpoints.
+When you log in and use the BlueXP web-based console, BlueXP contacts several endpoints to complete the actions that you initiate. Computers that access the BlueXP console must have connections to these endpoints.
 
-These endpoints are contacted from a user's computer when completing specific actions from the BlueXP console. You should also refer to networking requirements for the Connector and for specific BlueXP services. For details, refer to the related links at the end of this page.
+These endpoints are contacted in two scenarios:
+
+* From a user's computer when completing specific actions from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's available as software as a service (SaaS).
+
+* From a user's computer when opening a web browser, entering the IP address of the Connector host, and then logging in and setting up the Connector. These steps are required if you manually install the Connector.
 
 [cols=2*,options="header,autowidth"]
 |===
@@ -26,7 +30,12 @@ These endpoints are contacted from a user's computer when completing specific ac
 \https://console.bluexp.netapp.com
 \https://*.console.bluexp.netapp.com
 
-| Your web browser contacts these URLs when you use the BlueXP web-based console.
+| This is the endpoint that you enter in your web browser to use the BlueXP web-based console.
+
+|
+\https://api.bluexp.netapp.com
+
+| The BlueXP web-based console contacts this endpoint to interact with the BlueXP API for actions related to authorization, licensing, subscriptions, credentials, notifications, and more.
 
 | 
 \https://aiq.netapp.com

@@ -13,7 +13,7 @@ summary: Deploy the Connector in restricted mode so that you can use BlueXP with
 :imagesdir: ./media/
 
 [.lead]
-Deploy the Connector in restricted mode so that you can use BlueXP with limited outbound connectivity to the BlueXP SaaS layer. To get started, install the Connector, set up BlueXP by accessing the user interface that's running on the Connector, and then provide the cloud permissions that you previously set up.
+Deploy the Connector in restricted mode so that you can use BlueXP with limited outbound connectivity to the BlueXP software as a service (SaaS) layer. To get started, install the Connector, set up BlueXP by accessing the user interface that's running on the Connector, and then provide the cloud permissions that you previously set up.
 
 == Step 1: Install the Connector
 
