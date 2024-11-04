@@ -7,8 +7,6 @@ settings:
     pdf_enabled: true
     harmony_enabled: true
   rss_page: "whats-new.html"
-  release_notes_autogen:
-    release_notes_repo: bluexp-relnotes
 
 sidebar:
   entries:

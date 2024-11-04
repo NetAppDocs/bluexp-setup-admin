@@ -16,6 +16,7 @@ Learn what's new with BlueXP administration features: identity and access manage
 
 //All links and images must use the absolute URL.
 
+// tag::whats-new[]
 == 10 October 2024
 
 include::_whatsnew/2024-10-10.adoc[]
@@ -28,6 +29,7 @@ include::_whatsnew/2024-10-07.adoc[]
 == 30 September 2024
 
 include::_whatsnew/2024-09-30.adoc[]
+// end::whats-new[]
 
 == 9 September 2024
 
