@@ -1,0 +1,3 @@
+=== Connector 3.9.45 patch
+
+This patch includes bug fixes.
