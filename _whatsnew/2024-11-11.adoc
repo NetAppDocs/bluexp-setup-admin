@@ -1,0 +1,9 @@
+=== Connector 3.9.46
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes. 
+
+At this time, the 3.9.46 release is available for standard mode and restricted mode.
+
+=== ID for IAM projects
+
+You can now view the ID for a project from BlueXP identity and access management. You might need to use the ID when making an API call.
