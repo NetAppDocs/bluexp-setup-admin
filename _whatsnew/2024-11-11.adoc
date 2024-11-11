@@ -7,3 +7,5 @@ At this time, the 3.9.46 release is available for standard mode and restricted m
 === ID for IAM projects
 
 You can now view the ID for a project from BlueXP identity and access management. You might need to use the ID when making an API call.
+
+link:task-iam-manage-folders-projects.html#project-id[Learn how to obtain the ID for a project].

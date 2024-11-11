@@ -141,6 +141,7 @@ If member access was provided at a higher level of the hierarchy (at the folder 
 
 BlueXP updates the members who have access to the folder or project.
 
+[#project-id]
 == Obtain the ID for a project
 
 If you're using the BlueXP API, you might need to obtain the ID for a project. For example, when creating a Cloud Volumes ONTAP working environment.
