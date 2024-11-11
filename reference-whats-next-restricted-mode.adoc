@@ -17,7 +17,6 @@ After you get up and running with BlueXP in restricted mode, you can start using
 
 For help, refer to the documentation for these services:
 
-* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html[Amazon FSx for ONTAP docs^]
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html[Azure NetApp Files docs^]
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[Backup and recovery docs^]
 * https://docs.netapp.com/us-en/bluexp-classification/index.html[Classification docs^]

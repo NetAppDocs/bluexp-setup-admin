@@ -764,7 +764,7 @@ The following sections describe how the permissions are used for each BlueXP ser
 
 === Amazon FSx for ONTAP
 
-The Connector makes the following API requests to manage Amazon FSx for ONTAP:
+The Connector makes the following API requests to manage an Amazon FSx for ONTAP file system:
 
 * ec2:DescribeInstances
 * ec2:DescribeInstanceStatus
