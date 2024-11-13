@@ -15,6 +15,59 @@ summary: BlueXP identity and access management includes several predefined roles
 [.lead]
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
 
+BlueXP has the following roles:
+
+.Organization admin
+Assign the Organization admin role only to those users who need to create new working environments or new connectors. Although, they are the only role that can perform those tasks, the role has no restrictions in BlueXP and users withi this role can make changes to any project or folder. 
+
+.Folder or project admin
+Use this role to delegate administrative responsibilities within your organization. The Folder or project admin role can perform most tasks in BlueXP, but only within the folder or project for which they are an admin.
+
+.Classification viewer
+Assign the Classification viewer role to users whose tasks are related to...
+
+.Snapshot admin
+Assign the Snapshot admin role to users who are responsible for backup and recovery tasks. 
+
+[cols=3*,options="header",cols="24,19,19,19"]
+|===
+
+| Task
+| Organization Admin
+| Folder or Project Admin
+
+| Create Connectors | Yes | No 
+
+| Manage working environments |	Yes | Yes 
+
+| Enable services on working environments | Yes | Yes 
+
+| Use BlueXP services | Yes | Yes | No | Yes
+
+| Remove working environments from a workspace | Yes | Yes 
+
+| Delete working environments | Yes | Yes 
+
+| View data replication status | Yes |	Yes 
+
+| View the timeline | Yes |	Yes 
+
+| Switch between workspaces | Yes | Yes 
+
+| View BlueXP classification scan results | Yes | Yes 
+
+| Receive the Cloud Volumes ONTAP report | Yes | No 
+
+| Manage BlueXP accounts | Yes | No 
+
+| Manage credentials | Yes | Yes 
+
+| Modify BlueXP settings |	Yes | Yes 
+
+| View and manage the Support Dashboard | Yes |	Yes 
+
+|===
+
 == Organization admin
 
 Description::
