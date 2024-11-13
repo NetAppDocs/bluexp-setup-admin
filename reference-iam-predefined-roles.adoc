@@ -18,10 +18,10 @@ BlueXP identity and access management (IAM) includes several predefined roles th
 BlueXP has the following roles:
 
 .Organization admin
-Assign the Organization admin role only to those users who need to create new working environments or new connectors. Although, they are the only role that can perform those tasks, the role has no restrictions in BlueXP and users withi this role can make changes to any project or folder. 
+Assign the Organization admin role only to those users who need to create new working environments or new connectors. This role has no restrictions in BlueXP and users with this role can make changes to any project or folder. 
 
 .Folder or project admin
-Use this role to delegate administrative responsibilities within your organization. The Folder or project admin role can perform most tasks in BlueXP, but only within the folder or project for which they are an admin.
+Use this role to delegate administrative responsibilities within your organization. The Folder or project admin role can perform most tasks in BlueXP, but only within the folder or project for which they are an admin. They are also permitted to modify and create projects, resources and folders in the folders or in which they have permission to do so.
 
 .Classification viewer
 Assign the Classification viewer role to users whose tasks are related to...
@@ -29,20 +29,21 @@ Assign the Classification viewer role to users whose tasks are related to...
 .Snapshot admin
 Assign the Snapshot admin role to users who are responsible for backup and recovery tasks. 
 
-[cols=3*,options="header",cols="24,19,19,19"]
+[cols=3*,options="header",cols="24,19,19"]
 |===
 
 | Task
 | Organization Admin
 | Folder or Project Admin
 
-| Create Connectors | Yes | No 
 
-| Manage working environments |	Yes | Yes 
+| Create working environments | Yes | No 
+
+| Create connectors | Yes | No
 
 | Enable services on working environments | Yes | Yes 
 
-| Use BlueXP services | Yes | Yes | No | Yes
+| Use BlueXP services | Yes | Yes 
 
 | Remove working environments from a workspace | Yes | Yes 
 
@@ -74,7 +75,8 @@ Description::
 Provides full control of the entire BlueXP organization. 
 
 Permissions::
-A member who has this role can complete all actions in BlueXP.
+* A member who has this role can complete all actions in BlueXP.
+* Create working environments
 
 == Folder or project admin
 
@@ -86,7 +88,7 @@ Note that if you assign this role at the folder level, the member has permission
 Permissions::
 A member who has this role can complete the following actions in BlueXP:
 
-* Create working environments
+
 * Manage all working environments in the projects and folders for which they have permissions
 
 * Use all BlueXP services

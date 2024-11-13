@@ -66,6 +66,9 @@ You don't need to create folders. They are optional.
 A _project_ represents a workspace in BlueXP that organization members access from the BlueXP canvas in order to manage resources. For example, a project can include a Cloud Volumes ONTAP system, an on-premises ONTAP cluster, or an FSx for ONTAP file system.
 
 An organization can have one or many projects. A project can reside directly underneath the organization or within a folder.
+////
+Need to add a note or paragraph here that describes what to do if you want to grant access to a project but not the folder? Assign the resource to a project to which the user has access. Resources can belong to multiple projects, but projects cannot belong to multiple folders. If you want to grant access, you'll need to re-assign the resource, not the project.
+////
 
 === Resources
 
