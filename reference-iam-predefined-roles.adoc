@@ -33,6 +33,7 @@ Note that if you assign this role at the folder level, the member has permission
 Permissions::
 A member who has this role can complete the following actions in BlueXP:
 
+* Create working environments
 * Manage all working environments in the projects and folders for which they have permissions
 
 * Use all BlueXP services
