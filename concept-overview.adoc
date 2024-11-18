@@ -19,26 +19,26 @@ NetApp BlueXP provides your organization with a single control plane that helps 
 
 BlueXP provides unified control of storage and data services across your hybrid multicloud.
 
-=== Unified control of your storage from the BlueXP canvas
+=== Unified control of storage from the BlueXP canvas
 
 The _BlueXP canvas_ enables you to discover, deploy, optimize, and manage cloud and on-premises storage. The canvas provides a single location for all storage management.
 
 ==== Supported cloud and on-premises storage
 
-* Cloud storage solutions
-** Amazon FSx for NetApp ONTAP
-** Azure NetApp Files
-** Cloud Volumes ONTAP
+Cloud storage solutions::
+* Amazon FSx for NetApp ONTAP
+* Azure NetApp Files
+* Cloud Volumes ONTAP
 
-* On-premises flash and object storage
-** E-Series systems
-** ONTAP clusters
-** StorageGRID systems
+On-premises flash and object storage::
+* E-Series systems
+* ONTAP clusters
+* StorageGRID systems
 
-* Cloud object storage
-** Amazon S3 storage
-** Azure Blob storage
-** Google Cloud Storage
+Cloud object storage::
+* Amazon S3 storage
+* Azure Blob storage
+* Google Cloud Storage
 
 ==== Working environments
 
@@ -101,6 +101,48 @@ Create a writable cache volume to speed up access to data or offload traffic fro
 
 BlueXP workload factory::
 Design, set up, and operate key workloads using Amazon FSx for NetApp ONTAP.
+
+https://www.netapp.com/bluexp/[Learn more about BlueXP and the available data services^]
+
+=== Integrated services to protect, secure, and optimize data
+
+BlueXP includes a comprehensive suite of integrated data services to help you maintain the security, integrity, and availability of your data across your on-premises and cloud storage environments.
+
+* *BlueXP alerts*: View issues related to capacity, availability, performance, protection, and security in your ONTAP environment.
+
+* *BlueXP automation catalog*: Use scripted solutions to automate the deployment and integration of NetApp products and services.
+
+* *BlueXP backup and recovery*: Back up and restore cloud and on-prem data.
+
+* *BlueXP classification*: Get your application data and cloud environments privacy ready.
+
+* *BlueXP cloud ops*: Gain visibility into your cloud compute spending and identify potential savings.
+
+* *BlueXP copy and sync*: Sync data between on-prem and cloud data stores.
+
+* *BlueXP digital advisor*: Use predictive analytics and proactive support to optimize your data infrastructure.
+
+* *BlueXP digital wallet*: Manage and monitor your licenses and subscriptions.
+
+* *BlueXP disaster recovery*: Protect on-premises VMware workloads using VMware Cloud on Amazon FSx for ONTAP as a disaster recovery site.
+
+* *BlueXP economic efficiency*: Identify clusters with current or forecasted low capacity and implement data tiering or additional capacity recommendations.
+
+* *BlueXP operational resiliency*: Implement automated firmware and software configuration risk remediations to maintain the health of ONTAP clusters.
+
+* *BlueXP ransomware protection*: Detect anomalies that might result in ransomware attacks. Protect and recover workloads.
+
+* *BlueXP replication*: Replicate data between storage systems to support backup and disaster recovery.
+
+* *BlueXP software updates*: Automate the assessment, planning, and execution of ONTAP upgrades.
+
+* *BlueXP sustainability dashboard*: Analyze the sustainability of your storage systems.
+
+* *BlueXP tiering*: Extend your on-prem ONTAP storage to the cloud.
+
+* *BlueXP volume caching*: Create a writable cache volume to speed up access to data or offload traffic from heavily accessed volumes.
+
+* *BlueXP workload factory*: Design, set up, and operate key workloads using Amazon FSx for NetApp ONTAP.
 
 https://www.netapp.com/bluexp/[Learn more about BlueXP and the available data services^]
 
