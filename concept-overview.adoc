@@ -44,6 +44,8 @@ Cloud object storage::
 
 When you discover or deploy cloud or on-premises storage from BlueXP, you create a _working environment_ on the BlueXP canvas. To manage your cloud or on-premises storage, you select a working environment and then either integrate it with BlueXP data services or enter the working environment to complete storage management actions like adding volumes.
 
+image:screenshot-canvas.png["A screenshot of the BlueXP canvas that shows several working environments, one of which is selected and shows the ability to enable BlueXP data services or to select Enter Working Environment to manage storage."]
+
 === Integrated services to protect, secure, and optimize data
 
 BlueXP includes a comprehensive suite of integrated data services to help you maintain the security, integrity, and availability of your data across your on-premises and cloud storage environments.
