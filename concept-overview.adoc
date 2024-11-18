@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-overview.html
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers
-summary: NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments. The BlueXP SaaS platform includes services that provide storage management, data mobility, data protection, and data analysis and control. Management capabilities are provided through a web-based console and APIs.
+summary: NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments.
 ---
 
 = Learn about BlueXP
@@ -17,13 +17,15 @@ NetApp BlueXP provides your organization with a single control plane that helps 
 
 == Features
 
-BlueXP provides unified control of storage and data services across your hybrid multicloud.
+BlueXP provides unified control of storage across your hybrid multicloud and integrated data services to protect, secure, and optimize data.
 
 === Unified control of storage from the BlueXP canvas
 
 The _BlueXP canvas_ enables you to discover, deploy, optimize, and manage cloud and on-premises storage. The canvas provides a single location for all storage management.
 
 ==== Supported cloud and on-premises storage
+
+BlueXP enables you to manage the following types of storage from the BlueXP canvas:
 
 Cloud storage solutions::
 * Amazon FSx for NetApp ONTAP
