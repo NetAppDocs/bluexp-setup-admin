@@ -29,13 +29,15 @@ Permissions::
 | Folder or Project admin
 
 
-| Create Connectors | Yes | No 
+| Create connectors | Yes | No 
 
 | Create or modify working environments (add or discover new resources using the BlueXP canvas) |	Yes | Yes 
 
 | Create projects/folders, including renaming, removing, and editing | Yes | Yes 
 
 | Assign roles and add users | Yes | Yes
+
+| Associate resources and connectors with folders and projects  | Yes | Yes
 
 | Manage credentials from Settings > Credentials  | Yes | Yes
 
