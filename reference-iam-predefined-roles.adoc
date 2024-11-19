@@ -16,8 +16,8 @@ summary: BlueXP identity and access management includes several predefined roles
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
 
 == Organization roles
-BlueXP IAM includes two organization roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM organization roles is scope. The Org Admin role has permissions in all folders and projects; while the Folder or project admin only has permissions in the folder or project to which they have been assigned. 
-+
+BlueXP IAM includes two organization roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM organization roles is scope. The Org Admin role has permissions in all folders and projects; while the Folder or project admin only has permissions in the folder or project to which they have been assigned.
+
 The Folder or Project admin role cannot create connectors.
 
 Permissions::
