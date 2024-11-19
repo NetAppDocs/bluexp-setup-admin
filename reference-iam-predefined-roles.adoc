@@ -33,11 +33,9 @@ Permissions::
 Example for admin roles in BlueXP for a large multi-national organization::
 XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
 +
-To achieve this, a person assigned the Org Admin role XYZ Corporation can create separate projects or folders in BlueXP for each region. Each region's project/folder would have a designated folder/project admin responsible for resource management, including creating, renaming, removing, and editing projects/folders, as well as assigning roles and adding users within their region.
+To achieve this, a person assigned the Org Admin role in XYZ Corporation's BLueXP creates an initial working environment and then creates separate projects or folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Org Admin assigns a BlueXP users in each respective region the Folder/project admin role. 
 +
-The Org Admin would have access to all projects and folders created by the regional admins, overseeing the entire resource hierarchy. 
-+
-Once the initial setup is complete, regional admins with the Folder/Project role can create new working environments and add users within their regions. The Org Admin would inherit permissions for all new working environments or resources, maintaining visibility or storage usage across the organization.
+Once the initial setup is complete, regional admins with the Folder/Project role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Org Admin would inherit permissions for any new working environments or resources, maintaining visibility or storage usage across the organization.
 
 
 
