@@ -1,3 +1,6 @@
+:icons: font
+:imagesdir: ../media/
+
 === BlueXP identity and access management
 
 BlueXP identity and access management (IAM) is a new resource and access management model that replaces and enhances the previous functionality provided by BlueXP accounts when using BlueXP in standard mode. 
