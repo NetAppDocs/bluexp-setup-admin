@@ -15,8 +15,8 @@ summary: BlueXP identity and access management includes several predefined roles
 [.lead]
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
 
-== Administration roles
-BlueXP IAM includes two administration roles: Organization admin and Folder orProject admin. The only difference between the two BlueXP IAM admin roles is scope. The Org Admin role has these permissions in all folders and projects; while the Folder/project admin only has these permissions in the folder or project to which they have been assigned. 
+== Organization roles
+BlueXP IAM includes two organization roles: Organization admin and Folder or Project admin. The only difference between the two BlueXP IAM organization roles is scope. The Org Admin role has the following permissions in all folders and projects; while the Folder or project admin only has the following permissions in the folder or project to which they have been assigned. 
 
 Permissions::
 
@@ -30,7 +30,7 @@ Permissions::
 * Register BlueXP for support and submit cases
 
 
-Example for admin roles in BlueXP for a large multi-national organization::
+Example for organization roles in BlueXP for a large multi-national organization::
 XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
 +
 To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role. 
