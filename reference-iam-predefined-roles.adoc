@@ -16,7 +16,9 @@ summary: BlueXP identity and access management includes several predefined roles
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
 
 == Administration roles
-BlueXP IAM includes two administration roles: Org Admin and Folder/Project admin. The only difference between the two BlueXP IAM admin roles is scope. The Org Admin role can perform these tasks in all folders and projects; while the Folder/project admin can only perform these tasks in the folder or project to which they have been assigned. Both the Org Admin role and the Folder/project Admin roles can do the following:
+BlueXP IAM includes two administration roles: Org Admin and Folder/Project Admin. The only difference between the two BlueXP IAM admin roles is scope. The Org Admin role has these permissions in all folders and projects; while the Folder/project admin only has these permissions in the folder or project to which they have been assigned. 
+
+Permissions::
 
 * Create or modify working environments (add or discover new resources using the BlueXP canvas)
 * Create projects/folders, including renaming, removing, and editing
@@ -26,6 +28,17 @@ BlueXP IAM includes two administration roles: Org Admin and Folder/Project admin
 * Manage credentials from Settings > Credentials 
 * View the BlueXP timeline
 * Register BlueXP for support and submit cases
+
+
+Example for admin roles in BlueXP for a large multi-national organization::
+XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
++
+To achieve this, a person assigned the Org Admin role XYZ Corporation can create separate projects or folders in BlueXP for each region. Each region's project/folder would have a designated folder/project admin responsible for resource management, including creating, renaming, removing, and editing projects/folders, as well as assigning roles and adding users within their region.
++
+The Org Admin would have access to all projects and folders created by the regional admins, overseeing the entire resource hierarchy. 
++
+Once the initial setup is complete, regional admins with the Folder/Project role can create new working environments and add users within their regions. The Org Admin would inherit permissions for all new working environments or resources, maintaining visibility or storage usage across the organization.
+
 
 
 == Data services roles
