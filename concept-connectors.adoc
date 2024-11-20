@@ -22,6 +22,8 @@ A Connector isn't required to get started with BlueXP. You can use several featu
 You can use the following BlueXP features and services without a Connector:
 
 * Amazon FSx for NetApp ONTAP
++
+Some actions require a Connector or a BlueXP workload factory link. https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html[Learn which actions require a Connector or link^]
 
 * Automation catalog
 
