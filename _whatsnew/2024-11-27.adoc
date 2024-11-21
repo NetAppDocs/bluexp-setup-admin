@@ -1,6 +1,6 @@
 === Private mode release (3.9.46)
 
-A new private mode release is now available to download from the NetApp Support Site. 
+A new private mode release is now available to download from the https://mysupport.netapp.com/site/downloads[NetApp Support Site^] 
 
 This release includes the following versions of the BlueXP components and services that are supported with private mode.
 
