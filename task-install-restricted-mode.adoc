@@ -200,9 +200,9 @@ When you access the BlueXP console for the first time, you'll be prompted to cho
 
 .Before you begin
 
-The person who sets up the BlueXP Connector must log in to BlueXP using a login that doesn't belong to a BlueXP organization that is operating in standard mode.
+The person who sets up the BlueXP Connector must log in to BlueXP using a login that doesn't belong to a BlueXP account or organization.
  
-If your BlueXP login is associated with an organization that's operating in standard mode, you'll need to sign up with a new BlueXP login or NetApp Support Site credentials that don't belong to an organization. Otherwise, you won't see the option to enable restricted mode on the setup screen.
+If your BlueXP login is associated with another account or organization, you'll need to sign up with a new BlueXP login. Otherwise, you won't see the option to enable restricted mode on the setup screen.
 
 .Steps
 
