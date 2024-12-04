@@ -16,7 +16,7 @@ For increased security, the Connector can now contact these endpoints instead:
 * \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
 * \https://bluexpcloudmanagerinfraprod.azurecr.io
 
-To start using these new endpoints, we recommend that you remove the existing endpoints from your firewall rules and add the new endpoints.
+We recommend that you start using these new endpoints by removing the existing endpoints from your firewall rules and adding the new endpoints.
 
 Note the following:
 
