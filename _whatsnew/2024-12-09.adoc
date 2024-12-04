@@ -1,37 +1,28 @@
 === Connector 3.9.47
 
-This release of the BlueXP Connector includes updates to disk space requirements, networking requirements (endpoints), and bug fixes.
+This release of the BlueXP Connector includes updates to the endpoints that the Connector contacts and bug fixes.
 
 At this time, the 3.9.47 release is available for standard mode and restricted mode.
 
-.Increased disk space requirements
-
-BlueXP now requires the following disk space on the Connector host:
-
-* */opt*: 130 GiB of space must be available (the previous requirement was 100 GiB)
-* */var*: 50 GiB of space must be available (the previous requirement was 20 GiB)
-
-Ensure that you have enough disk space before you install or upgrade the Connector.
-
 .Endpoints to obtain images during installation and upgrades
 
-When you install the Connector, or when an automatic upgrade occurs, the process currently contacts the following endpoints to obtain images for installation and upgrades:
+When you install the Connector, or when an automatic upgrade occurs, the process contacts specific endpoints to obtain images for the installation or upgrade. By default, the installation and upgrade process has always contacted the following endpoints:
 
 * \https://*.blob.core.windows.net
 * \https://cloudmanagerinfraprod.azurecr.io
 
-For increased security, you now have the option to use these endpoints instead:
+For increased security, the Connector can now contact these endpoints instead:
 
 * \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
 * \https://bluexpcloudmanagerinfraprod.azurecr.io
 
-We recommend that you remove the existing endpoints from your firewall rules and add the new endpoints.
+To start using these new endpoints, we recommend that you remove the existing endpoints from your firewall rules and add the new endpoints.
 
 Note the following:
 
 * These new endpoints are supported starting with the 3.9.47 release.
 * The existing endpoints are still supported.
-* The Connector contacts the existing endpoints first. If those endpoints aren't accessible, the Connector contacts the new endpoints.
+* The Connector contacts the existing endpoints first. If those endpoints aren't accessible, the Connector automatically contacts the new endpoints.
 * The new endpoints are not supported in the following scenarios:
 ** If the Connector is installed in a Government region.
 ** If you use the Connector with BlueXP backup and recovery or BlueXP classification. 
@@ -40,4 +31,4 @@ Note the following:
 
 When you manually install the Connector, the installer no longer contacts \https://support.netapp.com. 
 
-However, the installer still contacts \https://mysupport.netapp.com.
+The installer still contacts \https://mysupport.netapp.com.
