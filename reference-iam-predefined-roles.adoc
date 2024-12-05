@@ -15,54 +15,42 @@ summary: BlueXP identity and access management includes several predefined roles
 [.lead]
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
 
-== Organization admin
+== Platform roles
+BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. The Organization admin role has permissions in all folders and projects, while the Folder or project admin only has permissions in the folder or project to which they have been assigned.
+The Folder or Project admin role cannot create connectors.
 
-Description::
-Provides full control of the entire BlueXP organization. 
+=== Permissions
 
-Permissions::
-A member who has this role can complete all actions in BlueXP.
+ 
+[cols=3*,options="header",cols="24,19,19"]
 
-== Folder or project admin
+|===
 
-Description::
-Provides full control of one or more projects and folders.
-+
-Note that if you assign this role at the folder level, the member has permissions to all projects that are associated with that folder.
+| Task 
+| Organization admin 
+| Folder or Project admin 
 
-Permissions::
-A member who has this role can complete the following actions in BlueXP:
+| Create connectors |Yes | No 
+| Create, modify or delete working environments (add or discover new resources using the BlueXP canvas) | Yes | Yes 
+| Create projects/folders, including renaming, deleting, and editing | Yes | Yes 
+| Assign roles and add users |Yes |Yes 
+| Associate resources and connectors with folders and projects | Yes | Yes 
+| Manage credentials from Settings > Credentials | Yes | Yes 
+| View the BlueXP timeline |Yes |Yes |Use BlueXP services | Yes | Yes 
+| Register BlueXP for support and submit cases | Yes | Yes 
 
-* Manage all working environments in the projects and folders for which they have permissions
+|===
 
-* Use all BlueXP services
+== Example for BlueXP platform roles in a large multi-national organization
+XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
+To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role.
+Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
 
-* From BlueXP IAM, an admin of a folder can administer the folders, projects, and resources that are children of that folder:
-** Add folders or projects within the folder
-** Edit folders and projects: their names, associated resources, and member access
-** Delete folders and projects
-** Add a user account and associate a role at the folder or project level
-** Associate a Connector with a folder or project
-** Add a role to a member at the folder or project level
-** View resources associated with folders and projects
-** Associate viewable resources with additional folders or projects
-** Dissociate a resource from a folder or project
+== Data services roles
+Data services roles can complete their tasks in any project or folder.
 
-* From BlueXP IAM, an admin of a project can administer that project and its associated resources as follows:
-** Edit the project: its name, associated resources, and member access
-** Add a user account and associate a role at the project level
-** Associate a Connector with a project, if the member has admin permissions to other projects that have other associated Connectors
-** Add a role to a member at the project level
-** View resources associated with the project
-** Associate resources with the project, if the member has admin permissions to other projects that have other associated resources
-** Dissociate a resource from the project
-** Delete the project
 
-* Manage credentials from Settings > Credentials 
-* View the BlueXP timeline
-* Register BlueXP for support and submit cases
-
-== SnapCenter admin
+=== SnapCenter admin
 
 Description::
 Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
@@ -74,7 +62,7 @@ A member who has this role can complete the following actions in BlueXP:
 * Manage all working environments in the projects and folders for which they have permissions
 * Use all BlueXP services
 
-== Classification viewer
+=== Classification viewer
 
 Description::
 Provides the ability view BlueXP classification scan results.
