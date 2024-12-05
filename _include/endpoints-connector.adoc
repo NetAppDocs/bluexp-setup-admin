@@ -93,11 +93,29 @@ Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" 
 //end::saas-endpoints[]
 
 //tag::upgrade-endpoints[]
-| \https://*.blob.core.windows.net
+a| 
+Option 1 (recommended):
+
+\https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
+
+\https://bluexpcloudmanagerinfraprod.azurecr.io
+
+Option 2:
+
+\https://*.blob.core.windows.net
 
 \https://cloudmanagerinfraprod.azurecr.io
 
-| To upgrade the Connector and its Docker components.
+The endpoints listed for option 1 are recommended because they are more secure.
+
+Note the following:
+
+* The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
+* The endpoints for option 1 are not supported in the following scenarios:
+** If the Connector is installed in a Government region.
+** If you use the Connector with BlueXP backup and recovery or BlueXP classification.
+
+| To obtain images for Connector upgrades.
 //end::upgrade-endpoints[]
 
 //tag::upgrade-endpoints-restricted-mode[]
