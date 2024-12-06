@@ -35,4 +35,4 @@ The installer still contacts \https://mysupport.netapp.com.
 
 === BlueXP identity and access management
 
-The Connectors page only lists currently used Connectors. It no longer displays Connectors that you have previously removed.
+The Connectors page lists only currently available Connectors. It no longer displays Connectors that you have removed.
