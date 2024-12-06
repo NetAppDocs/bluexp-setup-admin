@@ -76,9 +76,9 @@ Note that the endpoints listed below are all CNAME entries.
 //end::nss-endpoints[]
 
 //tag::saas-endpoints[]
-| \https://*.api.bluexp.netapp.com
+| \https://\*.api.bluexp.netapp.com
 \https://api.bluexp.netapp.com
-\https://*.cloudmanager.cloud.netapp.com
+\https://\*.cloudmanager.cloud.netapp.com
 \https://cloudmanager.cloud.netapp.com
 \https://netapp-cloud-account.auth0.com
 
@@ -92,12 +92,12 @@ Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" 
 a| 
 Choose between two sets of endpoints:
 
-* First option (recommended) ^1^
+* Option 1 (recommended) ^1^
 +
 \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
 \https://bluexpcloudmanagerinfraprod.azurecr.io
 
-* Second option
+* Option 2
 +
 \https://*.blob.core.windows.net
 \https://cloudmanagerinfraprod.azurecr.io
@@ -107,11 +107,11 @@ Choose between two sets of endpoints:
 //end::upgrade-endpoints[]
 
 //tag::upgrade-endpoints-explanation[]
-
-^1^ The endpoints listed in the first option are recommended because they are more secure. Note the following about these endpoints:
-
+//Same text is also in endpoints-manual-install
+^1^ The endpoints listed in option 1 are recommended because they are more secure. Note the following about these endpoints:
++
 * The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
-* The endpoints for option 1 are not supported in the following scenarios:
+* The endpoints in option 1 are not supported in the following scenarios:
 ** If the Connector is installed in a Government region.
 ** If you use the Connector with BlueXP backup and recovery or BlueXP classification.
 
