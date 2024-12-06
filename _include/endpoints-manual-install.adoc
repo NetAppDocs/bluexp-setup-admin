@@ -21,9 +21,9 @@ When you manually install the Connector on your own Linux host, the installer fo
 
 //tag::endpoint-list-restricted[]
 Endpoints contacted during manual installation::
-When you manually install the Connector on your own Linux host, the installer for the Connector requires access to the URLs during the installation process.
+When you manually install the Connector on your own Linux host, the installer for the Connector requires access to several URLs during the installation process.
 +
-* The following endpoints are always contacted no matter where the Connector is installed:
+* The following endpoints are always contacted no matter where you install the Connector:
 +
 ** \https://mysupport.netapp.com
 ** \https://signin.b2c.netapp.com (this endpoint is the CNAME URL for \https://mysupport.netapp.com)
@@ -31,18 +31,18 @@ When you manually install the Connector on your own Linux host, the installer fo
 ** \https://stream.cloudmanager.cloud.netapp.com
 ** \https://production-artifacts.cloudmanager.cloud.netapp.com
 
-* If the Connector is installed in an AWS Government region, the installer also needs access to these endpoints:
+* If you install the Connector in an AWS Government region, the installer also needs access to these endpoints:
 +
 ** \https://*.blob.core.windows.net
 ** \https://cloudmanagerinfraprod.azurecr.io
 
-* If the Connector is installed in an Azure Government region, the installer also needs access to these endpoints:
+* If you install the Connector in an Azure Government region, the installer also needs access to these endpoints:
 +
 ** \https://*.blob.core.windows.net
 ** \https://occmclientinfragov.azurecr.us
 
 +
-* If the Connector is installed in a commercial region or sovereign region, you can choose between two sets of endpoints:
+* If you install the Connector in a commercial region or sovereign region, you can choose between two sets of endpoints:
 +
 ** Option 1 (recommended):
 *** \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
