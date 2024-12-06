@@ -99,8 +99,7 @@ In restricted mode, the BlueXP user interface is accessible from the Connector. 
 |===
 
 //Endpoints contacted during manual installation
-include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
-include::_include/endpoints-manual-install.adoc[tag=endpoint-list-images-restricted]
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list-restricted]
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list-images-explanation]
 
 +

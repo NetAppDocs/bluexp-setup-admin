@@ -56,6 +56,7 @@ include::_include/endpoints-console.adoc[]
 
 //Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list-images-explanation]
 
 +
 include::_include/endpoints-manual-install.adoc[tag=update]
