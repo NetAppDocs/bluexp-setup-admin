@@ -7,6 +7,9 @@ When you manually install the Connector on your own Linux host, the installer fo
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
+//end::endpoint-list[]
+
+//tag::endpoint-list-images[]
 * To obtain images, the installer needs access to one of these two sets of endpoints:
 +
 ** Option 1 (recommended):
@@ -15,13 +18,36 @@ When you manually install the Connector on your own Linux host, the installer fo
 ** Option 2:
 *** \https://*.blob.core.windows.net
 *** \https://cloudmanagerinfraprod.azurecr.io
+//end::endpoint-list-images[]
 
+//tag::endpoint-list-images-restricted[]
+* If the Connector is in an AWS Government region:
 +
+\https://*.blob.core.windows.net
+\https://cloudmanagerinfraprod.azurecr.io
+
+* If the Connector is in an Azure Government region:
++
+\https://*.blob.core.windows.net
+\https://occmclientinfragov.azurecr.us
+
+* If the Connector is in a commercial region or sovereign region, you can choose between two sets of endpoints:
++
+** Option 1 (recommended):
+*** \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpcloudmanagerinfraprod.azurecr.io
+** Option 2:
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+//end::endpoint-list-images-restricted[]
+
+//tag::endpoint-list-images-explanation[]
 //Same text is also in endpoints-connector
++
 The endpoints listed in option 1 are recommended because they are more secure. Note the following about these endpoints:
 ** The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
 ** The endpoints in option 1 are not supported if you use the Connector with BlueXP backup and recovery or BlueXP classification.
-//end::endpoint-list[]
+//end::endpoint-list-images-explanation[]
 
 //tag::update[]
 The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.

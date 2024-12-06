@@ -100,12 +100,8 @@ In restricted mode, the BlueXP user interface is accessible from the Connector. 
 
 //Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
-+
-This endpoint is not required in Azure Government regions.
-
-* \https://occmclientinfragov.azurecr.us
-+
-This endpoint is only required in Azure Government regions.
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list-images-restricted]
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list-images-explanation]
 
 +
 include::_include/endpoints-manual-install.adoc[tag=update]
@@ -135,6 +131,9 @@ include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 include::_include/endpoints-connector.adoc[tag=upgrade-endpoints-restricted-mode]
 
 |===
++
+//Notes about the upgrade endpoints
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints-explanation]
 
 //Azure public IP
 include::_include/networking.adoc[tag=azure-public-ip]

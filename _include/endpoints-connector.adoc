@@ -116,13 +116,32 @@ Choose between two sets of endpoints:
 //end::upgrade-endpoints-explanation[]
 
 //tag::upgrade-endpoints-restricted-mode[]
-| \https://*.blob.core.windows.net
-
+|
+If the Connector is in an AWS Government region:
+\https://*.blob.core.windows.net
 \https://cloudmanagerinfraprod.azurecr.io
-This endpoint is not required in Azure Government regions.
 
+| To obtain images for Connector upgrades when the Connector is installed in an AWS Government region.
+
+| 
+If the Connector is in an Azure Government region:
+\https://*.blob.core.windows.net
 \https://occmclientinfragov.azurecr.us
-This endpoint is only required in Azure Government regions.
 
-| To upgrade the Connector and its Docker components.
+| To obtain images for Connector upgrades when the Connector is installed in an Azure Government region.
+ 
+a|
+If the Connector is in a commercial region or sovereign region, you can choose between two sets of endpoints:
+
+* Option 1 (recommended) ^1^
++
+\https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
+\https://bluexpcloudmanagerinfraprod.azurecr.io
+
+* Option 2
++
+\https://*.blob.core.windows.net
+\https://cloudmanagerinfraprod.azurecr.io
+
+| To obtain images for Connector upgrades when the Connector is installed in a commercial region or sovereign region.
 //end::upgrade-endpoints-restricted-mode[]
