@@ -7,18 +7,18 @@ When you manually install the Connector on your own Linux host, the installer fo
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* To obtain installation images, one of these two sets of endpoints:
-** Option 1:
-*** \https://*.blob.core.windows.net
-*** \https://cloudmanagerinfraprod.azurecr.io
-** Option 2:
+* To obtain images, the installer needs access to one of these two sets of endpoints:
+** Option 1 (recommended):
 *** \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
 *** \https://bluexpcloudmanagerinfraprod.azurecr.io
+** Option 2:
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
 
 +
-The endpoints listed for option 1 are recommended because they are more secure. Note the following about these endpoints:
+The endpoints listed in option 1 are recommended because they are more secure. Note the following about these endpoints:
 * The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
-* The endpoints for option 1 are not supported in the following scenarios:
+* The endpoints in option 1 are not supported in the following scenarios:
 ** If the Connector is installed in a Government region.
 ** If you use the Connector with BlueXP backup and recovery or BlueXP classification.
 //end::endpoint-list[]

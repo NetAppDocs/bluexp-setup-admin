@@ -50,6 +50,9 @@ include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
++
+//Notes about the upgrade endpoints
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints-explanation]
 
 //Console endpoints
 include::_include/networking.adoc[tag=endpoints-console]

@@ -76,8 +76,7 @@ Note that the endpoints listed below are all CNAME entries.
 //end::nss-endpoints[]
 
 //tag::saas-endpoints[]
-| 
-\https://*.api.bluexp.netapp.com
+| \https://*.api.bluexp.netapp.com
 \https://api.bluexp.netapp.com
 \https://*.cloudmanager.cloud.netapp.com
 \https://cloudmanager.cloud.netapp.com
@@ -105,6 +104,10 @@ Choose between two sets of endpoints:
 
 | To obtain images for Connector upgrades.
 
+//end::upgrade-endpoints[]
+
+//tag::upgrade-endpoints-explanation[]
+
 ^1^ The endpoints listed in the first option are recommended because they are more secure. Note the following about these endpoints:
 
 * The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
@@ -112,7 +115,7 @@ Choose between two sets of endpoints:
 ** If the Connector is installed in a Government region.
 ** If you use the Connector with BlueXP backup and recovery or BlueXP classification.
 
-//end::upgrade-endpoints[]
+//end::upgrade-endpoints-explanation[]
 
 //tag::upgrade-endpoints-restricted-mode[]
 | \https://*.blob.core.windows.net
