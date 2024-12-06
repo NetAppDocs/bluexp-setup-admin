@@ -16,9 +16,7 @@ When you manually install the Connector on your own Linux host, the installer fo
 *** \https://bluexpcloudmanagerinfraprod.azurecr.io
 
 +
-The endpoints listed for option 1 are recommended because they are more secure.
-+
-Note the following:
+The endpoints listed for option 1 are recommended because they are more secure. Note the following about these endpoints:
 * The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
 * The endpoints for option 1 are not supported in the following scenarios:
 ** If the Connector is installed in a Government region.
