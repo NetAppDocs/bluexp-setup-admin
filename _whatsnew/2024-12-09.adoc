@@ -32,3 +32,7 @@ Note the following:
 When you manually install the Connector, the installer no longer contacts \https://support.netapp.com. 
 
 The installer still contacts \https://mysupport.netapp.com.
+
+=== BlueXP identity and access management
+
+The Connectors page only lists currently used Connectors. It no longer displays Connectors that you have previously removed.
