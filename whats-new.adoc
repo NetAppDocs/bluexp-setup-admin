@@ -745,7 +745,7 @@ https://bluexp.netapp.com[Learn more from the BlueXP website^]
 New navigation menu::
 In BlueXP's navigation menu, services are now organized by categories and are named according to their functionality. For example, you can access BlueXP backup and recovery from the *Protection* category.
 +
-image:.screenshot-navigation-menu.png[A screenshot of the navigation menu in BlueXP that shows categories such as Storage and Health.]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation-menu.png[A screenshot of the navigation menu in BlueXP that shows categories such as Storage and Health.]
 
 New product integrations::
 * You can now manage the Amazon S3 buckets in the AWS accounts where the Connector is installed.
@@ -1010,7 +1010,7 @@ NetApp Support Site (NSS) accounts are now managed from the Support Dashboard, r
 
 link:task-adding-nss-accounts.html[Learn how to manage NSS accounts].
 
-image:screenshot_nss_management.png[A screenshot of the NSS Management tab in the Support Dashboard where you can add NSS accounts.]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png[A screenshot of the NSS Management tab in the Support Dashboard where you can add NSS accounts.]
 
 == 5 May 2021
 
