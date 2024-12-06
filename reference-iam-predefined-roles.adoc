@@ -20,7 +20,7 @@ BlueXP IAM includes two platform roles: Organization admin and Folder or Project
 The Folder or Project admin role cannot create connectors.
 
 === Permissions
-
+ 
  
 [cols=3*,options="header",cols="24,19,19"]
 
@@ -41,7 +41,7 @@ The Folder or Project admin role cannot create connectors.
 
 |===
 
-== Example for BlueXP platform roles in a large multi-national organization
+=== Example for BlueXP platform roles in a large multi-national organization
 XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
 To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role.
 
