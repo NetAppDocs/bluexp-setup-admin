@@ -2,7 +2,6 @@
 Endpoints contacted during manual installation::
 When you manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:
 
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://signin.b2c.netapp.com (this endpoint is the CNAME URL for \https://mysupport.netapp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
