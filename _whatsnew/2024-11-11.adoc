@@ -1,6 +1,3 @@
-:icons: font
-:imagesdir: ../media/
-
 === Connector 3.9.46
 
 This release of the BlueXP Connector includes minor security improvements and bug fixes. 

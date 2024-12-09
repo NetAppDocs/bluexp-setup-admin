@@ -1,6 +1,3 @@
-:icons: font
-:imagesdir: ../media/
-
 === Private mode release (3.9.44)
 
 A new private mode release is now available to download from the NetApp Support Site. 
