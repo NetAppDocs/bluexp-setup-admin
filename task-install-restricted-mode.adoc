@@ -198,13 +198,11 @@ Set up BlueXP.
 
 When you access the BlueXP console for the first time, you'll be prompted to choose an account to associate the Connector with and you'll need to enable restricted mode.
 
-NOTE: If you already have an account and you want to create another one, then you need to use the Tenancy API. link:task-create-account.html[Learn how to create an additional BlueXP account].
-
 .Before you begin
 
-The person who sets up the BlueXP Connector must log in to BlueXP using a login that doesn't belong to a BlueXP organization that is operating in standard mode.
+The person who sets up the BlueXP Connector must log in to BlueXP using a login that doesn't belong to a BlueXP account or organization.
  
-If your BlueXP login is associated with a BlueXP organization that's operating in standard mode, you'll need to sign up with a new BlueXP login or NetApp Support Site credentials that don't belong to a BlueXP organization. Otherwise, you won't see the option to enable restricted mode on the setup screen.
+If your BlueXP login is associated with another account or organization, you'll need to sign up with a new BlueXP login. Otherwise, you won't see the option to enable restricted mode on the setup screen.
 
 .Steps
 
@@ -218,9 +216,7 @@ https://_ipaddress_
 
 .. Enter a name for the Connector.
 
-.. Enter a name for a new BlueXP account or select an existing restricted mode account.
-+
-You can select an existing account if your log in is already associated with an existing BlueXP account that is operating in restricted mode.
+.. Enter a name for a new BlueXP account.
 
 .. Select *Are you running in a secured environment?*
 

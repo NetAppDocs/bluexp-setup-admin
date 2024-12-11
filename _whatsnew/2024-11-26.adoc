@@ -1,0 +1,30 @@
+=== Private mode release (3.9.46)
+
+A new private mode release is now available to download from the https://mysupport.netapp.com/site/downloads[NetApp Support Site^] 
+
+The 3.9.46 release includes updates to the following BlueXP components and services.
+
+[cols=3*,options="header,autowidth"]
+|===
+
+| Component or service
+| Version included in this release
+| Changes since the previous private mode release
+
+| Connector | 3.9.46 | Minor security improvements and bug fixes
+| Backup and recovery | 22 November 2024 | Go to the https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[what's new in BlueXP backup and recovery page^] and refer to the changes included in the November 2024 release
+| Classification | 4 November 2024 (version 1.37) | Go to the https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[what's new in BlueXP classification page^] and refer to the changes included in the 1.32 to 1.37 releases
+| Cloud Volumes ONTAP management | 11 November 2024 | Go to the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[what's new with Cloud Volumes ONTAP management page^] and refer to the changes included in the October 2024 and November 2024 releases
+| On-premises ONTAP cluster management | 26 November 2024 | Go to the https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html[what's new with on-premises ONTAP cluster management page^] and refer to the changes included in the November 2024 release
+
+|===
+
+While the BlueXP digital wallet and BlueXP replication are also included with private mode, there are no changes from the previous private mode release.
+
+For more details about private mode, including how to upgrade, refer to the following:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
