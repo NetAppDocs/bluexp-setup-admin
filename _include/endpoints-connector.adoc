@@ -108,11 +108,11 @@ Choose between two sets of endpoints:
 
 //tag::upgrade-endpoints-explanation[]
 //Same text is also in endpoints-manual-install
-^1^ The endpoints listed in option 1 are recommended because they are more secure. Note the following about these endpoints:
+^1^ The endpoints listed in option 1 are recommended because they are more secure. We recommend that you set up your firewall to allow the endpoints listed in option 1, while disallowing the endpoints listed in option 2. Note the following about these endpoints:
 +
 * The endpoints listed in option 1 are supported starting with the 3.9.47 release of the Connector. There is no backwards compatibility with previous releases of the Connector.
 * The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
-* The endpoints in option 1 are not supported if you use the Connector with BlueXP backup and recovery or BlueXP ransomware protection. In this case, you can use the endpoints listed in option 2.
+* The endpoints in option 1 are not supported if you use the Connector with BlueXP backup and recovery or BlueXP ransomware protection. In this case, you can disallow the endpoints listed in option 1, while allowing the endpoints listed in option 2.
 //end::upgrade-endpoints-explanation[]
 
 //tag::upgrade-endpoints-restricted-mode[]
