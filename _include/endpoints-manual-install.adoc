@@ -10,8 +10,8 @@ When you manually install the Connector on your own Linux host, the installer fo
 * To obtain images, the installer needs access to one of these two sets of endpoints:
 +
 ** Option 1 (recommended):
-*** \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
-*** \https://bluexpcloudmanagerinfraprod.azurecr.io
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
 ** Option 2:
 *** \https://*.blob.core.windows.net
 *** \https://cloudmanagerinfraprod.azurecr.io
@@ -45,8 +45,8 @@ When you manually install the Connector on your own Linux host, the installer fo
 * If you install the Connector in a commercial region or sovereign region, you can choose between two sets of endpoints:
 +
 ** Option 1 (recommended):
-*** \https://bluexpcloudmanagerinfraprod.eastus2.data.azurecr.io
-*** \https://bluexpcloudmanagerinfraprod.azurecr.io
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
 ** Option 2:
 *** \https://*.blob.core.windows.net
 *** \https://cloudmanagerinfraprod.azurecr.io
@@ -57,8 +57,9 @@ When you manually install the Connector on your own Linux host, the installer fo
 //tag::endpoint-list-images-explanation[]
 //Same text is also in endpoints-connector
 The endpoints listed in option 1 are recommended because they are more secure. Note the following about these endpoints:
-** The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
-** The endpoints in option 1 are not supported if you use the Connector with BlueXP backup and recovery or BlueXP classification.
+** The endpoints listed in option 1 are supported starting with the 3.9.47 release of the Connector. There is no backwards compatibility with previous releases of the Connector.
+* The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
+** The endpoints in option 1 are not supported if you use the Connector with BlueXP backup and recovery or BlueXP ransomware protection. In this case, you can use the endpoints listed in option 2.
 //end::endpoint-list-images-explanation[]
 
 //tag::update[]
