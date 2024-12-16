@@ -1,31 +1,8 @@
 === Connector 3.9.47
 
-This release of the BlueXP Connector includes bug fixes and changes to the endpoints contacted during Connector installation and upgrades.
+This release of the BlueXP Connector includes bug fixes and a change to the endpoints contacted during Connector installation.
 
 At this time, the 3.9.47 release is available for standard mode and restricted mode.
-
-.Secure endpoints to obtain images during installation and upgrades
-
-When you install the Connector, or when an automatic upgrade occurs, the Connector contacts specific endpoints to obtain images for the installation or upgrade. By default, the Connector has always contacted the following endpoints:
-
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
-
-For increased security, the Connector can now contact these endpoints instead:
-
-* \https://bluexpinfraprod.eastus2.data.azurecr.io
-* \https://bluexpinfraprod.azurecr.io
-
-We recommend that you start using these new endpoints by removing the existing endpoints from your firewall rules and adding the new endpoints.
-
-Note the following:
-
-* These new endpoints are supported starting with the 3.9.47 release.
-* The existing endpoints are still supported.
-* The Connector contacts the existing endpoints first. If those endpoints aren't accessible, the Connector automatically contacts the new endpoints.
-* The new endpoints are not supported in the following scenarios:
-** If the Connector is installed in a Government region.
-** If you use the Connector with BlueXP backup and recovery or BlueXP classification. 
 
 .Endpoint to contact NetApp support during installation 
 
