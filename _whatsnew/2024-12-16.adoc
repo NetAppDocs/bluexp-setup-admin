@@ -1,4 +1,4 @@
-=== Secure endpoints to obtain Connector images
+=== New secure endpoints to obtain Connector images
 
 When you install the Connector, or when an automatic upgrade occurs, the Connector contacts repositories to download images for the installation or upgrade. By default, the Connector has always contacted the following endpoints:
 
