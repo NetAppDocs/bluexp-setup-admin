@@ -76,14 +76,10 @@ Note that the endpoints listed below are all CNAME entries.
 //end::nss-endpoints[]
 
 //tag::saas-endpoints[]
-| \https://*.api.bluexp.netapp.com
-
+| \https://\*.api.bluexp.netapp.com
 \https://api.bluexp.netapp.com
-
 \https://*.cloudmanager.cloud.netapp.com
-
 \https://cloudmanager.cloud.netapp.com
-
 \https://netapp-cloud-account.auth0.com
 
 | To provide SaaS features and services within BlueXP.
@@ -93,21 +89,59 @@ Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" 
 //end::saas-endpoints[]
 
 //tag::upgrade-endpoints[]
-| \https://*.blob.core.windows.net
+a| 
+Choose between two sets of endpoints:
 
+* Option 1 (recommended) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io
+\https://bluexpinfraprod.azurecr.io
+
+* Option 2
++
+\https://*.blob.core.windows.net
 \https://cloudmanagerinfraprod.azurecr.io
 
-| To upgrade the Connector and its Docker components.
+| To obtain images for Connector upgrades.
+
 //end::upgrade-endpoints[]
 
+//tag::upgrade-endpoints-explanation[]
+//Same text is also in endpoints-manual-install
+^1^ The endpoints listed in option 1 are recommended because they are more secure. We recommend that you set up your firewall to allow the endpoints listed in option 1, while disallowing the endpoints listed in option 2. Note the following about these endpoints:
++
+* The endpoints listed in option 1 are supported starting with the 3.9.47 release of the Connector. There is no backwards compatibility with previous releases of the Connector.
+* The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
+* The endpoints in option 1 are not supported if you use the Connector with BlueXP backup and recovery or BlueXP ransomware protection. In this case, you can disallow the endpoints listed in option 1, while allowing the endpoints listed in option 2.
+//end::upgrade-endpoints-explanation[]
+
 //tag::upgrade-endpoints-restricted-mode[]
-| \https://*.blob.core.windows.net
-
+|
+If the Connector is in an AWS Government region:
+\https://*.blob.core.windows.net
 \https://cloudmanagerinfraprod.azurecr.io
-This endpoint is not required in Azure Government regions.
 
+| To obtain images for Connector upgrades when the Connector is installed in an AWS Government region.
+
+| 
+If the Connector is in an Azure Government region:
+\https://*.blob.core.windows.net
 \https://occmclientinfragov.azurecr.us
-This endpoint is only required in Azure Government regions.
 
-| To upgrade the Connector and its Docker components.
+| To obtain images for Connector upgrades when the Connector is installed in an Azure Government region.
+ 
+a|
+If the Connector is in a commercial region or sovereign region, you can choose between two sets of endpoints:
+
+* Option 1 (recommended) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io
+\https://bluexpinfraprod.azurecr.io
+
+* Option 2
++
+\https://*.blob.core.windows.net
+\https://cloudmanagerinfraprod.azurecr.io
+
+| To obtain images for Connector upgrades when the Connector is installed in a commercial region or sovereign region.
 //end::upgrade-endpoints-restricted-mode[]
