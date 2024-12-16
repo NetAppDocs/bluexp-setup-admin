@@ -54,6 +54,8 @@ include::_include/endpoints-console.adoc[]
 
 //Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list-images-explanation]
+
 +
 include::_include/endpoints-manual-install.adoc[tag=update]
 
@@ -80,6 +82,9 @@ include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
++
+//Notes about the upgrade endpoints
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints-explanation]
 
 //Proxy server
 include::_include/networking.adoc[tag=proxy]
