@@ -15,7 +15,7 @@ summary: To troubleshoot issues with the Connector, you can work with NetApp Sup
 [.lead]
 To troubleshoot issues with the Connector, you can work with NetApp Support who might ask for your system ID, Connector version, or the latest AutoSupport messages. You can also view the NetApp Knowledge Base to troubleshoot issues yourself.
 
-.Related link
+.Related information
 
 link:task-get-help.html[Get help from NetApp Support].
 

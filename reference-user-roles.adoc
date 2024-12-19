@@ -61,6 +61,6 @@ If you're using BlueXP in standard mode, you won't have a BlueXP account. Instea
 
 |===
 
-.Related link
+.Related information
 
 link:task-managing-netapp-accounts.html[Manage your BlueXP account]
