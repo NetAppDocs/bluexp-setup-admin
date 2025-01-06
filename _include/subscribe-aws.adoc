@@ -30,6 +30,7 @@ For all other organizations or accounts, you'll need to manually associate the s
 //end::assignment[]
 
 * Select *Save*.
+[[subscribe-video]]
 +
 The following video shows the steps to subscribe from the AWS Marketplace:
 +
