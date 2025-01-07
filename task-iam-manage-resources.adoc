@@ -23,11 +23,7 @@ To start managing your resource hierarchy, you should be aware of the resources 
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
-. Select *Resources*.
-
-.Result
-
-The resources associated with your organization display in the *Resources* table.
+. Select *Resources* to view the Resources page.
 
 .What's next?
 
@@ -57,14 +53,11 @@ If you have a large number of resources in your organization, you can use the se
 
 . Select *Search*.
 
-.Result
-
-The contents of the Resources table refreshes to show the resources that match your search and filter selections.
 
 [#associate-resource]
 == Associate a resource with folders and projects
 
-If you want to make a resource available to another folder or project in your organization, then you'll need to create an association between the folder or project and the resource.
+If you want to make a resource available to folder or project in your organization, then you'll need to create an association between the folder or project and the resource.
 
 .Before you begin
 
@@ -82,9 +75,6 @@ Note that you can only select from the folders and projects for which you have a
 
 . Select *Associate resources*.
 
-.Result
-
-BlueXP associates the resource with the selected folders and projects. 
 
 * If you associated the resource with projects, members who have permissions for those projects now have the ability to access the resource in BlueXP.
 * If you associated the resource with a folder, a _Folder or project admin_ can now access the resource from within BlueXP IAM. link:concept-identity-and-access-management.html#resources[Learn about associating a resource with a folder].
@@ -103,10 +93,6 @@ To identify where a resource is available in your organization's hierarchy, you 
 .Steps
 
 . From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
-
-.Result
-
-BlueXP displays the folders and projects that are associated with the resource.
 
 The following example shows a resource that is associated with one project.
 
@@ -135,9 +121,6 @@ If you want to remove a discovered resource from the entire organization, you ne
 
 . Confirm that you want to remove the association by selecting *Delete*.
 
-.Result
-
-BlueXP removes the association. Members can no longer access the resource from that folder or project.
 
 == Related information
 
