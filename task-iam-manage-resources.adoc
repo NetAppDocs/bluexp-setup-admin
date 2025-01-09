@@ -43,8 +43,8 @@ NOTE: Amazon FSx for NetApp ONTAP resources aren't displayed on the IAM resource
 
 After you've found the resource that you're looking for, you can complete any of the following actions:
 
-* <<view-folders-and-projects,View the folders and projects that are associated with the resource>>
 * <<associate-resource,Associate the resource with additional folders and projects>>
+* <<view-folders-and-projects,View the folders and projects that are associated with the resource>>
 * <<remove-resource,Remove the resource from a folder or project>>
 
 [#associate-resource]
