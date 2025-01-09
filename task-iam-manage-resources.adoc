@@ -13,11 +13,14 @@ summary: Manage the resource hierarchy of your organization by associating resou
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP identity and access management (IAM) to associate a member with your organization, you provide permissions at the organization, folder, or project level. To ensure that those members have permissions to access the right resources, you'll need to manage the resource hierarchy of your organization by associating resources with specific projects and folders. A _resource_ is a working environment that BlueXP already manages.
+When you use BlueXP identity and access management (IAM) to associate a member with your organization, you provide permissions at the organization, folder, or project level. To ensure that those members have permissions to access the right resources, you'll need to manage the resource hierarchy of your organization by associating resources with specific projects and folders. A _resource_ is a storage resource that BlueXP already manages or is aware of (as in the case of resources from digital advisor that you have not discovered in BlueXP).
 
+Amazon
 == View the resources in your organization
 
-To start managing your resource hierarchy, you should be aware of the resources that are associated with your organization.
+You can view both discovered and undiscovered resources that are associated with your organization. Undiscovered resources are typically storage resources known through digital advisor that you have not yet discovered. 
+
+NOTE: Amazon FSx for NetApp ONTAP resources aren't displayed on the IAM resources page as you cannot associate them with an IAM role. You can view these resources on their respective canvas or from workload factory.
 
 .Steps
 
@@ -50,6 +53,8 @@ If you have a large number of resources in your organization, you can use the se
 * *Platform*: Select one or more platforms, such as Amazon Web Services.
 * *Resources*: Select one or more resources, such as Cloud Volumes ONTAP.
 * *Organization, folder, or project*: Select the entire organization, a specific folder, or a specific project.
++
+
 
 . Select *Search*.
 
