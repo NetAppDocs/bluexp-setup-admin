@@ -15,7 +15,6 @@ summary: Manage the resource hierarchy of your organization by associating resou
 [.lead]
 When you use BlueXP identity and access management (IAM) to associate a member with your organization, you provide permissions at the organization, folder, or project level. To ensure that those members have permissions to access the right resources, you'll need to manage the resource hierarchy of your organization by associating resources with specific projects and folders. A _resource_ is a storage resource that BlueXP already manages or is aware of (as in the case of resources from digital advisor that you have not discovered in BlueXP).
 
-Amazon
 == View the resources in your organization
 
 You can view both discovered and undiscovered resources that are associated with your organization. Undiscovered resources are typically storage resources known through digital advisor for which you have not added as working environments. 
