@@ -18,7 +18,7 @@ When you use BlueXP identity and access management (IAM) to associate a member w
 Amazon
 == View the resources in your organization
 
-You can view both discovered and undiscovered resources that are associated with your organization. Undiscovered resources are typically storage resources known through digital advisor that you have not yet discovered. 
+You can view both discovered and undiscovered resources that are associated with your organization. Undiscovered resources are typically storage resources known through digital advisor for which you have not added as working environments. 
 
 NOTE: Amazon FSx for NetApp ONTAP resources aren't displayed on the IAM resources page as you cannot associate them with an IAM role. You can view these resources on their respective canvas or from workload factory.
 
