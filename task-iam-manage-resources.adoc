@@ -27,24 +27,7 @@ NOTE: Amazon FSx for NetApp ONTAP resources aren't displayed on the IAM resource
 
 . Select *Resources* to view the Resources page.
 
-.What's next?
-
-To find a specific resource, you can <<find-resources,search and filter the contents of the table>>. 
-
-After you've found the resource that you're looking for, you can complete any of the following actions:
-
-* <<view-folders-and-projects,View the folders and projects that are associated with the resource>>
-* <<associate-resource,Associate the resource with additional folders and projects>>
-* <<remove-resource,Remove the resource from a folder or project>>
-
-[#find-resources]
-== Find specific resources in your organization
-
-If you have a large number of resources in your organization, you can use the search and filter options to find a specific resource. 
-
-.Steps
-
-. From the *Resources* page, select *Advanced Search & Filtering*.
+. Select *Advanced Search & Filtering*.
 
 . Use any of the available options to find the resource that you're looking for:
 +
@@ -54,9 +37,15 @@ If you have a large number of resources in your organization, you can use the se
 * *Organization, folder, or project*: Select the entire organization, a specific folder, or a specific project.
 +
 
-
 . Select *Search*.
 
+.What's next?
+
+After you've found the resource that you're looking for, you can complete any of the following actions:
+
+* <<view-folders-and-projects,View the folders and projects that are associated with the resource>>
+* <<associate-resource,Associate the resource with additional folders and projects>>
+* <<remove-resource,Remove the resource from a folder or project>>
 
 [#associate-resource]
 == Associate a resource with folders and projects
