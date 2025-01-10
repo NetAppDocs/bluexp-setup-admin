@@ -4,7 +4,7 @@ This release of the BlueXP Connector includes minor security improvements and bu
 
 At this time, the 3.9.48 release is available for standard mode and restricted mode.
 
-=== === BlueXP identity and access management
+=== BlueXP identity and access management
 
 * The Resources page now displays undiscovered resources. Undiscovered resources are storage resources that BlueXP knows about but you have not created working environments for. For example, resources that display in digital advisor that do not yet have working environments display on the Resources page as undiscovered resources.
 
