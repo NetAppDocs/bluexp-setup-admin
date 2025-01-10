@@ -1,0 +1,22 @@
+=== Connector 3.9.48
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes.
+
+At this time, the 3.9.48 release is available for standard mode and restricted mode.
+
+=== BlueXP identity and access management
+
+* The Resources page now displays undiscovered resources. Undiscovered resources are storage resources that BlueXP knows about but you have not created working environments for. For example, resources that display in digital advisor that do not yet have working environments display on the Resources page as undiscovered resources.
+
+* Amazon FSx for NetApp ONTAP resources aren't displayed on the IAM resources page as you cannot associate them with an IAM role. You can view these resources on their respective canvas or from workloads.
+
+=== Create a support case for additional BlueXP services
+
+After you register BlueXP for support, you can create a support case directly from the BlueXP web-based console. When you create the case, you need to select the service that the issue is associated with. 
+
+Starting with this release, you can now create a support case and associate it with additional BlueXP services:
+
+* BlueXP disaster recovery
+* BlueXP ransomware protection
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html[Learn more about creating a support case].
