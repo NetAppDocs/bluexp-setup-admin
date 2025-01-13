@@ -111,7 +111,7 @@ If you have an existing Connector running on RHEL 7 or CentOS 7, we don't suppor
 . Perform a _new_ Connector installation.
 . Configure the Connector to discover the working environments that the old Connector was managing.
 
-== Related links
+== Related informations
 
 === How to get started with RHEL 8 and 9
 
