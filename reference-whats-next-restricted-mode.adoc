@@ -25,6 +25,6 @@ For help, refer to the documentation for these services:
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html[On-premises ONTAP cluster docs^]
 * https://docs.netapp.com/us-en/bluexp-replication/index.html[Replication docs^]
 
-.Related link
+.Related information
 
 link:concept-modes.html[BlueXP deployment modes]

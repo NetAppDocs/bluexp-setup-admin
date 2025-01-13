@@ -19,6 +19,6 @@ TIP: If you installed a Connector in AWS, Microsoft Azure, or Google Cloud, then
 
 For help, go to the https://docs.netapp.com/us-en/bluexp-family/[home page for the BlueXP documentation^] to view the docs for all BlueXP services.
 
-.Related link
+.Related information
 
 link:concept-modes.html[BlueXP deployment modes]
