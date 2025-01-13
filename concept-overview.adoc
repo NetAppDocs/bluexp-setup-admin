@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-overview.html
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers
-summary: NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments. The BlueXP SaaS platform includes services that provide storage management, data mobility, data protection, and data analysis and control. Management capabilities are provided through a web-based console and APIs.
+summary: NetApp BlueXP provides your organization with a single control plane that helps you build, protect, and govern data across your on-premises and cloud environments.
 ---
 
 = Learn about BlueXP
@@ -17,47 +17,96 @@ NetApp BlueXP provides your organization with a single control plane that helps 
 
 == Features
 
-The BlueXP platform provides four main pillars of data management: storage, mobility, protection, and analysis and control.
+BlueXP provides unified control of storage across your hybrid multicloud and integrated data services to protect, secure, and optimize data.
 
-Storage:: 
-Discover, deploy, and manage storage, whether it's in AWS, Azure, Google Cloud, or on-premises.
+=== Unified control of storage from the BlueXP canvas
 
-* Set up and use cloud file-storage services:
-+
-** https://bluexp.netapp.com/azure-netapp-files[Azure NetApp Files^]
-** https://bluexp.netapp.com/fsx-for-ontap[Amazon FSx for NetApp ONTAP^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp[Cloud Volumes Service for Google Cloud^]
+The _BlueXP canvas_ enables you to discover, deploy, optimize, and manage cloud and on-premises storage. The canvas provides a single location for all storage management.
 
-* Set up and use https://bluexp.netapp.com/ontap-cloud[Cloud Volumes ONTAP^] for efficient, multi-protocol data management across clouds.
+==== Supported cloud and on-premises storage
 
-* Discover and manage https://bluexp.netapp.com/netapp-on-premises[on-premises storage^]:
-** E-Series systems
-** ONTAP clusters
-** StorageGRID systems
+BlueXP enables you to manage the following types of storage from the BlueXP canvas:
 
-Mobility::
-Move data where it's needed by syncing, copying, and tiering data.
+Cloud storage solutions::
+* Amazon FSx for NetApp ONTAP
+* Azure NetApp Files
+* Cloud Volumes ONTAP
 
-** https://bluexp.netapp.com/cloud-sync-service[Copy and sync^]
-** https://bluexp.netapp.com/cloud-tiering[Tiering^]
+On-premises flash and object storage::
+* E-Series systems
+* ONTAP clusters
+* StorageGRID systems
 
-Protection::
-Use automated protection mechanisms to protect data against data loss, unplanned outages, ransomware, and other cyber threats.
+Cloud object storage::
+* Amazon S3 storage
+* Azure Blob storage
+* Google Cloud Storage
 
-** https://bluexp.netapp.com/cloud-backup[Backup and recovery^]
-** https://bluexp.netapp.com/disaster-recovery[Disaster recovery^]
-** https://bluexp.netapp.com/replication[Replication^]
-** https://bluexp.netapp.com/ransomware-protection[Ransomware protection^]
+==== Storage management from working environments
 
-Analysis and control::
-Use tools to monitor, map, and optimize your data storage and infrastructure. Gain actionable intelligence to optimize storage health, resiliency, and economics.
+On the BlueXP canvas, _working environments_ represent the cloud and on-premises storage that you've discovered or deployed. You can select a working environment and integrate it with BlueXP data services or enter the working environment to complete storage management actions like adding volumes.
 
-** https://bluexp.netapp.com/netapp-cloud-data-sense[Classification^]
-** https://bluexp.netapp.com/digital-advisor[Digital advisor^]
-** https://bluexp.netapp.com/digital-advisor[Economic efficiency^]
-** https://bluexp.netapp.com/digital-advisor[Operational resiliency^]
+image:screenshot-canvas.png["A screenshot of the BlueXP canvas that shows several working environments, one of which is selected and shows the ability to enable BlueXP data services or to select Enter Working Environment to manage storage."]
 
-https://bluexp.netapp.com/[Learn more about how you can use BlueXP to manage data across your hybrid multicloud environment^]
+=== Integrated services to protect, secure, and optimize data
+
+BlueXP includes a comprehensive suite of integrated data services to help you maintain the security, integrity, and availability of your data across your on-premises and cloud storage environments.
+
+BlueXP alerts::
+View issues related to capacity, availability, performance, protection, and security in your ONTAP environment.
+
+BlueXP automation catalog::
+Use scripted solutions to automate the deployment and integration of NetApp products and services.
+
+BlueXP backup and recovery::
+Back up and restore cloud and on-prem data.
+
+BlueXP classification::
+Get your application data and cloud environments privacy ready.
+
+BlueXP cloud ops::
+Gain visibility into your cloud compute spending and identify potential savings.
+
+BlueXP copy and sync::
+Sync data between on-prem and cloud data stores.
+
+BlueXP digital advisor::
+Use predictive analytics and proactive support to optimize your data infrastructure.
+
+BlueXP digital wallet::
+Manage and monitor your licenses and subscriptions.
+
+BlueXP disaster recovery::
+Protect on-premises VMware workloads using VMware Cloud on Amazon FSx for ONTAP as a disaster recovery site.
+
+BlueXP economic efficiency::
+Identify clusters with current or forecasted low capacity and implement data tiering or additional capacity recommendations.
+
+BlueXP operational resiliency::
+Implement automated firmware and software configuration risk remediations to maintain the health of ONTAP clusters.
+
+BlueXP ransomware protection::
+Detect anomalies that might result in ransomware attacks. Protect and recover workloads.
+
+BlueXP replication::
+Replicate data between storage systems to support backup and disaster recovery.
+
+BlueXP software updates::
+Automate the assessment, planning, and execution of ONTAP upgrades.
+
+BlueXP sustainability dashboard::
+Analyze the sustainability of your storage systems.
+
+BlueXP tiering::
+Extend your on-prem ONTAP storage to the cloud.
+
+BlueXP volume caching::
+Create a writable cache volume to speed up access to data or offload traffic from heavily accessed volumes.
+
+BlueXP workload factory::
+Design, set up, and operate key workloads using Amazon FSx for NetApp ONTAP.
+
+https://www.netapp.com/bluexp/[Learn more about BlueXP and the available data services^]
 
 == Supported cloud providers
 
@@ -69,7 +118,7 @@ Pricing for BlueXP depends on the services that you plan to use. https://bluexp.
 
 == How BlueXP works
 
-BlueXP includes a web-based console that's provided through the SaaS layer, a resource and access management system, and Connectors that manage working environments and enable BlueXP cloud services.
+BlueXP includes a web-based console that's provided through the SaaS layer, a resource and access management system, Connectors that manage working environments and enable BlueXP cloud services, and different deployment modes to meet your business requirements.
 
 === Software-as-a-service
 
@@ -95,9 +144,9 @@ You don't need a Connector to get started with BlueXP, but you'll need to create
 
 link:concept-connectors.html[Learn more about Connectors].
 
-=== Deployment modes 
+=== Deployment modes
 
-BlueXP is supported in environments that have security and connectivity restrictions. You can use _restricted mode_ or _private mode_ to limit outbound connectivity to the BlueXP SaaS layer.
+BlueXP offers three deployment modes. _Standard mode_ leverages the BlueXP software as a service (SaaS) layer to provide full functionality. If your environment has security and connectivity restrictions, _restricted mode_ and _private mode_ limit outbound connectivity to the BlueXP SaaS layer.
 
 link:concept-modes.html[Learn more about BlueXP deployment modes].
 

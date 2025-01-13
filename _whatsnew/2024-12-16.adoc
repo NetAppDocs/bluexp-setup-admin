@@ -1,0 +1,28 @@
+=== New secure endpoints to obtain Connector images
+
+When you install the Connector, or when an automatic upgrade occurs, the Connector contacts repositories to download images for the installation or upgrade. By default, the Connector has always contacted the following endpoints:
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+The first endpoint includes a wild card because we can't provide a definitive location. The load balancing of the repository is managed by the service provider, which means the downloads can happen from different endpoints.
+
+For increased security, the Connector can now download installation and upgrades images from dedicated endpoints:
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+We recommend that you start using these new endpoints by removing the existing endpoints from your firewall rules and allowing the new endpoints.
+
+These new endpoints are supported starting with the 3.9.47 release of the Connector. There is no backwards compatibility with previous releases of the Connector.
+
+Note the following:
+
+* The existing endpoints are still supported. If you don't want to use the new endpoints, no changes are required.
+* The Connector contacts the existing endpoints first. If those endpoints aren't accessible, the Connector automatically contacts the new endpoints.
+* The new endpoints are not supported in the following scenarios:
+** If the Connector is installed in a Government region.
+** If you use the Connector with BlueXP backup and recovery or BlueXP ransomware protection.
+
++
+For both of these scenarios, you can continue to use the existing endpoints.
