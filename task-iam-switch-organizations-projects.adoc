@@ -69,7 +69,7 @@ If you have multiple Connectors, you can switch between them to see the working 
 
 BlueXP refreshes and shows the working environments associated with the selected Connector.
 
-.Related link
+.Related information
 
 link:task-iam-associate-connectors.html[Associate Connectors with folders and projects].
 
