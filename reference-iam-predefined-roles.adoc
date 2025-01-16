@@ -33,11 +33,18 @@ Permissions::
 
 | Create, modify or delete working environments (add or discover new resources using the BlueXP canvas) |	Yes | Yes 
 
-| Create projects/folders, including renaming, deleting, and editing | Yes | Yes 
+| Create projects/folders, including deleting\| Yes | No
+| Rename existing projects/folders | Yes | Yes 
 
 | Assign roles and add users | Yes | Yes
 
-| Associate resources and connectors with folders and projects  | Yes | Yes
+| Associate resources with folders and projects  | Yes | Yes
+
+| Associate connectors with folders and projects  | Yes | No
+
+| Remove connectors from a folders and projects  | Yes | No
+
+| Manage connectors (edit certificates, settings, and so on)  | Yes | No
 
 | Manage credentials from Settings > Credentials  | Yes | Yes
 
