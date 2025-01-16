@@ -33,7 +33,8 @@ Permissions::
 
 | Create, modify or delete working environments (add or discover new resources using the BlueXP canvas) |	Yes | Yes 
 
-| Create projects/folders, including deleting\| Yes | No
+| Create projects/folders, including deleting | Yes | No
+
 | Rename existing projects/folders | Yes | Yes 
 
 | Assign roles and add users | Yes | Yes
