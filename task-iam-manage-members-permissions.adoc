@@ -70,9 +70,7 @@ link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 
 . Select *Add*.
 
-.Result
 
-BlueXP adds the user to the organization.
 
 .What's next?
 
@@ -118,10 +116,6 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 . Select *Close*.
 
-.Result
-
-BlueXP adds the service account to your organization.
-
 -- 
 
 ==== 
@@ -131,6 +125,14 @@ BlueXP adds the service account to your organization.
 == View organization members
 
 You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy.
+
+Here's an example of a member who is assigned the _Folder or project admin_ role for a folder, which provides permissions to the three projects in the folder.
+
+image:screenshot-iam-member-details.png[A screenshot of the details page for a member who has permissions to a project and a folder.]
+
+Here's another example that shows a member who has the Organization admin role, which gives the user access to all resources in the organization.
+
+image:screenshot-iam-member-details-org-admin.png[A screenshot of the details page for a member who has Organization admin permissions.]
 
 .About this task
 
@@ -146,17 +148,6 @@ The members of your organization appear in the *Members* table.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
-.Result
-
-BlueXP displays details about the member, which includes the folders and projects that the member has permissions for across your organization's resource hierarchy.
-
-Here's an example of a member who is assigned the _Folder or project admin_ role for a folder, which provides permissions to the three projects in the folder.
-
-image:screenshot-iam-member-details.png[A screenshot of the details page for a member who has permissions to a project and a folder.]
-
-Here's another example that shows a member who has the Organization admin role, which gives the user access to all resources in the organization.
-
-image:screenshot-iam-member-details-org-admin.png[A screenshot of the details page for a member who has Organization admin permissions.]
 
 .Related information
 
@@ -193,9 +184,6 @@ link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 
 . Select *Add new roles*.
 
-.Result
-
-BlueXP adds the roles. The member now has permissions for the resources in the organization, folder, or project that you selected.
 
 === Change from one role to another
 
@@ -219,9 +207,7 @@ If you need to change the roles for multiple members in your organization, you c
 
 . In the table, navigate to the organization, folder, or project and then select a new role.
 
-.Result
 
-BlueXP updates the roles associated with that member at the organization, folder, and project level.
 
 -- 
 
@@ -242,10 +228,6 @@ BlueXP updates the roles associated with that member at the organization, folder
 image:screenshot-iam-define-role.png[A screenshot of the Access portion of the edit dialog box that enables you to choose the Define role action after selecting two or more members.]
 
 . Select the role that you'd like to assign to the members and then select *Define*.
-
-.Result
-
-BlueXP updates the roles for all of the members that you selected.
 
 -- 
 
@@ -271,9 +253,6 @@ If a member has permissions in your organization to _only_ one folder or project
 
 . In the table, navigate to the folder or project level and then select image:icon-delete.png[An icon of a garbage can]
 
-.Result
-
-BlueXP removes permissions for that member at the folder or project level.
 
 == Recreate the credentials for a service account
 
@@ -299,9 +278,6 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 . Select *Close*.
 
-.Result
-
-A new client ID and client secret are now associated with the service account.
 
 == Remove a member from your organization
 
@@ -317,9 +293,6 @@ This task doesn't delete the member's BlueXP account or NetApp Support Site acco
 
 . Confirm that you want to remove the member from your organization.
 
-.Result
-
-BlueXP removes the member. If that member logs in to BlueXP again, they no longer have access to your BlueXP organization.
 
 == Related information
 

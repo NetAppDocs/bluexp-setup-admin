@@ -92,6 +92,27 @@ View compliance information and generate reports for resources that they have pe
 +
 No other actions are available to a member who has this role.
 
+=== Storage viewer
+
+Description::
+This is a description
+
+Permissions::
+This is a permission list
+
+
+
+=== Storage admin
+
+Description::
+This is a description
+
+Permissions::
+This is a permission list
+
+
+
+
 == Related links
 
 * link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
