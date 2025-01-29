@@ -16,13 +16,19 @@ summary: BlueXP identity and access management includes several predefined roles
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into three categories: platform, application, and data service.
 
 == Platform roles
-Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions.
+Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions.BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
-BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. The Organization admin role has permissions in all folders and projects; while the Folder or project admin only has permissions in the folder or project to which they have been assigned.
+=== Organization admin
+Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service.
+
+
+=== Folder or project admin
+Allows a user unrestricted access to specific projects and folders to which they are assigned.  Can add members to projects or folders they manage, as well as perform any BlueXP task and use any data service within the folder or project they are assigned.
+
 
 The Folder or Project admin role cannot create connectors.
 
-Permissions::
+=== Platform role comparison table
 [cols=5*,options="header",cols="24,19,19"]
 |===
 
@@ -72,25 +78,42 @@ Application roles provide access to BlueXP applications like Active IQ Digital A
 === Storage viewer
 
 Description::
-Provides read-only access to digital advisor. This role is typically assigned to users who are responsible for monitoring the health of an organization's storage resources. Users with this role can view digital advisor data to help create upgrade plans, and create efficiency plans. 
+Provides read-only access to health and governance functions of BlueXP. This role is typically assigned to users who are responsible for monitoring the health of an organization's storage resources. Users with this role can view multiple applications within BLueXP to create software update plans, efficiency plans, as well as view overall storage health. 
 
 Permissions::
-Has read-only access to digital advisor.
+
 Cannot perform any actions in BlueXP, including creating working environments or connectors.
-## how do software updates work for this role ##
+Has read-only access to storage health and governance functions of BlueXP, including the following: 
+* Digital advisor
+* Operational resilency
+* Software updates (can download upgrade plans)
+* Digital wallet
+* Economic efficiency
+* Sustainability dashboard
+
+
 
 
 === Storage admin
 
 Description::
-Provides the ability for a digital advisor user perform storage administration functions in BlueXP such as software updates and creating and deleting BlueXP working environments.
+Provides user the ability perform storage administration functions in BlueXP such as software updates and creating and deleting BlueXP working environments.
 
 Permissions::
-Can access digital advisor and perform all digital advisor actions.
+
 Can view the BlueXP canvas.
 Can create and manage BlueXP connectors.
-## Can perform software updates. ##
-Can manage Cloud Volume ONTAP subscriptions ## (only those?) ##
+Has read/write access to storage health and governance functions of BlueXP, including the following: 
+* Digital advisor
+* Operational resilency
+* Software updates (can perform software updates)
+* Digital wallet
+* Economic efficiency
+* Sustainability dashboard
+
+
+
+
 
 
 == Data services roles
