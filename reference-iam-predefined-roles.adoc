@@ -78,6 +78,8 @@ Permissions::
 Has read-only access to digital advisor.
 Cannot perform any actions in BlueXP, including creating working environments or connectors.
 ## how do software updates work for this role ##
+
+
 === Storage admin
 
 Description::
