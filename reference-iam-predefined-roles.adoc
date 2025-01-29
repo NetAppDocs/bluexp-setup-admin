@@ -16,6 +16,8 @@ summary: BlueXP identity and access management includes several predefined roles
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into three categories: platform, application, and data service.
 
 == Platform roles
+Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions.
+
 BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. The Organization admin role has permissions in all folders and projects; while the Folder or project admin only has permissions in the folder or project to which they have been assigned.
 
 The Folder or Project admin role cannot create connectors.
@@ -65,16 +67,32 @@ To achieve this, a person assigned the Organization admin role in XYZ Corporatio
 Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
 
 == Application roles
-Application roles provide access to BlueXP applications like AIQ Digital Advisor and Cloud Insights.
+Application roles provide access to BlueXP applications like Active IQ Digital Advisor (also known as Digital Advisor).
 
 === Storage viewer
 
+Description::
+Provides read-only access to digital advisor. This role is typically assigned to users who are responsible for monitoring the health of an organization's storage resources. Users with this role can view digital advisor data to help create upgrade plans, and create efficiency plans. 
 
+Permissions::
+Has read-only access to digital advisor.
+Cannot perform any actions in BlueXP, including creating working environments or connectors.
+## how do software updates work for this role ##
 === Storage admin
 
-== Data services roles
-Data services roles allow users accesscan complete their tasks in any project or folder.
+Description::
+Provides the ability for a digital advisor user perform storage administration functions in BlueXP such as software updates and creating and deleting BlueXP working environments.
 
+Permissions::
+Can access digital advisor and perform all digital advisor actions.
+Can view the BlueXP canvas.
+Can create and manage BlueXP connectors.
+## Can perform software updates. ##
+Can manage Cloud Volume ONTAP subscriptions ## (only those?) ##
+
+
+== Data services roles
+Data services roles provide users permission to use to data services within the organization, project or folder to which they have access.
 
 === SnapCenter admin
 
@@ -86,7 +104,7 @@ A member who has this role can complete the following actions in BlueXP:
 +
 * Complete any action from Backup and recovery > Applications
 * Manage all working environments in the projects and folders for which they have permissions
-* Use all BlueXP services
+* Use all BlueXP services ## do we mean "data services" here? ##
 
 === Classification viewer
 
@@ -98,23 +116,11 @@ View compliance information and generate reports for resources that they have pe
 +
 No other actions are available to a member who has this role.
 
-=== Storage viewer
-
-Description::
-This is a description
-
-Permissions::
-This is a permission list
 
 
 
-=== Storage admin
 
-Description::
-This is a description
 
-Permissions::
-This is a permission list
 
 
 
