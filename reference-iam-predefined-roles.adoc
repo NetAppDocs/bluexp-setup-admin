@@ -13,7 +13,7 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
+BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into three categories: platform, application, and data service.
 
 == Platform roles
 BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. The Organization admin role has permissions in all folders and projects; while the Folder or project admin only has permissions in the folder or project to which they have been assigned.
@@ -64,10 +64,16 @@ To achieve this, a person assigned the Organization admin role in XYZ Corporatio
 +
 Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
 
+== Application roles
+Application roles provide access to BlueXP applications like AIQ Digital Advisor and Cloud Insights.
 
+=== Storage viewer
+
+
+=== Storage admin
 
 == Data services roles
-Data services roles can complete their tasks in any project or folder.
+Data services roles allow users accesscan complete their tasks in any project or folder.
 
 
 === SnapCenter admin
