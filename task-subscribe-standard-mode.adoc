@@ -5,7 +5,7 @@ keywords: subscribe, subscription, marketplace subscription, paygo, contract, an
 summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate or through an annual contract. If you purchased a license from NetApp, you also need to subscribe to the marketplace offering. Your license is always charged first, but you'll be charged at the hourly rate if you exceed your licensed capacity or if the license's term expires.
 ---
 
-= Subscribe to BlueXP (standard mode)
+= Subscribe to BlueXP data services (standard mode)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,16 +15,17 @@ summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for B
 [.lead]
 include::_include/subscribe-intro.adoc[]
 
-A marketplace subscription enables charging for the following BlueXP services:
+A marketplace subscription enables charging for the following BlueXP data services:
 
 * Backup and recovery
-* Classification
 * Cloud Volumes ONTAP
 * Tiering
+* Ransomware protection
+* Disaster recovery
 
 .Before you begin
 
-Subscribing to BlueXP involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
+Subscribing to BlueXP data services involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
 
 // start tabbed area
 
