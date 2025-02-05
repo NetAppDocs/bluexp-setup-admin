@@ -16,7 +16,7 @@ summary: BlueXP identity and access management includes several predefined roles
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into three categories: platform, application, and data service.
 
 == Platform roles
-Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions.BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
+Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
 === Organization admin
 Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service.
@@ -128,7 +128,7 @@ A member who has this role can complete the following actions in BlueXP:
 +
 * Complete any action from Backup and recovery > Applications
 * Manage all working environments in the projects and folders for which they have permissions
-* Use all BlueXP services ## do we mean "data services" here? ##
+* Use all BlueXP services 
 
 === Classification viewer
 
