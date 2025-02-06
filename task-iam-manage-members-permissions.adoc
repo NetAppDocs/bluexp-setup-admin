@@ -248,7 +248,7 @@ link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 . Select *Add new roles*.
 
 
-=== Change or remove an assigned role
+=== Change a member's assigned role
 
 You can change the assigned role for a at the organization, folder, or project level. Members can have different roles at different levels of your organization.
 
@@ -258,7 +258,7 @@ You can change the assigned role for a at the organization, folder, or project l
 
 . In the table, expand the respective row for organization, folder, or project where you want to change the member's assigned role and select *View* in the *Role* column to view the roles assigned to this member.
 
-.. To change a member's role, elect *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one application role to another. 
+. To change a member's role, elect *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one application role to another. You'll be asked to confirm the change.
 
 .. To unassign a member's role, select image:icon-delete.png["An icon that resembles a trash can"] next to the role to unassign the member the respective role. You'll be asked to confirm the removal.
 
@@ -333,11 +333,9 @@ If a member has permissions in your organization to _only_ one folder or project
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
-. In the table, navigate to the folder or project level and then select image:icon-delete.png[An icon of a garbage can]
+. In the table, navigate to the folder or project level and then select image:icon-delete.png[An icon of a garbage can]. You'll be asked to confirm the removal.
 
 
-
-. Select *Close*.
 
 
 
