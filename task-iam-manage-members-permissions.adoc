@@ -82,13 +82,15 @@ Note the following:
 link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization or grant the user further permissions in the selected area, select *Add role*, specify another folder or project or a different role category and then choose a role.
 
-. Select *Add*.
-
-
-
-.What's next?
-
+. Select *Add*. 
++
 The user should receive an email from NetApp BlueXP. The email includes information that the member can use to access BlueXP.
+
+
+
+
+
+
 
 -- 
 
@@ -133,7 +135,7 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 // end tabbed area 
 
-== View organization members
+=== View organization members
 
 You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy.
 
@@ -159,7 +161,7 @@ The members of your organization appear in the *Members* table.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
-== Remove a member from your organization
+=== Remove a member from your organization
 
 You might need to remove a member from your organization--for example, if they left your company.
 
@@ -171,7 +173,7 @@ Removing a member from your organization doesn't delete the member's BlueXP acco
 
 . Confirm that you want to remove the member from your organization.
 
-== Recreate the credentials for a service account
+=== Recreate the credentials for a service account
 
 You can recreate the credentials (client ID and client secret) for a service account at any time. You might recreate the credentials if you lost them or if your business requires that you rotate security credentials after a period of time.
 
@@ -262,7 +264,7 @@ You can change the assigned role for a at the organization, folder, or project l
 
 
 
-
+//// 
 // keeping this around but hiding it, taking a bulk action was removed
 If you need to change the roles for multiple members in your organization, you can use a bulk action to complete the changes all at once.
 
@@ -313,6 +315,8 @@ image:screenshot-iam-define-role.png[A screenshot of the Access portion of the e
 // end tabbed area
 
 // end of commented out section
+
+////
 
 === Unassign a role from a member
 
