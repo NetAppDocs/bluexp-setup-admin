@@ -171,6 +171,28 @@ Removing a member from your organization doesn't delete the member's BlueXP acco
 
 . Confirm that you want to remove the member from your organization.
 
+== Recreate the credentials for a service account
+
+You can recreate the credentials (client ID and client secret) for a service account at any time. You might recreate the credentials if you lost them or if your business requires that you rotate security credentials after a period of time.
+
+.About this task
+
+Recreating the credentials deletes the existing credentials for the service account and then creates new credentials. You will not be able to use the previous credentials.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
+
+. In the *Members* table, navigate to a service account, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Recreate secrets*.
+
+. Select *Recreate*.
+
+. Download or copy the client ID and client secret.
++
+The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely.
+
 
 .Related information
 
@@ -292,17 +314,16 @@ image:screenshot-iam-define-role.png[A screenshot of the Access portion of the e
 
 // end of commented out section
 
-=== Remove permissions for a folder or project
+=== Unassign a role from a member
 
 You can remove a member's permissions to a specific folder or project by removing their role.
 
-.About this task
 
 If a member has permissions in your organization to _only_ one folder or project, you can't remove that role. You have two choices:
 
 * If you want the member to have permissions to another part of the resource hierarchy, you need to add that role first and then delete the existing role.
 
-* If you don't want the member to have permissions to anything, then you can simply remove the member from your organization.
+* If you don't want the member to have permissions to anything, then you should remove the member from your organization.
 
 .Steps
 
@@ -311,31 +332,8 @@ If a member has permissions in your organization to _only_ one folder or project
 . In the table, navigate to the folder or project level and then select image:icon-delete.png[An icon of a garbage can]
 
 
-== Recreate the credentials for a service account
-
-You can recreate the credentials (client ID and client secret) for a service account at any time. You might recreate the credentials if you lost them or if your business requires that you rotate security credentials after a period of time.
-
-.About this task
-
-Recreating the credentials deletes the existing credentials for the service account and then creates new credentials. You will not be able to use the previous credentials.
-
-.Steps
-
-. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
-
-. Select *Members*.
-
-. In the *Members* table, navigate to a service account, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Recreate secrets*.
-
-. Select *Recreate*.
-
-. Download or copy the client ID and client secret.
-+
-The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely.
 
 . Select *Close*.
-
-== Unassign a role
 
 
 
