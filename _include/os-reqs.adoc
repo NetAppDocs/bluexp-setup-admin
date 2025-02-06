@@ -108,9 +108,11 @@ Notes:
 //end::os-private[]
 
 //tag::cpu-ram[]
-CPU:: 8 cores or 8 vCPUs
+Host can be of any architecture that meets these size requirements.
 
-RAM:: 32 GB
+* CPU:: 8 cores or 8 vCPUs
+
+* RAM:: 32 GB
 //end::cpu-ram[]
 
 //tag::aws-ec2[]
