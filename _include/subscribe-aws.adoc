@@ -1,14 +1,18 @@
+The following video shows the steps to subscribe to BlueXP from the AWS Marketplace:
+
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto, title="Subscribe to BlueXP from the AWS Marketplace"]
+
 .Steps
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 
-. Select the action menu for a set of credentials and then select *Associate Subscription*.
+. Select the action menu for a set of credentials and then select *Configure Subscription*.
 +
 You must select credentials that are associated with a Connector. You can't associate a marketplace subscription with credentials that are associated with BlueXP.
 +
-image:screenshot_associate_subscription.png[A screenshot of the action menu for a set of existing credentials.]
+image:screenshot_aws_configure_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
-. To associate the credentials with an existing subscription, select the subscription from the down-down list and select *Associate*.
+. To associate the credentials with an existing subscription, select the subscription from the down-down list and select *Configure*.
 
 . To associate the credentials with a new subscription, select *Add Subscription > Continue* and follow the steps in the AWS Marketplace:
 
@@ -30,7 +34,3 @@ For all other organizations or accounts, you'll need to manually associate the s
 //end::assignment[]
 
 * Select *Save*.
-+
-The following video shows the steps to subscribe from the AWS Marketplace:
-+
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto, title="Subscribe to BlueXP from the AWS Marketplace"]

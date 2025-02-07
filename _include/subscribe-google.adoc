@@ -2,11 +2,11 @@
 
 . In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 
-. Select the action menu for a set of credentials and then select *Associate Subscription*.
-+
+. Select the action menu for a set of credentials and then select *Configure Subscription*.
++new screenshot needed (TS)
 image:screenshot_gcp_add_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
-. To associate the credentials with an existing subscription, select a Google Cloud project and subscription from the down-down list, and then select *Associate*.
+. To configure an existing subscription with the selected credentials, select a Google Cloud project and subscription from the drop-down list, and then select *Configure*.
 +
 image:screenshot_gcp_associate.gif[A screenshot of a Google Cloud project and subscription selected for Google Cloud credentials.]
 

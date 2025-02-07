@@ -1,16 +1,66 @@
 //tag::endpoint-list[]
 Endpoints contacted during manual installation::
 When you manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:
-
-* \https://support.netapp.com
++
 * \https://mysupport.netapp.com
 * \https://signin.b2c.netapp.com (this endpoint is the CNAME URL for \https://mysupport.netapp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* To obtain images, the installer needs access to one of these two sets of endpoints:
++
+** Option 1 (recommended):
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+** Option 2:
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
++
 //end::endpoint-list[]
+
+//tag::endpoint-list-restricted[]
+Endpoints contacted during manual installation::
+When you manually install the Connector on your own Linux host, the installer for the Connector requires access to several URLs during the installation process.
++
+* The following endpoints are always contacted no matter where you install the Connector:
++
+** \https://mysupport.netapp.com
+** \https://signin.b2c.netapp.com (this endpoint is the CNAME URL for \https://mysupport.netapp.com)
+** \https://cloudmanager.cloud.netapp.com/tenancy
+** \https://stream.cloudmanager.cloud.netapp.com
+** \https://production-artifacts.cloudmanager.cloud.netapp.com
+
+* If you install the Connector in an AWS Government region, the installer also needs access to these endpoints:
++
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+* If you install the Connector in an Azure Government region, the installer also needs access to these endpoints:
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
++
+* If you install the Connector in a commercial region or sovereign region, you can choose between two sets of endpoints:
++
+** Option 1 (recommended):
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+** Option 2:
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
++
+//end::endpoint-list-restricted[]
+
+//tag::endpoint-list-images-explanation[]
+//Same text is also in endpoints-connector
+The endpoints listed in option 1 are recommended because they are more secure. We recommend that you set up your firewall to allow the endpoints listed in option 1, while disallowing the endpoints listed in option 2. Note the following about these endpoints:
+** The endpoints listed in option 1 are supported starting with the 3.9.47 release of the Connector. There is no backwards compatibility with previous releases of the Connector.
+** The Connector contacts the endpoints listed in option 2 first. If those endpoints aren't accessible, the Connector automatically contacts the endpoints listed in option 1.
+** The endpoints in option 1 are not supported if you use the Connector with BlueXP backup and recovery or BlueXP ransomware protection. In this case, you can disallow the endpoints listed in option 1, while allowing the endpoints listed in option 2.
+//end::endpoint-list-images-explanation[]
 
 //tag::update[]
 The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.

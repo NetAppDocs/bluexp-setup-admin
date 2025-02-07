@@ -23,6 +23,6 @@ For help, refer to the following documentation:
 * https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html[Scan on-prem ONTAP volume data using BlueXP classification^]
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html[Back up on-prem ONTAP volume data to StorageGRID using BlueXP backup and recovery^]
 
-.Related link
+.Related information
 
 link:concept-modes.html[BlueXP deployment modes]
