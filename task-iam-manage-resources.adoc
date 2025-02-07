@@ -39,14 +39,6 @@ NOTE: Amazon FSx for NetApp ONTAP resources aren't displayed on the IAM resource
 
 . Select *Search*.
 
-.What's next?
-
-After you've found the resource that you're looking for, you can complete any of the following actions:
-
-* <<associate-resource,Associate the resource with additional folders and projects>>
-* <<view-folders-and-projects,View the folders and projects that are associated with the resource>>
-* <<remove-resource,Remove the resource from a folder or project>>
-
 [#associate-resource]
 == Associate a resource with folders and projects
 
@@ -83,6 +75,8 @@ link:task-iam-associate-connectors.html[Learn how to associate a Connector with 
 
 To identify where a resource is available in your organization's hierarchy, you can view the folders and projects that are associated with that resource.
 
+NOTE: If you need to determine which organization members have access to the resource, you can link:task-iam-manage-folders-projects.html#view-associated-resources-members[view the members who have access to the folders and projects that are associated with the resource].
+
 .Steps
 
 . From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
@@ -91,20 +85,15 @@ The following example shows a resource that is associated with one project.
 
 image:screenshot-iam-resource-details.png[A screenshot of the resource details page that shows a resource associated with a project that's directly underneath the organization.]
 
-.What's next?
 
-* You can <<associate-resource,associate the resource with an additional project or folder>>.
-* You can <<remove-resource,remove the resource from a specific folder or project>>.
-* If you need to determine which organization members have access to the resource, you can link:task-iam-manage-folders-projects.html#view-associated-resources-members[view the members who have access to the folders and projects that are associated with the resource].
+NOTE: If you need to determine which organization members have access to the resource, you can link:task-iam-manage-folders-projects.html#view-associated-resources-members[view the members who have access to the folders and projects that are associated with the resource].
 
 [#remove-resource]
 == Remove a resource from a folder or project
 
 To remove a resource from a folder or project, you need to remove the association between the folder or project and the resource. After you remove the association, organization members can no longer manage the resource from the folder or project.
 
-.About this task
-
-If you want to remove a discovered resource from the entire organization, you need to remove the working environment from the BlueXP canvas.
+NOTE: If you want to remove a discovered resource from the entire organization, you need to remove the working environment from the BlueXP canvas.
 
 .Steps
 
