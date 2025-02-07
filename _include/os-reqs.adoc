@@ -1,14 +1,6 @@
 //tag::dedicated[]
 Dedicated host::
 The Connector is not supported on a host that is shared with other applications. The host must be a dedicated host.
-
-+
-Host can be of any architecture that meets the following size requirements.
-
-+
-* *CPU:* 8 cores or 8 vCPUs
-
-* *RAM:* 32 GB
 //end::dedicated[]
 
 //tag::hypervisor[]
@@ -116,11 +108,9 @@ Notes:
 //end::os-private[]
 
 //tag::cpu-ram[]
-Host can be of any architecture that meets these size requirements.
+CPU:: 8 cores or 8 vCPUs
 
-* *CPU:* 8 cores or 8 vCPUs
-
-* *RAM:* 32 GB
+RAM:: 32 GB
 //end::cpu-ram[]
 
 //tag::aws-ec2[]
