@@ -17,7 +17,7 @@ BlueXP identity and access management (IAM) enables you to organize and control 
 
 BlueXP IAM replaces and enhances the previous functionality provided by BlueXP accounts. link:whats-new.html#iam[Learn more about the introduction of BlueXP IAM].
 
-BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you use a BlueXP _account_ to manage users and resources. 
+BlueXP IAM is supported when using BlueXP in standard mode and restricted mode. If you're using BlueXP in private mode, then you use a BlueXP _account_ to manage users and resources. 
 
 * link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 * link:concept-modes.html[Learn about BlueXP deployment modes]

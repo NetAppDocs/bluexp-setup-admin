@@ -13,9 +13,9 @@ summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter A
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in restricted mode or private mode, you'll use a _BlueXP account_ to manage users. You can provide specific permissions to users in your account by selecting from the following roles: Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin.
+When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users. You can provide specific permissions to users in your account by selecting from the following roles: Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin.
 
-If you're using BlueXP in standard mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
+If you're using BlueXP in standard mode or restricted mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
 
 * link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
 * link:concept-modes.html[Learn about BlueXP deployment modes]
