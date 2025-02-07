@@ -10,7 +10,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto, title="Subscribe to BlueXP 
 +
 You must select credentials that are associated with a Connector. You can't associate a marketplace subscription with credentials that are associated with BlueXP.
 +
-image:screenshot_associate_subscription.png[A screenshot of the action menu for a set of existing credentials.]
+image:screenshot_aws_configure_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
 . To associate the credentials with an existing subscription, select the subscription from the down-down list and select *Configure*.
 
