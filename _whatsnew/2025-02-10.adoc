@@ -5,11 +5,6 @@ This release of the BlueXP Connector includes minor security improvements and bu
 At this time, the 3.9.49 release is available for standard mode and restricted mode.
 
 
-=== BlueXP identity and access management
-
-* Support for assigning more than one role to a user.
-* Added role categories.
-* Added two new application roles: Storage viewer and Storage admin. 
 
 === BlueXP identity and access management (IAM)
 
