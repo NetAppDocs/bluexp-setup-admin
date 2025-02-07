@@ -30,6 +30,8 @@ include::_include/os-reqs.adoc[tag=hypervisor]
 
 include::_include/os-reqs.adoc[tag=os]
 
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
 include::_include/os-reqs.adoc[tag=google-machine]
 
 include::_include/os-reqs.adoc[tag=disk-space]
