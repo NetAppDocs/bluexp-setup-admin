@@ -204,8 +204,7 @@ link:task-iam-manage-folders-projects.html#view-associated-resources-members[Vie
 == Manage member roles
 
 Organization members can be assigned roles at each level and more than one level of your resource hierarchy.You can assign members roles relevant to their responsibilities in your BlueXP organization. 
- For example, if you have seven  within your resource hierarchy representing the respective projects (working environments) within them, you can assign someone the Storage admin role for three of the projects and then assign a different member the Storage admin for the remaining projects. Another possibility would be to assign one user the Storage admin role for the entire organization. 
-You can manage member roles according to the needs of your organization. 
+
 
 You can unassign a role from a member, add a new role or both. A role defines the permissions assigned to a member at the organization, folder, or project level.  You can assign members roles relevant to their responsibilities in your BlueXP organization. 
 
@@ -235,7 +234,7 @@ Provide a member with additional permissions in your organization by adding role
 +
 If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
 
-* *Select a category*: BlueXP separate roles into three categories: platform, application, and data services. link:reference-iam-predefined-roles.html[Learn about IAM roles^].
+* *Select a category*: BlueXP separate roles into two categories: platform and data service. link:reference-iam-predefined-roles.html[Learn about IAM roles^].
 
 * Select a *Role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 +
@@ -258,7 +257,7 @@ You can change the assigned role for a at the organization, folder, or project l
 
 . In the table, expand the respective row for organization, folder, or project where you want to change the member's assigned role and select *View* in the *Role* column to view the roles assigned to this member.
 
-. To change a member's role, elect *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one application role to another. You'll be asked to confirm the change.
+. To change a member's role, elect *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one data service role to another. You'll be asked to confirm the change.
 
 .. To unassign a member's role, select image:icon-delete.png["An icon that resembles a trash can"] next to the role to unassign the member the respective role. You'll be asked to confirm the removal.
 

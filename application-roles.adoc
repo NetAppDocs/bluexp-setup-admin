@@ -1,0 +1,38 @@
+== Application roles
+Application roles provide access to BlueXP applications like Active IQ Digital Advisor (also known as Digital Advisor).
+
+=== Storage admin
+
+Provides user the ability perform storage administration functions in BlueXP such as software updates and creating and deleting BlueXP working environments.
+
+Permissions::
+
+Can view the BlueXP canvas.
+Can create and manage BlueXP connectors.
+Has read/write access to storage health and governance functions of BlueXP, including the following: 
+* Digital advisor
+* Operational resiliency
+* Software updates (can perform software updates)
+* Digital wallet
+* Economic efficiency
+* Sustainability dashboard
+* Alerts
+
+=== Storage viewer
+
+Provides read-only access to health and governance functions of BlueXP. This role is typically assigned to users who are responsible for monitoring the health of an organization's storage resources. Users with this role can view multiple applications within BLueXP to create software update plans, efficiency plans, as well as view overall storage health. 
+
+Permissions::
+Has read-only access to storage health and governance functions of BlueXP, including the following: 
+* Digital advisor
+* Operational resiliency
+* Software updates (can download upgrade plans)
+* Digital wallet
+* Economic efficiency
+* Sustainability dashboard
+* Alerts
+
+
+Example from task:
+ For example, if you have seven  within your resource hierarchy representing the respective projects (working environments) within them, you can assign someone the Storage admin role for three of the projects and then assign a different member the Storage admin for the remaining projects. Another possibility would be to assign one user the Storage admin role for the entire organization. 
+You can manage member roles according to the needs of your organization. 
