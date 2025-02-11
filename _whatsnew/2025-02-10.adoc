@@ -10,7 +10,6 @@ At this time, the 3.9.49 release is available for standard mode and restricted m
 * Support for assigning more than one role to a user.
 * Roles are now associated with one of two categories: platform and data service.
 
-
 +
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Read about IAM roles]
