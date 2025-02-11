@@ -60,7 +60,6 @@ include::_whatsnew/2024-09-30.adoc[]
 == 9 September 2024
 
 === Connector 3.9.44
-
 This release includes support for Docker Engine 26, an enhancement to SSL certificates, and bug fixes.
 
 The 3.9.44 release is available for standard mode and restricted mode.
