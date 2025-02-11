@@ -19,8 +19,8 @@ Learn what's new with BlueXP administration features: identity and access manage
 // tag::whats-new[]
 
 == 10 February 2025
-
 include::_whatsnew/2025-02-10.adoc[]
+
 
 == 13 January 2025
 
@@ -30,6 +30,7 @@ include::_whatsnew/2025-01-13.adoc[]
 
 include::_whatsnew/2024-12-16.adoc[]
 // end::whats-new[]
+
 
 == 9 December 2024
 
