@@ -144,7 +144,7 @@ sidebar:
               url: /task-configuring-proxy.html
             - title: Require the use of IMDSv2 on EC2 instances
               url: /task-require-imdsv2.html
-            - title: Upgrade a Connector when using private mode
+            - title: Manage connector upgrades
               url: /task-upgrade-connector.html
             - title: Work with multiple Connectors
               url: /task-manage-multiple-connectors.html
