@@ -572,8 +572,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html[See
 ** Columbus (us-east5)
 ** Dallas (us-south1)
 
-+
-https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
 
 == 7 May 2023
 
@@ -593,8 +591,6 @@ Red Hat 7.6, 7.7, 7.8, and 7.9 are still supported with new and existing Connect
 
 * The Connector is also supported in the Sweden Central region in Microsoft Azure.
 
-+
-https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
 
 * This release of the Connector includes Cloud Volumes ONTAP enhancements.
 +
@@ -625,8 +621,6 @@ If you configure your notification settings, you can receive email notifications
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html[Learn how to set up email notifications].
 
 * The Connector is now supported in the Google Cloud Turin region.
-+
-https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
 
 * You can now manage the user credentials that are associated with your BlueXP login: ONTAP credentials and NetApp Support Site (NSS) credentials.
 +
@@ -848,8 +842,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 * The Connector is now supported in the Azure West US 3 region.
 
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
 
 * This release of the Connector also includes Cloud Volumes ONTAP enhancements.
 +
@@ -870,8 +862,7 @@ NOTE: Existing logins that use an email address and password need to keep using 
 * The Connector is now supported in the AWS Jakarta region (ap-southeast-3).
 
 * The Connector is now supported in the Azure Brazil Southeast region.
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
+
 
 * This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-prem ONTAP cluster enhancements.
 +
@@ -896,8 +887,6 @@ We updated the Connector to introduce bug fixes. The most notable fix is to an i
 ** Milan (europe-west8)
 ** Santiago (southamerica-west1)
 
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
 
 * When you select the Google Cloud service account to use with the Connector, Cloud Manager now displays the email address that's associated with each service account. Viewing the email address can make it easier to distinguish between service accounts that share the same name.
 +
