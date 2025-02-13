@@ -15,6 +15,8 @@ summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter A
 [.lead]
 When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users. You can provide specific permissions to users in your account by selecting from the following roles: Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin.
 
+NOTE: As of February 2025, these user roles are deprecated for standard and restricted deployment modes.  BlueXP private mode only provides one role to associate with users which is the Cloud Manager admin role which grants all BlueXP permissions.
+
 If you're using BlueXP in standard mode or restricted mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
 
 * link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
