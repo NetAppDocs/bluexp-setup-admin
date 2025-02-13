@@ -17,7 +17,7 @@ When you use BlueXP in standard mode or restricted mode, you don't need to manua
 
 When running BlueXP in private mode, you must always upgrade the connector yourself.
 
-If you have need to manually manage when the connector is upgraded, you can disable automatic upgrades for standard mode or restricted mode.
+If you need to manually manage when the connector is upgraded, you can disable automatic upgrades for standard mode or restricted mode.
 
 == Disable automatic upgrades
 
