@@ -41,7 +41,7 @@ podman ps -a
 
 === Disable auto-upgrade for the connector
 
-You disable automatic upgrades by setting the _isUpgradeDisabled_ flag in the _com/opt/application/netapp/service-manager-2/config.json_ file. By default this flag is set to false and your connector is automatically upgraded. You can set this flag to true to disable automatic upgrades.
+You disable automatic upgrades by setting the _isUpgradeDisabled_ flag in the _com/opt/application/netapp/service-manager-2/config.json_ file. By default, this flag is set to false and your connector is automatically upgraded. You can set this flag to true to disable automatic upgrades.
 
 To re-enable auto-upgrade, use these steps and set the isUpgradeDisabled flag to false.
 
@@ -49,7 +49,7 @@ To re-enable auto-upgrade, use these steps and set the isUpgradeDisabled flag to
 
 . Ensure you have verified that your connector is up-to-date and healthy.
 
-. Edit the _/opt/application/netapp/service-manager-2/config.json_ file and change the value of the isUpgradeDisabled flag to true.
+. Edit the _/opt/application/netapp/service-manager-2/config.json_ file and change the value of the _isUpgradeDisabled_ flag to true.
 +
 [source.json]
 {
