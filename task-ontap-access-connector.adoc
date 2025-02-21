@@ -5,7 +5,7 @@ keywords: administer, credentials, ONTAP, connector, Cloud Volumes ONTAP, on-pre
 summary: Administrators can configure a BlueXP connector to prompt a user for their ONTAP credentials.
 ---
 
-= Enforce ONTAP permissions in BlueXP
+= Enforce ONTAP permissions for ONTAP Advanced View (ONTAP System Manager)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,9 @@ summary: Administrators can configure a BlueXP connector to prompt a user for th
 :imagesdir: ./media/
 
 [.lead]
-You can configure your BlueXP connector to prompt users for ONTAP credentials. This ensures that a user's ONTAP permissions are applied when they work with ONTAP clusters in both Cloud Volumes ONTAP and ONTAP on-premises clusters.
+By default, the Connector credentials allow BlueXP users to access the Advanced View (ONTAP System Manager). You can configure BlueXP to prompt users for their ONTAP credentials instead. This ensures that a user's ONTAP permissions are applied when they work with ONTAP clusters in both Cloud Volumes ONTAP and ONTAP on-premises clusters.
 
-By default, the connector credentials allow any BlueXP user who has access to a resource to access the Advanced View (ONTAP system manager). You can configure BlueXP to prompt users for their ONTAP credentials instead. 
-
-NOTE: You must have either the Organization admin or the Folder or project admin role to edit connector settings.
+NOTE: You must have either the Organization admin or the Folder or project admin role to edit Connector settings.
 
 .Steps
 
@@ -25,7 +23,7 @@ NOTE: You must have either the Organization admin or the Folder or project admin
 
 . Select *Manage Connectors*.
 
-. Select the action menu in the row that corresponds to the connector you want to edit.
+. Select the action menu in the row that corresponds to the Connector you want to edit.
 
 . Expand the *Force Credentials* option.
 
