@@ -21,9 +21,7 @@ The custom role shown below provides the permissions that a Connector needs to m
 
 Note the following:
 
-* When you create a Connector directly from BlueXP, BlueXP automatically applies this custom role to the Connector.
-
-* If you deploy the Connector from the Azure Marketplace or if you manually install the Connector on a Linux host, then you'll need to set up the custom role yourself.
+* When you deploy the Connector from the Azure Marketplace or if you manually install the Connector on a Linux host, then you need to set up the custom role yourself.
 
 * In either case, you need to ensure that the role is up to date as new permissions are added in subsequent releases. If new permissions are required, they will be listed in the release notes.
 
