@@ -13,15 +13,16 @@ summary: BlueXP automatically upgrades a Connector to the latest release when yo
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in standard mode or restricted mode, you don't need to manually upgrade the Connector. BlueXP automatically upgrades a Connector to the latest release, as long as the Connector has outbound internet access to obtain the software update.
-
-When running BlueXP in private mode, you must always upgrade the connector yourself.
-
+When you use BlueXP in standard mode or restricted mode, BlueXP automatically upgrades your Connector to the latest release, as long as the Connector has outbound internet access to obtain the software update.
 If you need to manually manage when the connector is upgraded, you can disable automatic upgrades for standard mode or restricted mode.
+
+NOTE: When running BlueXP in private mode, you must always upgrade the connector yourself.
+
+
 
 == Disable automatic upgrades
 
-Disabling auto-upgrade for your connector consists of two steps. First you need to ensure that your current connector is healthy and up-to-date. Then you'll edit a configuration file to turn off the automatic upgrade feature.
+Disabling auto-upgrade for your connector consists of two steps. First, you need to ensure that your current connector is healthy and up-to-date. Then, you edit a configuration file to turn off the automatic upgrade feature.
 
 NOTE: You can only disable automatic upgrades if you have connector version 3.9.48 or higher. 
 
