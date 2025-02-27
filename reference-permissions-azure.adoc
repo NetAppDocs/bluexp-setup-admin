@@ -15,15 +15,19 @@ summary: When BlueXP launches the Connector VM in Azure, it attaches a custom ro
 [.lead]
 When BlueXP launches the Connector VM in Azure, it attaches a custom role to the VM that provides the Connector with permissions to manage resources and processes within that Azure subscription. The Connector uses the permissions to make API calls to several Azure services.
 
-== Custom role permissions
+Whether or not you need to create this custom role for the Connector depends on how you deployed it.
 
-The custom role shown below provides the permissions that a Connector needs to manage resources and processes within your Azure network.
 
-Note the following:
 
-* When you deploy the Connector from the Azure Marketplace or if you manually install the Connector on a Linux host, then you need to set up the custom role yourself.
+.Deploying from BlueXP
 
-* In either case, you need to ensure that the role is up to date as new permissions are added in subsequent releases. If new permissions are required, they will be listed in the release notes.
+When you use BlueXP to deploy the Connector, the Connector creates this role and applies it automatically to itself. The role's permissions are kept up-to-date when the Connector is upgraded. There is no need to create this role for the Connector or update it yourself.
+
+.Deploying manually or from Azure marketplace
+
+When you deploy the Connector from the Azure Marketplace or if you manually install the Connector on a Linux host, then you need to set up the custom role yourself and maintain its permissions with any changes.
+
+You'll need to ensure that the role is up to date as new permissions are added in subsequent releases. If new permissions are required, they will be listed in the release notes.
 
 * To view step-by-step instructions for using these policies, refer to the following pages:
 
