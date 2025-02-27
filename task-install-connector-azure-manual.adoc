@@ -95,7 +95,7 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 
-== Step 4: Set up permissions
+== Step 4: Set up Connector deployment permissions
 
 You need to provide Azure permissions to BlueXP by using one of the following options:
 
@@ -110,7 +110,7 @@ Follow the steps to prepare permissions for BlueXP.
 [role="tabbed-block"]
 ====
 
-.Custom role
+.Create a custom role for Connector deployment
 --
 Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
 

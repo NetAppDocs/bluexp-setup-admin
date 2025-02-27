@@ -74,7 +74,8 @@ include::_include/networking.adoc[tag=ntp]
 +
 You'll need to implement this networking requirement after you create the Connector.
 
-== Step 2: Create a Connector deployment policy (custom role) to use 
+[[connector-custom-role]]
+== Step 2: Create a Connector deployment policy (custom role)
 
 You need to create a custom role that has permissions to deploy the Connector in Azure. 
 
