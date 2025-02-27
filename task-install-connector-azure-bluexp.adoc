@@ -13,7 +13,8 @@ summary: To create a Connector in Azure from BlueXP, you need to set up your net
 :imagesdir: ./media/
 
 [.lead]
-A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. One of the available installation options is to create a Connector in Azure directly from BlueXP. To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+You can create a Connector in Azure directly from BlueXP. To create a Connector in Azure from BlueXP, you need to set up your networking, prepare an Azure role to use to deploy the Connector, and then deploy the Connector.
+
 
 .Before you begin
 
@@ -73,11 +74,13 @@ include::_include/networking.adoc[tag=ntp]
 +
 You'll need to implement this networking requirement after you create the Connector.
 
-== Step 2: Create a custom role
+== Step 2: Create a custom role to use to create the Connector
 
 Create an Azure custom role that you can assign to your Azure account or to a Microsoft Entra service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
 
-NOTE: This custom role is unique for when you install a Connector from BlueXP. If you deploy a Connector from the Azure marketplace, you will need to create a different custom role. link:task-install-connector-azure-manual.html[Learn about manually installing a Connector from Azure marketplace.^]
+After BlueXP deploys the Connector virtual machine in Azure, it enables a https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[system-assigned managed identity^] on the virtual machine, automatically creates a custom role, and assigns it to the virtual machine. The automatically created role provides BlueXP with the permissions required to manage resources and processes within that Azure subscription. link:reference-permissions-azure.html[Review how BlueXP uses the permissions].
+
+NOTE: If you deploy a Connector from the Azure marketplace (not BlueXP), you need to manually  to create the custom role that the Connector uses to manage resources and processes within Azure. link:task-install-connector-azure-manual.html[Learn about manually installing a Connector from Azure marketplace.^]
 
 Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
 

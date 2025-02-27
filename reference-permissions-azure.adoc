@@ -21,7 +21,7 @@ Whether or not you need to create this custom role for the Connector depends on 
 
 .Deploying from BlueXP
 
-When you use BlueXP to deploy the Connector, the Connector creates this role and applies it automatically to itself. The role's permissions are kept up-to-date when the Connector is upgraded. There is no need to create this role for the Connector or update it yourself.
+When you use BlueXP to deploy the Connector virtual machine in Azure, it enables a https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[system-assigned managed identity^] on the virtual machine, creates a custom role, and assigns it to the virtual machine. The role provides BlueXP with the permissions required to manage resources and processes within that Azure subscription. The role's permissions are kept up-to-date when the Connector is upgraded. There is no need to create this role for the Connector or update it yourself.
 
 .Deploying manually or from Azure marketplace
 
