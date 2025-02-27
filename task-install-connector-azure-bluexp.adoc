@@ -77,7 +77,7 @@ You'll need to implement this networking requirement after you create the Connec
 
 Create an Azure custom role that you can assign to your Azure account or to a Microsoft Entra service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
 
-NOTE: This custom role is unique for when you install a Connector from BlueXP. If you deploy a Connector from the Azure marketplace, you will need to create a different custom role. link:task-instal-connector-azure-manual.html[Learn about manually installing a Connector from Azure marketplace.^]
+NOTE: This custom role is unique for when you install a Connector from BlueXP. If you deploy a Connector from the Azure marketplace, you will need to create a different custom role. link:task-install-connector-azure-manual.html[Learn about manually installing a Connector from Azure marketplace.^]
 
 Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
 
