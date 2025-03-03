@@ -26,7 +26,7 @@ When you first access BlueXP, you're prompted to select or create an account. Fo
 
 image:screenshot-account-selection.png[A screenshot of the BlueXP setup wizard that prompts you for the BlueXP account in which you want to create BlueXP.]
 
-BlueXP Account Admins can then modify the settings for this account by managing users (members), workspaces, and Connectors:
+You can then modify the settings for this account by managing users (members), workspaces, and Connectors:
 
 image:screenshot-account-settings.png["A screenshot that shows the Manage Account widget from which you can manage users, workspaces, and Connectors."]
 
@@ -36,17 +36,11 @@ link:task-managing-netapp-accounts.html[Learn how to manage your BlueXP account]
 
 Members are BlueXP users that you associate with your BlueXP account. Associating a user with an account and one or more workspaces in that account enables those users to create and manage working environments in BlueXP.
 
-When you associate a user, you assign them a role:
-
-* _Account Admin_: Can perform any action in BlueXP.
-* _Workspace Admin_: Can create and manage resources in the assigned workspace.
-* _Compliance Viewer_: Can only view compliance information for BlueXP classification and generate reports for workspaces that they have permission to access.
-
-link:reference-user-roles.html[Learn more about these roles].
+All members in your account can perform any activity within the workspace that they are assigned.
 
 == Workspaces
 
-In BlueXP, a workspace isolates any number of _working environments_ from other users in the account. Workspace Admins can't access the working environments in a workspace unless the Account Admin associates the admin with that workspace.
+In BlueXP, a workspace isolates any number of _working environments_ from other users in the account. BlueXP users (members) can't access the working environments in a workspace unless they are associated with that workspace.
 
 A working environment represents a storage system. For example:
 
