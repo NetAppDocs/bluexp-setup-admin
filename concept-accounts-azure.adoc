@@ -17,7 +17,7 @@ Learn how BlueXP uses Azure credentials to perform actions on your behalf and ho
 
 == Initial Azure credentials
 
-When you deploy a Connector from BlueXP, you need to use an Azure account or service principal that has permissions to deploy the Connector virtual machine. The required permissions are listed in the link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role[Connector deployment policy for Azure].
+When you deploy a Connector from BlueXP, you need to use an Azure account or service principal that has permissions to deploy the Connector virtual machine. The required permissions are listed in the link:task-install-connector-azure-bluexp.html#connector-custom-role[Connector deployment policy for Azure].
 
 When BlueXP deploys the Connector virtual machine in Azure, it enables a https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[system-assigned managed identity^] on the virtual machine, creates a custom role, and assigns it to the virtual machine. The role provides BlueXP with the permissions required to manage resources and processes within that Azure subscription. link:reference-permissions-azure.html[Review how BlueXP uses the permissions].
 
