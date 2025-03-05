@@ -30,7 +30,7 @@ NOTE: You can only disable automatic upgrades if you have connector version 3.9.
 
 You should verify that your connector is stable and all containers running on your connector VM are healthy and running. After you disable automatic upgrades, your connector VM stops checking for new services or upgrade packages. 
 
-Use one of the following commands to verify your connector.
+Use one of the following commands to verify your connector. All services should have a status of _Running_. If this isn't the case, contact NetApp support before disabling auto-upgrade.
 
 Docker:: 
 +
