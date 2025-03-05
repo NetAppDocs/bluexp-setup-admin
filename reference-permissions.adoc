@@ -133,7 +133,7 @@ BlueXP requires Azure permissions for the Connector and for individual services.
 
 | Deploy the Connector from BlueXP
 | When you deploy a Connector from BlueXP, you need to use an Azure account or service principal that has permissions to deploy the Connector VM in Azure.
-| link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role[Set up Azure permissions]
+| link:task-install-connector-azure-bluexp.html#connector-custom-role[Set up Azure permissions]
 
 | Provide permissions for the Connector
 a| When BlueXP deploys the Connector VM in Azure, it creates a custom role that provides the permissions required to manage resources and processes within that Azure subscription.
