@@ -2,7 +2,7 @@
 
 === Force users to enter ONTAP credentials to access Advanced view (ONTAP System Manager)
 
-You can now force users to enter their ONTAP credentials in order to access the ONTAP System Manager. This setting applies to both Cloud Volumes ONTAP as well as ONTAP on-premises. Users with the Organization admin role can configure this setting.
+You can now force users to enter their ONTAP credentials in order to access ONTAP System Manager. This setting applies to both Cloud Volumes ONTAP as well as ONTAP on-premises. Users with the Organization admin role can configure this setting.
 
 
 
