@@ -5,7 +5,7 @@ keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, 
 summary: BlueXP automatically upgrades a Connector to the latest release when you use BlueXP in standard mode or restricted mode. New versions are typically released each month to introduce new features and to provide stability improvements. If you prefer, you can configure the Connector to pull image updates from a local repository instead. For private mode deployments, you always need to manually upgrade the Connector yourself.
 ---
 
-= Upgrade a Connector when using private mode
+= Manage connector upgrades
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,62 @@ summary: BlueXP automatically upgrades a Connector to the latest release when yo
 :imagesdir: ./media/
 
 [.lead]
-If you are using BlueXP in private mode, you can upgrade the Connector when a newer version is available from the NetApp Support Site.
+When you use BlueXP in standard mode or restricted mode, you don't need to manually upgrade the Connector. BlueXP automatically upgrades a Connector to the latest release, as long as the Connector has outbound internet access to obtain the software update.
 
-TIP: When you use BlueXP in standard mode or restricted mode, you don't need to manually upgrade the Connector. BlueXP automatically upgrades a Connector to the latest release, as long as the Connector has outbound internet access to obtain the software update.
+When running BlueXP in private mode, you must always upgrade the connector yourself.
 
-.About this task
+If you need to manually manage when the connector is upgraded, you can disable automatic upgrades for standard mode or restricted mode.
+
+== Disable automatic upgrades
+
+Disabling auto-upgrade for your connector consists of two steps. First you need to ensure that your current connector is healthy and up-to-date. Then you'll edit a configuration file to turn off the automatic upgrade feature.
+
+NOTE: You can only disable automatic upgrades if you have connector version 3.9.48 or higher. 
+
+=== Verify the health of your connector
+
+You should verify that your connector is stable and all containers running on your connector VM are healthy and running. After you disable automatic upgrades, your connector VM stops checking for new services or upgrade packages. 
+
+Use one of the following commands to verify your connector.
+
+Docker:: 
++
+[source,cli]
+docker ps -a
+
+Podman:: 
++
+[source,cli]
+podman ps -a
+
+=== Disable auto-upgrade for the connector
+
+You disable automatic upgrades by setting the _isUpgradeDisabled_ flag in the _com/opt/application/netapp/service-manager-2/config.json_ file. By default, this flag is set to false and your connector is automatically upgraded. You can set this flag to true to disable automatic upgrades.
+
+To re-enable auto-upgrade, use these steps and set the _isUpgradeDisabled_ flag to false.
+
+.Steps
+
+. Ensure you have verified that your connector is up-to-date and healthy.
+
+. Edit the _/opt/application/netapp/service-manager-2/config.json_ file and change the value of the _isUpgradeDisabled_ flag to true.
++
+[source.json]
+{
+  "isUpgradeDisabled": true,
+}
+
+. Save your file.
+
+. Restart the service manager 2 service by running the following command:
+
++
+[source,cli]
+systemctl restart netapp-service-manager.service
+
+
+
+== Upgrade the connector
 
 The Connector needs to restart during the upgrade process so the web-based console will be unavailable during the upgrade.
 
