@@ -94,6 +94,6 @@ Add and remove the Uniform Resource Identifier (URI) for a Connector.
 
 . Expand the *Connector URIs* bar to view the URIs for a connector.
 
-. Select *Connector URIs*.
+. Expand the *Connector URIs* bar to view the URIs for a connector.
 
 . Add and remove URIs and then select *Apply*.
