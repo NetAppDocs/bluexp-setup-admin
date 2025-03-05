@@ -154,6 +154,8 @@ sidebar:
               url: /task-uninstall-connector.html
             - title: Default configuration
               url: /reference-connector-default-config.html
+            - title: Enforce ONTAP permissions in BlueXP
+              url: /task-ontap-access-connector.html
         - title: Credentials and subscriptions
           entries:
             - title: AWS
