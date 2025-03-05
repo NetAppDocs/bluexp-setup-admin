@@ -92,8 +92,8 @@ Add and remove the Uniform Resource Identifier (URI) for a Connector.
 
 . Select *Manage Connectors*.
 
-. Select the action menu for a Connector and select *Edit Connector*.
-
 . Expand the *Connector URIs* bar to view the URIs for a connector.
+
+. Select *Connector URIs*.
 
 . Add and remove URIs and then select *Apply*.

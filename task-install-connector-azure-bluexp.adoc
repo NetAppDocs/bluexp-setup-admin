@@ -13,7 +13,8 @@ summary: To create a Connector in Azure from BlueXP, you need to set up your net
 :imagesdir: ./media/
 
 [.lead]
-A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. One of the available installation options is to create a Connector in Azure directly from BlueXP. To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+You can create a Connector in Azure directly from BlueXP. To create a Connector in Azure from BlueXP, you need to set up your networking, prepare an Azure role to use to deploy the Connector, and then deploy the Connector.
+
 
 .Before you begin
 
@@ -73,9 +74,15 @@ include::_include/networking.adoc[tag=ntp]
 +
 You'll need to implement this networking requirement after you create the Connector.
 
-== Step 2: Create a custom role
+[[connector-custom-role]]
+== Step 2: Create a Connector deployment policy (custom role)
+
+You need to create a custom role that has permissions to deploy the Connector in Azure. 
 
 Create an Azure custom role that you can assign to your Azure account or to a Microsoft Entra service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
+
+After BlueXP deploys the Connector virtual machine in Azure, it enables a https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[system-assigned managed identity^] on the virtual machine, automatically creates the role it needs, and assigns it to the virtual machine. The automatically created role provides BlueXP with the permissions required to manage resources and processes within that Azure subscription. link:reference-permissions-azure.html[Review how BlueXP uses the permissions].
+
 
 Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
 
