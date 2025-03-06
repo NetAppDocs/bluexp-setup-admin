@@ -130,8 +130,6 @@ sidebar:
               url: /task-managing-netapp-accounts.html
             - title: Create another BlueXP account
               url: /task-create-account.html
-            - title: User roles
-              url: /reference-user-roles.html
         - title: Identity federation
           url: /concept-federation.html
         - title: Connectors
