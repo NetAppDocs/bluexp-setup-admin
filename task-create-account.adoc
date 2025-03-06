@@ -22,15 +22,6 @@ If you're using BlueXP in standard mode or restricted, you won't have a BlueXP a
 . Use the following API call to create an additional BlueXP account:
 +
 POST `/tenancy/account/{accountName}`
-+
-If you want to enable restricted mode, you need to include the following in the request body:
-+
-[source,JSON]
-{
-  "isSaasDisabled": true
-}
-
-NOTE: You can't change the restricted mode setting after BlueXP creates the account. You can't enable restricted mode later and you can't disable it later. It must be set at time of account creation.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html[Learn how to use this API call^]
 
