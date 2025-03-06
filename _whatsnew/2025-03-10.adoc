@@ -1,3 +1,4 @@
+
 === Connector 3.9.50
 
 This release of the BlueXP Connector includes minor security improvements and bug fixes, as well as the following features.
@@ -25,10 +26,6 @@ NOTE: This change does not impact BlueXP private mode where you must always upgr
 This feature is available in Connector version 3.9.48 and higher. 
 
 link:task-upgrade-connector.html[Learn how disable auto-upgrade for the Connector.^]
-
-
-
-
 
 
 
