@@ -64,8 +64,6 @@ Disassociating a user makes it so they can no longer access the resources in a B
 image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
 
 . From the Members tab, select the action menu in the row that corresponds to the user.
-+
-image:screenshot_associate_user_workspace.png[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
 
 . Select *Disassociate User* and select *Disassociate* to confirm.
 
@@ -82,16 +80,11 @@ You can associate and disassociate users with workspaces at any time. Associatin
 image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
 
 . From the Members tab, select the action menu in the row that corresponds to the user.
-+
-image:screenshot_associate_user_workspace.png[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
 
 . Select *Manage Workspaces*.
 
 . Select the workspaces to associate with the user and select *Apply*.
 
-.Result
-
-The user can now access those workspaces from BlueXP, as long as the Connector was also associated with the workspaces.
 
 == Create and manage service accounts
 
@@ -199,8 +192,6 @@ Manage your workspaces by creating, renaming, and deleting them. Note that you c
 * Select *Rename* to rename the workspace.
 * Select *Delete* to delete the workspace.
 
-+
-If you created a new workspace, you must also add the Connector to that workspace. If you don't add the Connector, then Workspace Admins can't access any of the resources in the workspace. Refer to the following section for more details.
 
 
 
