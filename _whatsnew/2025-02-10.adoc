@@ -5,7 +5,8 @@ This release of the BlueXP Connector includes minor security improvements and bu
 At this time, the 3.9.49 release is available for standard mode and restricted mode.
 
 === BlueXP identity and access management (IAM)
-* Support for assigning more than one role to a user.
+* Support for assigning multiple roles to a BlueXP user. 
+* Support for assign a role on multiple resources of the BlueXP organization (Org/folder/project)
 * Roles are now associated with one of two categories: platform and data service.
 
 ==== Restricted mode now uses BlueXP IAM
@@ -61,14 +62,5 @@ This change introduces a new API for BlueXP IAM, but it is backwards compatible 
 
 BlueXP IAM is supported when using BlueXP in standard and restricted mode. If you're using BlueXP in private mode, then you'll continue using a BlueXP _account_ to manage workspaces, users, and resources.
 
-.Additional IAM enhancements
-
-* Support for assigning more than one role to a user.
-* Roles are now associated with one of three categories: platform, application, and data services. 
-* Two new roles are associated with the application category: Storage viewer and Storage admin. 
-
-+
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Read about IAM roles]
 
 
