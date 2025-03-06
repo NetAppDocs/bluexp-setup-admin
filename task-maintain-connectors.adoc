@@ -31,7 +31,7 @@ include::_include/os-reqs.adoc[tag=cpu-ram]
 
 link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
 
-== Stopping the starting the Connector VM
+== Stopping and starting the Connector VM
 
 If you need to stop and then start the Connector VM, then you should do so from your cloud provider's console or by using the standard procedures for on-premises management.
 
@@ -94,6 +94,6 @@ Add and remove the Uniform Resource Identifier (URI) for a Connector.
 
 . Select the action menu for a Connector and select *Edit Connector*.
 
-. Select *Connector URIs*.
+. Expand the *Connector URIs* bar to view the URIs for a connector.
 
 . Add and remove URIs and then select *Apply*.
