@@ -26,7 +26,7 @@ When you first access BlueXP, you're prompted to select or create an account. Fo
 
 image:screenshot-account-selection.png[A screenshot of the BlueXP setup wizard that prompts you for the BlueXP account in which you want to create BlueXP.]
 
-You can then modify the settings for this account by managing users (members), workspaces, and Connectors:
+You can then add members (users) to this account, create workspaces, and deploy Connectors:
 
 image:screenshot-account-settings.png["A screenshot that shows the Manage Account widget from which you can manage users, workspaces, and Connectors."]
 
@@ -68,7 +68,7 @@ NOTE: In both example images that follow, the Connector and the Cloud Volumes ON
 
 The following example shows an account that uses two workspaces to create isolated environments. The first workspace is for a production environment and the second is for a dev environment.
 
-image:diagram_cloud_central_accounts_one.png[A diagram that shows a single BlueXP account that contains two workspaces. Each workspace is associated with the same Connector and each has their own Workspace Admin.]
+image:diagram_cloud_central_accounts_one.png[A diagram that shows a single BlueXP account that contains two workspaces. Each workspace is associated with the same Connector.]
 
 === Multiple accounts
 
@@ -76,4 +76,4 @@ Here's another example that shows the highest level of multi-tenancy by using tw
 
 Note that account 2 includes two separate Connectors. This might happen if you have systems in separate regions or in separate cloud providers.
 
-image:diagram_cloud_central_accounts_two.png["A diagram that shows two BlueXP accounts, each with several workspaces and their associated Workspace Admins."]
+image:diagram_cloud_central_accounts_two.png["A diagram that shows two BlueXP accounts, each with several workspaces."]
