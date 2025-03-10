@@ -68,7 +68,7 @@ image:screenshot-manage-account-settings.png[A screenshot that shows the Manage 
 . Select *Disassociate User* and select *Disassociate* to confirm.
 
 
-=== Manage a Workspace Admin's workspaces
+=== Manage workspaces
 
 You can associate and disassociate users with workspaces at any time. Associating the user enables them to create and view the working environments in that workspace.
 
