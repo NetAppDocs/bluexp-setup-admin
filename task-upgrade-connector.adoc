@@ -58,7 +58,6 @@ To re-enable auto-upgrade, use these steps and set the _isUpgradeDisabled_ flag 
 . Edit the _/opt/application/netapp/service-manager-2/config.json_ file and change the value of the _isUpgradeDisabled_ flag to true as shown near the bottom of this example.
 +
 [source.json]
-{
 
   "isUpgradeDisabled": true,
 
