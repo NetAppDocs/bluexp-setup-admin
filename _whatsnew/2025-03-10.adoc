@@ -1,7 +1,7 @@
 
 
 
-=== Connector 3.9.50 update
+=== Connector 3.9.50
 
 This release of the BlueXP Connector includes minor security improvements and bug fixes.
 
