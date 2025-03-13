@@ -24,7 +24,7 @@ NOTE: When running BlueXP in private mode, you must always upgrade the connector
 == Disable automatic upgrades
 
 
-Disabling auto-upgrade for your connector consists of two steps. First you need to ensure that your current connector is healthy and up-to-date. Then you'll edit a configuration file to turn off the automatic upgrade feature.
+Disabling auto-upgrade for your connector consists of two steps. First you need to ensure that your Connector is healthy and up-to-date. Then you'll edit a configuration file to turn off the automatic upgrade feature.
 
 
 NOTE: You can only disable automatic upgrades if you have connector version 3.9.48 or higher. 
@@ -47,13 +47,15 @@ podman ps -a
 
 === Disable auto-upgrade for the connector
 
-You disable automatic upgrades by setting the _isUpgradeDisabled_ flag in the _com/opt/application/netapp/service-manager-2/config.json_ file. By default, this flag is set to false and your connector is automatically upgraded. You can set this flag to true to disable automatic upgrades.
+You disable automatic upgrades by setting the _isUpgradeDisabled_ flag in the _com/opt/application/netapp/service-manager-2/config.json_ file. By default, this flag is set to false and your connector is automatically upgraded. You can set this flag to true to disable automatic upgrades. You should be familiar with JSON syntax before completing this step. 
 
 To re-enable auto-upgrade, use these steps and set the _isUpgradeDisabled_ flag to false.
 
 .Steps
 
 . Ensure you have verified that your connector is up-to-date and healthy.
+
+. Create a backup copy of the _/opt/application/netapp/service-manager-2/config.json_ file to ensure you can revert your changes. 
 
 . Edit the _/opt/application/netapp/service-manager-2/config.json_ file and change the value of the _isUpgradeDisabled_ flag to true as shown near the bottom of this example.
 +
@@ -70,6 +72,12 @@ To re-enable auto-upgrade, use these steps and set the _isUpgradeDisabled_ flag 
 +
 [source,cli]
 systemctl restart netapp-service-manager.service
+
+. Run the following command and verify that the Connector status shows as _active(running)_:
+_
++
+[source,cli]
+systemctl status netapp-service-manager.service
 
 
 
