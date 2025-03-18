@@ -20,14 +20,14 @@ BlueXP roles are designed to give the least privilege to a user in order for the
 == BlueXP IAM administration roles
 IAM administration roles are superuser roles that have full permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP management functions for both storage resources and data services. BlueXP IAM includes two roles: Organization admin and Folder or Project admin. The main difference between these two roles is scope. 
 
-
 Users must have an IAM role in order to do the following:
-* Discover resources
-* Create connectors (only Organization admin can create a connector)
+
+* Discover storage resources
+* Create connectors (Organization admin only)
 * Manage your resource hierarchy (folders and projects)
 * Add users and grant roles to users.
 
-=== BlueXP IAM role example for a large multi-national organization
+=== BlueXP IAM role example 
 XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
 
 To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role. 
