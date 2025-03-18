@@ -207,24 +207,3 @@ Change your account name at any time to change it to something meaningful for yo
 
 . Type a new account name and select *Save*.
 
-== Allow private previews
-
-Allow private previews in your account to get access to new services that are made available as a preview in BlueXP.
-
-Services in private preview are not guaranteed to behave as expected and might sustain outages and be missing functionality.
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. In the *Overview* tab, enable the *Allow Private Preview* setting.
-
-== Allow third-party services
-
-Allow third-party services in your account to get access to third-party services that are available in BlueXP. Third-party services are cloud services similar to the services that NetApp offers, but they're managed and supported by third-party companies.
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. In the *Overview* tab, enable the *Allow Third Party Services* setting.
