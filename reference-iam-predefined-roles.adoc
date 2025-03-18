@@ -27,7 +27,7 @@ Users must have an IAM role in order to do the following:
 * Manage your resource hierarchy (folders and projects)
 * Add users and grant roles to users.
 
-=== BlueXP IAM role example for a large multi-national organization::
+=== BlueXP IAM role example for a large multi-national organization
 XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
 
 To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role. 
@@ -47,7 +47,7 @@ Allows a user unrestricted access to specific projects and folders to which they
 
 The Folder or Project admin role cannot create Connectors.
 
-=== Platform role comparison table
+=== IAM role comparison table
 [cols=5*,options="header",cols="24,19,19"]
 |===
 
@@ -89,12 +89,12 @@ The Folder or Project admin role cannot create Connectors.
 
 BlueXP data services usually have both an admin role and a viewer role. Data services roles are limited in scope to the BlueXP service and the storage resource to which they apply. BlueXP data services usually have both an admin role and a viewer role.
 
-== Admin roles
+.Admin roles
 Admin roles grant permission to perform administrative and management tasks within the scope of the resource and data service to which user is granted the role.
 
 For example, a user within the EMEA project that focuses on data protection can be given administrative roles for the ransomware protection (Ransomware protection admin) and backup and recovery (Backup and recovery admin).
 
-== Viewer roles
+.Viewer roles
 Viewer roles are typically assigned to users whose responsibilities include audit and reporting. BlueXP users with this role generally use BlueXP to monitor storage resources and escalate any issues to those responsible for storage management.
 
 A user with a viewer role can view information related to the data service, but generally is not allowed to modify, update or otherwise administer storage within the scope of the respective data service.
@@ -103,7 +103,7 @@ For example, a user within the EMEA project that focuses on data protection repo
 
 Smaller organizations may choose not to use viewer roles but grant administrative permissions more widely. However, if your organization includes members with audit or reporting duties, consider granting these users a viewer role. 
 
-=== SnapCenter admin
+== SnapCenter admin
 
 Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
 
@@ -114,7 +114,7 @@ A member who has this role can complete the following actions in BlueXP:
 * Manage all working environments in the projects and folders for which they have permissions
 * Use all BlueXP services 
 
-=== Classification viewer
+== Classification viewer
 
 Provides the ability view BlueXP classification scan results.
 
