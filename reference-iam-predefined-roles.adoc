@@ -5,7 +5,7 @@ keywords: predefined roles, iam roles, organization admin, folder or project adm
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
 
-= Predefined BlueXP IAM roles and permissions
+= BlueXP roles and permissions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,20 +13,39 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into two categories: platform,  and data service.
+BlueXP identity and access management (IAM) is designed around a set of roles that you can assign to the members of your organization across different levels of your resource hierarchy.
 
-== Platform roles
-Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
+BlueXP roles are designed to give the least privilege to a user in order for the user to accomplish storage management tasks. This ensures higher security and prevents users from inadvertently disrupting storage services where they do not have permissions.e
+
+== BlueXP IAM administration roles
+IAM administration roles are superuser roles that have full permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP management functions for both storage resources and data services. BlueXP IAM includes two roles: Organization admin and Folder or Project admin. The main difference between these two roles is scope. 
+
+
+Users must have an IAM role in order to do the following:
+* Discover resources
+* Create connectors (only Organization admin can create a connector)
+* Manage your resource hierarchy (folders and projects)
+* Add users and grant roles to users.
+
+=== BlueXP IAM role example for a large multi-national organization::
+XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
+
+To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role. 
+
+Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
+
 
 === Organization admin
 Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service.
+
+Only the Organization admin can create Connectors.
 
 
 === Folder or project admin
 Allows a user unrestricted access to specific projects and folders to which they are assigned.  Can add members to projects or folders they manage, as well as perform any BlueXP task and use any data service within the folder or project they are assigned.
 
 
-The Folder or Project admin role cannot create connectors.
+The Folder or Project admin role cannot create Connectors.
 
 === Platform role comparison table
 [cols=5*,options="header",cols="24,19,19"]
@@ -65,29 +84,26 @@ The Folder or Project admin role cannot create connectors.
 
 |===
 
-Example for organization roles in BlueXP for a large multi-national organization::
-XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
-+
-To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role. 
-+
-Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
-
-
-
-
-
-
-
-
-
-
-
 
 == Data services roles
-Data services roles provide users permission to use to data services within the organization, project or folder to which they have access.
+
+BlueXP data services usually have both an admin role and a viewer role. Data services roles are limited in scope to the BlueXP service and the storage resource to which they apply. BlueXP data services usually have both an admin role and a viewer role.
+
+== Admin roles
+Admin roles grant permission to perform administrative and management tasks within the scope of the resource and data service to which user is granted the role.
+
+For example, a user within the EMEA project that focuses on data protection can be given administrative roles for the ransomware protection (Ransomware protection admin) and backup and recovery (Backup and recovery admin).
+
+== Viewer roles
+Viewer roles are typically assigned to users whose responsibilities include audit and reporting. BlueXP users with this role generally use BlueXP to monitor storage resources and escalate any issues to those responsible for storage management.
+
+A user with a viewer role can view information related to the data service, but generally is not allowed to modify, update or otherwise administer storage within the scope of the respective data service.
+
+For example, a user within the EMEA project that focuses on data protection reporting and auditing can be given viewer roles for both ransomware protection and backup and recovery.
+
+Smaller organizations may choose not to use viewer roles but grant administrative permissions more widely. However, if your organization includes members with audit or reporting duties, consider granting these users a viewer role. 
 
 === SnapCenter admin
-
 
 Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
 
