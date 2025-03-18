@@ -94,6 +94,14 @@ sidebar:
               url: /task-prepare-private-mode.html
             - title: Deploy the Connector
               url: /task-install-private-mode.html
+            - title: BlueXP accounts
+              entries:
+              - title: Learn about accounts
+                url: /concept-netapp-accounts.html
+              - title: Manage your BlueXP account
+                url: /task-managing-netapp-accounts.html
+              - title: Create another BlueXP account
+                url: /task-create-account.html
             - title: What you can do next
               url: /reference-whats-next-private-mode.html
         - title: Log in to BlueXP
