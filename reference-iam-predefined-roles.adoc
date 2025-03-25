@@ -13,9 +13,11 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP roles are designed to give the least privilege to a user in order for the user to accomplish storage management tasks. This ensures higher security and prevents users from inadvertently disrupting storage services where they do not have permissions.
+BlueXP roles are designed to give the least privilege to a user in order for the user to accomplish storage management tasks. This ensures higher security and prevents users from inadvertently disrupting storage services where they do not have permissions. 
 
-== BlueXP platform roles
+Anyone with a BLueXP platform role (Organization admin or Project or Folder admin) can add a user to a resource and assign them a role or roles for a particular project or folder.
+
+== BlueXP platform 
 Platform roles have full permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP management functions for both storage resources and data services. BlueXP IAM includes two roles: Organization admin and Folder or Project admin. The main difference between these two roles is scope. 
 
 .Example: Use platform roles to delegate administrative responsibilities
@@ -25,20 +27,14 @@ To achieve this, a person assigned the Organization admin role in XYZ Corporatio
 
 Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
 
+The following platform roles are available: 
 
-=== Organization admin
-Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP management task and use any data service.
-
-Only the Organization admin can create Connectors.
-
-
-=== Folder or project admin
-Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to projects or folders they manage, as well as perform any BlueXP management task and use any data service within the folder or project they are assigned.
+* *Organization admin*  Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP management task and use any data service.
+* *Folder or project admin* Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to projects or folders they manage, as well as perform any BlueXP management task and use any data service within the folder or project they are assigned. The Folder or Project admin role cannot create Connectors.
 
 
-The Folder or Project admin role cannot create Connectors.
+The following table indicates that actions that each BlueXP platform protection role can perform. 
 
-===  Platform role comparison table
 [cols=5*,options="header",cols="24,19,19"]
 |===
 
@@ -75,24 +71,54 @@ The Folder or Project admin role cannot create Connectors.
 
 |===
 
+== Ransomware protection
 
-== Data services roles
+You can use the following roles to assign users access to ransomware protection. 
 
-BlueXP data services usually have both an admin role and a viewer role. Data services roles are limited in scope to the BlueXP service and the storage resource to which they apply. BlueXP data services usually have both an admin role and a viewer role.
+* *Ransomware protection admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
+* *Ransomware protection viewer*: View workload data, view alert data, download recovery data, and download reports.
 
-.Admin roles
-Admin roles grant permission to perform administrative and management tasks within the scope of the resource and data service to which user is granted the role.
+The following table indicates that actions that each BlueXP ransomware protection role can perform. 
 
-For example, a user within the EMEA project that focuses on data protection can be given administrative roles for the ransomware protection (Ransomware protection admin) and backup and recovery (Backup and recovery admin).
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature and action
+| Ransomware protection admin
+| Ransomware protection viewer
 
-.Viewer roles
-Viewer roles are typically assigned to users whose responsibilities include audit and reporting. BlueXP users with this role generally use BlueXP to monitor storage resources and escalate any issues to those responsible for storage management.
+| View dashboard and all tabs | Yes | Yes
+| Start free trial | Yes | No 
+| Initiate discovery of workloads | Yes | No
+3+| *On the Protect tab*: 
+| Add, modify, or delete policies | Yes | No
+| Protect workloads | Yes | No
+| Identify sensitive data| Yes | No 
+| Edit workload protection | Yes | No
+| View workload details | Yes | Yes 
+| Download data| Yes | Yes 
+3+| *On the Alerts tab*: 
+| View alert details | Yes | Yes 
+| Edit incident status | Yes | No
+| View incident details | Yes | Yes
+| Get full list of impacted files| Yes | No 
+| Download alerts data | Yes | Yes 
+3+| *On the Recover tab*: 
+| Download impacted files| Yes | No 
+| Restore workload | Yes | No 
+| Download recovery data | Yes | Yes
+| Download reports | Yes | Yes
+3+| *On the Settings tab*:
+| Add or modify backup targets| Yes | No 
+| Add or modify SIEM targets | Yes | No
+3+| *On the Reports tab*:
+| Download reports | Yes | Yes
 
-A user with a viewer role can view information related to the data service, but generally is not allowed to modify, update or otherwise administer storage within the scope of the respective data service.
+|===
 
-For example, a user within the EMEA project that focuses on data protection reporting and auditing can be given viewer roles for both ransomware protection and backup and recovery.
 
-Smaller organizations may choose not to use viewer roles but grant administrative permissions more widely. However, if your organization includes members with audit or reporting duties, consider granting these users a viewer role. 
+
+
+
 
 == SnapCenter admin
 
