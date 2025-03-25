@@ -1,0 +1,66 @@
+---
+sidebar: sidebar
+permalink: rp-reference-roles.html
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account
+summary: BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses roles that are specific to BlueXP ransomware protection (RPS).
+
+---
+
+= BlueXP ransomware protection role-based access to features
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+BlueXP ransomware protection employs roles to govern the access that each user has to specific features and actions. 
+
+The service uses the following roles that are specific to BlueXP ransomware protection. 
+
+* *Ransomware protection admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
+* *Ransomware protection viewer*: View workload data, view alert data,  download recovery data, and download reports.
+
+
+The BlueXP platform for all BlueXP services uses the following types of roles: 
+ 
+* *Platform roles* allow you to manage users, assign them to resources and give them roles along with other platform-wide actions.
+ 
+* *Data services roles* are limited to only a specific data service. You can have mulitple data services roles depending on your job. BlueXP ransomware protection is one of the BlueXP data services. 
+
+For details about platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
+
+The following table indicates that actions that each BlueXP ransomware protection role can perform. 
+
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature and action
+| Ransomware protection admin
+| Ransomware protection viewer
+
+| View dashboard and all tabs | Yes | Yes
+| Start free trial | Yes | No 
+| Initiate discovery of workloads | Yes | No
+3+| *On the Protect tab*: 
+| Add, modify, or delete policies | Yes | No
+| Protect workloads | Yes | No
+| Identify sensitive data| Yes | No 
+| Edit workload protection | Yes | No
+| View workload details | Yes | Yes 
+| Download data| Yes | Yes 
+3+| *On the Alerts tab*: 
+| View alert details | Yes | Yes 
+| Edit incident status | Yes | No
+| View incident details | Yes | Yes
+| Get full list of impacted files| Yes | No 
+| Download alerts data | Yes | Yes 
+3+| *On the Recover tab*: 
+| Download impacted files| Yes | No 
+| Restore workload | Yes | No 
+| Download recovery data | Yes | Yes
+| Download reports | Yes | Yes
+3+| *On the Settings tab*:
+| Add or modify backup targets| Yes | No 
+| Add or modify SIEM targets | Yes | No
+3+| *On the Reports tab*:
+| Download reports | Yes | Yes
+
+|===
