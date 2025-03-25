@@ -68,6 +68,9 @@ image:screenshot-help-support.png[A screenshot of the Help menu where Support is
 .. Select *Send AutoSupport* to directly send the message to NetApp Support.
 
 +
+NOTE: When you choose to have to have BlueXP send the AutoSupport message, it can take up to five hours because of BlueXP automatically load balances when AutoSupport messages are sent. If your communication with NetApp support is time-sensitive, you should download the file and send to NetApp support yourself.
+
++
 image:screenshot-connector-autosupport.png[A screenshot of the Support Dashboard showing where users can select to download and send AutoSupport messages.]
 
 == Fix download failures when using a Google Cloud NAT gateway
