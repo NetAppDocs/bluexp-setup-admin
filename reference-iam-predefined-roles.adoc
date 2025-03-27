@@ -90,6 +90,8 @@ Data services roles provide users permission to use to data services within the 
 
 You can use the following roles to assign users access to Keystone. 
 
+NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, please contact your NetApp representative.
+
 * *Keystone admin*: Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions
 * *Keystone viewer*: View the Keystone subscription as well as view reports, alerts and assets.
 
