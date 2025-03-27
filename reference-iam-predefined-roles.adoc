@@ -86,6 +86,39 @@ Once the initial setup is complete, regional admins with the Folder or Project a
 == Data services roles
 Data services roles provide users permission to use to data services within the organization, project or folder to which they have access.
 
+== Keystone
+
+You can use the following roles to assign users access to Keystone. 
+
+* *Keystone admin*: Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions
+* *Keystone viewer*: View the Keystone subscription as well as view reports, alerts and assets.
+
+The following table indicates that actions that each Keystone role can perform. 
+
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature and action
+| Keystone admin
+| Keystone viewer
+
+| View dashboard and all tabs | Yes | Yes
+3+| *Keystone subscription page*: 
+| Can view subscriptions | Yes | Yes
+| Can amend, delete or renew subscriptions | Yes | No
+3+| *Keystone assets page*: 
+| View assets  | Yes | Yes 
+| Manage assets | Yes | No
+3+| *Keystone alerts page*: 
+| View alerts | Yes | No 
+| Manage alerts | Yes | No 
+3+| *Digital wallet*:
+| Can view digital wallet | Yes | Yes
+3+| *Keystone reports page*:
+| Download reports | Yes | Yes
+| Manage reports | Yes | Yes
+
+|===
+
 === SnapCenter admin
 
 
