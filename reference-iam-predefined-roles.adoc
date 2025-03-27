@@ -13,20 +13,15 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into two categories: platform,  and data service.
+BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes.
 
-== Platform roles
+== Platform administration roles
 Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
-=== Organization admin
-Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service.
+* *Organization admin*: Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. The Organization admin is the only role that can create connectors.
 
 
-=== Folder or project admin
-Allows a user unrestricted access to specific projects and folders to which they are assigned.  Can add members to projects or folders they manage, as well as perform any BlueXP task and use any data service within the folder or project they are assigned.
-
-
-The Folder or Project admin role cannot create connectors.
+* *Folder or project admin*: Allows a user unrestricted access to specific projects and folders to which they are assigned.  Can add members to projects or folders they manage, as well as perform any BlueXP task and use any data service within the folder or project they are assigned. The Folder or Project admin role cannot create connectors.
 
 === Platform role comparison table
 [cols=5*,options="header",cols="24,19,19"]
@@ -82,11 +77,7 @@ Once the initial setup is complete, regional admins with the Folder or Project a
 
 
 
-
-== Data services roles
-Data services roles provide users permission to use to data services within the organization, project or folder to which they have access.
-
-== Keystone
+== Keystone roles
 
 You can use the following roles to assign users access to Keystone. 
 
@@ -121,7 +112,7 @@ The following table indicates that actions that each Keystone role can perform.
 
 |===
 
-=== SnapCenter admin
+== SnapCenter admin
 
 
 Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
@@ -133,7 +124,7 @@ A member who has this role can complete the following actions in BlueXP:
 * Manage all working environments in the projects and folders for which they have permissions
 * Use all BlueXP services 
 
-=== Classification viewer
+== Classification viewer
 
 Provides the ability view BlueXP classification scan results.
 
