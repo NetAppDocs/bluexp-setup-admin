@@ -24,7 +24,7 @@ NOTE: When running BlueXP in private mode, you must always upgrade the connector
 == Disable automatic upgrades
 
 
-Disabling auto-upgrade for your connector consists of two steps. First you need to ensure that your current connector is healthy and up-to-date. Then you'll edit a configuration file to turn off the automatic upgrade feature.
+Disabling auto-upgrade for your connector consists of two steps. First you need to ensure that your Connector is healthy and up-to-date. Then you'll edit a configuration file to turn off the automatic upgrade feature.
 
 
 NOTE: You can only disable automatic upgrades if you have connector version 3.9.48 or higher. 
@@ -47,7 +47,7 @@ podman ps -a
 
 === Disable auto-upgrade for the connector
 
-You disable automatic upgrades by setting the _isUpgradeDisabled_ flag in the _com/opt/application/netapp/service-manager-2/config.json_ file. By default, this flag is set to false and your connector is automatically upgraded. You can set this flag to true to disable automatic upgrades.
+You disable automatic upgrades by setting the _isUpgradeDisabled_ flag in the _com/opt/application/netapp/service-manager-2/config.json_ file. By default, this flag is set to false and your connector is automatically upgraded. You can set this flag to true to disable automatic upgrades. You should be familiar with JSON syntax before completing this step. 
 
 To re-enable auto-upgrade, use these steps and set the _isUpgradeDisabled_ flag to false.
 
@@ -55,33 +55,14 @@ To re-enable auto-upgrade, use these steps and set the _isUpgradeDisabled_ flag 
 
 . Ensure you have verified that your connector is up-to-date and healthy.
 
-. Edit the _/opt/application/netapp/service-manager-2/config.json_ file and change the value of the _isUpgradeDisabled_ flag to true as shown near the bottom of this example.
+. Create a backup copy of the _/opt/application/netapp/service-manager-2/config.json_ file to ensure you can revert your changes. 
+
+. Edit the _/opt/application/netapp/service-manager-2/config.json_ file and change the value of the _isUpgradeDisabled_ flag to true.
 +
 [source.json]
-{
-  "environment": "production",
-  "proxySetting": "notConfigured",
-  "accountId": "account-NVKiCdw2",
-  "clientId": "EalzoDIDFyovsQarrXiBYa15dZZvZxD6",
-  "enc_clientSecret": "f151lvsq3NRQDGSAGV8T3YHdSch21na6MWBtTkAXHWSGpsW5UWkRhvXpTTf6lBpocXUUr4YETIZuEHz5aWDFdB0JIz65YVJX/vTKWTN2iIpH7DUTRGISKp2UCIVixtGi",
-  "version": "3.0.76",
-  "site": "stdonpremv49",
-  "company": "NetApp",
-  "systemId": "4a4c4d97-80c2-4989-8c9f-75a92925eabb",
-  "encryptedMysqlPassword": "f151lvsq3NRQDGSAGV8T3RQN7wsmegYWXg5KXWvxyMksdg51qhTSg00SvvrhXFq0",
-  "mysqlWasConfigured": true,
-  "encryptionKey": "g4/6CAp2Aclqkrl4gb1C4A==",
-  "keyStorePassword": "Netapp234",
-  "trustStorePassword": "ugauga",
-  "dockerRepoConfig": {
-    "username": "client-infra-prod-read",
-    "encryptedPassword": "f151lvsq3NRQDGSAGV8T3W7IxfTUVELHcXa44msIIsQrtrobO32gIqG9mjpz8rbVmOryIIHcZt03UBbjdwJ5/Q==",
-    "registry": "cloudmanagerinfraprod.azurecr.io",
-    "imageNamespace": "",
-    "repoType": "DEFAULT_DOCKER_REPO"
-  },
+
   "isUpgradeDisabled": true,
-  "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
+
 
 
 . Save your file.
@@ -91,6 +72,12 @@ To re-enable auto-upgrade, use these steps and set the _isUpgradeDisabled_ flag 
 +
 [source,cli]
 systemctl restart netapp-service-manager.service
+
+. Run the following command and verify that the Connector status shows as _active(running)_:
+_
++
+[source,cli]
+systemctl status netapp-service-manager.service
 
 
 

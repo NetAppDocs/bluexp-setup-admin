@@ -22,6 +22,10 @@ Learn what's new with BlueXP administration features: identity and access manage
 
 include::_whatsnew/2025-03-10.adoc[]
 
+== 6 March 2025
+
+include::_whatsnew/2025-03-06.adoc[]
+
 == 10 February 2025
 
 include::_whatsnew/2025-02-10.adoc[]

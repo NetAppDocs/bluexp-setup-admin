@@ -37,7 +37,7 @@ While a Connector isn't required to set up and manage Azure NetApp Files, a Conn
 
 * Digital advisor
 
-* Digital wallet
+* Digital wallet (licenses only, subscription monitoring requires a Connector)
 +
 In almost all cases, you can add a license to the digital wallet without a Connector.
 +

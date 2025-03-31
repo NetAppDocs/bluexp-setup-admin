@@ -1,26 +1,17 @@
 
 
-=== Connector 3.9.49 update
 
-==== ONTAP System Manager access when BlueXP uses a Connector
-A BlueXP administrator (users with the Organization admin role) can configure BlueXP to prompt users to enter their ONTAP credentials in order to access ONTAP system manager. When this setting is enabled, users need enter their ONTAP credentials each time as they are not stored in BlueXP.
- 
-This feature is available in Connector version 3.9.49 and higher. link:task-ontap-access-connector.html[Learn how to configure credentials settings.^].
+=== Connector 3.9.50
 
-=== Connector 3.9.48 update
+This release of the BlueXP Connector includes minor security improvements and bug fixes.
 
-==== Ability to disable the auto-upgrade setting for the Connector
-You can disable the auto-upgrade feature of the Connector. 
+At this time, the 3.9.50 release is available for standard mode and restricted mode.
 
-When you use BlueXP in standard mode or restricted mode, BlueXP automatically upgrades your Connector to the latest release, as long as the Connector has outbound internet access to obtain the software update.
-If you need to manually manage when the connector is upgraded, you can now disable automatic upgrades for standard mode or restricted mode.
+=== NetApp Keystone beta available in BlueXP
+
+NetApp Keystone will soon be available from BlueXP and is now in beta. You can access the sign-up page for the NetApp Keystone beta from the left navigation bar of BlueXP.
 
 
-NOTE: This change does not impact BlueXP private mode where you must always upgrade the connector yourself.
-
-This feature is available in Connector version 3.9.48 and higher. 
-
-link:task-upgrade-connector.html[Learn how disable auto-upgrade for the Connector.^]
 
 
 
