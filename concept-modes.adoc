@@ -221,14 +221,14 @@ For Cloud Volumes ONTAP, both capacity-based licensing and node-based licensing 
 How to get started with restricted mode::
 You need to enable restricted mode when you create your BlueXP account.
 +
-If you don't have an account yet, you'll be prompted to create your account and enable restricted mode when you log in to BlueXP for the first time from a Connector that you manually installed or that you created from your cloud provider's marketplace.
+If you don't have an organization yet, you'll be prompted to create your organization and enable restricted mode when you log in to BlueXP for the first time from a Connector that you manually installed or that you created from your cloud provider's marketplace.
 +
-If you already have an account and you want to create another one, then you need to use the Tenancy API. 
+
 +
-Note that you can't change the restricted mode setting after BlueXP creates the account. You can't enable restricted mode later and you can't disable it later. It must be set at time of account creation.
+Note that you can't change the restricted mode setting after BlueXP creates the organization. You can't enable restricted mode later and you can't disable it later.
 +
 * link:task-quick-start-restricted-mode.html[Learn how to get started with restricted mode].
-* link:task-create-account.html[Learn how to create an additional BlueXP account].
+
 
 == Private mode
 
