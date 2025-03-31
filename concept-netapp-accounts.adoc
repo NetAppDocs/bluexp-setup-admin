@@ -35,11 +35,13 @@ link:task-managing-netapp-accounts.html[Learn how to manage your BlueXP account]
 Members are BlueXP users that you associate with your BlueXP account. Associating a user with an account and your workspace in that account enables those users to create and manage working environments in BlueXP.
 
 
-== Workspaces
+== Workspace
 
 In BlueXP, a workspace isolates any number of _working environments_ from other users in the account. BlueXP users (members) can't access the working environments in a workspace unless they are associated with that workspace.
 
 A working environment represents a storage systems such as your on-premises ONTAP cluster.
+
+BlueXP private mode supports only one workspace.
 
 
 == Connectors
