@@ -13,7 +13,7 @@ summary: Manage your BlueXP account by adding users, creating service accounts f
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources. When you create your account, it only includes a single user and a workspace. You can manage the account to fit your needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
+When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources. When you create your account, it only includes a single user and a workspace. You can manage the account to fit your needs by adding users, creating service accounts for automation purposes. 
 
 If you're using BlueXP in standard mode or restricted mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
 
@@ -22,21 +22,45 @@ If you're using BlueXP in standard mode or restricted mode, you won't have a Blu
 
 == Manage your account with the Tenancy API
 
-If you want to manage your account settings by sending API requests, then you'll need to use the _Tenancy_ API. This API is different than the BlueXP API, which you use to create and manage Cloud Volumes ONTAP working environments.
+If you want to manage your account settings by sending API requests, then you'll need to use the _Tenancy_ API. This API is different than the BlueXP API. Keep in mind that you cannot create new accounts or workspaces in private mode, even with the API.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html[View endpoints for the Tenancy API^]
 
+== Rename your workspace
+
+Manage your workspaces by creating, renaming, and deleting them. Note that you can't delete a workspace if it contains any resources. It must be empty.
+
+.Steps
+
+. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
+
+. Select *Workspaces*.
+
+. Select *Rename* to rename the workspace.
+
+
+
+== Change your account name
+
+Change your account name at any time to change it to something meaningful for you.
+
+.Steps
+
+. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
+
+. In the *Overview* tab, select the edit icon next to the account name.
+
+. Type a new account name and select *Save*.
+
 == Create and manage users
 
-The users in your account can access and manage the resources in specific workspaces.
+The users in your account can access and manage the resources in your workspace.
 
 === Add users
 
 Associate users with your BlueXP account so those users can create and manage working environments in BlueXP.
 
 .Steps
-
-. If the user hasn't already done so, ask the user to go to https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
 
 . From the top of BlueXP, select the *Account* drop-down.
 +
@@ -68,29 +92,10 @@ image:screenshot-manage-account-settings.png[A screenshot that shows the Manage 
 . Select *Disassociate User* and select *Disassociate* to confirm.
 
 
-=== Manage workspaces
-
-You can associate and disassociate users with workspaces at any time. Associating the user enables them to create and view the working environments in that workspace.
-
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-+
-image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
-
-. From the Members tab, select the action menu in the row that corresponds to the user.
-
-. Select *Manage Workspaces*.
-
-. Select the workspaces to associate with the user and select *Apply*.
-
 
 == Create and manage service accounts
 
 A service account acts as a "user" that can make authorized API calls to BlueXP for automation purposes. This makes it easier to manage automation because you don't need to build automation scripts based on a real person's user account who can leave the company at any time.
-
-You give permissions to a service account by assigning it a role, just like any other BlueXP user. You can also associate the service account with specific workspaces in order to control the working environments (resources) that the service can access.
 
 When you create the service account, BlueXP enables you to copy or download a client ID and client secret for the service account. This key pair is used for authentication with BlueXP.
 
@@ -112,7 +117,7 @@ image:screenshot-manage-account-settings.png[A screenshot that shows the Manage 
 
 . From the Members tab, select *Create Service Account*.
 
-. Enter a name and select a role. If you chose a role other than Account Admin, choose the workspace to associate with this service account.
+. Enter a name.
 
 . Select *Create*.
 
@@ -176,34 +181,5 @@ image:screenshot_service_account_actions.gif[A screenshot that shows the action 
 
 . Select *Delete* again to confirm.
 
-== Manage workspaces
 
-Manage your workspaces by creating, renaming, and deleting them. Note that you can't delete a workspace if it contains any resources. It must be empty.
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. Select *Workspaces*.
-
-. Choose one of the following options:
-+
-* Select *Add New Workspace* to create a new workspace.
-* Select *Rename* to rename the workspace.
-* Select *Delete* to delete the workspace.
-
-
-
-
-== Change your account name
-
-Change your account name at any time to change it to something meaningful for you.
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. In the *Overview* tab, select the edit icon next to the account name.
-
-. Type a new account name and select *Save*.
 
