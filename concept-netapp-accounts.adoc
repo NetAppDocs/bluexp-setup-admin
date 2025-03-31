@@ -13,7 +13,7 @@ summary: A BlueXP account enables you to manage users and organize resources in 
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources in isolated _workspaces_. For example, a group of users can deploy and manage Cloud Volumes ONTAP working environments in a workspace that isn't visible to users who manage working environments in a different workspace.
+When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources in an isolated _workspace_. 
 
 If you're using BlueXP in standard mode or restricted mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
 
@@ -22,11 +22,9 @@ If you're using BlueXP in standard mode or restricted mode, you won't have a Blu
 
 == Overview
 
-When you first access BlueXP, you're prompted to select or create an account. For example, you'll see the following screen if you don't have an account yet:
+When you first access BlueXP, an account is already created for you with a workspace called _Workspace-1_. 
 
-image:screenshot-account-selection.png[A screenshot of the BlueXP setup wizard that prompts you for the BlueXP account in which you want to create BlueXP.]
-
-BlueXP Account Admins can then modify the settings for this account by managing users (members), workspaces, and Connectors:
+You can then add members (users) to this account and deploy Connectors:
 
 image:screenshot-account-settings.png["A screenshot that shows the Manage Account widget from which you can manage users, workspaces, and Connectors."]
 
@@ -34,52 +32,25 @@ link:task-managing-netapp-accounts.html[Learn how to manage your BlueXP account]
 
 == Members
 
-Members are BlueXP users that you associate with your BlueXP account. Associating a user with an account and one or more workspaces in that account enables those users to create and manage working environments in BlueXP.
+Members are BlueXP users that you associate with your BlueXP account. Associating a user with an account and your workspace in that account enables those users to create and manage working environments in BlueXP.
 
-When you associate a user, you assign them a role:
 
-* _Account Admin_: Can perform any action in BlueXP.
-* _Workspace Admin_: Can create and manage resources in the assigned workspace.
-* _Compliance Viewer_: Can only view compliance information for BlueXP classification and generate reports for workspaces that they have permission to access.
+== Workspace
 
-link:reference-user-roles.html[Learn more about these roles].
+In BlueXP, a workspace isolates any number of _working environments_ from other users in the account. BlueXP users (members) can't access the working environments in a workspace unless they are associated with that workspace.
 
-== Workspaces
+A working environment represents a storage systems such as your on-premises ONTAP cluster.
 
-In BlueXP, a workspace isolates any number of _working environments_ from other users in the account. Workspace Admins can't access the working environments in a workspace unless the Account Admin associates the admin with that workspace.
+BlueXP private mode supports only one workspace.
 
-A working environment represents a storage system. For example:
-
-* A Cloud Volumes ONTAP system
-* An on-premises ONTAP cluster
-* A StorageGRID system
-
-link:task-setting-up-netapp-accounts.html[Learn how to add a workspace].
 
 == Connectors
 
 A Connector executes the actions that BlueXP needs to perform in order to manage your data infrastructure. The Connector runs on a virtual machine instance that you deploy in your cloud provider or on an on-premises host that you configured.
 
-You can use a Connector with more than one BlueXP service. For example, if you're using a Connector to manage Cloud Volumes ONTAP, you can use that same Connector with another service like BlueXP tiering.
+You can use a Connector with more than one BlueXP service. For example, if you're using a Connector to manage backup and recovery, you can use that same Connector with another service like BlueXP tiering.
 
 link:concept-connectors.html[Learn more about Connectors].
 
-== Examples
 
-The following examples depict how you might set up your accounts.
 
-NOTE: In both example images that follow, the Connector and the Cloud Volumes ONTAP systems don't actually reside _in_ the BlueXP account--they're running in a cloud provider. This is a conceptual representation of the relationship between each component.
-
-=== Multiple workspaces
-
-The following example shows an account that uses two workspaces to create isolated environments. The first workspace is for a production environment and the second is for a dev environment.
-
-image:diagram_cloud_central_accounts_one.png[A diagram that shows a single BlueXP account that contains two workspaces. Each workspace is associated with the same Connector and each has their own Workspace Admin.]
-
-=== Multiple accounts
-
-Here's another example that shows the highest level of multi-tenancy by using two separate BlueXP accounts. For example, a service provider might use BlueXP in one account to provide services for their customers, while using another account to provide disaster recovery for one of their business units.
-
-Note that account 2 includes two separate Connectors. This might happen if you have systems in separate regions or in separate cloud providers.
-
-image:diagram_cloud_central_accounts_two.png["A diagram that shows two BlueXP accounts, each with several workspaces and their associated Workspace Admins."]
