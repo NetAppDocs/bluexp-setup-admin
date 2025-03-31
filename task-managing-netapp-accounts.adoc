@@ -13,7 +13,7 @@ summary: Manage your BlueXP account by adding users, creating service accounts f
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources. When you create your account, it only includes a single admin user and a workspace. You can manage the account to fit your needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
+When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources. When you create your account, it only includes a single user and a workspace. You can manage the account to fit your needs by adding users and creating service accounts for automation purposes. 
 
 If you're using BlueXP in standard mode or restricted mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
 
@@ -22,21 +22,45 @@ If you're using BlueXP in standard mode or restricted mode, you won't have a Blu
 
 == Manage your account with the Tenancy API
 
-If you want to manage your account settings by sending API requests, then you'll need to use the _Tenancy_ API. This API is different than the BlueXP API, which you use to create and manage Cloud Volumes ONTAP working environments.
+If you want to manage your account settings by sending API requests, then you'll need to use the _Tenancy_ API. This API is different than the BlueXP API. Keep in mind that you cannot create new accounts or workspaces in private mode, even with the API.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html[View endpoints for the Tenancy API^]
 
+== Rename your workspace
+
+Manage your workspaces by creating, renaming, and deleting them. Note that you can't delete a workspace if it contains any resources. It must be empty.
+
+.Steps
+
+. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
+
+. Select *Workspaces*.
+
+. Select *Rename* to rename the workspace.
+
+
+
+== Change your account name
+
+Change your account name at any time to change it to something meaningful for you.
+
+.Steps
+
+. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
+
+. In the *Overview* tab, select the edit icon next to the account name.
+
+. Type a new account name and select *Save*.
+
 == Create and manage users
 
-The user's in your account can access and manage the resources in specific workspaces.
+The users in your account can access and manage the resources in your workspace.
 
 === Add users
 
 Associate users with your BlueXP account so those users can create and manage working environments in BlueXP.
 
 .Steps
-
-. If the user hasn't already done so, ask the user to go to https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
 
 . From the top of BlueXP, select the *Account* drop-down.
 +
@@ -48,23 +72,12 @@ image:screenshot-manage-account-settings.png[A screenshot that shows the Manage 
 
 . From the Members tab, select *Associate User*.
 
-. Enter the user's email address and select a role for the user:
-+
-* *Account Admin*: Can perform any action in BlueXP.
-* *Workspace Admin*: Can create and manage resources in assigned workspaces.
-* *Compliance Viewer*: Can only view compliance information for BlueXP classification and generate reports for workspaces that they have permission to access.
+. Enter the user's email address.
 
-. If you selected Workspace Admin or Compliance Viewer, select one or more workspaces to associate with that user.
-+
-image:screenshot_associate_user.gif[A screenshot that shows how to associate a user by selecting a role and the associated workspaces.]
+. Select *Associate*. The user should receive an email from NetApp BlueXP titled "Account Association." The email includes the information needed to access BlueXP.
 
-. Select *Associate*.
 
-.Result
-
-The user should receive an email from NetApp BlueXP titled "Account Association." The email includes the information needed to access BlueXP.
-
-=== Remove users
+=== Remove users from your account
 
 Disassociating a user makes it so they can no longer access the resources in a BlueXP account.
 
@@ -75,44 +88,14 @@ Disassociating a user makes it so they can no longer access the resources in a B
 image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
 
 . From the Members tab, select the action menu in the row that corresponds to the user.
-+
-image:screenshot_associate_user_workspace.png[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
 
 . Select *Disassociate User* and select *Disassociate* to confirm.
 
-.Result
 
-The user can no longer access the resources in this BlueXP account.
-
-=== Manage a Workspace Admin's workspaces
-
-You can associate and disassociate Workspace Admins with workspaces at any time. Associating the user enables them to create and view the working environments in that workspace.
-
-NOTE: You also need to associate the Connector with workspaces so Workspace Admins can access those workspaces from BlueXP. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces[Learn how to manage a Connector's workspaces].
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-+
-image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
-
-. From the Members tab, select the action menu in the row that corresponds to the user.
-+
-image:screenshot_associate_user_workspace.png[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
-
-. Select *Manage Workspaces*.
-
-. Select the workspaces to associate with the user and select *Apply*.
-
-.Result
-
-The user can now access those workspaces from BlueXP, as long as the Connector was also associated with the workspaces.
 
 == Create and manage service accounts
 
 A service account acts as a "user" that can make authorized API calls to BlueXP for automation purposes. This makes it easier to manage automation because you don't need to build automation scripts based on a real person's user account who can leave the company at any time.
-
-You give permissions to a service account by assigning it a role, just like any other BlueXP user. You can also associate the service account with specific workspaces in order to control the working environments (resources) that the service can access.
 
 When you create the service account, BlueXP enables you to copy or download a client ID and client secret for the service account. This key pair is used for authentication with BlueXP.
 
@@ -134,7 +117,7 @@ image:screenshot-manage-account-settings.png[A screenshot that shows the Manage 
 
 . From the Members tab, select *Create Service Account*.
 
-. Enter a name and select a role. If you chose a role other than Account Admin, choose the workspace to associate with this service account.
+. Enter a name.
 
 . Select *Create*.
 
@@ -198,73 +181,5 @@ image:screenshot_service_account_actions.gif[A screenshot that shows the action 
 
 . Select *Delete* again to confirm.
 
-== Manage workspaces
 
-Manage your workspaces by creating, renaming, and deleting them. Note that you can't delete a workspace if it contains any resources. It must be empty.
 
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. Select *Workspaces*.
-
-. Choose one of the following options:
-+
-* Select *Add New Workspace* to create a new workspace.
-* Select *Rename* to rename the workspace.
-* Select *Delete* to delete the workspace.
-
-+
-If you created a new workspace, you must also add the Connector to that workspace. If you don't add the Connector, then Workspace Admins can't access any of the resources in the workspace. Refer to the following section for more details.
-
-== Manage a Connector's workspaces
-
-You need to associate the Connector with workspaces so Workspace Admins can access those workspaces from BlueXP.
-
-If you only have Account Admins, then associating the Connector with workspaces isn't required. Account Admins have the ability to access all workspaces in BlueXP by default.
-
-link:concept-netapp-accounts.html[Learn more about users, workspaces, and Connectors].
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. Select *Connector*.
-
-. Select *Manage Workspaces* for the Connector that you want to associate.
-
-. Select the workspaces to associate with the Connector and select *Apply*.
-
-== Change your account name
-
-Change your account name at any time to change it to something meaningful for you.
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. In the *Overview* tab, select the edit icon next to the account name.
-
-. Type a new account name and select *Save*.
-
-== Allow private previews
-
-Allow private previews in your account to get access to new services that are made available as a preview in BlueXP.
-
-Services in private preview are not guaranteed to behave as expected and might sustain outages and be missing functionality.
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. In the *Overview* tab, enable the *Allow Private Preview* setting.
-
-== Allow third-party services
-
-Allow third-party services in your account to get access to third-party services that are available in BlueXP. Third-party services are cloud services similar to the services that NetApp offers, but they're managed and supported by third-party companies.
-
-.Steps
-
-. From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
-
-. In the *Overview* tab, enable the *Allow Third Party Services* setting.
