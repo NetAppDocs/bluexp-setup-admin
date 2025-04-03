@@ -11,9 +11,7 @@ The 3.9.50 release includes updates to the following BlueXP components and servi
 | Version included in this release
 | Changes since the previous private mode release
 
-| Connector | 3.9.50 | * Ability to disable auto-upgrade. link:task-ontap-access-connector.html[Learn how to configure credentials settings.^]
-
-* Ability to enforce credentials when accessing ONTAP system manager through BlueXP. link:task-upgrade-connector.html[Learn how disable auto-upgrade for the Connector.^]
+| Connector | 3.9.50, 3.9.49 | Gto to the https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50[what's new in BlueXP connector page] and refer to the changes included for versions 3.9.50 and 3.9.49.
 
 | Backup and recovery | 17 March 2025 | Go to the https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[what's new in BlueXP backup and recovery page^] and refer to the changes included in the March 2024 release.
 
