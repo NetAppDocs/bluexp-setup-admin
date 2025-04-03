@@ -19,16 +19,10 @@ The 3.9.50 release includes updates to the following BlueXP components and servi
 
 | Classification | 10 March 2025 (version 1.41) | Go to the https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[what's new in BlueXP classification page^] and refer to the changes included in the 1.38 to 1.371.41 releases.
 
-| Digital wallet ?? | 10 March 2025 (version 1.41) | Go to the https://docs.netapp.com/us-en/bluexp-digital-wallet/whats-new.html[what's new in BlueXP digital wallet page^] and refer to the changes included in the 10 February 2025 to 10 March 2025 releases.
-
-
-
-| Cloud Volumes ONTAP management ?? | 11 November 2024 | Go to the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[what's new with Cloud Volumes ONTAP management page^] and refer to the changes included in the October 2024 and November 2024 releases
-| On-premises ONTAP cluster management | 26 November 2024 | Go to the https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html[what's new with on-premises ONTAP cluster management page^] and refer to the changes included in the November 2024 release
 
 |===
 
-While  BlueXP replication is also included with private mode, there are no changes from the previous private mode release.
+
 
 For more details about private mode, including how to upgrade, refer to the following:
 
