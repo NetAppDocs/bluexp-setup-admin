@@ -5,7 +5,7 @@ keywords: rename organization, change organization name, name change, rename, ch
 summary: If needed, you can change the name of your BlueXP organization.
 ---
 
-= Rename your BlueXP organization
+= Manage your BlueXP organization
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,11 @@ summary: If needed, you can change the name of your BlueXP organization.
 :imagesdir: ./media/
 
 [.lead]
-If needed, you can change the name of your BlueXP organization from BlueXP identity and access management (IAM). The organization name appears at the top of the BlueXP web-based console and within the IAM pages.
+Your BlueXP organization has a name and an ID. You can choose a name for your organization to help identify it in your BlueXP deployment. You may also need to retrieve the organization ID for certain integrations such as Keystone.
+
+== Rename your organization
+
+You can rename your organization within BlueXP. This is helpful if you support more than organization within your BlueXP deployment.
 
 .Steps
 
@@ -25,9 +29,34 @@ image:screenshot-iam-edit-organization.png[A screenshot of Overview page that sh
 
 . Enter a new organization name and select *Apply*.
 
-.Result
 
-BlueXP updates the name of your organization. You should immediately see the updated name at the top of the BlueXP console.
+== Get the organization ID
+
+The organization ID is used for certain integrations with BlueXP. In particular, you'll need the organization ID if you want to configure BlueXP to be a cloud mediator for your ONTAP on-premises resources. 
+
+You can view the organization ID from the Organizations page and copy it to the clipboard for your needs.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select the *Organization* tab to view the  *Organization* page.
+
+. On the *Organization* page, look for your organization ID in the summary bar and copy it to the clipboard. You can save this for use later or copy it directly to where you need to use it. 
+
+== Obtain the ID for a project
+
+If you're using the BlueXP API, you might need to obtain the ID for a project. For example, when creating a Cloud Volumes ONTAP working environment.
+
+.Steps
+
+. From the *Organization* page, navigate to a project in the table and select image:icon-action.png["An icon that is three side-by-side dots"]
++
+The project ID displays.
+
+. To copy the ID, select the copy button.
++
+image:screenshot-iam-project-id.png[A screenshot of the folders and projects table that shows the project ID after selecting the action menu for a project.]
 
 .Related information
 
