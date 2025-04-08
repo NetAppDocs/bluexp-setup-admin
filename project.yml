@@ -122,7 +122,7 @@ sidebar:
               url: /task-iam-associate-connectors.html
             - title: Switch between organizations, projects, and Connectors
               url: /task-iam-switch-organizations-projects.html
-            - title: Rename your organization
+            - title: Organization and project IDs
               url: /task-iam-rename-organization.html
             - title: Monitor or audit IAM activity
               url: /task-iam-audit-actions-timeline.html
