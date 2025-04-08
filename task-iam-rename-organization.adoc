@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: task-iam-rename-organization.html
-keywords: rename organization, change organization name, name change, rename, change name, iam, identity and access management
+keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, project, organization, API, identity and access management
 summary: If needed, you can change the name of your BlueXP organization.
 ---
 
-= Manage your BlueXP organization
+= Organization and project IDs
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -44,6 +44,7 @@ You can view the organization ID from the Organizations page and copy it to the 
 
 . On the *Organization* page, look for your organization ID in the summary bar and copy it to the clipboard. You can save this for use later or copy it directly to where you need to use it. 
 
+[#project-id]
 == Obtain the ID for a project
 
 If you're using the BlueXP API, you might need to obtain the ID for a project. For example, when creating a Cloud Volumes ONTAP working environment.
