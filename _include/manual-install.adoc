@@ -84,6 +84,24 @@ For example:
 +
 At the end of the installation, the Connector service (occm) restarts twice if you specified a proxy server.
 
+. If you used Podman, you'll need to adjust the aardvark-dns port.
+.. SSH to the BlueXP Connector virtual machine.
+.. Open podman _/usr/share/containers/containers.conf_ file and modify the chosen port for Aardvark DNS service. For example, change it to 54.
++
+[source, cli]
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other dns services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
++
+.. Reboot the Connector virtual machine.
+
 . Open a web browser from a host that has a connection to the Connector virtual machine and enter the following URL:
 +
 https://_ipaddress_
