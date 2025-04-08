@@ -13,7 +13,7 @@ summary: If needed, you can change the name of your BlueXP organization.
 :imagesdir: ./media/
 
 [.lead]
-Your BlueXP organization has a name and an ID. You can choose a name for your organization to help identify it in your BlueXP deployment. You may also need to retrieve the organization ID for certain integrations such as Keystone.
+Your BlueXP organization has a name and an ID. You can choose a name for your organization to help identify it in your BlueXP deployment. You may also need to retrieve the organization ID for certain integrations.
 
 == Rename your organization
 
@@ -32,7 +32,7 @@ image:screenshot-iam-edit-organization.png[A screenshot of Overview page that sh
 
 == Get the organization ID
 
-The organization ID is used for certain integrations with BlueXP. In particular, you'll need the organization ID if you want to configure BlueXP to be a cloud mediator for your ONTAP on-premises resources. 
+The organization ID is used for certain integrations with BlueXP. 
 
 You can view the organization ID from the Organizations page and copy it to the clipboard for your needs.
 
