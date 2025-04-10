@@ -37,7 +37,7 @@ When using BlueXP IAM, users with these roles will manage the following componen
 * Projects
 * Resources
 * Members
-* Access roles
+* Roles
 * Connectors
 
 BlueXP resources are organized hierarchically:

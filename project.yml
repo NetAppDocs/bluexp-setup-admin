@@ -110,6 +110,8 @@ sidebar:
               url: /task-iam-manage-folders-projects.html
             - title: Add members and manage their permissions
               url: /task-iam-manage-members-permissions.html
+            - title: Use roles to control member access to resources
+              url: /task-iam-grant.access.html
             - title: Manage your resource hierarchy
               url: /task-iam-manage-resources.html
             - title: Associate a Connector with other folders and projects
