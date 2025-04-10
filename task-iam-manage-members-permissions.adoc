@@ -137,7 +137,7 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 === View organization members
 
-You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-grant-access.html[Learn how to use roles to control access to BlueXP resources.^]
+You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-manage-roles.html[Learn how to use roles to control access to BlueXP resources.^]
 
 TYou can view both user accounts and service accounts from the  *Members* page.
 
