@@ -1,0 +1,103 @@
+---
+sidebar: sidebar
+permalink: task-iam-grant-access.html
+keywords:  projects, access, resources, user roles, iam, identity and access management, 
+summary: BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects.
+---
+
+= Assign access to NetApp resources
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+BlueXP supports assigning roles to users based on what they need to do and where. Use roles to assign access to storage resources based on the specific BlueXP tasks that users need to perform.
+
+For example, if a BlueXP user needs to interact with ransomware protection services, they must be given a role that includes either viewing or administrative permissions for the ransomware protection service.
+
+Users with the Organization admin or Folder or project admin roles have the responsibility of assigning roles to other users. You can assign access roles on a project or folder basis. For example, you can assign a user the Ransomware protection admin role for one project and the SnapCenter admin role for a different project. Alternatively, if a user requires the Classification admin role for all projects within a specific folder, you can grant them this role at the folder level.
+
+Assign roles to users based on your IAM strategy for enhanced security. BlueXP IAM roles are designed to ensure that users only have access to what they need.
+
+To enable a member to use a particular data service or Keystone subscription, follow these steps outlined below.
+
+
+== Ensure the resource is associated with a project
+
+You must associate your resources to IAM projects in order to control access.  Resources include storage resources such as Cloud Volumes ONTAP, Keystone subscriptions, ONTAP on-premises resources and so on. 
+
+Users with the Organization admin or Folder or project admin roles can assign resources to projects.
+
+You need to associate your resources to projects in order to grant user access. You can associate multiple resources with the same project, and then assign users to the project based on the role you assign to them.
+
+If a resource requires Connector for discovery (such as Cloud Volumes ONTAP), you also need to associate the Connector with the same project.
+
+
+link:task-iam-associate-connectors.html[Learn how to associate a Connector with a folder or project].
+
+
+.Steps
+
+. From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Associate to folders or projects*.
+
+. Select a project and then select *Accept*.
+
+. To associate the resource with another project, select *Add folder or project* and then select  project.
++
+Note that you can only select from the folders and projects for which you have admin permissions.
+
+. Select *Associate resources*.
+
+
+
+== Add a role to an existing member
+
+Users must be a member of your organization before you can assign a role. Typically, you'll assign a role to the member when you add them to your organization. However, You can update a member's role at anytime either by removing a role or adding a different role. You can remove a user's access to a project by removing their role. .
+
+Members can have multiple roles within the same project and in different projects. For example, smaller organizations may assign all available access roles to the same user, while larger organization may have users do more specialized tasks in BlueXP.
+
+NOTE: Members with either the Organization admin role or the Folder or project admin role cannot be assigned additional roles. These roles have access to everything within the scope of their role, including all resources and services.
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Add a role*.
+
+. To add a role, complete the steps in the dialog box:
++
+* *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
++
+If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
+
+* *Select a category*: BlueXP separate roles into two categories: platform and data service. link:reference-iam-predefined-roles.html[Learn about IAM roles^].
+
+* Select a *Role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
+
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+* *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project or role category, and then select a role category and a corresponding role.
+
+. Select *Add new roles*.
+
+
+=== Change a member's assigned role
+
+You can change the assigned roles for a member should you need to adjust the access for a user.
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+
+. In the table, expand the respective row for organization, folder, or project where you want to change the member's assigned role and select *View* in the *Role* column to view the roles assigned to this member.
+
+. You can change an existing role for a member or remove a role.
+
+.. To change a member's role, elect *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one data service role to another. You'll be asked to confirm the change.
+
+.. To unassign a member's role, select image:icon-delete.png["An icon that resembles a trash can"] next to the role to unassign the member the respective role. You'll be asked to confirm the removal.
+
+
+
+
+
+
