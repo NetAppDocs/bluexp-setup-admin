@@ -13,9 +13,9 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP roles are designed to give the least privilege to a user in order for the user to accomplish storage management tasks. This ensures higher security and prevents users from inadvertently disrupting storage services where they do not have permissions. 
+BlueXP roles are designed to give the least privilege to a user in order for the user to accomplish storage management tasks. This ensures higher security and prevents users from inadvertently disrupting storage services where they do not have permissions. Roles fall into three categories: platform, application, and data service.
 
-Anyone with a BLueXP platform role (Organization admin or Project or Folder admin) can add a user to a resource and assign them a role or roles for a particular project or folder.
+Anyone with a BLueXP platform role (Organization admin or Project or Folder admin) can add a user to a project and assign them a role or roles for a particular project or folder.
 
 == BlueXP platform 
 Platform roles have full permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP management functions for both storage resources and data services. BlueXP includes two platform-wide roles: Organization admin and Folder or Project admin. 
@@ -73,7 +73,10 @@ The following table indicates that actions that each BlueXP platform protection 
 
 |===
 
-== Ransomware protection
+== Application roles
+Below is a list of the roles in the Application category.
+
+=== Ransomware protection
 
 You can use the following roles to assign users access to ransomware protection. 
 
@@ -120,9 +123,10 @@ The following table indicates that actions that each BlueXP ransomware protectio
 
 
 
+== Data services roles
+Below is the list of roles in the Data services category.
 
-
-== SnapCenter admin
+=== SnapCenter admin
 
 Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
 
@@ -135,7 +139,7 @@ A member who has this role can complete the following actions in BlueXP:
 * Manage all working environments in the projects and folders for which they have permissions
 * Use all BlueXP services 
 
-== Classification viewer
+=== Classification viewer
 
 Provides the ability view BlueXP classification scan results.
 
