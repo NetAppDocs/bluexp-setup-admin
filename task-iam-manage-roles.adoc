@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-grant-access.html
-keywords:  projects, access, resources, user roles, iam, identity and access management, 
+keywords:  projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members
 summary: BlueXP's identity and access management enables you to represent a complete resource hierarchy using folders and projects.
 ---
 
