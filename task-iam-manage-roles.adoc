@@ -57,11 +57,11 @@ TIP: A member who is assigned the Organization admin role can't be assigned any 
 +
 If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
 
-* *Select a category*: BlueXP separate roles into two categories: platform and data service. link:reference-iam-predefined-roles.html[Learn about IAM roles^].
+* *Select a category*: BlueXP separate roles into two categories: platform and data service. link:reference-iam-predefined-roles.html[Learn about access roles^].
 
 * Select a *Role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 
-link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+link:reference-iam-predefined-roles.html[Learn about access roles^].
 * *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project or role category, and then select a role category and a corresponding role.
 
 . Select *Add new roles*.
