@@ -26,14 +26,18 @@ BlueXP IAM is supported when using BlueXP in standard mode and restricted mode. 
 
 BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific parts of the organization's hierarchy. For example, a member can have project admin permissions for a project that has five associated resources. 
 
-When using BlueXP IAM, you'll manage the following components:
+Users must have the Organization admin role or the Folder or project admin role to manage folders. Users with Organization admin role can create and manage resources everywhere in your BlueXP organization. Users with Folder and project admin role can only do so for the folders or projects to which they have been assigned.
+
+link::reference-iam-predefined-roles.html[Learn about BlueXP roles.]
+
+When using BlueXP IAM, users with these roles will manage the following components:
 
 * The organization
 * Folders
 * Projects
 * Resources
 * Members
-* Roles and permissions
+* Roles
 * Connectors
 
 BlueXP resources are organized hierarchically:
@@ -49,9 +53,8 @@ image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the re
 
 === Organization
 
-An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of folders, projects, members, roles, and resources. Connectors are associated with specific projects in the organization.
+An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of resources such as Connectors, storage, and subscriptions that you can organize into folders and projects. You can then assign organization members (user) access to folders or projects according to their responsibiities in managing your storage environments.
 
-When you sign up to BlueXP, you're prompted to create a new organization.
 
 === Folders
 
@@ -59,13 +62,19 @@ A _folder_ enables you to group related projects together and separate them from
 
 Folders can contain projects, other folders, or a combination of both.
 
-You don't need to create folders. They are optional.
+Depending on the size of your organization and the number of storage resources you have, folders are a useful tool to keep your NetApp resources organized. They also allow you to better manage access if you want to share the administration of different folders with different users. You can assign a user the Folder or project admin role for a particular folder and they can then manage access to the folder and its projects, as well as create new projects in the folder. 
+
+When you create a folder, you can assign users access to it. When you assign a user an access role to a folder, that user can perform the duties associated with that role for all projects within the respective folder. Conversely, you can choose to grant user access on a project by project basis instead.
 
 === Projects
 
 A _project_ represents a workspace in BlueXP that organization members access from the BlueXP canvas in order to manage resources. For example, a project can include a Cloud Volumes ONTAP system, an on-premises ONTAP cluster, or an FSx for ONTAP file system.
 
+You create multiple projects to provide more granular access to your NetApp resources. For example, smaller organizations may have a project for each business unit or geographical location. Larger organizations may want to organize their storage resources into multiple projects per business unit to further control access. You can assign users access to resources by project or folder. 
+
 An organization can have one or many projects. A project can reside directly underneath the organization or within a folder.
+
+When your projects reside in a folder, you can 
 
 === Resources
 

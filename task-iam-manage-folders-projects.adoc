@@ -146,7 +146,7 @@ image:screenshot-iam-member-access.png[A screenshot of the Edit project page tha
 
 Modify member access to a folder or project to ensure that the right members have access to the resources associated with the folder or project.
 
-If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove or change member access when viewing the lower-level folder or project. You need to switch to that part of the hierarchy and update the member's permissions there. Alternatively, you can link:task-iam-manage-members-permissions.html#manage-permissions[manage permissions from the Members page].
+If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove or change their role when viewing the lower-level folder or project. You need to switch to that part of the hierarchy and update the member's role there. Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage roles from the Members page].
 
 link:concept-identity-and-access-management.html#role-inheritance[Learn more about role inheritance]. 
 
