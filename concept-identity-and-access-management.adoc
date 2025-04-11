@@ -147,11 +147,11 @@ Roles that you grant at the project level are inherited by all resources associa
 
 You can assign each organization member a role at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and project 2. Or you can assign a member role A for project 1 and role B for project 2.
 
-==== Predefined roles
+==== Access roles
 
-BlueXP supports several predefined roles that you can assign to the members of your organization.
+BlueXP supports several access roles that you can assign to the members of your organization.
 
-link:reference-iam-predefined-roles.html[Learn about IAM predefined roles].
+link:reference-iam-predefined-roles.html[Learn about access roles].
 
 [#associate-connectors]
 === Connectors

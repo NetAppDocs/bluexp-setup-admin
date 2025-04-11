@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-predefined-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
+keywords: predefined roles, access roles,  iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
 
-= User roles
+= Access roles
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP roles are designed to give the least privilege to a user in order for the user to accomplish storage management tasks. This ensures higher security and prevents users from inadvertently disrupting storage services where they do not have permissions. Roles fall into three categories: platform, application, and data service.
+BlueXP access roles are designed to give the least privilege to a user in order for the user to accomplish storage management tasks. This ensures higher security and prevents users from inadvertently disrupting storage services where they do not have permissions. Roles fall into three categories: platform, application, and data service.
 
 Anyone with a BLueXP platform role (Organization admin or Project or Folder admin) can add a user to a project and assign them a role or roles for a particular project or folder.
 
@@ -121,7 +121,7 @@ The following table indicates that actions that each Keystone role can perform.
 Below is the list of roles in the Data services category.
 
 
-== Classification viewer
+=== Classification viewer
 
 Provides the ability view BlueXP classification scan results.
 
