@@ -6,7 +6,7 @@ At this time, the 3.9.49 release is available for standard mode and restricted m
 
 === BlueXP identity and access management (IAM)
 * Support for assigning multiple roles to a BlueXP user. 
-* Support for assign a role on multiple resources of the BlueXP organization (Org/folder/project)
+* Support for assigning a role on multiple resources of the BlueXP organization (Org/folder/project)
 * Roles are now associated with one of two categories: platform and data service.
 
 ==== Restricted mode now uses BlueXP IAM
