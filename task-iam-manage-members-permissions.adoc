@@ -79,7 +79,7 @@ Note the following:
 
 ** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+link:reference-iam-predefined-roles.html[Learn about access roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization or grant the user further permissions in the selected area, select *Add role*, specify another folder or project or a different role category and then choose a role.
 
 . Select *Add*. 
