@@ -1,0 +1,1 @@
+A Connector is NetApp software that you install that executes the actions that BlueXP needs to perform to manage your storage infrastructure. You don't need a Connector for many of BlueXP's features, but some features aren't available if you don't.
