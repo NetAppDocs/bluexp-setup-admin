@@ -14,7 +14,7 @@ At this time, the 3.9.51 release is available for standard mode and restricted m
 * If you have the Org admin or Folder or project admin role, you can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
 
 
-link:reference-iam-predefined-roles.html[Learn about the new roles.^].
+link:reference-iam-predefined-roles.html[Learn about the new roles.^]
 
 
 
