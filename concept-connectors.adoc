@@ -19,7 +19,7 @@ If you run BlueXP in standard mode, you won't need to install a Connector to run
 
 == What you can do without a Connector in standard mode
 
-Some of BlueXP's most important services are available without installing a Connector if you are running in standard mode. 
+You can start using BlueXP to centrally manage your storage resources without installing a Connector if you are running in standard mode. 
 
 You can use the following BlueXP features and services without a Connector:
 
