@@ -6,11 +6,13 @@ At this time, the 3.9.51 release is available for standard mode and restricted m
 
 === BlueXP Identity and Access Management (IAM)
 
-* You now need to assign roles to users in order for them to have access to ransomware protection. You can assign a user one of two roles: Ransomware protection admin or Ransomware protection viewer.
 
-* You now need to assign roles to users in order for them to have access to NetApp Keystone. You can assign a user one of two roles: Keystone admin or Keystone viewer.
+* Users without the Org admin or Folder or project admin must be assigned a Ransomware protection role to have access to ransomware protection. You can assign a user one of two roles: Ransomware protection admin or Ransomware protection viewer.
 
-* You can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
+* Users without the Org admin or Folder or project admin must be assigned a Keystone role to have access to Keystone. You can assign a user one of two roles: Keystone admin or Keystone viewer.
+
+* If you have the Org admin or Folder or project admin role, you can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
+
 
 link:reference-iam-predefined-roles.html[Learn about the new roles.^].
 
