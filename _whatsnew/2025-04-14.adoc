@@ -12,7 +12,7 @@ At this time, the 3.9.51 release is available for standard mode and restricted m
 
 * You can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
 
-link:https://docs.netapp.comreference-iam-predefined-roles.html[Learn about the new roles.^].
+link:https://docs.netapp.comreference-iam-predefined-roles.html[Learn about the new roles.^]
 
 
 
