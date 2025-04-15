@@ -84,7 +84,7 @@ NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like 
 * *Keystone admin*: Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions.
 * *Keystone viewer*: View the Keystone subscription as well as view reports, alerts and assets.
 
-The following table indicates that actions that each Keystone role can perform. 
+The following table indicates the actions that each Keystone role can perform. 
 
 [cols=3*,options="header",cols="40,20a,20a",width="100%"]
 |===
