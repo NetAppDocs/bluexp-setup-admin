@@ -10,7 +10,7 @@ settings:
 
 sidebar:
   entries:
-    - title: BlueXP setup and administration
+    - title: BlueXP setup and administration docs
       url: /index.html
     - title: Release notes
       entries:
@@ -114,10 +114,8 @@ sidebar:
               url: /task-iam-get-started.html
             - title: Organize your resources with folders and projects
               url: /task-iam-manage-folders-projects.html
-            - title: Add members and service accounts
+            - title: Add members and manage their permissions
               url: /task-iam-manage-members-permissions.html
-            - title: Use roles to control member access to resources
-              url: /task-iam-manage-roles.html
             - title: Manage your resource hierarchy
               url: /task-iam-manage-resources.html
             - title: Associate a Connector with other folders and projects
@@ -128,7 +126,7 @@ sidebar:
               url: /task-iam-rename-organization.html
             - title: Monitor or audit IAM activity
               url: /task-iam-audit-actions-timeline.html
-            - title: BlueXP access roles
+            - title: Predefined IAM roles
               url: /reference-iam-predefined-roles.html
         - title: BlueXP accounts (private mode only)
           entries:

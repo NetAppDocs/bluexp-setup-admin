@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, projec
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Add BlueXP members and manage their permissions
+= Add BlueXP IAM members and manage their permissions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -79,7 +79,7 @@ Note the following:
 
 ** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
 +
-link:reference-iam-predefined-roles.html[Learn about access roles].
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 * *Add role*: If you want to provide access to additional folders or projects within your organization or grant the user further permissions in the selected area, select *Add role*, specify another folder or project or a different role category and then choose a role.
 
 . Select *Add*. 
@@ -137,9 +137,19 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 === View organization members
 
-You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-manage-roles.html[Learn how to use roles to control access to BlueXP resources.^]
+You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy.
 
-TYou can view both user accounts and service accounts from the  *Members* page.
+Here's an example of a member who is assigned the _Folder or project admin_ role for a folder, which provides permissions to the three projects in the folder.
+
+image:screenshot-iam-member-details.png[A screenshot of the details page for a member who has permissions to a project and a folder.]
+
+Here's another example that shows a member who has the Organization admin role, which gives the user access to all resources in the organization.
+
+image:screenshot-iam-member-details-org-admin.png[A screenshot of the details page for a member who has Organization admin permissions.]
+
+.About this task
+
+The *Members* page shows details about two types of members: user accounts and service accounts.
 
 .Steps
 
@@ -190,9 +200,66 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 link:task-iam-manage-folders-projects.html#view-associated-resources-members[View all of the members associated with a specific folder or project].
 
+[#manage-permissions]
+== Manage member roles
+
+Organization members can be assigned roles at each level and more than one level of your resource hierarchy.You can assign members roles relevant to their responsibilities in your BlueXP organization. 
 
 
+You can unassign a role from a member, add a new role or both. A role defines the permissions assigned to a member at the organization, folder, or project level.  You can assign members roles relevant to their responsibilities in your BlueXP organization. 
 
+Each organization member can have a role assigned at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and role B for project 2.
+
+
+TIP: A member who is assigned the Organization admin role can't be assigned any additional roles. They already have permissions across the entire organization. 
+
+=== View roles(s) assigned to a member
+You can view a member to verify which roles they are currently assigned. 
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+
+. In the table, expand the respective row for organization, folder, or project where you want to view the member's assigned role and select *View* in the *Role* column..
+
+=== Assign a role
+
+Provide a member with additional permissions in your organization by adding roles that apply to the organization, folder, or project level.
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Add a role*.
+
+. To add a role, complete the steps in the dialog box:
++
+* *Select an organization, folder, or project*: Choose the level of your resource hierarchy that the member should have permissions for.
++
+If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
+
+* *Select a category*: BlueXP separate roles into two categories: platform and data service. link:reference-iam-predefined-roles.html[Learn about IAM roles^].
+
+* Select a *Role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
++
+** If you selected the organization, you can choose from any role other than *Folder or project admin*. 
+** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
++
+link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+* *Add role*: If you want to provide access to additional folders or projects within your organization, select *Add role*, specify another folder or project or role category, and then select a role category and a corresponding role.
+
+. Select *Add new roles*.
+
+
+=== Change a member's assigned role
+
+You can change the assigned role for a at the organization, folder, or project level. Members can have different roles at different levels of your organization.
+
+.Steps
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+
+. In the table, expand the respective row for organization, folder, or project where you want to change the member's assigned role and select *View* in the *Role* column to view the roles assigned to this member.
+
+. To change a member's role, elect *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one data service role to another. You'll be asked to confirm the change.
+
+.. To unassign a member's role, select image:icon-delete.png["An icon that resembles a trash can"] next to the role to unassign the member the respective role. You'll be asked to confirm the removal.
 
 
 
