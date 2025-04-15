@@ -45,9 +45,9 @@ You can only select from the resources that are associated with the parent of th
 link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
 * *Access*: View the members who will have access to the folder or project based on the existing permissions already defined in your resource hierarchy.
 +
-If needed, select *Add a member* to specify additional organization members who should have access to the folder or project and then select a role. A role defines the permissions that members have for the folder or project.
+If needed, select *Add a member* to specify additional organization members who should have access to the folder or project and then select a role. An access role defines the permissions that members have for the folder or project.
 +
-link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
+link:reference-iam-predefined-roles.html[Learn about access roles].
 
 . Select *Add*.
 
@@ -146,7 +146,7 @@ image:screenshot-iam-member-access.png[A screenshot of the Edit project page tha
 
 Modify member access to a folder or project to ensure that the right members have access to the resources associated with the folder or project.
 
-If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove or change member access when viewing the lower-level folder or project. You need to switch to that part of the hierarchy and update the member's permissions there. Alternatively, you can link:task-iam-manage-members-permissions.html#manage-permissions[manage permissions from the Members page].
+If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove or change their role when viewing the lower-level folder or project. You need to switch to that part of the hierarchy and update the member's role there. Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage roles from the Members page].
 
 link:concept-identity-and-access-management.html#role-inheritance[Learn more about role inheritance]. 
 
