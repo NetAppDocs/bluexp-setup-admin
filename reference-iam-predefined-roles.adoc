@@ -127,30 +127,76 @@ The following table indicates the actions that each Keystone role can perform.
 
 
 == Data services roles
-Data services roles provide users permission to use to data services within the organization, project or folder to which they have access.
+Below is the list of roles in the Data services category.
 
-=== SnapCenter admin
-
-
-Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
-
-Permissions::
-A member who has this role can complete the following actions in BlueXP:
-+
-* Complete any action from Backup and recovery > Applications
-* Manage all working environments in the projects and folders for which they have permissions
-* Use all BlueXP services 
 
 === Classification viewer
 
 Provides the ability view BlueXP classification scan results.
 
+Classification does not have an admin role.
+
 Permissions::
 View compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
-+
+
 No other actions are available to a member who has this role.
 
+=== Ransomware protection
 
+You can use the following roles to assign users access to ransomware protection. 
+
+* *Ransomware protection admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
+* *Ransomware protection viewer*: View workload data, view alert data, download recovery data, and download reports.
+
+The following table indicates that actions that each BlueXP ransomware protection role can perform. 
+
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature and action
+| Ransomware protection admin
+| Ransomware protection viewer
+
+| View dashboard and all tabs | Yes | Yes
+| Start free trial | Yes | No 
+| Initiate discovery of workloads | Yes | No
+3+| *On the Protect tab*: 
+| Add, modify, or delete policies | Yes | No
+| Protect workloads | Yes | No
+| Identify sensitive data| Yes | No 
+| Edit workload protection | Yes | No
+| View workload details | Yes | Yes 
+| Download data| Yes | Yes 
+3+| *On the Alerts tab*: 
+| View alert details | Yes | Yes 
+| Edit incident status | Yes | No
+| View incident details | Yes | Yes
+| Get full list of impacted files| Yes | No 
+| Download alerts data | Yes | Yes 
+3+| *On the Recover tab*: 
+| Download impacted files| Yes | No 
+| Restore workload | Yes | No 
+| Download recovery data | Yes | Yes
+| Download reports | Yes | Yes
+3+| *On the Settings tab*:
+| Add or modify backup targets| Yes | No 
+| Add or modify SIEM targets | Yes | No
+3+| *On the Reports tab*:
+| Download reports | Yes | Yes
+
+|===
+
+=== SnapCenter admin
+
+Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
+
+SnapCenter does not have a viewer role.
+
+Permissions::
+A member who has this role can complete the following actions in BlueXP:
+
+* Complete any action from Backup and recovery > Applications
+* Manage all working environments in the projects and folders for which they have permissions
+* Use all BlueXP services 
 
 
 
