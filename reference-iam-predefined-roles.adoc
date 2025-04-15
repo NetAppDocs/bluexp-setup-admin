@@ -81,6 +81,49 @@ Once the initial setup is complete, regional admins with the Folder or Project a
 
 
 
+== Application roles
+Below is a list of the roles in the Application category.
+
+=== Keystone roles
+
+You can use the following roles to assign users access to Keystone. 
+
+NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, please contact your NetApp representative.
+
+* *Keystone admin*: Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions.
+* *Keystone viewer*: View the Keystone subscription as well as view reports, alerts and assets.
+
+The following table indicates the actions that each Keystone role can perform. 
+
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature and action
+| Keystone admin
+| Keystone viewer
+
+| View the following tabs: Subscription, Assets, Monitor, and Administration | Yes | Yes
+3+| *Keystone subscription page*: 
+| Can view subscriptions | Yes | Yes
+| Can amend or renew subscriptions | Yes | No
+3+| *Keystone assets page*: 
+| View assets  | Yes | Yes 
+| Manage assets | Yes | No
+3+| *Keystone alerts page*: 
+| View alerts | Yes | No 
+| Manage alerts | Yes | No 
+| Create alerts for self | Yes | Yes
+3+| *Digital wallet*:
+| Can view digital wallet | Yes | Yes
+3+| *Keystone reports page*:
+| Download reports | Yes | Yes
+| Manage reports | Yes | Yes
+| Create reports for self | Yes | Yes
+3+| *Service requests*:
+| Create service requests | Yes | No
+| Can see service request created by any user within the Organization | Yes | Yes
+
+
+|===
 
 
 == Data services roles
