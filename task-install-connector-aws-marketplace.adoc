@@ -13,7 +13,7 @@ summary: To create a Connector from the AWS Marketplace, you need to set up your
 :imagesdir: ./media/
 
 [.lead]
-A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. One of the available installation options is to create a Connector in AWS directly from the AWS Marketplace. To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, review instance requirements, and then create the Connector.
+You create a Connector in AWS directly from the AWS Marketplace. To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, review instance requirements, and then create the Connector.
 
 .Before you begin
 

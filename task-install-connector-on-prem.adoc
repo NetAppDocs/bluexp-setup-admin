@@ -13,7 +13,7 @@ summary: Install a Connector on-premises and then log in and set it up to work w
 :imagesdir: ./media/
 
 [.lead]
-A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. To run the Connector on-premises, you need to review host requirements, set up your networking, prepare cloud permissions, install the Connector, set up the Connector, and then provide the permissions that you prepared.
+You can install a Connector on one of your on-premises machines. To run the Connector on-premises, you need to review host requirements, set up your networking, prepare cloud permissions, install the Connector, set up the Connector, and then provide the permissions that you prepared.
 
 .Before you begin
 

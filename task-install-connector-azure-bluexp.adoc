@@ -13,7 +13,7 @@ summary: To create a Connector in Azure from BlueXP, you need to set up your net
 :imagesdir: ./media/
 
 [.lead]
-You can create a Connector in Azure directly from BlueXP. To create a Connector in Azure from BlueXP, you need to set up your networking, prepare an Azure role to use to deploy the Connector, and then deploy the Connector.
+You can install a Connector in Azure directly from BlueXP. To create a Connector in Azure from BlueXP, you need to set up your networking, prepare an Azure role to use to deploy the Connector, and then deploy the Connector.
 
 
 .Before you begin

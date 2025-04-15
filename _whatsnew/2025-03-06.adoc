@@ -7,7 +7,7 @@
 ==== ONTAP System Manager access when BlueXP uses a Connector
 A BlueXP administrator (users with the Organization admin role) can configure BlueXP to prompt users to enter their ONTAP credentials in order to access ONTAP system manager. When this setting is enabled, users need enter their ONTAP credentials each time as they are not stored in BlueXP.
  
-This feature is available in Connector version 3.9.49 and higher. link:task-ontap-access-connector.html[Learn how to configure credentials settings.^].
+This feature is available in Connector version 3.9.49 and higher. link:https://docs.netappl.com/task-ontap-access-connector.html[Learn how to configure credentials settings.^].
 
 === Connector 3.9.48 update
 
@@ -22,7 +22,7 @@ NOTE: This change does not impact BlueXP private mode where you must always upgr
 
 This feature is available in Connector version 3.9.48 and higher. 
 
-link:task-upgrade-connector.html[Learn how disable auto-upgrade for the Connector.^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how disable auto-upgrade for the Connector.^]
 
 
 
