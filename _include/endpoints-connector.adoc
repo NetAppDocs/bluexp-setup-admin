@@ -84,7 +84,6 @@ Note that the endpoints listed below are all CNAME entries.
 
 | To provide SaaS features and services within BlueXP.
 
-Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.
 
 //end::saas-endpoints[]
 
