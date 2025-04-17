@@ -26,7 +26,7 @@ Allows a user unrestricted access to all projects and folders within an organiza
 Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned.
 
 
-The Folder or Project admin role cannot create Connectors.
+The Folder or project admin role cannot create Connectors.
 
 === Platform role comparison table
 [cols=5*,options="header",cols="24,19,19"]
@@ -34,7 +34,7 @@ The Folder or Project admin role cannot create Connectors.
 
 | Task
 | Organization admin
-| Folder or Project admin
+| Folder or project admin
 
 
 | Create Connectors | Yes | No 
@@ -70,7 +70,7 @@ XYZ Corporation, a multinational company, aims to segregate access to data stora
 +
 To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization admin assigns a BlueXP user in each respective region the Folder/project admin role. 
 +
-Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
+Once the initial setup is complete, regional admins with the Folder or project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
 
 
 
