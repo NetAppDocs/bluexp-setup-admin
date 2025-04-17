@@ -13,20 +13,20 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into two categories: platform,  and data service.
+BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
 
 == Platform roles
-Platform roles are the broadest roles you can assign to users and allow broad permissions for BlueXP administration, including assigning roles and adding users, as well as being able to perform all BlueXP functions. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
+Platform roles are the broadest roles you can assign to users and allow all permissions forBlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
 === Organization admin
 Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service.
 
 
 === Folder or project admin
-Allows a user unrestricted access to specific projects and folders to which they are assigned.  Can add members to projects or folders they manage, as well as perform any BlueXP task and use any data service within the folder or project they are assigned.
+Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned.
 
 
-The Folder or Project admin role cannot create connectors.
+The Folder or Project admin role cannot create Connectors.
 
 === Platform role comparison table
 [cols=5*,options="header",cols="24,19,19"]
@@ -37,23 +37,23 @@ The Folder or Project admin role cannot create connectors.
 | Folder or Project admin
 
 
-| Create connectors | Yes | No 
+| Create Connectors | Yes | No 
 
 | Create, modify or delete working environments (add or discover new resources using the BlueXP canvas) |	Yes | Yes 
 
-| Create projects/folders, including deleting | Yes | No
+| Create folders and projects, including deleting | Yes | No
 
-| Rename existing projects/folders | Yes | Yes 
+| Rename existing folders and projects | Yes | Yes 
 
 | Assign roles and add users | Yes | Yes
 
 | Associate resources with folders and projects  | Yes | Yes
 
-| Associate connectors with folders and projects  | Yes | No
+| Associate Connectors with folders and projects  | Yes | No
 
-| Remove connectors from a folders and projects  | Yes | No
+| Remove Connectors from a folders and projects  | Yes | No
 
-| Manage connectors (edit certificates, settings, and so on)  | Yes | No
+| Manage Connectors (edit certificates, settings, and so on)  | Yes | No
 
 | Manage credentials from Settings > Credentials  | Yes | Yes
 
@@ -68,7 +68,7 @@ The Folder or Project admin role cannot create connectors.
 Example for organization roles in BlueXP for a large multi-national organization::
 XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
 +
-To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization Admin assigns a BlueXP user in each respective region the Folder/project admin role. 
+To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization admin assigns a BlueXP user in each respective region the Folder/project admin role. 
 +
 Once the initial setup is complete, regional admins with the Folder or Project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
 
@@ -82,13 +82,13 @@ Once the initial setup is complete, regional admins with the Folder or Project a
 
 
 == Application roles
-Below is a list of the roles in the Application category.
+The following is a list of roles in the application category. Each role grants specific permissions within its designated scope. Users who do not have the required application role or a platform role will be unable to access the application.
 
 === Keystone roles
 
 You can use the following roles to assign users access to Keystone. 
 
-NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, please contact your NetApp representative.
+NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, contact your NetApp representative.
 
 * *Keystone admin*: Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions.
 * *Keystone viewer*: View the Keystone subscription as well as view reports, alerts and assets.
@@ -103,8 +103,8 @@ The following table indicates the actions that each Keystone role can perform.
 
 | View the following tabs: Subscription, Assets, Monitor, and Administration | Yes | Yes
 3+| *Keystone subscription page*: 
-| Can view subscriptions | Yes | Yes
-| Can amend or renew subscriptions | Yes | No
+| View subscriptions | Yes | Yes
+| Amend or renew subscriptions | Yes | No
 3+| *Keystone assets page*: 
 | View assets  | Yes | Yes 
 | Manage assets | Yes | No
@@ -120,14 +120,14 @@ The following table indicates the actions that each Keystone role can perform.
 | Create reports for self | Yes | Yes
 3+| *Service requests*:
 | Create service requests | Yes | No
-| Can see service request created by any user within the Organization | Yes | Yes
+| CView service requests created by any user within the Organization | Yes | Yes
 
 
 |===
 
 
-== Data services roles
-Below is the list of roles in the Data services category.
+== Data service roles
+The following is a list of roles in the data service category. Each role grants specific permissions within its designated scope. Users who do not have the required data service role or a platform role will be unable to access the data service.
 
 
 === Classification viewer
