@@ -1067,13 +1067,11 @@ link:task-managing-netapp-accounts.html#create-and-manage-service-accounts[Learn
 
 You can now allow private previews in your account to get access to new NetApp cloud services as they are made available as a preview in Cloud Manager.
 
-link:task-managing-netapp-accounts.html#allow-private-previews[Learn more about this option].
 
 === Third-party services
 
 You can also allow third-party services in your account to get access to third-party services that are available in Cloud Manager.
 
-link:task-managing-netapp-accounts.html#allow-third-party-services[Learn more about this option].
 
 == 8 March 2021
 
