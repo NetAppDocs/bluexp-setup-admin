@@ -47,15 +47,26 @@ If you're using BlueXP in private mode (in other words, the Connector host has _
 rm -rf /opt/application/netapp/
 
 . From the Linux host, remove the remove old, now unused container image files. This ensures there is enough space in the /var directory to re-install.
-+
-If using Podman:
+
+[role="tabbed-block"]
+====
+
+.Podman
+--
+
 [source,cli]
 podman system prune --all
+--
 
-+
+.Docker
+--
+
 If using Docker:
 [source,cli]
 docker system prune -a
+--
+
+====
 
 
 
