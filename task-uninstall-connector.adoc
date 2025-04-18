@@ -48,6 +48,8 @@ rm -rf /opt/application/netapp/
 
 . From the Linux host, remove the remove old, now unused container image files. This ensures there is enough space in the /var directory to re-install.
 
++
+
 [role="tabbed-block"]
 ====
 
@@ -61,7 +63,6 @@ podman system prune --all
 .Docker
 --
 
-If using Docker:
 [source,cli]
 docker system prune -a
 --
