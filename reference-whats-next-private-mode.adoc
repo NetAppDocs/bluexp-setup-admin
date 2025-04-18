@@ -17,12 +17,10 @@ After you get up and running with BlueXP in private mode, you can start using th
 
 For help, refer to the following documentation:
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html[Create Cloud Volumes ONTAP systems^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html[Discover on-premises ONTAP clusters^]
-* https://docs.netapp.com/us-en/bluexp-replication/index.html[Replicate data^]
+* https://docs.netapp.com/us-en/bluexp-software-updates/index.html[Manage software updates^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html[Scan on-prem ONTAP volume data using BlueXP classification^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html[Back up on-prem ONTAP volume data to StorageGRID using BlueXP backup and recovery^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html[Monitor license usage with digital wallet^]
 
-.Related information
+* https://docs.netapp.com/us-en/active-iq/index.html[View storage health information with digital advisor^]
 
-link:concept-modes.html[BlueXP deployment modes]

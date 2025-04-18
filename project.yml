@@ -10,7 +10,7 @@ settings:
 
 sidebar:
   entries:
-    - title: BlueXP setup and administration docs
+    - title: BlueXP setup and administration
       url: /index.html
     - title: Release notes
       entries:
@@ -94,6 +94,12 @@ sidebar:
               url: /task-prepare-private-mode.html
             - title: Deploy the Connector
               url: /task-install-private-mode.html
+            - title: BlueXP accounts
+              entries:
+              - title: Learn about accounts
+                url: /concept-netapp-accounts.html
+              - title: Manage your BlueXP account
+                url: /task-managing-netapp-accounts.html
             - title: What you can do next
               url: /reference-whats-next-private-mode.html
         - title: Log in to BlueXP
@@ -108,30 +114,28 @@ sidebar:
               url: /task-iam-get-started.html
             - title: Organize your resources with folders and projects
               url: /task-iam-manage-folders-projects.html
-            - title: Add members and manage their permissions
+            - title: Add members and service accounts
               url: /task-iam-manage-members-permissions.html
+            - title: Use roles to control member access to resources
+              url: /task-iam-manage-roles.html
             - title: Manage your resource hierarchy
               url: /task-iam-manage-resources.html
             - title: Associate a Connector with other folders and projects
               url: /task-iam-associate-connectors.html
             - title: Switch between organizations, projects, and Connectors
               url: /task-iam-switch-organizations-projects.html
-            - title: Rename your organization
+            - title: Organization and project IDs
               url: /task-iam-rename-organization.html
             - title: Monitor or audit IAM activity
               url: /task-iam-audit-actions-timeline.html
-            - title: Predefined IAM roles
+            - title: BlueXP access roles
               url: /reference-iam-predefined-roles.html
-        - title: BlueXP accounts
+        - title: BlueXP accounts (private mode only)
           entries:
             - title: Learn about accounts
               url: /concept-netapp-accounts.html
             - title: Manage your BlueXP account
               url: /task-managing-netapp-accounts.html
-            - title: Create another BlueXP account
-              url: /task-create-account.html
-            - title: User roles
-              url: /reference-user-roles.html
         - title: Identity federation
           url: /concept-federation.html
         - title: Connectors

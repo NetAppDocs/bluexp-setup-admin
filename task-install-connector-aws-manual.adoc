@@ -13,7 +13,7 @@ summary: To manually install the Connector on your own Linux host, you need to r
 :imagesdir: ./media/
 
 [.lead]
-A Connector is NetApp software running in your cloud network or on-premises network that gives you the ability to use all BlueXP features and services. One of the available installation options is to manually install the Connector software on a Linux host running in AWS. To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.
+You can manually install a Connector on a Linux host running in AWS. To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.
 
 .Before you begin
 

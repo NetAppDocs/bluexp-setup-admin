@@ -1,0 +1,31 @@
+=== Private mode release (3.9.50)
+
+A new private mode release is now available to download from the https://mysupport.netapp.com/site/downloads[NetApp Support Site^] 
+
+The 3.9.50 release includes updates to the following BlueXP components and services.
+
+[cols=3*,options="header,autowidth"]
+|===
+
+| Component or service
+| Version included in this release
+| Changes since the previous private mode release
+
+| Connector | 3.9.50, 3.9.49 | Go to the https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50[what's new in BlueXP connector page] and refer to the changes included for versions 3.9.50 and 3.9.49.
+
+| Backup and recovery | 17 March 2025 | Go to the https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[what's new in BlueXP backup and recovery page^] and refer to the changes included in the March 2024 release.
+
+| Classification | 10 March 2025 (version 1.41) | Go to the https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[what's new in BlueXP classification page^] and refer to the changes included in the 1.38 to 1.371.41 releases.
+
+
+|===
+
+
+
+For more details about private mode, including how to upgrade, refer to the following:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html[Learn how to get started with BlueXP in private mode]
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html[Learn how to upgrade the Connector when using private mode]
