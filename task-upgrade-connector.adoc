@@ -96,14 +96,14 @@ Be sure to download the offline installer for private networks without internet 
 . Assign permissions to run the script.
 +
 [source,cli]
-chmod +x /path/BlueXP-Connector-offline-<version>
+chmod +x /path/BlueXP-Connector-Offline-<version>
 +
 Where <version> is the version of the Connector that you downloaded.
 
 . Run the installation script:
 +
 [source,cli]
-sudo /path/BlueXP-Connector-offline-<version>
+sudo /path/BlueXP-Connector-Offline-<version>
 +
 Where <version> is the version of the Connector that you downloaded.
 
