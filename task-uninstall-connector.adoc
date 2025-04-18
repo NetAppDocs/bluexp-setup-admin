@@ -31,9 +31,6 @@ If you're using BlueXP in standard mode or restricted mode (in other words, the 
 +
 _silent_ runs the script without prompting you for confirmation.
 
-.Result
-
-The Connector software is now uninstalled from the Linux host.
 
 == Uninstall the Connector when using private mode
 
@@ -45,12 +42,22 @@ If you're using BlueXP in private mode (in other words, the Connector host has _
 
 . From the Linux host, run the following commands:
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source,cli]
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
 
-.Result
+. From the Linux host, remove the remove old, now unused container image files. This ensures there is enough space in the /var directory to re-install.
++
+If using Podman:
+[source,cli]
+podman system prune --all
 
-The Connector software is now uninstalled from the Linux host.
++
+If using Docker:
+[source,cli]
+docker system prune -a
+
+
 
 == Remove Connectors from BlueXP
 
@@ -73,6 +80,3 @@ image:screenshot_connector_remove.gif[A screenshot of the Connector widget where
 
 . Enter the name of the Connector to confirm and then select *Remove*.
 
-.Result
-
-BlueXP removes the Connector from its records.
