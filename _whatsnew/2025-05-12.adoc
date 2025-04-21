@@ -1,0 +1,28 @@
+=== Connector 3.9.52
+
+This release of the BlueXP Connector includes minor security improvements and bug fixeso, as well as the following updates:
+
+* Updated permissions when using a Connector in an Azure environment. These permission changes enable support for Cloud Volumes ONTAP version x and above.
+
+
+At this time, the 3.9.52 release is available for standard mode and restricted mode.
+
+=== BlueXP Identity and Access Management (IAM)
+
+The Storage admin and Storage viewer roles are available and can be assigned to users.
+
+
+* Storage admin:
+
+* Storage viewer: 
+
++
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
+
+* If you have the Org admin or Folder or project admin role, you can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
+
+
+
+
+
