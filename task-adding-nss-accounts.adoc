@@ -81,11 +81,12 @@ Users can now select the account when creating new Cloud Volumes ONTAP systems a
 
 == Update NSS credentials
 
-After you add your NSS credentials, you'll need to keep them updated. Your credentials maintain a connection to the NetApp Support site for 90 days and then expire for security reasons. You'll be notified in your notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center[Learn about the Notification Center^]. 
+You need to update your NSS credentials every 90 days or if you want to change the NSS account associated with your BlueXP organization. For example, if the person associated with your NSS account has left your company. 
 
-Expired credentials can disrupt license updates and lead to service disruptions. You'll see this as unexpected license expiries in digital wallet or inaccurate information in digital advisor.
+Your credentials maintain a connection to the NetApp Support site for 90 days and then expire to ensure security. You'll be notified in your notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center[Learn about the Notification Center^]. 
 
-You can also update the NSS credentials associated with your Organization if you need to use a different email. For example, if the previous owner of the account leaves your company.
+Expired credentials can disrupt license updates and lead to service disruptions. You'll see this as unexpected license expiries in digital wallet or inaccurate information in digital advisor. You need to do this if you want to change the NSS account associated with your BlueXP organization.For example, if the person associated with your NSS account has left your company.  
+
 
 
 .Steps
