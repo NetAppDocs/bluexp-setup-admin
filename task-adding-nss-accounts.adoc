@@ -81,7 +81,7 @@ Users can now select the account when creating new Cloud Volumes ONTAP systems a
 
 == Update NSS credentials
 
-After you add your NSS credentials, you'll need to keep them updated. Your credentials maintain a connection to the NetApp Support site for 90 days and then expire for security reasons. You'll be notified in your notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center.html[Learn about the Notification Center^]. 
+After you add your NSS credentials, you'll need to keep them updated. Your credentials maintain a connection to the NetApp Support site for 90 days and then expire for security reasons. You'll be notified in your notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center[Learn about the Notification Center^]. 
 
 Expired credentials can disrupt license updates and lead to service disruptions. You'll see this as unexpected license expiries in digital wallet or inaccurate information in digital advisor.
 
