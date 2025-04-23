@@ -81,11 +81,14 @@ Users can now select the account when creating new Cloud Volumes ONTAP systems a
 
 == Update NSS credentials
 
-You need to update your NSS credentials every 90 days or if you want to change the NSS account associated with your BlueXP organization. For example, if the person associated with your NSS account has left your company. 
+For security reasons, you must update your NSS credentials every 90 days. You'll be notified in the BlueXP notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center[Learn about the Notification Center^]. 
 
-Your credentials maintain a connection to the NetApp Support site for 90 days and then expire to ensure security. You'll be notified in the BlueXP notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center[Learn about the Notification Center^]. 
+Expired credentials can disrupt the following, but are not limited to:
 
-Expired credentials can disrupt license updates and lead to service disruptions. You'll see this as unexpected license expiries in digital wallet or inaccurate information in digital advisor. 
+* license updates in digital wallet, which means you won't be able to take advantage of newly purchased capacity. 
+* Ability to submit and track support cases.
+
+Additionally, you can update the NSS credentials associated with your organization if you want to change the NSS account associated with your BlueXP organization. For example, if the person associated with your NSS account has left your company.
 
 
 .Steps
@@ -100,7 +103,7 @@ image:screenshot-nss-update-credentials.png[A screenshot that shows the action m
 
 . When you're prompted, select *Continue* to be redirected to a Microsoft login page.
 +
-NetApp uses Microsoft Entra ID as the identity provider for authentication services specific to support and licensing.
+NetApp uses Microsoft Entra ID as the identity provider for authentication services related to support and licensing.
 
 . At the login page, provide your NetApp Support Site registered email address and password.
 
@@ -131,9 +134,9 @@ image:screenshot-nss-change-account.png[A screenshot that shows the action menu 
 
 == Display the email address for an NSS account
 
-For security, the email address associated with an NSS account is not displayed by default. YYou can view the email address and associated user name for an NSS account.
+For security, the email address associated with an NSS account is not displayed by default. You can view the email address and associated user name for an NSS account.
 
-TIP: When you go to the NSS Management page, BlueXP generates a token for each account in the table. That token includes information about the associated email address. The token is then removed when you leave the page. The information is never cached, which helps protect your privacy. You can view the email address and associated user name for an NSS account.
+TIP: When you go to the NSS Management page, BlueXP generates a token for each account in the table. That token includes information about the associated email address. The token is removed when you leave the page. The information is never cached, which helps protect your privacy.
 
 .Steps
 
@@ -150,7 +153,7 @@ image:screenshot-nss-display-email.png[A screenshot that shows the action menu f
 
 Delete any of the NSS accounts that you no longer want to use with BlueXP.
 
-Note that you can't delete an account that is currently associated with a Cloud Volumes ONTAP working environment. You first need to <<Attach a working environment to a different NSS account,attach those working environments to a different NSS account>>.
+You can't delete an account that is currently associated with a Cloud Volumes ONTAP working environment. You first need to <<Attach a working environment to a different NSS account,attach those working environments to a different NSS account>>.
 
 .Steps
 
