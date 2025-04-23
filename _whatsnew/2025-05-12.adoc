@@ -1,11 +1,19 @@
 === Connector 3.9.52
 
-This release of the BlueXP Connector includes minor security improvements and bug fixeso, as well as the following updates:
+This release of the BlueXP Connector includes minor security improvements and bug fixes, as well as some additional updates.
 
-* Updated permissions when using a Connector in an Azure environment. These permission changes enable support for Cloud Volumes ONTAP version x and above.
+=== Updated Azure permissions
+
+We updated Azure policies for the Connector to add permissions that are required for Cloud Volumes ONTAP version 9.15.1C1 and above. 
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
+
+=== Alerts
+
 
 
 At this time, the 3.9.52 release is available for standard mode and restricted mode.
+
 
 === BlueXP Identity and Access Management (IAM)
 
