@@ -5,7 +5,7 @@ keywords: adding, creating, netapp support site account, nss, update account, up
 summary: Associate a NetApp Support Site account with your BlueXP organization or account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP organization or account.
 ---
 
-= Manage NSS credentials associated with a BlueXP organization or account
+= Manage NSS credentials associated BlueXP 
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,7 +17,7 @@ Associate a NetApp Support Site account with your BlueXP organization or account
 
 BlueXP also supports associating one NSS account per BlueXP user account. link:task-manage-user-credentials.html[Learn how to manage user-level credentials].
 
-TIP: If you're using BlueXP in standard mode, you'll have a _BlueXP organization_, which you manage using BlueXP identity and access management (IAM). But if you're using BlueXP in restricted mode or private mode, then you'll have a _BlueXP account_.
+TIP: If you're using BlueXP in standard mode or restricted mode, you'll have a _BlueXP organization_, which you manage using BlueXP identity and access management (IAM). But if you're using BlueXP in private mode, then you'll have a _BlueXP account_.
 
 * link:concept-modes.html[Learn about BlueXP deployment modes]
 * link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
@@ -41,39 +41,28 @@ These credentials are associated with your specific BlueXP account serial number
 
 == Add an NSS account
 
-The Support Dashboard enables you to add and manage your NetApp Support Site accounts for use with BlueXP at the BlueXP organization or account level.
+You can add and manage your NetApp Support Site accounts for use with BlueXP from the Support Dashboard within BlueXP.
 
-* If you have a customer-level account, you can add one or more NSS accounts.
+When you have added your NSS account, BlueXP can use this information for things like license downloads, software upgrade verification, and future support registrations.
 
-* If you have a partner or reseller account, you can add one or more NSS accounts, but they can't be added alongside customer-level accounts.
+You can associate multiple NSS accounts with your BlueXP organization; however, you cannot have customer accounts and partner accounts within the same organization. 
+
+NOTE: NetApp uses Microsoft Entra ID as the identity provider for authentication services specific to support and licensing.
+
 
 .Steps
 
 . In the upper right of the BlueXP console, select the Help icon, and select *Support*.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png[A screenshot of the Help menu where Support is the first option listed]
 
 . Select *NSS Management > Add NSS Account*.
 
-. When you're prompted, select *Continue* to be redirected to a Microsoft login page.
-+
-NetApp uses Microsoft Entra ID as the identity provider for authentication services specific to support and licensing.
+. Select *Continue* to be redirected to a Microsoft login page.
 
-. At the login page, provide your NetApp Support Site registered email address and password to perform the authentication process.
-+
-These actions enable BlueXP to use your NSS account for things like license downloads, software upgrade verification, and future support registrations.
-+
-Note the following:
-+
-* The NSS account must be a customer-level account (not a guest or temp account). You can have multiple customer-level NSS accounts.
+. At the login page, provide your NetApp Support Site registered email address and password.
 
-* There can be only one NSS account if that account is a partner-level account. If you try to add customer-level NSS accounts and a partner-level account exists, you'll get the following error message:
 +
-"The NSS customer type is not allowed for this account as there are already NSS Users of different type."
-+
-The same is true if you have pre-existing customer-level NSS accounts and try to add a partner-level account.
 
-* Upon successful login, NetApp will store the NSS user name. 
+Upon successful login, NetApp will store the NSS user name. 
 +
 This is a system-generated ID that maps to your email. On the *NSS Management* page, you can display your email from the image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png[An icon of three horizontal dots] menu.
 
@@ -92,10 +81,12 @@ Users can now select the account when creating new Cloud Volumes ONTAP systems a
 
 == Update NSS credentials
 
-You'll need to update the credentials for your NSS accounts in BlueXP when either of the following happens:
+You need to update your NSS credentials every 90 days or if you want to change the NSS account associated with your BlueXP organization. For example, if the person associated with your NSS account has left your company. 
 
-* You change the credentials for the account
-* The refresh token associated with your account expires after 3 months
+Your credentials maintain a connection to the NetApp Support site for 90 days and then expire to ensure security. You'll be notified in the BlueXP notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center[Learn about the Notification Center^]. 
+
+Expired credentials can disrupt license updates and lead to service disruptions. You'll see this as unexpected license expiries in digital wallet or inaccurate information in digital advisor. 
+
 
 .Steps
 
@@ -111,13 +102,14 @@ image:screenshot-nss-update-credentials.png[A screenshot that shows the action m
 +
 NetApp uses Microsoft Entra ID as the identity provider for authentication services specific to support and licensing.
 
-. At the login page, provide your NetApp Support Site registered email address and password to perform the authentication process.
+. At the login page, provide your NetApp Support Site registered email address and password.
+
 
 == Attach a working environment to a different NSS account
 
 If your organization has multiple NetApp Support Site accounts, you can change which account is associated with a Cloud Volumes ONTAP system.
 
-This feature is only supported with NSS accounts that are configured to use Microsoft Entra ID adopted by NetApp for identity management. Before you can use this feature, you need select *Add NSS Account* or *Update Account*.
+You must first have associated the account with BlueXP.
 
 .Steps
 
@@ -139,9 +131,9 @@ image:screenshot-nss-change-account.png[A screenshot that shows the action menu 
 
 == Display the email address for an NSS account
 
-Now that NetApp Support Site accounts use Microsoft Entra ID for authentication services, the NSS user name that displays in BlueXP is typically an identifier generated by Microsoft Entra. As a result, you might not immediately know the email address associated with that account. But BlueXP has an option to show you the associated email address.
+For security, the email address associated with an NSS account is not displayed by default. YYou can view the email address and associated user name for an NSS account.
 
-TIP: When you go to the NSS Management page, BlueXP generates a token for each account in the table. That token includes information about the associated email address. The token is then removed when you leave the page. The information is never cached, which helps protect your privacy.
+TIP: When you go to the NSS Management page, BlueXP generates a token for each account in the table. That token includes information about the associated email address. The token is then removed when you leave the page. The information is never cached, which helps protect your privacy. You can view the email address and associated user name for an NSS account.
 
 .Steps
 
@@ -149,13 +141,10 @@ TIP: When you go to the NSS Management page, BlueXP generates a token for each a
 
 . Select *NSS Management*.
 
-. For the NSS account that you want to update, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Display Email Address*.
+. For the NSS account that you want to update, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Display Email Address*. You can use the copy button to copy the email address.
 +
 image:screenshot-nss-display-email.png[A screenshot that shows the action menu for a NetApp Support Site account which includes the ability to display the email address.]
 
-.Result
-
-BlueXP displays the NetApp Support Site user name and the associated email address. You can use the copy button to copy the email address.
 
 == Remove an NSS account
 
