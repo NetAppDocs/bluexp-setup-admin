@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-adding-nss-accounts.html
-keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss
+keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss, digital wallet, license
 summary: Associate a NetApp Support Site account with your BlueXP organization or account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP organization or account.
 ---
 
