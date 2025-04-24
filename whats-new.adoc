@@ -36,6 +36,10 @@ include::_whatsnew/2025-03-10.adoc[]
 
 include::_whatsnew/2025-03-06.adoc[]
 
+== 18 February 2025
+
+include::_whatsnew/2025-02-18.adoc[]
+
 == 10 February 2025
 
 include::_whatsnew/2025-02-10.adoc[]
