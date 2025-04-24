@@ -120,10 +120,61 @@ The following table indicates the actions that each Keystone role can perform.
 | Create reports for self | Yes | Yes
 3+| *Service requests*:
 | Create service requests | Yes | No
-| CView service requests created by any user within the Organization | Yes | Yes
+| View service requests created by any user within the Organization | Yes | Yes
 
 
 |===
+
+=== Storage roles
+Provide the ability to view and administer storage health and governance features, as well discover storage resources and view discovered resources (working environments) in BlueXP.  
+
+You can use the following roles to assign users access to storage health and governance features in BlueXP. 
+
+
+* *Storage admin*: Administer storage health and governance functions, as well as discovery storage resources.
+* *Storage viewer*: View storage health and governance functions, as well as view previously discovered storage resources.data
+
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature and action
+| Storage admin
+| Storage viewer
+
+3+| *Digital advisor*
+| View all pages and functions | Yes | No
+3+| *Create Connector*
+|  | No | No 
+3+| *Software updates* 
+| View landing page and recommendations | Yes | No 
+| Review potential version recommendations and key benefits | Yes | No 
+| View update details for a cluster| Yes | Yes
+| Run pre-update checks and download upgrade plan| Yes | Yes
+| Install software updates | Yes | No
+3+| *Operational resiliency*
+| Review security risk issues | Yes | Yes
+| Download Ansible playbooks | Yes | No
+| Remediate issues automatically | Yes | No
+3+| *Economic efficiency*
+| Review capacity planning status | Yes | Yes
+| Choose next action (best practice, tier) | Yes | No
+| Tier cold data to cloud storage and free up storage| Yes | No
+| View service requests created by any user within the Organization | Yes | Yes
+| Set up reminders | Yes | Yes
+| Create a connector or discover storage resource to view tech refresh | Yes | No
+
+3+| *Sustainability*
+| View dashboard and recommendations | Yes | Yes
+| Download report data | Yes | Yes
+| Edit carbon mitigation percentage| Yes | No
+| Fix recommendations | Yes | No
+| Defer recommendations | Yes | No
+3+| *System manager access*
+| May enter credentials | Yes | No
+3+| *Credentials*
+| User credentials | Yes | No
+|===
+
+
 
 
 == Data service roles
