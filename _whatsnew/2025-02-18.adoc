@@ -1,0 +1,27 @@
+=== Private mode release (3.9.48)
+
+A new private mode release is now available to download from the https://mysupport.netapp.com/site/downloads[NetApp Support Site^] 
+
+The 3.9.48 release includes updates to the following BlueXP components and services.
+
+[cols=3*,options="header,autowidth"]
+|===
+
+| Component or service
+| Version included in this release
+| Changes since the previous private mode release
+
+| Connector | 3.9.48 | Go to the https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48[what's new in BlueXP connector page] and refer to the changes included for versions 3.9.48.
+
+| Backup and recovery | 21 February 2025 | Go to the https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html[what's new in BlueXP backup and recovery page^] and refer to the changes included in the February 2025 release.
+
+| Classification | 22 January 2025 (version 1.39) | Go to the https://docs.netapp.com/us-en/bluexp-classification/whats-new.html[what's new in BlueXP classification page^] and refer to the changes included in the 1.39 release.
+
+
+|===
+
+
+
+
+
+
