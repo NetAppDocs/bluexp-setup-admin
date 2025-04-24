@@ -8,11 +8,16 @@ We updated Azure policies for the Connector to add permissions that are required
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
 
-=== Alerts
 
 
 
 At this time, the 3.9.52 release is available for standard mode and restricted mode.
+
+=== Keystone available in BlueXP
+
+You can now access Keystone services directly from BlueXP. This integration allows you to manage subscriptions, monitor usage, and optimize costs seamlessly within the BlueXP interface.
+
+
 
 
 === BlueXP Identity and Access Management (IAM)
