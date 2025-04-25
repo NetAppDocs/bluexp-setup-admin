@@ -5,7 +5,7 @@ keywords: adding, creating, netapp support site account, nss, update account, up
 summary: Associate a NetApp Support Site account with your BlueXP organization or account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP organization or account.
 ---
 
-= Manage NSS credentials associated BlueXP 
+= Manage NSS credentials associated with BlueXP 
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -85,7 +85,7 @@ For security reasons, you must update your NSS credentials every 90 days. You'll
 
 Expired credentials can disrupt the following, but are not limited to:
 
-* license updates in digital wallet, which means you won't be able to take advantage of newly purchased capacity. 
+* License updates in digital wallet, which means you won't be able to take advantage of newly purchased capacity. 
 * Ability to submit and track support cases.
 
 Additionally, you can update the NSS credentials associated with your organization if you want to change the NSS account associated with your BlueXP organization. For example, if the person associated with your NSS account has left your company.
