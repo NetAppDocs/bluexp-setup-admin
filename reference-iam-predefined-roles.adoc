@@ -159,7 +159,6 @@ You can use the following roles to assign users access to storage health and gov
 | Tier cold data to cloud storage and free up storage| Yes | No
 | View service requests created by any user within the Organization | Yes | Yes
 | Set up reminders | Yes | Yes
-| Create a connector or discover storage resource to view tech refresh | Yes | No
 
 3+| *Sustainability*
 | View dashboard and recommendations | Yes | Yes
