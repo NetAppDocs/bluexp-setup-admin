@@ -5,7 +5,7 @@ keywords: adding, creating, netapp support site account, nss, update account, up
 summary: Associate a NetApp Support Site account with your BlueXP organization or account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP organization or account.
 ---
 
-= Manage NSS credentials associated BlueXP 
+= Manage NSS credentials associated with BlueXP 
 :hardbreaks:
 :nofooter:
 :icons: font
