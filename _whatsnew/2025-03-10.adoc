@@ -5,6 +5,12 @@
 
 This release of the BlueXP Connector includes minor security improvements and bug fixes.
 
+* Management of Cloud Volumes ONTAP systems is now supported by Connectors that have SELinux enabled on the operating system.
+
++
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux[Learn more about SELinux^]
+
 At this time, the 3.9.50 release is available for standard mode and restricted mode.
 
 === NetApp Keystone beta available in BlueXP
