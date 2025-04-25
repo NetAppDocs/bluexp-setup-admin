@@ -18,17 +18,12 @@ BlueXP identity and access management (IAM) includes several predefined roles th
 == Platform roles
 Platform roles are the broadest roles you can assign to users and allow all permissions forBlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
-=== Organization admin
-Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service.
+* *Organization admin*: Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. The Organization admin role can create Connectors and manage all working environments in the organization. The Organization admin role is the highest level of access in BlueXP.
 
-
-=== Folder or project admin
-Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned.
-
+* *Folder or project admin*: Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned.
 
 The Folder or project admin role cannot create Connectors.
 
-=== Platform role comparison table
 [cols=5*,options="header",cols="24,19,19"]
 |===
 
