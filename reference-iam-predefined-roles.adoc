@@ -126,45 +126,54 @@ Provide the ability to view and administer storage health and governance feature
 You can use the following roles to assign users access to storage health and governance features in BlueXP. 
 
 
-* *Storage admin*: Administer storage health and governance functions, as well as discovery storage resources.
-* *Storage viewer*: View storage health and governance functions, as well as view previously discovered storage resources.data
+* *Storage admin*: Administer storage health and governance functions, discovery storage resources, as well as modify and delete existing working environments. 
+* *System health specialist*: Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
+* *Storage viewer*: View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
 
-[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+
+[cols=4*,options="header",cols="40,20a,20a,20a", width="100%"]
 |===
 | Feature and action
 | Storage admin
+| System health specialist
 | Storage viewer
 
-3+| *Digital advisor*
-| View all pages and functions | Yes | No
-| *Create Connector* | No | No 
-3+| *Software updates* 
-| View landing page and recommendations | Yes | No 
-| Review potential version recommendations and key benefits | Yes | No 
-| View update details for a cluster| Yes | Yes
-| Run pre-update checks and download upgrade plan| Yes | Yes
-| Install software updates | Yes | No
-3+| *Operational resiliency*
-| Review security risk issues | Yes | Yes
-| Download Ansible playbooks | Yes | No
-| Remediate issues automatically | Yes | No
-3+| *Economic efficiency*
-| Review capacity planning status | Yes | Yes
-| Choose next action (best practice, tier) | Yes | No
-| Tier cold data to cloud storage and free up storage| Yes | No
-| View service requests created by any user within the Organization | Yes | Yes
-| Set up reminders | Yes | Yes
 
-3+| *Sustainability*
-| View dashboard and recommendations | Yes | Yes
-| Download report data | Yes | Yes
-| Edit carbon mitigation percentage| Yes | No
-| Fix recommendations | Yes | No
-| Defer recommendations | Yes | No
-3+| *System manager access*
-| May enter credentials | Yes | No
-3+| *Credentials*
-| User credentials | Yes | No
+4+| *Canvas*:
+| Discover new resources (create new working environment) | Yes | Yes | No
+| View discovered resources | Yes | No | Yes 
+| Delete working environments| Yes | No | No
+| Modify working environments| Yes | No | No
+| *Create Connector* | No | No | No
+4+| *Digital advisor*
+| View all pages and functions | Yes | Yes| Yes
+| *Create Connector* | No | No | No
+4+| *Software updates* 
+| View landing page and recommendations | Yes | Yes | Yes
+| Review potential version recommendations and key benefits | Yes | Yes | Yes
+| View update details for a cluster | Yes | Yes | Yes
+| Run pre-update checks and download upgrade plan | Yes | Yes | Yes
+| Install software updates | Yes | Yes | No
+4+| *Operational resiliency*
+| Review security risk issues | Yes | Yes | Yes
+| Download Ansible playbooks | Yes | Yes | No
+| Remediate issues automatically | Yes | Yes | No
+4+| *Economic efficiency*
+| Review capacity planning status | Yes | Yes | Yes
+| Choose next action (best practice, tier) | Yes | No | No
+| Tier cold data to cloud storage and free up storage| Yes | Yes | N
+| Set up reminders | Yes | Yes | Yes
+4+| *Sustainability*
+| View dashboard and recommendations | Yes | Yes | Yes
+| Download report data | Yes | Yes | Yes
+| Edit carbon mitigation percentage| Yes | Yes | No
+| Fix recommendations | Yes | Yes | No
+| Defer recommendations | Yes | Yes | No
+4+| *System manager access*
+| May enter credentials | Yes | Yes | No
+4+| *Credentials*
+| User credentials | Yes | Yes |  No
+
 |===
 
 
