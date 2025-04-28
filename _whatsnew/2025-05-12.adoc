@@ -22,18 +22,25 @@ You can now access Keystone services directly from BlueXP. This integration allo
 
 === BlueXP Identity and Access Management (IAM)
 
-The Storage admin and Storage viewer roles are available and can be assigned to users.
+==== New IAM roles
+
+The Storage admin, Storage health specialist, and Storage viewer roles are available and can be assigned to users.
+
+These roles enable you to manage who in your organization can discover and manage storage resources, as well as view storage health information and perform software updates.
+
+The Organization admin and Folder or project admin roles continue to have all BlueXP permissions for the scope to which they are assigned.
 
 
-* Storage admin:
-
-* Storage viewer: 
+* *Storage admin*  Administer storage health, governance, and discovery for the storage resources in the organization. This role can also perform software updates on storage resources.
+* *Storage health specialist* Administer storage health and governance for the storage resources in the organization. This role can also perform software updates on storage resources. This role cannot modify or delete working environments.
+* *Storage viewer*  View storage health information and governance data.
 
 +
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
 
-* If you have the Org admin or Folder or project admin role, you can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
+==== IAM project association for Keystone subscriptions
+If you have the Org admin or Folder or project admin role, you can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
 
 
 
