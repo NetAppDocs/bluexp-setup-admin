@@ -147,7 +147,6 @@ You can use the following roles to assign users access to storage health and gov
 | *Create Connector* | No | No | No
 4+| *Digital advisor*
 | View all pages and functions | Yes | Yes| Yes
-| *Create Connector* | No | No | No
 4+| *Software updates* 
 | View landing page and recommendations | Yes | Yes | Yes
 | Review potential version recommendations and key benefits | Yes | Yes | Yes
