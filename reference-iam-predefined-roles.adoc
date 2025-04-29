@@ -141,12 +141,14 @@ You can use the following roles to assign users access to storage health and gov
 
 4+| *Canvas*:
 | Discover new resources (create new working environment) | Yes | Yes | No
-| View discovered resources | Yes | No | Yes 
+| View discovered resources | Yes | Yes | No
 | Delete working environments| Yes | No | No
 | Modify working environments| Yes | No | No
 | *Create Connector* | No | No | No
 4+| *Digital advisor*
 | View all pages and functions | Yes | Yes| Yes
+4+| *Digital wallet*
+| View all pages and functions | No | No| No
 4+| *Software updates* 
 | View landing page and recommendations | Yes | Yes | Yes
 | Review potential version recommendations and key benefits | Yes | Yes | Yes
@@ -160,7 +162,7 @@ You can use the following roles to assign users access to storage health and gov
 4+| *Economic efficiency*
 | Review capacity planning status | Yes | Yes | Yes
 | Choose next action (best practice, tier) | Yes | No | No
-| Tier cold data to cloud storage and free up storage| Yes | Yes | N
+| Tier cold data to cloud storage and free up storage| Yes | Yes | No
 | Set up reminders | Yes | Yes | Yes
 4+| *Sustainability*
 | View dashboard and recommendations | Yes | Yes | Yes
