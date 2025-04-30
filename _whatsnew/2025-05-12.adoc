@@ -2,16 +2,21 @@
 
 This release of the BlueXP Connector includes minor security improvements and bug fixes, as well as some additional updates.
 
-=== Updated Azure permissions
+At this time, the 3.9.52 release is available for standard mode and restricted mode.
+
+==== Updated Azure permissions
 
 We updated Azure policies for the Connector to add permissions that are required for Cloud Volumes ONTAP version 9.15.1C1 and above. 
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log[Learn what changed in the Azure policy].
 
 
+==== Support for Docker 27 and Docker 28
+Docker 27 and Docker 28 are now supported with the Connector. The Connector is also supported with Docker 23.0.6 to 26.0.0.
 
 
-At this time, the 3.9.52 release is available for standard mode and restricted mode.
+
+
 
 === Keystone available in BlueXP
 
