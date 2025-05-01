@@ -55,7 +55,7 @@ Administer storage health and governance for the storage resources in the organi
 
 +
 
- View storage health information and governance data.
+View storage health information and governance data.
 
 +
 
