@@ -23,29 +23,43 @@ The beta for NetApp Keystone in BlueXP has added access to Keystone administrati
 
 === BlueXP Identity and Access Management (IAM)
 
-==== New access roles
+==== New storage management roles
 
 The Storage admin, Storage health specialist, and Storage viewer roles are available and can be assigned to users.
 
 These roles enable you to manage who in your organization can discover and manage storage resources, as well as view storage health information and perform software updates.
 
+These roles are supported for the following storage resources:
+
+* Cloud Volumes ONTAP
+* E-Series systems
+* StorageGRID systems
+* On-premises ONTAP systems
+
+The Organization admin and Folder or project admin roles continue to have all BlueXP permissions for the scope to which they are assigned.
+
+The following roles have been added:
+
+* *Storage admin*  
+
++
+Administer storage health, governance, and discovery for the storage resources in the organization. This role can also perform software updates on storage resources. 
+
+
+* *Storage health specialist* 
+
++
+Administer storage health and governance for the storage resources in the organization. This role can also perform software updates on storage resources. This role cannot modify or delete working environments.
+
+* *Storage viewer* 
+
 +
 
-* *Storage admin*  Administer storage health, governance, and discovery for the storage resources in the organization. This role can also perform software updates on storage resources.
-* *Storage health specialist* Administer storage health and governance for the storage resources in the organization. This role can also perform software updates on storage resources. This role cannot modify or delete working environments.
-* *Storage viewer*  View storage health information and governance data.
+ View storage health information and governance data.
 
 +
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
-
-The Organization admin and Folder or project admin roles continue to have all BlueXP permissions for the scope to which they are assigned.
-
-These roles are supported for the following storage resources::
-* Cloud Volumes ONTAP
-* E-Series systems
-* StorageGRID systems
-* On-premises ONTAP system
 
 
 ==== IAM project association for Keystone subscriptions
