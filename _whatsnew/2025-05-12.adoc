@@ -16,24 +16,26 @@ Docker 27 and Docker 28 are now supported with the Connector. The Connector is a
 
 
 
+=== Keystone administration available in BlueXP
 
-
-=== Keystone available in BlueXP
-
-You can now access Keystone services directly from BlueXP. This integration allows you to manage subscriptions, monitor usage, and optimize costs seamlessly within the BlueXP interface.
-
-
+The beta for NetApp Keystone in BlueXP has added access to Keystone administration. You can access the sign-up page for the NetApp Keystone beta from the left navigation bar of BlueXP.
 
 
 === BlueXP Identity and Access Management (IAM)
 
-==== New IAM roles
+==== New access roles
 
 The Storage admin, Storage health specialist, and Storage viewer roles are available and can be assigned to users.
 
 These roles enable you to manage who in your organization can discover and manage storage resources, as well as view storage health information and perform software updates.
 
 The Organization admin and Folder or project admin roles continue to have all BlueXP permissions for the scope to which they are assigned.
+
+These roles are supported for the following storage resources::
+* Cloud Volumes ONTAP
+* E-Series systems
+* StorageGRID systems
+* On-premises ONTAP system
 
 
 * *Storage admin*  Administer storage health, governance, and discovery for the storage resources in the organization. This role can also perform software updates on storage resources.
