@@ -1,5 +1,5 @@
-Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
+Maintaining the operating system on the Connector host is your (customer's) responsibility. For example, you (customer) should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
 
-Note that you don't need to stop any services on the Connector host when applying minor security updates.
+Note that you (customer) don't need to stop any services on the Connector host when applying minor security updates.
 
-If you need to stop and then start the Connector VM, you should do so from your cloud provider's console or by using the standard procedures for on-premises management.
+If you (customer) need to stop and then start the Connector VM, you should do so from your cloud provider's console or by using the standard procedures for on-premises management.
