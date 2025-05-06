@@ -18,9 +18,18 @@ BlueXP identity and access management (IAM) includes several predefined roles th
 == Platform roles
 Platform roles are the broadest roles you can assign to users and allow all permissions forBlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
-* *Organization admin*: Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. The Organization admin role can create Connectors and manage all working environments in the organization. The Organization admin role is the highest level of access in BlueXP.
+* *Organization admin*: 
++
 
-* *Folder or project admin*: Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned.
+Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. The Organization admin role can create Connectors and manage all working environments in the organization. The Organization admin role is the highest level of access in BlueXP.
+
+* *Folder or project admin*:
++
+
+Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned.
+
+
++
 
 The Folder or project admin role cannot create Connectors.
 
@@ -85,8 +94,14 @@ You can use the following roles to assign users access to Keystone.
 
 NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, contact your NetApp representative.
 
-* *Keystone admin*: Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions.
-* *Keystone viewer*: View the Keystone subscription as well as view reports, alerts and assets.
+* *Keystone admin*: 
+
++
+Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions.
+* *Keystone viewer*: 
++
+
+View the Keystone subscription as well as view reports, alerts and assets.
 
 The following table indicates the actions that each Keystone role can perform. 
 
@@ -127,12 +142,19 @@ The following table indicates the actions that each Keystone role can perform.
 === Storage roles
 Provide the ability to view and administer storage health and governance features, as well discover storage resources and view discovered resources (working environments) in BlueXP.  
 
-You can use the following roles to assign users access to storage health and governance features in BlueXP. 
+You can use the following roles to assign users access to storage management as well as system health and governance features in BlueXP. 
 
 
-* *Storage admin*: Administer storage health and governance functions, discovery storage resources, as well as modify and delete existing working environments. 
-* *System health specialist*: Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
-* *Storage viewer*: View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
+* *Storage admin*: 
++
+Administer storage health and governance functions, discovery storage resources, as well as modify and delete existing working environments. 
+
+* *System health specialist*: 
++
+Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
+* *Storage viewer*: 
++
+View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
 
 
 [cols=4*,options="header",cols="40,20a,20a,20a", width="100%"]
@@ -180,6 +202,15 @@ You can use the following roles to assign users access to storage health and gov
 | User credentials | Yes | Yes |  No
 
 |===
+
+Example for storage roles in BlueXP
+
+XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They want empower this team to manage the storage assets for their respective regions, but restrict their access to core BlueXP administration tasks such as user management, Connector creation, and cost management tools like digital wallet.
+ 
+Within a team of 12, two users are given the Storage viewer role which allows them to monitor the storage resources associated with the BlueXP projects they are assigned to. The remaining nine are given the Storage admin role which includes the ability to manage software updates, access ONTAP System Manager through BlueXP, as well as discover storage resources (add working environments). One person on the team is given the System health specialist role so they can manage the health of the storage resources in their region, but not modify or delete any working environments. This person can also perform software updates on the storage resources in their projects they are assigned.
+ 
+The organization still has two users with the Organization admin role who can manage all aspects of BlueXP, including user management, Connector creation, and cost management tools like digital wallet, as well as several users with the Folder or project admin role who can perform BlueXP administration tasks for the folders and projects they are assigned to.
+
 
 
 
