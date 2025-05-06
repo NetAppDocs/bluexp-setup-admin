@@ -116,6 +116,10 @@ The following table indicates the actions that each Keystone role can perform.
 3+| *Service requests*:
 | Create service requests | Yes | No
 | View service requests created by any user within the Organization | Yes | Yes
+3+| *Keystone administration page*:
+| View all tabs | Yes | Yes
+| Perform administrative tasks | Yes | No
+
 
 
 |===
