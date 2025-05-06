@@ -1,0 +1,141 @@
+The following sections describe the different components of using IAM within BlueXP.
+
+When using BlueXP IAM, you'll manage the following components:
+
+* The organization
+* Folders
+* Projects
+* Resources
+* Members
+* Roles and permissions
+* Connectors
+
+BlueXP resources are organized hierarchically:
+
+* The organization is the top of the hierarchy.
+* Folders are children of the organization or of another folder.
+* Projects are children of the organization or of a folder.
+* Resources are associated with one or more folders or projects.
+
+The following image illustrates this hierarchy at a basic level.
+
+image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the resource hierarchy for BlueXP IAM: an organization, folders, projects, and resources."]
+
+=== Organization
+
+An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of folders, projects, members, roles, and resources. Connectors are associated with specific projects in the organization.
+
+When you sign up to BlueXP, you're prompted to create a new organization.
+
+=== Folders
+
+A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a geographical location (EU or US East), a site (London or Toronto), or a business unit (engineering or marketing). 
+
+Folders can contain projects, other folders, or a combination of both.
+
+
+=== Projects
+
+A _project_ represents a workspace in BlueXP that organization members access from the BlueXP canvas in order to manage resources. For example, a project can include a Cloud Volumes ONTAP system, an on-premises ONTAP cluster, or an FSx for ONTAP file system.
+
+An organization can have one or many projects. A project can reside directly underneath the organization or within a folder.
+
+=== Resources
+
+A _resource_ is a working environment that you created or discovered in BlueXP.
+
+When you create or discover a resource, the resource is associated with the currently selected project. That might be the only project that you want to associate this resource with. But you can choose to associate the resource with additional projects in your organization.
+
+For example, you might associate a Cloud Volumes ONTAP system with one additional project or with all projects in your organization. How you associate a resource depends on your organization's needs.
+
+TIP: You can also associate a Connector with another folder or project in your organization. <<Connectors,Learn more about using Connectors with BlueXP IAM>>.
+
+[#associate-resource-folder]
+==== When to associate a resource with a folder
+
+You can organize your resources into folders when you need separation of responsibility or storage resources. 
+
+An _Organization admin_ might associate a resource with a folder so that a _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
+
+For example, let's say you have a folder that contains two projects:
+
+image:diagram-iam-resource-association-folder-1.png["A diagram that shows a folder and two projects that reside in the folder: project A and project B."]
+
+The _Organization admin_ can associate a resource with the folder:
+
+image:diagram-iam-resource-association-folder-2.png["A diagram that shows a folder, a resource that is associated with the folder, and two projects that reside in the folder: project A and project B."]
+
+Associating the resource with the folder doesn't automatically make that resource accessible from all projects in the folder. But the _Folder or project admin_ can then decide which projects that resource should be made available to. After making that decision, the admin can then associate the resource with the right projects.
+
+In this example, the admin associates the resource with Project A:
+
+image:diagram-iam-resource-association-folder-3.png["A diagram that shows a folder, two projects that reside in the folder: project A and project B, and a resource that is associated with project A."]
+
+Members who have permissions for project A can now access the resource.
+
+=== Members
+
+Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
+
+An organization has at least one user with the _Organization admin_ role (the user who creates the organization is automatically assigned this role). You can add other members to the organization and assign different permissions across different levels of the resource hierarchy.
+
+=== Roles and permissions
+
+In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy.
+
+By providing permissions at a specific part of the resource hierarchy, you can restrict access rights to only the resources that a member needs to complete their tasks.
+
+==== Where you can assign roles in the hierarchy
+
+When you associate a member with a role, you need to select the entire organization, a specific folder, or a specific project. The role that you select gives a member permissions to the resources in the selected part of the hierarchy.
+
+[#role-inheritance]
+==== Role inheritance
+
+When you assign a role, the role is inherited down the organization hierarchy:
+
+Organization::
+Roles that you grant at the organization level are inherited by all folders, projects, and resources in the organization. That means the member has permissions to everything in the organization.
+
+Folders::
+Roles that you grant at the folder level are inherited by all folders, projects, and resources in the folder.
++
+For example, if you assign a role at the folder level and that folder has three projects, the member will have permissions to those three projects and any associated resources.
+
+Projects::
+Roles that you grant at the project level are inherited by all resources associated with that project.
+
+==== Multiple roles
+
+You can assign each organization member a role at different levels of the organization hierarchy. It can be the same role or a different role. For example, you can assign a member role A for project 1 and project 2. Or you can assign a member role A for project 1 and role B for project 2.
+
+==== Access Roles
+
+BlueXP supports several access roles that you can assign to the members of your organization.
+
+link:reference-iam-predefined-roles.html[Learn about access roles].
+
+[#associate-connectors]
+=== Connectors
+
+When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. But if you have other members in your organization with different roles, those members can only access that Connector from the project in which it was created, unless you associate that Connector with other projects.
+
+You might want to make a Connector available to use with another project in the following cases:
+
+* You want to allow members in your organization to use an existing Connector to create or discover additional working environments in another project
+
+* You associated an existing resource with another project and that resource is managed by a Connector
++
+If a resource that you associated with additional project is discovered using a BlueXP Connector, then you also need to associate the Connector with the project that the resource is now associated with. Otherwise, the Connector and it's associated resource aren't accessible from the BlueXP canvas by members who don't have the _Organization admin_ role.
+
+You can create an association from the *Connectors* page in BlueXP IAM:
+
+* Associate a Connector with a project
++
+When you associate a Connector with a project, that Connector is accessible from the BlueXP canvas when viewing the project.
+
+* Associate a Connector with a folder
++
+Associating a Connector with a folder doesn't automatically make that Connector accessible from all projects in the folder. Organization members can't access a Connector from a project until you associate the Connector with that specific project.
++
+An _Organization admin_ might associate a Connector with a folder so that the _Folder or project admin_ can make the decision to associate that Connector with the appropriate projects that reside in the folder.
