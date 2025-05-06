@@ -50,6 +50,8 @@ For example, you can use the *Service* filter to show actions related to a speci
 
 The Timeline updates to show you completed management actions.
 
+
+[#notification-center]
 == Monitor activities using the Notification Center
 
 Notifications track the progress of operations that you've initiated in BlueXP so you can verify whether the operation was successful or not. They enable you to view the status for many BlueXP actions that you initiated during your current login session. Not all BlueXP services report information into the Notification Center at this time.
