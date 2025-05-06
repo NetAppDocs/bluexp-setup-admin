@@ -5,8 +5,6 @@
 . Select the action menu for a set of credentials and then select *Configure Subscription*.
 +
 You must select credentials that are associated with a Connector. You can't associate a marketplace subscription with credentials that are associated with BlueXP.
-+
-image:screenshot_azure_add_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
 . To associate the credentials with an existing subscription, select the subscription from the down-down list and select *Configure*.
 
