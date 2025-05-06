@@ -97,11 +97,12 @@ NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like 
 * *Keystone admin*: 
 
 +
-Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions.
+Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions. This role is meant for users who are responsible for both monitoring and managing the service. Users with this role can initiate and manage changes in service configurations. 
+
 * *Keystone viewer*: 
 +
 
-View the Keystone subscription as well as view reports, alerts and assets.
+View the Keystone subscription as well as view reports, alerts and assets. This role is ideal for users who need to keep track of resource utilization and system health without making any modifications. Suitable for users focused on monitoring and reporting.
 
 The following table indicates the actions that each Keystone role can perform. 
 
