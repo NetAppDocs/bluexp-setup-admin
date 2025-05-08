@@ -25,7 +25,6 @@ These roles enable you to manage who in your organization can discover and manag
 
 These roles are supported for controlling access to the following storage resources:
 
-* Cloud Volumes ONTAP
 * E-Series systems
 * StorageGRID systems
 * On-premises ONTAP systems

@@ -143,8 +143,10 @@ The following table indicates the actions that each Keystone role can perform.
 === Storage roles
 Provide the ability to view and administer storage health and governance features, as well discover storage resources and view discovered resources (working environments) in BlueXP.  
 
-You can use the following roles to assign users access to storage management as well as system health and governance features in BlueXP. 
-
+The following storage products are supported with role-based access control in BlueXP:
+* On-premises ONTAP clusters
+* StorageGRID
+* E-Series
 
 * *Storage admin*: 
 +
@@ -204,13 +206,13 @@ View storage health and governance functions, as well as view previously discove
 
 |===
 
-Example for storage roles in BlueXP
+.Example for storage roles in BlueXP
 
-XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They want empower this team to manage the storage assets for their respective regions, but restrict their access to core BlueXP administration tasks such as user management, Connector creation, and cost management tools like digital wallet.
+XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They want to empower this team to manage the storage assets for their respective regions, but restrict their access to core BlueXP administration tasks such as user management, Connector creation, and cost management tools like digital wallet.
  
 Within a team of 12, two users are given the Storage viewer role which allows them to monitor the storage resources associated with the BlueXP projects they are assigned to. The remaining nine are given the Storage admin role which includes the ability to manage software updates, access ONTAP System Manager through BlueXP, as well as discover storage resources (add working environments). One person on the team is given the System health specialist role so they can manage the health of the storage resources in their region, but not modify or delete any working environments. This person can also perform software updates on the storage resources in their projects they are assigned.
  
-The organization still has two users with the Organization admin role who can manage all aspects of BlueXP, including user management, Connector creation, and cost management tools like digital wallet, as well as several users with the Folder or project admin role who can perform BlueXP administration tasks for the folders and projects they are assigned to.
+The organization has two users with the Organization admin role who can manage all aspects of BlueXP, including user management, Connector creation, and cost management tools like digital wallet, as well as several users with the Folder or project admin role who can perform BlueXP administration tasks for the folders and projects they are assigned to.
 
 
 
