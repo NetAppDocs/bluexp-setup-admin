@@ -45,16 +45,14 @@ The Folder or project admin role CANNOT create Connectors.
 == Application roles
 The following is a list of roles in the application category. Each role grants specific permissions within its designated scope. Users who do not have the required application role or a platform role will be unable to access the application.
 
-=== Keystone roles
 
-You can use the following roles to assign users access to Keystone. 
 
 NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, contact your NetApp representative.
 
 [cols="1,2",options="header"]
 |===
 
-| Keystone role
+| Application role
 | Responsibilities
 
 
@@ -64,19 +62,6 @@ Users with the Keystone admin role can also create service requests.
 | link:reference-iam-keystone-roles.html[Keystone viewer^]|	Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing. 
 
 Users with the Keystone viewer role CANNOT make service requests.
-
-|===
-
-[#storage-roles]
-=== Storage roles
-You can assign the following roles to users to provide them access to the storage management features in BlueXP that are associated with storage resources that can be viewed in digital advisor. Users can be assigned either an administrative role which allows them to take action in storage management or a viewer role if they just have monitoring responsibilities.
-
-
-[cols="1,2",options="header"]
-|===
-
-| Storage role
-| Responsibilities
 
 
 | link:reference-iam-storage-roles.html[Storage admin^] | Administer storage health and governance functions, discovery storage resources, as well as modify and delete existing working environments. 
