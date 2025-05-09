@@ -134,7 +134,7 @@ sidebar:
                   url: /reference-iam-predefined-roles.html
                 - title: Platform roles
                   url: /reference-iam-platform-roles.html
-                - title: BlueXP application roles
+                - title: Application roles
                   entries:
                    - title: Keystone roles 
                      url: /reference-iam-keystone-roles.html

@@ -75,7 +75,7 @@ You can assign the following roles to users to provide them access to the storag
 [cols="1,2",options="header"]
 |===
 
-| Keystone role
+| Storage role
 | Responsibilities
 
 
@@ -94,7 +94,7 @@ The following is a list of roles in the data service category. Each role grants 
 [cols="1,2",options="header",cols="10,24"]
 |===
 
-| Role
+| Data service role
 | Responsibilities
 
 

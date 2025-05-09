@@ -37,9 +37,6 @@ You can also use these roles to control access to the following BlueXP services:
 * Economic efficiency
 * Sustainability
 
-
-NOTE: The Organization admin and Folder or project admin roles continue to have all BlueXP permissions for the scope to which they are assigned.
-
 The following roles have been added:
 
 * *Storage admin*  
@@ -63,9 +60,6 @@ View storage health information and governance data.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
 
-
-==== IAM project association for Keystone subscriptions
-If you have the Org admin or Folder or project admin role, you can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
 
 
 
