@@ -91,7 +91,7 @@ You can assign the following roles to users to provide them access to the storag
 The following is a list of roles in the data service category. Each role grants specific permissions within its designated scope. Users who do not have the required data service role or a platform role will be unable to access the data service.
 
 
-[cols=2,options="header",cols="10,24"]
+[cols="1,2",options="header",cols="10,24"]
 |===
 
 | Role
