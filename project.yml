@@ -132,15 +132,15 @@ sidebar:
               entries:
                 - title: Learn about BlueXP access roles
                   url: /reference-iam-predefined-roles.html
-                - title: BlueXP platform roles
+                - title: Platform roles
                   url: /reference-iam-platform-roles.html
                 - title: BlueXP application roles
                   entries:
-                   - title: BlueXP Keystone roles 
+                   - title: Keystone roles 
                      url: /reference-iam-keystone-roles.html
                    - title: Storage roles 
                      url: /reference-iam-storage-roles.html
-                - title: BlueXP services roles
+                - title: Data services roles
                   entries:
                     - title: Ransomware protection roles
                       url: /reference-iam-ransomware-roles.html
