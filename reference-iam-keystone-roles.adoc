@@ -17,7 +17,7 @@ Keystone roles provide access to the Keystone dashboards and allow users to view
 
 .Example for Keystone roles in BlueXP
 
-<TBD>
+Within a Keystone subscription, XYZ Corporation has a four storage engineers from different departments that view information about their Keystone subscription. Although all of these users need to monitor the Keystone subscription, only the team lead is allowed to make service requests. Three of the team members are given the *Keystone viewer* role, while the team lead is given the *Keystone admin* role so that there is a point of control over service requests for the company.
 
 
 
