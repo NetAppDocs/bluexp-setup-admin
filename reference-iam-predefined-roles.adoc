@@ -20,7 +20,7 @@ BlueXP identity and access management (IAM) includes several predefined roles th
 == Platform roles
 Platform roles are the broadest roles you can assign to users and allow all permissions forBlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
-[cols=2,options="header",cols="10,24"]
+[cols="1,2",options="header"]
 |===
 
 | Platform role
@@ -51,7 +51,7 @@ You can use the following roles to assign users access to Keystone.
 
 NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, contact your NetApp representative.
 
-[cols=2,options="header",cols="10,24"]
+[cols="1,2",options="header"]
 |===
 
 | Keystone role
@@ -72,7 +72,7 @@ Users with the Keystone viewer role CANNOT make service requests.
 You can assign the following roles to users to provide them access to the storage management features in BlueXP that are associated with storage resources that can be viewed in digital advisor. Users can be assigned either an administrative role which allows them to take action in storage management or a viewer role if they just have monitoring responsibilities.
 
 
-[cols=2,options="header",cols="10,24"]
+[cols="1,2",options="header"]
 |===
 
 | Keystone role

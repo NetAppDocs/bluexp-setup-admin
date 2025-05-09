@@ -20,7 +20,7 @@ Ransomware roles are designed to provide access to the Ransomware protection ser
 
 The following table indicates that actions that each BlueXP ransomware protection role can perform. 
 
-[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+[cols="2,1,1",options="header",cols="40,20a,20a",width="100%"]
 |===
 | Feature and action
 | Ransomware protection admin
