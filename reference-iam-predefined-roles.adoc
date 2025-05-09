@@ -15,76 +15,33 @@ summary: BlueXP identity and access management includes several predefined roles
 [.lead]
 BlueXP identity and access management (IAM) includes several predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
 
+
+[#platform-roles]
 == Platform roles
 Platform roles are the broadest roles you can assign to users and allow all permissions forBlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or Project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
-* *Organization admin*: 
-+
-
-Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. The Organization admin role can create Connectors and manage all working environments in the organization. The Organization admin role is the highest level of access in BlueXP.
-
-* *Folder or project admin*:
-+
-
-Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned.
-
-
-+
-
-The Folder or project admin role cannot create Connectors.
-
-[cols=5*,options="header",cols="24,19,19"]
+[cols=2,options="header",cols="10,24"]
 |===
 
-| Task
-| Organization admin
-| Folder or project admin
+| Platform role
+| Responsibilities
 
 
-| Create Connectors | Yes | No 
+| link:reference-iam-platform-roles.html[Org admin^] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. 
 
-| Create, modify or delete working environments (add or discover new resources using the BlueXP canvas) |	Yes | Yes 
+Users with this role are tasked with organizing and managing the entire BlueXP environment. They can create folders and projects, assign roles, and add users to any project or folder. They can also manage all working environments within the organization.
 
-| Create folders and projects, including deleting | Yes | No
+This is the only access role that can create Connectors.
 
-| Rename existing folders and projects | Yes | Yes 
 
-| Assign roles and add users | Yes | Yes
+| link:reference-iam-platform-roles.html[Folder or project admin^]|	Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned. 
 
-| Associate resources with folders and projects  | Yes | Yes
-
-| Associate Connectors with folders and projects  | Yes | No
-
-| Remove Connectors from a folders and projects  | Yes | No
-
-| Manage Connectors (edit certificates, settings, and so on)  | Yes | No
-
-| Manage credentials from Settings > Credentials  | Yes | Yes
-
-| View the BlueXP timeline | Yes |	Yes 
-
-| Use BlueXP services | Yes | Yes 
-
-| Register BlueXP for support and submit cases | Yes |	Yes 
+The Folder or project admin role CANNOT create Connectors.
 
 |===
 
-Example for organization roles in BlueXP for a large multi-national organization::
-XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
-+
-To achieve this, a person assigned the Organization admin role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The Organization admin assigns a BlueXP user in each respective region the Folder/project admin role. 
-+
-Once the initial setup is complete, regional admins with the Folder or project admin role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The Organization admin inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
 
-
-
-
-
-
-
-
-
-
+[#application-roles]
 == Application roles
 The following is a list of roles in the application category. Each role grants specific permissions within its designated scope. Users who do not have the required application role or a platform role will be unable to access the application.
 
@@ -94,202 +51,67 @@ You can use the following roles to assign users access to Keystone.
 
 NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, contact your NetApp representative.
 
-* *Keystone admin*: 
-
-+
-Manage the Keystone subscription as well as take actions on alerts, reports, and subscriptions. This role is meant for users who are responsible for both monitoring and managing the service. Users with this role can initiate and manage changes in service configurations. 
-
-* *Keystone viewer*: 
-+
-
-View the Keystone subscription as well as view reports, alerts and assets. This role is ideal for users who need to keep track of resource utilization and system health without making any modifications. Suitable for users focused on monitoring and reporting.
-
-The following table indicates the actions that each Keystone role can perform. 
-
-[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+[cols=2,options="header",cols="10,24"]
 |===
-| Feature and action
-| Keystone admin
-| Keystone viewer
 
-| View the following tabs: Subscription, Assets, Monitor, and Administration | Yes | Yes
-3+| *Keystone subscription page*: 
-| View subscriptions | Yes | Yes
-| Amend or renew subscriptions | Yes | No
-3+| *Keystone assets page*: 
-| View assets  | Yes | Yes 
-| Manage assets | Yes | No
-3+| *Keystone alerts page*: 
-| View alerts | Yes | No 
-| Manage alerts | Yes | No 
-| Create alerts for self | Yes | Yes
-3+| *Digital wallet*:
-| Can view digital wallet | Yes | Yes
-3+| *Keystone reports page*:
-| Download reports | Yes | Yes
-| Manage reports | Yes | Yes
-| Create reports for self | Yes | Yes
-3+| *Service requests*:
-| Create service requests | Yes | No
-| View service requests created by any user within the Organization | Yes | Yes
-3+| *Keystone administration page*:
-| View all tabs | Yes | Yes
-| Perform administrative tasks | Yes | No
+| Keystone role
+| Responsibilities
 
 
+| link:reference-iam-keystone-roles.html[Keystone admin^] | Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing. 
+
+Users with the Keystone admin role can also create service requests.
+| link:reference-iam-keystone-roles.html[Keystone viewer^]|	Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing. 
+
+Users with the Keystone viewer role CANNOT make service requests.
 
 |===
 
+[#storage-roles]
 === Storage roles
-Provide the ability to view and administer storage health and governance features, as well discover storage resources and view discovered resources (working environments) in BlueXP.  
-
-The following storage products are supported with role-based access control in BlueXP:
-* On-premises ONTAP clusters
-* StorageGRID
-* E-Series
-
-* *Storage admin*: 
-+
-Administer storage health and governance functions, discovery storage resources, as well as modify and delete existing working environments. 
-
-* *System health specialist*: 
-+
-Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
-* *Storage viewer*: 
-+
-View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
+You can assign the following roles to users to provide them access to the storage management features in BlueXP that are associated with storage resources that can be viewed in digital advisor. Users can be assigned either an administrative role which allows them to take action in storage management or a viewer role if they just have monitoring responsibilities.
 
 
-[cols=4*,options="header",cols="40,20a,20a,20a", width="100%"]
-|===
-| Feature and action
-| Storage admin
-| System health specialist
-| Storage viewer
-
-
-4+| *Canvas*:
-| Discover new resources (create new working environment) | Yes | Yes | No
-| View discovered resources | Yes | Yes | No
-| Delete working environments| Yes | No | No
-| Modify working environments| Yes | No | No
-| *Create Connector* | No | No | No
-4+| *Digital advisor*
-| View all pages and functions | Yes | Yes| Yes
-4+| *Digital wallet*
-| View all pages and functions | No | No| No
-4+| *Software updates* 
-| View landing page and recommendations | Yes | Yes | Yes
-| Review potential version recommendations and key benefits | Yes | Yes | Yes
-| View update details for a cluster | Yes | Yes | Yes
-| Run pre-update checks and download upgrade plan | Yes | Yes | Yes
-| Install software updates | Yes | Yes | No
-4+| *Operational resiliency*
-| Review security risk issues | Yes | Yes | Yes
-| Download Ansible playbooks | Yes | Yes | No
-| Remediate issues automatically | Yes | Yes | No
-4+| *Economic efficiency*
-| Review capacity planning status | Yes | Yes | Yes
-| Choose next action (best practice, tier) | Yes | No | No
-| Tier cold data to cloud storage and free up storage| Yes | Yes | No
-| Set up reminders | Yes | Yes | Yes
-4+| *Sustainability*
-| View dashboard and recommendations | Yes | Yes | Yes
-| Download report data | Yes | Yes | Yes
-| Edit carbon mitigation percentage| Yes | Yes | No
-| Fix recommendations | Yes | Yes | No
-| Defer recommendations | Yes | Yes | No
-4+| *System manager access*
-| May enter credentials | Yes | Yes | No
-4+| *Credentials*
-| User credentials | Yes | Yes |  No
-
+[cols=2,options="header",cols="10,24"]
 |===
 
-.Example for storage roles in BlueXP
-
-XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They want to empower this team to manage the storage assets for their respective regions, but restrict their access to core BlueXP administration tasks such as user management, Connector creation, and cost management tools like digital wallet.
- 
-Within a team of 12, two users are given the Storage viewer role which allows them to monitor the storage resources associated with the BlueXP projects they are assigned to. The remaining nine are given the Storage admin role which includes the ability to manage software updates, access ONTAP System Manager through BlueXP, as well as discover storage resources (add working environments). One person on the team is given the System health specialist role so they can manage the health of the storage resources in their region, but not modify or delete any working environments. This person can also perform software updates on the storage resources in their projects they are assigned.
- 
-The organization has two users with the Organization admin role who can manage all aspects of BlueXP, including user management, Connector creation, and cost management tools like digital wallet, as well as several users with the Folder or project admin role who can perform BlueXP administration tasks for the folders and projects they are assigned to.
+| Keystone role
+| Responsibilities
 
 
+| link:reference-iam-storage-roles.html[Storage admin^] | Administer storage health and governance functions, discovery storage resources, as well as modify and delete existing working environments. 
+| link:reference-iam-storage-roles.html[Storage viewer^]|	View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
+| link:reference-iam-storage-roles.html[System health specialist^]|	Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
+|===
 
 
 
+[#data-service-roles]
 == Data service roles
 The following is a list of roles in the data service category. Each role grants specific permissions within its designated scope. Users who do not have the required data service role or a platform role will be unable to access the data service.
 
 
-=== Classification viewer
-
-Provides the ability view BlueXP classification scan results.
-
-Classification does not have an admin role.
-
-Permissions::
-View compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
-
-No other actions are available to a member who has this role.
-
-=== Ransomware protection
-
-You can use the following roles to assign users access to ransomware protection. 
-
-* *Ransomware protection admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
-* *Ransomware protection viewer*: View workload data, view alert data, download recovery data, and download reports.
-
-The following table indicates that actions that each BlueXP ransomware protection role can perform. 
-
-[cols=3*,options="header",cols="40,20a,20a",width="100%"]
-|===
-| Feature and action
-| Ransomware protection admin
-| Ransomware protection viewer
-
-| View dashboard and all tabs | Yes | Yes
-| Start free trial | Yes | No 
-| Initiate discovery of workloads | Yes | No
-3+| *On the Protect tab*: 
-| Add, modify, or delete policies | Yes | No
-| Protect workloads | Yes | No
-| Identify sensitive data| Yes | No 
-| Edit workload protection | Yes | No
-| View workload details | Yes | Yes 
-| Download data| Yes | Yes 
-3+| *On the Alerts tab*: 
-| View alert details | Yes | Yes 
-| Edit incident status | Yes | No
-| View incident details | Yes | Yes
-| Get full list of impacted files| Yes | No 
-| Download alerts data | Yes | Yes 
-3+| *On the Recover tab*: 
-| Download impacted files| Yes | No 
-| Restore workload | Yes | No 
-| Download recovery data | Yes | Yes
-| Download reports | Yes | Yes
-3+| *On the Settings tab*:
-| Add or modify backup targets| Yes | No 
-| Add or modify SIEM targets | Yes | No
-3+| *On the Reports tab*:
-| Download reports | Yes | Yes
-
+[cols=2,options="header",cols="10,24"]
 |===
 
-=== SnapCenter admin
+| Role
+| Responsibilities
 
-Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications.
 
-SnapCenter does not have a viewer role.
+| Classification admin | Provides the ability view BlueXP classification scan results.
 
-Permissions::
-A member who has this role can complete the following actions in BlueXP:
+Classification does not have a viewer role. Users with this role can view compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
+| link:reference-iam-ransomware-roles.html[Ransomware protection admin^]|	Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs of the Ransomware protection service. 
+| link:reference-iam-ransomware-roles.html[Ransomware protection viewer^]| View workload data, view alert data, download recovery data, and download reports in the Ransomware protection service.
+| SnapCenter admin a| Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications. A member who has this role can complete the following actions in BlueXP:
 
 * Complete any action from Backup and recovery > Applications
 * Manage all working environments in the projects and folders for which they have permissions
 * Use all BlueXP services 
 
+SnapCenter does not have a viewer role.
+
+|===
 
 
 

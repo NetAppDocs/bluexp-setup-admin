@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+permalink: reference-iam-storage-roles.html
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin
+summary: BlueXP identity and access management provides two administrative roles that you can assign to the members of your organization.
+---
+
+= Storage access roles for BlueXP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+Storage roles that are designed to provide access to the storage management features in BlueXP that are associated with storage resources that can be viewed in digital advisor. Users can be assigned either an administrative role which allows them to take action in storage management or a viewer role if they just have monitoring responsibilities.
+
+Storage roles can be assigned to users for the following storage resources and features:
+
+Storage resources: 
+
+* On-premises ONTAP clusters
+* StorageGRID
+* E-Series
+
+BlueXP services and features:
+
+* Digital advisor
+* Software updates
+* Operational resiliency
+* Economic efficiency
+* Sustainability
+
+
+.Example for storage roles in BlueXP
+
+XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They want to empower this team to manage the storage assets for their respective regions, but restrict their access to core BlueXP administration tasks such as user management, Connector creation, and cost management tools like digital wallet.
+ 
+Within a team of 12, two users are given the *Storage viewer* role which allows them to monitor the storage resources associated with the BlueXP projects they are assigned to. The remaining nine are given the *Storage admin* role which includes the ability to manage software updates, access ONTAP System Manager through BlueXP, as well as discover storage resources (add working environments). One person on the team is given the *System health specialist* role so they can manage the health of the storage resources in their region, but not modify or delete any working environments. This person can also perform software updates on the storage resources for projects they are assigned.
+ 
+The organization has two additional users with the *Organization admin* role who can manage all aspects of BlueXP, including user management, Connector creation, and cost management tools like digital wallet, as well as several users with the *Folder or project admin* role who can perform BlueXP administration tasks for the folders and projects they are assigned to.
+
+
+The following table indicates that actions that each BlueXP storage role can perform. 
+
+[cols=4*,options="header",cols="40,20a,20a,20a", width="100%"]
+|===
+| Feature and action
+| Storage admin
+| System health specialist
+| Storage viewer
+
+
+4+| *Canvas*:
+| Discover new resources (create new working environment) | Yes | Yes | No
+| View discovered resources | Yes | Yes | No
+| Delete working environments| Yes | No | No
+| Modify working environments| Yes | No | No
+| *Create Connector* | No | No | No
+4+| *Digital advisor*
+| View all pages and functions | Yes | Yes| Yes
+4+| *Digital wallet*
+| View all pages and functions | No | No| No
+4+| *Software updates* 
+| View landing page and recommendations | Yes | Yes | Yes
+| Review potential version recommendations and key benefits | Yes | Yes | Yes
+| View update details for a cluster | Yes | Yes | Yes
+| Run pre-update checks and download upgrade plan | Yes | Yes | Yes
+| Install software updates | Yes | Yes | No
+4+| *Operational resiliency*
+| Review security risk issues | Yes | Yes | Yes
+| Download Ansible playbooks | Yes | Yes | No
+| Remediate issues automatically | Yes | Yes | No
+4+| *Economic efficiency*
+| Review capacity planning status | Yes | Yes | Yes
+| Choose next action (best practice, tier) | Yes | No | No
+| Tier cold data to cloud storage and free up storage| Yes | Yes | No
+| Set up reminders | Yes | Yes | Yes
+4+| *Sustainability*
+| View dashboard and recommendations | Yes | Yes | Yes
+| Download report data | Yes | Yes | Yes
+| Edit carbon mitigation percentage| Yes | Yes | No
+| Fix recommendations | Yes | Yes | No
+| Defer recommendations | Yes | Yes | No
+4+| *System manager access*
+| May enter credentials | Yes | Yes | No
+4+| *Credentials*
+| User credentials | Yes | Yes |  No
+
+|===
+

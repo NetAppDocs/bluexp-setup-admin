@@ -1,0 +1,55 @@
+---
+sidebar: sidebar
+permalink: reference-iam-keystone-roles.html
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin
+summary: BlueXP identity and access management provides two administrative roles that you can assign to the members of your organization.
+---
+
+= Keystone access roles for BlueXP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Keystone roles provide access to the Keystone dashboards and allow users to view and manage their Keystone subscription. There are two Keystone roles: Keystone admin and Keystone viewer. The main difference between the two roles is the actions they can take in Keystone. The Keystone admin role is the only role that is allowed to create service requests or modify subscriptions.
+
+.Example for Keystone roles in BlueXP
+
+<TBD>
+
+
+
+The following table indicates the actions that each Keystone role can perform. 
+
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature and action
+| Keystone admin
+| Keystone viewer
+
+| View the following tabs: Subscription, Assets, Monitor, and Administration | Yes | Yes
+3+| *Keystone subscription page*: 
+| View subscriptions | Yes | Yes
+| Amend or renew subscriptions | Yes | No
+3+| *Keystone assets page*: 
+| View assets  | Yes | Yes 
+| Manage assets | Yes | No
+3+| *Keystone alerts page*: 
+| View alerts | Yes | No 
+| Manage alerts | Yes | No 
+| Create alerts for self | Yes | Yes
+3+| *Digital wallet*:
+| Can view digital wallet | Yes | Yes
+3+| *Keystone reports page*:
+| Download reports | Yes | Yes
+| Manage reports | Yes | Yes
+| Create reports for self | Yes | Yes
+3+| *Service requests*:
+| Create service requests | Yes | No
+| View service requests created by any user within the Organization | Yes | Yes
+
+
+|===
+
