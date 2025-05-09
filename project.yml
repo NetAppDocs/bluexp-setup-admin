@@ -143,7 +143,7 @@ sidebar:
                   - title: BlueXP services roles
                     entries:
                      - title: Ransomware protection roles
-                        url: /reference-iam-ransomware-roles.html
+                       url: /reference-iam-ransomware-roles.html
         - title: BlueXP accounts (private mode only)
           entries:
             - title: Learn about accounts
