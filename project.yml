@@ -140,10 +140,10 @@ sidebar:
                      url: /reference-iam-keystone-roles.html
                    - title: Storage roles 
                      url: /reference-iam-storage-roles.html
-                   - title: BlueXP services roles
-                     entries:
-                     - title: Ransomware protection roles
-                       url: /reference-iam-ransomware-roles.html
+                - title: BlueXP services roles
+                  entries:
+                    - title: Ransomware protection roles
+                      url: /reference-iam-ransomware-roles.html
         - title: BlueXP accounts (private mode only)
           entries:
             - title: Learn about accounts
