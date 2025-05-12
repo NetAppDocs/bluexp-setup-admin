@@ -56,6 +56,8 @@ BlueXP supports the Connector with the following operating systems when using Bl
 
 26.0.0 is supported with _new_ Connector 3.9.44 or later installations
 
+27.0.0 and 28.0.0 are supported with _new_ Connector 3.9.52 or later installations
+
 | Not supported
 
 |===
