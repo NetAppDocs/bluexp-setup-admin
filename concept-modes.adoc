@@ -392,7 +392,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Workload factory | No | No
 
 .7+| *Features*
-| BlueXP identity and access management | No | No
+| BlueXP identity and access management | Yes | No
 | BlueXP accounts | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
