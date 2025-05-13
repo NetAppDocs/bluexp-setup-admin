@@ -56,15 +56,6 @@ NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like 
 | link:reference-iam-keystone-roles.html[Keystone admin] | Users with the Keystone admin role can create service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
 
 | link:reference-iam-keystone-roles.html[Keystone viewer] | Users with the Keystone viewer role CANNOT make service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
-
-////
-| link:reference-iam-storage-roles.html[Storage admin] | Administer storage health and governance functions, discover storage resources, as well as modify and delete existing working environments.
-| link:reference-iam-storage-roles.html[Storage viewer] | View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
-| link:reference-iam-storage-roles.html[System health specialist] | Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
-
-// hiding storage roles
-////
-
 |===
 
 
