@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: concept-ovuser-settings.html
+keywords: user profile, mfa, change password, role, login, mulit-factor, authentication
+summary: You can modify your BlueXP profile including change your password, enable multi-factor authentication (MFA), and see who your BlueXP administrator is.
+---
+
+= Learn about your BlueXP user settings
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can modify your BlueXP profile including change your password (where applicable) enable multi-factor authentication (MFA), and see who your BlueXP administrator is.
+
+Within BlueXP, each user has a profile that contains information about the user and their settings. You can view and edit your profile settings from the BlueXP console. 
+
+
+== Change your display name
+
+You can change your display name in the BlueXP console. The display name is used to identify you in the BlueXP console and is visible to other users. Your display name is not the same as your username or email address, which cannot be changed.
+
+.Steps
+
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+
+. Select the *Edit* icon next to your name.
+
+. Enter your new display name in the *Name* field.
+
+
+== Configure multi-factor authentication
+
+You can configure multi-factor authentication (MFA) for your BlueXP account. MFA adds an extra layer of security to your account by requiring a second form of verification in addition to your password. This can be a one-time code sent to an authentication app. In some organizations, your administrator may require MFA for all users.
+
+You'll need your password to set up MFA. 
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select *Configure* next to  the *Multi-Factor Authentication* header.
+. Follow the prompts to set up MFA for your account. You will need to download an authentication app, such as Google Authenticator or Microsoft Authenticator, to complete the setup.
+. After you set up MFA, you will be prompted to enter a one-time code from your authentication app each time you log in to BlueXP.
+
+
+
