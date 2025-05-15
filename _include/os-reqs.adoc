@@ -33,6 +33,8 @@ BlueXP supports the Connector with the following operating systems when using Bl
 |
 9.1 to 9.4
 
+7.9 
+
 8.6 to 8.10
 
 | 3.9.40 or later with BlueXP in standard mode or restricted mode
