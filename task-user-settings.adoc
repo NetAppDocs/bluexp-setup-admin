@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: concept-ovuser-settings.html
+permalink: task-user-settings.html
 keywords: user profile, mfa, change password, role, login, mulit-factor, authentication
 summary: You can modify your BlueXP profile including change your password, enable multi-factor authentication (MFA), and see who your BlueXP administrator is.
 ---
