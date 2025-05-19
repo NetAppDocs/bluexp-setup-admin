@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, projec
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Add BlueXP members and manage their permissions
+= Manage BlueXP members
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -139,7 +139,9 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-manage-roles.html[Learn how to use roles to control access to BlueXP resources.^]
 
-TYou can view both user accounts and service accounts from the  *Members* page.
+You can view both user accounts and service accounts from the *Members* page.
+
+NOTE: You can also view all of the members associated with a specific folder or project. link:task-iam-manage-folders-projects.html#view-associated-resources-members[Learn more].
 
 .Steps
 
@@ -186,9 +188,29 @@ Recreating the credentials deletes the existing credentials for the service acco
 The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely.
 
 
+=== Manage a user's multi-factor authentication (MFA)
+If a user has lost access to their MFA device, you can either remove or disable their MFA configuration. 
+
+If you remove their MFA configuration, the user needs to set up MFA again when they log in to BlueXP. If the user has only lost access to their MFA device temporarily, they can use the recovery code that they saved when they set up MFA to log in to BlueXP. 
+
+If they don't have access to their recovery code, you can disable the user's MFA temporarily which allows them to log in without MFA. When you disable MFA for a user, it is disabled for only eight hours and then re-enabled automatically. The user is allowed one login during that time without MFA. After the eight hours, the user must use MFA to log in to BlueXP.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
++
+The members of your organization appear in the *Members* table.
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Manage multi-factor authentication*.
+
+. Choose whether to remove or to disable the user's MFA configuration.
+
+
 .Related information
 
-link:task-iam-manage-folders-projects.html#view-associated-resources-members[View all of the members associated with a specific folder or project].
+
 
 
 

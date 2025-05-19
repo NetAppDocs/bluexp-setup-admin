@@ -104,6 +104,14 @@ sidebar:
               url: /reference-whats-next-private-mode.html
         - title: Log in to BlueXP
           url: /task-logging-in.html
+    - title: Use BlueXP
+      entries:
+        - title: Use BlueXP
+          entries:
+           - title: Log in to BlueXP
+             url: /task-logging-in.html
+           - title: Manage your BlueXP user settings
+             url: /task-manage-user-settings.html
     - title: Administer BlueXP
       entries:
         - title: Identity and access management

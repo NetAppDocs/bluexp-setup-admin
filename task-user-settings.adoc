@@ -5,7 +5,7 @@ keywords: user profile, mfa, change password, role, login, mulit-factor, authent
 summary: You can modify your BlueXP profile including change your password, enable multi-factor authentication (MFA), and see who your BlueXP administrator is.
 ---
 
-= Learn about your BlueXP user settings
+= Manage your BlueXP user settings
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -35,13 +35,30 @@ You can change your display name in the BlueXP console. The display name is used
 
 You can configure multi-factor authentication (MFA) for your BlueXP account. MFA adds an extra layer of security to your account by requiring a second form of verification in addition to your password. This can be a one-time code sent to an authentication app. In some organizations, your administrator may require MFA for all users.
 
-You'll need your password to set up MFA. 
+.Before you begin
+* You must have already downloaded an authentication app, such as Google Authenticator or Microsoft Authenticator, to your device.
+* You'll need your password to set up MFA. 
+
+NOTE: If you do not have access to your authentication app or lose your recovery code, contact your BlueXP administrator for help.
 
 .Steps
 . Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
-. Select *Configure* next to  the *Multi-Factor Authentication* header.
-. Follow the prompts to set up MFA for your account. You will need to download an authentication app, such as Google Authenticator or Microsoft Authenticator, to complete the setup.
-. After you set up MFA, you will be prompted to enter a one-time code from your authentication app each time you log in to BlueXP.
+. Select *Configure* next to the *Multi-Factor Authentication* header.
+. Follow the prompts to set up MFA for your account. You will need to download an authentication app, such as Google Authenticator or Microsoft Authenticator, to complete the setup. 
+. When you finish, you'll be prompted to save your recovery code. Choose to either copy the code or download a text file containing the code. Save this code in a secure location. You will need it if you lose access to your authentication app.
 
++
+
+After you set up MFA, you will be prompted to enter a one-time code from your authentication app each time you log in to BlueXP.
+
+
+== Contact your Organization administrator
+If you need to contact your organization administrator, you can send an email to them directly from BlueXP. The administrator is responsible for managing user accounts and permissions within your organization.
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select *Contact admins* to send an email to your organization administrator. The email will be sent to the address listed in the your email application, which is used in your email application.
+. Select the email application to use.
+. Finish the email and select *Send*.
 
 
