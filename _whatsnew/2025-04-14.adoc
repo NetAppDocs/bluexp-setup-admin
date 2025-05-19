@@ -1,8 +1,29 @@
+
+
+
 === Connector 3.9.51
 
 This release of the BlueXP Connector includes minor security improvements and bug fixes.
 
 At this time, the 3.9.51 release is available for standard mode and restricted mode.
+
+
+==== Secure endpoints for Connector downloads now supported for Backup and recovery and Ransomware protection
+
+If you are using Backup and recovery or Ransomware protection, you can now use secure endpoints for Connector downloads. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images[Learn about secure endpoints for Connector downloads.^]
+
+=== BlueXP Identity and Access Management (IAM)
+
+
+* Users without the Org admin or Folder or project admin must be assigned a Ransomware protection role to have access to Ransomware protection. You can assign a user one of two roles: Ransomware protection admin or Ransomware protection viewer.
+
+* Users without the Org admin or Folder or project admin must be assigned a Keystone role to have access to Keystone. You can assign a user one of two roles: Keystone admin or Keystone viewer.
+
++
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
+
+* If you have the Org admin or Folder or project admin role, you can now associate a Keystone subscription with an IAM project. Associating a Keystone subscription with an IAM project allows you to control access to Keystone within BlueXP.
 
 === BlueXP Identity and Access Management (IAM)
 
