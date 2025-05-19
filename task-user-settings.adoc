@@ -13,7 +13,7 @@ summary: You can modify your BlueXP profile including change your password, enab
 :imagesdir: ./media/
 
 [.lead]
-You can modify your BlueXP profile including enabling multi-factor authentication (MFA), and contacting your BlueXP administrator.
+You can access your BlueXP profile which allows you to enable multi-factor authentication (MFA), and contact your BlueXP administrator.
 
 Within BlueXP, each user has a profile that contains information about the user and their settings. You can view and edit your profile settings from the BlueXP console. 
 
