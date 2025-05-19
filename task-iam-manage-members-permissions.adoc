@@ -208,8 +208,6 @@ The members of your organization appear in the *Members* table.
 . Choose whether to remove or to disable the user's MFA configuration.
 
 
-.Related information
-
 
 
 
@@ -272,22 +270,6 @@ image:screenshot-iam-define-role.png[A screenshot of the Access portion of the e
 
 ////
 
-=== Unassign a role from a member
-
-You can remove a member's permissions to a specific folder or project by removing their role.
-
-
-If a member has permissions in your organization to _only_ one folder or project, you can't remove that role. You have two choices:
-
-* If you want the member to have permissions to another part of the resource hierarchy, you need to add that role first and then delete the existing role.
-
-* If you don't want the member to have permissions to anything, then you should remove the member from your organization.
-
-.Steps
-
-. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
-
-. In the table, navigate to the folder or project level and then select image:icon-delete.png[An icon of a garbage can]. You'll be asked to confirm the removal.
 
 
 

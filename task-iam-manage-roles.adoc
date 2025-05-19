@@ -67,9 +67,11 @@ link:reference-iam-predefined-roles.html[Learn about access roles^].
 . Select *Add new roles*.
 
 
-=== Change a member's assigned role
+== Change a member's assigned role
 
 You can change the assigned roles for a member should you need to adjust the access for a user.
+
+NOTE: BlueXP users must have at least one role assigned to them. You can't remove all roles from a user. If you need to remove all roles, you must delete the user from your organization.
 
 .Steps
 
