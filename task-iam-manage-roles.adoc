@@ -35,7 +35,7 @@ If you have the _Folder or project admin_  role, the page displays all members i
 . In the table, expand the respective row for organization, folder, or project where you want to view the member's assigned role and select *View* in the *Role* column.
 
 
-== Add an access role to an member
+== Add an access role to a member
 
 Typically, you'll assign a role to the member when you add them to your organization. However, You can update a member's role at anytime either by removing a role or adding a different role. You can remove a user's access to a project by removing their role.
 

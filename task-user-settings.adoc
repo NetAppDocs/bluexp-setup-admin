@@ -35,6 +35,8 @@ You can change your display name in the BlueXP console. The display name is used
 
 You can configure multi-factor authentication (MFA) for your BlueXP account. MFA adds an extra layer of security to your account by requiring a second form of verification in addition to your password. This can be a one-time code sent to an authentication app. In some organizations, your administrator may require MFA for all users.
 
+Do not enable MFA if your user account is for BlueXP API access, enabling multi-factor authentication will block that access. Consider using a service account for all API access. 
+
 .Before you begin
 * You must have already downloaded an authentication app, such as Google Authenticator or Microsoft Authenticator, to your device.
 * You'll need your password to set up MFA. 
