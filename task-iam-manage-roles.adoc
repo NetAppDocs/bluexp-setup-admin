@@ -13,15 +13,15 @@ summary: BlueXP's identity and access management enables you to represent a comp
 :imagesdir: ./media/
 
 [.lead]
-BlueXP allows you to assign roles to users based on what they need to do and where. 
+Within BlueXP, you can assign roles to users based on what they need to do and where. 
 
-Users with the Organization admin or Folder or project admin roles have the responsibility of assigning roles to other users. You can assign access roles on a project or folder basis. For example, you can assign a user the Ransomware protection admin role for one project and the SnapCenter admin role for a different project. Alternatively, if a user requires the Classification admin role for all projects within a specific folder, you can grant them this access role at the folder level.
+Users with the *Organization admin* or *Folder or project admin* role have the responsibility of assigning roles to other users. You can assign access roles on a project or folder basis. For example, you can assign a user the Ransomware protection admin role for one project and the SnapCenter admin role for a different project. Alternatively, if a user requires the Classification admin role for all projects within a specific folder, you can grant them this access role at the folder level.
 
 Use access roles to assign access to storage resources based on the specific BlueXP tasks that users need to perform. For example, if a BlueXP user needs to interact with ransomware protection services, they must be given an access role that includes either viewing or administrative permissions for the ransomware protection service for the project for which the access role is granted.
 
 Assign roles to users based on your IAM strategy for enhanced security. BlueXP IAM roles are designed to ensure that users only have access to what they need.
 
-NOTE: Remember that you can't directly grant to resources. Resources must be assigned to projects first. Consider setting up your resource hierarchy before assigning users access. link:task-iam-manage-folders-projects.html[Learn how to organize your resources in BlueXP IAM with folders and projects.]
+NOTE: Remember that you can't directly grant access to resources. Resources must be assigned to projects first. Consider setting up your resource hierarchy before assigning users access. link:task-iam-manage-folders-projects.html[Learn how to organize your resources in BlueXP IAM with folders and projects.]
 
 [#manage-permissions]
 == View roles(s) assigned to a member
@@ -35,9 +35,9 @@ If you have the _Folder or project admin_  role, the page displays all members i
 . In the table, expand the respective row for organization, folder, or project where you want to view the member's assigned role and select *View* in the *Role* column.
 
 
-== Add an access role to an member
+== Add an access role to a member
 
-Typically, you'll assign a role to the member when you add them to your organization. However, You can update a member's role at anytime either by removing a role or adding a different role. You can remove a user's access to a project by removing their role.
+Typically, you'll assign a role to the member when you add them to your organization. However, you can update a member's role at anytime either by removing a role or adding a different role. You can remove a user's access to a project by removing their role.
 
 You can assign a user an access role for your organization, folder, or project. 
 
