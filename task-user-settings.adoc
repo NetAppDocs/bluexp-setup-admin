@@ -60,7 +60,7 @@ If you no longer have your multi-factor authentication recovery code, you can re
 
 .Steps
 . Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
-. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication*.
+. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
 . Select *Regenerate recovery code*.
 . Copy the generated recovery code and save it in a secure location.
 
