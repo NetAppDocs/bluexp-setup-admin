@@ -10,7 +10,7 @@ Docker 27 and Docker 28 are now supported with the Connector.
 
 
 ==== Cloud Volumes ONTAP 
-Cloud Volumes ONTAP PAYGO licenses and capacity-based licenses now keep running if the Connector is shutdown for more than 14 days. This removes a previous limitation that required the Connector to be running for the license to remain valid.
+Cloud Volumes ONTAP PAYGO licenses and capacity-based licenses no longer shutdown when the Connector is out of compliance or down for more than 14 days. Cloud Volumes ONTAP still sends Event Management messages when it loses access to the Connector. This change is to ensure that Cloud Volumes ONTAP can continue to operate even if the Connector is down for an extended period of time. It does not change compliance requirements for the Connector.
 
 
 
