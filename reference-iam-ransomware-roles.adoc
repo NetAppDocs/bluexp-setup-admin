@@ -13,7 +13,7 @@ summary: BlueXP identity and access management provides two administrative roles
 :imagesdir: ./media/
 
 [.lead]
-Ransomware roles are designed to provide access to the Ransomware protection service. Users can be assigned either an administrative role which allows them to take action in Ransomware protection or a viewer role if they just have monitoring responsibilities. The two roles are Ransomware protection admin and Ransomware protection viewer. The main difference between the two roles is the actions they can take in Ransomware protection.
+Ransomware roles provide users access to the Ransomware protection service. Users can be assigned either an administrative role, which allows them to take action in Ransomware protection or a viewer role if they just have monitoring responsibilities. The two roles are Ransomware protection admin and Ransomware protection viewer. The main difference between the two roles is the actions they can take in Ransomware protection.
 
 
 The following table indicates that actions that each BlueXP ransomware protection role can perform. 

@@ -9,6 +9,10 @@ At this time, the 3.9.52 release is available for standard mode and restricted m
 Docker 27 and Docker 28 are now supported with the Connector.
 
 
+==== Cloud Volumes ONTAP 
+Cloud Volumes ONTAP capacity-based nodes no longer shutdown when the Connector is out of compliance or down for more than 14 days. Cloud Volumes ONTAP still sends Event Management messages when it loses access to the Connector. This change is to ensure that Cloud Volumes ONTAP can continue to operate even if the Connector is down for an extended period of time. It does not change compliance requirements for the Connector.
+
+
 
 === Keystone administration available in BlueXP
 
