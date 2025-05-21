@@ -55,8 +55,8 @@ NOTE: If you do not have access to your authentication app or lose your recovery
 
 After you set up MFA, you will be prompted to enter a one-time code from your authentication app each time you log in to BlueXP.
 
-== Regenerate your recovery code
-If you no longer have your recovery code, you can regenerate your recovery code. You can use your recovery code to log in to BlueXP if you lose access to your authentication app.
+== Regenerate your MFA recovery code
+If you no longer have your multi-factor authentication recovery code, you can regenerate your recovery code. You can use your recovery code to log in to BlueXP if you lose access to your authentication app.
 
 .Steps
 . Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
