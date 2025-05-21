@@ -9,6 +9,10 @@ At this time, the 3.9.52 release is available for standard mode and restricted m
 Docker 27 and Docker 28 are now supported with the Connector.
 
 
+==== Cloud Volumes ONTAP 
+Cloud Volumes ONTAP PAYGO licenses and capacity-based licenses now keep running if the Connector is shutdown for more than 14 days. This removes a previous limitation that required the Connector to be running for the license to remain valid.
+
+
 
 === Keystone administration available in BlueXP
 
