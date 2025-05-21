@@ -33,9 +33,11 @@ You can change your display name in the BlueXP console. The display name is used
 
 == Configure multi-factor authentication
 
-You can configure multi-factor authentication (MFA) for your BlueXP account. MFA adds an extra layer of security to your account by requiring a second form of verification in addition to your password. This can be a one-time code sent to an authentication app. In some organizations, your administrator may require MFA for all users.
+You can configure multi-factor authentication (MFA) for your BlueXP account. MFA adds an extra layer of security to your account by requiring a second form of verification in addition to your password. In some organizations, your administrator may require MFA for all users.
 
-Do not enable MFA if your user account is for BlueXP API access, enabling multi-factor authentication will block that access. Consider using a service account for all API access. 
+Enabling MFA is not available to users who use single-sign on either with the NetApp Support Site or with an external identity provider. If you are using SSO, you will not see the option to enable MFA in your profile settings.
+
+Do not enable MFA if your user account is for BlueXP API access. Enabling multi-factor authentication blocks API access. Consider using a service account for all API access. 
 
 .Before you begin
 * You must have already downloaded an authentication app, such as Google Authenticator or Microsoft Authenticator, to your device.
@@ -53,13 +55,25 @@ NOTE: If you do not have access to your authentication app or lose your recovery
 
 After you set up MFA, you will be prompted to enter a one-time code from your authentication app each time you log in to BlueXP.
 
+== Regenerate your recovery code
+If you no longer have your recovery code, you can regenerate your recovery code. You can use your recovery code to log in to BlueXP if you lose access to your authentication app.
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication*.
+. Select *Regenerate recovery code*.
+. Copy the generated recovery code and save it in a secure location.
+
+
 
 == Contact your Organization administrator
 If you need to contact your organization administrator, you can send an email to them directly from BlueXP. The administrator is responsible for managing user accounts and permissions within your organization.
 
+NOTE: You must have a default email application configured for your browser to use the *Contact admins* feature. 
+
 .Steps
 . Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
-. Select *Contact admins* to send an email to your organization administrator. The email will be sent to the address listed in the your email application, which is used in your email application.
+. Select *Contact admins* to send an email to your organization administrator. 
 . Select the email application to use.
 . Finish the email and select *Send*.
 

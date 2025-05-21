@@ -33,9 +33,9 @@ When a _Folder or project admin_ views the *Members* page, the page displays all
 [#add-members]
 == Add members to your organization
 
-You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
+You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention through the BlueXP API. A user account is typically used by a person to log in to BlueXP and manage resources.
 
-You can add a service account directly from BlueXP. However, users must first sign up for BlueXP account before you can be add them to an organization or assign a role.
+Users must first sign up for BlueXP account before you can add them to an organization or assign a role. However, you can create service accounts directly from BlueXP.
 
 To manage users and their permissions, you must have the *Organization admin* role or the *Folder or project admin* role. Remember that users with the *Folder or project admin* role can only manage members for the folder or projects of which they have admin permissions. 
 
@@ -194,6 +194,8 @@ If a user has lost access to their MFA device, you can either remove or disable 
 If you remove their MFA configuration, the user needs to set up MFA again when they log in to BlueXP. If the user has only lost access to their MFA device temporarily, they can use the recovery code that they saved when they set up MFA to log in to BlueXP. 
 
 If they don't have access to their recovery code, you can disable the user's MFA temporarily which allows them to log in without MFA. When you disable MFA for a user, it is disabled for only eight hours and then re-enabled automatically. The user is allowed one login during that time without MFA. After the eight hours, the user must use MFA to log in to BlueXP.
+
+NOTE: You must have an email address in the same domain as the affected user in order to manage that user’s multi-factor authentication. 
 
 .Steps
 
