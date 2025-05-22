@@ -35,7 +35,7 @@ You can change your display name in the BlueXP console. The display name is used
 
 You can configure multi-factor authentication (MFA) for your BlueXP account. MFA adds an extra layer of security to your account by requiring a second form of verification in addition to your password. In some organizations, your administrator may require MFA for all users.
 
-Enabling MFA is not available to users who use single-sign on either with the NetApp Support Site or with an external identity provider. If you are using SSO, you will not see the option to enable MFA in your profile settings.
+Enabling MFA is not available to users who use single-sign on (federation) with an external identity provider or who use their NetApp Support Site credentials. If either of these are true for you, you will not see the option to enable MFA in your profile settings.
 
 Do not enable MFA if your user account is for BlueXP API access. Enabling multi-factor authentication blocks API access. Consider using a service account for all API access. 
 
@@ -56,7 +56,7 @@ NOTE: If you do not have access to your authentication app or lose your recovery
 After you set up MFA, you will be prompted to enter a one-time code from your authentication app each time you log in to BlueXP.
 
 == Regenerate your MFA recovery code
-If you no longer have your multi-factor authentication recovery code, you can regenerate your recovery code. You can use your recovery code to log in to BlueXP if you lose access to your authentication app.
+Recovery codes can be used only once. If you have used your recovery code or lost it, you can generate a new one.
 
 .Steps
 . Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
