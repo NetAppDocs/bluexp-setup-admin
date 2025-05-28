@@ -16,6 +16,10 @@ summary: BlueXP identity and access management provides two administrative roles
 
 You can assign the following roles to users to provide them access to the storage management features in BlueXP that are associated with supported storage resources. Users can be assigned either an administrative role which allows them to take action in storage management or a viewer role if they just have monitoring responsibilities.
 
+Users must have associated their BlueXP account with their NetApp Support Site (NSS) account in order to manage the supported storage resources. They must also have network access to the resources they want to manage. For example, if a user wants to manage an ONTAP cluster, they must have network access to the cluster management LIFs (logical interfaces) for the cluster.
+
+NOTE: These roles are not available from the BlueXP partnership API.
+
 Storage roles can be assigned to users for the following storage resources and features:
 
 Storage resources: 
