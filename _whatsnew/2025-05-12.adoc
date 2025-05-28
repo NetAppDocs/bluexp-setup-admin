@@ -18,7 +18,7 @@ Cloud Volumes ONTAP capacity-based nodes no longer shutdown when the Connector i
 
 The beta for NetApp Keystone in BlueXP has added access to Keystone administration. You can access the sign-up page for the NetApp Keystone beta from the left navigation bar of BlueXP.
 
-////
+
 === BlueXP Identity and Access Management (IAM)
 
 ==== New storage management roles
@@ -64,9 +64,7 @@ View storage health information and governance data.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
 
-// hiding the storage roles
 
-////
 
 
 
