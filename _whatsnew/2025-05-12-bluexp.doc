@@ -1,0 +1,9 @@
+=== BlueXP for Keystone
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes, as well as some additional updates.
+
+At this time, the 3.9.52 release is available for standard mode and restricted mode.
+
+=== Collector updates
+
+include::collector-whats-new-05-12-2025.adoc[]
