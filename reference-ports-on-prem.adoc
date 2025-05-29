@@ -5,7 +5,7 @@ keywords: networking, network, requirements, ports, on-prem, linux, http, https
 summary: The Connector uses inbound ports when installed manually on an on-premises Linux host. You might need to refer to these ports for planning purposes.
 ---
 
-= Ports for the on-prem Connector
+= Ports for the on-premisesConnector
 :hardbreaks:
 :nofooter:
 :icons: font

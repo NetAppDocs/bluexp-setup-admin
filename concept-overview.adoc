@@ -59,7 +59,7 @@ BlueXP automation catalog::
 Use scripted solutions to automate the deployment and integration of NetApp products and services.
 
 BlueXP backup and recovery::
-Back up and restore cloud and on-prem data.
+Back up and restore cloud and on-premisesdata.
 
 BlueXP classification::
 Get your application data and cloud environments privacy ready.
@@ -68,7 +68,7 @@ BlueXP cloud ops::
 Gain visibility into your cloud compute spending and identify potential savings.
 
 BlueXP copy and sync::
-Sync data between on-prem and cloud data stores.
+Sync data between on-premisesand cloud data stores.
 
 BlueXP digital advisor::
 Use predictive analytics and proactive support to optimize your data infrastructure.
@@ -98,7 +98,7 @@ BlueXP sustainability dashboard::
 Analyze the sustainability of your storage systems.
 
 BlueXP tiering::
-Extend your on-prem ONTAP storage to the cloud.
+Extend your on-premisesONTAP storage to the cloud.
 
 BlueXP volume caching::
 Create a writable cache volume to speed up access to data or offload traffic from heavily accessed volumes.

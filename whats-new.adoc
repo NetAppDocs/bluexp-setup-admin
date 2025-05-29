@@ -535,11 +535,11 @@ https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html[Learn more a
 +
 Note that this link is also accessible from the BlueXP user interface on the Timeline page.
 
-* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-prem ONTAP cluster enhancements.
+* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-premisesONTAP cluster enhancements.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023[Learn about Cloud Volumes ONTAP enhancements^]
 
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023[Learn about ONTAP on-prem cluster enhancements^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023[Learn about ONTAP on-premisescluster enhancements^]
 
 == 2 July 2023
 
@@ -663,11 +663,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.ht
 +
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases[Learn how to create and manage support cases].
 
-* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-prem ONTAP cluster enhancements.
+* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-premisesONTAP cluster enhancements.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023[Learn about Cloud Volumes ONTAP enhancements^]
 
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023[Learn about ONTAP on-prem cluster enhancements^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023[Learn about ONTAP on-premisescluster enhancements^]
 
 == 5 March 2023
 
@@ -753,11 +753,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 * The Connector is now supported in the Google Cloud Israel region.
 
-* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-prem ONTAP cluster enhancements.
+* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-premisesONTAP cluster enhancements.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#4-december-2022[Learn about Cloud Volumes ONTAP enhancements^]
 
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022[Learn about ONTAP on-prem cluster enhancements^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022[Learn about ONTAP on-premisescluster enhancements^]
 
 == 6 November 2022
 
@@ -780,7 +780,7 @@ NetApp BlueXP extends and enhances the capabilities that were provided through C
 Unified management experience::
 BlueXP enables you to manage all of your storage and data assets from a single interface. 
 +
-You can use BlueXP to create and administer cloud storage (for example, Cloud Volumes ONTAP and Azure NetApp Files), to move, protect, and analyze data, and to control many on-prem and edge storage devices.
+You can use BlueXP to create and administer cloud storage (for example, Cloud Volumes ONTAP and Azure NetApp Files), to move, protect, and analyze data, and to control many on-premisesand edge storage devices.
 +
 https://bluexp.netapp.com[Learn more from the BlueXP website^]
 
@@ -791,7 +791,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 New product integrations::
 * You can now manage the Amazon S3 buckets in the AWS accounts where the Connector is installed.
-* You can now manage more on-prem storage systems, such as E-Series and StorageGRID. 
+* You can now manage more on-premisesstorage systems, such as E-Series and StorageGRID. 
 * You can now use data services previously only available as a standalone service with a separate UI, such as BlueXP digital advisor (Active IQ).
 
 Learn more::
@@ -895,11 +895,11 @@ NOTE: Existing logins that use an email address and password need to keep using 
 * The Connector is now supported in the Azure Brazil Southeast region.
 
 
-* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-prem ONTAP cluster enhancements.
+* This release of the Connector also includes Cloud Volumes ONTAP enhancements and on-premisesONTAP cluster enhancements.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022[Learn about Cloud Volumes ONTAP enhancements^]
 
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022[Learn about ONTAP on-prem cluster enhancements^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022[Learn about ONTAP on-premisescluster enhancements^]
 
 == 12 May 2022
 
@@ -1151,7 +1151,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 
 * When tiering to Google Cloud Storage, you can apply a lifecycle rule so that the tiered data transitions from the Standard storage class to lower-cost Nearline, Coldline, or Archive storage after 30 days.
 
-* Cloud Tiering now displays if you have any undiscovered on-prem ONTAP clusters so that you can add them to Cloud Manager to enable tiering or other services on those clusters.
+* Cloud Tiering now displays if you have any undiscovered on-premisesONTAP clusters so that you can add them to Cloud Manager to enable tiering or other services on those clusters.
 +
 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering[Learn how to discover these additional clusters^]
 
