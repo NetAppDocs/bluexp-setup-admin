@@ -114,6 +114,7 @@ To use BlueXP in restricted mode or private mode, you get started with BlueXP by
 
 link:concept-modes.html[Learn about BlueXP deployment modes].
 
+[[connector-installation]]
 == How to install a Connector
 
 You can install a Connector directly from BlueXP, from your cloud provider's marketplace, or by manually installing the software on your own Linux host. How you get started depends on whether you're using BlueXP in standard mode, restricted mode, or private mode.
