@@ -152,7 +152,7 @@ If you just created these credentials in your cloud provider, it might take a fe
 
 .Before you begin
 
-You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how to create a Connector].
+You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#connector-installation[Learn how to create a Connector].
 
 .Steps
 
@@ -182,7 +182,7 @@ Replacing the current marketplace subscription with a new subscription changes t
 
 .Before you begin
 
-You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how].
+You need to create a Connector before you can change BlueXP settings. llink:concept-connectors.html#connector-installation[Learn how to create a Connector].
 
 .Steps
 
