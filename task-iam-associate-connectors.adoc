@@ -25,15 +25,15 @@ You should understand how Connector association works. link:concept-identity-and
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[Settings icon] > *Identity & Access Management*.
 
 . Select *Connectors*.
 
 . From the table, find the Connector that you want to associate.
 +
-To find a specific Connector, you can use the search that's above the table and filter the contents of the table by selecting a specific part of the resource hierarchy.
+Use the search above the table to find a specific Connector or filter the table by resource hierarchy.
 
-. To first view the folders and projects that the Connector is associated with, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+. To view the folders and projects linked to the Connector, select image:icon-action.png["An icon with three dots"] and then select *View details*.
 +
 BlueXP displays details about the folders and projects that the Connector is associated with.
 
