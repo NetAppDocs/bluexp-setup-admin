@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam
+keywords: what's new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice
 summary: "Learn what's new with BlueXP administration features: BlueXP IAM, Connectors, cloud provider credentials, and more."
 ---
 = What's new
@@ -18,6 +18,10 @@ Learn what's new with BlueXP administration features: identity and access manage
 
 // tag::whats-new[]
 
+== 12 May 2025
+
+include::_whatsnew/2025-05-12.adoc[]
+
 == 14 April 2025
 
 include::_whatsnew/2025-04-14.adoc[]
@@ -26,15 +30,21 @@ include::_whatsnew/2025-04-14.adoc[]
 
 include::_whatsnew/2025-03-28.adoc[]
 
+// end::whats-new[]
+
 == 10 March 2025
 
 include::_whatsnew/2025-03-10.adoc[]
 
-// end::whats-new[]
+
 
 == 6 March 2025
 
 include::_whatsnew/2025-03-06.adoc[]
+
+== 18 February 2025
+
+include::_whatsnew/2025-02-18.adoc[]
 
 == 10 February 2025
 

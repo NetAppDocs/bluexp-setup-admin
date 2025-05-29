@@ -1,0 +1,73 @@
+=== Connector 3.9.52
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes, as well as some additional updates.
+
+At this time, the 3.9.52 release is available for standard mode and restricted mode.
+
+
+==== Support for Docker 27 and Docker 28
+Docker 27 and Docker 28 are now supported with the Connector.
+
+
+==== Cloud Volumes ONTAP 
+Cloud Volumes ONTAP nodes no longer shutdown when the Connector is out of compliance or down for more than 14 days. Cloud Volumes ONTAP still sends Event Management messages when it loses access to the Connector. This change is to ensure that Cloud Volumes ONTAP can continue to operate even if the Connector is down for an extended period of time. It does not change compliance requirements for the Connector.
+
+
+
+=== Keystone administration available in BlueXP
+
+The beta for NetApp Keystone in BlueXP has added access to Keystone administration. You can access the sign-up page for the NetApp Keystone beta from the left navigation bar of BlueXP.
+
+
+=== BlueXP Identity and Access Management (IAM)
+
+==== New storage management roles
+
+The Storage admin, System health specialist, and Storage viewer roles are available and can be assigned to users.
+
+These roles enable you to manage who in your organization can discover and manage storage resources, as well as view storage health information and perform software updates.
+
+These roles are supported for controlling access to the following storage resources:
+
+* E-Series systems
+* StorageGRID systems
+* On-premises ONTAP systems
+
+You can also use these roles to control access to the following BlueXP services:
+
+* Software updates
+* Digital advisor
+* Operational resiliency
+* Economic efficiency
+* Sustainability
+
+The following roles have been added:
+
+* *Storage admin*  
+
++
+Administer storage health, governance, and discovery for the storage resources in the organization. This role can also perform software updates on storage resources. 
+
+
+* *System health specialist* 
+
++
+Administer storage health and governance for the storage resources in the organization. This role can also perform software updates on storage resources. This role cannot modify or delete working environments.
+
+* *Storage viewer* 
+
++
+
+View storage health information and governance data.
+
++
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
+
+
+
+
+
+
+
+

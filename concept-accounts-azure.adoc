@@ -5,7 +5,7 @@ keywords: cloud provider accounts, azure, azure accounts, service principal, mul
 summary: Learn how BlueXP uses Azure credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
 ---
 
-= Learn about Azure credentials and permissions
+= Learn about Azure credentials and permissions in BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
