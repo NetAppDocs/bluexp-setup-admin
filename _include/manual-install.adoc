@@ -77,12 +77,32 @@ For example:
 
 +
 --cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.
+
+. If you used Podman, you'll need to adjust the aardvark-dns port.
+.. SSH to the BlueXP Connector virtual machine.
+.. Open podman _/usr/share/containers/containers.conf_ file and modify the chosen port for Aardvark DNS service. For example, change it to 54.
++
+[source, cli]
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
++
+.. Reboot the Connector virtual machine.
 //end::main-steps[]
 
 //tag::standard-mode-steps-for-cloud[]
 . Wait for the installation to complete.
 +
 At the end of the installation, the Connector service (occm) restarts twice if you specified a proxy server.
+
+
 
 . Open a web browser from a host that has a connection to the Connector virtual machine and enter the following URL:
 +
@@ -96,7 +116,4 @@ https://_ipaddress_
 You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. You should enable restricted mode only if you have a secure environment and want to disconnect this account from BlueXP backend services. If that's the case, link:task-quick-start-restricted-mode.html[follow steps to get started with BlueXP in restricted mode].
 .. Select *Let's start*.
 
-.Result
-
-The Connector is now installed and is set up with your BlueXP organization.
 //end::standard-mode-steps-for-cloud[]

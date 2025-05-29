@@ -16,10 +16,12 @@ Depending on your operating system, either Podman or Docker Engine is required b
 --
 Follow these steps to install Podman and configure it to meet the following requirements:
 
-* The podman.socket service must be enabled and started
-* python3 must be installed
-* The podman-compose package version 1.0.6 must be installed
-* podman-compose must be added to the PATH environment variable
+* Enable and start the podman.socket service 
+* Install python3 
+* Install the podman-compose package version 1.0.6 
+* Add podman-compose to the PATH environment variable
+
+NOTE: When using Podman, adjust the aardvark-dns service port (default: 53) after installing the Connector to avoid conflicts with the DNS port on the host. Follow the instructions to configure the port.
 
 .Steps
 
@@ -77,6 +79,7 @@ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noa
 sudo dnf install podman-compose-1.0.6
 +
 NOTE: Using the `dnf install` command meets the requirement for adding podman-compose to the PATH environment variable. The installation command adds podman-compose to /usr/bin, which is already included in the `secure_path` option on the host.
+
 --
 
 .Docker Engine
