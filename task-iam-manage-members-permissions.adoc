@@ -15,7 +15,7 @@ summary: Manage your organization's members to provide permissions across differ
 [.lead]
 BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
-TIP: To ensure that you don't lose access to your BlueXP organization, it's a best practice to have two members with the Organization admin role. 
+Suggestion: TIP: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
 
 
 To manage users and their permissions, you must be assigned one of the following roles: 
@@ -26,16 +26,16 @@ Users with this role can manage all members
 
 * Folder or project admin
 +
-Users with this role can manage members only of designated folder or project
+Users with this role can manage members only of a designated folder or project
  
-When a _Folder or project admin_ views the *Members* page, the page displays all members in the organization. However, a member with this role can only view and manage member permissions for the folders and projects for which they have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
+ _Folder or project admin_ can view all members on the *Members* page but manage permissions only for folders and projects they have access to. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
 
 [#add-members]
 == Add members to your organization
 
 You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
 
-You can add a service account directly from BlueXP. However, users must first sign up for BlueXP account before you can be add them to an organization or assign a role.
+You can add a service account directly from BlueXP. Users must sign up for a BlueXP account before being added to an organization or assigned a role.
 
 To manage users and their permissions, you must have the *Organization admin* role or the *Folder or project admin* role. Remember that users with the *Folder or project admin* role can only manage members for the folder or projects of which they have admin permissions. 
 
@@ -54,7 +54,7 @@ To manage users and their permissions, you must have the *Organization admin* ro
 
 . If the user hasn't already done so, ask them to go to the https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
 +
-When the user signs up, they should complete the *Sign up* page, verify their email address, and then log in. When prompted to create an organization, the user should close out of BlueXP and let you know that they've created their user account. You can then add the user to your existing BlueXP organization.
+After signing up, users complete the *Sign up* page, check their email, and log in. If prompted to create an organization, they should close BlueXP and inform you of their account creation. You can then add the user to your existing BlueXP organization.
 +
 link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 
@@ -84,7 +84,7 @@ link:reference-iam-predefined-roles.html[Learn about access roles].
 
 . Select *Add*. 
 +
-The user should receive an email from NetApp BlueXP. The email includes information that the member can use to access BlueXP.
+The user receives an email from NetApp BlueXP containing information members use to access BlueXP.
 
 
 
@@ -125,7 +125,7 @@ link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 
 . Download or copy the client ID and client secret.
 +
-The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely. Note that you can recreate the client ID and client secret later on as needed.
+lueXP shows the client secret only once and does not store it. Copy or download the secret and store it safely. Note that you can recreate the client ID and client secret later on as needed.
 
 . Select *Close*.
 
@@ -147,15 +147,15 @@ TYou can view both user accounts and service accounts from the  *Members* page.
 
 . Select *Members*.
 +
-The members of your organization appear in the *Members* table.
+The *Members* table displays the members of your organization.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
 === Remove a member from your organization
 
-You might need to remove a member from your organization--for example, if they left your company.
+You might need to remove a member from your organization--for example, if they leave your company.
 
-Removing a member from your organization doesn't delete the member's BlueXP account or NetApp Support Site account. It simply removes the member and their associated permissions from your organization.
+Removing a member revokes their permissions but retains their BlueXP and NetApp Support Site accounts.
 
 .Steps
 
@@ -165,11 +165,11 @@ Removing a member from your organization doesn't delete the member's BlueXP acco
 
 === Recreate the credentials for a service account
 
-You can recreate the credentials (client ID and client secret) for a service account at any time. You might recreate the credentials if you lost them or if your business requires that you rotate security credentials after a period of time.
+Create new credentials if lost or when updating security credentials is needed.
 
 .About this task
 
-Recreating the credentials deletes the existing credentials for the service account and then creates new credentials. You will not be able to use the previous credentials.
+Recreating the credentials deletes the existing credentials for the service account and then creates new credentials. You cannot use the previous credentials.
 
 .Steps
 
@@ -183,7 +183,7 @@ Recreating the credentials deletes the existing credentials for the service acco
 
 . Download or copy the client ID and client secret.
 +
-The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely.
+BlueXP displays the client secret only once and does not store it anywhere. Copy or download the secret and store it safely.
 
 
 .Related information
