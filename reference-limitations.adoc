@@ -29,7 +29,7 @@ link:task-configuring-proxy.html[Learn more about using a proxy server with the 
 
 BlueXP deploys the Connector with two interfaces that have IP addresses in the 172.17.0.0/16 and 172.18.0.0/16 ranges.
 
-If your network has a subnet configured with either of these ranges, then you might experience connectivity failures from BlueXP. For example, discovering on-prem ONTAP clusters in BlueXP might fail.
+If your network has a subnet configured with either of these ranges, then you might experience connectivity failures from BlueXP. For example, discovering on-premisesONTAP clusters in BlueXP might fail.
 
 See Knowledge Base article link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network[BlueXP Connector IP conflict with existing network] for instructions on how to change the IP address of the Connector’s interfaces.
 

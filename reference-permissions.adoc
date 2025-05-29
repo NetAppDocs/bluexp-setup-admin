@@ -202,7 +202,7 @@ a|
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek[Permissions for CMEKs^]
 
 | Back up on-premises ONTAP clusters to Google Cloud
-| When using BlueXP backup and recovery to back up on-prem ONTAP clusters, you need to add permissions to the Connector in order to use the "Search & Restore" functionality. 
+| When using BlueXP backup and recovery to back up on-premisesONTAP clusters, you need to add permissions to the Connector in order to use the "Search & Restore" functionality. 
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector[Permissions for Search & Restore functionality^]
 
 |===
