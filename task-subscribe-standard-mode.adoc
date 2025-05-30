@@ -15,7 +15,7 @@ summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for B
 [.lead]
 include::_include/subscribe-intro.adoc[]
 
-A marketplace subscription enables charging for the following BlueXP data services:
+A marketplace subscription enables charging for the following NetApp data services:
 
 * Backup and recovery
 * Cloud Volumes ONTAP
@@ -23,9 +23,11 @@ A marketplace subscription enables charging for the following BlueXP data servic
 * Ransomware protection
 * Disaster recovery
 
+Classification is enabled through your subscription, but there is no charge for using classification.
+
 .Before you begin
 
-Subscribing to BlueXP data services involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
+Subscribing to N data services involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
 
 // start tabbed area
 

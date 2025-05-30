@@ -15,7 +15,7 @@ summary: Manage your organization's members to provide permissions across differ
 [.lead]
 BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
-TIP: To ensure that you don't lose access to your BlueXP organization, it's a best practice to have two members with the Organization admin role. 
+TIP: To avoid losing access to your BlueXP organization, ensure two members have the Organization admin role.
 
 
 To manage users and their permissions, you must be assigned one of the following roles: 
@@ -187,7 +187,7 @@ Recreating the credentials deletes the existing credentials for the service acco
 +
 The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely.
 
-
+[[manage-mfa]]
 === Manage a user's multi-factor authentication (MFA)
 If a user has lost access to their MFA device, you can either remove or disable their MFA configuration. 
 
@@ -199,7 +199,7 @@ NOTE: You must have an email address in the same domain as the affected user in 
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+. In the upper right of the console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
 
 . Select *Members*.
 +
