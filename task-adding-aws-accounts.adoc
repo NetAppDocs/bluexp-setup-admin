@@ -13,7 +13,7 @@ summary: Add and manage AWS credentials so that BlueXP has the permissions that 
 :imagesdir: ./media/
 
 [.lead]
-Add and manage AWS credentials so that BlueXP has the permissions that it needs to deploy and manage cloud resources in your AWS accounts. If you manage multiple AWS Marketplace subscriptions, you can assign each one of them to different AWS credentials from the Credentials page.
+Add and manage AWS credentials so that you deploy and manage cloud resources in your AWS accounts from BlueXP. If you manage multiple AWS Marketplace subscriptions, you can assign each one of them to different AWS credentials from the Credentials page.
 
 == Overview
 
@@ -21,7 +21,7 @@ You can add AWS credentials to an existing Connector or directly to BlueXP:
 
 * Add additional AWS credentials to an existing Connector
 +
-Adding AWS credentials to an existing Connector provides the permissions needed to manage resources and processes within your public cloud environment. <<Add additional credentials to a Connector,Learn how to add AWS credentials to a Connector>>.
+Add AWS credentials to a Connector to manage resources in your cloud environment. <<Add additional credentials to a Connector,Learn how to add AWS credentials to a Connector>>.
 
 * Add AWS credentials to BlueXP for creating a Connector
 +
@@ -29,7 +29,7 @@ Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to crea
 
 * Add AWS credentials to BlueXP for FSx for ONTAP
 +
-Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP^]
+Add new AWS credentials to BlueXP to create and manage FSx for ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP^]
 
 == How to rotate credentials
 
@@ -37,7 +37,7 @@ BlueXP enables you to provide AWS credentials in a few ways: an IAM role associa
 
 With the first two options, BlueXP uses the AWS Security Token Service to obtain temporary credentials that rotate constantly. This process is the best practice because it's automatic and it's secure.
 
-If you provide BlueXP with AWS access keys, you should rotate the keys by updating them in BlueXP at a regular interval. This is a completely manual process.
+Rotate AWS access keys regularly by updating them in BlueXP. This process is manual.
 
 == Add additional credentials to a Connector
 
@@ -47,9 +47,9 @@ If you're just getting started with BlueXP, link:concept-accounts-aws.html[Learn
 
 === Grant permissions
 
-Before you add AWS credentials to a Connector, you need to provide the required permissions. The permissions enable BlueXP to manage resources and processes within that AWS account. How you provide the permissions depends on whether you want to provide BlueXP with the ARN of a role in a trusted account or AWS keys.
+Provide required permissions before adding AWS credentials to a Connector. The permissions allow the Connector to manage resources and processes within that AWS account. You can provide the permissions with the the ARN of a role in a trusted account or AWS keys.
 
-NOTE: If you deployed a Connector from BlueXP, BlueXP automatically added AWS credentials for the account in which you deployed the Connector. This initial account is not added if you deployed the Connector from the AWS Marketplace or if you manually installed the Connector software on an existing system. link:concept-accounts-aws.html[Learn about AWS credentials and permissions].
+NOTE: If you deployed a Connector from BlueXP, BlueXP automatically added AWS credentials for the account in which you deployed the Connector. This ensures the necessary permissions are in place for managing resources. link:concept-accounts-aws.html[Learn about AWS credentials and permissions].
 
 *Choices*
 
@@ -107,13 +107,13 @@ After you provide an AWS account with the required permissions, you can add the 
 
 .Before you begin
 
-If you just created these credentials in your cloud provider, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
+If you just created these credentials in your cloud provider, it might take a few minutes until they are available for use. Wait a few minutes and then add you add the credentials.
 
 .Steps
 
-. Ensure that the correct Connector is currently selected in BlueXP.
+.  Use the top navigation bar to elect the Connector to which you want to add credentials.
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+. In the upper right of the console, select the Settings icon, and select *Credentials*.
 +
 image:screenshot-settings-icon-organization.png[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
 
@@ -125,7 +125,7 @@ image:screenshot-settings-icon-organization.png[A screenshot that shows the Sett
 
 .. *Marketplace Subscription*: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.
 +
-To pay for BlueXP services at an hourly rate (PAYGO) or with an annual contract, AWS credentials must be associated with an AWS Marketplace subscription.
+To pay for services at an hourly rate (PAYGO) or with an annual contract, you must associate AWS credentials with your AWS Marketplace subscription.
 
 .. *Review*: Confirm the details about the new credentials and select *Add*.
 
@@ -137,7 +137,7 @@ image:screenshot_accounts_switch_aws.png[A screenshot that shows selecting betwe
 
 == Add credentials to BlueXP for creating a Connector
 
-Add AWS credentials to BlueXP by providing the ARN of an IAM role that gives BlueXP the permissions needed to create a Connector. You can choose these credentials when creating a new Connector.
+Add AWS credentials by providing the ARN of an IAM role that gives the permissions needed to create a Connector. You can choose these credentials when creating a new Connector.
 
 === Set up the IAM role
 
@@ -186,9 +186,6 @@ image:screenshot-settings-icon-organization.png[A screenshot that shows the Sett
 
 .. *Review*: Confirm the details about the new credentials and select *Add*.
 
-.Result
-
-You can now use the credentials when creating a new Connector.
 
 == Add credentials to BlueXP for Amazon FSx for ONTAP
 
@@ -197,46 +194,46 @@ For details, refer to the https://docs.netapp.com/us-en/bluexp-fsx-ontap/require
 [[subscribe]]
 == Configure an AWS subscription
 
-After you add your AWS credentials to BlueXP, you can configure an AWS Marketplace subscription with those credentials. The subscription enables you to pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or using an annual contract, and to use other BlueXP services.
+After you add your AWS credentials, you can configure an AWS Marketplace subscription with those credentials. The subscription enables you to pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or using an annual contract, and to pay for other data services.
 
-There are two scenarios in which you might configure an AWS Marketplace subscription after you've already added the credentials to BlueXP:
+There are two scenarios in which you might configure an AWS Marketplace subscription after you've already added the credentials:
 
-* You didn't configure a subscription when you initially added the credentials to BlueXP.
+* You didn't configure a subscription when you initially added the credentials.
 * You want to change the AWS Marketplace subscription that is configured to the AWS credentials. 
 +
 Replacing the current marketplace subscription with a new subscription changes the marketplace subscription for any existing Cloud Volumes ONTAP working environments and all new working environments.
 
 .Before you begin
 
-You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#connector-installation[Learn how to create a Connector].
+You need to create a Connector before you can configure a subscription. link:concept-connectors.html#connector-installation[Learn how to create a Connector].
 
 include::_include/subscribe-aws.adoc[]
 
 == Associate an existing subscription with your organization or account
 
-When you subscribe to BlueXP from the AWS Marketplace, the last step in the process is to associate the subscription with your BlueXP organizations or BlueXP accounts from the BlueXP website. If you didn't complete this step, then you can't use the subscription with your BlueXP organization or account.
+When you subscribe to from the AWS Marketplace, the last step in the process is to associate the subscription with your organization. If you didn't complete this step, then you can't use the subscription with your organization or account.
 
-TIP: If you're using BlueXP in standard mode, you'll have a _BlueXP organization_, which you manage using BlueXP identity and access management (IAM). But if you're using BlueXP in restricted mode or private mode, then you'll have a _BlueXP account_.
+TIP: If you're using standard or restricted mode, you'll have a _BlueXP organization_, which you manage using BlueXP identity and access management (IAM). But if you're using BlueXP in private mode, then you'll have a _BlueXP account_.
 
 * link:concept-modes.html[Learn about BlueXP deployment modes]
 * link:concept-identity-and-access-management.html[Learn about BlueXP identity and access management]
 * link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 
-Follow the steps below if you subscribed to BlueXP from the AWS Marketplace, but you missed the step to associate the subscription with your account.
+Follow the steps below if you subscribed to NetApp intelligent data services from the AWS Marketplace, but you missed the step to associate the subscription with your account.
 
 .Steps
 
-. Go to the BlueXP digital wallet to confirm that you didn't associate your subscription with your BlueXP organization or account.
+. Go to the digital wallet to confirm that you didn't associate your subscription with your BlueXP organization or account.
 
-.. From the BlueXP navigation menu, select *Governance > Digital wallet*.
+.. From the navigation menu, select *Governance > Digital wallet*.
 .. Select *Subscriptions*.
-.. Verify that your BlueXP subscription doesn't appear.
+.. Verify that your subscription doesn't appear.
 +
 You'll only see the subscriptions that are associated with the organization or account that you're currently viewing. If you don't see your subscription, proceed with the following steps.
 
 . Log in to the AWS Console and navigate to *AWS Marketplace Subscriptions*.
 
-. Find the NetApp BlueXP subscription.
+. Find the NetApp Intelligent Data Services subscription.
 +
 image:screenshot-aws-marketplace-bluexp-subscription.png[A screenshot of the AWS Marketplace showing a NetApp BlueXP subscription.]
 
@@ -258,15 +255,15 @@ include::_include/subscribe-aws.adoc[tag=assignment]
 +
 image:screenshot-subscription-assignment.png[A screenshot of the Subscription Assignment page that enables you to choose the exact BlueXP accounts to associate with this subscription.]
 
-. Go to the BlueXP digital wallet to confirm that the subscription is associated with your BlueXP organization or account.
+. Go to the digital wallet to confirm that the subscription is associated with your organization or account.
 
-.. From the BlueXP navigation menu, select *Governance > Digital wallet*.
+.. From the navigation menu, select *Governance > Digital wallet*.
 .. Select *Subscriptions*.
-.. Verify that your BlueXP subscription appears.
+.. Verify that your subscription appears.
 
 . Confirm that the subscription is associated with your AWS credentials.
 
-.. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+.. In the upper right of the console, select the Settings icon, and select *Credentials*.
 .. On the *Organization credentials* or *Account credentials* page, verify that the subscription is associated with your AWS credentials.
 +
 Here's an example.
@@ -275,13 +272,13 @@ image:screenshot-credentials-with-subscription.png[A screenshot of the BlueXP Ac
 
 == Edit credentials
 
-Edit your AWS credentials in BlueXP by changing the account type (AWS keys or assume role), by editing the name, or by updating the credentials themselves (the keys or the role ARN).
+Edit your AWS credentials by changing the account type (AWS keys or assume role), by editing the name, or by updating the credentials themselves (the keys or the role ARN).
 
 TIP: You can't edit the credentials for an instance profile that is associated with a Connector instance.
 
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+. In the upper right of the console, select the Settings icon, and select *Credentials*.
 
 . On the *Organization credentials* or *Account credentials* page, select the action menu for a set of credentials and then select *Edit Credentials*.
 
@@ -289,13 +286,13 @@ TIP: You can't edit the credentials for an instance profile that is associated w
 
 == Delete credentials
 
-If you no longer need a set of credentials, you can delete them from BlueXP. You can only delete credentials that aren't associated with a working environment.
+If you no longer need a set of credentials, you can delete them. You can only delete credentials that aren't associated with a working environment.
 
 TIP: You can't delete the credentials for an instance profile that is associated with a Connector instance.
 
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+. In the upper right of the console, select the Settings icon, and select *Credentials*.
 
 . On the *Organization credentials* or *Account credentials* page, select the action menu for a set of credentials and then select *Delete Credentials*.
 

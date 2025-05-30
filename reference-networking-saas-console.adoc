@@ -13,11 +13,11 @@ summary: As you use the BlueXP web-based console that's provided through the Saa
 :imagesdir: ./media/
 
 [.lead]
-When you log in and use the BlueXP web-based console, BlueXP contacts several endpoints to complete the actions that you initiate. Computers that access the BlueXP console must have connections to these endpoints.
+When you log in and use the web-based console, BlueXP contacts several endpoints to complete the actions that you initiate. Computers that access the console must have connections to these endpoints.
 
 These endpoints are contacted in two scenarios:
 
-* From a user's computer when completing specific actions from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's available as software as a service (SaaS).
+* From a user's computer when completing sactions from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's available as software as a service (SaaS).
 
 * From a user's computer when opening a web browser, entering the IP address of the Connector host, and then logging in and setting up the Connector. These steps are required if you manually install the Connector.
 
@@ -30,17 +30,17 @@ These endpoints are contacted in two scenarios:
 \https://console.bluexp.netapp.com
 \https://*.console.bluexp.netapp.com
 
-| This is the endpoint that you enter in your web browser to use the BlueXP web-based console.
+| This is the endpoint that you enter in your web browser to use the web-based console.
 
 |
 \https://api.bluexp.netapp.com
 
-| The BlueXP web-based console contacts this endpoint to interact with the BlueXP API for actions related to authorization, licensing, subscriptions, credentials, notifications, and more.
+| The  web-based console contacts this endpoint to interact with the  API for actions related to authorization, licensing, subscriptions, credentials, notifications, and more.
 
 | 
 \https://aiq.netapp.com
 
-| Required to access BlueXP digital advisor.
+| Required to access digital advisor.
 
 a|
 AWS services (amazonaws.com):
@@ -51,7 +51,9 @@ AWS services (amazonaws.com):
 * Security Token Service (STS)
 * Simple Storage Service (S3)
 
-| Required to deploy a Connector from BlueXP in AWS. The exact endpoint depends on the region in which you deploy the Connector. https://docs.aws.amazon.com/general/latest/gr/rande.html[Refer to AWS documentation for details.^]
+| Required to deploy a Connector from BlueXP in AWS. The exact endpoint depends on the region in which you deploy the Connector. https://docs.aws.amazon.com/general/latest/gr/rande.html[See AWS documentation for details.]
+
+Suggestion: https://docs.aws.amazon.com/general/latest/gr/rande.html[See AWS documentation for details.]
 
 |
 \https://management.azure.com
@@ -90,11 +92,10 @@ AWS services (amazonaws.com):
 | Your web browser connects to these endpoints for centralized user authentication through BlueXP.
 
 | \https://widget.intercom.io
-| For in-product chat that enables you to talk to NetApp cloud experts.
-
+| For in-product chat that enables you to talk to NetApp support.
 |===
 
-Beyond these endpoints, you also need to ensure that the Connector has outbound internet access to contact specific endpoints for day-to-day operations. You can find the list of these endpoints by following the links in the next section below.
+Ensure the Connector has outbound internet access to contact endpoints for daily operations. Follow the links in the next section below to find the list of these endpoints.
 
 .Related information
 

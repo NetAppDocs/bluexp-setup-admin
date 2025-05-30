@@ -46,9 +46,9 @@ You can create a Connector in your cloud or on-premises network.
 * link:task-install-connector-on-prem.html[Learn how to create a Connector on-premises]
 
 [role="quick-margin-para"]
-Note that if you want to use BlueXP services to manage storage and data in Google Cloud, then the Connector must be running in Google Cloud.
+Note that if you want to use NetApp Intelligent Data Services to manage storage and data in Google Cloud, then the Connector must be running in Google Cloud.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] link:task-subscribe-standard-mode.html[Subscribe to BlueXP]
 
 [role="quick-margin-para"]
-Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate (PAYGO) or through an annual contract.
+Subscribe to NetApp Intelligent Data Services from your cloud provider's marketplace to pay for data services at an hourly rate (PAYGO) or through an annual contract.

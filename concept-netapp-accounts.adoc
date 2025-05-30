@@ -13,9 +13,9 @@ summary: A BlueXP account enables you to manage users and organize resources in 
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources in an isolated _workspace_. 
+When you use  private mode, you'll use a _BlueXP account_ to manage users and organize resources in an isolated _workspace_. 
 
-If you're using BlueXP in standard mode or restricted mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
+If you're using standard mode or restricted mode, you won't have a account. Instead, you'll have an _organization_ that you manage using identity and access management (IAM).
 
 * link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
 * link:concept-modes.html[Learn about BlueXP deployment modes]
@@ -32,23 +32,23 @@ link:task-managing-netapp-accounts.html[Learn how to manage your BlueXP account]
 
 == Members
 
-Members are BlueXP users that you associate with your BlueXP account. Associating a user with an account and your workspace in that account enables those users to create and manage working environments in BlueXP.
+Members are users that you associate with your account. Associating a user with an account and your workspace in that account enables those users to create and manage working environments.
 
 
 == Workspace
 
-In BlueXP, a workspace isolates any number of _working environments_ from other users in the account. BlueXP users (members) can't access the working environments in a workspace unless they are associated with that workspace.
+A workspace isolates any number of _working environments_ from other users in the account. Users (members) can't access the working environments in a workspace unless they are associated with that workspace.
 
-A working environment represents a storage systems such as your on-premises ONTAP cluster.
+A working environment represents a storage system such as your on-premises ONTAP cluster.
 
 BlueXP private mode supports only one workspace.
 
 
 == Connectors
 
-A Connector executes the actions that BlueXP needs to perform in order to manage your data infrastructure. The Connector runs on a virtual machine instance that you deploy in your cloud provider or on an on-premises host that you configured.
+A Connector executes the actions needed in order to manage your data infrastructure. The Connector runs on a virtual machine instance that you deploy in your cloud provider or on an on-premises host that you configured.
 
-You can use a Connector with more than one BlueXP service. For example, if you're using a Connector to manage backup and recovery, you can use that same Connector with another service like BlueXP tiering.
+You can use a Connector with more than one data service. For example, if you're using a Connector to manage backup and recovery, you can use that same Connector with another service like tiering.
 
 link:concept-connectors.html[Learn more about Connectors].
 

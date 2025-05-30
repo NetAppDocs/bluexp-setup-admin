@@ -53,7 +53,7 @@ include::_include/subscribe-google.adoc[]
 .Related information
 
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html[Manage BYOL capacity-based licenses for Cloud Volumes ONTAP^]
-* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BYOL licenses for BlueXP data services^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and subscriptions for BlueXP]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage Azure credentials and subscriptions for BlueXP]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html[Manage Google Cloud credentials and subscriptions for BlueXP]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BYOL licenses for data services^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and subscriptions]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage Azure credentials and subscriptions]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html[Manage Google Cloud credentials and subscriptions]
