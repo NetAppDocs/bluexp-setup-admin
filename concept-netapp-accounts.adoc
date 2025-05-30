@@ -13,7 +13,7 @@ summary: A BlueXP account enables you to manage users and organize resources in 
 :imagesdir: ./media/
 
 [.lead]
-When you use  private mode, you'll use a _BlueXP account_ to manage users and organize resources in an isolated _workspace_. 
+When you use private mode, you'll use a _BlueXP account_ to manage users and organize resources in an isolated _workspace_. 
 
 If you're using standard mode or restricted mode, you won't have a account. Instead, you'll have an _organization_ that you manage using identity and access management (IAM).
 

@@ -14,11 +14,11 @@ summary: BlueXP identity and access management provides two administrative roles
 
 [.lead]
 
-You can assign the following roles to users to provide them access to the storage management features in BlueXP that are associated with supported storage resources. Users can be assigned either an administrative role which allows them to take action in storage management or a viewer role if they just have monitoring responsibilities.
+You can assign the following roles to users to provide them access to the storage management features in BlueXP that are associated with supported storage resources. You can assign users an administrative role to manage storage or a viewer role for monitoring.
 
 NOTE: These roles are not available from the BlueXP partnership API.
 
-Storage roles can be assigned to users for the following storage resources and features:
+Administrators can assign storage roles to users for the following storage resources and features:
 
 Storage resources: 
 
@@ -37,14 +37,14 @@ BlueXP services and features:
 
 .Example for storage roles in BlueXP
 
-XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They want to empower this team to manage the storage assets for their respective regions, but restrict their access to core BlueXP administration tasks such as user management, Connector creation, and cost management tools like digital wallet.
+XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They allow this team to manage storage assets for their regions while limiting access to core BlueXP tasks like user management, Connector creation, and cost tools such as the digital wallet.
  
 Within a team of 12, two users are given the *Storage viewer* role which allows them to monitor the storage resources associated with the BlueXP projects they are assigned to. The remaining nine are given the *Storage admin* role which includes the ability to manage software updates, access ONTAP System Manager through BlueXP, as well as discover storage resources (add working environments). One person on the team is given the *System health specialist* role so they can manage the health of the storage resources in their region, but not modify or delete any working environments. This person can also perform software updates on the storage resources for projects they are assigned.
  
 The organization has two additional users with the *Organization admin* role who can manage all aspects of BlueXP, including user management, Connector creation, and cost management tools like digital wallet, as well as several users with the *Folder or project admin* role who can perform BlueXP administration tasks for the folders and projects they are assigned to.
 
 
-The following table indicates that actions that each BlueXP storage role can perform. 
+The following table shows the actions each BlueXP storage role performs.
 
 [cols=4*,options="header",cols="40,20a,20a,20a", width="100%"]
 |===
