@@ -230,7 +230,7 @@ Follow the steps below if you subscribed to BlueXP from the AWS Marketplace, but
 
 .. From the BlueXP navigation menu, select *Governance > Digital wallet*.
 .. Select *Subscriptions*.
-.. Verify that your BlueXP subscription doesn't appear.
+.. Verify that your subscription doesn't appear.
 +
 You'll only see the subscriptions that are associated with the organization or account that you're currently viewing. If you don't see your subscription, proceed with the following steps.
 
@@ -238,7 +238,7 @@ You'll only see the subscriptions that are associated with the organization or a
 
 . Find the NetApp BlueXP subscription.
 +
-image:screenshot-aws-marketplace-bluexp-subscription.png[A screenshot of the AWS Marketplace showing a NetApp BlueXP subscription.]
+image:screenshot-aws-marketplace-bluexp-subscription.png[A screenshot of the AWS Marketplace showing a NetApp subscription.]
 
 . Select *Set up product*.
 +
@@ -246,7 +246,7 @@ The subscription offer page should load in a new browser tab or window.
 
 . Select *Set up your account*.
 +
-image:screenshot-aws-marketplace-set-up-account.png[A screenshot of the AWS Marketplace showing a NetApp BlueXP subscription and the Set up your account option that appears in the top right of the page.]
+image:screenshot-aws-marketplace-set-up-account.png[A screenshot of the AWS Marketplace showing a NetApp subscription and the Set up your account option that appears in the top right of the page.]
 +
 The *Subscription Assignment* page on netapp.com should load in a new browser tab or window.
 +
@@ -262,7 +262,7 @@ image:screenshot-subscription-assignment.png[A screenshot of the Subscription As
 
 .. From the BlueXP navigation menu, select *Governance > Digital wallet*.
 .. Select *Subscriptions*.
-.. Verify that your BlueXP subscription appears.
+.. Verify that your subscription appears.
 
 . Confirm that the subscription is associated with your AWS credentials.
 

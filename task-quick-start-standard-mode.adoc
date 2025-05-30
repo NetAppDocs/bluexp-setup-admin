@@ -13,9 +13,9 @@ summary: Get started with BlueXP in standard mode by preparing networking for th
 :imagesdir: ./media/
 
 [.lead]
-Get started with BlueXP in standard mode by preparing networking for the BlueXP console, signing up and creating an account, optionally creating a Connector, and subscribing to BlueXP.
+Get started with BlueXP in standard mode by preparing networking for the BlueXP console, signing up and creating an account, optionally creating a Connector, and subscribing to NetApp Intelligent Services.
 
-In standard mode, BlueXP is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:concept-modes.html[deployment modes] and link:concept-connectors.html[Connectors].
+In standard mode, you access a web-based console that is hosted as a Software-as-a-service (SaaS) product from NetApp. Before you get started, you should have an understanding of link:concept-modes.html[deployment modes] and link:concept-connectors.html[Connectors].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:reference-networking-saas-console.html[Prepare networking for using the BlueXP console]
 
@@ -48,7 +48,7 @@ You can create a Connector in your cloud or on-premises network.
 [role="quick-margin-para"]
 Note that if you want to use BlueXP services to manage storage and data in Google Cloud, then the Connector must be running in Google Cloud.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] link:task-subscribe-standard-mode.html[Subscribe to BlueXP]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] link:task-subscribe-standard-mode.html[Subscribe to NetApp Intelligent Services (optional)]
 
 [role="quick-margin-para"]
-Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate (PAYGO) or through an annual contract.
+Subscribe to NetApp Intelligent Services from your cloud provider's marketplace to pay for data services at an hourly rate (PAYGO) or through an annual contract. NetApp Intelligent Services include Backup and recovery, Cloud Volumes ONTAP, Tiering, Ransomware protection, and Disaster recovery. Classification is included with your subscription at no additional cost.

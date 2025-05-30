@@ -87,7 +87,7 @@ The following table provides a comparison of these modes.
 | Many are supported
 | Several are supported
 
-| Licensing options
+| Data service licensing options
 | Marketplace subscriptions and BYOL
 | Marketplace subscriptions and BYOL
 | BYOL
