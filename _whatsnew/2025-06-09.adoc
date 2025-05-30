@@ -1,0 +1,32 @@
+=== Connector 3.9.53
+
+This release of the BlueXP Connector includes minor security improvements and bug fixes, as well as some additional updates.
+
+At this time, the 3.9.53 release is available for standard mode and restricted mode.
+
+
+
+
+=== Keystone subscription management available in BlueXP
+
+You can manage your NetApp Keystone subscription from BlueXP.
+
+
+=== BlueXP Identity and Access Management (IAM)
+
+==== Multi-factor authentication (MFA)
+
+Unfederated users can now enable multi-factor authentication (MFA) for their BlueXP accounts, enhancing account security.BlueXP administrators can manage MFA settings for their users, resetting or disabling MFA for individual users as needed.
+
+
+
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
+
+
+
+
+
+
+
+
