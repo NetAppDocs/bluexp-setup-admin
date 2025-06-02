@@ -138,6 +138,8 @@ sidebar:
                   entries:
                    - title: Keystone roles 
                      url: /reference-iam-keystone-roles.html
+                   - title: Storage roles
+                     url: /reference-iam-storage.roles.html
                 - title: Data services roles
                   entries:
                     - title: Ransomware protection roles
@@ -218,7 +220,7 @@ sidebar:
               url: /reference-ports-azure.html
             - title: Connector firewall rules in Google Cloud
               url: /reference-ports-gcp.html
-            - title: Ports for the on-prem Connector
+            - title: Ports for the on-premisesConnector
               url: /reference-ports-on-prem.html
     - title: Knowledge and support
       entries:

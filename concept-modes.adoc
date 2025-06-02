@@ -198,7 +198,7 @@ Back up and restore of application data and virtual machine data is not supporte
 
 | On-premises ONTAP clusters | Discovery with a Connector and discovery without a Connector (direct discovery) are both supported. 
 
-When you discover an on-prem cluster with a Connector, the Advanced view (System Manager) is not supported.
+When you discover an on-premisescluster with a Connector, the Advanced view (System Manager) is not supported.
 
 | Replication | Supported in Government regions with restricted mode. Not supported in commercial regions or in sovereign regions with restricted mode.
 
@@ -291,7 +291,7 @@ Discovery without a Connector (direct discovery) is not supported.
 
 |===
 
-Supported BlueXP services in on-prem deployments::
+Supported BlueXP services in on-premisesdeployments::
 BlueXP supports the following storage and data services with private mode when the Connector is installed on your premises:
 +
 [cols=2*,options="header,autowidth"]
@@ -362,7 +362,7 @@ This portion of the table lists support for working environment management from 
 | Cloud Volumes ONTAP | Yes | Yes 
 | Cloud Volumes Service for Google Cloud | No | No
 | Google Cloud Storage | No | No
-| On-prem ONTAP clusters | Yes | Yes
+| On-premisesONTAP clusters | Yes | Yes
 | E-Series | No | No
 | StorageGRID | No | No 
 

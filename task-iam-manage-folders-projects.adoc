@@ -21,7 +21,7 @@ When you create your BlueXP organization, it includes a single project. You can 
 
 .About this task
 
-The depth of your organization's resource hierarchy can go down to 7 levels. As a result, you can create nested folders down to 6 levels. The last nested folder can then include projects at the seventh level of the hierarchy.
+Your organization's resource hierarchy can have up to 7 levels, with nested folders down to 6 levels and projects at the seventh level.
 
 The following image illustrates the maximum depth of your organization's resource hierarchy:
 
@@ -40,7 +40,7 @@ image:screenshot-iam-max-depth.png[A screenshot that shows an organization, six 
 * *Name and location*: Enter a name and choose a location in the hierarchy for the folder or project. A folder or project can reside directly underneath the organization or within a folder.
 * *Resources*: Select the resources that you want to associate with this folder or project.
 +
-You can only select from the resources that are associated with the parent of the folder or project. If the parent is the organization, then you can choose from any resource in the organization. If the parent is a folder, then you can only select from the resources that are associated with the folder.
+You can select resources associated with the parent folder or project: all resources for an organization parent, or folder-specific resources for a folder parent.
 +
 link:concept-identity-and-access-management.html#associate-resource-folder[Learn when you might associate a resource with a folder].
 * *Access*: View the members who will have access to the folder or project based on the existing permissions already defined in your resource hierarchy.
@@ -61,11 +61,11 @@ If you're using the BlueXP API, you might need to obtain the ID for a project. F
 
 . From the *Organization* page, navigate to a project in the table and select image:icon-action.png["An icon that is three side-by-side dots"]
 +
-The project ID displays.
+The system displays the project ID.
 
 . To copy the ID, select the copy button.
 +
-image:screenshot-iam-project-id.png[A screenshot of the folders and projects table that shows the project ID fater selecting the action menu for a project.]
+image:screenshot-iam-project-id.png[A screenshot of the folders and projects table that shows the project ID after selecting the action menu for a project.]
 
 == Rename a folder or project
 
@@ -113,7 +113,7 @@ image:screenshot-iam-allocated-resources.png[A screenshot of the Edit project pa
 [#modify-resources]
 == Modify the resources associated with a folder or project
 
-You can modify the resources that are associated with a folder or project by associating or disassociating a resource. For example, you might want to associate a resource with another project because that resource has capacity that another team can utilize. Once you've associated a resource with a folder or project, organization members who have permissions for that folder or project can access the associated resource.
+Members with permissions for a folder or project can access its associated resources.
 
 .Before you begin
 
@@ -144,9 +144,9 @@ image:screenshot-iam-member-access.png[A screenshot of the Edit project page tha
 [#modify-members]
 == Modify member access to a folder or project
 
-Modify member access to a folder or project to ensure that the right members have access to the resources associated with the folder or project.
+Modify member access to ensure the right members can access the associated resources.
 
-If member access was provided at a higher level of the hierarchy (at the folder or organization level), then you can't remove or change member access when viewing the lower-level folder or project. You need to switch to that part of the hierarchy and update the member's permissions there. Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage permissions from the Members page].
+Member access provided at a higher hierarchy level cannot be changed at lower levels. You need to switch to that part of the hierarchy and update the member's permissions there. Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage permissions from the Members page].
 
 link:concept-identity-and-access-management.html#role-inheritance[Learn more about role inheritance]. 
 

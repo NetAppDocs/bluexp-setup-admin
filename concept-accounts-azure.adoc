@@ -5,7 +5,7 @@ keywords: cloud provider accounts, azure, azure accounts, service principal, mul
 summary: Learn how BlueXP uses Azure credentials to perform actions on your behalf and how those credentials are associated with marketplace subscriptions. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
 ---
 
-= Learn about Azure credentials and permissions
+= Learn about Azure credentials and permissions in BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -76,7 +76,7 @@ If you have multiple Azure credentials that belong to different Azure subscripti
 
 No, it's not possible to move the Azure resources associated with your Cloud Volumes ONTAP working environment to a different Azure subscription.
 
-=== How do credentials work for marketplace deployments and on-prem deployments?
+=== How do credentials work for marketplace deployments and on-premisesdeployments?
 
 The sections above describe the recommended deployment method for the Connector, which is from BlueXP. You can also deploy a Connector in Azure from the Azure Marketplace, and you can install the Connector software on your own Linux host.
 
@@ -88,6 +88,6 @@ To learn how to set up permissions, refer to the following pages:
 
 * Standard mode
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions[Set up permissions for an Azure Marketplace deployment]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up permissions for on-prem deployments]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions[Set up permissions for on-premisesdeployments]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions[Set up permissions for restricted mode]
 * link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions[Set up permissions for private mode]

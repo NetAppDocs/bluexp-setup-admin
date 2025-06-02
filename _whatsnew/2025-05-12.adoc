@@ -10,7 +10,7 @@ Docker 27 and Docker 28 are now supported with the Connector.
 
 
 ==== Cloud Volumes ONTAP 
-Cloud Volumes ONTAP capacity-based nodes no longer shutdown when the Connector is out of compliance or down for more than 14 days. Cloud Volumes ONTAP still sends Event Management messages when it loses access to the Connector. This change is to ensure that Cloud Volumes ONTAP can continue to operate even if the Connector is down for an extended period of time. It does not change compliance requirements for the Connector.
+Cloud Volumes ONTAP nodes no longer shutdown when the Connector is out of compliance or down for more than 14 days. Cloud Volumes ONTAP still sends Event Management messages when it loses access to the Connector. This change is to ensure that Cloud Volumes ONTAP can continue to operate even if the Connector is down for an extended period of time. It does not change compliance requirements for the Connector.
 
 
 
@@ -18,7 +18,7 @@ Cloud Volumes ONTAP capacity-based nodes no longer shutdown when the Connector i
 
 The beta for NetApp Keystone in BlueXP has added access to Keystone administration. You can access the sign-up page for the NetApp Keystone beta from the left navigation bar of BlueXP.
 
-////
+
 === BlueXP Identity and Access Management (IAM)
 
 ==== New storage management roles
@@ -64,9 +64,7 @@ View storage health information and governance data.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about access roles.^]
 
-// hiding the storage roles
 
-////
 
 
 
