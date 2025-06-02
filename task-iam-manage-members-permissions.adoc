@@ -15,11 +15,7 @@ summary: Manage your organization's members to provide permissions across differ
 [.lead]
 BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
-<<<<<<< HEAD
-Suggestion: TIP: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
-=======
-TIP: To avoid losing access to your BlueXP organization, ensure two members have the Organization admin role.
->>>>>>> 62799fb426e8132fb06ca5488250fe1960e9149c
+TIP: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
 
 
 To manage users and their permissions, you must be assigned one of the following roles: 
@@ -39,11 +35,7 @@ Users with this role can manage members only of a designated folder or project
 
 You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention through the BlueXP API. A user account is typically used by a person to log in to BlueXP and manage resources.
 
-<<<<<<< HEAD
-You can add a service account directly from BlueXP. Users must sign up for a BlueXP account before being added to an organization or assigned a role.
-=======
 Users must first sign up for BlueXP account before you can add them to an organization or assign a role. However, you can create service accounts directly from BlueXP.
->>>>>>> 62799fb426e8132fb06ca5488250fe1960e9149c
 
 To manage users and their permissions, you must have the *Organization admin* role or the *Folder or project admin* role. Remember that users with the *Folder or project admin* role can only manage members for the folder or projects of which they have admin permissions. 
 
