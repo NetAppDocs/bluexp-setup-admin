@@ -24,6 +24,10 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#ta
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members.permission.html#manage-mfa[Learn about smanaging multi-factor authentication for users.^]
 
 
+=== Workloads
+You can now view and manage Amazon FSx credentials from the Credentials page in BlueXP. 
+
+
 
 
 
