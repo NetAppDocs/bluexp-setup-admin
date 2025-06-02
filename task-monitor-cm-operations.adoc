@@ -34,7 +34,7 @@ The following table provides a comparison of the Timeline and the Notification C
 
 == Audit user activity from the BlueXP timeline
 
-The Timeline in BlueXP shows the actions that users completed to manage your organization or account. This includes management actions such as associating users, creating working environments, creating Connectors, and more.
+The Timeline shows the actions that users completed to manage your organization or account. This includes management actions such as associating users, creating working environments, creating Connectors, and more.
 
 Checking the Timeline can be helpful if you need to identify who performed a specific action, or if you need to identify the status of an action.
 
@@ -111,7 +111,7 @@ You can send specific types of notifications by email so you can be informed of 
 
 [NOTE]
 ====
-* Notifications are sent by email for the following BlueXP features and services: the Connector, BlueXP digital wallet, BlueXP copy and sync, and BlueXP backup and recovery.
+* Notifications are sent by email for the following features and services: the Connector, digital wallet, copy and sync, and backup and recovery.
 * Sending email notifications is not supported when the Connector is installed in a site without internet access.
 ====
 
@@ -119,7 +119,7 @@ The filters you set in the Notification Center do not determine the types of not
 
 All other users and recipients are configured not to receive any notification emails - so you'll need to configure notification settings for any additional users. 
 
-You must be a BlueXP admin to customize the notifications settings.
+You must be a have the Organization admin role to customize the notifications settings.
 
 .Steps
 
@@ -137,7 +137,7 @@ image:screenshot-change-notifications.png[A screenshot showing how to change not
 
 === Add additional email recipients
 
-The users who appear in the _Users_ tab are populated automatically from the users in your BlueXP organization or account. You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
+The users who appear in the _Users_ tab are populated automatically from the users in your organization or account. You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
 
 .Steps
 

@@ -13,9 +13,9 @@ summary: Administrators can configure a BlueXP connector to prompt a user for th
 :imagesdir: ./media/
 
 [.lead]
-By default, the Connector credentials allow BlueXP users to access the Advanced View (ONTAP System Manager). You can configure BlueXP to prompt users for their ONTAP credentials instead. This ensures that a user's ONTAP permissions are applied when they work with ONTAP clusters in both Cloud Volumes ONTAP and ONTAP on-premises clusters.
+By default, the Connector credentials allow users to access the Advanced View (ONTAP System Manager). You can choose to prompt users for their ONTAP credentials instead. This ensures that a user's ONTAP permissions are applied when they work with ONTAP clusters in both Cloud Volumes ONTAP and ONTAP on-premises clusters.
 
-NOTE: You must have either the Organization admin role to edit Connector settings.
+NOTE: You must have the Organization admin role to edit Connector settings.
 
 .Steps
 
