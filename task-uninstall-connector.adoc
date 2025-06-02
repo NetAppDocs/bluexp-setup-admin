@@ -78,7 +78,7 @@ If a Connector is inactive, you can remove it from the list of Connectors in Blu
 Note the following about removing a Connector:
 
 * This action doesn't delete the virtual machine.
-* This action can't be reverted--once you remove a Connector from BlueXP, you can't add it back.
+* This action can't be reverted--once you remove a Connector, you can't add it back.
 
 .Steps
 
