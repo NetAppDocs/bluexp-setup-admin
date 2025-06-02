@@ -23,6 +23,8 @@ A marketplace subscription enables charging for the following data services with
 * Ransomware protection
 * Disaster recovery
 
+Classification is enabled through your subscription, but there is no charge for using classification.
+
 .Before you begin
 
 Subscribing to data services involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with restricted mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-restricted-mode.html[Quick start for BlueXP in restricted mode].
