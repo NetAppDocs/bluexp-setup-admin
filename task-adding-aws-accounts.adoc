@@ -274,12 +274,8 @@ image:screenshot-credentials-with-subscription.png[A screenshot of the BlueXP Ac
 
 Edit your AWS credentials by changing the account type (AWS keys or assume role), by editing the name, or by updating the credentials themselves (the keys or the role ARN).
 
-[NOTE]
-====
+NOTE: You can't edit the credentials for an instance profile that is associated with a Connector instance or an Amazon FSx for ONTAP instance.
 
-* You can't edit the credentials for an instance profile that is associated with a Connector instance.
-* If a credential is associated with an Amazon FSx for ONTAP instance, you can only rename the credential. You can't change the type of credential or edit the keys or role ARN.
-====
 
 .Steps
 

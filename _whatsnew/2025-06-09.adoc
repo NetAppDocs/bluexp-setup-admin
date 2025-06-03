@@ -4,6 +4,7 @@ This release of the BlueXP Connector includes minor security improvements and bu
 
 At this time, the 3.9.53 release is available for standard mode and restricted mode.
 
+==== Connector container GUID range
 
 
 
@@ -25,7 +26,7 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members.pe
 
 
 === Workloads
-You can now view and manage Amazon FSx credentials from the Credentials page in BlueXP. 
+You can now view and delete Amazon FSx for NetApp ONTAP credentials from the Credentials page in BlueXP. 
 
 
 
