@@ -1,6 +1,6 @@
 === Connector 3.9.53
 
-This release of the BlueXP Connector includes minor security improvements and bug fixes, as well as some additional updates.
+This release of the BlueXP Connector includes minor security improvements and bug fixes. 
 
 At this time, the 3.9.53 release is available for standard mode and restricted mode.
 

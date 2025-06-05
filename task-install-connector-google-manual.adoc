@@ -24,6 +24,8 @@ You can manually install q Connector on a Linux host running in Google Cloud. To
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on.
 
+include::_include/os-reqs.adoc[tag=manual-uid-range]
+
 include::_include/os-reqs.adoc[tag=dedicated]
 
 include::_include/os-reqs.adoc[tag=hypervisor]
