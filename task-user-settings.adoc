@@ -64,6 +64,16 @@ You can only use recovery codes once. If you use or lose yours, create a new one
 . Select *Regenerate recovery code*.
 . Copy the generated recovery code and save it in a secure location.
 
+== Delete your MFA configuration
+If you no longer want to use multi-factor authentication (MFA) for your BlueXP account, you can delete your MFA configuration. This removes the requirement to enter a one-time code from your authentication app when logging in.
+
+NOTE: If you are unable to access your authentication app or recovery code, you will need to contact your BlueXP administrator to reset your MFA configuration.
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
+. Select *Delete*.
+
 
 
 == Contact your Organization administrator
