@@ -21,7 +21,7 @@ BlueXP provides unified control of storage across your hybrid multicloud and int
 
 === Unified control of storage from the BlueXP canvas
 
-The _BlueXP canvas_ enables you to discover, deploy, optimize, and manage cloud and on-premises storage. The canvas provides a single location for all storage management.
+The _BlueXP canvas_ lets you discover, deploy, and manage cloud and on-premises storage. The canvas provides a single location for all storage management.
 
 ==== Supported cloud and on-premises storage
 
@@ -44,13 +44,13 @@ Cloud object storage::
 
 ==== Storage management from working environments
 
-On the BlueXP canvas, _working environments_ represent the cloud and on-premises storage that you've discovered or deployed. You can select a working environment and integrate it with BlueXP data services or enter the working environment to complete storage management actions like adding volumes.
+On the BlueXP canvas, _working environments_ represent discovered or deployed storage. You can select a _working environment_ to integrate it with BlueXP data services or manage storage, such as adding volumes.
 
 image:screenshot-canvas.png["A screenshot of the BlueXP canvas that shows several working environments, one of which is selected and shows the ability to enable BlueXP data services or to select Enter Working Environment to manage storage."]
 
 === Integrated services to protect, secure, and optimize data
 
-BlueXP includes a comprehensive suite of integrated data services to help you maintain the security, integrity, and availability of your data across your on-premises and cloud storage environments.
+BlueXP includes integrated data services to maintain the security and availability of your data across on-premises and cloud storage.
 
 BlueXP alerts::
 View issues related to capacity, availability, performance, protection, and security in your ONTAP environment.
@@ -114,7 +114,8 @@ BlueXP enables you to manage cloud storage and use cloud services in Amazon Web 
 
 == Cost
 
-Pricing for BlueXP depends on the services that you plan to use. https://bluexp.netapp.com/pricing[Learn about BlueXP pricing^]
+Pricing for BlueXP depends on the services that you use.
+https://bluexp.netapp.com/pricing[Learn about BlueXP pricing^]
 
 == How BlueXP works
 
@@ -133,7 +134,7 @@ BlueXP identity and access management (IAM) is a resource and access management 
 * Resource management enables you to associate a resource with one or more folders or projects
 * Access management enables you to assign a role to members at different levels of the organization hierarchy
 
-BlueXP IAM is supported when using BlueXP in standard mode. If you're using BlueXP in restricted mode or private mode, then you'll use a BlueXP _account_ to manage workspaces, users, and resources.
+BlueXP IAM is supported when using BlueXP in standard or restricted mode. If you're using BlueXP in private mode, then you use a BlueXP _account_ to manage workspaces, users, and resources.
 
 * link:concept-identity-and-access-management.html[Learn more about BlueXP IAM]
 * link:concept-netapp-accounts.html[Learn about BlueXP accounts]
