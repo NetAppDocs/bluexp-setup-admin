@@ -24,6 +24,8 @@ You can install a Connector on one of your on-premises machines. To run the Conn
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. Ensure that your host meets these requirements before you install the Connector.
 
+include::_include/os-reqs.adoc[tag=manual-uid-range]
+
 include::_include/os-reqs.adoc[tag=dedicated]
 
 include::_include/os-reqs.adoc[tag=hypervisor]

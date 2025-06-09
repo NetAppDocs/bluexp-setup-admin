@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, projec
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Add BlueXP members and manage their permissions
+= Add BlueXP members and service accounts
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,7 +15,7 @@ summary: Manage your organization's members to provide permissions across differ
 [.lead]
 BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
-Suggestion: TIP: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
+TIP: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
 
 
 To manage users and their permissions, you must be assigned one of the following roles: 
@@ -33,9 +33,9 @@ Users with this role can manage members only of a designated folder or project
 [#add-members]
 == Add members to your organization
 
-You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention.
+You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention through the BlueXP API. A user account is typically used by a person to log in to BlueXP and manage resources.
 
-You can add a service account directly from BlueXP. Users must sign up for a BlueXP account before being added to an organization or assigned a role.
+Users must first sign up for BlueXP account before you can add them to an organization or assign a role. However, you can create service accounts directly from BlueXP.
 
 To manage users and their permissions, you must have the *Organization admin* role or the *Folder or project admin* role. Remember that users with the *Folder or project admin* role can only manage members for the folder or projects of which they have admin permissions. 
 
@@ -135,11 +135,13 @@ lueXP shows the client secret only once and does not store it. Copy or download 
 
 // end tabbed area 
 
-=== View organization members
+== View organization members
 
 You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-manage-roles.html[Learn how to use roles to control access to BlueXP resources.^]
 
-TYou can view both user accounts and service accounts from the  *Members* page.
+You can view both user accounts and service accounts from the *Members* page.
+
+NOTE: You can also view all of the members associated with a specific folder or project. link:task-iam-manage-folders-projects.html#view-associated-resources-members[Learn more].
 
 .Steps
 
@@ -151,7 +153,7 @@ The *Members* table displays the members of your organization.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
-=== Remove a member from your organization
+== Remove a member from your organization
 
 You might need to remove a member from your organization--for example, if they leave your company.
 
@@ -163,7 +165,7 @@ Removing a member revokes their permissions but retains their BlueXP and NetApp 
 
 . Confirm that you want to remove the member from your organization.
 
-=== Recreate the credentials for a service account
+== Recreate the credentials for a service account
 
 Create new credentials if lost or when updating security credentials is needed.
 
@@ -185,10 +187,30 @@ Recreating the credentials deletes the existing credentials for the service acco
 +
 BlueXP displays the client secret only once and does not store it anywhere. Copy or download the secret and store it safely.
 
+[[manage-mfa]]
+== Manage a user's multi-factor authentication (MFA)
+If a user has lost access to their MFA device, you can either remove or disable their MFA configuration. 
 
-.Related information
+If you remove their MFA configuration, the user needs to set up MFA again when they log in to BlueXP. If the user has only lost access to their MFA device temporarily, they can use the recovery code that they saved when they set up MFA to log in to BlueXP. 
 
-link:task-iam-manage-folders-projects.html#view-associated-resources-members[View all of the members associated with a specific folder or project].
+If they don't have access to their recovery code, you can disable the user's MFA temporarily which allows them to log in without MFA. When you disable MFA for a user, it is disabled for only eight hours and then re-enabled automatically. The user is allowed one login during that time without MFA. After the eight hours, the user must use MFA to log in to BlueXP.
+
+NOTE: You must have an email address in the same domain as the affected user in order to manage that user’s multi-factor authentication. 
+
+.Steps
+
+. In the upper right of the console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select *Members*.
++
+The members of your organization appear in the *Members* table.
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Manage multi-factor authentication*.
+
+. Choose whether to remove or to disable the user's MFA configuration.
+
+
+
 
 
 
@@ -250,22 +272,6 @@ image:screenshot-iam-define-role.png[A screenshot of the Access portion of the e
 
 ////
 
-=== Unassign a role from a member
-
-You can remove a member's permissions to a specific folder or project by removing their role.
-
-
-If a member has permissions in your organization to _only_ one folder or project, you can't remove that role. You have two choices:
-
-* If you want the member to have permissions to another part of the resource hierarchy, you need to add that role first and then delete the existing role.
-
-* If you don't want the member to have permissions to anything, then you should remove the member from your organization.
-
-.Steps
-
-. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
-
-. In the table, navigate to the folder or project level and then select image:icon-delete.png[An icon of a garbage can]. You'll be asked to confirm the removal.
 
 
 

@@ -18,7 +18,7 @@ BlueXP identity and access management (IAM) includes several predefined roles th
 
 [#platform-roles]
 == Platform roles
-Platform roles are the broadest roles you can assign to users and allow all permissions forBlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or project admin. The main difference between the two BlueXP IAM platform roles is scope. 
+Platform roles grant all permissions for BlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
 [cols="1,2",options="header"]
 |===
@@ -29,7 +29,7 @@ Platform roles are the broadest roles you can assign to users and allow all perm
 
 | link:reference-iam-platform-roles.html[Org admin] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. 
 
-Users with this role are tasked with organizing and managing the entire BlueXP environment. They can create folders and projects, assign roles, and add users to any project or folder. They can also manage all working environments within the organization.
+Users with this role organize and manage the entire BlueXP environment. They create folders and projects, assign roles, add users, and can manage all working environments, if they have the credentials to do so.
 
 This is the only access role that can create Connectors.
 
@@ -45,9 +45,6 @@ The Folder or project admin role CANNOT create Connectors.
 == Application roles
 The following is a list of roles in the application category. Each role grants specific permissions within its designated scope. Users who do not have the required application role or a platform role will be unable to access the application.
 
-
-
-NOTE: Accessing Keystone through BlueXP is currently in beta. If you would like to participate in the Keystone beta, contact your NetApp representative.
 
 [cols="1,2",options="header"]
 |===
@@ -81,7 +78,7 @@ The following is a list of roles in the data service category. Each role grants 
 Classification does not have a viewer role. Users with this role can view compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
 | link:reference-iam-ransomware-roles.html[Ransomware protection admin]| Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs of the Ransomware protection service. 
 | link:reference-iam-ransomware-roles.html[Ransomware protection viewer]| View workload data, view alert data, download recovery data, and download reports in the Ransomware protection service.
-| SnapCenter admin a| Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications. A member who has this role can complete the following actions in BlueXP:
+| SnapCenter admin | Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications. A member who has this role can complete the following actions in BlueXP:
 
 * Complete any action from Backup and recovery > Applications
 * Manage all working environments in the projects and folders for which they have permissions

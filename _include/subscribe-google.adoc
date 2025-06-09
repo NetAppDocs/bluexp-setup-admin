@@ -1,6 +1,6 @@
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+. In the upper right of the console, select the Settings icon, and select *Credentials*.
 
 . Select the action menu for a set of credentials and then select *Configure Subscription*.
 +new screenshot needed (TS)
@@ -14,7 +14,7 @@ image:screenshot_gcp_associate.gif[A screenshot of a Google Cloud project and su
 +
 NOTE: Before you complete the following steps, ensure that you have both Billing Admin privileges in your Google Cloud account as well as a BlueXP login.
 
-.. After you're redirected to the https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager[NetApp BlueXP page on the Google Cloud Marketplace^], ensure that the correct project is selected at the top navigation menu.
+.. After you're redirected to the https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager[NetApp Intelligent Services page on the Google Cloud Marketplace^], ensure that the correct project is selected at the top navigation menu.
 +
 image:screenshot_gcp_cvo_marketplace.png[A screenshot of the Cloud Volumes ONTAP marketplace page in Google Cloud.]
 
