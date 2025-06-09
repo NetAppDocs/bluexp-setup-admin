@@ -19,7 +19,7 @@ link:concept-modes.html[Learn about BlueXP deployment modes].
 
 == Uninstall the Connector when using standard or restricted mode
 
-If you're using BlueXP in standard mode or restricted mode (in other words, the Connector host has outbound connectivity), then you should follow the steps below to uninstall the Connector software.
+If you're using standard mode or restricted mode (in other words, the Connector host has outbound connectivity), then you should follow the steps below to uninstall the Connector software.
 
 .Steps
 
@@ -34,7 +34,7 @@ _silent_ runs the script without prompting you for confirmation.
 
 == Uninstall the Connector when using private mode
 
-If you're using BlueXP in private mode (in other words, the Connector host has _no_ outbound connectivity), then you should follow the steps below to uninstall the Connector software.
+If you're using private mode (in other words, the Connector host has _no_ outbound connectivity), then you should follow the steps below to uninstall the Connector software.
 
 .Step
 
@@ -46,7 +46,7 @@ If you're using BlueXP in private mode (in other words, the Connector host has _
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 
-. From the Linux host, remove the remove old, now unused container image files. This ensures there is enough space in the /var directory to re-install.
+. From the Linux host, delete old, unused container image files to free space in the /var directory for re-installation.
 
 +
 
@@ -78,7 +78,7 @@ If a Connector is inactive, you can remove it from the list of Connectors in Blu
 Note the following about removing a Connector:
 
 * This action doesn't delete the virtual machine.
-* This action can't be reverted--once you remove a Connector from BlueXP, you can't add it back.
+* This action can't be reverted--once you remove a Connector, you can't add it back.
 
 .Steps
 

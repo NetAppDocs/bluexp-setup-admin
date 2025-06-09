@@ -13,28 +13,28 @@ summary: BlueXP offers multiple deployment modes that enable you to use BlueXP i
 :imagesdir: ./media/
 
 [.lead]
-BlueXP offers multiple _deployment modes_ that enable you to use BlueXP in a way that meets your business and security requirements. _Standard mode_ leverages the BlueXP software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
+BlueXP offers multiple _deployment modes_ that enable you to meet your business and security requirements. _Standard mode_ leverages a software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
 
 While BlueXP inhibits the flow of traffic, communication, and data when using restricted mode or private mode, it's your responsibility to ensure that your environment (on-premises and in the cloud) is in compliance with the required regulations.
 
 == Overview
 
-BlueXP offers three deployment modes. Each mode differs in terms of outbound connectivity requirements, deployment location, installation process, authentication method, available data and storage services, and charging methods.
+Each deployment mode differs in terms of outbound connectivity requirements, deployment location, installation process, authentication method, available data and storage services, and charging methods.
 
 Standard mode::
-BlueXP is accessible to users as a cloud service from the web-based console. Depending on the BlueXP services that you're planning to use, a BlueXP admin creates one or more Connectors to manage data within your hybrid cloud environment. 
+You use a SaaS service from the web-based console. Depending on the data services and features that you're planning to use, a BlueXP admin creates one or more Connectors to manage data within your hybrid cloud environment. 
 +
 This mode uses encrypted data transmission over the public internet.
 
 Restricted mode::
-A BlueXP Connector is installed in the cloud (in a government region, sovereign cloud region, or commercial region) and has limited outbound connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
+You install a BlueXP Connector in the cloud (in a government region, sovereign cloud region, or commercial region) and has limited outbound connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
 +
 This mode is typically used by state and local governments and regulated companies.
 +
 <<Restricted mode, Learn more about outbound connectivity to the SaaS layer>>.
 
 Private mode::
-A BlueXP Connector is installed on-premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has _no_ connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
+You install a BlueXP Connector on-premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has _no_ connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
 +
 A secure region includes https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], and https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
@@ -87,7 +87,7 @@ The following table provides a comparison of these modes.
 | Many are supported
 | Several are supported
 
-| Licensing options
+| Data service licensing options
 | Marketplace subscriptions and BYOL
 | Marketplace subscriptions and BYOL
 | BYOL

@@ -15,7 +15,6 @@ summary: How you log in to BlueXP depends on the BlueXP deployment mode that you
 [.lead]
 How you log in to BlueXP depends on the BlueXP deployment mode that you're using for your account.
 
-The Connector includes a local UI, which is accessible from the Connector host. This UI is provided for customers who are using BlueXP in restricted mode or private mode. When you use BlueXP in standard mode, you should access the user interface from the https://console.bluexp.netapp.com/[BlueXP SaaS console^]
 
 link:concept-modes.html[Learn about BlueXP deployment modes].
 

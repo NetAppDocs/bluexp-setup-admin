@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-adding-gcp-accounts.html
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys
-summary: You can manage the Google Cloud credentials that are associated with the Connector VM instance by associating a marketplace subscription and by troubleshooting the subscription process. Both of these tasks ensure that you can use your marketplace subscription to pay for BlueXP services.
+summary: You can manage the Google Cloud credentials that are associated with the Connector VM instance by associating a marketplace subscription and by troubleshooting the subscription process. Both of these tasks ensure that you can use your marketplace subscription to pay for data services.
 ---
 
 = Manage Google Cloud credentials and subscriptions for BlueXP
@@ -13,11 +13,11 @@ summary: You can manage the Google Cloud credentials that are associated with th
 :imagesdir: ./media/
 
 [.lead]
-You can manage the Google Cloud credentials that are associated with the Connector VM instance by associating a marketplace subscription and by troubleshooting the subscription process. Both of these tasks ensure that you can use your marketplace subscription to pay for BlueXP services.
+You can manage the Google Cloud credentials that are associated with the Connector VM instance by associating a marketplace subscription and by troubleshooting the subscription process. Both of these tasks ensure that you can use your marketplace subscription to pay for data services.
 
 == Associate a Marketplace subscription with Google Cloud credentials
 
-When you deploy a Connector in Google Cloud, BlueXP creates a default set of credentials that are associated with the Connector VM instance. At any time, you can change the Google Cloud Marketplace subscription that is associated with these credentials. The subscription enables you to create a pay-as-you-go Cloud Volumes ONTAP system, and to use other BlueXP services.
+When you deploy a Connector in Google Cloud, BlueXP creates a default set of credentials that are associated with the Connector VM instance. At any time, you can change the Google Cloud Marketplace subscription that is associated with these credentials. The subscription enables you to create a pay-as-you-go Cloud Volumes ONTAP system, and to use other data services.
 
 Replacing the current marketplace subscription with a new subscription changes the marketplace subscription for any existing Cloud Volumes ONTAP working environments and all new working environments.
 
@@ -27,7 +27,7 @@ include::_include/subscribe-google.adoc[]
 
 == Troubleshoot the Marketplace subscription process
 
-Sometimes subscribing to BlueXP through the Google Cloud Marketplace can become fragmented due to incorrect permissions or accidentally not following the redirection to the BlueXP website. If this happens, use the following steps to complete the subscription process.
+Sometimes subscribing to NetApp Intelligent Services through the Google Cloud Marketplace can become fragmented due to incorrect permissions or accidentally not following the redirection to the BlueXP website. If this happens, use the following steps to complete the subscription process.
 
 .Steps
 

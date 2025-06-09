@@ -1,6 +1,6 @@
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+. In the upper right of the console, select the Settings icon, and select *Credentials*.
 
 . Select the action menu for a set of credentials and then select *Configure Subscription*.
 +
@@ -15,7 +15,7 @@ You must select credentials that are associated with a Connector. You can't asso
 .. Fill out the form and select *Subscribe*.
 .. After the subscription process is complete, select *Configure account now*.
 +
-You'll be redirected to the BlueXP website.
+You'll be redirected to BlueXP.
 .. From the *Subscription Assignment* page:
 +
 * Select the BlueXP organizations or accounts that you'd like to associate this subscription with.
@@ -29,4 +29,4 @@ For all other organizations or accounts, you'll need to manually associate the s
 +
 The following video shows the steps to subscribe from the Azure Marketplace:
 +
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto, title="Subscribe to BlueXP from the Azure Marketplace"]
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto, title="Subscribe to NetApp Intelligent Services from the Azure Marketplace"]

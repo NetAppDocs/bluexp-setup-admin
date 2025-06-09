@@ -22,7 +22,7 @@ Follow these steps to set up a new BlueXP organization. The order in which you c
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Edit the default project or add to your organization's hierarchy
 
 [role="quick-margin-para"]
-You can simply use the default project or you can create additional projects and folders that match the hierarchy of your business.
+Use the default project or create additional projects and folders matching your business hierarchy.
 
 [role="quick-margin-para"]
 link:task-iam-manage-folders-projects.html[Learn how to organize your resources with folders and projects].
@@ -30,7 +30,7 @@ link:task-iam-manage-folders-projects.html[Learn how to organize your resources 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Associate members with your organization
 
 [role="quick-margin-para"]
-If multiple people in your business need to access and manage resources from BlueXP, you'll need to associate their user accounts with your organization and provide the appropriate permissions across your resource hierarchy. You also have the option to add service accounts to your organization.
+If multiple people in your business need access to BlueXP, associate their user accounts with your organization and assign the necessary permissions. You also have the option to add service accounts to your organization.
 
 [role="quick-margin-para"]
 link:task-iam-manage-members-permissions.html[Learn how to manage members and their permissions].
@@ -38,10 +38,10 @@ link:task-iam-manage-members-permissions.html[Learn how to manage members and th
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Add or discover resources
 
 [role="quick-margin-para"]
-Add or discover resources in BlueXP as _working environments_. A working environment represents a storage system that organization members manage from within a project. For example, a Cloud Volumes ONTAP system or an on-premises ONTAP cluster.
+Add or discover resources in BlueXP as _the working environments_. Organization members manage a working environment, which represents a storage system, from within a project.
 
 [role="quick-margin-para"]
-Learn how to create or discover resources from the BlueXP canvas:
+Learn how to create or discover resources:
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html[Amazon FSx for NetApp ONTAP^]
@@ -54,7 +54,7 @@ Learn how to create or discover resources from the BlueXP canvas:
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with additional projects
 
 [role="quick-margin-para"]
-When you create or discover a resource in BlueXP, that resource is automatically associated with the project that was selected when you created or discovered the working environment. If you want to make that resource available to another project in your organization, then you'll need to create an association between them. If the resource is managed by a Connector, then you also need to create an association between the project and the associated Connector.
+When you create or discover a resource in BlueXP, that resource is automatically associated with the project that was selected when you created or discovered the working environment. If you want to make that resource available to another project in your organization, then you'll need to create an association between them. If a Connector manages the resource, associate the Connector with the respective project.S
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy].

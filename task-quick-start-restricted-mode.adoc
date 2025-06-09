@@ -13,7 +13,7 @@ summary: Get started with BlueXP in restricted mode by preparing your environmen
 :imagesdir: ./media/
 
 [.lead]
-Get started with BlueXP in restricted mode by preparing your environment, deploying the Connector, and subscribing to BlueXP.
+Get started with BlueXP in restricted mode by preparing your environment and deploying the Connector.
 
 Restricted mode is typically used by state and local governments and regulated companies, including deployments in AWS GovCloud and Azure Government regions. Before you get started, you should have an understanding of link:concept-netapp-accounts.html[BlueXP accounts], link:concept-connectors.html[Connectors], and link:concept-modes.html[deployment modes].
 
@@ -35,7 +35,7 @@ Restricted mode is typically used by state and local governments and regulated c
 
 .. Provide BlueXP with the permissions that you previously set up.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] link:task-subscribe-restricted-mode.html[Subscribe to BlueXP]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] link:task-subscribe-restricted-mode.html[Subscribe to NetApp Intelligent Services (optionaL)]
 
 [role="quick-margin-para"]
-Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate (PAYGO) or through an annual contract.
+Optional: Subscribe to NetApp Intelligent Services from your cloud provider's marketplace to pay for data services at an hourly rate (PAYGO) or through an annual contract. NetApp Intelligent Services include Backup and recovery, Cloud Volumes ONTAP, Tiering, Ransomware protection, and Disaster recovery. Classification is included with your subscription at no additional cost.

@@ -70,7 +70,7 @@ sidebar:
                       url: /task-install-connector-google-manual.html
                 - title: On-premises
                   url: /task-install-connector-on-prem.html
-            - title: Subscribe to BlueXP
+            - title: Subscribe to NetApp Intelligent Services
               url: /task-subscribe-standard-mode.html
             - title: What you can do next
               url: /reference-whats-next.html
@@ -82,7 +82,7 @@ sidebar:
               url: /task-prepare-restricted-mode.html
             - title: Deploy the Connector
               url: /task-install-restricted-mode.html
-            - title: Subscribe to BlueXP
+            - title: Subscribe to NetApp Intelligent Services
               url: /task-subscribe-restricted-mode.html
             - title: What you can do next
               url: /reference-whats-next-restricted-mode.html
@@ -101,9 +101,13 @@ sidebar:
               - title: Manage your BlueXP account
                 url: /task-managing-netapp-accounts.html
             - title: What you can do next
-              url: /reference-whats-next-private-mode.html
+              url: /reference-whats-next-private-mode.html     
+    - title: Use BlueXP
+      entries:
         - title: Log in to BlueXP
           url: /task-logging-in.html
+        - title: Manage your BlueXP user settings
+          url: /task-user-settings.html
     - title: Administer BlueXP
       entries:
         - title: Identity and access management
@@ -114,7 +118,7 @@ sidebar:
               url: /task-iam-get-started.html
             - title: Organize your resources with folders and projects
               url: /task-iam-manage-folders-projects.html
-            - title: Add members and service accounts
+            - title: Manage members and service accounts
               url: /task-iam-manage-members-permissions.html
             - title: Use roles to control member access to resources
               url: /task-iam-manage-roles.html

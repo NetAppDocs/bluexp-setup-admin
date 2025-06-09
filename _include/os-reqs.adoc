@@ -10,6 +10,11 @@ Host can be of any architecture that meets the following size requirements:
 
 //end::dedicated[]
 
+//tag::manual-uid-range[]
+NOTE: The Connector reserves the UID and GID range of 19000 to 19200. This range is fixed and cannot be modified. If any third-party software on your host is using UIDs or GIDs within this range, the Connector installation will fail. NetApp recommends using a host that is free of third-party software to avoid conflicts. 
+
+//end::manual-uid-range[]
+
 //tag::hypervisor[]
 Hypervisor::
 A bare metal or hosted hypervisor that is certified to run a supported operating system is required.

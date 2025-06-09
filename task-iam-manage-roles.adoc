@@ -15,18 +15,18 @@ summary: BlueXP's identity and access management enables you to represent a comp
 [.lead]
 Within BlueXP, you can assign roles to users based on what they need to do and where. 
 
-Users with the *Organization admin* or *Folder or project admin* role have the responsibility of assigning roles to other users. You can assign access roles on a project or folder basis. For example, you can assign a user the Ransomware protection admin role for one project and the SnapCenter admin role for a different project. Alternatively, if a user requires the Classification admin role for all projects within a specific folder, you can grant them this access role at the folder level.
+Users with the *Organization admin* or *Folder or project admin* role have the responsibility of assigning roles to other users. You can assign access roles on a project or folder basis. For example, you can assign a user the Ransomware protection admin role for one project and the SnapCenter admin role for a different project. Alternatively, if a user needs the Classification admin role for all projects within a specific folder, you can give them this role at the folder level.
 
-Use access roles to assign access to storage resources based on the specific BlueXP tasks that users need to perform. For example, if a BlueXP user needs to interact with ransomware protection services, they must be given an access role that includes either viewing or administrative permissions for the ransomware protection service for the project for which the access role is granted.
+Use access roles to assign access to storage resources based on the specific tasks that users need to perform. For example, if a user needs to interact with ransomware protection services, they must be given an access role that includes either viewing or administrative permissions for the ransomware protection service for the project for which the access role is granted.
 
-Assign roles to users based on your IAM strategy for enhanced security. BlueXP IAM roles are designed to ensure that users only have access to what they need.
+Assign roles to users based on your IAM strategy for enhanced security. IAM roles ensure users have only the access they need.
 
-NOTE: Remember that you can't directly grant access to resources. Resources must be assigned to projects first. Consider setting up your resource hierarchy before assigning users access. link:task-iam-manage-folders-projects.html[Learn how to organize your resources in BlueXP IAM with folders and projects.]
+NOTE: Remember that you can't directly grant access to resources. Assign resources to projects first. Consider setting up your resource hierarchy before assigning users access. link:task-iam-manage-folders-projects.html[Learn how to organize your resources in BlueXP IAM with folders and projects.]
 
 [#manage-permissions]
 == View roles(s) assigned to a member
 
-When you add a member to your BlueXP organization, you are prompted to assign them a role. You can members to verify which roles they are currently assigned.
+When you add a member to your organization, you are prompted to assign them a role. You can members to verify which roles they are currently assigned.
 
 If you have the _Folder or project admin_  role, the page displays all members in the organization. However, you can only view and manage member permissions for the folders and projects for which you have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
 
@@ -37,15 +37,15 @@ If you have the _Folder or project admin_  role, the page displays all members i
 
 == Add an access role to a member
 
-Typically, you'll assign a role to the member when you add them to your organization. However, you can update a member's role at anytime either by removing a role or adding a different role. You can remove a user's access to a project by removing their role.
+You typically assign a role when adding a member to your organization, but you can update it at any time by removing or adding roles.
 
 You can assign a user an access role for your organization, folder, or project. 
 
-Members can have multiple roles within the same project and in different projects. For example, smaller organizations may assign all available access roles to the same user, while larger organization may have users do more specialized tasks in BlueXP. Alternatively, you could also assign one user the Ransomware projection admin role for the organization. In that example, the user would be able to perform ransomware protection tasks on all projects within your organization. 
+Members can have multiple roles within the same project and in different projects. For example, smaller organizations may assign all available access roles to the same user, while larger organizations may have users do more specialized tasks. Alternatively, you could also assign one user the Ransomware protection admin role for an organization. In that example, the user would be able to perform ransomware protection tasks on all projects within your organization. 
 
-Your access role strategy should align with the way you have organized your NetApp resources in BlueXP. 
+Your access role strategy should align with the way you have organized your NetApp resources. 
 
-TIP: A member who is assigned the Organization admin role can't be assigned any additional roles. They already have permissions across the entire organization. A member with the Folder or project role can't be assigned any other roles within the folder or project where they have that role already. Both of these roles provide access to all BlueXP services within the scope that they are assigned.
+TIP: A member who is assigned the Organization admin role can't be assigned any additional roles. They already have permissions across the entire organization. A member with the Folder or project role can't be assigned any other roles within the folder or project where they have that role already. Both of these roles provide access to all services within the scope that they are assigned.
 
 .Steps
 
@@ -57,7 +57,7 @@ TIP: A member who is assigned the Organization admin role can't be assigned any 
 +
 If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
 
-* *Select a category*: BlueXP separate roles into two categories: platform and data service. link:reference-iam-predefined-roles.html[Learn about access roles^].
+* *Select a category*: Choose a role category. link:reference-iam-predefined-roles.html[Learn about access roles^].
 
 * Select a *Role*: Choose a role that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 
@@ -67,9 +67,11 @@ link:reference-iam-predefined-roles.html[Learn about access roles^].
 . Select *Add new roles*.
 
 
-=== Change a member's assigned role
+== Change a member's assigned role
 
 You can change the assigned roles for a member should you need to adjust the access for a user.
+
+NOTE: Users must have at least one role assigned to them. You can't remove all roles from a user. If you need to remove all roles, you must delete the user from your organization.
 
 .Steps
 
@@ -79,7 +81,7 @@ You can change the assigned roles for a member should you need to adjust the acc
 
 . You can change an existing role for a member or remove a role.
 
-.. To change a member's role, elect *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one data service role to another. You'll be asked to confirm the change.
+.. To change a member's role, select *Change* next to the role you want to change. You can only change this role to a role within the same role category. For example, you can change from one data service role to another. Confirm the change.
 
 .. To unassign a member's role, select image:icon-delete.png["An icon that resembles a trash can"] next to the role to unassign the member the respective role. You'll be asked to confirm the removal.
 
