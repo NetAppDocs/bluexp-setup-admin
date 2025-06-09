@@ -30,11 +30,12 @@ include::_whatsnew/2025-05-29.adoc[]
 
 include::_whatsnew/2025-05-12.adoc[]
 
+// end::whats-new[]
+
 == 14 April 2025
 
 include::_whatsnew/2025-04-14.adoc[]
 
-// end::whats-new[]
 
 == 28 March 2025
 
@@ -51,7 +52,6 @@ include::_whatsnew/2025-03-10.adoc[]
 
 include::_whatsnew/2025-03-06.adoc[]
 
-// end::whats-new[]
 
 == 18 February 2025
 
