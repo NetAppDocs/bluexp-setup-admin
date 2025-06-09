@@ -18,11 +18,11 @@ You can create a Connector in Azure directly from the Azure Marketplace. To crea
 .Before you begin
 
 * You should have an link:concept-connectors.html[understanding of Connectors].
-* You should review link:reference-limitations.html[Connector limitations].
+* Review link:reference-limitations.html[Connector limitations].
 
 == Step 1: Set up networking
 
-Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
+Ensure that the network location where you plan to install the Connector supports the following requirements.These requirements enable the Connector to manage resources in your hybrid cloud.
 
 //Azure regions
 include::_include/networking.adoc[tag=azure-region]
@@ -68,11 +68,11 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 +
-You'll need to implement this networking requirement after you create the Connector.
+Implement the networking requirements after creating the Connector.
 
 == Step 2: Review VM requirements
 
-When you create the Connector, you need to choose a virtual machine type that meets the following requirements.
+When you create the Connector, choose a virtual machine type that meets the following requirements.
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
@@ -130,9 +130,6 @@ include::_include/azure-set-up-service-principal.adoc[tag=ids]
 
 include::_include/azure-set-up-service-principal.adoc[tags=secret]
 
-.Result
-
-Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. You need to enter this information in BlueXP when you add an Azure account.
 --
 
 ====
@@ -144,7 +141,7 @@ Launch the Connector directly from the Azure Marketplace.
 
 .About this task
 
-Creating the Connector from the Azure Marketplace deploys a virtual machine in Azure using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+Creating the Connector from the Azure Marketplace sets up a virtual machine with a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
 
 .Before you begin
 
@@ -194,7 +191,7 @@ This setting is important because a managed identity allows the Connector virtua
 
 . On the *Review + create* page, review your selections and select *Create* to start the deployment.
 +
-Azure deploys the virtual machine with the specified settings. The virtual machine and Connector software should be running in approximately five minutes.
+Azure deploys the virtual machine with the specified settings. You should see the virtual machine and Connector software running in about five minutes.
 
 . Open a web browser from a host that has a connection to the Connector virtual machine and enter the following URL:
 +
@@ -205,12 +202,12 @@ https://_ipaddress_
 .. Enter a name for the system.
 .. Under *Are you running in a secured environment?* keep restricted mode disabled.
 +
-You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. You should enable restricted mode only if you have a secure environment and want to disconnect this account from BlueXP backend services. If that's the case, link:task-quick-start-restricted-mode.html[follow steps to get started with BlueXP in restricted mode].
+Keep restricted mode disabled to use BlueXP in standard mode. You should enable restricted mode only if you have a secure environment and want to disconnect this account from BlueXP backend services. If that's the case, link:task-quick-start-restricted-mode.html[follow steps to get started with BlueXP in restricted mode].
 .. Select *Let's start*.
 
 .Result
 
-The Connector is now installed and is set up with your BlueXP organization.
+You have now installed the Connector and set it up with your BlueXP organization.
 
 If you have Azure Blob storage in the same Azure subscription where you created the Connector, you'll see an Azure Blob storage working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html[Learn how to manage Azure Blob storage from BlueXP^]
 

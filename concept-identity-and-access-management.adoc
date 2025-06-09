@@ -15,7 +15,7 @@ summary: BlueXP identity and access management (IAM) enables you to control acce
 [.lead]
 BlueXP identity and access management (IAM) enables you to organize and control access to your NetApp resources. You can organize your resources according to your organization's hierarchy. For example, you can organize resources by geographical location, site, or business unit. You can then assign IAM roles to members at specific parts of the hierarchy, which prevents access to resources in other parts of the hierarchy.
 
-BlueXP IAM replaces and enhances the previous functionality provided by BlueXP accounts. link:whats-new.html#iam[Learn more about the introduction of BlueXP IAM].
+
 
 BlueXP IAM is supported when using BlueXP in standard mode and restricted mode. If you're using BlueXP in private mode, then you use a BlueXP _account_ to manage users and resources. 
 
@@ -57,7 +57,7 @@ BlueXP prompts you to create a new organization when you sign up.
 
 A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a geographical location (EU or US East), a site (London or Toronto), or a business unit (engineering or marketing). 
 
-Folders can contain projects, other folders, or a combination of both.
+Folders can hold projects, other folders, or both.
 
 You don't need to create folders. They are optional.
 
@@ -92,7 +92,7 @@ The _Organization admin_ can associate a resource with the folder:
 
 image:diagram-iam-resource-association-folder-2.png["A diagram that shows a folder, a resource that is associated with the folder, and two projects that reside in the folder: project A and project B."]
 
-Associating a resource with a folder doesn't automatically make it accessible to all projects in the folder. The _Folder or project admin_ decides which projects can access the resource.. After making that decision, the admin can then associate the resource with the right projects.
+When you associate a resource with a folder, it does not automatically become accessible to all projects, only the _Folder or project admin_ can see the resource. The _Folder or project admin_ decides which projects can access it and associates the resource with the appropriate projects.
 
 In this example, the admin associates the resource with Project A:
 
@@ -104,7 +104,7 @@ Members who have permissions for project A can now access the resource.
 
 Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 
-An organization has at least one user with the _Organization admin_ role (the user who creates the organization is automatically assigned this role). You can add other members to the organization and assign different permissions across different levels of the resource hierarchy.
+Each organization includes at least one user with the _Organization admin_ role (BlueXP automatically assigns this role to the user who creates the organization). You can add other members to the organization and assign different permissions across different levels of the resource hierarchy.
 
 === Roles and permissions
 
@@ -122,7 +122,8 @@ When you associate a member with a role, you need to select the entire organizat
 When you assign a role, the role is inherited down the organization hierarchy:
 
 Organization::
-When you grant a member an access roles at the organization level, all folders, projects, and resources in the organization inherit those roles. That means the member has permissions to everything in the organization.
+Granting a member an access role at the organization level gives them permissions to all folders, projects, and resources.
+
 
 Folders::
 When you grant an access role at the folder level, all folders, projects, and resources in the folder inherit that role.
@@ -147,7 +148,7 @@ link:reference-iam-predefined-roles.html[Learn about access roles].
 
 When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. But if you have other members in your organization with different roles, those members can only access that Connector from the project in which it was created, unless you associate that Connector with other projects.
 
-You might make a Connector available for another project in these cases:
+You make a Connector available for another project in these cases:
 
 * You want to allow members in your organization to use an existing Connector to create or discover additional working environments in another project
 
@@ -169,7 +170,7 @@ An _Organization admin_ might associate a Connector with a folder so that the _F
 
 == IAM examples
 
-The following examples show how you might set up your organization.
+These examples demonstrate how you might set up your organization.
 
 === Simple organization
 
