@@ -4,13 +4,14 @@ This release of the BlueXP Connector includes security improvements and bug fixe
 
 At this time, the 3.9.53 release is available for standard mode and restricted mode.
 
-==== Connector container GUID range
 
 
-
+////
 === Keystone subscription management available in BlueXP
 
 You can manage your NetApp Keystone subscription from BlueXP.
+
+////
 
 
 === BlueXP Identity and Access Management (IAM)
