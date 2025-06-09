@@ -143,7 +143,7 @@ sidebar:
                    - title: Keystone roles 
                      url: /reference-iam-keystone-roles.html
                    - title: Storage roles
-                     url: /reference-iam-storage.roles.html
+                     url: /reference-iam-storage-roles.html
                 - title: Data services roles
                   entries:
                     - title: Ransomware protection roles
