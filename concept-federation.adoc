@@ -47,7 +47,7 @@ BlueXP supports the following identity providers:
 
 * Security Assertion Markup Language (SAML) identity providers
 * Microsoft Entra ID
-* Active Directory Federation Services (ADFS)
+* Active Directory Federation Services (AD FS)
 * PingFederate
 
 BlueXP supports service provider-initiated (SP-initiated) SSO only.
