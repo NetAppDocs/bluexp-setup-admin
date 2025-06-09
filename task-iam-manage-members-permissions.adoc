@@ -135,7 +135,7 @@ lueXP shows the client secret only once and does not store it. Copy or download 
 
 // end tabbed area 
 
-=== View organization members
+== View organization members
 
 You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-manage-roles.html[Learn how to use roles to control access to BlueXP resources.^]
 
@@ -153,7 +153,7 @@ The *Members* table displays the members of your organization.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
-=== Remove a member from your organization
+== Remove a member from your organization
 
 You might need to remove a member from your organization--for example, if they leave your company.
 
@@ -165,7 +165,7 @@ Removing a member revokes their permissions but retains their BlueXP and NetApp 
 
 . Confirm that you want to remove the member from your organization.
 
-=== Recreate the credentials for a service account
+== Recreate the credentials for a service account
 
 Create new credentials if lost or when updating security credentials is needed.
 
@@ -188,7 +188,7 @@ Recreating the credentials deletes the existing credentials for the service acco
 BlueXP displays the client secret only once and does not store it anywhere. Copy or download the secret and store it safely.
 
 [[manage-mfa]]
-=== Manage a user's multi-factor authentication (MFA)
+== Manage a user's multi-factor authentication (MFA)
 If a user has lost access to their MFA device, you can either remove or disable their MFA configuration. 
 
 If you remove their MFA configuration, the user needs to set up MFA again when they log in to BlueXP. If the user has only lost access to their MFA device temporarily, they can use the recovery code that they saved when they set up MFA to log in to BlueXP. 
