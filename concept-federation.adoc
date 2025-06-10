@@ -22,11 +22,11 @@ If you use your NetApp Support Site (NSS) credentials to log in to BlueXP, you s
 * Download and complete the https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1[NetApp Federation Request Form^]
 * Submit the form to the email address specified in the form
 
-The NetApp Identity and Access Management team reviews your request.
+The NetApp support team will review and process your request.
 
 == How identity federation works
 
-Setting up identity federation creates a trust connection between BlueXP's authentication service provider (auth0) and your own identity management provider.
+Setting up identity federation creates a trust connection between BlueXP's authentication service provider (Auth0) and your own identity management provider.
 
 The following image depicts how identity federation works with BlueXP:
 
@@ -47,10 +47,10 @@ BlueXP supports the following identity providers:
 
 * Security Assertion Markup Language (SAML) identity providers
 * Microsoft Entra ID
-* Active Directory Federation Services (ADFS)
+* Active Directory Federation Services (AD FS)
 * PingFederate
 
-BlueXP supports service provider initiated (SP-initiated) SSO only. Identity provider initiated (IdP-initiated) SSO is not supported.
+BlueXP supports service provider-initiated (SP-initiated) SSO only.
 
 == Overview of the setup process
 
@@ -60,7 +60,7 @@ These steps are specific to users who log in to BlueXP using a NetApp cloud logi
 
 === SAML identity provider
 
-At a high-level, setting up a federated connection between BlueXP and a SAML identity provider includes the following steps:
+Setting up a federated connection with a SAML identity provider involves these steps:
 
 [cols="10,15,75",width=100%,options="header"]
 |===
@@ -70,7 +70,7 @@ At a high-level, setting up a federated connection between BlueXP and a SAML ide
 | Description
 
 
-| 1 | Active Directory (AD) admin a| Configure your SAML identity provider to enable identity federation with BlueXP.
+| 1 | IdP admin | Configure your SAML identity provider to enable identity federation with BlueXP.
 
 View instructions for your SAML identity provider:
 
@@ -88,27 +88,27 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 
 | 2 | BlueXP admin a| Go to the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^] and create the connection with BlueXP.
 
-To complete this step, you need to obtain the following from your AD admin about the identity provider: 
+To complete this step, you need to get the following from your IdP admin about the identity provider:
 
 * Sign in URL
 * An X509 signing certificate (PEM or CER format)
 * Sign out URL (optional)
 
-After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
+After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your IdP admin to complete the configuration in the next step.
 
 NOTE: Take note of the certificate expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date, so you must monitor and update the certificate before it expires. It's best to work with your IT team to get alerted on time.
 
-| 3 | AD admin | Complete the configuration on the identity provider using the parameters shown on the Federation Setup page after finishing step 2.
+| 3 | IdP admin | Complete the configuration on the identity provider using the parameters shown on the Federation Setup page after finishing step 2.
 
 | 4 | BlueXP admin | Test and enable the connection from the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^]
 
-Note that the page refreshes between testing the connection and enabling the connection.
+The page refreshes between testing the connection and enabling the connection.
 
 |===
 
 === Microsoft Entra ID
 
-At a high-level, setting up a federated connection between BlueXP and Microsoft Entra ID includes the following steps:
+Setting up a federated connection between BlueXP and Microsoft Entra ID includes the following steps:
 
 [cols="10,15,75",width=100%,options="header"]
 |===
@@ -117,15 +117,15 @@ At a high-level, setting up a federated connection between BlueXP and Microsoft 
 | Completed by
 | Description
 
-| 1 | AD admin a| Configure Microsoft Entra ID to enable identity federation with BlueXP.
+| 1 | IdP admin | Configure Microsoft Entra ID to enable identity federation with BlueXP.
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2[View instructions for registering the application with Microsoft Entra ID^]
 
 TIP: Do _not_ complete the steps that describe how to create a connection in auth0. You'll create that connection in the next step.
 
-| 2 | BlueXP admin a| Go to the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^] and create the connection with BlueXP.
+| 2 | BlueXP admin | Go to the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^] and create the connection with BlueXP.
 
-To complete this step, you need to obtain the following from your AD admin: 
+To complete this step, you need to obtain the following from your IdP admin: 
 
 * Client ID
 * Client secret value
@@ -135,7 +135,7 @@ After you create the connection using this information, the Federation Setup pag
 
 NOTE: Take note of the secret key expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
 
-| 3 | AD admin | Complete the configuration in Microsoft Entra ID using the parameters shown on the Federation Setup page after finishing step 2.
+| 3 | IdP admin | Complete the configuration in Microsoft Entra ID using the parameters shown on the Federation Setup page after finishing step 2.
 
 | 4 | BlueXP admin | Test and enable the connection from the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^]
 
@@ -143,9 +143,9 @@ Note that the page refreshes between testing the connection and enabling the con
 
 |===
 
-=== ADFS
+=== AD FS
 
-At a high-level, setting up a federated connection between BlueXP and ADFS includes the following steps:
+Setting up a federated connection between BlueXP and AD FS includes the following steps:
 
 [cols="10,15,75",width=100%,options="header"]
 |===
@@ -154,29 +154,29 @@ At a high-level, setting up a federated connection between BlueXP and ADFS inclu
 | Completed by
 | Description
 
-| 1 | AD admin a| Configure the ADFS server to enable identity federation with BlueXP.
+| 1 | IdP admin | Configure the AD FS server to enable identity federation with BlueXP.
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs[View instructions for configuring the ADFS server with auth0^]
 
 | 2 | BlueXP admin a| Go to the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^] and create the connection with BlueXP.
 
-To complete this step, you need to obtain the following from your AD admin: the URL for the ADFS server or the federation metadata file.
+To complete this step, you need to obtain the following from your IdP admin: the URL for the AD FS server or the federation metadata file.
 
-After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
+After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your IdP admin to complete the configuration in the next step.
 
-NOTE: Take note of the certificate expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
+NOTE: Keep track of the certificate expiration date. Update the certificate on the Federation Setup page _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
 
-| 3 | AD admin | Complete the configuration on the ADFS server using the parameters shown on the Federation Setup page after finishing step 2.
+| 3 | IdP admin | Complete the configuration on the ADFS server using the parameters shown on the Federation Setup page after finishing step 2.
 
 | 4 | BlueXP admin | Test and enable the connection from the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^]
 
-Note that the page refreshes between testing the connection and enabling the connection.
+The page refreshes between testing and enabling the connection.
 
 |===
 
 === PingFederate
 
-At a high-level, setting up a federated connection between BlueXP and a PingFederate server includes the following steps:
+Setting up a federated connection between BlueXP and a PingFederate server includes the following steps:
 
 [cols="10,15,75",width=100%,options="header"]
 |===
@@ -185,13 +185,13 @@ At a high-level, setting up a federated connection between BlueXP and a PingFede
 | Completed by
 | Description
 
-| 1 | AD admin a| Configure your PingFederate server to enable identity federation with BlueXP.
+| 1 | IdP admin | Configure your PingFederate server to enable identity federation with BlueXP.
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate[View instructions for creating a connection^]
 
 TIP: Do _not_ complete the steps that describe how to create a connection in auth0. You'll create that connection in the next step.
 
-| 2 | BlueXP admin a| Go to the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^] and create the connection with BlueXP.
+| 2 | BlueXP admin | Go to the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^] and create the connection with BlueXP.
 
 To complete this step, you need to obtain the following from your AD admin: 
 
@@ -200,13 +200,13 @@ To complete this step, you need to obtain the following from your AD admin:
 
 After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
 
-NOTE: Take note of the certificate expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
+NOTE:  Keep track of the certificate expiration date. Update the certificate on the Federation Setup page _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your IdP team to get alerted on time.
 
-| 3 | AD admin | Complete the configuration on the PingFederate server using the parameters shown on the Federation Setup page after finishing step 2.
+| 3 | IdP admin | Complete the configuration on the PingFederate server using the parameters shown on the Federation Setup page after finishing step 2.
 
 | 4 | BlueXP admin | Test and enable the connection from the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^]
 
-Note that the page refreshes between testing the connection and enabling the connection.
+The page refreshes between testing the connection and enabling the connection.
 
 |===
 
@@ -216,4 +216,4 @@ After the BlueXP admin enables a connection, the admin can update the connection
 
 For example, you might need to update the connection by uploading a new certificate.
 
-The BlueXP admin who created the connection is the only authorized user who can update the connection. If you'd like to add additional admins, contact NetApp Support.
+Only the BlueXP admin who created the connection can update it.If you'd like to add additional admins, contact NetApp Support.
