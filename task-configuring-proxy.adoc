@@ -15,9 +15,9 @@ summary: If your corporate policies require you to use a proxy server for all co
 [.lead]
 If your corporate policies require you to use a proxy server for all communication to the internet, then you need to configure your Connectors to use that proxy server. If you didn't configure a Connector to use a proxy server during installation, then you can configure the Connector to use that proxy server at any time.
 
-Configuring the Connector to use a proxy server enables outbound internet access when a public IP address or NAT gateway is unavailable. The proxy server provides outbound connectivity only for the Connector, not for Cloud Volumes ONTAP systems.
+Using a proxy server with the Connector enables outbound internet access when no public IP or NAT gateway is available. The proxy server provides outbound connectivity only for the Connector, not for Cloud Volumes ONTAP systems.
 
-If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. The only requirement is to ensure that the Connector's security group allows inbound connections over port 3128. Open this port after deploying the Connector.
+If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. You must ensure that the Connector's security group allows inbound connections over port 3128. Open this port after you deploy the Connector.
 
 == Supported configurations
 
@@ -29,13 +29,13 @@ If Cloud Volumes ONTAP systems don't have an outbound internet connection to sen
 
 When you configure a Connector to use a proxy server, that Connector and the Cloud Volumes ONTAP systems that it manages (including any HA mediators), all use the proxy server.
 
-Note that this operation restarts the Connector. Ensure that the Connector isn't performing any operations before you proceed.
+This operation restarts the Connector. Ensure that the Connector isn't performing any operations before you proceed.
 
 .Steps
 
 . Navigate to the *Edit BlueXP Connector* page.
 +
-How you navigate depends on whether you're using BlueXP in standard mode (accessing the BlueXP interface from the SaaS website) or using BlueXP in restricted mode or private mode (accessing the BlueXP interface locally from the Connector host).
+Navigation depends on your BlueXP mode. In standard mode, access the interface from the SaaS website. In restricted or private mode, access it locally from the Connector host.
 +
 [role="tabbed-block"]
 ====
@@ -86,9 +86,9 @@ For example: netapp%92proxy
 
 == Enable direct API traffic
 
-If you configured a Connector to use a proxy server, you can enable direct API traffic on the Connector in order to send API calls directly to cloud provider services without going through the proxy. This option is supported with Connectors that are running in AWS, in Azure, or in Google Cloud.
+If you configured a Connector to use a proxy server, you can enable direct API traffic on the Connector in order to send API calls directly to cloud provider services without going through the proxy. Connectors running in AWS, Azure, or Google Cloud support this option.
 
-If you disabled the use of Azure Private Links with Cloud Volumes ONTAP and are using service endpoints instead, then you must enable direct API traffic. Otherwise, the traffic won't be routed properly.
+If you disable Azure Private Links with Cloud Volumes ONTAP and use service endpoints, enable direct API traffic. Otherwise, the traffic won't be routed properly.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html[Learn more about using an Azure Private Link or service endpoints with Cloud Volumes ONTAP^]
 
@@ -96,7 +96,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 
 . Navigate to the *Edit BlueXP Connector* page:
 +
-How you navigate depends on whether you're using BlueXP in standard mode (accessing the BlueXP interface from the SaaS website) or using BlueXP in restricted mode or private mode (accessing the BlueXP interface locally from the Connector host).
+Navigation depends on your BlueXP mode. In standard mode, access the interface from the SaaS website. In restricted or private mode, access it locally from the Connector host.
 +
 [role="tabbed-block"]
 ====

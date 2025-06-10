@@ -17,7 +17,7 @@ As we add and remove support for the Connector on specific Linux operating syste
 
 == Supported operating systems
 
-The BlueXP Connector is supported with the following Linux operating systems.
+NetApp supports the BlueXP Connector with the following Linux operating systems.
 
 // start tabbed area
 
@@ -78,13 +78,13 @@ Limitations::
 BlueXP classification is supported if you install the Connector on a RHEL 8 or 9 host that resides on-premises. It's not supported if the RHEL 8 or 9 host resides in AWS, Azure, or Google Cloud.
 
 Container orchestration tool::
-Podman is required as the container orchestration tool when you install the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
+You must use the Podman tool as the container orchestration tool when installing the Connector on a RHEL 8 or 9 host. Docker Engine is not supported with RHEL 8 and 9.
 
 Deployment mode::
 RHEL 8 and 9 are supported when using BlueXP in standard mode, restricted mode, and private mode.
 
 Supported Connector versions::
-RHEL 8 and 9 are supported starting with the following versions of the Connector:
+NetApp supports RHEL 8 and 9 beginning with the following versions of the Connector:
 +
 * 3.9.40 when using BlueXP in standard mode or restricted mode
 * 3.9.42 when using BlueXP in private mode
@@ -103,14 +103,14 @@ https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-e
 
 === Existing Connectors on RHEL 7 or CentOS 7
 
-If you have an existing Connector running on RHEL 7 or CentOS 7, we don't support upgrading or converting the operating system to RHEL 8 or 9. To start running a Connector on a RHEL 8 or 9 host instead, you need to do the following:
+If you have an existing Connector running on RHEL 7 or CentOS 7, we don't support upgrading or converting the operating system to RHEL 8 or 9. You need to create a new Connector on a supported operating system.
 
 . Set up a RHEL 8 or 9 host.
 . Install Podman.
 . Perform a _new_ Connector installation.
 . Configure the Connector to discover the working environments that the old Connector was managing.
 
-== Related informations
+== Related information
 
 === How to get started with RHEL 8 and 9
 
