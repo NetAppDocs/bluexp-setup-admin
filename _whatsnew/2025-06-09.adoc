@@ -2,7 +2,12 @@
 
 This release of the BlueXP Connector includes security improvements and bug fixes. 
 
-At this time, the 3.9.53 release is available for standard mode and restricted mode.
+The 3.9.53 release is available for standard mode and restricted mode.
+
+=== Disk space usage alerts
+The Notifications Center now includes alerts for disk space usage on the Connector. 
+
+
 
 
 
