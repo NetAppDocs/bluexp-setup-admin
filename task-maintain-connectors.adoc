@@ -31,6 +31,7 @@ include::_include/os-reqs.adoc[tag=cpu-ram]
 
 link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
 
+[[monitor-disk-space]]
 == Monitor disk space 
 
 BlueXP notifies you when the Connector VM's disk space is low. Monitor these notifications in the Notifications Center or configure it to send email alerts. Resolving disk space issues is your responsibility. 
