@@ -18,11 +18,10 @@ You can manage your NetApp Keystone subscription from BlueXP.
 
 ==== Multi-factor authentication (MFA)
 
-Unfederated users can now enable multi-factor authentication (MFA) for their BlueXP accounts, enhancing account security. BlueXP administrators can manage MFA settings for their users, resetting or disabling MFA for individual users as needed.
-
+Unfederated users can now enable multi-factor authentication (MFA) for their BlueXP accounts, enhancing account security. BlueXP administrators can manage MFA settings for their users, resetting or disabling MFA for individual users as needed. This is supported in standard mode only.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa[Learn about setting up multi-factor authentication for yourself.^]
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa[Learn about managing multi-factor authentication for users.^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa[Learn about administering multi-factor authentication for users.^]
 
 
 === Workloads
