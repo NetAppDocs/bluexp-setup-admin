@@ -23,7 +23,7 @@ If Cloud Volumes ONTAP systems don't have an outbound internet connection to sen
 
 * BlueXP supports HTTP and HTTPS. 
 * The proxy server can be in the cloud or in your network. 
-* BlueXP does not support transparent proxy servers.
+
 
 == Enable a proxy on a Connector
 
@@ -34,8 +34,7 @@ This operation restarts the Connector. Ensure that the Connector isn't performin
 .Steps
 
 . Navigate to the *Edit BlueXP Connector* page.
-+
-Navigation depends on your BlueXP mode. In standard mode, access the interface from the SaaS website. In restricted or private mode, access it locally from the Connector host.
+
 +
 [role="tabbed-block"]
 ====
@@ -69,11 +68,14 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 
 . Select *HTTP Proxy Configuration*.
 
-. Set up the proxy:
+. Choose a configuration type. You can choose between an explicit proxy or a transparent proxy.
+
+. If you selected an explicit proxy, complete the following steps:
 
 .. Select *Enable Proxy*.
 .. Specify the server using the syntax http://_address:port_ or https://_address:port_
 .. Specify a user name and password if basic authentication is required for the server.
+
 +
 Note the following:
 +
@@ -82,7 +84,15 @@ Note the following:
 +
 For example: netapp%92proxy
 * BlueXP doesn't support passwords that include the @ character.
+
+. If you selected transparent proxy, you'll need to finish the configuration after you save the Connector settings. You'll use a command line interface to upload the proxy certificate. You must configure the Connector host to use the proxy server for outbound traffic. For more information, see https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configuring-proxy-connector-host.html[Learn how.^].
+
 .. Select *Save*.
+
+=== Manage transparent proxy certificates
+If you configured a Connector to use a transparent proxy, you must upload the proxy certificate. You can upload the certificate by using a command line interface.
+
+.Steps
 
 == Enable direct API traffic
 
