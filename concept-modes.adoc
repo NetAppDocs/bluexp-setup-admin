@@ -82,6 +82,11 @@ The following table provides a comparison of these modes.
 | Through SaaS using auth0 or identity federation
 | Local user authentication
 
+| Multi-factor authentication
+| Available for local users
+| Not available
+| Not available
+
 | Storage and data services
 | All are supported
 | Many are supported
