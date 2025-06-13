@@ -94,8 +94,8 @@ If your corporate policies require you to use a transparent proxy server for all
 You can configure a Connector to use a transparent proxy server at any time, even if you didn't configure the Connector to use a proxy server during installation. 
 
 To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
- 
-This operation restarts the Connector. Ensure that the Connector isn't performing any operations before you proceed.
+
+Configuring a proxy server restarts the Connector. Ensure that the Connector isn't performing any operations before you proceed.
 
 
 .Steps
