@@ -21,7 +21,8 @@ If Cloud Volumes ONTAP systems don't have an outbound internet connection to sen
 
 == Supported configurations
 
-* BlueXP supports HTTP and HTTPS. 
+* Explicit and transparent proxies are supported. 
+* HTTP and HTTPS. 
 * The proxy server can be in the cloud or in your network. 
 
 
@@ -89,9 +90,7 @@ For example: netapp%92proxy
 
 [[transparent-proxy]]
 === Enable a transparent proxy on a Connector
-If your corporate policies require you to use a transparent proxy server for all communication to the internet, then you can configure a Connector to use that proxy server. A transparent proxy is a proxy server that intercepts network traffic without requiring any configuration on the client side.
-
-You can configure a Connector to use a transparent proxy server at any time, even if you didn't configure the Connector to use a proxy server during installation. 
+Only BlueXP Cloud Volumes ONTAP (CVO) supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector either for the services or for Cloud Volumes ONTAP. 
 
 To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
 
@@ -134,7 +133,17 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 ====
 // end tabbed area
 
-. 
+. Select *HTTP Proxy Configuration*.
+
+. Select *Explicit proxy* in the Configuration type field.
+
+. Select *Save*.
+
+. Open a command-line interface on the Connector host.
+
+. Navigate to the Connector maintenance tool directory: /opt/application/netapp/service-manager-2/connector-maint-console 
+
+
 
 == Enable direct API traffic
 
