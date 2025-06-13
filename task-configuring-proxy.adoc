@@ -90,7 +90,12 @@ For example: netapp%92proxy
 
 [[transparent-proxy]]
 === Enable a transparent proxy on a Connector
-Only BlueXP Cloud Volumes ONTAP (CVO) supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector either for the services or for Cloud Volumes ONTAP. 
+Only BlueXP Cloud Volumes ONTAP (CVO) supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
+
+Before enabling a transparent proxy, ensure that the following requirements are met:
+* The Connector is installed on the same network as the transparent proxy server.  
+* TLS inspection enabled on the proxy server 
+* You have a certificate in PEM format that matches the one used on the transparent proxy server.
 
 To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
 
@@ -141,8 +146,14 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 
 . Open a command-line interface on the Connector host.
 
-. Navigate to the Connector maintenance tool directory: /opt/application/netapp/service-manager-2/connector-maint-console 
+. Navigate to the Connector maintenance tool directory: `/opt/application/netapp/service-manager-2/connector-maint-console` 
 
+. Run the following command to enable the transparent proxy:
+
++
+This command requires the certificate in PEM format that matches the one used on the transparent proxy server.
+[source,CLI]
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem 
 
 
 == Enable direct API traffic
