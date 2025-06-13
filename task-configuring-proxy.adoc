@@ -25,7 +25,7 @@ If Cloud Volumes ONTAP systems don't have an outbound internet connection to sen
 * The proxy server can be in the cloud or in your network. 
 
 
-== Enable a proxy on a Connector
+== Enable an explicit proxy on a Connector
 
 When you configure a Connector to use a proxy server, that Connector and the Cloud Volumes ONTAP systems that it manages (including any HA mediators), all use the proxy server.
 
@@ -68,13 +68,11 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 
 . Select *HTTP Proxy Configuration*.
 
-. Choose a configuration type. You can choose between an explicit proxy or a transparent proxy.
+. Select *Explicit proxy* in the Configuration type field.
 
-. If you selected an explicit proxy, complete the following steps:
-
-.. Select *Enable Proxy*.
-.. Specify the server using the syntax http://_address:port_ or https://_address:port_
-.. Specify a user name and password if basic authentication is required for the server.
+. Select *Enable Proxy*.
+. Specify the server using the syntax http://_address:port_ or https://_address:port_
+. Specify a user name and password if basic authentication is required for the server.
 
 +
 Note the following:
@@ -85,14 +83,58 @@ Note the following:
 For example: netapp%92proxy
 * BlueXP doesn't support passwords that include the @ character.
 
-. If you selected transparent proxy, you'll need to finish the configuration after you save the Connector settings. You'll use a command line interface to upload the proxy certificate. You must configure the Connector host to use the proxy server for outbound traffic. For more information, see https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configuring-proxy-connector-host.html[Learn how.^].
 
-.. Select *Save*.
 
-=== Manage transparent proxy certificates
-If you configured a Connector to use a transparent proxy, you must upload the proxy certificate. You can upload the certificate by using a command line interface.
+. Select *Save*.
+
+[[transparent-proxy]]
+=== Enable a transparent proxy on a Connector
+If your corporate policies require you to use a transparent proxy server for all communication to the internet, then you can configure a Connector to use that proxy server. A transparent proxy is a proxy server that intercepts network traffic without requiring any configuration on the client side.
+
+You can configure a Connector to use a transparent proxy server at any time, even if you didn't configure the Connector to use a proxy server during installation. 
+
+To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
+ 
+This operation restarts the Connector. Ensure that the Connector isn't performing any operations before you proceed.
+
 
 .Steps
+
+. Navigate to the *Edit BlueXP Connector* page:
++
+Navigation depends on your BlueXP mode. In standard mode, access the interface from the SaaS website. In restricted or private mode, access it locally from the Connector host.
++
+[role="tabbed-block"]
+====
+
+.Standard mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Manage Connectors*.
++
+image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
+
+.. Select the action menu for a Connector and select *Edit Connector*.
++
+image:screenshot-edit-connector-standard.png[A screenshot that shows the Edit Connectors option that is available from the action menu.]
+--
+
+.Restricted or private mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Edit Connector*.
++
+image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector option that is available after you expand the Connector menu.]
+--
+
+====
+// end tabbed area
+
+. 
 
 == Enable direct API traffic
 
