@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+permalink: reference-connector-maint-console.html
+keywords: transparent proxy, connector certificate, maintenance console, proxy configuration, connector proxy
+summary: You can use the Maintenance Console to configure the Connector to use a transparent proxy server. 
+---
+
+= Connector maintenance console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can use the Maintenance Console to configure the Connector to use a transparent proxy server. ou can access the Maintenance Console from the Connector host.
+
+== Access the Maintenance Console
+You can access the Maintenance Console from the Connector host. 
+
+== Transparent proxy commands
+The Maintenance Console provides commands to configure the Connector to use a transparent proxy server. 
+
+=== Add a transparent proxy server
+To add a transparent proxy server, use the following command:
+[source,CLI]
+
+=== Update the certificate for a transparent proxy server
+To update the certificate for a transparent proxy server, use the following command, 
+[source,CLI]
+
+=== Remove a transparent proxy server
+To remove transparent proxy server, use the following command:
+[source,CLI]
+----
+./connector-maint-console proxy remove 
+----
+
+[cols="10,10,80",width=100%,options="header"]
+|===
+
+| Protocol
+| Port
+| Purpose
+
+| SSH | 22 | Provides SSH access to the Connector host
+| HTTP | 80 a| 
+* Provides HTTP access from client web browsers to the local user interface
+* Used during the Cloud Volumes ONTAP upgrade process
+| HTTPS |443 | Provides HTTPS access from client web browsers to the local user interface
+| TCP | 3128 | Provides Cloud Volumes ONTAP with internet access to send AutoSupport messages to NetApp Support. You must manually open this port after deployment. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html[Learn how the Connector is used as a proxy for AutoSupport messages^]
+
+|===
+
+== Outbound rules
+
+The predefined firewall rules for the Connector opens all outbound traffic. If that is acceptable, follow the basic outbound rules. If you need more rigid rules, use the advanced outbound rules.
+
+=== Basic outbound rules
+
+The predefined firewall rules for the Connector includes the following outbound rules.
+
+[cols=3*,options="header",width=70%,cols="20,20,60"]
+|===
+
+| Protocol
+| Port
+| Purpose
+
+| All TCP | All | All outbound traffic
+| All UDP | All |	All outbound traffic
+
+|===
+
+=== Advanced outbound rules
+
+If you need rigid rules for outbound traffic, you can use the following information to open only those ports that are required for outbound communication by the Connector.
+
+NOTE: The source IP address is the Connector host.
+
+[cols=5*,options="header,autowidth"]
+|===
+
+| Service
+| Protocol
+| Port
+| Destination
+| Purpose
+
+| API calls and AutoSupport | HTTPS | 443 | Outbound internet and ONTAP cluster management LIF | API calls to Google Cloud, to ONTAP, to BlueXP classification, and sending AutoSupport messages to NetApp
+| API calls | TCP | 8080 | BlueXP classification | Probe to BlueXP classification instance during deployment
+| DNS | UDP	| 53 | DNS | Used for DNS resolve by BlueXP
+
+|===

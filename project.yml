@@ -206,6 +206,10 @@ sidebar:
           url: /task-monitor-cm-operations.html
     - title: Reference
       entries:
+        - title: Connector tool reference
+          entries:
+            - title: Connector CLI
+              url: /reference-connector-cli.html
         - title: Permissions
           entries:
             - title: Permissions summary
