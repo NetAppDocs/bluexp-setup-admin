@@ -152,9 +152,11 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 
 +
 Ensure that the certificate file is in the same directory as the command or specify the full path to the certificate file. The certificate file must be in PEM format.
-[source,CLI]
-./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem 
 
+[source,CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem 
+----
 
 == Enable direct API traffic
 
