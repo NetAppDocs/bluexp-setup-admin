@@ -21,7 +21,7 @@ If Cloud Volumes ONTAP systems don't have an outbound internet connection to sen
 
 == Supported configurations
 
-* Explicit and transparent proxies are supported. 
+* Transparent proxy servers are supported only with Cloud Volumes ONTAP systems. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP.
 * HTTP and HTTPS. 
 * The proxy server can be in the cloud or in your network. 
 
@@ -89,7 +89,7 @@ For example: netapp%92proxy
 . Select *Save*.
 
 [[transparent-proxy]]
-=== Enable a transparent proxy on a Connector
+== Enable a transparent proxy on a Connector (Cloud Volumes ONTAP only)
 Only BlueXP Cloud Volumes ONTAP (CVO) supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
 
 Before enabling a transparent proxy, ensure that the following requirements are met:
