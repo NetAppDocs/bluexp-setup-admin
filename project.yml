@@ -208,8 +208,8 @@ sidebar:
       entries:
         - title: Connector tool reference
           entries:
-            - title: Connector CLI
-              url: /reference-connector-cli.html
+            - title: Connector Maintenance Console
+              url: /reference-connector-maint-console.html
         - title: Permissions
           entries:
             - title: Permissions summary
