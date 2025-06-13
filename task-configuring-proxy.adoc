@@ -148,7 +148,7 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 
 . Navigate to the Connector maintenance tool directory: `/opt/application/netapp/service-manager-2/connector-maint-console` 
 
-. Run the following command to enable the transparent proxy:
+. Run the following command to enable the transparent proxy, where `/home/ubuntu/<certificate-file>.pem` is the directory and name certificate file that you have for the proxy server:
 
 +
 Ensure that the certificate file is in the same directory as the command or specify the full path to the certificate file. The certificate file must be in PEM format.
