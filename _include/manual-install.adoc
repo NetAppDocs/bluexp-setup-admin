@@ -76,7 +76,7 @@ For example:
 \http://bxpproxyuser:netapp1\!@address:3128
 
 +
---cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.
+--cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required for HTTPS proxy servers, intercepting proxy servers, and transparent proxy servers.
 
 . If you used Podman, you'll need to adjust the aardvark-dns port.
 .. SSH to the BlueXP Connector virtual machine.
