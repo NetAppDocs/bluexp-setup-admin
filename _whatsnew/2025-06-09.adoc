@@ -11,12 +11,12 @@ The Notifications Center now includes alerts for disk space usage on the Connect
 
 
 
-////
+
 === Keystone subscription management available in BlueXP
 
 You can manage your NetApp Keystone subscription from BlueXP.
 
-////
+link:https://docs.netapp.com/us-en/keystone-staas/index.html[Learn about Keystone subscription management in BlueXP.^]
 
 
 === BlueXP Identity and Access Management (IAM)
