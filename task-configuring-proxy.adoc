@@ -93,7 +93,7 @@ For example: netapp%92proxy
 
 [[transparent-proxy]]
 == Enable a transparent proxy on a Connector (Cloud Volumes ONTAP only)
-Only BlueXP Cloud Volumes ONTAP (CVO) supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
+Only BlueXP Cloud Volumes ONTAP supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
 
 Before enabling a transparent proxy, ensure that the following requirements are met:
 
