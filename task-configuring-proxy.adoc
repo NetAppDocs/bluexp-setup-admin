@@ -15,15 +15,18 @@ summary: If your corporate policies require you to use a proxy server for all co
 [.lead]
 If your corporate policies require you to use a proxy server for all communication to the internet, then you need to configure your Connectors to use that proxy server. If you didn't configure a Connector to use a proxy server during installation, then you can configure the Connector to use that proxy server at any time.
 
-Using a proxy server with the Connector enables outbound internet access when no public IP or NAT gateway is available. The proxy server provides outbound connectivity only for the Connector, not for Cloud Volumes ONTAP systems.
+A proxy server with the Connector enables outbound internet access when no public IP or NAT gateway is available. The proxy server provides outbound connectivity only for the Connector, not for Cloud Volumes ONTAP systems.
 
-If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. You must ensure that the Connector's security group allows inbound connections over port 3128. Open this port after you deploy the Connector.
+If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. You must ensure that the Connector's security group allows inbound connections over port 3128. Open this port once the Connector is deployed.
+
+If the Connector itself doesn't have an outbound internet connection, Cloud Volumes ONTAP systems cannot use the configured proxy server to send AutoSupport messages. 
 
 == Supported configurations
 
-* Transparent proxy servers are supported only with Cloud Volumes ONTAP systems. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP.
+* Transparent proxy servers are supported for Connectors that serve Cloud Volumes ONTAP systems. If you use BlueXP services with Cloud Volumes ONTAP, create a dedicated Connector for Cloud Volumes ONTAP where you can use a transparent proxy server.
+* Explicit proxy servers are supported with all Connectors, including those that manage Cloud Volumes ONTAP systems and those that manage BlueXP services.
 * HTTP and HTTPS. 
-* The proxy server can be in the cloud or in your network. 
+* The proxy server can be in the cloud or your network. 
 
 
 == Enable an explicit proxy on a Connector
@@ -94,12 +97,12 @@ Only BlueXP Cloud Volumes ONTAP (CVO) supports using a transparent proxy on the 
 
 Before enabling a transparent proxy, ensure that the following requirements are met:
 * The Connector is installed on the same network as the transparent proxy server.  
-* TLS inspection enabled on the proxy server 
+* TLS inspection is enabled on the proxy server.
 * You have a certificate in PEM format that matches the one used on the transparent proxy server.
 
 To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
 
-Configuring a proxy server restarts the Connector. Ensure that the Connector isn't performing any operations before you proceed.
+When you configure a proxy server, the Connector restarts. Ensure the Connector is not performing operations before proceeding.
 
 
 .Steps
@@ -158,6 +161,7 @@ Ensure that the certificate file is in the same directory as the command or spec
 ./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem 
 ----
 
+You can update an existing transparent proxy server by using the `proxy update` command or remove the transparent proxy server by using the `proxy remove` command. For more information, review link:reference-connector-maint.console.html[Connector maintenance console].
 == Enable direct API traffic
 
 If you configured a Connector to use a proxy server, you can enable direct API traffic on the Connector in order to send API calls directly to cloud provider services without going through the proxy. Connectors running in AWS, Azure, or Google Cloud support this option.
