@@ -171,7 +171,7 @@ Ensure that the certificate file is in the same directory as the command or spec
 
 === Modify the transparent proxy for the Connector
 
-You can update a Connector's existing transparent proxy server by using the `proxy update` command or remove the transparent proxy server by using the `proxy remove` command. For more information, review the documentation for link:reference-connector-maint.console.html[Connector maintenance console].
+You can update a Connector's existing transparent proxy server by using the `proxy update` command or remove the transparent proxy server by using the `proxy remove` command. For more information, review the documentation for link:reference-connector-maint-console.html[Connector maintenance console].
 
 == Enable direct API traffic
 
