@@ -96,6 +96,7 @@ For example: netapp%92proxy
 Only BlueXP Cloud Volumes ONTAP (CVO) supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
 
 Before enabling a transparent proxy, ensure that the following requirements are met:
+
 * The Connector is installed on the same network as the transparent proxy server.  
 * TLS inspection is enabled on the proxy server.
 * You have a certificate in PEM format that matches the one used on the transparent proxy server.
@@ -143,7 +144,7 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 
 . Select *HTTP Proxy Configuration*.
 
-. Select *Explicit proxy* in the Configuration type field.
+. Select *Transparent proxy* in the Configuration type field.
 
 . Select *Save*.
 
@@ -156,12 +157,16 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 +
 Ensure that the certificate file is in the same directory as the command or specify the full path to the certificate file. The certificate file must be in PEM format.
 
++
 [source,CLI]
 ----
 ./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem 
 ----
 
-You can update an existing transparent proxy server by using the `proxy update` command or remove the transparent proxy server by using the `proxy remove` command. For more information, review link:reference-connector-maint.console.html[Connector maintenance console].
+=== Modify the transparent proxy for the Connector
+
+You can update a Connector's existing transparent proxy server by using the `proxy update` command or remove the transparent proxy server by using the `proxy remove` command. For more information, review the documentation for link:reference-connector-maint.console.html[Connector maintenance console].
+
 == Enable direct API traffic
 
 If you configured a Connector to use a proxy server, you can enable direct API traffic on the Connector in order to send API calls directly to cloud provider services without going through the proxy. Connectors running in AWS, Azure, or Google Cloud support this option.
