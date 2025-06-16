@@ -100,6 +100,7 @@ Before enabling a transparent proxy, ensure that the following requirements are 
 * The Connector is installed on the same network as the transparent proxy server.  
 * TLS inspection is enabled on the proxy server.
 * You have a certificate in PEM format that matches the one used on the transparent proxy server.
+* You do not use the Connector for any NetApp data services, other than Cloud Volumes ONTAP. 
 
 To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
 
