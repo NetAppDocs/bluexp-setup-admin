@@ -7,6 +7,9 @@ The 3.9.53 release is available for standard mode and restricted mode.
 === Disk space usage alerts
 The Notifications Center now includes alerts for disk space usage on the Connector. link:task-maintain-connectors.html#monitor-disk-space[Learn more.^]
 
+=== BlueXP Timeline
+The Timeline now includes login events for users. This enables you to see when users logged in to BlueXP, which can help with auditing and security monitoring. Usernames are included when you download audit logs from the Timeline.
+
 
 
 
