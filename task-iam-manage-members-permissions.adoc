@@ -15,7 +15,7 @@ summary: Manage your organization's members to provide permissions across differ
 [.lead]
 BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
-TIP: To avoid losing access to your BlueXP organization, ensure two members have the Organization admin role.
+TIP: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
 
 
 To manage users and their permissions, you must be assigned one of the following roles: 
@@ -35,7 +35,7 @@ Users with this role can manage members only of a designated folder or project
 
 You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention through the BlueXP API. A user account is typically used by a person to log in to BlueXP and manage resources.
 
-You can add a service account directly from BlueXP. Users must sign up for a BlueXP account before being added to an organization or assigned a role.
+Users must first sign up for BlueXP account before you can add them to an organization or assign a role. However, you can create service accounts directly from BlueXP.
 
 To manage users and their permissions, you must have the *Organization admin* role or the *Folder or project admin* role. Remember that users with the *Folder or project admin* role can only manage members for the folder or projects of which they have admin permissions. 
 
@@ -135,7 +135,7 @@ lueXP shows the client secret only once and does not store it. Copy or download 
 
 // end tabbed area 
 
-=== View organization members
+== View organization members
 
 You can view a list of all members in your BlueXP organization. To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-manage-roles.html[Learn how to use roles to control access to BlueXP resources.^]
 
@@ -153,7 +153,7 @@ The *Members* table displays the members of your organization.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
-=== Remove a member from your organization
+== Remove a member from your organization
 
 You might need to remove a member from your organization--for example, if they leave your company.
 
@@ -165,7 +165,7 @@ Removing a member revokes their permissions but retains their BlueXP and NetApp 
 
 . Confirm that you want to remove the member from your organization.
 
-=== Recreate the credentials for a service account
+== Recreate the credentials for a service account
 
 Create new credentials if lost or when updating security credentials is needed.
 
@@ -188,7 +188,7 @@ Recreating the credentials deletes the existing credentials for the service acco
 BlueXP displays the client secret only once and does not store it anywhere. Copy or download the secret and store it safely.
 
 [[manage-mfa]]
-=== Manage a user's multi-factor authentication (MFA)
+== Manage a user's multi-factor authentication (MFA)
 If a user has lost access to their MFA device, you can either remove or disable their MFA configuration. 
 
 If you remove their MFA configuration, the user needs to set up MFA again when they log in to BlueXP. If the user has only lost access to their MFA device temporarily, they can use the recovery code that they saved when they set up MFA to log in to BlueXP. 

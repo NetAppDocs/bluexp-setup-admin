@@ -5,7 +5,7 @@ keywords: subscribe, subscription, marketplace subscription, paygo, contract, an
 summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate or through an annual contract. If you purchased a license from NetApp, you also need to subscribe to the marketplace offering. Your license is always charged first, but you'll be charged at the hourly rate if you exceed your licensed capacity or if the license's term expires.
 ---
 
-= Subscribe to BlueXP data services (standard mode)
+= Subscribe to NetApp Intelligent Services (standard mode)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,7 +15,7 @@ summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for B
 [.lead]
 include::_include/subscribe-intro.adoc[]
 
-A marketplace subscription enables charging for the following BlueXP data services:
+A marketplace subscription enables charging for the following NetApp data services:
 
 * Backup and recovery
 * Cloud Volumes ONTAP
@@ -23,9 +23,11 @@ A marketplace subscription enables charging for the following BlueXP data servic
 * Ransomware protection
 * Disaster recovery
 
+Classification is enabled through your subscription, but there is no charge for using classification.
+
 .Before you begin
 
-Subscribing to BlueXP data services involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
+Subscribing to data services involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
 
 // start tabbed area
 
@@ -53,7 +55,7 @@ include::_include/subscribe-google.adoc[]
 .Related information
 
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html[Manage BYOL capacity-based licenses for Cloud Volumes ONTAP^]
-* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BYOL licenses for BlueXP data services^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and subscriptions for BlueXP]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage Azure credentials and subscriptions for BlueXP]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html[Manage Google Cloud credentials and subscriptions for BlueXP]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BYOL licenses for data services^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and subscriptions]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage Azure credentials and subscriptions]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html[Manage Google Cloud credentials and subscriptions]

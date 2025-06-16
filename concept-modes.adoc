@@ -13,28 +13,28 @@ summary: BlueXP offers multiple deployment modes that enable you to use BlueXP i
 :imagesdir: ./media/
 
 [.lead]
-BlueXP offers multiple _deployment modes_ that enable you to use BlueXP in a way that meets your business and security requirements. _Standard mode_ leverages the BlueXP software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
+BlueXP offers multiple _deployment modes_ that enable you to meet your business and security requirements. _Standard mode_ leverages a software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
 
-While BlueXP inhibits the flow of traffic, communication, and data when using restricted mode or private mode, it's your responsibility to ensure that your environment (on-premises and in the cloud) is in compliance with the required regulations.
+While BlueXP inhibits the flow of traffic, communication, and data when using restricted mode or private mode, it's your responsibility to ensure that your environment (on-premises and in the cloud) is in compliance with the required regulations for your business.
 
 == Overview
 
-BlueXP offers three deployment modes. Each mode differs in terms of outbound connectivity requirements, deployment location, installation process, authentication method, available data and storage services, and charging methods.
+Each deployment mode differs in outbound connectivity, location, installation, authentication, data services, and charging methods.
 
 Standard mode::
-BlueXP is accessible to users as a cloud service from the web-based console. Depending on the BlueXP services that you're planning to use, a BlueXP admin creates one or more Connectors to manage data within your hybrid cloud environment. 
+You use a SaaS service from the web-based console. Depending on the data services and features that you plan to use, a BlueXP admin creates one or more Connectors to manage data within your hybrid cloud environment. 
 +
 This mode uses encrypted data transmission over the public internet.
 
 Restricted mode::
-A BlueXP Connector is installed in the cloud (in a government region, sovereign cloud region, or commercial region) and has limited outbound connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
+You install a BlueXP Connector in the cloud (in a government, sovereign, or commercial region), and it has limited outbound connectivity to the BlueXP SaaS layer.
 +
 This mode is typically used by state and local governments and regulated companies.
 +
 <<Restricted mode, Learn more about outbound connectivity to the SaaS layer>>.
 
 Private mode::
-A BlueXP Connector is installed on-premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has _no_ connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
+You install a BlueXP Connector on-premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has _no_ connectivity to the BlueXP SaaS layer. Users access the BlueXP console provided by the Connector locally, not the SaaS layer.
 +
 A secure region includes https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], and https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
@@ -82,12 +82,17 @@ The following table provides a comparison of these modes.
 | Through SaaS using auth0 or identity federation
 | Local user authentication
 
+| Multi-factor authentication
+| Available for local users
+| Not available
+| Not available
+
 | Storage and data services
 | All are supported
 | Many are supported
 | Several are supported
 
-| Licensing options
+| Data service licensing options
 | Marketplace subscriptions and BYOL
 | Marketplace subscriptions and BYOL
 | BYOL
@@ -115,10 +120,10 @@ Supported location for the Connector::
 In standard mode, the Connector is supported in the cloud or on your premises.
 
 Connector installation::
-Connector installation is possible from a setup wizard in BlueXP, from the AWS or Azure Marketplace, or using an installer to manually install the Connector on your own Linux host in your data center or in the cloud.
+You can install the Connector using the BlueXP setup wizard, AWS or Azure Marketplace, the Google Cloud SDK, or a manual installer on a Linux host in your data center or cloud.
 
 Connector upgrades::
-Automated upgrades of the Connector software are available from BlueXP with monthly updates.
+BlueXP provides automated upgrades of the Connector software with monthly updates.
 
 User interface access::
 The user interface is accessible from the web-based console that's provided through the SaaS layer.
@@ -150,7 +155,7 @@ image:diagram-restricted-mode.png["A conceptual image that shows the public inte
 BlueXP works as follows in restricted mode:
 
 Outbound communication::
-Outbound connectivity is required from the Connector to the BlueXP SaaS layer to use BlueXP data services, to enable automatic software upgrades of the Connector, to use auth0-based authentication, and to send metadata for charging purposes (storage VM name, allocated capacity, and volume UUID, type, and IOPS). 
+The Connector requires outbound connectivity to the BlueXP SaaS layer for data services, software upgrades, authentication, and metadata transmission.
 +
 The BlueXP SaaS layer does not initiate communication to the Connector. All communication is initiated by the Connector, which can pull or push data from or to the SaaS layer as required.
 +
@@ -163,7 +168,7 @@ Connector installation::
 Connector installation is possible from the AWS or Azure Marketplace or a manual installation on your own Linux host.
 
 Connector upgrades::
-Automated upgrades of the Connector software are available from BlueXP with monthly updates.
+BlueXP provides automated upgrades of the Connector software with monthly updates.
 
 User interface access::
 The user interface is accessible from the Connector virtual machine that's deployed in your cloud region.

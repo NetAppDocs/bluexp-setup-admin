@@ -16,7 +16,7 @@ summary: BlueXP identity and access management provides two administrative roles
 Ransomware roles provide users access to the Ransomware protection service. Users can be assigned either an administrative role, which allows them to take action in Ransomware protection or a viewer role if they just have monitoring responsibilities. The two roles are Ransomware protection admin and Ransomware protection viewer. The main difference between the two roles is the actions they can take in Ransomware protection.
 
 
-The following table indicates that actions that each BlueXP ransomware protection role can perform. 
+The following table shows the actions each BlueXP ransomware protection role can perform.
 
 [cols="2,1,1",options="header",cols="40,20a,20a",width="100%"]
 |===
@@ -26,7 +26,7 @@ The following table indicates that actions that each BlueXP ransomware protectio
 
 | View dashboard and all tabs | Yes | Yes
 | Start free trial | Yes | No 
-| Initiate discovery of workloads | Yes | No
+| Discover workloads | Yes | No
 3+| *On the Protect tab*: 
 | Add, modify, or delete policies | Yes | No
 | Protect workloads | Yes | No

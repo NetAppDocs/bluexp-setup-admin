@@ -1,0 +1,90 @@
+---
+sidebar: sidebar
+permalink: task-user-settings.html
+keywords: user profile, mfa, change password, role, login, mulit-factor, authentication
+summary: You can modify your BlueXP profile including change your password, enable multi-factor authentication (MFA), and see who your BlueXP administrator is.
+---
+
+= Manage your BlueXP user settings
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can access your BlueXP profile which allows you to enable multi-factor authentication (MFA), and contact your BlueXP administrator.
+
+Within BlueXP, each user has a profile that contains information about the user and their settings. You can view and edit your profile settings from the BlueXP console. 
+
+
+== Change your display name
+
+You can change your display name in the BlueXP console. The display name is used to identify you in the BlueXP console and is visible to other users. Your display name is not the same as your username or email address, which cannot be changed.
+
+.Steps
+
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+
+. Select the *Edit* icon next to your name.
+
+. Enter your new display name in the *Name* field.
+
+[[task-user-mfa]]
+== Configure multi-factor authentication
+
+Configure multi-factor authentication (MFA) to enhance account security by requiring a second verification method with your password.
+
+Users using single-sign on with an external identity provider or the NetApp Support Site cannot enable MFA. If either of these are true for you, you won't see the option to enable MFA in your profile settings.
+
+Do not enable MFA if your user account is for BlueXP API access. Multi-factor authentication stops API access when enabled for a user account. Use service accounts for all API access.
+
+.Before you begin
+* You must have already downloaded an authentication app, such as Google Authenticator or Microsoft Authenticator, to your device.
+* You'll need your password to set up MFA. 
+
+NOTE: If you do not have access to your authentication app or lose your recovery code, contact your BlueXP administrator for help.
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select *Configure* next to the *Multi-Factor Authentication* header.
+. Follow the prompts to set up MFA for your account. 
+. When you finish, you'll be prompted to save your recovery code. Choose to either copy the code or download a text file containing the code. Keep this code somewhere safe. You need the recovery code if you lose access to your authentication app.
+
++
+
+After you set up MFA, you are prompted to enter a one-time code from your authentication app each time you log in to BlueXP.
+
+== Regenerate your MFA recovery code
+You can only use recovery codes once. If you use or lose yours, create a new one.
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
+. Select *Regenerate recovery code*.
+. Copy the generated recovery code and save it in a secure location.
+
+== Delete your MFA configuration
+To stop using multi-factor authentication (MFA) for your BlueXP account, delete your MFA configuration. This removes the need to enter a one-time code from your authentication app when you log in.
+
+NOTE: If you are unable to access your authentication app or recovery code, you will need to contact your BlueXP administrator to reset your MFA configuration.
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
+. Select *Delete*.
+
+
+
+== Contact your Organization administrator
+If you need to contact your organization administrator, you can send an email to them directly from BlueXP. The administrator manages user accounts and permissions within your organization.
+
+NOTE: You must have a default email application configured for your browser to use the *Contact admins* feature. 
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Select *Contact admins* to send an email to your organization administrator. 
+. Select the email application to use.
+. Finish the email and select *Send*.
+
+

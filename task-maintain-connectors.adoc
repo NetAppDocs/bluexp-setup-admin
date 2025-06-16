@@ -13,7 +13,7 @@ summary: Maintaining the operating system on the Connector host is your responsi
 :imagesdir: ./media/
 
 [.lead]
-Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
+Maintaining the operating system on the Connector host is your (the customer's) responsibility. For example, you (the customer) should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
 
 TIP: If you have an existing Connector, you should be aware of link:reference-connector-operating-system-changes.html[changes to supported Linux operating systems].
 
@@ -30,6 +30,13 @@ The CPU and RAM requirements are as follows:
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
 link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
+
+[[monitor-disk-space]]
+== Monitor disk space 
+
+BlueXP notifies you when the Connector VM's disk space is low. Monitor these notifications in the Notifications Center or configure it to send email alerts. Resolving disk space issues is your responsibility. link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM[Review the NetApp Knowledge Base article^].
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center[Learn more.^]
 
 == Stopping and starting the Connector VM
 
