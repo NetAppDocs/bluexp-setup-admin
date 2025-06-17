@@ -15,7 +15,7 @@ summary: You can monitor the status of the operations that BlueXP is performing 
 [.lead]
 You can monitor the status of the operations that BlueXP is performing to see if there are any issues that you need to address. You can view the status in the Timeline, the Notification Center, or have notifications sent to your email.
 
-The following table provides a comparison of the Timeline and the Notification Center so you can understand what each has to offer.
+The table compares the Timeline and Notification Center to highlight their features.
 
 [cols=2*,options="header",cols="47,47",width="95%"]
 |===
@@ -24,7 +24,7 @@ The following table provides a comparison of the Timeline and the Notification C
 | Timeline
 
 | Shows high level status for events and actions | Provides details for each event or action for further investigation
-| Shows status for the current login session (the information won't appear in the Notification Center after you log off)  | Retains status for the last month
+| Shows status for the current login session (the information does not appear in the Notification Center after you log off) | Retains status for the last month
 | Shows only actions initiated in the user interface | Shows all actions from the UI or APIs
 | Shows user-initiated actions | Shows all actions, whether user-initiated or system-initiated
 | Filter results by importance | Filter by service, action, user, status, and more
@@ -36,7 +36,7 @@ The following table provides a comparison of the Timeline and the Notification C
 
 The Timeline shows the actions that users completed to manage your organization or account. This includes management actions such as associating users, creating working environments, creating Connectors, and more.
 
-Checking the Timeline can be helpful if you need to identify who performed a specific action, or if you need to identify the status of an action.
+The Timeline helps identify who performed an action or its status.
 
 .Steps
 
@@ -46,15 +46,17 @@ Checking the Timeline can be helpful if you need to identify who performed a spe
 +
 For example, you can use the *Service* filter to show actions related to a specific BlueXP service, or you can use the *User* filter to show actions related to a specific user account.
 
-.Result
+=== Download audit logs from the Timeline
+You can download the audit logs from the Timeline to a CSV file. This enables you to keep a record of the actions that users performed in your organization. The downloaded CSV file contains all available columns from the Timeline, regardless of which ones you are filtering or displaying in the Timeline.
 
-The Timeline updates to show you completed management actions.
+.Steps
+. In the Timeline, select the download icon in the upper right corner of the table.
 
 
 [#notification-center]
 == Monitor activities using the Notification Center
 
-Notifications track the progress of operations that you've initiated in BlueXP so you can verify whether the operation was successful or not. They enable you to view the status for many BlueXP actions that you initiated during your current login session. Not all BlueXP services report information into the Notification Center at this time.
+Notifications track the progress of your BlueXP operations to verify success. They enable you to view the status for many BlueXP actions that you initiated during your current login session. Not all BlueXP services report information into the Notification Center at this time.
 
 You can display the notifications by selecting the notification bell (image:icon_bell.png[notification bell]) in the menu bar. The color of the little bubble in the bell indicates the highest level severity notification that is active. So if you see a red bubble, it means there's an important notification that you should look at.
 
@@ -70,7 +72,7 @@ https://docs.netapp.com/us-en/bluexp-alerts/index.html[Learn more about BlueXP a
 
 === Notification types
 
-Notifications are classified in the following categories:
+BlueXP classifies notifications into the following categories:
 
 [cols=2*,options="header",cols="20,60",width="85%"]
 |===
@@ -97,7 +99,7 @@ For example, if you want to see only "Error" and "Warning" notifications for Blu
 
 === Dismiss notifications
 
-You can remove notifications from the page if you no longer need to see them. You can dismiss all notifications at once, or you can dismiss individual notifications.
+You can remove notifications from the page if you no longer need to see them. You can dismiss notifications individually or all at once.
 
 To dismiss all notifications, in the Notification Center, select image:button_3_vert_dots.png[an icon with three vertical dots] and select *Dismiss All*.
 image:screenshot_notification_menu.png[A screenshot showing the Notifications menu to select settings and dismiss all options.]
@@ -111,7 +113,7 @@ You can send specific types of notifications by email so you can be informed of 
 
 [NOTE]
 ====
-* Notifications are sent by email for the following features and services: the Connector, digital wallet, copy and sync, and backup and recovery.
+* BlueXP sends email notifications for the Connector, digital wallet, copy and sync, and backup and recovery.
 * Sending email notifications is not supported when the Connector is installed in a site without internet access.
 ====
 
@@ -119,7 +121,7 @@ The filters you set in the Notification Center do not determine the types of not
 
 All other users and recipients are configured not to receive any notification emails - so you'll need to configure notification settings for any additional users. 
 
-You must be a have the Organization admin role to customize the notifications settings.
+You must have the Organization admin role to customize the notifications settings.
 
 .Steps
 
