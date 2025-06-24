@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-troubleshoot-connector.html
-keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure, monitor
 summary: To troubleshoot issues with the Connector, you can work with NetApp Support who might ask for your system ID or the latest AutoSupport messages. You can also view the NetApp Knowledge Base to troubleshoot issues yourself.
 ---
 
