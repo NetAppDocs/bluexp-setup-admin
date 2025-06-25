@@ -150,7 +150,7 @@ link:task-quick-start-standard-mode.html[Learn how to get started with standard 
 
 The following image is an example of a restricted mode deployment.
 
-image:diagram-restricted-mode-update.png["A conceptual image that shows the public internet where the SaaS layer and auth0 authentication are available, a virtual network in the cloud where a Connector is running and providing access to the web-based console, and is managing Cloud Volumes ONTAP and an AFF cluster in an on-premises data center."]
+image:diagram-restricted-mode.png["A conceptual image that shows the public internet where the SaaS layer and auth0 authentication are available, a virtual network in the cloud where a Connector is running and providing access to the web-based console, and is managing Cloud Volumes ONTAP and an AFF cluster in an on-premises data center."]
 
 BlueXP works as follows in restricted mode:
 
