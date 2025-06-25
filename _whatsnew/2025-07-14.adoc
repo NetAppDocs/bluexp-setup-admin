@@ -1,0 +1,18 @@
+=== Connector 3.9.54
+
+This release of the BlueXP Connector includes security improvements, bug fixes, and the following new features: 
+
+* Support for transparent proxy configuration for Connectors dedicated to supporting Cloud Volumes ONTAP services.
+
+At this time, the 3.9.54 release is available for standard mode and restricted mode.
+
+
+
+
+
+
+
+
+
+
+

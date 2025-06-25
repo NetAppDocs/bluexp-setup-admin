@@ -1,0 +1,64 @@
+---
+sidebar: sidebar
+permalink: reference-connector-maint-console.html
+keywords: transparent proxy, connector certificate, maintenance console, proxy configuration, connector proxy
+summary: You can use the Maintenance Console to configure the Connector to use a transparent proxy server. 
+---
+
+= Connector maintenance console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can use the Maintenance Console to configure the Connector to use a transparent proxy server.
+
+== Access the Maintenance Console
+You can access the Maintenance Console from the Connector host. Navigate to the following directory:
+[source,CLI]
+----
+/opt/application/netapp/service-manager-2/connector-maint-console
+----
+
+== Transparent proxy commands
+The Maintenance Console provides commands to configure the Connector to use a transparent proxy server. 
+
+=== View the current transparent proxy configuration
+To view the current transparent proxy configuration, use the following command: 
+[source,CLI]
+----
+proxy get
+----
+
+=== Add a transparent proxy server
+To add a transparent proxy server, use the following command:
+[source,CLI]
+----
+proxy add 
+----
+
+=== Update the certificate for a transparent proxy server
+To update the certificate for a transparent proxy server, use the following command, 
+[source,CLI]
+----
+proxy update 
+----
+
+Ensure that the certificate file is in the same directory as the command or specify the full path to the certificate file. The certificate file must be in PEM format.
+
+=== Remove a transparent proxy server
+To remove transparent proxy server, use the following command:
+[source,CLI]
+----
+ proxy remove 
+----
+
+=== View help for any command
+To view help for any command, append `--help` to the command. For example, to view help for the `proxy add` command, use the following command: 
+[source,CLI]
+----    
+proxy add --help
+----
+

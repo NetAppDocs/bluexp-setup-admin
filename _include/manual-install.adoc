@@ -8,8 +8,7 @@ You should have the following:
 * Details about a proxy server, if a proxy is required for internet access from the Connector.
 +
 You have the option to configure a proxy server after installation but doing so requires restarting the Connector.
-+
-Note that BlueXP does not support transparent proxy servers.
+
 
 * A CA-signed certificate, if the proxy server uses HTTPS or if the proxy is an intercepting proxy.
 //end::before[]
@@ -76,7 +75,7 @@ For example:
 \http://bxpproxyuser:netapp1\!@address:3128
 
 +
---cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.
+--cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required for HTTPS proxy servers, intercepting proxy servers, and transparent proxy servers.
 
 . If you used Podman, you'll need to adjust the aardvark-dns port.
 .. SSH to the BlueXP Connector virtual machine.
