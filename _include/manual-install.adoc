@@ -11,6 +11,8 @@ You have the option to configure a proxy server after installation but doing so 
 
 
 * A CA-signed certificate, if the proxy server uses HTTPS or if the proxy is an intercepting proxy.
+
+NOTE: You cannot set a certificate for a transparent proxy server when manually installing the Connector. If you need to set a certificate for a transparent proxy server, you must use the Maintenance Console after installation. Learn more about the link:reference-connector-maint-console.html[Connector Maintenance Console].
 //end::before[]
 
 //tag::about[]
