@@ -94,8 +94,8 @@ When you enable the connection, users can log in to BlueXP using their corporate
 BlueXP provides a wizard to help you set up your connection. Review the topics for your individual identity provider to get started:
 
 * link:task-federation-adfs.html[Set up a federated connection with AD FS]
-* link:task-federation-microsoft-entra-id.html[Set up a federated connection with Microsoft Entra ID]
-* link:task-federation-pingfederate.html[Set up a federated connection with PingFederate]       
+* link:task-federation-entra-id.html[Set up a federated connection with Microsoft Entra ID]
+* link:task-federation-ping.html[Set up a federated connection with PingFederate]       
 * link:task-federation-saml.html[Set up a federated connection with a SAML identity provider]    
 
 
