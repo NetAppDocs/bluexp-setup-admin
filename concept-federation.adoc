@@ -64,8 +64,6 @@ NetApp supports service provider-initiated (SP-initiated) SSO only. You need to 
 == Set up a federated connection
 You can set up a federated connection with your identity provider to enable single sign-on (SSO) for BlueXP. The process involves configuring your identity provider to trust NetApp as a service provider and then creating the connection in BlueXP.
 
-== Process overview
-
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:reference-networking-saas-console.html[Verify your domain (if not using your email domain)]
 
@@ -81,17 +79,25 @@ You'll need to configure your identity provider to trust NetApp as a service pro
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the federated connection in BlueXP
 
 [role="quick-margin-para"]
-To create the connection, you'll need to provide the necessary information from your identity provider, such as the SAML metadata URL or file. This information is used to establish the trust relationship between BlueXP and your identity provider. The information you provide depends on the IdP that you are using. For example, if you're using Microsoft Entra ID, you'll need to provide the SAML metadata URL or file. If you're using PingFederate, you'll need to provide the SAML metadata URL or file.
+To create the connection, you'll need to provide the necessary information from your identity provider, such as the SAML metadata URL or file. This information is used to establish the trust relationship between BlueXP and your identity provider. The information you provide depends on the IdP that you are using. For example, if you're using Microsoft Entra ID, you'll need to provide the client ID, secret, and domain. 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Test your connection in BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three] Test your connection in BlueXP
 
 [role="quick-margin-para"]
 Before you can enable the connection, you can test it to ensure that everything is working correctly. The Federation page in BlueXP provides a test option that allows you to verify that the connection is working as expected. If the test is successful, you can enable the connection.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Enable your connection in BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Three] Enable your connection in BlueXP
 
 [role="quick-margin-para"]
 When you enable the connection, users can log in to BlueXP using their corporate credentials. 
+
+BlueXP provides a wizard to help you set up your connection. Review the topics for your individual identity provider to get started:
+
+* link:task-federation-adfs.html[Set up a federated connection with AD FS]
+* link:task-federation-microsoft-entra-id.html[Set up a federated connection with Microsoft Entra ID]
+* link:task-federation-pingfederate.html[Set up a federated connection with PingFederate]       
+* link:task-federation-saml.html[Set up a federated connection with a SAML identity provider]    
+
 
 
 

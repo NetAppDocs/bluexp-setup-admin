@@ -155,7 +155,19 @@ sidebar:
             - title: Manage your BlueXP account
               url: /task-managing-netapp-accounts.html
         - title: Identity federation
-          url: /concept-federation.html
+          entries:
+            - title: Learn about identity federation
+              url: /concept-federation.html
+            - title: Verify your domain 
+              url: /task-federation-verify-domain.html
+            - title: Set up a federated connection with AD FS
+              url: /task-federation-adfs.html
+            - title: Set up a federated connection with Microsoft Entra ID
+              url: /task-federation-microsoft-entra-id.html
+            - title: Set up a federated connection with PingFederate
+              url: /task-federation-pingfederate.html
+            - title: Set up a federated connection with a SAML identity provider
+              url: /task-federation-saml.html
         - title: Connectors
           entries:
             - title: Maintain the VM and OS
