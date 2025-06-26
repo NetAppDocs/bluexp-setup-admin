@@ -15,10 +15,6 @@ summary: Manage your BlueXP account by adding users, creating service accounts f
 [.lead]
 When you use BlueXP in private mode, you'll use a _BlueXP account_ to manage users and organize resources. When you create your account, it only includes a single user and a workspace. You can manage the account to fit your needs by adding users and creating service accounts for automation purposes. 
 
-If you're using BlueXP in standard mode or restricted mode, you won't have a BlueXP account. Instead, you'll have a _BlueXP organization_ that you manage using BlueXP identity and access management (IAM).
-
-* link:concept-identity-and-access-management.html[Learn about BlueXP IAM]
-* link:concept-modes.html[Learn about BlueXP deployment modes]
 
 == Manage your account with the Tenancy API
 
