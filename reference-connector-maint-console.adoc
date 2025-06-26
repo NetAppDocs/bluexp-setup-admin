@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: reference-connector-maint-console.html
-keywords: transparent proxy, connector certificate, maintenance console, proxy configuration, connector proxy
-summary: You can use the Maintenance Console to configure the Connector to use a transparent proxy server. 
+keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy
+summary: Use the Maintenance Console to configure the Connector to use a transparent proxy server. 
 ---
 
 = Connector maintenance console
