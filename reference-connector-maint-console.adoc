@@ -29,36 +29,38 @@ The Maintenance Console provides commands to configure the Connector to use a tr
 To view the current transparent proxy configuration, use the following command: 
 [source,CLI]
 ----
-proxy get
+./connector-maint-console proxy get
 ----
 
 === Add a transparent proxy server
-To add a transparent proxy server, use the following command:
+To add a transparent proxy server, use the following command, where `/home/ubuntu/myCA1.pem` is the path to the certificate file for the proxy server. The certificate file must be in PEM format:
 [source,CLI]
 ----
-proxy add 
+./connector-maint-console proxy add -c /home/ubuntu/myCA1.pem
 ----
+
+Ensure that the certificate file is in the same directory as the command or specify the full path to the certificate file. 
 
 === Update the certificate for a transparent proxy server
-To update the certificate for a transparent proxy server, use the following command, 
+To update the certificate for a transparent proxy server, use the following command, where `/home/ubuntu/myCA1.pem` is the path to the new certificate file for the proxy server. The certificate file must be in PEM format: 
 [source,CLI]
 ----
-proxy update 
+./connector-maint-console proxy update -c /home/ubuntu/myCA1.pem
 ----
 
-Ensure that the certificate file is in the same directory as the command or specify the full path to the certificate file. The certificate file must be in PEM format.
+Ensure that the certificate file is in the same directory as the command or specify the full path to the certificate file. 
 
 === Remove a transparent proxy server
 To remove transparent proxy server, use the following command:
 [source,CLI]
 ----
- proxy remove 
+./connector-maint-console proxy remove
 ----
 
 === View help for any command
 To view help for any command, append `--help` to the command. For example, to view help for the `proxy add` command, use the following command: 
 [source,CLI]
 ----    
-proxy add --help
+./connector-maint-console proxy add --help
 ----
 

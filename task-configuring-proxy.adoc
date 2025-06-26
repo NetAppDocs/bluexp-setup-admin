@@ -176,7 +176,7 @@ You can update a Connector's existing transparent proxy server by using the `pro
 
 ////
 === Update the Connector proxy 
-If the proxy configuration for your network changes, your Connector may lose access to the internet. For example, if someone changes the password for the proxy server or updates the certificate. In this case, you'll need to access the Connector host directly and update the settings. 
+If the proxy configuration for your network changes, your Connector might lose access to the internet. For example, if someone changes the password for the proxy server or updates the certificate. In this case, you'll need to access the Connector host directly and update the settings. 
 
 ////
 
