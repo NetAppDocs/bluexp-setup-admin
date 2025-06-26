@@ -158,16 +158,20 @@ sidebar:
           entries:
             - title: Learn about identity federation
               url: /concept-federation.html
-            - title: Verify your domain 
-              url: /task-federation-verify-domain.html
-            - title: Set up a federated connection with AD FS
-              url: /task-federation-adfs.html
-            - title: Set up a federated connection with Microsoft Entra ID
-              url: /task-federation-microsoft-entra-id.html
-            - title: Set up a federated connection with PingFederate
-              url: /task-federation-pingfederate.html
-            - title: Set up a federated connection with a SAML identity provider
-              url: /task-federation-saml.html
+            - title: Domain verification
+              entries:
+                - title: Verify your domain 
+                  url: /task-federation-verify-domain.html
+            - title: Configure your federation
+              entries:
+                - title: Federate with an Active Directory Federation Services (AD FS) provider
+                  url: /task-federation-adfs.html
+                - title: Federate with Microsoft Entra ID provider
+                  url: /task-federation-microsoft-entra-id.html
+                - title: Federate with PingFederate
+                  url: /task-federation-pingfederate.html
+                - title: Federate with a SAML identity provider
+                  url: /task-federation-saml.html
         - title: Connectors
           entries:
             - title: Maintain the VM and OS
