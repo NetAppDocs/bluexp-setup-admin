@@ -1,0 +1,9 @@
+
+
+. Enter your domain details:
+.. Choose whether you want to use a verified domain or your email domain.
+.. Enter the name of the federation you want to create.
+.. If you choose a verified domain, select the domain from the list.    
+.. If you choose your email domain, enter the domain name.
+
+. Select *Next*.
