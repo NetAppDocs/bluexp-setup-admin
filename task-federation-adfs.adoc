@@ -22,32 +22,8 @@ NOTE: You can federate with your corporate IdP or with the NetApp Support Site. 
 
 NetApp supports service provider-initiated (SP-initiated) SSO only. You need to first configure the identity provider to trust NetApp as a service provider. Then, you can create a connection in BlueXP that uses the identity provider's configuration.
 
-== Verify your domain
-If you want to federate with a domain that is different than your email domain, you must first verify that you own the domain. You can only use verified domains for federation. 
+NOTE: If you want to federate with a domain that is different than your email domain, you must first verify that you own the domain. You can only use verified domains for federation. link:task-federation-verify-domain.html[Learn how to verify your domain.]
 
- NOTE: If you are using your email domain, you can skip this step.
-
-Verifying your domain consists of adding the provided DNS TXT record to your domain's DNS settings. This record is used to prove that you own the domain and allows BlueXP to use it for federation.
-
-.Steps
-
-. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
-
-. Select the *Federation* tab.
-
-. Select *Verify domain ownership*.
-
-. Enter the domain that you want to verify and select *Continue*.
-
-. Copy the provided DNS TXT record and add it to your domain's DNS settings. 
-
-. After adding the DNS TXT record, return to the BlueXP console.
-
-. Select *Verify domain ownership*.
-
-. Enter the domain that you have added a DNS TXT record and select *Continue*.
-
-. Select *Verify*. BlueXP checks for the DNS TXT record and verifies that you own the domain.
 
 
 == Federate your AD FS with BlueXP
