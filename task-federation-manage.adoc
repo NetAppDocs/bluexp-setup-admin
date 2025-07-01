@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-federation-manage.html
-keywords: federation, BlueXP, identity provider, IdP, verified domain, single sign-on, SSO, credentials, certificate, client secret, update, test federation, manage federations
+keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity
 summary: After you've added a federated connection, you can manage it in BlueXP. You can view the status of the connection, enable or disable it as needed.
 ---
 
@@ -93,6 +93,8 @@ If you are having trouble with an existing federation, you can test the connecti
 == Disable a federation
 If you no longer need a federation, you can disable it. This prevents users associated with the federation from logging in to BlueXP using their corporate credentials. You can re-enable the federation later if needed.
 
+When should a user disable a federation? For example, if the IdP is being updated or if the federation is no longer needed. --Tonia?
+
 .Steps
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
@@ -100,6 +102,9 @@ If you no longer need a federation, you can disable it. This prevents users asso
 . Select the *Federation* tab.
 
 . Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Disable*. 
+
+== Delete a federation
+If you no longer need a federation, you can delete it. This removes the federation from BlueXP and prevents any users associated with the federation from logging in to BlueXP using their corporate credentials. For example, if the IdP is being decommissioned or if the federation is no longer needed. After you delete a federation, you cannot recover it. You must create a new federation.
 
 
 
