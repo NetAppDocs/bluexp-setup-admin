@@ -20,6 +20,18 @@ You can also add a verified domain to an existing federation, which allows you t
 .Required role
 Organization admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
 
+== Enable a federation
+If you have created a federation but it is not enabled, you can enable it through the Federation tab in BlueXP. Enabling a federation allows users associated with the federation to log in to BlueXP using their corporate credentials. You must have already created the federation before you can enable it.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select the *Federation* tab.
+
+. Select the actions menu (three vertical dots) next to the federation that you want to enable and select *Enable federation*. 
+
+
 
 
 
