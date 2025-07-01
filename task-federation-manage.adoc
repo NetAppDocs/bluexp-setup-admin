@@ -29,7 +29,7 @@ If you have created a federation but it is not enabled, you can enable it throug
 
 . Select the *Federation* tab.
 
-. Select the actions menu (three vertical dots) next to the federation that you want to enable and select *Enable*. 
+. Select the actions menu image:button_3_vert_dots.png[an icon with three vertical dots] next to the federation that you want to enable and select *Enable*. 
 
 
 
@@ -48,7 +48,7 @@ You must have already verified the domain in BlueXP before you can add it to a f
 
 . Select the *Federation* tab.
 
-. Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Update domains*. The *Update domains* dialog box lists the domain already associated with this federation.
+. Select the actions menu image:button_3_vert_dots.png[an icon with three vertical dots] next to the federation that you want to add a verified domain to and select *Update domains*. The *Update domains* dialog box lists the domain already associated with this federation.
 
 . Select a verified domain from the list of available domains. 
 
@@ -84,7 +84,7 @@ If you are having trouble with an existing federation, you can test the connecti
 
 . Select the *Federation* tab.
 
-. Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Test connection*. 
+. Select the actions menu image:button_3_vert_dots.png[an icon with three vertical dots] next to the federation that you want to add a verified domain to and select *Test connection*. 
 
 . Select *Test*. You're prompted to log in with your corporate credentials. If the connection is successful, you will be redirected to the BlueXP console. If the connection fails, you will see an error message indicating the issue with the federation.
 
@@ -101,7 +101,7 @@ When should a user disable a federation? For example, if the IdP is being update
 
 . Select the *Federation* tab.
 
-. Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Disable*. 
+. Select the actions menu image:button_3_vert_dots.png[an icon with three vertical dots] next to the federation that you want to add a verified domain to and select *Disable*. 
 
 == Delete a federation
 If you no longer need a federation, you can delete it. This removes the federation from BlueXP and prevents any users associated with the federation from logging in to BlueXP using their corporate credentials. For example, if the IdP is being decommissioned or if the federation is no longer needed. After you delete a federation, you cannot recover it. You must create a new federation.
