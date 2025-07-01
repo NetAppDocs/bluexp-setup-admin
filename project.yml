@@ -169,9 +169,11 @@ sidebar:
                 - title: Federate with Microsoft Entra ID provider
                   url: /task-federation-microsoft-entra-id.html
                 - title: Federate with PingFederate
-                  url: /task-federation-pingfederate.html
+                  url: /task-federation-ping.html
                 - title: Federate with a SAML identity provider
                   url: /task-federation-saml.html
+            - title: Manage your federations
+              url: /task-federation-manage.html
         - title: Connectors
           entries:
             - title: Maintain the VM and OS

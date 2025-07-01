@@ -19,9 +19,7 @@ Verifying your domain involves adding a TXT record to your domain's DNS settings
 
 .Steps
 
-. In the upper right of the BlueXP console, select image:icon-settings-option.png[Settings icon] > *Identity & Access Management*.
-
-. Select *Federations*.
+include::_include/federation-navigation-steps.adoc[]
 
 . Select *Verify domain ownership*.
 . Enter the domain that you want to verify and select *Continue*.
