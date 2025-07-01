@@ -42,7 +42,29 @@ include::_include/federation-verify-domain-steps.adoc[]
 
 . Select *Next*.
 
-. Configure your AD FS 
+. Create a Relying Party Trust in your AD FS server. You can do so through PowerShell or manually in your AD FS server. Consult the AD FS documentation for details on how to create a relying party trust. 
+.. Create the trust using PowerShell by using following script:
+
++
+[source, powershell]
+(new-object Net.WebClient -property @{Encoding = [Text.Encoding]::UTF8}).DownloadString("https://raw.github.com/auth0/AD FS-auth0/master/AD FS.ps1") | iex
+AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.auth0.com/login/callback"
+
+.. Alternatively, you can create the trust manually in the AD FS management console. Use the following BlueXP values when creating the trust:
+
+ * When creating the Relying Trust Identifier, use the **YOUR_TENANT** value. For example, `urn:auth0:netapp-cloud-account`
+  * When you select *Enable support for the WS-Federation*, use the **YOUR_AUTH0_DOMAIN** value. For example ` https://netapp-cloud-account.auth0.com/login/callback`
+ 
+. After creating the trust, copy the following values from your AD FS server:
+.. *Metadata URL*: The URL for the metadata document for the relying party trust. This is typically in the format `https://<your-adfs-server>/FederationMetadata/2007-06/FederationMetadata.xml`.
+
+.Select *Next*.
+
+. Create the connection with AD FS.  
+.. Enter the URL of your AD FS server in the *AD FS URL* field. The URL should be in the format `https://<your-adfs-server>/adfs`.
+.. Enter the *Metadata URL* that you copied from your AD FS server in the previous step.
+
+. Select *Create connection*.
 
 
 
