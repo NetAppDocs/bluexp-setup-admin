@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
-permalink: task-federation-adfs.html
-keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity
+permalink: task-federation-manage.html
+keywords: federation, BlueXP, identity provider, IdP, verified domain, single sign-on, SSO, credentials, certificate, client secret, update, test federation, manage federations
 summary: After you've added a federated connection, you can manage it in BlueXP. You can view the status of the connection, enable or disable it as needed.
 ---
 
@@ -63,7 +63,7 @@ IMPORTANT: Update the IdP first before updating the connection in BlueXP to avoi
 . Select *Update*.
 
 
-Test an existing federation
+== Test an existing federation
 If you are having trouble with an existing federation, you can test the connection to see if it is working properly. This can help you identify any issues with the federation and troubleshoot them.
 
 .Steps
@@ -77,5 +77,18 @@ If you are having trouble with an existing federation, you can test the connecti
 . Select *Test*. You're prompted to log in with your corporate credentials. If the connection is successful, you will be redirected to the BlueXP console. If the connection fails, you will see an error message indicating the issue with the federation.
 
 . Select *Done* to return to the *Federation* tab.
+
+== Disable a federation
+If you no longer need a federation, you can disable it. This prevents users associated with the federation from logging in to BlueXP using their corporate credentials. You can re-enable the federation later if needed.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select the *Federation* tab.
+
+. Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Disable connection*. 
+
+
 
 
