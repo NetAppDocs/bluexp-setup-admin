@@ -27,7 +27,7 @@ Identity federation features allow you to:
 
 * Disable or delete federated connections when needed, giving you control over user access and security.
 
-*
+link:concept-federation.html[Learn more about identity federation in BlueXP.]
 
 
 
