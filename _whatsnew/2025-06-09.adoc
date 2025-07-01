@@ -5,10 +5,10 @@ This release of the BlueXP Connector includes security improvements and bug fixe
 The 3.9.53 release is available for standard mode and restricted mode.
 
 === Disk space usage alerts
-The Notifications Center now includes alerts for disk space usage on the Connector. link:task-maintain-connectors.html#monitor-disk-space[Learn more.^]
+The Notifications Center now includes alerts for disk space usage on the Connector. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space[Learn more.^]
 
 === Audit improvements
-The Timeline now includes login events for users. This enables you to see when users logged in to BlueXP, which can help with auditing and security monitoring. API users who have the Organization administrator role can view the email address of the user who logged in by including the `includeUserData=true`` parameter as in the following: `/audit/<account_id>?includeUserData=true`.
+The Timeline now includes login and logout events for users. You can see when login activity, which can help with auditing and security monitoring. API users who have the Organization administrator role can view the email address of the user who logged in by including the `includeUserData=true`` parameter as in the following: `/audit/<account_id>?includeUserData=true`.
 
 
 
