@@ -29,7 +29,7 @@ If you have created a federation but it is not enabled, you can enable it throug
 
 . Select the *Federation* tab.
 
-. Select the actions menu (three vertical dots) next to the federation that you want to enable and select *Enable federation*. 
+. Select the actions menu (three vertical dots) next to the federation that you want to enable and select *Enable*. 
 
 
 
@@ -99,7 +99,7 @@ If you no longer need a federation, you can disable it. This prevents users asso
 
 . Select the *Federation* tab.
 
-. Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Disable connection*. 
+. Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Disable*. 
 
 
 
