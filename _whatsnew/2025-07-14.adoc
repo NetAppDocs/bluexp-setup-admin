@@ -1,0 +1,42 @@
+=== Connector 3.9.53
+
+
+
+
+
+
+
+
+
+
+=== BlueXP Identity and Access Management (IAM)
+
+==== Streamlined identity federation management
+
+BlueXP now offers a more intuitive interface for managing identity federation. This includes easier navigation, clearer options for configuring federated connections, and improved visibility into existing federations.
+
+Enabling single sign-on (SSO) through identity federation lets users log in to BlueXP and NetApp services with corporate credentials. This boosts security, reduces password fatigue, and simplifies onboarding.
+
+You can import existing federated connections to the new interface to gain access to the new management features. This allows you to take advantage of the latest enhancements without having to recreate your federated connections.
+
+Identity federation features allow you to:
+
+* Add more than one verified domain to a federated connection, allowing you to use multiple domains with the same identity provider (IdP).
+
+* Configure notifications for expiring federated connections, ensuring that you stay informed about the status of your federations.
+
+* Disable or delete federated connections when needed, giving you control over user access and security.
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
