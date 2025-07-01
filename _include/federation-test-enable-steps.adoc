@@ -1,0 +1,13 @@
+
+. Select *Next*. 
+
+. Select *Test connection* to test your connection. You are directed to a login page for your IdP server. Log in with your IdP credentials to complete the test and return to BlueXP to enable the connection.
+
+. Select *Next*.
+
+. On the *Enable federation* page, do the following:
+.. Set a notification window in days for BlueXP to notify you when the connection is about to expire. The default is 30 days, but you can change it if needed.
+.. If your connection did not automatically set an expiration date, you can pick a date when you want BlueXP to notify you that the connection is about to expire. Use the calendar icon to select a date.
+.. Review the federation details and then select *Enable federation*.
+
+After you enable the federation, users can log in to BlueXP using their corporate credentials.
