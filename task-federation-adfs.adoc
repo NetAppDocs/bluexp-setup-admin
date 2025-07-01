@@ -22,7 +22,7 @@ NOTE: You can federate with your corporate IdP or with the NetApp Support Site. 
 
 NetApp supports service provider-initiated (SP-initiated) SSO only. You need to first configure the identity provider to trust NetApp as a service provider. Then, you can create a connection in BlueXP that uses the identity provider's configuration.
 
-NOTE: If you want to federate with a domain that is different than your email domain, you must first verify that you own the domain. You can only use verified domains for federation. link:task-federation-verify-domain.html[Learn how to verify your domain.]
+
 
 
 
@@ -32,6 +32,7 @@ You can set up a federated connection with your AD FS to enable single sign-on (
 .Before you begin
 * You must have an IdP server that is accessible from the internet.
 * You must have an IdP account with administrative privileges to create the connection. You'll need to work with your IdP administrator to complete these steps.
+* If you want to use a domain other than your email domain, you must first verify the domain in BlueXP. You can do this by following the steps in the link:task-federation-verify-domain.html[Verify your domain in BlueXP] topic.
 
 include::_include/federation-navigation-steps.adoc[]
 
@@ -43,6 +44,7 @@ include::_include/federation-verify-domain-steps.adoc[]
 . Select *Next*.
 
 . Create a Relying Party Trust in your AD FS server. You can do so through PowerShell or manually in your AD FS server. Consult the AD FS documentation for details on how to create a relying party trust. 
+
 .. Create the trust using PowerShell by using following script:
 
 +
@@ -52,19 +54,23 @@ AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.a
 
 .. Alternatively, you can create the trust manually in the AD FS management console. Use the following BlueXP values when creating the trust:
 
- * When creating the Relying Trust Identifier, use the **YOUR_TENANT** value. For example, `urn:auth0:netapp-cloud-account`
-  * When you select *Enable support for the WS-Federation*, use the **YOUR_AUTH0_DOMAIN** value. For example ` https://netapp-cloud-account.auth0.com/login/callback`
- 
-. After creating the trust, copy the following values from your AD FS server:
-.. *Metadata URL*: The URL for the metadata document for the relying party trust. This is typically in the format `https://<your-adfs-server>/FederationMetadata/2007-06/FederationMetadata.xml`.
++
 
-.Select *Next*.
+* When creating the Relying Trust Identifier, use the **YOUR_TENANT** value. For example, `urn:auth0:netapp-cloud-account`
+* When you select *Enable support for the WS-Federation*, use the **YOUR_AUTH0_DOMAIN** value. For example `https://netapp-cloud-account.auth0.com/login/callback`
+ 
+.. After creating the trust, copy the metadata URL from your AD FS server or download the federation metadata file. You'll need this URL or file to complete the connection in BlueXP.
+
+. Return to BlueXP, and select *Next* to create the connection.
 
 . Create the connection with AD FS.  
-.. Enter the URL of your AD FS server in the *AD FS URL* field. The URL should be in the format `https://<your-adfs-server>/adfs`.
-.. Enter the *Metadata URL* that you copied from your AD FS server in the previous step.
+.. Enter the *AD FS URL* that you copied from your AD FS server in the previous step or uploaded the federation metadata file that you downloaded from your AD FS server.
 
-. Select *Create connection*.
+. Select *Create connection*. Creating the connection might take a few minutes.
+
+. Select *Next* to test the connection. If the test is successful, you can enable the connection.
+. Select *Test connection* to enable the connection. You'll be directed to a login page for your AD FS server. Log in with your AD FS credentials to complete the test and then return to BlueXP to enable the connection.
+
 
 
 
