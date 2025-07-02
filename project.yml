@@ -162,7 +162,7 @@ sidebar:
               entries:
                 - title: Verify your domain 
                   url: /task-federation-verify-domain.html
-            - title: Configure your federation
+            - title: Configure federations
               entries:
                 - title: Federate with an Active Directory Federation Services (AD FS) provider
                   url: /task-federation-adfs.html
@@ -172,7 +172,7 @@ sidebar:
                   url: /task-federation-ping.html
                 - title: Federate with a SAML identity provider
                   url: /task-federation-saml.html
-            - title: Manage your federations
+            - title: Manage federations
               url: /task-federation-manage.html
             - title: Import your existing federated connection
               url: /task-federation-import.html

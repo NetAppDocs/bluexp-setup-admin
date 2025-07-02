@@ -31,12 +31,25 @@ include::_include/federation-prereqs.adoc[]
 
 include::_include/federation-navigation-steps.adoc[]
 
+[discrete]
+====== Domain details
+
+[start=4]
+
 include::_include/federation-verify-domain-steps.adoc[]
+
+[discrete]
+====== Connection method
+
+[start=6]
 
 
 . For your connection method, choose *Provider* and then select *Microsoft Entra ID*.
 
 . Select *Next*.
+
+[discrete]
+====== Configuration instructions
 
 . Configure your Microsoft Entra ID to trust NetApp as a service provider. You need to do this step on your Microsoft Entra ID server.  
 
@@ -55,6 +68,9 @@ include::_include/federation-verify-domain-steps.adoc[]
 
 . Return to BlueXP, and select *Next* to create the connection.
 
+[discrete]
+====== Create connection
+
 . Create the connection with Microsoft Entra ID  
 .. Enter the client ID and Client secret that you created in the previous step.
 
@@ -62,6 +78,9 @@ include::_include/federation-verify-domain-steps.adoc[]
 
 
 . Select *Create connection*. The system creates the connection in a few minutes.
+
+[discrete]
+====== test and enable the connection
 
 include::_include/federation-test-enable-steps.adoc[]
 

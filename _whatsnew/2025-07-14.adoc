@@ -29,6 +29,8 @@ Improved federation management allows you to:
 
 link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html[Learn more about identity federation in BlueXP.]
 
+=== Scarlit and Theo are here
+
 
 
 
