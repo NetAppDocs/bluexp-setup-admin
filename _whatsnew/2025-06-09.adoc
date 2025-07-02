@@ -2,27 +2,34 @@
 
 This release of the BlueXP Connector includes security improvements and bug fixes. 
 
-At this time, the 3.9.53 release is available for standard mode and restricted mode.
+The 3.9.53 release is available for standard mode and restricted mode.
+
+=== Disk space usage alerts
+The Notifications Center now includes alerts for disk space usage on the Connector. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space[Learn more.^]
+
+=== Audit improvements
+The Timeline now includes login and logout events for users. You can see when login activity, which can help with auditing and security monitoring. API users who have the Organization administrator role can view the email address of the user who logged in by including the `includeUserData=true`` parameter as in the following: `/audit/<account_id>?includeUserData=true`.
 
 
 
-////
+
+
+
 === Keystone subscription management available in BlueXP
 
 You can manage your NetApp Keystone subscription from BlueXP.
 
-////
+link:https://docs.netapp.com/us-en/keystone-staas/index.html[Learn about Keystone subscription management in BlueXP.^]
 
 
 === BlueXP Identity and Access Management (IAM)
 
 ==== Multi-factor authentication (MFA)
 
-Unfederated users can now enable multi-factor authentication (MFA) for their BlueXP accounts, enhancing account security. BlueXP administrators can manage MFA settings for their users, resetting or disabling MFA for individual users as needed.
-
+Unfederated users can now enable multi-factor authentication (MFA) for their BlueXP accounts, enhancing account security. BlueXP administrators can manage MFA settings for their users, resetting or disabling MFA for individual users as needed. This is supported in standard mode only.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa[Learn about setting up multi-factor authentication for yourself.^]
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa[Learn about managing multi-factor authentication for users.^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa[Learn about administering multi-factor authentication for users.^]
 
 
 === Workloads
