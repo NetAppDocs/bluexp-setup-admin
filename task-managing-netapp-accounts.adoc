@@ -56,7 +56,6 @@ Change your account name at any time to change it to something meaningful for yo
 
 The users in your account can access and manage the resources in your workspace.
 
-// update images
 === Add users
 
 Associate users with your BlueXP account so those users can create and manage working environments in BlueXP.
@@ -106,28 +105,26 @@ Note that a refresh token is not required for API operations when using a servic
 
 Create as many service accounts as you need to manage the resources in your working environments.
 
-.Before you begin 
-
-Review the different link:reference-iam-predefined-roles.html[BlueXP access roles].
-
 .Steps
 
-. From the top navigation menu, select the image:icon-settings-option.png[Gear icon] settings icons then **Identity & Access Management**. 
+. From the top of BlueXP, select the *Account* drop-down.
 +
-. Select the **Members** tab then **Add a member**.
-. In the Add a member pop-up, choose Service account for the **Entity type**.
-.. Enter a name for the **Service account**. 
-.. Select the requisite **Organization, folder, or project** then select **Accept**.
-.. Choose the appropriate **Category**: Application, Data Service, or Platform. Select **Accept**. For more information, see link:reference-iam-predefined-roles.html[BlueXP access roles].
-.. Choose the appropriate **Role** then select **Accept**.
+image:screenshot-account-settings-menu.png[A screenshot that shows the Account Settings option in the top banner of BlueXP.]
+
+. Select *Manage Account* next to the currently selected account.
 +
-image:service-account-add.png[Screenshot of the pop-up window to create a service account.]
-+
-. Select **Add** to create the role. 
+image:screenshot-manage-account-settings.png[A screenshot that shows the Manage Account Settings option that's available from the Account drop-down.]
+
+. From the Members tab, select *Create Service Account*.
+
+. Enter a name.
+
+. Select *Create*.
+
 . Copy or download the client ID and client secret.
 +
-The client secret is visible only once and is not stored by BlueXP. Copy or download the secret and store it safely.
-image:service-account-secret.png[Screenshot of the client ID and secret.]
+The client secret is visible only once and is not stored anywhere by BlueXP. Copy or download the secret and store it safely.
+
 . Select *Close*.
 
 === Obtain a bearer token for a service account
@@ -136,7 +133,6 @@ In order to make API calls to the https://docs.netapp.com/us-en/bluexp-automatio
 
 https://docs.netapp.com/us-en/bluexp-automation/platform/create_service_token.html[Learn how to create a service account token^]
 
-// unsupported? 
 === Copy the client ID
 
 You can copy a service account's client ID at any time.
@@ -161,7 +157,7 @@ Recreating the key will delete the existing key for this service account and the
 +
 image:screenshot_service_account_actions.gif[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
 
-. Select *Recreate secrets*.
+. Select *Recreate Key*.
 
 . Select *Recreate* to confirm.
 
@@ -181,7 +177,7 @@ Delete a service account if you no longer need to use it.
 +
 image:screenshot_service_account_actions.gif[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
 
-. Select *Delete user*.
+. Select *Delete*.
 
 . Select *Delete* again to confirm.
 

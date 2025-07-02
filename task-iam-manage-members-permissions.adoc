@@ -125,7 +125,7 @@ link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 
 . Download or copy the client ID and client secret.
 +
-lueXP shows the client secret only once and does not store it. Copy or download the secret and store it safely. Note that you can recreate the client ID and client secret later on as needed.
+BlueXP shows the client secret only once and does not store it. Copy or download the secret and store it safely. Note that you can recreate the client ID and client secret later on as needed.
 
 . Select *Close*.
 
