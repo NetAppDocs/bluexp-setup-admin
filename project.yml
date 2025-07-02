@@ -167,7 +167,7 @@ sidebar:
                 - title: Federate with an Active Directory Federation Services (AD FS) provider
                   url: /task-federation-adfs.html
                 - title: Federate with Microsoft Entra ID provider
-                  url: /task-federation-microsoft-entra-id.html
+                  url: /task-federation-entra-id.html
                 - title: Federate with PingFederate
                   url: /task-federation-ping.html
                 - title: Federate with a SAML identity provider
