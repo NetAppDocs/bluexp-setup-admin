@@ -17,6 +17,8 @@ You can manage your federation in BlueXP. You can disable federations, keep them
 
 You can also add a verified domain to an existing federation, which allows you to use multiple domains for your federated connection.
 
+NOTE: Federation management events such as enabling, disabling, and updating federations display in the Timeline. link:task-monitor-cm-operations.html[Learn more about monitoring operations in BlueXP.]
+
 .Required role
 Organization admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
 
@@ -105,6 +107,8 @@ When should a user disable a federation? For example, if the IdP is being update
 
 == Delete a federation
 If you no longer need a federation, you can delete it. This removes the federation from BlueXP and prevents any users associated with the federation from logging in to BlueXP using their corporate credentials. For example, if the IdP is being decommissioned or if the federation is no longer needed. After you delete a federation, you cannot recover it. You must create a new federation.
+
+
 
 
 
