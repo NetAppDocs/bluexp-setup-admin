@@ -13,7 +13,7 @@ summary: After you've added a federated connection, you can manage it in BlueXP.
 :imagesdir: ./media/
 
 [.lead]
-You can manage your federation in BlueXP. You can disable federations, keep them updates with valid credentials, as well as disable them if you no longer need them.
+You can manage your federation in BlueXP. You can disable it, update expired credentials, as well as disable it if you no longer need it.
 
 You can also add a verified domain to an existing federation, which allows you to use multiple domains for your federated connection.
 
