@@ -23,9 +23,6 @@ NOTE: You can federate with your corporate IdP or with the NetApp Support Site. 
 
 NetApp supports service provider-initiated (SP-initiated) SSO only. You need to first configure the identity provider to trust NetApp as a service provider. Then, you can create a connection in BlueXP that uses the identity provider's configuration.
 
-
-
-== Federate your SAML provider with BlueXP
 You can set up a federated connection with your SAML 2.0 provider to enable single sign-on (SSO) for BlueXP. The process involves configuring your provider to trust NetApp as a service provider and then creating the connection in BlueXP.
 
 include::_include/federation-prereqs.adoc[]
