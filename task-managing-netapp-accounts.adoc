@@ -56,6 +56,7 @@ Change your account name at any time to change it to something meaningful for yo
 
 The users in your account can access and manage the resources in your workspace.
 
+// update images
 === Add users
 
 Associate users with your BlueXP account so those users can create and manage working environments in BlueXP.
@@ -135,6 +136,7 @@ In order to make API calls to the https://docs.netapp.com/us-en/bluexp-automatio
 
 https://docs.netapp.com/us-en/bluexp-automation/platform/create_service_token.html[Learn how to create a service account token^]
 
+// unsupported? 
 === Copy the client ID
 
 You can copy a service account's client ID at any time.
@@ -159,7 +161,7 @@ Recreating the key will delete the existing key for this service account and the
 +
 image:screenshot_service_account_actions.gif[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
 
-. Select *Recreate Key*.
+. Select *Recreate secrets*.
 
 . Select *Recreate* to confirm.
 
@@ -179,7 +181,7 @@ Delete a service account if you no longer need to use it.
 +
 image:screenshot_service_account_actions.gif[A screenshot that shows the action menu that is available when hovering over a user's name in the Users table.]
 
-. Select *Delete*.
+. Select *Delete user*.
 
 . Select *Delete* again to confirm.
 
