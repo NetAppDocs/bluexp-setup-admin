@@ -33,12 +33,24 @@ include::_include/federation-prereqs.adoc[]
 
 include::_include/federation-navigation-steps.adoc[]
 
+[discrete]
+
+===== Domain details
+
 include::_include/federation-verify-domain-steps.adoc[]
+
+[discrete]
+
+===== Connection method
 
 
 . For your connection method, choose *Protocol* and then select *Active Directory Federation Services (AD FS)*.
 
 . Select *Next*.
+
+[discrete]
+
+===== Configuration instructions
 
 . Create a Relying Party Trust in your AD FS server. You can do so through PowerShell or manually in your AD FS server. Consult the AD FS documentation for details on how to create a relying party trust. 
 
@@ -59,11 +71,18 @@ AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.a
 .. After creating the trust, copy the metadata URL from your AD FS server or download the federation metadata file. You'll need this URL or file to complete the connection in BlueXP.
 
 . Return to BlueXP, and select *Next* to create the connection.
+[discrete]
+
+===== Create connection
 
 . Create the connection with AD FS.  
 .. Enter the *AD FS URL* that you copied from your AD FS server in the previous step or uploaded the federation metadata file that you downloaded from your AD FS server.
 
 . Select *Create connection*. Creating the connection might take a few minutes.
+
+[discrete]
+
+===== Test and enable the connection
 
 include::_include/federation-test-enable-steps.adoc[]
 
