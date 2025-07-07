@@ -2,9 +2,11 @@
 
 This release of the BlueXP Connector includes security improvements, bug fixes, and the following new features: 
 
-* Support for transparent proxies for Connectors dedicated to supporting Cloud Volumes ONTAP services.
+* Support for transparent proxies for Connectors dedicated to supporting Cloud Volumes ONTAP services. link:https://docs.netapp.com/us-en/bluexp/task-configuring-proxy.html[Learn more about configuring a transparent proxy.]
 
 * Ability to use network tags to help route Connector traffic when the Connector is deployed in a Google Cloud environment.
+
+* Additional alerts for Connector health monitoring, including CPU and RAM usage.
 
 At this time, the 3.9.54 release is available for standard mode and restricted mode.
 
