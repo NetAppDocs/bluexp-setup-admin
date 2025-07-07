@@ -174,13 +174,9 @@ Ensure that the certificate file is in PEM format and resides in the same direct
 
 You can update a Connector's existing transparent proxy server by using the `proxy update` command or remove the transparent proxy server by using the `proxy remove` command. For more information, review the documentation for link:reference-connector-maint-console.html[Connector maintenance console].
 
-////
-=== Update the Connector proxy 
-If the proxy configuration for your network changes, your Connector might lose access to the internet. For example, if someone changes the password for the proxy server or updates the certificate. In this case, you'll need to access the Connector host directly and update the settings. 
 
-////
-
-
+== Update the Connector proxy if it loses access to the internet
+If the proxy configuration for your network changes, your Connector might lose access to the internet. For example, if someone changes the password for the proxy server or updates the certificate. In this case, you'll need to access the Connector host directly and update the settings. Ensure you have network access to the Connector host and that you can log in to it. You can configure the proxy settings for an explicit proxy from the BlueXP console, but you must use the Connector maintenance tool to update the proxy settings for a transparent proxy.
 
 
 
