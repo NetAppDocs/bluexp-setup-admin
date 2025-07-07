@@ -52,7 +52,7 @@ If Cloud Volumes ONTAP systems don't have an outbound internet connection to sen
 
 //tag::proxy[]
 Proxy server::
-If your business requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You'll need to provide this information during installation. Note that BlueXP does not support transparent proxy servers.
+NetApp supports both explicit and transparent proxy configurations. If you are using a transparent proxy, you only need to provide the certificate for the proxy server. If you are using an explicit proxy, you'll also need the IP address and credentials.
 +
 * IP address
 * Credentials

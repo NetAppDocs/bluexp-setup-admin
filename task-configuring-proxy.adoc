@@ -15,25 +15,101 @@ summary: If your corporate policies require you to use a proxy server for all co
 [.lead]
 If your corporate policies require you to use a proxy server for all communication to the internet, then you need to configure your Connectors to use that proxy server. If you didn't configure a Connector to use a proxy server during installation, then you can configure the Connector to use that proxy server at any time.
 
-Using a proxy server with the Connector enables outbound internet access when no public IP or NAT gateway is available. The proxy server provides outbound connectivity only for the Connector, not for Cloud Volumes ONTAP systems.
+The Connector's proxy server enables outbound internet access without a public IP or NAT gateway. The proxy server provides outbound connectivity only for the Connector, not for Cloud Volumes ONTAP systems.
 
-If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. You must ensure that the Connector's security group allows inbound connections over port 3128. Open this port after you deploy the Connector.
+If Cloud Volumes ONTAP systems lack outbound internet access, BlueXP configures them to use the Connector's proxy server. You must ensure that the Connector's security group allows inbound connections over port 3128. Open this port after deploying the Connector.
+
+If the Connector itself doesn't have an outbound internet connection, Cloud Volumes ONTAP systems cannot use the configured proxy server. 
 
 == Supported configurations
 
-* BlueXP supports HTTP and HTTPS. 
-* The proxy server can be in the cloud or in your network. 
-* BlueXP does not support transparent proxy servers.
+* Transparent proxy servers are supported for Connectors that serve Cloud Volumes ONTAP systems. If you use BlueXP services with Cloud Volumes ONTAP, create a dedicated Connector for Cloud Volumes ONTAP where you can use a transparent proxy server.
+* Explicit proxy servers are supported with all Connectors, including those that manage Cloud Volumes ONTAP systems and those that manage BlueXP services.
+* HTTP and HTTPS. 
+* The proxy server can reside in the cloud or in your network.
 
-== Enable a proxy on a Connector
+
+== Enable an explicit proxy on a Connector
 
 When you configure a Connector to use a proxy server, that Connector and the Cloud Volumes ONTAP systems that it manages (including any HA mediators), all use the proxy server.
 
-This operation restarts the Connector. Ensure that the Connector isn't performing any operations before you proceed.
+This operation restarts the Connector. Verify the Connector is idle before proceeding.
 
 .Steps
 
 . Navigate to the *Edit BlueXP Connector* page.
+
++
+[role="tabbed-block"]
+====
+
+.Standard mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Manage Connectors*.
++
+image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
+
+.. Select the action menu for a Connector and select *Edit Connector*.
++
+image:screenshot-edit-connector-standard.png[A screenshot that shows the Edit Connectors option that is available from the action menu.]
+--
+
+.Restricted or private mode
+--
+
+.. Select the *Connector* drop-down from the BlueXP header.
+
+.. Select *Edit Connector*.
++
+image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector option that is available after you expand the Connector menu.]
+--
+
+====
+// end tabbed area
+
+. Select *HTTP Proxy Configuration*.
+
+. Select *Explicit proxy* in the Configuration type field.
+
+. Select *Enable Proxy*.
+. Specify the server using the syntax http://_address:port_ or https://_address:port_
+. Specify a user name and password if basic authentication is required for the server.
+
++
+Note the following:
++
+* The user can be a local user or domain user.
+* For a domain user, you must enter the ASCII code for the \ as follows: domain-name%92user-name
++
+For example: netapp%92proxy
+* BlueXP doesn't support passwords that include the @ character.
+
+
+
+. Select *Save*.
+
+[[transparent-proxy]]
+== Enable a transparent proxy on a Connector (Cloud Volumes ONTAP only)
+Only  Cloud Volumes ONTAP supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
+
+Before enabling a transparent proxy, ensure that the following requirements are met:
+
+* The Connector is installed on the same network as the transparent proxy server.  
+* TLS inspection is enabled on the proxy server.
+* You have a certificate in PEM format that matches the one used on the transparent proxy server.
+* You do not use the Connector for any NetApp data services other than Cloud Volumes ONTAP. 
+
+To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
+
+When you configure a proxy server, the Connector restarts. Verify the Connector is idle before proceeding.
+
+
+.Steps
+
+. Navigate to the *Edit BlueXP Connector* page:
 +
 Navigation depends on your BlueXP mode. In standard mode, access the interface from the SaaS website. In restricted or private mode, access it locally from the Connector host.
 +
@@ -69,20 +145,44 @@ image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector o
 
 . Select *HTTP Proxy Configuration*.
 
-. Set up the proxy:
+. Select *Transparent proxy* in the Configuration type field.
 
-.. Select *Enable Proxy*.
-.. Specify the server using the syntax http://_address:port_ or https://_address:port_
-.. Specify a user name and password if basic authentication is required for the server.
+. Select *Save*.
+
+. Open a command-line interface on the Connector host.
+
+. Navigate to the Connector maintenance tool directory: `/opt/application/netapp/service-manager-2/connector-maint-console` 
+
+. Run the following command to enable the transparent proxy, where `/home/ubuntu/<certificate-file>.pem` is the directory and name certificate file that you have for the proxy server:
+
 +
-Note the following:
+[source,CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem 
+----
+
 +
-* The user can be a local user or domain user.
-* For a domain user, you must enter the ASCII code for the \ as follows: domain-name%92user-name
+Ensure that the certificate file is in PEM format and resides in the same directory as the command or specify the full path to the certificate file.
+
 +
-For example: netapp%92proxy
-* BlueXP doesn't support passwords that include the @ character.
-.. Select *Save*.
+[source,CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem 
+----
+
+=== Modify the transparent proxy for the Connector
+
+You can update a Connector's existing transparent proxy server by using the `proxy update` command or remove the transparent proxy server by using the `proxy remove` command. For more information, review the documentation for link:reference-connector-maint-console.html[Connector maintenance console].
+
+////
+=== Update the Connector proxy 
+If the proxy configuration for your network changes, your Connector might lose access to the internet. For example, if someone changes the password for the proxy server or updates the certificate. In this case, you'll need to access the Connector host directly and update the settings. 
+
+////
+
+
+
+
 
 == Enable direct API traffic
 
