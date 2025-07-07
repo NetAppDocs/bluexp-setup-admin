@@ -32,11 +32,27 @@ include::_include/os-reqs.adoc[tag=cpu-ram]
 link:reference-connector-default-config.html[Learn about the default configuration for the Connector].
 
 [[monitor-disk-space]]
-== Monitor disk space 
+== Monitor the Connector
 
-BlueXP notifies you when the Connector VM's disk space is low. Monitor these notifications in the Notifications Center or configure it to send email alerts. Resolving disk space issues is your responsibility. link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM[Review the NetApp Knowledge Base article^].
+BlueXP alerts you when the Connector VM's is reaching an unhealthy state. This includes disk space issues, RAM usage, and CPU usage. Monitor these notifications in the Notifications Center within BlueXP or configure it to send email alerts. Resolving these issues is your responsibility. 
+
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center[Learn more.^]
+
+[cols=2*,options="header",cols="47,47",width="95%"]
+|===
+
+| Alert
+| Action needed
+
+| Disk space is too high | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM[Review the NetApp Knowledge Base article^].
+| CPU usage is too high | Increase the CPU for the Connector VM instance. Or create additional Connectors and distribute the workload across multiple Connectors. For example, if you are using a single Connector to manage multiple Cloud Volumes ONTAP systems, you can create a Connector for each Cloud Volumes ONTAP system. Connector usage varies based your environment.
+| RAM usage is too high | Increase the RAM for the Connector VM instance. Or create additional Connectors and distribute the workload across multiple Connectors.
+
+
+|===
+
+
 
 == Stopping and starting the Connector VM
 
