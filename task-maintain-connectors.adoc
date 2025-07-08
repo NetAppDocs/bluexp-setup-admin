@@ -23,7 +23,7 @@ You don't need to stop any services on the Connector host when applying OS secur
 
 == VM or instance type
 
-If you created a Connector from BlueXP, it deployed a VM instance in your cloud provider with a default configuration. After you create the Connector, don't switch to a smaller VM instance with less CPU or RAM.
+If you create a Connector from BlueXP, it deploys a VM instance in your cloud provider with a default configuration. After you create the Connector, don't switch to a smaller VM instance with less CPU or RAM.
 
 The following table lists the CPU and RAM requirements:
 
@@ -34,7 +34,7 @@ link:reference-connector-default-config.html[Learn about the default configurati
 [[monitor-disk-space]]
 == Monitor the Connector
 
-BlueXP alerts you when the Connector VM is unhealthy, including disk space, RAM, and CPU issues. This includes disk space issues, RAM usage, and CPU usage. Monitor these notifications in the Notifications Center within BlueXP or configure it to send email alerts. Resolving these issues is your responsibility. 
+BlueXP alerts you when the Connector VM is unhealthy, including disk space, RAM, and CPU issues. This includes disk space issues, RAM usage, and CPU usage. Monitor these notifications in the Notifications Center within BlueXP or configure it to send email alerts. Occasional increases in disk space, memory, or CPU usage are normal, but if it happens frequently, it is your responsibility to resolve.
 
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center[Learn more.^]
@@ -46,8 +46,8 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations
 | Action needed
 
 | Disk space is too high | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM[Review the NetApp Knowledge Base article^].
-| CPU usage is too high | Create additional Connectors and distribute the workload across multiple Connectors. CPU utilization can vary based your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
-| RAM usage is too high | Create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
+| CPU usage is too high | Increase the CPU size of the Connector VM, or alternatively, create additional Connectors and distribute the workload across multiple Connectors. CPU utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
+| RAM usage is too high | Increase the RAM of the Connector VM, or alternatively, create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
 
 
 |===
@@ -65,12 +65,12 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be awar
 If you need to connect to the Linux VM that the Connector runs on, you can do so by using the connectivity options available from your cloud provider.
 
 AWS::
-When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
+When you create the Connector instance in AWS, you provide an AWS access key and secret key. You can use this key pair to SSH to the instance. Use the user name 'ubuntu' for the EC2 Linux instance. For Connectors created prior to May 2023, use the user name 'ec2-user'.
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
 
 Azure::
-When you created the Connector VM in Azure, you specified a user name and chose to authenticate with a password or SSH public key. Use the authentication method that you chose to connect to the VM.
+When you create the Connector VM in Azure, you specify a user name and choose to authenticate with a password or SSH public key. Use the authentication method that you chose to connect to the VM.
 +
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm[Azure Docs: SSH into your VM^]
 
@@ -91,7 +91,7 @@ You can change the internal and public IP addresses of the Connector instance as
 
 . If you changed the private IP address, update the backup location for Cloud Volumes ONTAP configuration files so that the backups are being sent to the new private IP address on the Connector.
 +
-You'll need to update the backup location for each Cloud Volumes ONTAP system.
+Update the backup location for each Cloud Volumes ONTAP system.
 
 .. From the Cloud Volumes ONTAP CLI, set the privilege level to advanced:
 [source,cli]
