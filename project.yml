@@ -206,9 +206,9 @@ sidebar:
           url: /task-monitor-cm-operations.html
     - title: Reference
       entries:
-        - title: Connector tool reference
+        - title: Connector maintenance console
           entries:
-            - title: Connector Maintenance Console
+            - title: Connector maintenance onsole
               url: /reference-connector-maint-console.html
         - title: Permissions
           entries:
