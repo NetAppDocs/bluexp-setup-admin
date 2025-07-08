@@ -36,6 +36,8 @@ link:reference-connector-default-config.html[Learn about the default configurati
 
 BlueXP alerts you when the Connector VM is unhealthy, including disk space, RAM, and CPU issues. This includes disk space issues, RAM usage, and CPU usage. Monitor these notifications in the Notifications Center within BlueXP or configure it to send email alerts. Occasional increases in disk space, memory, or CPU usage are normal, but if it happens frequently, it is your responsibility to resolve.
 
+NOTE: Work with NetApp support if you have questions about modifying your Connector VM.
+
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center[Learn more.^]
 
