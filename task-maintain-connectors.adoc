@@ -46,11 +46,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations
 | Action needed
 
 | Disk space is too high | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM[Review the NetApp Knowledge Base article^].
-| CPU usage is too high | Increase the CPU size of the Connector VM, or alternatively, create additional Connectors and distribute the workload across multiple Connectors. CPU utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
-| RAM usage is too high | Increase the RAM of the Connector VM, or alternatively, create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
+| CPU usage is too high | Increase the CPU size of the Connector VM in your hyperscaler or on-premises, depending on where you installed it. Alternatively, create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
+| RAM usage is too high | Increase the RAM of the Connector VM in your hyperscaler or on-premises, depending on where you installed it. Alternatively, create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
 
 
 |===
+
 
 
 
