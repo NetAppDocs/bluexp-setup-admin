@@ -34,6 +34,12 @@ Improved federation management allows you to:
 link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html[Learn more about identity federation in BlueXP.]
 
 
+==== Support for IAM roles for BlueXP backup and recover and BlueXP disaster recovery
+
+BlueXP now supports using IAM roles for BlueXP backup and recover and BlueXP disaster recovery. This allows you to manage permissions more effectively and securely, ensuring that only authorized users can perform operations for these services.
+
+link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html[Learn more about using IAM roles for BlueXP backup and recover and BlueXP disaster recovery.]
+
 
 
 
