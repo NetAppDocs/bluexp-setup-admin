@@ -42,8 +42,6 @@ You can add a verified domain to an existing federation in BlueXP. You can add a
 
 You must have already verified the domain in BlueXP before you can add it to a federation. If you haven't verified the domain yet, you can do so by following the steps in the link:task-federation-verify-domain.html[Verify your domain in BlueXP].
 
-<need a use case here of when you would want to do this>--Tonia
-<how long does it take for users of this new domain to be able to log in?--Tonia>
 .Steps
 
 . In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
@@ -54,7 +52,7 @@ You must have already verified the domain in BlueXP before you can add it to a f
 
 . Select a verified domain from the list of available domains. 
 
-. Select *Update*.
+. Select *Update*. It make take up to 30 seconds for users of the new domain to have federated access to BlueXP.
 
 
 
@@ -63,7 +61,7 @@ You must have already verified the domain in BlueXP before you can add it to a f
 You can update the details of a federated connection in BlueXP. For example, you'll need to update the federation if the credentials such as a certificate or client secret expire. When needed, update the notification date to remind you to update the connection before it expires.
 
 
-IMPORTANT: Update the IdP first before updating the connection in BlueXP to avoid login issues. Stay logged in to BlueXP during the process. --what is the order here?--Tonia
+IMPORTANT: Update BlueXP first before updating your IdP to avoid login issues. Stay logged in to BlueXP during the process.
 
 .Steps
 
@@ -71,7 +69,7 @@ IMPORTANT: Update the IdP first before updating the connection in BlueXP to avoi
 
 . Select the *Federation* tab.
 
-. Select the actions menu (three vertical dots) next to the federation that you want to add a verified domain to and select *Update federation*. The *Update domains* dialog box lists the domain already associated with this federation.
+. Select the actions menu (three vertical dots) next to the federation that you want to update and select *Update federation*.
 
 . Update the details of the federation as needed.
 . Select *Update*.
@@ -95,7 +93,7 @@ If you are having trouble with an existing federation, you can test the connecti
 == Disable a federation
 If you no longer need a federation, you can disable it. This prevents users associated with the federation from logging in to BlueXP using their corporate credentials. You can re-enable the federation later if needed.
 
-When should a user disable a federation? For example, if the IdP is being updated or if the federation is no longer needed. --Tonia?
+You should disable a federation before deleting it. For example, if you are decommissioning the IdP in favor of another IdP or no longer want to use federation.  This allows you to re-enable it later if needed.
 
 .Steps
 
@@ -107,6 +105,16 @@ When should a user disable a federation? For example, if the IdP is being update
 
 == Delete a federation
 If you no longer need a federation, you can delete it. This removes the federation from BlueXP and prevents any users associated with the federation from logging in to BlueXP using their corporate credentials. For example, if the IdP is being decommissioned or if the federation is no longer needed. After you delete a federation, you cannot recover it. You must create a new federation.
+
+IMPORTANT: You must disable a federation before you can delete it. You cannot undelete a federation after you delete it.
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select the *Federation* tab.
+
+. Select the actions menu image:button_3_vert_dots.png[an icon with three vertical dots] next to the federation that you want to add a verified domain to and select *Delete*. 
 
 
 
