@@ -20,7 +20,7 @@ Existing customers who have already set up federated connections to BlueXP can i
 NOTE: After you import your existing federation, you can manage the federation from the Federations page. link:task-federation-manage.html[Learn more about managing federations.]
 
 .Required role
-Organization admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
+Organization admin or Federation admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
 
 == Import a federation
 

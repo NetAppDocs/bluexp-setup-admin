@@ -19,11 +19,12 @@ You can also add a verified domain to an existing federation, which allows you t
 
 NOTE: Federation management events such as enabling, disabling, and updating federations display in the Timeline. link:task-monitor-cm-operations.html[Learn more about monitoring operations in BlueXP.]
 
-.Required role
-Organization admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
+.Required roles
+Organization admin or Federation admin is required to make create and manage federations. Federation viewer can view the Federation page.  link:reference-iam-predefined-roles.html[Learn more about access roles.]
+
 
 == Enable a federation
-If you have created a federation but it is not enabled, you can enable it through the Federation tab in BlueXP. Enabling a federation allows users associated with the federation to log in to BlueXP using their corporate credentials. You must have already created the federation before you can enable it.
+If you have created a federation but it is not enabled, you can enable it through the Federation tab in BlueXP. Enabling a federation allows users associated with the federation to log in to BlueXP using their corporate credentials. You must have already created the federation and tested it successfully before enabling it.
 
 .Steps
 
@@ -58,7 +59,7 @@ You must have already verified the domain in BlueXP before you can add it to a f
 
 == Updating an expiring federated connection
 
-You can update the details of a federated connection in BlueXP. For example, you'll need to update the federation if the credentials such as a certificate or client secret expire. When needed, update the notification date to remind you to update the connection before it expires.
+You can update the details of a federation in BlueXP. For example, you'll need to update the federation if the credentials such as a certificate or client secret expire. When needed, update the notification date to remind you to update the connection before it expires.
 
 
 IMPORTANT: Update BlueXP first before updating your IdP to avoid login issues. Stay logged in to BlueXP during the process.
