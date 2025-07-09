@@ -13,11 +13,11 @@ summary: Identity federation enables single sign-on with BlueXP so that users ca
 :imagesdir: ./media/
 
 [.lead]
-Single-sign on (federation) allows users to log in to using their corporate credentials, which simplifies the login process and enhances security. You can enable single sign-on (SSO) with your identity provider (IdP) or with the NetApp Support site. 
+Single-sign on (federation) simplifies the login process and enhances security by allowing users to log in to BlueXP using their corporate credentials. You can enable single sign-on (SSO) with your identity provider (IdP) or with the NetApp Support site.
 
 .Required role
 
-Organization admin. link:reference-iam-predefined-roles.html[Learn more about access roles.] 
+Organization admin, Federation admin, Federation viewer. link:reference-iam-predefined-roles.html[Learn more about access roles.] 
 
 
 
