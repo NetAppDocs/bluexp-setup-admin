@@ -4,6 +4,5 @@
 .. Choose whether you want to use a verified domain or your email domain. The email domain is the domain associated with the account you are logged in with.
 .. Enter the name of the federation you are configuring.
 .. If you choose a verified domain, select the domain from the list.    
-.. If you choose your email domain, enter the domain name.
 
 . Select *Next*.

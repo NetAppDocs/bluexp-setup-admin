@@ -32,16 +32,16 @@ If you have created a federation but it is not enabled, you can enable it throug
 
 . Select the *Federation* tab.
 
-. Select the actions menu image:button_3_vert_dots.png[an icon with three vertical dots] next to the federation that you want to enable and select *Enable*. 
+. Select the actions menu image:icon-action.png[an icon with three horizontal dots] next to the federation that you want to enable and select *Enable*. 
 
 
 
 
 
 == Add a verified domain to an existing federation
-You can add a verified domain to an existing federation in BlueXP. You can add a verified domain to an existing federation in BlueXP to use multiple domains with the same identity provider (IdP).
+You can add a verified domain to an existing federation in BlueXP to use multiple domains with the same identity provider (IdP).
 
-You must have already verified the domain in BlueXP before you can add it to a federation. If you haven't verified the domain yet, you can do so by following the steps in the link:task-federation-verify-domain.html[Verify your domain in BlueXP].
+You must have already verified the domain in BlueXP before you can add it to a federation. If you haven't verified the domain yet, you can do so by following the steps in link:task-federation-verify-domain.html[Verify your domain in BlueXP].
 
 .Steps
 
