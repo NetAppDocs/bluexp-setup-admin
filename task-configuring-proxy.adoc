@@ -94,8 +94,8 @@ For example: netapp%92proxy
 . Select *Save*.
 
 [[transparent-proxy]]
-== Enable a transparent proxy on a Connector (Cloud Volumes ONTAP only)
-Only  Cloud Volumes ONTAP supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
+== Enable a transparent proxy on a Connector 
+Only Cloud Volumes ONTAP supports using a transparent proxy on the Connector. If you use BlueXP services in addition to Cloud Volumes ONTAP, you should create a separate Connector to use for data services or to use for Cloud Volumes ONTAP. 
 
 Before enabling a transparent proxy, ensure that the following requirements are met:
 
@@ -104,52 +104,14 @@ Before enabling a transparent proxy, ensure that the following requirements are 
 * You have a certificate in PEM format that matches the one used on the transparent proxy server.
 * You do not use the Connector for any NetApp data services other than Cloud Volumes ONTAP. 
 
-To configure an existing Connector to use a transparent proxy server, you use both the BlueXP console and the Connector maintenance tool that is available through the command line on the Connector host. 
+To configure an existing Connector to use a transparent proxy server, you use the Connector maintenance tool that is available through the command line on the Connector host. 
 
 When you configure a proxy server, the Connector restarts. Verify the Connector is idle before proceeding.
 
 
 .Steps
 
-. Navigate to the *Edit BlueXP Connector* page:
-+
-Navigation depends on your BlueXP mode. In standard mode, access the interface from the SaaS website. In restricted or private mode, access it locally from the Connector host.
-+
-[role="tabbed-block"]
-====
-
-.Standard mode
---
-
-.. Select the *Connector* drop-down from the BlueXP header.
-
-.. Select *Manage Connectors*.
-+
-image:screenshot-manage-connectors.png[A screenshot that shows the Manage Connectors page that is available after selecting the Connector.]
-
-.. Select the action menu for a Connector and select *Edit Connector*.
-+
-image:screenshot-edit-connector-standard.png[A screenshot that shows the Edit Connectors option that is available from the action menu.]
---
-
-.Restricted or private mode
---
-
-.. Select the *Connector* drop-down from the BlueXP header.
-
-.. Select *Edit Connector*.
-+
-image:screenshot-edit-connector.png[A screenshot that shows the Edit Connector option that is available after you expand the Connector menu.]
---
-
-====
-// end tabbed area
-
-. Select *HTTP Proxy Configuration*.
-
-. Select *Transparent proxy* in the Configuration type field.
-
-. Select *Save*.
++ Ensure that you have a certificate file in PEM format for the proxy server. If you do not have a certificate, contact your network administrator to obtain one.
 
 . Open a command-line interface on the Connector host.
 
@@ -179,7 +141,7 @@ You can update a Connector's existing transparent proxy server by using the `pro
 IMPORTANT: Once you have configured a proxy, you cannot change the proxy type. If you need to change the proxy type, you remove the Connector and add a new Connector with the new proxy type.
 
 == Update the Connector proxy if it loses access to the internet
-If the proxy configuration for your network changes, your Connector might lose access to the internet. For example, if someone changes the password for the proxy server or updates the certificate. In this case, you'll need to access the Connector host directly and update the settings. Ensure you have network access to the Connector host and that you can log in to it. You can configure the proxy settings for an explicit proxy from the BlueXP console, but you must use the Connector maintenance tool to update the proxy settings for a transparent proxy.
+If the proxy configuration for your network changes, your Connector might lose access to the internet. For example, if someone changes the password for the proxy server or updates the certificate. In this case, you'll need to access the UI from the Connector host directly and update the settings. Ensure you have network access to the Connector host and that you can log into the BlueXP UI.
 
 
 
