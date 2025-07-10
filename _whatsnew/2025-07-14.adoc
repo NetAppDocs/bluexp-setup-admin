@@ -28,9 +28,9 @@ BlueXP now supports IAM in private mode, allowing you to manage user access and 
 
 BlueXP now offers a more intuitive interface for managing identity federation. This includes easier navigation, clearer options for configuring federated connections, and improved visibility into existing federations.
 
-Enabling single sign-on (SSO) through identity federation lets users log in to BlueXP and NetApp services with corporate credentials. This improves security, reduces password use, and simplifies onboarding.
+Enabling single sign-on (SSO) through identity federation lets users log in to BlueXP with their corporate credentials. This improves security, reduces password use, and simplifies onboarding.
 
-BlueXP prompts you to import any existing federated connections to the new interface so you can gain access to the new management features. This allows you to take advantage of the latest enhancements without having to recreate your federated connections. link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html[Learn more about importing your existing federated connection to BlueXP.]
+BlueXP guides you to import existing federated connections to the new interface, enabling access to updated management features and the latest enhancements without recreating your federated connections.link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html[Learn more about importing your existing federated connection to BlueXP.]
 
 Improved federation management allows you to:
 
@@ -46,6 +46,7 @@ link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html[Lea
 ==== Access roles for BlueXP backup and recovery and BlueXP disaster recovery and federation management
 
 BlueXP now supports using IAM roles for the following features and data services:
+
 * BlueXP backup and recovery
 * BlueXP disaster recovery
 * Federation
