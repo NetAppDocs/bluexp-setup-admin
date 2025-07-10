@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+permalink: reference-iam-disaster-roles.html
+keywords: disaster recovery, role-based access control, failover admin, replication plans, job- monitoring, business continuity, compliance- management, operational governance, access delegation, rbac, IAM roles
+summary:  BlueXP identity and access management provides several roles that you can assign to the members of your organization who use the Disaster recovery service.
+---
+
+= BlueXP disaster recovery roles
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can assign the following roles to users to provide them access to the Backup and recovery service within BlueXP. Backup and recovery roles give you the flexibility to  assign users a role specific to the tasks they need to accomplish within your organization. How you assign roles depends on your own business and storage management practices.
+
+Disaster recovery uses the following roles:
+
+* *Disaster recovery admin*: Perform any actions.
+* *Disaster recovery failover admin*: Perform failover and migrations. 
+* *Disaster recovery application admin*: Create replication plans. Modify replication plans. Start test failovers.
+* *Disaster recovery viewer*: View information only.
+    
+
+The following table indicates the actions that each role can perform. 
+
+[cols=5*,options="header",cols="30,20a,20a,20a,20a",width="100%"]
+|===
+| Feature and action
+| Disaster recovery admin
+| Disaster recovery failover admin
+| Disaster recovery application admin
+| Disaster recovery viewer
+
+| View dashboard and all tabs | Yes | Yes |Yes |Yes
+| Start free trial | Yes | No  |No |No
+| Initiate discovery of workloads | Yes | No |No |No
+| View license information | Yes | Yes |Yes |Yes
+| Activate license | Yes | No  |Yes |No
+
+5+| *On the Sites tab*: 
+| View sites | Yes | Yes |Yes |Yes
+| Add, modify, or delete sites | Yes | No| No |No
+
+
+5+| *On the Replication plans tab*: 
+| View replication plans | Yes | Yes  |Yes |Yes
+| View replication plan details | Yes | Yes  |Yes |Yes
+| Create or modify replication plans | Yes | Yes  |Yes |No
+| Create reports | Yes | No |No | No
+| View snapshots | Yes | Yes | Yes | Yes
+| Perform failover tests | Yes | Yes | Yes |No
+| Perform failovers | Yes | Yes  | No |No
+| Perform failbacks | Yes | Yes  |No |No
+| Perform migrations | Yes | Yes  |No |No
+
+5+| *On the Resource groups tab*: 
+| View resource groups | Yes | Yes  |Yes |Yes
+| Create, modify, or delete resource groups| Yes | No | Yes | No
+
+
+5+| *On the Job Monitoring tab*:
+| View jobs| Yes | No  |Yes |Yes
+| Cancel jobs| Yes | Yes |Yes |No
+
+
+
+|===
