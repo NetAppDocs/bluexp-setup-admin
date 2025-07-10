@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: reference-iam-disaster-roles.html
+permalink: reference-iam-disaster-rec-roles.html
 keywords: disaster recovery, role-based access control, failover admin, replication plans, job- monitoring, business continuity, compliance- management, operational governance, access delegation, rbac, IAM roles
 summary:  BlueXP identity and access management provides several roles that you can assign to the members of your organization who use the Disaster recovery service.
 ---
