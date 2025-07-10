@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-federation-manage.html
+permalink: task-federation-import.html
 keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity
 summary: Import your existing federated connection to BlueXP to manage it in the new interface. This allows you to take advantage of the latest enhancements without having to recreate your federated connections.
 ---
