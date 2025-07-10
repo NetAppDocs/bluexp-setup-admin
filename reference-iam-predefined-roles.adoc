@@ -37,6 +37,10 @@ This is the only access role that can create Connectors.
 | link:reference-iam-platform-roles.html[Folder or project admin]|	Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned. 
 
 The Folder or project admin role CANNOT create Connectors.
+| link:reference-iam-platform-roles.html[Federation admin]|	Allows a user create and manage federations with BlueXP, which enable single-sign on (SSO). 
+| link:reference-iam-platform-roles.html[Federation viewer]|	Allows a user to view existing federations with BlueXP. Cannot create or manage federations.
+
+
 
 |===
 
@@ -96,7 +100,6 @@ SnapCenter does not have a viewer role.
 
 |===
 
-|===
 
 
 
