@@ -24,6 +24,8 @@ Identity and Access Management in BlueXP now provides the following features:
 
 BlueXP now supports IAM in private mode, allowing you to manage user access and permissions for BlueXP services and applications. This enhancement enables private mode customers to leverage role-based access control (RBAC) for better security and compliance.
 
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam[Learn more about IAM in BlueXP.]
+
 ==== Streamlined management of identity federations
 
 BlueXP now offers a more intuitive interface for managing identity federation. This includes easier navigation, clearer options for configuring federated connections, and improved visibility into existing federations.
