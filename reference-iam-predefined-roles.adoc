@@ -81,10 +81,10 @@ The following is a list of roles in the data service category. Each role grants 
 | link:reference-iam-backup-rec-roles.html[Backup and recovery restore admin] | Restore workloads in the Backup and recovery service.
 | link:reference-iam-backup-rec-roles.html[Backup and recovery clone admin] | Clone applications and data in the Backup and recovery service.
 | link:reference-iam-backup-rec-roles.html[Backup and recovery viewer] | View information only in the Backup and recovery service.
-| link:reference-iam-disaster-roles.html[Disaster recovery admin] | Perform any actions in the Disaster recovery service.
-| link:reference-iam-disaster-roles.html[Disaster recovery failover admin] | Perform failover and migrations.
-| link:reference-iam-disaster-roles.html[Disaster recovery application admin] | Create replication plans, modify replication plans, and start test failovers.
-| link:reference-iam-disaster-roles.html[Disaster recovery viewer] | View information only..
+| link:reference-iam-disaster-rec-roles.html[Disaster recovery admin] | Perform any actions in the Disaster recovery service.
+| link:reference-iam-disaster-rec-roles.html[Disaster recovery failover admin] | Perform failover and migrations.
+| link:reference-iam-disaster--rec-roles.html[Disaster recovery application admin] | Create replication plans, modify replication plans, and start test failovers.
+| link:reference-iam-disaster-rec-roles.html[Disaster recovery viewer] | View information only.
 | Classification admin | Provides the ability view BlueXP classification scan results.
 
 Classification does not have a viewer role. Users with this role can view compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
