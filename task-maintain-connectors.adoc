@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-maintain-connectors.html
-keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector, notifications, connector health, connector disk space, connector cpu usage, connector ram usage, connector vm, connector ip address, connector uri
 summary: Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
 ---
 
