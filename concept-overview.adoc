@@ -95,7 +95,7 @@ BlueXP sustainability dashboard::
 Analyze the sustainability of your storage systems.
 
 BlueXP tiering::
-Extend your on-premisesONTAP storage to the cloud.
+Extend your on-premises ONTAP storage to the cloud.
 
 BlueXP volume caching::
 Create a writable cache volume to speed up access to data or offload traffic from heavily accessed volumes.
