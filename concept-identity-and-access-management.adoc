@@ -16,12 +16,11 @@ summary: BlueXP identity and access management (IAM) enables you to control acce
 BlueXP identity and access management (IAM) enables you to organize and control access to your NetApp resources. You can organize your resources according to your organization's hierarchy. For example, you can organize resources by geographical location, site, or business unit. You can then assign IAM roles to members at specific parts of the hierarchy, which prevents access to resources in other parts of the hierarchy.
  
 
-* link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 * link:concept-modes.html[Learn about BlueXP deployment modes]
 
 == How BlueXP IAM works
 
-BlueXP IAM enables you to grant access to your organization's resources by defining which members have permissions to specific parts of the organization's hierarchy. For example, a member can have project admin permissions for a project that has five associated resources. 
+BlueXP IAM lets you grant resource access by assigning users access roles to specific parts of the hierarchy. For example, a member can be assigned the Folder or project admin role for a project with five resources. 
 
 When using BlueXP IAM, you'll manage the following components:
 
@@ -48,15 +47,13 @@ image:diagram-iam-resource-hierarchy.png["A conceptual diagram that shows the re
 
 An _organization_ is the top level of BlueXP's IAM system and typically represents your company. Your organization consists of folders, projects, members, roles, and resources. Connectors are associated with specific projects in the organization.
 
-BlueXP prompts you to create a new organization when you sign up.
 
 === Folders
 
 A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a geographical location (EU or US East), a site (London or Toronto), or a business unit (engineering or marketing). 
 
-Folders can hold projects, other folders, or both.
+olders can contain projects, other folders, or both. Creating folders is optional.
 
-You don't need to create folders. They are optional.
 
 === Projects
 
@@ -79,7 +76,7 @@ TIP: You can also associate a Connector with another folder or project in your o
 
 You also have the option to associate a resource with a folder, but this is optional and meets the needs of a specific use case.
 
-An _Organization admin_ might associate a resource with a folder so that a _Folder or project admin_ can then associate that resource with the appropriate projects that reside in the folder.
+An _Organization administrator_ might associate a resource with a folder to allow a _Folder or project administrator_ to link that resource to the appropriate projects in the folder.
 
 For example, let's say you have a folder that contains two projects:
 
@@ -89,7 +86,7 @@ The _Organization admin_ can associate a resource with the folder:
 
 image:diagram-iam-resource-association-folder-2.png["A diagram that shows a folder, a resource that is associated with the folder, and two projects that reside in the folder: project A and project B."]
 
-When you associate a resource with a folder, it does not automatically become accessible to all projects, only the _Folder or project admin_ can see the resource. The _Folder or project admin_ decides which projects can access it and associates the resource with the appropriate projects.
+Associating a resource with a folder doesn't make it accessible to all projects; only the _Folder or project admin_ can see it. The _Folder or project admin_ decides which projects can access it and associates the resource with the appropriate projects.
 
 In this example, the admin associates the resource with Project A:
 
@@ -107,7 +104,7 @@ Each organization includes at least one user with the _Organization admin_ role 
 
 In BlueXP IAM, you don't grant permissions directly to organization members. Instead, you grant each member a role. A role contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy.
 
-By providing permissions at a specific part of the resource hierarchy, you can restrict access rights to only the resources that a member needs to complete their tasks.
+Granting permissions at a specific hierarchy level restricts access to the resources a member needs and the services that they can use with those resources.
 
 ==== Where you can assign roles in the hierarchy
 
