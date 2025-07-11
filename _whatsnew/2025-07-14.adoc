@@ -8,13 +8,6 @@
 
 
 
-== BlueXP Identity and Access Management (IAM)
-
-This release includes several new features for Identity and Access Management (IAM):
-
-* Identity and Access Management (IAM) is now available in private mode. 
-* You can now federate your BlueXP organization with an external identity provider (IdP) directly from BlueXP, with improved workflows and management capabilities. BlueXP supports multiple federations, allowing you to manage multiple IdPs and federate multiple domains to the same BlueXP organization.
-* Role-based access control is now available for disaster recovery, enabling you to assign specific roles to users for managing disaster recovery tasks.
 
 
 
