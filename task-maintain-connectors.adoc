@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-maintain-connectors.html
-keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector, notifications, connector health, connector disk space, connector cpu usage, connector ram usage, connector vm, connector ip address, connector uri
 summary: Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
 ---
 
@@ -19,7 +19,7 @@ TIP: If you have an existing Connector, you should be aware of link:reference-co
 
 == Operating system patches and the Connector
 
-You don't need to stop any services on the Connector host when applying OS security patches.
+Apply OS security patches without stopping Connector host services.
 
 == VM or instance type
 
@@ -34,7 +34,12 @@ link:reference-connector-default-config.html[Learn about the default configurati
 [[monitor-disk-space]]
 == Monitor the Connector
 
-BlueXP alerts you when the Connector VM is unhealthy, including disk space, RAM, and CPU issues. This includes disk space issues, RAM usage, and CPU usage. Monitor these notifications in the Notifications Center within BlueXP or configure it to send email alerts. Occasional increases in disk space, memory, or CPU usage are normal, but if it happens frequently, it is your responsibility to resolve.
+BlueXP notifies you when the Connector VM is unhealthy, including disk space, RAM, and CPU issues. Monitor these notifications in the Notifications Center within BlueXP or configure email notifications. Occasional increases in disk space, memory, or CPU usage are normal, but if it happens frequently, you should take steps to resolve.
+
+BlueXP notifies you when a Connector resource (CPU, RAM, or disk space) exceeds 90% of its total capacity for 30 consecutive minutes. Afterwards, if the resource usage drops below that threshold, the notification displays as resolved (green) in the Notifications Center.
+
+
+NOTE: Work with NetApp support if you have questions about modifying your Connector VM.
 
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center[Learn more.^]
@@ -42,15 +47,16 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations
 [cols=2*,options="header",cols="47,47",width="95%"]
 |===
 
-| Alert
+| Notification
 | Action needed
 
 | Disk space is too high | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM[Review the NetApp Knowledge Base article^].
-| CPU usage is too high | Increase the CPU size of the Connector VM, or alternatively, create additional Connectors and distribute the workload across multiple Connectors. CPU utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
-| RAM usage is too high | Increase the RAM of the Connector VM, or alternatively, create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
+| CPU usage is too high | Increase the CPU size of the Connector VM in your hyperscaler or on-premises, depending on where you installed it. Alternatively, create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
+| RAM usage is too high | Increase the RAM of the Connector VM in your hyperscaler or on-premises, depending on where you installed it. Alternatively, create additional Connectors and distribute the workload across multiple Connectors. RAM utilization can vary based on your environment, ONTAP workloads, number of Cloud Volumes ONTAP systems, and the data services that you are using.
 
 
 |===
+
 
 
 
@@ -62,10 +68,10 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be awar
 
 == Connect to the Linux VM
 
-If you need to connect to the Linux VM that the Connector runs on, you can do so by using the connectivity options available from your cloud provider.
+If you need to connect to the Linux VM that the Connector runs on, use the connectivity options from your cloud provider.
 
 AWS::
-When you create the Connector instance in AWS, you provide an AWS access key and secret key. You can use this key pair to SSH to the instance. Use the user name 'ubuntu' for the EC2 Linux instance. For Connectors created prior to May 2023, use the user name 'ec2-user'.
+When you create the Connector instance in AWS, provide an AWS access key and secret key. You can use this key pair to SSH to the instance. Use the user name 'ubuntu' for the EC2 Linux instance. For Connectors created prior to May 2023, use the user name 'ec2-user'.
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
 
@@ -87,7 +93,7 @@ You can change the internal and public IP addresses of the Connector instance as
 
 . Follow the instructions from your cloud provider to change the local IP address or public IP address (or both) for the Connector instance.
 
-. If you change the public IP address and need to connect to the local user interface on the Connector, restart the Connector instance to register the new IP address with BlueXP.
+. Restart the Connector instance to register a new public IP address with BlueXP.
 
 . If you changed the private IP address, update the backup location for Cloud Volumes ONTAP configuration files so that the backups are being sent to the new private IP address on the Connector.
 +
@@ -115,8 +121,7 @@ You can add and remove the Uniform Resource Identifier (URI) for a Connector.
 
 . Select *Manage Connectors*.
 
-. Expand the *Connector URIs* bar to view the URIs for a connector.
+. Expand the *Connector URIs* bar to view connector URIs.
 
-. Expand the *Connector URIs* bar to view the URIs for a connector.
 
 . Add and remove URIs and then select *Apply*.
