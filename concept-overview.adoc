@@ -137,7 +137,6 @@ BlueXP identity and access management (IAM) is a resource and access management 
 BlueXP IAM is supported when using BlueXP in standard or restricted mode. If you're using BlueXP in private mode, then you use a BlueXP _account_ to manage workspaces, users, and resources.
 
 * link:concept-identity-and-access-management.html[Learn more about BlueXP IAM]
-* link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 
 === Connectors
 
