@@ -6,7 +6,7 @@ This release of the BlueXP Connector includes security improvements, bug fixes, 
 
 * Ability to use network tags to help route Connector traffic when the Connector is deployed in a Google Cloud environment.
 
-* Additional alerts for Connector health monitoring, including CPU and RAM usage.
+* Additional in-product notifications for Connector health monitoring, including CPU and RAM usage.
 
 At this time, the 3.9.54 release is available for standard mode and restricted mode.
 
