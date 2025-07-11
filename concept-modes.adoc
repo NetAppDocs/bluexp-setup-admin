@@ -296,7 +296,7 @@ Discovery without a Connector (direct discovery) is not supported.
 
 |===
 
-Supported BlueXP services in on-premisesdeployments::
+Supported BlueXP services in on-premises deployments::
 BlueXP supports the following storage and data services with private mode when the Connector is installed on your premises:
 +
 [cols=2*,options="header,autowidth"]
@@ -397,8 +397,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Workload factory | No | No
 
 .7+| *Features*
-| BlueXP identity and access management | Yes | No
-| BlueXP accounts | Yes | Yes
+| BlueXP identity and access management | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 

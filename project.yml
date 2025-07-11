@@ -94,12 +94,6 @@ sidebar:
               url: /task-prepare-private-mode.html
             - title: Deploy the Connector
               url: /task-install-private-mode.html
-            - title: BlueXP accounts
-              entries:
-              - title: Learn about accounts
-                url: /concept-netapp-accounts.html
-              - title: Manage your BlueXP account
-                url: /task-managing-netapp-accounts.html
             - title: What you can do next
               url: /reference-whats-next-private-mode.html     
     - title: Use BlueXP
@@ -148,12 +142,6 @@ sidebar:
                   entries:
                     - title: Ransomware protection roles
                       url: /reference-iam-ransomware-roles.html
-        - title: BlueXP accounts (private mode only)
-          entries:
-            - title: Learn about accounts
-              url: /concept-netapp-accounts.html
-            - title: Manage your BlueXP account
-              url: /task-managing-netapp-accounts.html
         - title: Identity federation
           entries:
             - title: Learn about identity federation
