@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-iam-platform-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
-summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
+summary: Assign platform roles to users to grant permissions to manage BlueXP, assign roles, add users, create Connectors, and manage federations.
 ---
 
 = BlueXP platform access roles
@@ -13,18 +13,20 @@ summary: BlueXP identity and access management includes several predefined roles
 :imagesdir: ./media/
 
 [.lead]
-Platform roles are the broadest roles you can assign to users and allow all permissions forBlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP includes two platform roles: *Organization admin* and *Folder or Project admin*. The main difference between the two BlueXP platform roles is the scope in which the role applies. 
+Assign platform roles to users to grant permissions to manage BlueXP, assign roles, add users, create Connectors, and manage federations.
 
 .Example for organization roles in BlueXP for a large multi-national organization
-XYZ Corporation, a multinational company, aims to segregate access to data storage resources based on geographic regions: North America, Europe, and Asia-Pacific. They want each region to have exclusive control over their resources while maintaining centralized oversight.
+XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—giving each region control while ensuring centralized oversight.
 
-To achieve this, a person assigned the *Organization admin* role in XYZ Corporation's BlueXP creates an initial working environment and then creates separate folders in BlueXP for each region. Each region's folder contains projects (with associated resources) related to that region. The *Organization admin* assigns a BlueXP user in each respective region the *Folder or project admin* role. 
+The *Organization admin* in XYZ Corporation's BlueXP creates an initial organization and separate folders for each region. Each region's folder contains projects (with associated resources) related to that region. The *Organization admin* assigns a BlueXP user in each respective region the *Folder or project admin* role. 
 
-Once the initial setup is complete, regional admins with the *Folder or project admin* role can create new working environments and add users within their regions. These regional admins could also add/remove/rename folders and projects to which they are assigned. The *Organization admin* inherits permissions for any new working environments or resources, maintaining visibility of storage usage across the entire organization.
+Regional admins with the *Folder or project admin* role manage their regions (folders) by adding new resources and users. These regional admins can also add, remove, or rename folders and projects they manage. The *Organization admin* inherits permissions for any new resources, maintaining visibility of storage usage across the entire organization.
 
+Within the same organization, one user is assigned the *Federation admin* role to manage the federation of the organization with their corporate IdP. This user can add or remove federated organizations, but cannot manage users or resources within the organization. The organization assigns a user the *Federation viewer* role to check federation status and view federated organizations without making changes.
 
+The following tables indicate the actions that each BlueXP platform role can perform.
 
-The following table indicates the actions that each BlueXP platform role can perform.
+== Organization administration roles 
 [cols="2,1,1",options="header"]
 |===
 
@@ -52,11 +54,32 @@ The following table indicates the actions that each BlueXP platform role can per
 | Manage Connectors (edit certificates, settings, and so on)  | Yes | No
 
 | Manage credentials from Settings > Credentials  | Yes | Yes
+| Create, manage, and view federations | Yes | No
+| Register for support and submit cases | Yes |	Yes 
+| Use data services | Yes | Yes 
+| View the BlueXP timeline and notifications | Yes |	Yes 
 
-| View the BlueXP timeline | Yes |	Yes 
+|===
 
-| Use BlueXP services | Yes | Yes 
+== Federation roles
+[cols="2,1,1",options="header"]
+|===
 
-| Register BlueXP for support and submit cases | Yes |	Yes 
+| Task
+| Federation admin
+| Federation viewer
+
+
+| Create a federation | Yes | No 
+
+| Verify a domain |	Yes | No
+
+| Add a domain to a federation | Yes | No
+
+| Disable and delete federations | Yes | No
+
+| Test federations | Yes | No
+
+| View federations and their details  | Yes | Yes
 
 |===
