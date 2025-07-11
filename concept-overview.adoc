@@ -149,6 +149,6 @@ link:concept-modes.html[Learn more about BlueXP deployment modes].
 
 == SOC 2 Type 2 certification
 
-An independent certified public accountant firm and services auditor examined BlueXP and affirmed that it achieved SOC 2 Type 2 reports based on the applicable Trust Services criteria.
+An independent certified public accountant firm and services auditor examined BlueXP and affirmed that BlueXP achieved SOC 2 Type 2 reports based on the applicable Trust Services criteria.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/[View NetApp's SOC 2 reports^]
