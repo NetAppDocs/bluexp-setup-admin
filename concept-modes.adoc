@@ -133,7 +133,7 @@ API calls are made to the following endpoint:
 \https://cloudmanager.cloud.netapp.com
 
 Authentication::
-Authentication is provided through BlueXP's cloud service using auth0 or through NetApp Support Site (NSS) logins. Identity federation is available.
+BlueXP provides authentication with auth0 or NetApp Support Site (NSS) logins. Identity federation is available.
 
 Supported BlueXP services::
 All BlueXP services are available to users.
@@ -226,7 +226,7 @@ For Cloud Volumes ONTAP, both capacity-based licensing and node-based licensing 
 How to get started with restricted mode::
 You need to enable restricted mode when you create your BlueXP account.
 +
-If you don't have an organization yet, you'll be prompted to create your organization and enable restricted mode when you log in to BlueXP for the first time from a Connector that you manually installed or that you created from your cloud provider's marketplace.
+If you don't have an organization yet, you are prompted to create your organization and enable restricted mode when you log in to BlueXP for the first time from a Connector that you manually installed or that you created from your cloud provider's marketplace.
 +
 
 +
