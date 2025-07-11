@@ -21,7 +21,7 @@ BlueXP provides unified control of storage across your hybrid multicloud and int
 
 === Unified control of storage from the BlueXP canvas
 
-The _BlueXP canvas_ lets you discover, deploy, and manage cloud and on-premises storage. The canvas provides a single location for all storage management.
+The _BlueXP canvas_ lets you discover, deploy, and manage cloud and on-premises storage. The canvas centralizes storage management.
 
 ==== Supported cloud and on-premises storage
 
