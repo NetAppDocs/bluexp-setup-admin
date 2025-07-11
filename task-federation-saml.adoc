@@ -27,8 +27,6 @@ You can set up a federated connection with your SAML 2.0 provider to enable sing
 
 include::_include/federation-prereqs.adoc[]
 
-NetApp supports the following SAML identity providers:
-<make a list here>--Tonia
 
 include::_include/federation-navigation-steps.adoc[]
 
@@ -58,7 +56,7 @@ include::_include/federation-verify-domain-steps.adoc[]
 * For the *Reply URL* or *Assertion Consumer Service (ACS) URL*, use `https://netapp-cloud-account.auth0.com/login/callback`
  
 * For the *Logout URL*, use `https://netapp-cloud-account.auth0.com/logout`
-* For *Audience/Entity ID*, use `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` where <fed-domain-name-saml> is the domain name you want to use for federation. For example, if your domain is `example.com`, the Audience/Entity ID would be `urn:auth0:netapp-cloud-account:example.com`.
+* For *Audience/Entity ID*, use `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` where <fed-domain-name-saml> is the domain name you want to use for federation. For example, if your domain is `example.com`, the Audience/Entity ID would be `urn:auth0:netapp-cloud-account:fed-example-com-samlp`.
 
 .. After creating the trust, copy the following values from your SAML provider server:
 +   
@@ -70,14 +68,14 @@ include::_include/federation-verify-domain-steps.adoc[]
 
 . Return to BlueXP, and select *Next* to create the connection.
 
-. Create the connection with AD FS.  
+. Create the connection with SAML.  
 .. Enter the *Sign In URL* of your SAML server.
 
 .. Upload the X.509 certificate that you downloaded from your SAML provider server. 
 
 .. Optionally, enter the *Sign Out URL* of your SAML server.
 
-. Select *Create connection*. The system creates the connection in a few minutes.
+. Select *Create connection*. The system creates the connection in a few seconds.
 
 include::_include/federation-test-enable-steps.adoc[]
 

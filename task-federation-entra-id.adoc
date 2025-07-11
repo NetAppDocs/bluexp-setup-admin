@@ -15,15 +15,15 @@ summary: Associate a NetApp Support Site account with your BlueXP organization o
 [.lead]
 Federate with your Microsoft Entra ID IdP provider to enable single sign-on (SSO) for BlueXP. This allows users to log in using their corporate credentials.
 
-.Required role
-Organization admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
+.Required roles
+Organization admin or Federation admin is required to make create and manage federations. Federation viewer can view the Federation page.  link:reference-iam-predefined-roles.html[Learn more about access roles.]
 
-NOTE: You can federate with your corporate IdP or with the NetApp Support Site. You can't federate with both.
+NOTE: You can federate with your corporate IdP or with the NetApp Support Site. NetApp recommends choosing one or the other, but not both.
 
 NetApp supports service provider-initiated (SP-initiated) SSO only. You need to first configure the identity provider to trust NetApp as a service provider. Then, you can create a connection in BlueXP that uses the identity provider's configuration.
 
 
-You can set up a federated connection with Microsoft Entra ID to enable single sign-on (SSO) for BlueXP. The process involves configuring your Microsoft Entra ID to trust NetApp as a service provider and then creating the connection in BlueXP.
+You can set up a federated connection with Microsoft Entra ID to enable single sign-on (SSO) for BlueXP. The process involves configuring your Microsoft Entra ID to trust BlueXP as a service provider and then creating the connection in BlueXP.
 
 include::_include/federation-prereqs.adoc[]
 
@@ -77,7 +77,7 @@ include::_include/federation-verify-domain-steps.adoc[]
 .. Enter the Microsoft Entra ID domain name. 
 
 
-. Select *Create connection*. The system creates the connection in a few minutes.
+. Select *Create connection*. The system creates the connection in a few seconds.
 
 [discrete]
 ====== test and enable the connection
