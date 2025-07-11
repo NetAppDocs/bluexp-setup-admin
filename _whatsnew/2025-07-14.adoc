@@ -40,6 +40,8 @@ Improved federation management allows you to:
 
 * Disable or delete federated connections when needed, giving you control over user access and security.
 
+* Control access to federation management with IAM roles.
+
 link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html[Learn more about identity federation in BlueXP.]
 
 
