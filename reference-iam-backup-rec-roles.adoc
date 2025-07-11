@@ -18,11 +18,10 @@ You can assign the following roles to users to provide them access to the Backup
 Backup and recovery uses the following roles: 
 
 * *Backup and recovery super admin*: Perform any actions.
-* *Backup and recovery admin*: Perform backups to local snapshots, copy to secondary storage, and back up data to object storage.
+* *Backup and recovery admin*: Perform backups to local snapshots, replicate to secondary storage, and back up to object storage.
 * *Backup and recovery restore admin*: Restore workloads. 
 * *Backup and recovery clone admin*: Clone applications and data.
-* *Backup and recovery viewer*: View information only.
-
+* *Backup and recovery viewer*: View backup and recovery information.
 
 The following table indicates the actions that each role can perform. 
 
