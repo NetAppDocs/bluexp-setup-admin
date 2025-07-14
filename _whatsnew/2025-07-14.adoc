@@ -42,7 +42,7 @@ Improved federation management allows you to:
 
 * Control access to federation management with IAM roles.
 
-link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html[Learn more about identity federation in BlueXP.]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-federation.html[Learn more about identity federation in BlueXP.]
 
 
 ==== New access roles for BlueXP backup and recovery, BlueXP disaster recovery, and federation management
