@@ -22,7 +22,7 @@ You can create a Connector in Google Cloud from BlueXP or by using Google Cloud.
 
 == Step 1: Set up networking
 
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+Set up networking to ensure the Connector can manage resources, with connections to target networks and outbound internet access.
 
 //VPC and subnet
 include::_include/networking.adoc[tag=vpc]
@@ -66,7 +66,7 @@ include::_include/networking.adoc[tag=ports]
 //NTP
 include::_include/networking.adoc[tag=ntp]
 +
-You'll need to implement this networking requirement after you create the Connector.
+Implement this networking requirement after creating the Connector.
 
 == Step 2: Set up permissions to create the Connector
 
@@ -156,9 +156,6 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 +
 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role[Google Cloud docs: Grant a single role^]
 
-.Result
-
-The Google Cloud user now has the permissions required to create the Connector.
 
 == Step 3: Set up permissions for the Connector
 
@@ -170,7 +167,7 @@ include::_include/google-shared-vpc-permissions.adoc[]
 
 == Step 5: Enable Google Cloud APIs
 
-Several Google Cloud APIs must be enabled before you can deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
+You must enable several Google Cloud APIs before deploying the Connector and Cloud Volumes ONTAP.
 
 .Step
 
@@ -186,7 +183,7 @@ Create a Connector directly from the BlueXP web-based console or by using gcloud
 
 .About this task
 
-Creating the Connector deploys a virtual machine instance in Google Cloud using a default configuration. After you create the Connector, you should not change to a smaller VM instance that has less CPU or RAM. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+Creating the Connector deploys a virtual machine instance in Google Cloud using a default configuration. Do not change the Connector to a smaller VM instance with less CPU or RAM after creation. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
 
 // start tabbed area
 
@@ -231,6 +228,8 @@ The form is owned and hosted by Google. Your credentials are not provided to Net
 
 * *Network*: Choose whether to enable a public IP address and optionally specify a proxy configuration.
 
+* *Network tags*: Add a network tag to the Connector instance if using a transparent proxy.  Network tags must start with a lowercase letter and can contain lowercase letters, numbers, and hyphens. Tags must end with a lowercase letter or number. For example, you might use the tag "connector-proxy".
+
 * *Firewall Policy*: Choose whether to create a new firewall policy or whether to select an existing firewall policy that allows the required inbound and outbound rules.
 +
 link:reference-ports-gcp.html[Firewall rules in Google Cloud]
@@ -239,11 +238,11 @@ link:reference-ports-gcp.html[Firewall rules in Google Cloud]
 
 . Select *Add*.
 +
-The instance should be ready in about 7 minutes. You should stay on the page until the process is complete.
+The instance is ready in approximately 7 minutes; stay on the page until the process completes.
 
 .Result
 
-After the process is complete, the Connector is available for use from BlueXP.
+After the process completes, the Connector is available for use from BlueXP.
 
 If you have Google Cloud Storage buckets in the same Google Cloud account where you created the Connector, you'll see a Google Cloud Storage working environment appear on the BlueXP canvas automatically. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html[Learn how to manage Google Cloud Storage from BlueXP^]
 --
@@ -268,7 +267,7 @@ The Connector is supported in Google Cloud on a VM instance with an OS that supp
 
 .Steps
 
-. Log in to the gcloud SDK using your preferred methodology.
+. Log in to the gcloud SDK using your preferred method.
 +
 In our examples, we'll use a local shell with the gcloud SDK installed, but you could use the native Google Cloud Shell in the Google Cloud console.
 +

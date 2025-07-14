@@ -13,7 +13,7 @@ summary: A Connector is NetApp software running in your cloud network or on-prem
 :imagesdir: ./media/
 
 [.lead]
-A _Connector_ is NetApp software running in your cloud network or on-premises network. It executes the actions that BlueXP needs to perform in order to manage your data infrastructure. The Connector constantly polls the BlueXP software as a service (SaaS) layer for any actions that it needs to take. You don't need a Connector to get started with BlueXP, but you'll need to create a Connector to unlock all BlueXP features and services.
+A _Connector_ is NetApp software running in your cloud network or on-premises network. It’s used to connect BlueXP’s services to your storage environments.  
 
 == What you can do without a Connector
 

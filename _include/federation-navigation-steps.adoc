@@ -1,0 +1,8 @@
+
+.Steps
+
+. In the upper right of the BlueXP console, select image:icon-settings-option.png[The settings icon which displays in the top right of the BlueXP web console.] > *Identity & Access Management*.
+
+. Select the *Federation* tab.
+
+. Select *Configure new federation*.

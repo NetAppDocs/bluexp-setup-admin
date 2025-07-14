@@ -17,12 +17,12 @@ You can install a Connector on one of your on-premises machines. To run the Conn
 
 .Before you begin
 
-* You should have an link:concept-connectors.html[understanding of Connectors].
+* Review information about link:concept-connectors.html[Connectors].
 * You should review link:reference-limitations.html[Connector limitations].
 
 == Step 1: Review host requirements
 
-The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. Ensure that your host meets these requirements before you install the Connector.
+Run the Connector software on a host that meets operating system, RAM, and port requirements. Ensure that your host meets these requirements before you install the Connector.
 
 include::_include/os-reqs.adoc[tag=manual-uid-range]
 
@@ -42,7 +42,7 @@ include::_include/podman-docker.adoc[]
 
 == Step 3: Set up networking
 
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+Set up networking to ensure the Connector can manage resources, with connections to target networks and outbound internet access.
 
 //Connections to target networks
 include::_include/networking.adoc[tag=networks]
@@ -100,7 +100,7 @@ include::_include/networking.adoc[tag=ntp]
 
 If you want to use BlueXP services in AWS or Azure with an on-premises Connector, then you need to set up permissions in your cloud provider so that you can add the credentials to the Connector after you install it.
 
-TIP: Why not Google Cloud? When the Connector is installed on your premises, it can't manage your resources in Google Cloud. The Connector must be installed in Google Cloud to manage any resources that reside there.
+TIP: Why not Google Cloud? When the Connector is installed on your premises, it can't manage your resources in Google Cloud. You must install the Connector in Google Cloud to manage any resources that reside there.
 
 // start tabbed area
 
@@ -125,7 +125,7 @@ include::_include/aws-permissions.adoc[tag=keys]
 
 .Result
 
-You should now have access keys for an IAM user who has the required permissions. After you install the Connector, you'll need to associate these credentials with the Connector from BlueXP.
+You should now have access keys for an IAM user who has the required permissions. After you install the Connector, associate these credentials with the Connector from BlueXP.
 --
 
 .Azure
@@ -152,9 +152,6 @@ include::_include/azure-set-up-service-principal.adoc[tag=ids]
 
 include::_include/azure-set-up-service-principal.adoc[tags=secret]
 
-.Result
-
-Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. After you install the Connector, you'll need to associate these credentials with the Connector from BlueXP.
 --
 
 ====
@@ -172,13 +169,14 @@ include::_include/manual-install.adoc[tag=main-steps]
 
 .Result
 
-The Connector is now installed. At the end of the installation, the Connector service (occm) restarts twice if you specified a proxy server.
+At the end of the installation, the Connector service (occm) restarts twice if you specified a proxy server.
 
-== Step 6: Set up the Connector
+== Step 6: Register the Connector with BlueXP
 
-Sign up or log in and then set up the Connector to work with your BlueXP organization.
+Log into BlueXP and associate the Connector with your organization. How you log in depends on the mode in which you are using BlueXP. If you are using BlueXP in standard mode, you log in through the SaaS website. If you are using BlueXP in restricted or private mode, you log in locally from the Connector host.
 
 .Steps
+
 
 . Open a web browser and enter the following URL:
 +
@@ -193,12 +191,10 @@ _ipaddress_ can be localhost, a private IP address, or a public IP address, depe
 .. Enter a name for the system.
 .. Under *Are you running in a secured environment?* keep restricted mode disabled.
 +
-You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. (In addition, restricted mode isn't supported when the Connector is installed on-premises.)
+Keep restricted mode disabled because these steps use BlueXP in standard mode. (In addition, restricted mode isn't supported when the Connector is installed on-premises.)
 .. Select *Let's start*.
 
-.Result
 
-BlueXP is now set up with the Connector that you just installed.
 
 == Step 7: Provide permissions to BlueXP
 
@@ -213,7 +209,7 @@ After you install and set up the Connector, add your cloud credentials so that B
 --
 .Before you begin
 
-If you just created these credentials in AWS, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
+If you just created these AWS credentials, they may take a few minutes to become available. Wait a few minutes before you add the credentials to BlueXP.
 
 .Steps
 
@@ -227,7 +223,7 @@ You can now go to the https://console.bluexp.netapp.com[BlueXP console^] to star
 
 .Before you begin
 
-If you just created these credentials in Azure, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
+If you just created these Azure credentials, they may take a few minutes to become available. Wait a few minutes before you add the credentials to BlueXP.
 
 .Steps
 
