@@ -17,7 +17,7 @@ Get started with BlueXP in private mode by preparing your environment and deploy
 
 Private mode is typically used with on-premises environments that have no internet connection and with secure cloud regions, which includes https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], and https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
-Before you get started, you should have an understanding of link:concept-netapp-accounts.html[BlueXP accounts], link:concept-connectors.html[Connectors], and link:concept-modes.html[deployment modes].
+Before you get started, you should have an understanding of link:concept-connectors.html[Connectors] and link:concept-modes.html[deployment modes].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-private-mode.html[Prepare for deployment]
 

@@ -8,10 +8,11 @@ You should have the following:
 * Details about a proxy server, if a proxy is required for internet access from the Connector.
 +
 You have the option to configure a proxy server after installation but doing so requires restarting the Connector.
-+
-Note that BlueXP does not support transparent proxy servers.
+
 
 * A CA-signed certificate, if the proxy server uses HTTPS or if the proxy is an intercepting proxy.
+
+NOTE: You cannot set a certificate for a transparent proxy server when manually installing the Connector. If you need to set a certificate for a transparent proxy server, you must use the Maintenance Console after installation. Learn more about the link:reference-connector-maint-console.html[Connector Maintenance Console].
 //end::before[]
 
 //tag::about[]
@@ -48,9 +49,9 @@ Where <version> is the version of the Connector that you downloaded.
 [source,cli]
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 +
-The --proxy and --cacert parameters are optional. If you have a proxy server, you will need to enter the parameters as shown. The installer doesn't prompt you to provide information about a proxy.
+You'll need to add proxy information if your network requires a proxy for internet access. You can add either a transparent or explicit proxy. The --proxy and --cacert parameters are optional and you won't be prompted to add them.  If you have a proxy server, you will need to enter the parameters as shown. 
 +
-Here's an example of the command using both optional parameters:
+Here is an example configuring an explicit proxy server with a CA-signed certificate:
 +
 [source,cli]
  ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
@@ -76,7 +77,14 @@ For example:
 \http://bxpproxyuser:netapp1\!@address:3128
 
 +
---cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.
+--cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required for HTTPS proxy servers, intercepting proxy servers, and transparent proxy servers.
+
++
+Here is an example configuring a transparent proxy server. When you configure a transparent proxy, you don't need to define the proxy server. You only add a CA-signed certificate to your Connector host:
+
++
+[source,cli]
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
 
 . If you used Podman, you'll need to adjust the aardvark-dns port.
 .. SSH to the BlueXP Connector virtual machine.

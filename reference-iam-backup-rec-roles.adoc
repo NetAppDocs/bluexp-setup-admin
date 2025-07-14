@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+permalink: reference-iam-backup-rec-roles.html
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, roles, permissions, access control, role-based access control, rbac, role-based access
+summary: BlueXP identity and access management provides several roles that you can assign to the members of your organization who use the Backup and recovery service.
+---
+
+= BlueXP backup and recovery roles
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can assign the following roles to users to provide them access to the Backup and recovery service within BlueXP. Backup and recovery roles give you the flexibility to  assign users a role specific to the tasks they need to accomplish within your organization. How you assign roles depends on your own business and storage management practices.
+
+Backup and recovery uses the following roles: 
+
+* *Backup and recovery super admin*: Perform any actions.
+* *Backup and recovery admin*: Perform backups to local snapshots, replicate to secondary storage, and back up to object storage.
+* *Backup and recovery restore admin*: Restore workloads. 
+* *Backup and recovery clone admin*: Clone applications and data.
+* *Backup and recovery viewer*: View backup and recovery information.
+
+The following table indicates the actions that each role can perform. 
+
+[cols=6*,options="header",cols="20,20,15,15a,15a,15a",width="100%"]
+|===
+| Feature and action
+| Backup and recovery super admin
+| Backup admin
+| Restore admin
+| Clone admin
+| Viewer
+
+|Add, edit, or delete hosts | Yes | No | No | No | No
+|Install plugins | Yes | No | No | No | No
+|Add credentials (host, instance, vCenter) | Yes | No | No | No | No
+
+| View dashboard and all tabs | Yes | Yes |Yes |Yes | Yes
+| Start free trial | Yes | No  |No |No | No
+| Initiate discovery of workloads | No | Yes |Yes |Yes | No
+| View license information | Yes | Yes |Yes |Yes | Yes
+| Activate license | Yes | No  |No |No | No
+| View hosts | Yes | Yes |Yes |Yes | Yes
+
+6+| *Schedules*: 
+| Activate schedules | Yes | Yes |Yes |Yes | No
+| Suspend schedules | Yes | Yes | Yes |Yes | No
+
+
+6+| *Policies and protection*: 
+| View protection plans | Yes | Yes  |Yes |Yes | Yes
+| Create, modify, or delete protection plans | Yes | Yes  | No |No | No
+| Restore workloads | Yes | No  |Yes |No | No
+| Create, split, or delete clones | Yes | No  |No |Yes | No
+| Create, modify, or delete policy | Yes | Yes  |No |No | No
+
+
+6+| *Reports*: 
+| View reports | Yes | Yes |Yes |Yes | Yes
+| Create reports | Yes | Yes |Yes | Yes | No
+| Delete reports | Yes | No |No | No | No
+
+
+6+| *Import from SnapCenter and manage host*: 
+| View imported SnapCenter data | Yes | Yes  |Yes |Yes | Yes
+| Import data from SnapCenter| Yes | Yes | No | No | No
+| Manage (migrate) host| Yes | Yes | No | No | No
+
+6+| *Configure settings*:
+| Configure log directory| Yes | Yes  |Yes |No | No
+| Associate or remove instance credentials| Yes | Yes |Yes |No | No
+
+6+| *Buckets*:
+| View storage buckets| Yes | Yes  |Yes |Yes | Yes
+| Create, edit, or delete storage buckets| Yes | Yes |No |No | No
+
+
+|===
