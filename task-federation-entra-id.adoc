@@ -80,7 +80,7 @@ include::_include/federation-verify-domain-steps.adoc[]
 . Select *Create connection*. The system creates the connection in a few seconds.
 
 [discrete]
-====== test and enable the connection
+====== Test and enable the connection
 
 include::_include/federation-test-enable-steps.adoc[]
 
