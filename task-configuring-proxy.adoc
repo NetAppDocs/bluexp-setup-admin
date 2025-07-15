@@ -111,7 +111,7 @@ When you configure a proxy server, the Connector restarts. Verify the Connector 
 
 .Steps
 
-+ Ensure that you have a certificate file in PEM format for the proxy server. If you do not have a certificate, contact your network administrator to obtain one.
+Ensure that you have a certificate file in PEM format for the proxy server. If you do not have a certificate, contact your network administrator to obtain one.
 
 . Open a command-line interface on the Connector host.
 
