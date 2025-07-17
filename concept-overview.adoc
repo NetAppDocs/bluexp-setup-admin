@@ -21,7 +21,7 @@ BlueXP provides unified control of storage across your hybrid multicloud and int
 
 === Unified control of storage from the BlueXP canvas
 
-The _BlueXP canvas_ lets you discover, deploy, and manage cloud and on-premises storage. The canvas provides a single location for all storage management.
+The _BlueXP canvas_ lets you discover, deploy, and manage cloud and on-premises storage. The canvas centralizes storage management.
 
 ==== Supported cloud and on-premises storage
 
@@ -50,7 +50,7 @@ image:screenshot-canvas.png["A screenshot of the BlueXP canvas that shows severa
 
 === Integrated services to protect, secure, and optimize data
 
-BlueXP includes integrated data services to maintain the security and availability of your data across on-premises and cloud storage.
+BlueXP includes data services to secure and maintain data availability across storage.
 
 BlueXP alerts::
 View issues related to capacity, availability, performance, protection, and security in your ONTAP environment.
@@ -59,13 +59,10 @@ BlueXP automation catalog::
 Use scripted solutions to automate the deployment and integration of NetApp products and services.
 
 BlueXP backup and recovery::
-Back up and restore cloud and on-premisesdata.
+Back up and restore cloud and on-premises data.
 
 BlueXP classification::
 Get your application data and cloud environments privacy ready.
-
-BlueXP cloud ops::
-Gain visibility into your cloud compute spending and identify potential savings.
 
 BlueXP copy and sync::
 Sync data between on-premisesand cloud data stores.
@@ -98,7 +95,7 @@ BlueXP sustainability dashboard::
 Analyze the sustainability of your storage systems.
 
 BlueXP tiering::
-Extend your on-premisesONTAP storage to the cloud.
+Extend your on-premises ONTAP storage to the cloud.
 
 BlueXP volume caching::
 Create a writable cache volume to speed up access to data or offload traffic from heavily accessed volumes.
@@ -137,11 +134,10 @@ BlueXP identity and access management (IAM) is a resource and access management 
 BlueXP IAM is supported when using BlueXP in standard or restricted mode. If you're using BlueXP in private mode, then you use a BlueXP _account_ to manage workspaces, users, and resources.
 
 * link:concept-identity-and-access-management.html[Learn more about BlueXP IAM]
-* link:concept-netapp-accounts.html[Learn about BlueXP accounts]
 
 === Connectors
 
-You don't need a Connector to get started with BlueXP, but you'll need to create a Connector to unlock all BlueXP features and services. A Connector enables the management of resources and processes across your on-premises and cloud environments. It's required to manage working environments (for example, Cloud Volumes ONTAP) and to use many BlueXP services.
+You don't need a Connector to get started with BlueXP, but you'll need to create a Connector to unlock all BlueXP features and services. A Connector enables you to manage resources and processes across your on-premises and cloud environments. You need it to manage working environments (for example, Cloud Volumes ONTAP) and to use many BlueXP services.
 
 link:concept-connectors.html[Learn more about Connectors].
 
@@ -153,6 +149,6 @@ link:concept-modes.html[Learn more about BlueXP deployment modes].
 
 == SOC 2 Type 2 certification
 
-An independent certified public accountant firm and services auditor examined BlueXP and affirmed that it achieved SOC 2 Type 2 reports based on the applicable Trust Services criteria.
+An independent certified public accountant firm and services auditor examined BlueXP and affirmed that BlueXP achieved SOC 2 Type 2 reports based on the applicable Trust Services criteria.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/[View NetApp's SOC 2 reports^]

@@ -1,0 +1,69 @@
+=== Connector 3.9.54
+
+This release of the BlueXP Connector includes security improvements, bug fixes, and the following new features: 
+
+* Support for transparent proxies for Connectors dedicated to supporting Cloud Volumes ONTAP services. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html[Learn more about configuring a transparent proxy.]
+
+* Ability to use network tags to help route Connector traffic when the Connector is deployed in a Google Cloud environment.
+
+* Additional in-product notifications for Connector health monitoring, including CPU and RAM usage.
+
+At this time, the 3.9.54 release is available for standard mode and restricted mode.
+
+
+=== BlueXP Identity and Access Management (IAM)
+
+Identity and Access Management in BlueXP now provides the following features:
+
+* Support for IAM in private mode, allowing you to manage user access and permissions for BlueXP services and applications.
+* Streamlined management of identity federations, including easier navigation, clearer options for configuring federated connections, and improved visibility into existing federations.
+* Access roles for BlueXP backup and recovery, BlueXP disaster recovery, and federation management.
+
+
+==== Support for IAM in private mode
+
+BlueXP now supports IAM in private mode, allowing you to manage user access and permissions for BlueXP services and applications. This enhancement enables private mode customers to leverage role-based access control (RBAC) for better security and compliance.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam[Learn more about IAM in BlueXP.]
+
+==== Streamlined management of identity federations
+
+BlueXP now offers a more intuitive interface for managing identity federation. This includes easier navigation, clearer options for configuring federated connections, and improved visibility into existing federations.
+
+Enabling single sign-on (SSO) through identity federation lets users log in to BlueXP with their corporate credentials. This improves security, reduces password use, and simplifies onboarding.
+
+You'll be prompted to import any existing federated connections to the new interface to gain access to the new management features. This allows you to take advantage of the latest enhancements without having to recreate your federated connections. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-federation-import.html[Learn more about importing your existing federated connection to BlueXP.]
+
+Improved federation management allows you to:
+
+* Add more than one verified domain to a federated connection, allowing you to use multiple domains with the same identity provider (IdP).
+
+* Disable or delete federated connections when needed, giving you control over user access and security.
+
+* Control access to federation management with IAM roles.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-federation.html[Learn more about identity federation in BlueXP.]
+
+
+==== New access roles for BlueXP backup and recovery, BlueXP disaster recovery, and federation management
+
+BlueXP now supports using IAM roles for the following features and data services:
+
+* BlueXP backup and recovery
+* BlueXP disaster recovery
+* Federation
+
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html[Learn more about using access roles.]
+
+
+
+
+
+
+
+
+
+
+
+
+
