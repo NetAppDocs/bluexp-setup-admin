@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: task-federation-verify-domain.html
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity
+summary: Federate with your Active Directory Federation Services (AD FS) to enable single sign-on (SSO) for BlueXP. This allows users to log in using their corporate credentials.
+---
+
+= Verify the email domain for your federated connection
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you want to federate with a domain that is different than your email domain, you must first verify that you own the domain. You can only use verified domains for federation.
+
+.Required roles
+Organization admin or Federation admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
+
+Verifying your domain involves adding a TXT record to your domain's DNS settings. This record is used to prove that you own the domain and allows BlueXP to trust the domain for federation. You may need to coordinate with your IT or network administrator to complete this step.
+
+.Steps
+
+include::_include/federation-navigation-steps.adoc[]
+
+. Select *Verify domain ownership*.
+. Enter the domain that you want to verify and select *Continue*.
+. Copy the TXT record that is provided.
+. Go to your domain's DNS settings and configure the TXT value that was provided as a TXT record for your domain. Work with your IT or network administrator if needed.
+. After the TXT record is added, return to BlueXP and select *Verify*.
+
+
+
+
+
+
+
+
+
+

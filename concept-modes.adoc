@@ -133,7 +133,7 @@ API calls are made to the following endpoint:
 \https://cloudmanager.cloud.netapp.com
 
 Authentication::
-Authentication is provided through BlueXP's cloud service using auth0 or through NetApp Support Site (NSS) logins. Identity federation is available.
+BlueXP provides authentication with auth0 or NetApp Support Site (NSS) logins. Identity federation is available.
 
 Supported BlueXP services::
 All BlueXP services are available to users.
@@ -226,7 +226,7 @@ For Cloud Volumes ONTAP, both capacity-based licensing and node-based licensing 
 How to get started with restricted mode::
 You need to enable restricted mode when you create your BlueXP account.
 +
-If you don't have an organization yet, you'll be prompted to create your organization and enable restricted mode when you log in to BlueXP for the first time from a Connector that you manually installed or that you created from your cloud provider's marketplace.
+If you don't have an organization yet, you are prompted to create your organization and enable restricted mode when you log in to BlueXP for the first time from a Connector that you manually installed or that you created from your cloud provider's marketplace.
 +
 
 +
@@ -296,7 +296,7 @@ Discovery without a Connector (direct discovery) is not supported.
 
 |===
 
-Supported BlueXP services in on-premisesdeployments::
+Supported BlueXP services in on-premises deployments::
 BlueXP supports the following storage and data services with private mode when the Connector is installed on your premises:
 +
 [cols=2*,options="header,autowidth"]
@@ -332,7 +332,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-
 Supported licensing options::
 Only BYOL is supported with private mode. 
 +
-For Cloud Volumes ONTAP BYOL, only node-based licensing is supported. Capacity-based licensing is not supported. Because an outbound internet connection isn't available, you will need to manually upload your Cloud Volumes ONTAP licensing file in the BlueXP digital wallet.
+For Cloud Volumes ONTAP BYOL, only node-based licensing is supported. Capacity-based licensing is not supported. Because an outbound internet connection isn't available, you need to manually upload your Cloud Volumes ONTAP licensing file in the BlueXP digital wallet.
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses[Learn how to add licenses to the BlueXP digital wallet^]
 
@@ -397,8 +397,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Workload factory | No | No
 
 .7+| *Features*
-| BlueXP identity and access management | Yes | No
-| BlueXP accounts | Yes | Yes
+| BlueXP identity and access management | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 

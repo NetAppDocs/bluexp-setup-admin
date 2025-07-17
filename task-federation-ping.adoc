@@ -1,0 +1,69 @@
+---
+sidebar: sidebar
+permalink: task-federation-ping.html
+keywords: PingFederate, BlueXP, federation, single sign-on, SSO, identity provider, IdP, service provider-initiated SSO, X.509 certificate, Audience/Entity ID, Reply URL, organization admin
+summary: Federate with your PingFederate IdP provider to enable single sign-on (SSO) for BlueXP. This allows users to log in using their corporate credentials.
+---
+
+= Federate BlueXP with PingFederate
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Federate with your PingFederate IdP provider to enable single sign-on (SSO) for BlueXP. This allows users to log in using their corporate credentials.
+
+.Required roles
+Organization admin or Federation admin is required to make create and manage federations. Federation viewer can view the Federation page.  link:reference-iam-predefined-roles.html[Learn more about access roles.]
+
+NOTE: You can federate with your corporate IdP or with the NetApp Support Site. NetApp recommends choosing one or the other, but not both.
+
+NetApp supports service provider-initiated (SP-initiated) SSO only. You need to first configure the identity provider to trust NetApp as a service provider. Then, you can create a connection in BlueXP that uses the identity provider's configuration.
+
+You can set up a federated connection with PingFederate to enable single sign-on (SSO) for BlueXP. The process involves configuring your PingFederate server to trust BlueXP as a service provider and then creating the connection in BlueXP.
+
+include::_include/federation-prereqs.adoc[]
+
+
+
+include::_include/federation-navigation-steps.adoc[]
+
+include::_include/federation-verify-domain-steps.adoc[]
+
+
+. For your connection method, choose *Provider* and then select *PingFederate*.
+
+. Select *Next*.
+
+. Configure your PingFederate server to trust NetApp as a service provider. You need to do this step on your PingFederate server.  
+
+
+.. Use the following values when configuring PingFederate to trust BlueXP: 
+
+
++
+
+* For the *Reply URL* or *Assertion Consumer Service (ACS) URL*, use `https://netapp-cloud-account.auth0.com/login/callback`
+ 
+* For the *Logout URL*, use `https://netapp-cloud-account.auth0.com/logout`
+* For *Audience/Entity ID*, use `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` where <fed-domain-name-pingfederate> is the domain name for the federation. For example, if your domain is `example.com`, the Audience/Entity ID would be `urn:auth0:netappcloud-account:fed-example-com-pingfederate`.
+
+.. Copy the PingFederate server URL. You will need this URL when creating the connection in BlueXP.
+
+.. Download the X.509 certificate from your PingFederate server. It needs to be in Base64-encoded PEM format (.pem, .crt, .cer).
+
+
+. Return to BlueXP, and select *Next* to create the connection.
+
+. Create the connection with PingFederate
+.. Enter the PingFederate server URL that you copied in the previous step.
+
+.. Upload the X.509 signing certificate. The certificate must be in PEM, CER, or CRT format.
+
+
+. Select *Create connection*. The system creates the connection in a few seconds.
+
+include::_include/federation-test-enable-steps.adoc[]
+
