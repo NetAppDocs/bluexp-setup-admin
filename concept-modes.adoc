@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-modes.html
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private
 summary: BlueXP offers multiple deployment modes that enable you to use BlueXP in a way that meets your business and security requirements. Standard mode leverages the BlueXP SaaS layer to provide full functionality, while restricted mode and private mode are available for organizations that have connectivity restrictions.
 ---
 
@@ -365,7 +365,7 @@ This portion of the table lists support for working environment management from 
 | Azure Blob | No | No
 | Azure NetApp Files | Yes | No 
 | Cloud Volumes ONTAP | Yes | Yes 
-| Cloud Volumes Service for Google Cloud | No | No
+| Google Cloud NetApp Volumes | No | No
 | Google Cloud Storage | No | No
 | On-premisesONTAP clusters | Yes | Yes
 | E-Series | No | No
