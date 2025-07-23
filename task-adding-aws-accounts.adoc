@@ -160,17 +160,17 @@ For example, the policy should look like this:
 [source,JSON]
 ----
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-            "AWS": "arn:aws:iam::952013314444:root",
-            "Service": "ec2.amazonaws.com"
-    },
-            "Action": "sts:AssumeRole"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::952013314444:root",
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
 }
 ----
 +
