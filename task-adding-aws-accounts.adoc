@@ -174,7 +174,7 @@ For example, the policy should look like this:
 }
 ----
 +
-Refer to link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html[AWS Identity and Access Management documentation^] for more information on creating roles and trust relationships.
+Refer to link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html[AWS Identity and Access Management  (IAM) documentation^] for more information on cross account resource access in IAM.
 * Create a policy that includes the permissions required to create a Connector.
 +
 ** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[View the permissions needed for FSx for ONTAP^]
