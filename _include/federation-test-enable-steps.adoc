@@ -1,0 +1,12 @@
+
+. Select *Next*. 
+
+. Select *Test connection* to test your connection. You are directed to a login page for your IdP server. Log in with your IdP credentials to complete the test and return to BlueXP to enable the connection.
+
+. Select *Next*.
+
+. On the *Enable federation* page, review the federation details and then select *Enable federation*.
+
+. Select *Finish* to complete the process.
+
+After you enable the federation, users can log in to BlueXP using their corporate credentials.

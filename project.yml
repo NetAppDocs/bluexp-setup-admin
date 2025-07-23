@@ -93,12 +93,6 @@ sidebar:
               url: /task-prepare-private-mode.html
             - title: Deploy the Connector
               url: /task-install-private-mode.html
-            - title: BlueXP accounts
-              entries:
-              - title: Learn about accounts
-                url: /concept-netapp-accounts.html
-              - title: Manage your BlueXP account
-                url: /task-managing-netapp-accounts.html
             - title: What you can do next
               url: /reference-whats-next-private-mode.html     
     - title: Use BlueXP
@@ -145,16 +139,34 @@ sidebar:
                      url: /reference-iam-storage-roles.html
                 - title: Data services roles
                   entries:
+                    - title: Backup and recovery roles
+                      url: /reference-iam-backup-rec-roles.html
+                    - title: Disaster recovery roles
+                      url: /reference-iam-disaster-rec-roles.html
                     - title: Ransomware protection roles
                       url: /reference-iam-ransomware-roles.html
-        - title: BlueXP accounts (private mode only)
-          entries:
-            - title: Learn about accounts
-              url: /concept-netapp-accounts.html
-            - title: Manage your BlueXP account
-              url: /task-managing-netapp-accounts.html
         - title: Identity federation
-          url: /concept-federation.html
+          entries:
+            - title: Learn about identity federation
+              url: /concept-federation.html
+            - title: Domain verification
+              entries:
+                - title: Verify your domain 
+                  url: /task-federation-verify-domain.html
+            - title: Configure federations
+              entries:
+                - title: Federate with an Active Directory Federation Services (AD FS) provider
+                  url: /task-federation-adfs.html
+                - title: Federate with Microsoft Entra ID provider
+                  url: /task-federation-entra-id.html
+                - title: Federate with PingFederate
+                  url: /task-federation-ping.html
+                - title: Federate with a SAML identity provider
+                  url: /task-federation-saml.html
+            - title: Manage federations
+              url: /task-federation-manage.html
+            - title: Import your existing federated connection
+              url: /task-federation-import.html
         - title: Connectors
           entries:
             - title: Maintain the VM and OS
@@ -205,6 +217,10 @@ sidebar:
           url: /task-monitor-cm-operations.html
     - title: Reference
       entries:
+        - title: Connector maintenance console
+          entries:
+            - title: Connector maintenance onsole
+              url: /reference-connector-maint-console.html
         - title: Permissions
           entries:
             - title: Permissions summary

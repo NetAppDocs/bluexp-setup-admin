@@ -1,0 +1,3 @@
+.Before you begin
+* An IdP account with administrative privileges is required. Coordinate with your IdP administrator to complete the steps.
+* Identify the domain you want to use for federation. You can use your email domain or a different domain that you own. If you want to use a domain other than your email domain, you must first verify the domain in BlueXP. You can do this by following the steps in the link:task-federation-verify-domain.html[Verify your domain in BlueXP] topic.
