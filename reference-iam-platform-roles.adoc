@@ -84,22 +84,3 @@ The following tables indicate the actions that each BlueXP platform role can per
 
 |===
 
-== Operational support analyst 
-[cols="1,1",options="header"]
-
-|===
-
-| Task
-| Can perform
-
-| Manage own user credentials from Settings > Credentials  | Yes 
-
-| View discovered resources | Yes
-
-| Register for support and submit cases | Yes  
-
-| View the BlueXP timeline and notifications | Yes
-| View, download and configure alerts | Yes
-
-
-|===
