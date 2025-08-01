@@ -23,7 +23,7 @@ Organization admin, Federation admin, Federation viewer. link:reference-iam-pred
 
 == Identity federation with NetApp Support Site
 
-When you federate with the NetApp Support Site, users can login with the same credentials to access BlueXP as you use for the NetApp Support Site, Active IQ and other apps associated with your NetApp Support Site account.  After you set up federation, any new users who create a NetApp Support Site accounts will also be able to access BlueXP.
+When you federate with the NetApp Support Site, users can login with the same credentials to access BlueXP as you use for the NetApp Support Site, Active IQ Digital Advisor and other apps associated with your NetApp Support Site account.  After you set up federation, any new users who create a NetApp Support Site accounts will also be able to access BlueXP.
 
 
 NOTE: If you federate with the NetApp Support Site, you can't also federate with your corporate identity management provider. Choose which one works best for your organization.
@@ -45,7 +45,7 @@ You can set up a federated connection with your identity provider to enable sing
 
 === Supported identity providers
 
-NetApp supports the following identity providers and protocols for federation:
+NetApp supports the following protocols and identity providers for federation:
 
 .Protocols
 * Security Assertion Markup Language (SAML) identity providers
