@@ -376,10 +376,10 @@ This portion of the table lists support for working environment management from 
 | Backup and recovery 
 | Yes
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode[View the list of supported backup destinations for ONTAP volume data^]
+https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 | Yes
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP volume data^]
+https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 | Classification | Yes | Yes
 | Cloud ops | No | No
 | Copy and sync | No | No
