@@ -27,7 +27,7 @@ Platform roles grant all BlueXP administration permissions, including assigning 
 | Responsibilities
 
 
-| link:reference-iam-platform-roles.html[Org admin] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. 
+| link:reference-iam-platform-roles.html[Organization admin] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. 
 
 Users with this role organize and manage your BlueXP organization. They create folders and projects, assign roles, add users, and can manage all working environments, if they have the credentials to do so.
 
@@ -39,6 +39,7 @@ This is the only access role that can create Connectors.
 Folder or project admins cannot create Connectors.
 | link:reference-iam-platform-roles.html[Federation admin]|	Allows a user create and manage federations with BlueXP, which enables single-sign on (SSO). 
 | link:reference-iam-platform-roles.html[Federation viewer]|	Allows a user to view existing federations with BlueXP. Cannot create or manage federations.
+
 
 
 
