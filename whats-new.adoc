@@ -39,7 +39,6 @@ include::_whatsnew/2025-06-09.adoc[]
 include::_whatsnew/2025-05-29.adoc[]
 
 
-
 == 12 May 2025
 
 include::_whatsnew/2025-05-12.adoc[]
