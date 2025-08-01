@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-predefined-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
 
@@ -38,7 +38,7 @@ This is the only access role that can create Connectors.
 
 Folder or project admins cannot create Connectors.
 | link:reference-iam-platform-roles.html[Federation admin]|	Allows a user create and manage federations with BlueXP, which enables single-sign on (SSO). 
-| link:reference-iam-platform-roles.html[Federation viewer]|	Allows a user to view existing federations with BlueXP. Cannot create or manage federations.
+| link:reference-iam-platform-roles.html[Federation viewer]|	Allows a user to view existing federations with BlueXP. Cannot create or manage federations
 
 
 
@@ -61,7 +61,6 @@ The following is a list of roles in the application category. Each role grants s
 | link:reference-iam-keystone-roles.html[Keystone viewer] | Users with the Keystone viewer role CANNOT create service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
 | ONTAP Mediator setup role | Service accounts with the ONTAP Mediator setup role can create service requests. This role is required in a service account to configure an instance of the link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html[ONTAP Cloud Mediator^]. 
 | link:reference-iam-storage-roles.html[Storage admin] | Administer storage health and governance functions, discover storage resources, as well as modify and delete existing working environments.
-| link:reference-iam-storage-roles.html[Storage admin] | Administer storage health and governance functions, discover storage resources, as well as change and remove existing working environments.
 | link:reference-iam-storage-roles.html[Storage viewer] | View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
 | link:reference-iam-storage-roles.html[System health specialist] | Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
 |===
@@ -89,7 +88,7 @@ The following is a list of roles in the data service category. Each role grants 
 | link:reference-iam-disaster-rec-roles.html[Disaster recovery failover admin] | Perform failover and migrations.
 | link:reference-iam-disaster-rec-roles.html[Disaster recovery application admin] | Create replication plans, modify replication plans, and start test failovers.
 | link:reference-iam-disaster-rec-roles.html[Disaster recovery viewer] | View information only.
-| Classification admin | Provides the ability to view BlueXP classification scan results.
+| Classification viewer | Provides the ability to view BlueXP classification scan results.
 
  Users with this role can view compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas. Classification does not have a viewer role.
 | link:reference-iam-ransomware-roles.html[Ransomware protection admin]| Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs of the Ransomware protection service. 
