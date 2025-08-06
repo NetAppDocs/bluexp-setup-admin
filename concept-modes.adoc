@@ -365,7 +365,7 @@ This portion of the table lists support for working environment management from 
 | Azure Blob | No | No
 | Azure NetApp Files | Yes | No 
 | Cloud Volumes ONTAP | Yes | Yes 
-| Cloud Volumes Service for Google Cloud | No | No
+| Google Cloud NetApp Volumes | No | No
 | Google Cloud Storage | No | No
 | On-premisesONTAP clusters | Yes | Yes
 | E-Series | No | No
@@ -376,6 +376,7 @@ This portion of the table lists support for working environment management from 
 | Backup and recovery 
 | Yes
 
+https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 | Yes
 
