@@ -3,12 +3,12 @@
 
 This release of the BlueXP Connector includes security improvements and bug fixes.
 
-At this time, the 3.9.55 release is available for standard mode and restricted mode.
+The 3.9.55 release is available for standard mode and restricted mode.
 
 
 === BlueXP Identity and Access Management (IAM)
 
-Identity and Access Management in BlueXP now provides the following features:
+Identity and Access Management in BlueXP now provides the following feature.
 
 
 === New access role for operational support
