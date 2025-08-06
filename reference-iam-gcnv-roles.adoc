@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: reference-iam-gc-roles.html
+keywords: gcp, google cloud, Google Cloud NetApp Volumes, gcnv, permissions, access control, role-based access control, rbac, role-based access
+summary: BlueXP identity and access management provides an admin roles that you can assign to the members of your organization who need access to Google Cloud NetApp Volumes.
+---
+
+= Google Cloud NetApp Volumes roles
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can assign the following role to users to provide them access to the Google Cloud NetApp Volumes within BlueXP. 
+
+Google Cloud NetApp Volumes uses the following role: 
+
+* *Google Cloud NetApp Volumes admin*: Discover and manage Google Cloud NetApp Volumes in BlueXP.

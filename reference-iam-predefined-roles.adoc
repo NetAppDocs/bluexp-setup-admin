@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-predefined-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac
 summary: BlueXP identity and access management includes several predefined roles that you can assign to the members of your organization.
 ---
 
@@ -18,7 +18,7 @@ BlueXP identity and access management (IAM) includes predefined roles that you c
 
 [#platform-roles]
 == Platform roles
-Platform roles grant all permissions for BlueXP administration, including assigning roles and adding users. Users with platform roles have access to all data services and applications within BlueXP. BlueXP IAM includes two platform roles: Organization admin and Folder or project admin. The main difference between the two BlueXP IAM platform roles is scope. 
+Platform roles grant all BlueXP administration permissions, including assigning roles and adding users. Platform roles provide access to all BlueXP data services and applications. BlueXP IAM includes two platform roles: Organization admin and Folder or project admin. The main difference between the two BlueXP IAM platform roles is scope. 
 
 [cols="1,2",options="header"]
 |===
@@ -27,18 +27,19 @@ Platform roles grant all permissions for BlueXP administration, including assign
 | Responsibilities
 
 
-| link:reference-iam-platform-roles.html[Org admin] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. 
+| link:reference-iam-platform-roles.html[Organization admin] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. 
 
-Users with this role organize and manage the entire BlueXP environment. They create folders and projects, assign roles, add users, and can manage all working environments, if they have the credentials to do so.
+Users with this role organize and manage your BlueXP organization. They create folders and projects, assign roles, add users, and can manage all working environments, if they have the credentials to do so.
 
 This is the only access role that can create Connectors.
 
 
 | link:reference-iam-platform-roles.html[Folder or project admin]|	Allows a user unrestricted access to specific projects and folders to which they are assigned. Can add members to folders or projects they manage, as well as perform any BlueXP task and use any data service or application on resources within the folder or project they are assigned. 
 
-The Folder or project admin role CANNOT create Connectors.
-| link:reference-iam-platform-roles.html[Federation admin]|	Allows a user create and manage federations with BlueXP, which enable single-sign on (SSO). 
-| link:reference-iam-platform-roles.html[Federation viewer]|	Allows a user to view existing federations with BlueXP. Cannot create or manage federations.
+Folder or project admins cannot create Connectors.
+| link:reference-iam-platform-roles.html[Federation admin]|	Allows a user create and manage federations with BlueXP, which enables single-sign on (SSO). 
+| link:reference-iam-platform-roles.html[Federation viewer]|	Allows a user to view existing federations with BlueXP. Cannot create or manage federations
+
 
 
 
@@ -54,9 +55,11 @@ The following is a list of roles in the application category. Each role grants s
 |===
 | Application role | Responsibilities
 
-| link:reference-iam-keystone-roles.html[Keystone admin] | Users with the Keystone admin role can create service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
+| link:reference-iam-keystone-roles.html[Google Cloud NetApp Volumes admin] | Users with the Google Cloud NetApp Volumes role can discover and manage Google Cloud NetApp Volumes.
 
+| link:reference-iam-keystone-roles.html[Keystone admin] | Users with the Keystone admin role can create service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
 | link:reference-iam-keystone-roles.html[Keystone viewer] | Users with the Keystone viewer role CANNOT create service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
+| ONTAP Mediator setup role | Service accounts with the ONTAP Mediator setup role can create service requests. This role is required in a service account to configure an instance of the link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html[ONTAP Cloud Mediator^]. 
 | link:reference-iam-storage-roles.html[Storage admin] | Administer storage health and governance functions, discover storage resources, as well as modify and delete existing working environments.
 | link:reference-iam-storage-roles.html[Storage viewer] | View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage working environments.
 | link:reference-iam-storage-roles.html[System health specialist] | Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing working environments.
@@ -85,9 +88,9 @@ The following is a list of roles in the data service category. Each role grants 
 | link:reference-iam-disaster-rec-roles.html[Disaster recovery failover admin] | Perform failover and migrations.
 | link:reference-iam-disaster-rec-roles.html[Disaster recovery application admin] | Create replication plans, modify replication plans, and start test failovers.
 | link:reference-iam-disaster-rec-roles.html[Disaster recovery viewer] | View information only.
-| Classification admin | Provides the ability view BlueXP classification scan results.
+| Classification viewer | Provides the ability to view BlueXP classification scan results.
 
-Classification does not have a viewer role. Users with this role can view compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas.
+ Users with this role can view compliance information and generate reports for resources that they have permission to access. These users can't enable or disable scanning of volumes, buckets, or database schemas. Classification does not have a viewer role.
 | link:reference-iam-ransomware-roles.html[Ransomware protection admin]| Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs of the Ransomware protection service. 
 | link:reference-iam-ransomware-roles.html[Ransomware protection viewer]| View workload data, view alert data, download recovery data, and download reports in the Ransomware protection service.
 | SnapCenter admin | Provides the ability to back up snapshots from on-premises ONTAP clusters using BlueXP backup and recovery for applications. A member who has this role can complete the following actions in BlueXP:
