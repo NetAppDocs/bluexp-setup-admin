@@ -39,7 +39,7 @@ This is the only access role that can create Connectors.
 Folder or project admins cannot create Connectors.
 | link:reference-iam-platform-roles.html[Federation admin]|	Allows a user create and manage federations with BlueXP, which enables single-sign on (SSO). 
 | link:reference-iam-platform-roles.html[Federation viewer]|	Allows a user to view existing federations with BlueXP. Cannot create or manage federations.
-| link:reference-iam-platform-roles.html[Operations support analyst]|	Can set up and monitor ONTAP alerts, view audit logs, and enter support cases.
+| link:reference-iam-platform-roles.html[Operations support analyst]|	Can set up and monitor ONTAP alerts, view audit logs, and enter support cases..
 
 
 
