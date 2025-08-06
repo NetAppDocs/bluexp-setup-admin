@@ -23,7 +23,7 @@ Organization admin, Federation admin, Federation viewer. link:reference-iam-pred
 
 == Identity federation with NetApp Support Site
 
-When you federate with the NetApp Support Site, users can login with the same credentials to access BlueXP as you use for the NetApp Support Site, Active IQ Digital Advisor and other apps associated with your NetApp Support Site account.  After you set up federation, any new users who create a NetApp Support Site accounts will also be able to access BlueXP.
+When you federate with the NetApp Support Site, users can login with the same credentials to access BlueXP as you use for the NetApp Support Site, Active IQ Digital Advisor and other apps associated with your NetApp Support Site account.  After you set up federation, any new users who create a NetApp Support Site accounts are also be able to access BlueXP.
 
 
 NOTE: If you federate with the NetApp Support Site, you can't also federate with your corporate identity management provider. Choose which one works best for your organization.
@@ -42,6 +42,8 @@ The NetApp support team reviews and processes your request.
 
 == Set up a federated connection with your identity provider
 You can set up a federated connection with your identity provider to enable single sign-on (SSO) for BlueXP. The process involves configuring your identity provider to trust NetApp as a service provider and then creating the connection in BlueXP.
+
+NOTE: If you previously configured federation using NetApp Cloud Central (an external application to BlueXP), you'll need to import your federation using the BlueXP Federation page to be able to manage it within BlueXP. link:task-federation-import.html[Learn how to import your federation]
 
 === Supported identity providers
 
@@ -65,23 +67,23 @@ You can federate with your email domain or with a different domain that you own.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Verify your domain (if not using your email domain)
 
 [role="quick-margin-para"]
-If you want to federate with a domain that is different than your email domain, you must first verify that you own the domain. You can federate your email domain without any extra steps. 
+To federate with a domain different from your email domain, verify that you own it. You can federate your email domain without any extra steps. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Configure your IdP to trust NetApp as a service provider
 
 [role="quick-margin-para"]
-You configure your identity provider to trust NetApp as a service provider by creating a new application and providing the necessary information, such as the ACS URL, Entity ID or other credential information. Service provider information varies by identity provider, so refer to the documentation for your specific identity provider for details. You'll need to work with your IdP administrator to complete this step.
+Configure your identity provider to trust NetApp by creating a new application and providing the necessary information, such as the ACS URL, Entity ID or other credential information. Service provider information varies by identity provider, so refer to the documentation for your specific identity provider for details. You'll need to work with your IdP administrator to complete this step.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the federated connection in BlueXP
 
 [role="quick-margin-para"]
-To create the connection, you'll need to provide the necessary information from your identity provider, such as the SAML metadata URL or file. This information is used to establish the trust relationship between BlueXP and your identity provider. The information you provide depends on the IdP that you are using. For example, if you're using Microsoft Entra ID, you'll need to provide the client ID, secret, and domain. 
+To create the connection, you need to provide the necessary information from your identity provider, such as the SAML metadata URL or file. This information is used to establish the trust relationship between BlueXP and your identity provider. The information you provide depends on the IdP that you are using. For example, if you're using Microsoft Entra ID, you need to provide the client ID, secret, and domain. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three] Test your federation in BlueXP
 
 [role="quick-margin-para"]
-Test your federated connection to ensure it works before enabling it. The Federation page in BlueXP provides a test option that allows you to verify your test user is able to authenticate successfully. If the test is successful, you can enable the connection.
+Test your federated connection before enabling it. The Federation page in BlueXP provides a test option that allows you to verify your test user is able to authenticate successfully. If the test is successful, you can enable the connection.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Three] Enable your connection in BlueXP
 
