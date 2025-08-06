@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: reference-iam-gc-roles.html
+permalink: reference-iam-gcnv-roles.html
 keywords: gcp, google cloud, Google Cloud NetApp Volumes, gcnv, permissions, access control, role-based access control, rbac, role-based access
 summary: BlueXP identity and access management provides an admin roles that you can assign to the members of your organization who need access to Google Cloud NetApp Volumes.
 ---

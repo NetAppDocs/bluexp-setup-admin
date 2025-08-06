@@ -1091,7 +1091,6 @@ You can now create a service account user.
 
 A service account acts as a "user" that can make authorized API calls to Cloud Manager for automation purposes. This makes it easier to manage automation because you don't need to build automation scripts based on a real person's user account who can leave the company at any time. And if you're using federation, you can create a token without generating a refresh token from the cloud.
 
-link:task-managing-netapp-accounts.html#create-and-manage-service-accounts[Learn more about using service accounts].
 
 === Private previews
 
