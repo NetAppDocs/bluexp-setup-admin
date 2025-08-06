@@ -13,7 +13,7 @@ summary: Import your existing federated connection to BlueXP to manage it in the
 :imagesdir: ./media/
 
 [.lead]
-Import your existing federated connection to BlueXP to manage it in the new interface. This allows you to take advantage of the latest enhancements without having to recreate your federated connections.
+If you have previously setup federation through NetApp Cloud Central (an external application to BlueXP) the Federation page prompts you to import your existing federated connection to BlueXP to manage it in the new interface. This allows you to take advantage of the latest enhancements without having to recreate your federated connections.
 
 Existing customers who have already set up federated connections to BlueXP can import their existing federations to the new interface. This allows you to manage your federated connections in the new Federations page without having to recreate them.
 

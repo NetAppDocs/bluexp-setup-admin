@@ -15,6 +15,8 @@ summary: After you've added a federated connection, you can manage it in BlueXP.
 [.lead]
 You can manage your federation in BlueXP. You can disable it, update expired credentials, as well as disable it if you no longer need it.
 
+NOTE: If you previously configured federation using NetApp Cloud Central (an external application to BlueXP), you'll need to import your federation using the BlueXP Federation page to be able to manage it within BlueXP. link:task-federation-import.html[Learn how to import your federation]
+
 You can also add a verified domain to an existing federation, which allows you to use multiple domains for your federated connection.
 
 NOTE: Federation management events such as enabling, disabling, and updating federations display in the Timeline. link:task-monitor-cm-operations.html[Learn more about monitoring operations in BlueXP.]
