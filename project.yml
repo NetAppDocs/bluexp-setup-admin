@@ -135,6 +135,8 @@ sidebar:
                   entries:
                    - title: Keystone roles 
                      url: /reference-iam-keystone-roles.html
+                   - title: Operations support analyst
+                     url: /reference-iam-analyst-roles.html
                    - title: Storage roles
                      url: /reference-iam-storage-roles.html
                 - title: Data services roles
