@@ -10,6 +10,9 @@ The 3.9.55 release is available for standard mode and restricted mode.
 
 The BlueXP UI is now available in the Japanese language. If your browser language is Japanese, BlueXP displays in Japanese. To access documentation in Japanese, use the language menu on the documentation website.
 
+=== Operational resiliency feature
+The Operational resiliency feature has been removed from BlueXP. Contact NetApp support if you encounter issues.
+
 === BlueXP Identity and Access Management (IAM)
 
 Identity and Access Management in BlueXP now provides the following feature.

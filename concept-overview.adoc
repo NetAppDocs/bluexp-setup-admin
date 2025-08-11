@@ -80,9 +80,6 @@ Protect on-premises VMware workloads using VMware Cloud on Amazon FSx for ONTAP 
 BlueXP economic efficiency::
 Identify clusters with current or forecasted low capacity and implement data tiering or additional capacity recommendations.
 
-BlueXP operational resiliency::
-Implement automated firmware and software configuration risk remediations to maintain the health of ONTAP clusters.
-
 BlueXP ransomware protection::
 Detect anomalies that might result in ransomware attacks. Protect and recover workloads.
 
