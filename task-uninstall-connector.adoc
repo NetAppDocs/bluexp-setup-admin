@@ -34,7 +34,7 @@ _silent_ runs the script without prompting you for confirmation.
 
 == Uninstall the Connector when using private mode
 
-If you're using private mode (in other words, the Connector host has _no_ outbound connectivity), then you should follow the steps below to uninstall the Connector software.
+If you're using private mode (where the Connector host has _no_ outbound connectivity), follow the steps below to uninstall the Connector software.
 
 .Step
 
@@ -73,7 +73,7 @@ docker system prune -a
 
 == Remove Connectors from BlueXP
 
-If a Connector is inactive, you can remove it from the list of Connectors in BlueXP. You might do this if you deleted the Connector virtual machine or if you uninstalled the Connector software.
+If a Connector is inactive, you can remove it from the list of Connectors in BlueXP. You might do this if you delete the Connector virtual machine or if you uninstall the Connector software.
 
 Note the following about removing a Connector:
 

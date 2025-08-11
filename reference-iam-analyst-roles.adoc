@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: reference-iam-analyst-roles.html
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin
+summary: BlueXP identity and access management provides an support analyst role to assist with monitoring and support cases.
+---
+
+= Operational support analyst access role for BlueXP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+You can assign the following role to users to provide them access to alerts and monitoring. Users with this role can also open support cases.
+
+== Operational support analyst 
+[cols="1,1",options="header"]
+
+|===
+
+| Task
+| Can perform
+
+| Manage own user credentials from Settings > Credentials  | Yes 
+
+| View discovered resources | Yes
+
+| Register for support and submit cases through BlueXP | Yes |	Yes  
+
+| View the BlueXP timeline and notifications | Yes
+| View, download, and configure alerts | Yes
+
+
+|===

@@ -15,7 +15,7 @@ summary: Manage your organization's members to provide permissions across differ
 [.lead]
 BlueXP identity and access management (IAM) enables you to add members to your organization and assign them one or more roles across your resource hierarchy. A _role_ contains a set of permissions that enables a member to perform specific actions at a specific level of the resource hierarchy. You can associate new user accounts and service accounts, manage member roles, and more.
 
-TIP: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
+NOTE: Ensure two members have the Organization admin role to avoid losing access to your BlueXP organization.
 
 
 To manage users and their permissions, you must be assigned one of the following roles: 
@@ -33,9 +33,9 @@ Users with this role can manage members only of a designated folder or project
 [#add-members]
 == Add members to your organization
 
-You can add two types of members to your organization: a user account and a service account. A service account is typically used by an application to complete specified tasks without human intervention through the BlueXP API. A user account is typically used by a person to log in to BlueXP and manage resources.
+You can add two types of members to your organization: a user account and a service account. A service account is used by applications to perform tasks via the BlueXP API without human intervention. A user account is typically used by a person to log in to BlueXP and manage resources.
 
-Users must first sign up for BlueXP account before you can add them to an organization or assign a role. However, you can create service accounts directly from BlueXP.
+Users must sign up for BlueXP before being added to an organization or assigned a role. However, you can create service accounts directly from BlueXP.
 
 To manage users and their permissions, you must have the *Organization admin* role or the *Folder or project admin* role. Remember that users with the *Folder or project admin* role can only manage members for the folder or projects of which they have admin permissions. 
 
@@ -52,9 +52,9 @@ To manage users and their permissions, you must have the *Organization admin* ro
 
 .Steps
 
-. If the user hasn't already done so, ask them to go to the https://bluexp.netapp.com/[NetApp BlueXP website^] and sign up.
+. Direct the user to visit https://bluexp.netapp.com/[NetApp BlueXP website^] to sign up.
 +
-After signing up, users complete the *Sign up* page, check their email, and log in. If prompted to create an organization, they should close BlueXP and inform you of their account creation. You can then add the user to your existing BlueXP organization.
+Once users sign up, they complete the *Sign up* page, check their email, and log in. If BlueXP prompts users to create an organization, they close it and notify you of their account creation. You can then add the user to your existing BlueXP organization.
 +
 link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 
@@ -74,7 +74,7 @@ link:task-sign-up-saas.html[Learn how to sign up to BlueXP].
 Note the following:
 +
 ** You can only select from the folders and projects for which you have admin permissions.
-** If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
+** Selecting an organization or folder grants the member permissions to all its contents.
 * *Select a category* and then select a *Role* that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 
 ** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
@@ -84,7 +84,8 @@ link:reference-iam-predefined-roles.html[Learn about access roles].
 
 . Select *Add*. 
 +
-The user receives an email from NetApp BlueXP containing information members use to access BlueXP.
+NetApp BlueXP sends the user an email with information on how to access BlueXP.
+
 
 
 
@@ -115,7 +116,7 @@ The user receives an email from NetApp BlueXP containing information members use
 Note the following:
 +
 ** You can only select from the folders and projects for which you have admin permissions.
-** If you select the organization or a folder, the member will have permissions to everything that resides within the organization or folder.
+** Selecting an organization or folder grants the member permissions to all its contents.
 * *Select a category* then select a *Role* that provides the member with permissions for the resources that are associated with the organization, folder, or project that you selected.
 
 ** If you selected a folder or project, you can choose from any role other than *Organization admin*. 
@@ -125,7 +126,7 @@ link:reference-iam-predefined-roles.html[Learn about predefined IAM roles].
 
 . Download or copy the client ID and client secret.
 +
-BlueXP shows the client secret only once and does not store it. Copy or download the secret and store it safely. Note that you can recreate the client ID and client secret later on as needed.
+BlueXP displays the client secret only once. Copy or download it and store it securely.Note that you can recreate the client ID and client secret later on as needed.
 
 . Select *Close*.
 
@@ -149,7 +150,7 @@ NOTE: You can also view all of the members associated with a specific folder or 
 
 . Select *Members*.
 +
-The *Members* table displays the members of your organization.
+The *Members* table lists the members of your organization.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
@@ -157,7 +158,7 @@ The *Members* table displays the members of your organization.
 
 You might need to remove a member from your organization--for example, if they leave your company.
 
-Removing a member revokes their permissions but retains their BlueXP and NetApp Support Site accounts.
+Removing a member removes their permissions but keeps their BlueXP and NetApp Support Site accounts.
 
 .Steps
 
@@ -167,11 +168,11 @@ Removing a member revokes their permissions but retains their BlueXP and NetApp 
 
 == Recreate the credentials for a service account
 
-Create new credentials if lost or when updating security credentials is needed.
+Create new credentials if lost or when updating security credentials becomes necessary.
 
 .About this task
 
-Recreating the credentials deletes the existing credentials for the service account and then creates new credentials. You cannot use the previous credentials.
+When you recreate the credentials, you delete the existing credentials for the service account and create new ones. You cannot use the previous credentials.
 
 .Steps
 
@@ -185,17 +186,17 @@ Recreating the credentials deletes the existing credentials for the service acco
 
 . Download or copy the client ID and client secret.
 +
-BlueXP displays the client secret only once and does not store it anywhere. Copy or download the secret and store it safely.
+BlueXP displays the client secret only once. Copy or download it and store it securely.
 
 [[manage-mfa]]
 == Manage a user's multi-factor authentication (MFA)
-If a user has lost access to their MFA device, you can either remove or disable their MFA configuration. 
+If a user has loses access to their MFA device, you can either remove or disable their MFA configuration. 
 
 If you remove their MFA configuration, the user needs to set up MFA again when they log in to BlueXP. If the user has only lost access to their MFA device temporarily, they can use the recovery code that they saved when they set up MFA to log in to BlueXP. 
 
-If they don't have access to their recovery code, you can disable the user's MFA temporarily which allows them to log in without MFA. When you disable MFA for a user, it is disabled for only eight hours and then re-enabled automatically. The user is allowed one login during that time without MFA. After the eight hours, the user must use MFA to log in to BlueXP.
+If they do not have their recovery code, temporarily disable MFA to allow login. When you disable MFA for a user, it is disabled for only eight hours and then re-enabled automatically. The user is allowed one login during that time without MFA. After the eight hours, the user must use MFA to log in to BlueXP.
 
-NOTE: You must have an email address in the same domain as the affected user in order to manage that user’s multi-factor authentication. 
+NOTE: You must have an email address in the same domain as the affected user to manage that user’s multi-factor authentication. 
 
 .Steps
 

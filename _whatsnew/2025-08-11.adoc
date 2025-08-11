@@ -1,0 +1,36 @@
+
+=== Connector 3.9.55
+
+This release of the BlueXP Connector includes security improvements, and bug fixes.
+
+The 3.9.55 release is available for standard mode and restricted mode.
+
+
+=== Japanese language support
+
+The BlueXP UI is now available in the Japanese language. If your browser language is Japanese, BlueXP displays in Japanese. To access documentation in Japanese, use the language menu on the documentation website.
+
+=== BlueXP Identity and Access Management (IAM)
+
+Identity and Access Management in BlueXP now provides the following feature.
+
+
+=== New access role for operational support
+
+BlueXP now supports an Operational support analyst role. This role grants a user permissions to monitor storage alerts, view the BlueXP audit timeline, and enter and track NetApp Support cases.
+
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn more about using access roles.]
+
+
+
+
+
+
+
+
+
+
+
+
+

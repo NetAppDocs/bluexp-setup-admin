@@ -31,6 +31,7 @@ Cloud storage solutions::
 * Amazon FSx for NetApp ONTAP
 * Azure NetApp Files
 * Cloud Volumes ONTAP
+* Google Cloud NetApp Volumes
 
 On-premises flash and object storage::
 * E-Series systems

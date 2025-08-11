@@ -53,7 +53,7 @@ BlueXP now supports using IAM roles for the following features and data services
 * BlueXP disaster recovery
 * Federation
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html[Learn more about using access roles.]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn more about using access roles.]
 
 
 
