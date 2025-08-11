@@ -11,7 +11,7 @@ summary:  BlueXP identity and access management provides several roles that you 
 :imagesdir: ./media/
 
 [.lead]
-You can assign the following roles to users to provide them access to the Backup and recovery service within BlueXP. Backup and recovery roles give you the flexibility to  assign users a role specific to the tasks they need to accomplish within your organization. How you assign roles depends on your own business and storage management practices.
+You can assign the following roles to users to provide them access to the Diaster recovery within BlueXP. Disaster recovery roles give you the flexibility to  assign users a role specific to the tasks they need to accomplish within your organization. How you assign roles depends on your own business and storage management practices.
 
 Disaster recovery uses the following roles:
 
