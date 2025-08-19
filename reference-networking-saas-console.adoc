@@ -17,7 +17,7 @@ When you log in and use the web-based console, BlueXP contacts several endpoints
 
 These endpoints are contacted in two scenarios:
 
-* From a user's computer when completing sactions from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's available as software as a service (SaaS).
+* From a user's computer when completing sections from the https://console.bluexp.netapp.com[BlueXP web-based console^] that's available as software as a service (SaaS).
 
 * From a user's computer when opening a web browser, entering the IP address of the Connector host, and then logging in and setting up the Connector. These steps are required if you manually install the Connector.
 

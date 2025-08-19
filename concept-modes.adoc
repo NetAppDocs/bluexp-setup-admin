@@ -13,7 +13,7 @@ summary: BlueXP offers multiple deployment modes that enable you to use BlueXP i
 :imagesdir: ./media/
 
 [.lead]
-BlueXP offers multiple _deployment modes_ that enable you to meet your business and security requirements. _Standard mode_ leverages a software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
+BlueXP offers _deployment modes_ that enable you to meet your business and security requirements. _Standard mode_ leverages a software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
 
 While BlueXP inhibits the flow of traffic, communication, and data when using restricted mode or private mode, it's your responsibility to ensure that your environment (on-premises and in the cloud) is in compliance with the required regulations for your business.
 
@@ -396,7 +396,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.
 | Volume caching | No | No
 | Workload factory | No | No
 
-.7+| *Features*
+.6+| *Features*
 | BlueXP identity and access management | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
