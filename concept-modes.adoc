@@ -397,7 +397,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.
 | Volume caching | No | No
 | Workload factory | No | No
 
-.7+| *Features*
+.6+| *Features*
 | BlueXP identity and access management | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
