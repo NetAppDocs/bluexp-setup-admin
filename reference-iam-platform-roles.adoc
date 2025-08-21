@@ -16,13 +16,13 @@ summary: Assign platform roles to users to grant permissions to perform administ
 Assign platform roles to users to grant permissions to perform administration tasks in BlueXP, assign roles, add users, create Connectors, and manage federations.
 
 .Example for organization roles in BlueXP for a large multi-national organization
-XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—giving each region control while ensuring centralized oversight.
+XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—providing regional control with centralized oversight.
 
-The *Organization admin* in XYZ Corporation's BlueXP creates an initial organization and separate folders for each region. Each region's folder contains projects (with associated resources) related to that region. The *Organization admin* assigns a BlueXP user in each respective region the *Folder or project admin* role. 
+The *Organization admin* in XYZ Corporation's BlueXP creates an initial organization and separate folders for each region. The *Folder or project admin* for each region organizes projects (with associated resources) within the region's folder.
 
-Regional admins with the *Folder or project admin* role manage their regions (folders) by adding new resources and users. These regional admins can also add, remove, or rename folders and projects they manage. The *Organization admin* inherits permissions for any new resources, maintaining visibility of storage usage across the entire organization.
+Regional admins with the *Folder or project admin* role actively manage their folders by adding resources and users. These regional admins can also add, remove, or rename folders and projects they manage. The *Organization admin* inherits permissions for any new resources, maintaining visibility of storage usage across the entire organization.
 
-Within the same organization, one user is assigned the *Federation admin* role to manage the federation of the organization with their corporate IdP. This user can add or remove federated organizations, but cannot manage users or resources within the organization. The organization assigns a user the *Federation viewer* role to check federation status and view federated organizations without making changes.
+Within the same organization, one user is assigned the *Federation admin* role to manage the federation of the organization with their corporate IdP. This user can add or remove federated organizations, but cannot manage users or resources within the organization. The *Organization admin* assigns a user the *Federation viewer* role to check federation status and view federated organizations.
 
 The following tables indicate the actions that each BlueXP platform role can perform.
 
@@ -55,7 +55,7 @@ The following tables indicate the actions that each BlueXP platform role can per
 
 | Manage credentials from Settings > Credentials  | Yes | Yes
 | Create, manage, and view federations | Yes | No
-| Register for support and submit cases | Yes |	Yes 
+| Register for support and submit cases through BlueXP | Yes |	Yes 
 | Use data services | Yes | Yes 
 | View the BlueXP timeline and notifications | Yes |	Yes 
 
@@ -84,22 +84,3 @@ The following tables indicate the actions that each BlueXP platform role can per
 
 |===
 
-== Operational support analyst 
-[cols="1,1",options="header"]
-
-|===
-
-| Task
-| Can perform
-
-| Manage own user credentials from Settings > Credentials  | Yes 
-
-| View discovered resources | Yes
-
-| Register for support and submit cases | Yes  
-
-| View the BlueXP timeline and notifications | Yes
-| View, download and configure alerts | Yes
-
-
-|===

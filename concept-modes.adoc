@@ -13,7 +13,7 @@ summary: BlueXP offers multiple deployment modes that enable you to use BlueXP i
 :imagesdir: ./media/
 
 [.lead]
-BlueXP offers multiple _deployment modes_ that enable you to meet your business and security requirements. _Standard mode_ leverages a software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
+BlueXP offers _deployment modes_ that enable you to meet your business and security requirements. _Standard mode_ leverages a software as a service (SaaS) layer to provide full functionality, while _restricted mode_ and _private mode_ are available for organizations that have connectivity restrictions.
 
 While BlueXP inhibits the flow of traffic, communication, and data when using restricted mode or private mode, it's your responsibility to ensure that your environment (on-premises and in the cloud) is in compliance with the required regulations for your business.
 
@@ -192,6 +192,7 @@ BlueXP supports the following storage and data services with restricted mode:
 | Backup and recovery | Supported in Government regions and commercial regions with restricted mode. Not supported in sovereign regions with restricted mode.
 
 In restricted mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity[View the list of supported backup destinations for ONTAP data^]
+In restricted mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity[View the list of supported backup destinations for ONTAP data^]
 
 Back up and restore of application data and virtual machine data is not supported.
 
@@ -365,13 +366,13 @@ This portion of the table lists support for working environment management from 
 | Azure Blob | No | No
 | Azure NetApp Files | Yes | No 
 | Cloud Volumes ONTAP | Yes | Yes 
-| Cloud Volumes Service for Google Cloud | No | No
+| Google Cloud NetApp Volumes | No | No
 | Google Cloud Storage | No | No
 | On-premisesONTAP clusters | Yes | Yes
 | E-Series | No | No
 | StorageGRID | No | No 
 
-.17+| *Services*
+.16+| *Services*
 | Alerts | No | No
 | Backup and recovery 
 | Yes
@@ -381,7 +382,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP volume data^]
 | Classification | Yes | Yes
-| Cloud ops | No | No
 | Copy and sync | No | No
 | Digital advisor | No | No 
 | Digital wallet | Yes | Yes
@@ -396,7 +396,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.
 | Volume caching | No | No
 | Workload factory | No | No
 
-.7+| *Features*
+.6+| *Features*
 | BlueXP identity and access management | Yes | Yes
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 

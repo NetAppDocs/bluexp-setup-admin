@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-user-settings.html
 keywords: user profile, mfa, change password, role, login, mulit-factor, authentication
-summary: You can modify your BlueXP profile including change your password, enable multi-factor authentication (MFA), and see who your BlueXP administrator is.
+summary: 
 ---
 
 = Manage your BlueXP user settings
@@ -13,14 +13,14 @@ summary: You can modify your BlueXP profile including change your password, enab
 :imagesdir: ./media/
 
 [.lead]
-You can access your BlueXP profile which allows you to enable multi-factor authentication (MFA), and contact your BlueXP administrator.
+You can modify your BlueXP profile including change your password, enable multi-factor authentication (MFA), and see who your BlueXP administrator is.
 
-Within BlueXP, each user has a profile that contains information about the user and their settings. You can view and edit your profile settings from the BlueXP console. 
+Within BlueXP, each user has a profile that contains information about the user and their settings. You can view and edit your profile settings. 
 
 
 == Change your display name
 
-You can change your display name in the BlueXP console. The display name is used to identify you in the BlueXP console and is visible to other users. Your display name is not the same as your username or email address, which cannot be changed.
+You can change your display name. The display name is used to identify you in the BlueXP console and is visible to other users. Your display name is not the same as your username or email address, which cannot be changed.
 
 .Steps
 
@@ -86,5 +86,14 @@ NOTE: You must have a default email application configured for your browser to u
 . Select *Contact admins* to send an email to your organization administrator. 
 . Select the email application to use.
 . Finish the email and select *Send*.
+
+== Configure dark mode (dark theme)
+You can set BlueXP to display in dark mode.
+
+.Steps
+. Select the profile icon in the upper right corner of the BlueXP console to view the User settings panel.
+. Move the *Dark theme* slider to enable it.
+
+
 
 
