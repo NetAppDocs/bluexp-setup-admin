@@ -17,7 +17,7 @@ summary: BlueXP identity and access management provides an support analyst role 
 You can assign the following role to users to provide them access to alerts and monitoring. Users with this role can also open support cases.
 
 == Operational support analyst 
-[cols="1,1",options="header"]
+[cols="1,2",options="header"]
 
 |===
 
@@ -28,7 +28,7 @@ You can assign the following role to users to provide them access to alerts and 
 
 | View discovered resources | Yes
 
-| Register for support and submit cases through BlueXP | Yes |	Yes  
+| Register for support and submit cases through BlueXP | Yes 
 
 | View the BlueXP timeline and notifications | Yes
 | View, download, and configure alerts | Yes
