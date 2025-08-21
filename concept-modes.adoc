@@ -191,7 +191,7 @@ BlueXP supports the following storage and data services with restricted mode:
 
 | Backup and recovery | Supported in Government regions and commercial regions with restricted mode. Not supported in sovereign regions with restricted mode.
 
-In restricted mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode[View the list of supported backup destinations for ONTAP data^]
+In restricted mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity[View the list of supported backup destinations for ONTAP data^]
 
 Back up and restore of application data and virtual machine data is not supported.
 
@@ -282,7 +282,7 @@ BlueXP supports the following storage and data services with private mode when t
 
 Not supported in Google Cloud or in https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], or https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
-In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode[View the list of supported backup destinations for ONTAP data^]
+In private mode, BlueXP backup and recovery supports back up and restore of ONTAP volume data only. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity[View the list of supported backup destinations for ONTAP data^]
 
 Back up and restore of application data and virtual machine data is not supported.
 
