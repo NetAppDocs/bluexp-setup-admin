@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-iam-platform-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management
-summary: Assign platform roles to users to grant permissions to manage BlueXP, assign roles, add users, create Connectors, and manage federations.
+summary: Assign platform roles to users to grant permissions to perform administration tasks in BlueXP, assign roles, add users, create Connectors, and manage federations.
 ---
 
 = BlueXP platform access roles
@@ -13,7 +13,7 @@ summary: Assign platform roles to users to grant permissions to manage BlueXP, a
 :imagesdir: ./media/
 
 [.lead]
-Assign platform roles to users to grant permissions to manage BlueXP, assign roles, add users, create Connectors, and manage federations.
+Assign platform roles to users to grant permissions to perform administration tasks in BlueXP, assign roles, add users, create Connectors, and manage federations.
 
 .Example for organization roles in BlueXP for a large multi-national organization
 XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—giving each region control while ensuring centralized oversight.
