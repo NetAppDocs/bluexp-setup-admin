@@ -387,7 +387,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.
 | Digital wallet | Yes | Yes
 | Disaster recovery | No | No
 | Economic efficiency | No | No
-| Operational resiliency | No | No
 | Ransomware protection | No | No
 | Replication | Yes | Yes
 | Software updates | No | No

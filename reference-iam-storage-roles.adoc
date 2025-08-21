@@ -30,7 +30,6 @@ BlueXP services and features:
 
 * Digital advisor
 * Software updates
-* Operational resiliency
 * Economic efficiency
 * Sustainability
 
@@ -70,10 +69,6 @@ The following table shows the actions each BlueXP storage role performs.
 | View update details for a cluster | Yes | Yes | Yes
 | Run pre-update checks and download upgrade plan | Yes | Yes | Yes
 | Install software updates | Yes | Yes | No
-4+| *Operational resiliency*
-| Review security risk issues | Yes | Yes | Yes
-| Download Ansible playbooks | Yes | Yes | No
-| Remediate issues automatically | Yes | Yes | No
 4+| *Economic efficiency*
 | Review capacity planning status | Yes | Yes | Yes
 | Choose next action (best practice, tier) | Yes | No | No
