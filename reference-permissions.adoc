@@ -51,7 +51,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 
 | Back up on-premises ONTAP clusters to Amazon S3
 | When activating backups on your ONTAP volumes, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.
-| https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions[Set up S3 permissions for backups^]
+| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html#set-up-s3-permissions[Set up S3 permissions for backups^]
 
 |===
 
@@ -203,7 +203,7 @@ a|
 
 | Back up on-premises ONTAP clusters to Google Cloud
 | When using BlueXP backup and recovery to back up on-premisesONTAP clusters, you need to add permissions to the Connector in order to use the "Search & Restore" functionality. 
-| https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector[Permissions for Search & Restore functionality^]
+| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html[Permissions for Search & Restore functionality^]
 
 |===
 	
