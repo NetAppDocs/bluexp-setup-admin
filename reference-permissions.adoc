@@ -197,9 +197,9 @@ a| When using BlueXP backup and recovery to back up Cloud Volumes ONTAP, you nee
 * You want to use "Search & Restore" functionality
 * You want to use customer-managed encryption keys (CMEK)
 a| 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector[Permissions for Search & Restore functionality^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Permissions for Search & Restore functionality^]
 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek[Permissions for CMEKs^]
+* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Permissions for CMEKs^]
 
 | Back up on-premises ONTAP clusters to Google Cloud
 | When using BlueXP backup and recovery to back up on-premisesONTAP clusters, you need to add permissions to the Connector in order to use the "Search & Restore" functionality. 
@@ -253,7 +253,7 @@ BlueXP requires StorageGRID permissions for two services.
 
 | Back up on-premises ONTAP clusters to StorageGRID
 | When you prepare StorageGRID as a backup target for ONTAP clusters, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.
-| https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target[Prepare StorageGRID as your backup target^]
+| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html[Prepare StorageGRID as your backup target^]
 
 |===
 	
@@ -267,6 +267,6 @@ BlueXP requires StorageGRID permissions for two services.
 
 | Tier on-premises ONTAP clusters to StorageGRID
 | When you set up BlueXP tiering to StorageGRID, you need to provide BlueXP tiering with an S3 access key and secret key. BlueXP tiering uses the keys to access your buckets.
-| https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target[Prepare tiering to StorageGRID^]
+| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html[Prepare tiering to StorageGRID^]
 
 |===
