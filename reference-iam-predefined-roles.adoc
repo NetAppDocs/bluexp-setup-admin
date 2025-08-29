@@ -27,7 +27,7 @@ Platform roles grant all BlueXP administration permissions, including assigning 
 | Responsibilities
 
 
-| link:reference-iam-platform-roles.html[Organization admin] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service. 
+| link:reference-iam-platform-roles.html[Organization admin] | Allows a user unrestricted access to all projects and folders within an organization, add members to any project or folder, as well as perform any BlueXP task and use any data service that does not have an explicit role associated with it. 
 
 Users with this role organize and manage your BlueXP organization. They create folders and projects, assign roles, add users, and can manage all working environments, if they have the credentials to do so.
 
