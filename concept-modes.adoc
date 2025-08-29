@@ -399,7 +399,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.
 
 | Identity and access management | Yes | Yes 
 | Credentials | Yes | Yes 
-| Federation | Yes | No |
+| Federation | Yes | No 
 | Multi-factor authentication | Yes | No 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 
