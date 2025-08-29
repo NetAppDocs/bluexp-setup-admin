@@ -51,7 +51,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 
 | Back up on-premises ONTAP clusters to Amazon S3 with BlueXP backup and recovery
 | When activating backups on your ONTAP volumes, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.
-| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html[Set up S3 permissions for backups^]
+| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html#set-up-s3-permissions[Set up S3 permissions for backups^]
 
 |===
 
@@ -225,10 +225,11 @@ a| When using BlueXP backup and recovery to back up Cloud Volumes ONTAP, you nee
 a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Back up Cloud Volumes ONTAP data to Google Cloud Storage with Backup and Recovery^]
 
+* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Permissions for CMEKs^]
 
 | Back up on-premises ONTAP clusters to Google Cloud
 | When using BlueXP backup and recovery to back up on-premisesONTAP clusters, you need to add permissions to the Connector in order to use the "Search & Restore" functionality. 
-| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html[Back up on-premises ONTAP data to Google Cloud Storage with Backup and Recovery^]
+| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html[Permissions for Search & Restore functionality^]
 
 |===
 	
@@ -292,6 +293,6 @@ BlueXP requires StorageGRID permissions for two services.
 
 | Tier on-premises ONTAP clusters to StorageGRID
 | When you set up BlueXP tiering to StorageGRID, you need to provide BlueXP tiering with an S3 access key and secret key. BlueXP tiering uses the keys to access your buckets.
-|https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html[Prepare tiering to StorageGRID^]
+| https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html[Prepare tiering to StorageGRID^]
 
 |===
