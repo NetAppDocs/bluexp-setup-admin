@@ -395,10 +395,12 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.
 | Volume caching | No | No
 | Workload factory | No | No
 
-.6+| *Features*
+.8+| *Features*
 
 | Identity and access management | Yes | Yes
 | Credentials | Yes | Yes 
+| Federation | Yes | No
+| Multi-factor authentication | Yes |
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 
 | Search | Yes | No
