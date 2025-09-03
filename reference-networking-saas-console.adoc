@@ -86,6 +86,8 @@ Suggestion: https://docs.aws.amazon.com/general/latest/gr/rande.html[See AWS doc
 |
 \https://netapp-cloud-account.auth0.com
 
+\https://netapp-cloud-account.us.auth0.com
+
 \https://cdn.auth0.com
 
 \https://services.cloud.netapp.com
