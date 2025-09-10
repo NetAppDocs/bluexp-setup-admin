@@ -5,7 +5,7 @@ keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verif
 summary: After you've added a federated connection, you can manage it in BlueXP. You can view the status of the connection, enable or disable it as needed.
 ---
 
-= Manage federations in BLueXP
+= Manage federations in BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
