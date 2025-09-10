@@ -55,7 +55,9 @@ The following is a list of roles in the application category. Each role grants s
 |===
 | Application role | Responsibilities
 
+
 | link:reference-iam-gcnv-roles.html[Google Cloud NetApp Volumes admin] | Users with the Google Cloud NetApp Volumes role can discover and manage Google Cloud NetApp Volumes.
+
 
 | link:reference-iam-keystone-roles.html[Keystone admin] | Users with the Keystone admin role can create service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
 | link:reference-iam-keystone-roles.html[Keystone viewer] | Users with the Keystone viewer role CANNOT create service requests. Allows users to monitor and view consumption, assets, and administrative information within the Keystone tenant they are accessing.
