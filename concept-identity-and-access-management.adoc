@@ -52,7 +52,7 @@ An _organization_ is the top level of BlueXP's IAM system and typically represen
 
 A _folder_ enables you to group related projects together and separate them from other projects in your organization. For example, a folder might represent a geographical location (EU or US East), a site (London or Toronto), or a business unit (engineering or marketing). 
 
-olders can contain projects, other folders, or both. Creating folders is optional.
+Folders can contain projects, other folders, or both. Creating folders is optional.
 
 
 === Projects
