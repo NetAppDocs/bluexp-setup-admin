@@ -133,6 +133,8 @@ sidebar:
                   url: /reference-iam-platform-roles.html
                 - title: Application roles
                   entries:
+                   - title: Google Cloud NetApp Volumes roles
+                     url: /reference-iam-gcnv-roles.html
                    - title: Keystone roles 
                      url: /reference-iam-keystone-roles.html
                    - title: Operations support analyst
