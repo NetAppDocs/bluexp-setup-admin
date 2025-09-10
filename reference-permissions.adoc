@@ -225,25 +225,11 @@ a| When using BlueXP backup and recovery to back up Cloud Volumes ONTAP, you nee
 a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Back up Cloud Volumes ONTAP data to Google Cloud Storage with Backup and Recovery^]
 
-* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Permissions for CMEKs^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Permissions for CMEKs^]
 
 | Back up on-premises ONTAP clusters to Google Cloud
 | When using BlueXP backup and recovery to back up on-premisesONTAP clusters, you need to add permissions to the Connector in order to use the "Search & Restore" functionality. 
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html[Permissions for Search & Restore functionality^]
-
-|===
-	
-=== Cloud Volumes Service for Google Cloud
-	
-[cols=3*,options="header",cols="20,60,20"]
-|===
-| Goal
-| Description
-| Link
-
-| Discover Cloud Volumes Service for Google Cloud
-| BlueXP needs access to the Cloud Volumes Service API and the right permissions through a Google Cloud service account.
-| https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html[Set up a service account^]
 
 |===
 
